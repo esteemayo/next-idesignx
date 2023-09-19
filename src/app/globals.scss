@@ -1,0 +1,72 @@
+:root {
+  --color-pink-primary: #eb2f64;
+  --color-pink-light: #ff3366;
+  --color-pink-dark: #ba265d;
+
+  --color-orange-light: #ffb900;
+  --color-orange-dark: #ff7730;
+
+  --color-gray-dark: #777;
+  --color-gray-dark-2: #999;
+  --color-gray-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #aaa;
+  --color--blue: #1658a3;
+  --color-green: #28b485;
+  --color-purple: #8134af;
+  --color-purple-light: #a134e9;
+
+  // font variables
+  --default-font-size: 1.6rem;
+  // --font-primary: 'Nunito', sans-serif;
+  // --font-display: 'Josefin Sans', sans-serif;
+}
+
+$color-gray-dark-2: #999;
+$color-gray-light: #e9e9e9;
+$color-black: #000;
+$color-black-light: #000;
+$color-black-dark: #333;
+$color-orange: #ffb900;
+$color-facebook: #3b5998;
+$color-twitter: #00acee;
+$color-instagram-1: #8134af;
+$color-instagram-2: #dd2a7b;
+$color-instagram-3: #feda77;
+$color-puple-light-1: #e0b9e3;
+$color-puple-light-2: #e4b2e6;
+
+$bp-largest-x1: 81.25em; //1300px
+$bp-largest: 75em; //1200px
+$bp-large: 56.25em; //900px
+$bp-medium: 50em; //800px
+$bp-small: 37.5rem; //600px
+$bp-smallest: 25em; //400px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: var(--color-pink-light);
+  color: var(--color-white);
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-gray-dark);
+}
