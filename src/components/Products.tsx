@@ -8,6 +8,7 @@ const Products = () => {
 
 const Container = styled.section`
   background-color: blue;
+  grid-column: full-start / full-end;
 `;
 
 export default Products;
