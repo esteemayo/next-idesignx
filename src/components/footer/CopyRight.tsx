@@ -16,7 +16,9 @@ const CopyRight: React.FC<CopyRightProps> = ({ value }) => {
   );
 };
 
-const Container = styled.p``;
+const Container = styled.p`
+  width: 70%;
+`;
 
 const Year = styled.span``;
 
