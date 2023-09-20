@@ -7,8 +7,11 @@ const About = () => {
 };
 
 const Container = styled.section`
-  background-color: darkslateblue;
+  background-color: var(--clr-white);
   grid-column: col-start 1 / col-end 4;
+  margin: calc(16rem - 8rem) 0;
+  color: var(--clr-gray-dark);
+  padding: 1rem;
 `;
 
 export default About;
