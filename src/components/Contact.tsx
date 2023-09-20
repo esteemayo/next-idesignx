@@ -69,4 +69,6 @@ const Select = styled.select``;
 
 const Option = styled.option``;
 
+const TextArea = styled.textarea``;
+
 export default Contact;
