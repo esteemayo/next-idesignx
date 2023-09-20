@@ -31,7 +31,7 @@ const Container = styled.li`
       font-weight: 300;
       font-size: 1.6rem;
       color: currentColor;
-      outline-color: #eee;
+      outline-color: var(--clr-purple-light-3);
       transition: all 0.2s;
     }
 
