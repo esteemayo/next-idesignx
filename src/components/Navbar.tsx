@@ -77,6 +77,10 @@ const NavItem = styled.li`
 
 const Button = styled.button`
   justify-self: end;
+
+  display: inline-block;
+  border: none;
+  padding: 1rem 3rem;
 `;
 
 export default Navbar;
