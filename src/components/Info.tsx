@@ -10,4 +10,6 @@ const Container = styled.div`
   background-color: palevioletred;
 `;
 
+const PhoneWrapper = styled.div``;
+
 export default Info;
