@@ -29,6 +29,9 @@ const Container = styled.div`
     var(--color-orange-dark),
     var(--color-orange-light)
   );
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: var(--color-white);
 `;
 
 const PhoneWrapper = styled.div``;
