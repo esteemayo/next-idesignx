@@ -50,6 +50,10 @@ const Text = styled.span`
   display: block;
   letter-spacing: 5px;
   line-height: 1.3;
+  animation: ${({ type }) => type === 'right' && 'moveInRight 1s ease-out'};
+  animation: ${({ type }) => type === 'left' && 'moveInLeft 1s ease-out'};
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 `;
 
 export default Hero;
