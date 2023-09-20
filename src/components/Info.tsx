@@ -52,7 +52,10 @@ const EmailWrapper = styled.div`
 
 const EmailAddress = styled.span``;
 
-const SocialWrapper = styled.div``;
+const SocialWrapper = styled.div`
+  align-self: center;
+  justify-self: end;
+`;
 
 const StyledLink = styled(Link)``;
 
