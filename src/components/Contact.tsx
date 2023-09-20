@@ -43,6 +43,9 @@ const Contact = () => {
             <Option value='Posters'>Posters</Option>
           </Select>
         </FormGroup>
+        <FormGroup>
+          <TextArea id='content' name='content' required />
+        </FormGroup>
       </Form>
     </Container>
   );
