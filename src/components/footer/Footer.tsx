@@ -1,9 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+import MenuLinks from './MenuLinks';
 
 const Footer = () => {
-  return <Container>Footer</Container>;
+  return (
+    <Container>
+      <MenuLinks />
+    </Container>
+  );
 };
 
 const Container = styled.footer`
