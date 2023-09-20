@@ -17,4 +17,6 @@ const Container = styled.section`
 
 const Heading = styled.h2``;
 
+const Text = styled.p``;
+
 export default Contact;
