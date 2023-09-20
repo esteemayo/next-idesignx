@@ -57,6 +57,7 @@ const SocialWrapper = styled.div`
   justify-self: end;
   width: 1.3rem;
   height: 1.3rem;
+  margin-right: 0.5rem;
 `;
 
 const StyledLink = styled(Link)``;
