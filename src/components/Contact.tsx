@@ -23,6 +23,7 @@ const Contact = () => {
             type='text'
             placeholder='Your name'
             required
+            onChange={handleChange}
           />
           <Label htmlFor='name'>Your name</Label>
         </FormGroup>
@@ -33,11 +34,17 @@ const Contact = () => {
             type='email'
             placeholder='Your email'
             required
+            onChange={handleChange}
           />
           <Label htmlFor='email'>Your email</Label>
         </FormGroup>
         <FormGroup>
-          <Select id='category' name='category' required>
+          <Select
+            id='category'
+            name='category'
+            onChange={handleChange}
+            required
+          >
             <Option value=''>Select products</Option>
             <Option value='Logo Design'>Logo Design</Option>
             <Option value='Branding'>Branding</Option>
@@ -52,7 +59,12 @@ const Contact = () => {
           </Select>
         </FormGroup>
         <FormGroup>
-          <TextArea id='content' name='content' required />
+          <TextArea
+            id='content'
+            name='content'
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <Button type='submit'>Submit</Button>
       </Form>
