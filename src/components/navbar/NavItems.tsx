@@ -1,8 +1,6 @@
 'use client';
 
-import Link from 'next/link';
 import styled from 'styled-components';
-
 import NavItem from './NavItem';
 
 type NavItemsType = {
