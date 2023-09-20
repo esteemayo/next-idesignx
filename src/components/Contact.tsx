@@ -86,6 +86,8 @@ const Container = styled.section`
   margin: 8rem;
   transform: translateY(-28rem);
   padding: 3rem;
+  box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
+  border-radius: 1rem;
 `;
 
 const Heading = styled.h2``;
