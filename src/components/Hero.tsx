@@ -17,8 +17,15 @@ const Hero = () => {
 };
 
 const Header = styled.header`
-  background-color: yellow;
   grid-column: full-start / full-end;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(3, 3, 3, 0.7)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
 `;
 
 const Heading = styled.h1``;
