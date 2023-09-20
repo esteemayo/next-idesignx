@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Container>
       <Heading>
-        We are all about <span>xpressing brands</span>
+        We are all about <Span>xpressing brands</Span>
       </Heading>
       <Text>
         We are a Creative Design, Brand development and activation firm. We aim
