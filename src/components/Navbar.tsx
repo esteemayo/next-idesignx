@@ -56,7 +56,15 @@ const NavItems = styled.ul`
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
 `;
 
-const NavItem = styled.li``;
+const NavItem = styled.li`
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+`;
 
 const Button = styled.button``;
 
