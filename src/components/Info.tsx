@@ -40,7 +40,9 @@ const Container = styled.div`
   justify-items: center;
 `;
 
-const PhoneWrapper = styled.div``;
+const PhoneWrapper = styled.div`
+  grid-column: 1 / 2;
+`;
 
 const PhoneNumber = styled.span``;
 
