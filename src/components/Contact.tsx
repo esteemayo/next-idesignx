@@ -20,4 +20,6 @@ const Heading = styled.h2``;
 
 const Text = styled.p``;
 
+const Form = styled.form``;
+
 export default Contact;
