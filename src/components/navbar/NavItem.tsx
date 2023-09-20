@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const NavItem = () => {
+interface NavItemProps {
+  url: string;
+  label: string;
+}
+
+const NavItem: React.FC<NavItemProps> = ({ url, label }) => {
   return (
     <Container>
-      <Link href='/'>Home</Link>
+      <Link href={url}>{label}</Link>
     </Container>
   );
 };
