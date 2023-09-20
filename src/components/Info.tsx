@@ -55,6 +55,8 @@ const EmailAddress = styled.span``;
 const SocialWrapper = styled.div`
   align-self: center;
   justify-self: end;
+  width: 1.3rem;
+  height: 1.3rem;
 `;
 
 const StyledLink = styled(Link)``;
