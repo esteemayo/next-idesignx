@@ -49,6 +49,8 @@ const Heading = styled.h1`
 
 const Text = styled.span`
   display: block;
+  letter-spacing: 5px;
+  line-height: 1.3;
 `;
 
 export default Hero;
