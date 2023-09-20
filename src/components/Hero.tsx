@@ -8,6 +8,7 @@ const Hero = () => {
 
 const Container = styled.header`
   background-color: yellow;
+  grid-column: full-start / full-end;
 `;
 
 export default Hero;
