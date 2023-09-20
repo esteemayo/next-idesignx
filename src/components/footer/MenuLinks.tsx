@@ -1,9 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+import MenuLink from './MenuLink';
 
 const MenuLinks = () => {
-  return <Container>MenuLinks</Container>;
+  return (
+    <Container>
+      <MenuLink />
+    </Container>
+  );
 };
 
 const Container = styled.ul``;
