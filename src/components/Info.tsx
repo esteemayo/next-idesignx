@@ -73,14 +73,11 @@ const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
   color: currentColor;
+  outline-color: var(--clr-purple-light-3);
 
   &:hover,
   &:active {
     color: currentColor;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   svg {
