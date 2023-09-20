@@ -49,6 +49,9 @@ const Text = styled.p`
   margin-bottom: 6rem;
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  display: inline-block;
+  border: none;
+`;
 
 export default About;
