@@ -42,7 +42,9 @@ const Heading = styled.h2`
   }
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+  display: block;
+`;
 
 const Text = styled.p`
   font-size: 1.5rem;
