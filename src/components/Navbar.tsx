@@ -83,6 +83,14 @@ const Button = styled.button`
   border: none;
   font-size: 1.5rem;
   padding: 1rem 3rem;
+  background-image: linear-gradient(
+    to left top,
+    var(--clr-purple-dark),
+    var(--clr-purple-light-1),
+    var(--clr-purple-light-2),
+    var(--clr-purple-light-3)
+  );
+  color: var(--clr-white);
 `;
 
 export default Navbar;
