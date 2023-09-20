@@ -24,14 +24,14 @@ const Info = () => {
 const Container = styled.div`
   background-image: linear-gradient(
     to right bottom,
-    var(--color-pink-dark),
-    var(--color-pink-light),
-    var(--color-orange-dark),
-    var(--color-orange-light)
+    var(--clr-pink-dark),
+    var(--clr-pink-light),
+    var(--clr-orange-dark),
+    var(--clr-orange-light)
   );
   font-size: 1.4rem;
   padding: 1rem;
-  color: var(--color-white);
+  color: var(--clr-white);
 
   display: grid;
   grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
