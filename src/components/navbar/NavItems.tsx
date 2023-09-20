@@ -18,7 +18,7 @@ const NavItems: React.FC<NavItemsProps> = ({ links, pathname }) => {
   return (
     <Container>
       {links.map((link) => {
-        return <NavItem key={link.id} {...link} />;
+        return <NavItem key={link.id} {...link} pathname={pathname} />;
       })}
     </Container>
   );
