@@ -23,4 +23,6 @@ const PhoneNumber = styled.span``;
 
 const EmailWrapper = styled.div``;
 
+const EmailAddress = styled.span``;
+
 export default Info;
