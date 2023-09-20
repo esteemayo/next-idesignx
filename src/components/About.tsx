@@ -31,6 +31,8 @@ const Container = styled.section`
 
 const Heading = styled.h2``;
 
-const Text = styled.p``;
+const Text = styled.p`
+  margin-bottom: 6rem;
+`;
 
 export default About;
