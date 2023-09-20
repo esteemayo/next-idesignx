@@ -91,6 +91,7 @@ const Button = styled.button`
     var(--clr-purple-light-3)
   );
   color: var(--clr-white);
+  border-radius: 0.5rem;
 `;
 
 export default Navbar;
