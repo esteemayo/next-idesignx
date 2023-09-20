@@ -15,6 +15,8 @@ const NavItem: React.FC<NavItemProps> = ({ url, label }) => {
 };
 
 const Container = styled.li`
+  color: var(--clr-purple-light-3);
+
   a {
     &:link,
     &:visited {
@@ -22,7 +24,7 @@ const Container = styled.li`
       text-transform: capitalize;
       font-weight: 300;
       font-size: 1.6rem;
-      color: var(--clr-purple-light-3);
+      color: currentColor;
       outline-color: #eee;
       transition: all 0.2s;
     }
