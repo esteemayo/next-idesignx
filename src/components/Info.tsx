@@ -79,6 +79,12 @@ const StyledLink = styled(Link)`
   &:focus {
     outline: none;
   }
+
+  svg {
+    color: currentColor;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 `;
 
 export default Info;
