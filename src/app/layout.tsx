@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import './globals.scss';
 import Layout from '@/components/Layout';
+
+import './globals.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
