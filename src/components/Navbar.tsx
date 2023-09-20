@@ -80,6 +80,8 @@ const Button = styled.button`
 
   display: inline-block;
   border: none;
+  text-transform: capitalize;
+  font-size: 1.5rem;
   padding: 1rem 3rem;
 `;
 
