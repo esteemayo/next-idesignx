@@ -22,7 +22,13 @@ const Info = () => {
 };
 
 const Container = styled.div`
-  background-color: palevioletred;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-pink-dark),
+    var(--color-pink-light),
+    var(--color-orange-dark),
+    var(--color-orange-light)
+  );
 `;
 
 const PhoneWrapper = styled.div``;
