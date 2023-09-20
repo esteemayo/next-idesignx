@@ -5,11 +5,13 @@ import styled from 'styled-components';
 import Logo from './Logo';
 import NavItems from './NavItems';
 
+import { navItems } from '@/data';
+
 const Navbar = () => {
   return (
     <Container>
       <Logo />
-      <NavItems />
+      <NavItems links={navItems} />
       <Button>Upload your design</Button>
     </Container>
   );
