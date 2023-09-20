@@ -31,24 +31,4 @@ const Container = styled.ul`
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
 `;
 
-// const NavItem = styled.li`
-//   a {
-//     &:link,
-//     &:visited {
-//       text-decoration: none;
-//       text-transform: capitalize;
-//       font-weight: 300;
-//       font-size: 1.6rem;
-//       color: var(--clr-purple-light-3);
-//       outline-color: #eee;
-//       transition: all 0.2s;
-//     }
-
-//     &:hover,
-//     &:active {
-//       color: var(--clr-purple-light-2);
-//     }
-//   }
-// `;
-
 export default NavItems;
