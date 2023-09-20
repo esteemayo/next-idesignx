@@ -27,6 +27,7 @@ const StyledLink = styled(Link)`
   padding: 1.5rem;
   color: inherit;
   text-align: center;
+  transition: all 0.2s;
 
   &:hover,
   &:active {
