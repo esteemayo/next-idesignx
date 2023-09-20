@@ -44,7 +44,9 @@ const Container = styled.nav`
   align-items: center;
 `;
 
-const LogoBox = styled.div``;
+const LogoBox = styled.div`
+  justify-self: start;
+`;
 
 const Logo = styled(Link)``;
 
