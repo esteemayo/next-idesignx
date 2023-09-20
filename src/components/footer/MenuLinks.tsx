@@ -11,6 +11,8 @@ const MenuLinks = () => {
   );
 };
 
-const Container = styled.ul``;
+const Container = styled.ul`
+  list-style: none;
+`;
 
 export default MenuLinks;
