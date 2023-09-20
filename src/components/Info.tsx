@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const Info = () => {
@@ -29,5 +30,7 @@ const EmailWrapper = styled.div``;
 const EmailAddress = styled.span``;
 
 const SocialWrapper = styled.div``;
+
+const StyledLink = styled(Link)``;
 
 export default Info;
