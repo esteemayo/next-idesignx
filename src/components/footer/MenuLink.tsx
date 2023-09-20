@@ -22,6 +22,8 @@ const Container = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem;
   color: inherit;
 `;
 
