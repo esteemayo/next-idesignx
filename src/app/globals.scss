@@ -15,8 +15,10 @@
   --clr-gray: #aaa;
   --clr--blue: #1658a3;
   --clr-green: #28b485;
-  --clr-purple: #8134af;
-  --clr-purple-light: #a134e9;
+  --clr-purple-dark: #240238;
+  --clr-purple-light-1: #8134af;
+  --clr-purple-light-2: #a134e9;
+  --clr-purple-light-3: #cf8df5;
 
   // font variables
   --default-font-size: 1.6rem;
@@ -54,10 +56,10 @@ $bp-smallest: 25em; //400px
   box-sizing: inherit;
 }
 
-::selection {
-  background-color: var(--clr-pink-light);
-  color: var(--clr-white);
-}
+// ::selection {
+//   background-color: var(--clr-pink-light);
+//   color: var(--clr-white);
+// }
 
 html {
   font-size: 62.5%;

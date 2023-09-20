@@ -24,10 +24,10 @@ const Info = () => {
 const Container = styled.div`
   background-image: linear-gradient(
     to right bottom,
-    var(--clr-pink-dark),
-    var(--clr-pink-light),
-    var(--clr-orange-dark),
-    var(--clr-orange-light)
+    var(--clr-purple-dark),
+    var(--clr-purple-light-1),
+    var(--clr-purple-light-2),
+    var(--clr-purple-light-3)
   );
   font-size: 1.4rem;
   padding: 1.5rem;
