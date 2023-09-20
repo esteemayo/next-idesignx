@@ -95,7 +95,10 @@ const Container = styled.section`
   align-content: start;
 `;
 
-const Heading = styled.h2``;
+const Heading = styled.h2`
+  font-weight: 400;
+  font-size: 3rem;
+`;
 
 const Text = styled.p``;
 
