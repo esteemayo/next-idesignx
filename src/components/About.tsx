@@ -18,4 +18,6 @@ const Container = styled.section`
   align-items: flex-start;
 `;
 
+const Heading = styled.h2``;
+
 export default About;
