@@ -34,7 +34,11 @@ const Header = styled.header`
   justify-items: center;
 `;
 
-const Heading = styled.h1``;
+const Heading = styled.h1`
+  grid-area: 2 / 1 / 3 / span 3;
+  align-self: center;
+  justify-self: center;
+`;
 
 const Text = styled.span``;
 
