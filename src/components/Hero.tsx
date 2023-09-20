@@ -5,7 +5,13 @@ import styled from 'styled-components';
 const Hero = () => {
   return (
     <Header>
-      <Heading></Heading>
+      <Heading>
+        <Text>You imagine.</Text>
+        <Text>We print.</Text>
+        <Text>
+          We <b>Deliver.</b>
+        </Text>
+      </Heading>
     </Header>
   );
 };
