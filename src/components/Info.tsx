@@ -12,7 +12,11 @@ const Info = () => {
       <EmailWrapper>
         x<EmailAddress>esteemdesign19@gmail.com</EmailAddress>
       </EmailWrapper>
-      <SocialWrapper></SocialWrapper>
+      <SocialWrapper>
+        <StyledLink href='#'>icon</StyledLink>
+        <StyledLink href='#'>icon</StyledLink>
+        <StyledLink href='#'>icon</StyledLink>
+      </SocialWrapper>
     </Container>
   );
 };
