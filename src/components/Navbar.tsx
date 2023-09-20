@@ -26,7 +26,7 @@ const Navbar = () => {
           <Link href='/about'>About</Link>
         </NavItem>
         <NavItem>
-          <Link href='/contact'></Link>
+          <Link href='/contact'>Contact</Link>
         </NavItem>
       </NavItems>
       <Button>Upload your design</Button>
