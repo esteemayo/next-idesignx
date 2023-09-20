@@ -45,10 +45,6 @@ const Container = styled.nav`
   align-items: center;
 `;
 
-const LogoBox = styled.div`
-  justify-self: start;
-`;
-
 const NavItems = styled.ul`
   list-style: none;
   display: grid;
