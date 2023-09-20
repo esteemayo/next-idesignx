@@ -8,7 +8,15 @@ const Contact = () => {
       <Heading>Quick quote</Heading>
       <Text>Get anything Printed in no time!</Text>
       <Form>
-        <FormGroup></FormGroup>
+        <FormGroup>
+          <Input
+            id='name'
+            type='text'
+            class='form__input'
+            placeholder='Your name'
+            required
+          />
+        </FormGroup>
       </Form>
     </Container>
   );
