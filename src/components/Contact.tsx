@@ -103,7 +103,9 @@ const Heading = styled.h2`
   line-height: 1;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  color: var(--clr-purple-light-3);
+`;
 
 const Form = styled.form``;
 
