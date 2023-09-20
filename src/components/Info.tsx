@@ -64,6 +64,9 @@ const SocialWrapper = styled.div`
   /* width: 1.3rem;
   height: 1.3rem; */
   margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const StyledLink = styled(Link)`
