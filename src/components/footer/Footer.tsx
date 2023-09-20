@@ -1,12 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+
+import { menuItems } from '@/data';
 import MenuLinks from './MenuLinks';
 
 const Footer = () => {
   return (
     <Container>
-      <MenuLinks />
+      <MenuLinks links={menuItems} />
     </Container>
   );
 };
