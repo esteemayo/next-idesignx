@@ -3,12 +3,14 @@
 import styled from 'styled-components';
 
 const Hero = () => {
-  return <Container>Header</Container>;
+  return <Header>Header</Header>;
 };
 
-const Container = styled.header`
+const Header = styled.header`
   background-color: yellow;
   grid-column: full-start / full-end;
 `;
+
+const Heading = styled.h1``;
 
 export default Hero;
