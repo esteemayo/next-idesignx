@@ -30,7 +30,7 @@ const Container = styled.div`
     var(--clr-orange-light)
   );
   font-size: 1.4rem;
-  padding: 1rem;
+  padding: 1.5rem;
   color: var(--clr-white);
 
   display: grid;
