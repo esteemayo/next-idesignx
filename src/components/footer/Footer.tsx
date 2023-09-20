@@ -1,5 +1,6 @@
 'use client';
 
+import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import CopyRight from './CopyRight';
@@ -8,10 +9,15 @@ import MenuLinks from './MenuLinks';
 import { menuItems } from '@/data';
 
 const Footer = () => {
+  const copyRightLabel = useMemo(() => {
+    const now = new Date();
+    return now.getFullYear();
+  }, []);
+
   return (
     <Container>
       <MenuLinks links={menuItems} />
-      <CopyRight />
+      <CopyRight value={copyRightLabel} />
     </Container>
   );
 };
