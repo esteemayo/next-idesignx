@@ -11,4 +11,6 @@ const Container = styled.section`
   grid-column: col-start 5 / col-end 8;
 `;
 
+const Heading = styled.h2``;
+
 export default Contact;
