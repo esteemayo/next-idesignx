@@ -75,6 +75,8 @@ const NavItem = styled.li`
   }
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  justify-self: end;
+`;
 
 export default Navbar;
