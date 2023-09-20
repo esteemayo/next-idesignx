@@ -8,6 +8,7 @@ const SeenOn = () => {
 
 const Container = styled.section`
   background-color: greenyellow;
+  grid-column: center-start / center-end;
 `;
 
 export default SeenOn;
