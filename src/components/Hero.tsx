@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <Header>
       <Heading>
-        <Text>You imagine.</Text>
-        <Text>We print.</Text>
-        <Text>
+        <Text type='left'>You imagine.</Text>
+        <Text type='right'>We print.</Text>
+        <Text type='left'>
           We <b>Deliver.</b>
         </Text>
       </Heading>
