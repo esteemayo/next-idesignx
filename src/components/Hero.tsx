@@ -26,6 +26,10 @@ const Header = styled.header`
     url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 `;
 
 const Heading = styled.h1``;
