@@ -50,7 +50,9 @@ const LogoBox = styled.div`
 
 const StyledLink = styled(Link)``;
 
-const NavItems = styled.ul``;
+const NavItems = styled.ul`
+  list-style: none;
+`;
 
 const NavItem = styled.li``;
 
