@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Contact = () => {
-  return <Container>Contact</Container>;
+  return (
+    <Container>
+      <Heading>Quick quote</Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
