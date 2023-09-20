@@ -94,6 +94,10 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+  }
 `;
 
 export default Navbar;
