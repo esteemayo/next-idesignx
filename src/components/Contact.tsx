@@ -1,8 +1,16 @@
 'use client';
 
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 const Contact = () => {
+  const [data, setData] = useState({});
+
+  const handleChange = useCallback(({ target: input }) => {
+    const { name, value } = input;
+    setData((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
   return (
     <Container>
       <Heading>Quick quote</Heading>
