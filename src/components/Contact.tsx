@@ -88,6 +88,11 @@ const Container = styled.section`
   padding: 3rem;
   box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
   border-radius: 1rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 1rem;
+  align-content: start;
 `;
 
 const Heading = styled.h2``;
