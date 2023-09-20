@@ -18,6 +18,8 @@ const CopyRight: React.FC<CopyRightProps> = ({ value }) => {
 
 const Container = styled.p`
   width: 70%;
+  font-size: 1.5rem;
+  text-align: center;
 `;
 
 const Year = styled.span``;
