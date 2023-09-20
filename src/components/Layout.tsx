@@ -2,6 +2,10 @@
 
 import styled from 'styled-components';
 
+import Info from './Info';
+import Navbar from './Navbar';
+import Footer from './Footer';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -9,10 +13,10 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <Container>
-      <h1>Info</h1>
-      <h1>Navbar</h1>
+      <Info />
+      <Navbar />
       {children}
-      <h1>Footer</h1>
+      <Footer />
     </Container>
   );
 };
