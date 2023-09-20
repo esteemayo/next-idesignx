@@ -65,6 +65,8 @@ const StyledLink = styled(Link)`
     var(--clr-purple-light-3)
   );
   color: var(--clr-white);
+  border-radius: 0.5rem;
+  outline-color: var(--clr-purple-light-3);
 `;
 
 export default About;
