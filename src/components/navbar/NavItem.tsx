@@ -4,9 +4,10 @@ import styled from 'styled-components';
 interface NavItemProps {
   url: string;
   label: string;
+  pathname: string;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ url, label }) => {
+const NavItem: React.FC<NavItemProps> = ({ url, label, pathname }) => {
   return (
     <Container>
       <Link href={url}>{label}</Link>
