@@ -3,7 +3,17 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const NavItems = () => {
+type NavItemsType = {
+  id: number;
+  url: string;
+  label: string;
+};
+
+interface NavItemsProps {
+  links: Array<NavItemsType>;
+}
+
+const NavItems: React.FC<NavItemsProps> = ({ links }) => {
   return (
     <Container>
       <NavItem>
