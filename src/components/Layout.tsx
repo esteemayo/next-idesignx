@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Navbar from './navbar/Navbar';
 import Info from './Info';
 import Footer from './Footer';
+import ClientOnly from './ClientOnly';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -12,12 +13,14 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <Container>
-      <Info />
-      <Navbar />
-      {children}
-      <Footer />
-    </Container>
+    <ClientOnly>
+      <Container>
+        <Info />
+        <Navbar />
+        {children}
+        <Footer />
+      </Container>
+    </ClientOnly>
   );
 };
 
