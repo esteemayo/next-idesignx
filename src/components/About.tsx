@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const About = () => {
@@ -46,5 +47,7 @@ const Text = styled.p`
   font-size: 1.5rem;
   margin-bottom: 6rem;
 `;
+
+const StyledLink = styled(Link)``;
 
 export default About;
