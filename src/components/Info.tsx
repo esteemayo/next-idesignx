@@ -8,6 +8,7 @@ const Info = () => {
       <PhoneWrapper>
         x<PhoneNumber>+2348136119251</PhoneNumber>
       </PhoneWrapper>
+      <EmailWrapper></EmailWrapper>
     </Container>
   );
 };
