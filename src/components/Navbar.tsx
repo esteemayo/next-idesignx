@@ -8,6 +8,7 @@ const Navbar = () => {
 
 const Container = styled.nav`
   background-color: var(--clr-white);
+  padding: 2.5rem;
 `;
 
 export default Navbar;
