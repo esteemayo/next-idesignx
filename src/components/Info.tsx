@@ -70,6 +70,11 @@ const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
   color: currentColor;
+
+  &:hover,
+  &:active {
+    color: currentColor;
+  }
 `;
 
 export default Info;
