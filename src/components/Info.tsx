@@ -8,7 +8,9 @@ const Info = () => {
       <PhoneWrapper>
         x<PhoneNumber>+2348136119251</PhoneNumber>
       </PhoneWrapper>
-      <EmailWrapper></EmailWrapper>
+      <EmailWrapper>
+        x<EmailAddress>esteemdesign19@gmail.com</EmailAddress>
+      </EmailWrapper>
     </Container>
   );
 };
