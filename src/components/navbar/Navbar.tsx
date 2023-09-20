@@ -26,12 +26,6 @@ const Container = styled.nav`
   align-items: center;
 `;
 
-// const NavItems = styled.ul`
-//   list-style: none;
-//   display: grid;
-//   grid-template-columns: repeat(6, minmax(min-content, 1fr));
-// `;
-
 const NavItem = styled.li`
   a {
     &:link,
