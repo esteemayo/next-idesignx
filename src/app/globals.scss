@@ -56,10 +56,10 @@ $bp-smallest: 25em; //400px
   box-sizing: inherit;
 }
 
-// ::selection {
-//   background-color: var(--clr-pink-light);
-//   color: var(--clr-white);
-// }
+::selection {
+  background-color: var(--clr-purple-light-3);
+  color: var(--clr-white);
+}
 
 html {
   font-size: 62.5%;
