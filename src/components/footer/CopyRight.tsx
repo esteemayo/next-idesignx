@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 interface CopyRightProps {
-  value: string;
+  value: number;
 }
 
 const CopyRight: React.FC<CopyRightProps> = ({ value }) => {
