@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const Info = () => {
   return (
     <Container>
-      <PhoneWrapper>x</PhoneWrapper>
+      <PhoneWrapper>
+        x<PhoneNumber>+2348136119251</PhoneNumber>
+      </PhoneWrapper>
     </Container>
   );
 };
