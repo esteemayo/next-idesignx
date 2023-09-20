@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Info = () => {
   return (
     <Container>
-      <PhoneWrapper></PhoneWrapper>
+      <PhoneWrapper>x</PhoneWrapper>
     </Container>
   );
 };
@@ -15,5 +15,7 @@ const Container = styled.div`
 `;
 
 const PhoneWrapper = styled.div``;
+
+const PhoneNumber = styled.span``;
 
 export default Info;
