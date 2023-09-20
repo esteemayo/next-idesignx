@@ -4,31 +4,13 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 import Logo from './Logo';
+import NavItems from './NavItems';
 
 const Navbar = () => {
   return (
     <Container>
       <Logo />
-      <NavItems>
-        <NavItem>
-          <Link href='/'>Home</Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/designs'>Design</Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/prints'>Prints</Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/'>Gallery</Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/about'>About</Link>
-        </NavItem>
-        <NavItem>
-          <Link href='/contact'>Contact</Link>
-        </NavItem>
-      </NavItems>
+      <NavItems />
       <Button>Upload your design</Button>
     </Container>
   );
@@ -44,11 +26,11 @@ const Container = styled.nav`
   align-items: center;
 `;
 
-const NavItems = styled.ul`
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(min-content, 1fr));
-`;
+// const NavItems = styled.ul`
+//   list-style: none;
+//   display: grid;
+//   grid-template-columns: repeat(6, minmax(min-content, 1fr));
+// `;
 
 const NavItem = styled.li`
   a {
