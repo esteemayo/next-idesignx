@@ -7,7 +7,7 @@ const Navbar = () => {
 };
 
 const Container = styled.nav`
-  background-color: orangered;
+  background-color: var(--clr-white);
 `;
 
 export default Navbar;
