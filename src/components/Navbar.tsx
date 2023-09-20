@@ -37,6 +37,11 @@ const Navbar = () => {
 const Container = styled.nav`
   background-color: var(--clr-white);
   padding: 2.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  gap: 5rem;
+  align-items: center;
 `;
 
 const LogoBox = styled.div``;
