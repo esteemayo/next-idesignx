@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 
-import Info from './Info';
 import Navbar from './Navbar';
+import Info from './Info';
 import Footer from './Footer';
 
 interface LayoutProps {
