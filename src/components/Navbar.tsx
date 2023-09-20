@@ -55,7 +55,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  width: 4.5rem;
+  height: 4.5rem;
+`;
 
 const NavItems = styled.ul`
   list-style: none;
