@@ -71,6 +71,10 @@ const StyledLink = styled(Link)`
   &:active {
     color: currentColor;
   }
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 export default About;
