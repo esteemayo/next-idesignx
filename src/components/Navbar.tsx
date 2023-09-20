@@ -92,6 +92,7 @@ const Button = styled.button`
   );
   color: var(--clr-white);
   border-radius: 0.5rem;
+  cursor: pointer;
 `;
 
 export default Navbar;
