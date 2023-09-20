@@ -4,14 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
 
+import Logo from './Logo';
+
 const Navbar = () => {
   return (
     <Container>
-      <LogoBox>
-        <StyledLink href='/'>
-          <StyledImage src='/img/logo.png' width={45} height={45} alt='logo' />
-        </StyledLink>
-      </LogoBox>
+      <Logo />
       <NavItems>
         <NavItem>
           <Link href='/'>Home</Link>
