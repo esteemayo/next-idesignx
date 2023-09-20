@@ -75,6 +75,10 @@ const StyledLink = styled(Link)`
   &:active {
     color: currentColor;
   }
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export default Info;
