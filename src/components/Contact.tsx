@@ -29,7 +29,19 @@ const Contact = () => {
           <Label htmlFor='email'>Your email</Label>
         </FormGroup>
         <FormGroup>
-          <Select id='category' name='category' required></Select>
+          <Select id='category' name='category' required>
+            <Option value=''>Select products</Option>
+            <Option value='Logo Design'>Logo Design</Option>
+            <Option value='Branding'>Branding</Option>
+            <Option value='Product Packaging'>Product Packaging</Option>
+            <Option value='Corporate Gifts'>Corporate Gifts</Option>
+            <Option value='Custom Shirts'>Custom Shirts</Option>
+            <Option value='Stationery Materials'>Stationery Materials</Option>
+            <Option value='Signage'>Signage</Option>
+            <Option value='Canvas Prints'>Canvas Prints</Option>
+            <Option value='Fliers & Media prints'>Fliers & Media prints</Option>
+            <Option value='Posters'>Posters</Option>
+          </Select>
         </FormGroup>
       </Form>
     </Container>
