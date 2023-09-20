@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <Container>
       <LogoBox>
-        <Logo href='/'>Logo</Logo>
+        <StyledLink href='/'>Logo</StyledLink>
       </LogoBox>
       <NavItems>
         <NavItem>
@@ -48,7 +48,7 @@ const LogoBox = styled.div`
   justify-self: start;
 `;
 
-const Logo = styled(Link)``;
+const StyledLink = styled(Link)``;
 
 const NavItems = styled.ul``;
 
