@@ -8,6 +8,11 @@ const About = () => {
       <Heading>
         We are all about <span>xpressing brands</span>
       </Heading>
+      <Text>
+        We are a Creative Design, Brand development and activation firm. We aim
+        to present brands in grand style. Focusing on each drop in a massive
+        rainfall is a way of life to us.
+      </Text>
     </Container>
   );
 };
