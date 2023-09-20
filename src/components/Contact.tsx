@@ -7,7 +7,9 @@ const Contact = () => {
     <Container>
       <Heading>Quick quote</Heading>
       <Text>Get anything Printed in no time!</Text>
-      <Form></Form>
+      <Form>
+        <FormGroup></FormGroup>
+      </Form>
     </Container>
   );
 };
