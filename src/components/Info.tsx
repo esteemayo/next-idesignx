@@ -32,6 +32,12 @@ const Container = styled.div`
   font-size: 1.4rem;
   padding: 1rem;
   color: var(--color-white);
+
+  display: grid;
+  grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
+  gap: 6rem;
+  align-items: center;
+  justify-items: center;
 `;
 
 const PhoneWrapper = styled.div``;
