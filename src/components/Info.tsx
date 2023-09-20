@@ -51,6 +51,9 @@ const PhoneNumber = styled.span``;
 
 const EmailWrapper = styled.div`
   grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const EmailAddress = styled.span``;
