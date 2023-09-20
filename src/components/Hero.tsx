@@ -24,7 +24,6 @@ const Header = styled.header`
       rgba(3, 3, 3, 0.7)
     ),
     url(../img/hero.jpg);
-  color: var(--clr-white);
   background-size: cover;
   background-position: center;
 
@@ -43,7 +42,7 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5rem;
-  color: currentColor;
+  color: var(--clr-white);
   line-height: 1;
 `;
 
