@@ -50,4 +50,6 @@ const Input = styled.input``;
 
 const Label = styled.label``;
 
+const Select = styled.select``;
+
 export default Contact;
