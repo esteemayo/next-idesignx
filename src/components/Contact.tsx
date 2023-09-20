@@ -9,13 +9,8 @@ const Contact = () => {
       <Text>Get anything Printed in no time!</Text>
       <Form>
         <FormGroup>
-          <Input
-            id='name'
-            type='text'
-            class='form__input'
-            placeholder='Your name'
-            required
-          />
+          <Input id='name' type='text' placeholder='Your name' required />
+          <Label htmlFor='name'>Your name</Label>
         </FormGroup>
       </Form>
     </Container>
@@ -36,5 +31,7 @@ const Form = styled.form``;
 const FormGroup = styled.div``;
 
 const Input = styled.input``;
+
+const Label = styled.label``;
 
 export default Contact;
