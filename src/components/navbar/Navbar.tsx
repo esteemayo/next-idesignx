@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
 import NavItems from './NavItems';
@@ -8,10 +9,12 @@ import NavItems from './NavItems';
 import { navItems } from '@/data';
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <Container>
       <Logo />
-      <NavItems links={navItems} />
+      <NavItems links={navItems} pathname={pathname} />
       <Button>Upload your design</Button>
     </Container>
   );
