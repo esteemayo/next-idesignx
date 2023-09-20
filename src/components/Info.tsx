@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Info = () => {
-  return <Container>Info</Container>;
+  return (
+    <Container>
+      <PhoneWrapper></PhoneWrapper>
+    </Container>
+  );
 };
 
 const Container = styled.div`
