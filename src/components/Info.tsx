@@ -11,6 +11,7 @@ const Info = () => {
       <EmailWrapper>
         x<EmailAddress>esteemdesign19@gmail.com</EmailAddress>
       </EmailWrapper>
+      <SocialWrapper></SocialWrapper>
     </Container>
   );
 };
