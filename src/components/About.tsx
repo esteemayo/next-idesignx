@@ -54,6 +54,8 @@ const StyledLink = styled(Link)`
   border: none;
   text-decoration: none;
   text-transform: capitalize;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
 `;
 
 export default About;
