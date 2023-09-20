@@ -21,12 +21,24 @@ const Container = styled.li`
 `;
 
 const StyledLink = styled(Link)`
-  display: inline-block;
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem;
   color: inherit;
   text-align: center;
+
+  &:hover,
+  &:active {
+    background-image: linear-gradient(
+      to right bottom,
+      var(--clr-purple-dark),
+      var(--clr-purple-light-1),
+      var(--clr-purple-light-2),
+      var(--clr-purple-light-3)
+    );
+    transform: translateY(-3px) scale(1.1);
+  }
 `;
 
 export default MenuLink;
