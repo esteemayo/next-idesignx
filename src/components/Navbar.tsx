@@ -62,6 +62,9 @@ const NavItem = styled.li`
     &:visited {
       text-decoration: none;
       text-transform: capitalize;
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: var(--clr-gray);
     }
   }
 `;
