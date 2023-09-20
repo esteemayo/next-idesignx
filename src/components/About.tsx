@@ -55,6 +55,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   text-transform: capitalize;
   padding: 1rem 3rem;
+  font-weight: 400;
   font-size: 1.5rem;
   background-image: linear-gradient(
     to right bottom,
