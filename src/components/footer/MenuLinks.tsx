@@ -2,8 +2,19 @@
 
 import styled from 'styled-components';
 import MenuLink from './MenuLink';
+import React from 'react';
 
-const MenuLinks = () => {
+type MenuLinksType = {
+  id: number;
+  url: string;
+  label: string;
+};
+
+interface MenuLinksProps {
+  links: Array<MenuLinksType>;
+}
+
+const MenuLinks: React.FC<MenuLinksProps> = ({ links }) => {
   return (
     <Container>
       <MenuLink />
