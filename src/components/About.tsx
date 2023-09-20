@@ -57,7 +57,7 @@ const StyledLink = styled(Link)`
   padding: 1rem 3rem;
   font-size: 1.5rem;
   background-image: linear-gradient(
-    to left top,
+    to right bottom,
     var(--clr-purple-dark),
     var(--clr-purple-light-1),
     var(--clr-purple-light-2),
