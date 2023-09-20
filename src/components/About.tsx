@@ -34,6 +34,7 @@ const Heading = styled.h2`
   text-transform: capitalize;
   color: var(--clr-purple-light-3);
   line-height: 1;
+  margin-bottom: 4rem;
 
   span {
     display: block;
