@@ -29,7 +29,12 @@ const Container = styled.section`
   align-items: flex-start;
 `;
 
-const Heading = styled.h2``;
+const Heading = styled.h2`
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: var(--clr-purple-light-3);
+  line-height: 1;
+`;
 
 const Text = styled.p`
   margin-bottom: 6rem;
