@@ -81,8 +81,11 @@ const Contact = () => {
 };
 
 const Container = styled.section`
-  background-color: crimson;
+  background-color: #f9f9f9;
   grid-column: col-start 5 / col-end 8;
+  margin: 8rem;
+  transform: translateY(-28rem);
+  padding: 3rem;
 `;
 
 const Heading = styled.h2``;
