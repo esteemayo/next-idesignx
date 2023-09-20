@@ -65,6 +65,7 @@ const NavItem = styled.li`
       font-weight: 300;
       font-size: 1.6rem;
       color: var(--clr-gray);
+      outline-color: #eee;
     }
 
     &:hover,
