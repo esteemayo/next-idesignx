@@ -49,10 +49,6 @@ const LogoBox = styled.div`
   justify-self: start;
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
 const NavItems = styled.ul`
   list-style: none;
   display: grid;
