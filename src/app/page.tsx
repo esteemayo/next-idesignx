@@ -6,8 +6,8 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Hero from '@/components/Hero';
 import Printings from '@/components/Printings';
-import Products from '@/components/Products';
 import SeenOn from '@/components/SeenOn';
+import Products from '@/components/Products';
 
 const Home = () => {
   return (
