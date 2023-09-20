@@ -21,10 +21,12 @@ const Container = styled.li`
 `;
 
 const StyledLink = styled(Link)`
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   padding: 1.5rem;
   color: inherit;
+  text-align: center;
 `;
 
 export default MenuLink;
