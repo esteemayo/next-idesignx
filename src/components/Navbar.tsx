@@ -64,14 +64,14 @@ const NavItem = styled.li`
       text-transform: capitalize;
       font-weight: 300;
       font-size: 1.6rem;
-      color: var(--clr-gray);
+      color: var(--clr-purple-light-3);
       outline-color: #eee;
       transition: all 0.2s;
     }
 
     &:hover,
     &:active {
-      color: var(--clr-purple-light-3);
+      color: var(--clr-purple-light-2);
     }
   }
 `;
