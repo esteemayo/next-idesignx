@@ -2,13 +2,16 @@
 
 import styled from 'styled-components';
 
-import { menuItems } from '@/data';
+import CopyRight from './CopyRight';
 import MenuLinks from './MenuLinks';
+
+import { menuItems } from '@/data';
 
 const Footer = () => {
   return (
     <Container>
       <MenuLinks links={menuItems} />
+      <CopyRight />
     </Container>
   );
 };
