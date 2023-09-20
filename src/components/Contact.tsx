@@ -28,6 +28,9 @@ const Contact = () => {
           />
           <Label htmlFor='email'>Your email</Label>
         </FormGroup>
+        <FormGroup>
+          <Select id='category' name='category' required></Select>
+        </FormGroup>
       </Form>
     </Container>
   );
