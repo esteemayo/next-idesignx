@@ -9,8 +9,24 @@ const Contact = () => {
       <Text>Get anything Printed in no time!</Text>
       <Form>
         <FormGroup>
-          <Input id='name' type='text' placeholder='Your name' required />
+          <Input
+            id='name'
+            name='name'
+            type='text'
+            placeholder='Your name'
+            required
+          />
           <Label htmlFor='name'>Your name</Label>
+        </FormGroup>
+        <FormGroup>
+          <Input
+            id='email'
+            name='email'
+            type='email'
+            placeholder='Your email'
+            required
+          />
+          <Label htmlFor='email'>Your email</Label>
         </FormGroup>
       </Form>
     </Container>
