@@ -52,6 +52,8 @@ const Text = styled.p`
 const StyledLink = styled(Link)`
   display: inline-block;
   border: none;
+  text-decoration: none;
+  text-transform: capitalize;
 `;
 
 export default About;
