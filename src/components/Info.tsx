@@ -66,6 +66,10 @@ const SocialWrapper = styled.div`
   margin-right: 0.5rem;
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  display: inline-block;
+  text-decoration: none;
+  color: currentColor;
+`;
 
 export default Info;
