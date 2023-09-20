@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Hero = () => {
-  return <Header>Header</Header>;
+  return (
+    <Header>
+      <Heading></Heading>
+    </Header>
+  );
 };
 
 const Header = styled.header`
