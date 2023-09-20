@@ -20,6 +20,9 @@ const Container = styled.p`
   width: 70%;
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Year = styled.span``;
