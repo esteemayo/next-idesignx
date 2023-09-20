@@ -44,7 +44,9 @@ const PhoneWrapper = styled.div`
   grid-column: 1 / 2;
 `;
 
-const PhoneNumber = styled.span``;
+const PhoneNumber = styled.span`
+  grid-column: 2 / 3;
+`;
 
 const EmailWrapper = styled.div``;
 
