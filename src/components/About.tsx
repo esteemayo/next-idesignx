@@ -3,7 +3,13 @@
 import styled from 'styled-components';
 
 const About = () => {
-  return <Container>About</Container>;
+  return (
+    <Container>
+      <Heading>
+        We are all about <span>xpressing brands</span>
+      </Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
