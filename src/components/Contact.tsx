@@ -98,6 +98,9 @@ const Container = styled.section`
 const Heading = styled.h2`
   font-weight: 400;
   font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--clr-purple-light-3);
+  line-height: 1;
 `;
 
 const Text = styled.p``;
