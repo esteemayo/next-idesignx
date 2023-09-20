@@ -16,8 +16,13 @@ const MenuLink: React.FC<MenuLinkProps> = ({ url, label }) => {
   );
 };
 
-const Container = styled.li``;
+const Container = styled.li`
+  color: currentColor;
+`;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
 
 export default MenuLink;
