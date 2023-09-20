@@ -41,6 +41,8 @@ const Heading = styled.h1`
   justify-self: center;
 `;
 
-const Text = styled.span``;
+const Text = styled.span`
+  display: block;
+`;
 
 export default Hero;
