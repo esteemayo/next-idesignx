@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -7,7 +8,9 @@ const Navbar = () => {
   return (
     <Container>
       <LogoBox>
-        <StyledLink href='/'>Logo</StyledLink>
+        <StyledLink href='/'>
+          <StyledImage src='/img/logo.png' width={45} height={45} alt='logo' />
+        </StyledLink>
       </LogoBox>
       <NavItems>
         <NavItem>
@@ -51,6 +54,8 @@ const LogoBox = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;
+
+const StyledImage = styled(Image)``;
 
 const NavItems = styled.ul`
   list-style: none;
