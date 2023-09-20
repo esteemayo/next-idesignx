@@ -66,6 +66,11 @@ const NavItem = styled.li`
       font-size: 1.6rem;
       color: var(--clr-gray);
     }
+
+    &:hover,
+    &:active {
+      color: var(--clr-purple-light-3);
+    }
   }
 `;
 
