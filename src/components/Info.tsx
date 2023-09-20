@@ -42,6 +42,9 @@ const Container = styled.div`
 
 const PhoneWrapper = styled.div`
   grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const PhoneNumber = styled.span``;
@@ -55,8 +58,8 @@ const EmailAddress = styled.span``;
 const SocialWrapper = styled.div`
   align-self: center;
   justify-self: end;
-  width: 1.3rem;
-  height: 1.3rem;
+  /* width: 1.3rem;
+  height: 1.3rem; */
   margin-right: 0.5rem;
 `;
 
