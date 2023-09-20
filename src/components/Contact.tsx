@@ -8,7 +8,7 @@ const Contact = () => {
 
 const Container = styled.section`
   background-color: crimson;
-  grid-column: col-start 5 / center-end;
+  grid-column: col-start 5 / col-end 8;
 `;
 
 export default Contact;

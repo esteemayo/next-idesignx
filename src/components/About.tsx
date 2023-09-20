@@ -8,7 +8,7 @@ const About = () => {
 
 const Container = styled.section`
   background-color: darkslateblue;
-  grid-column: center-start / col-end 4;
+  grid-column: col-start 1 / col-end 4;
 `;
 
 export default About;
