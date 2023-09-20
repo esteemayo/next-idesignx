@@ -11,9 +11,10 @@ type NavItemsType = {
 
 interface NavItemsProps {
   links: Array<NavItemsType>;
+  pathname: string;
 }
 
-const NavItems: React.FC<NavItemsProps> = ({ links }) => {
+const NavItems: React.FC<NavItemsProps> = ({ links, pathname }) => {
   return (
     <Container>
       {links.map((link) => {
