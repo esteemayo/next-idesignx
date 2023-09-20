@@ -17,7 +17,9 @@ interface MenuLinksProps {
 const MenuLinks: React.FC<MenuLinksProps> = ({ links }) => {
   return (
     <Container>
-      <MenuLink />
+      {links.map((link) => {
+        return <MenuLink key={link.id} {...link} />;
+      })}
     </Container>
   );
 };
