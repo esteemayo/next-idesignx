@@ -46,6 +46,7 @@ const Contact = () => {
         <FormGroup>
           <TextArea id='content' name='content' required />
         </FormGroup>
+        <Button type='submit'>Submit</Button>
       </Form>
     </Container>
   );
