@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useMemo } from 'react';
 import styled from 'styled-components';
 
 interface NavItemProps {
@@ -8,15 +9,19 @@ interface NavItemProps {
 }
 
 const NavItem: React.FC<NavItemProps> = ({ url, label, pathname }) => {
+  const isActive = useMemo(() => {
+    return url === pathname;
+  }, [pathname, url]);
+
   return (
-    <Container>
+    <Container isActive={isActive}>
       <Link href={url}>{label}</Link>
     </Container>
   );
 };
 
 const Container = styled.li`
-  color: var(--clr-purple-light-3);
+  color: ${({ isActive }) => setActiveColor(isActive)};
 
   a {
     &:link,
@@ -36,5 +41,9 @@ const Container = styled.li`
     }
   }
 `;
+
+const setActiveColor = (isActive: boolean) => {
+  return isActive ? 'var(--clr-purple-light-1)' : 'var(--clr-purple-light-3)';
+};
 
 export default NavItem;
