@@ -8,6 +8,7 @@ const Printings = () => {
 
 const Container = styled.section`
   background-color: red;
+  grid-column: full-start / full-end;
 `;
 
 export default Printings;
