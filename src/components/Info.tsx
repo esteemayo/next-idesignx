@@ -44,11 +44,11 @@ const PhoneWrapper = styled.div`
   grid-column: 1 / 2;
 `;
 
-const PhoneNumber = styled.span`
+const PhoneNumber = styled.span``;
+
+const EmailWrapper = styled.div`
   grid-column: 2 / 3;
 `;
-
-const EmailWrapper = styled.div``;
 
 const EmailAddress = styled.span``;
 
