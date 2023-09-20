@@ -55,4 +55,6 @@ const Label = styled.label``;
 
 const Select = styled.select``;
 
+const Option = styled.option``;
+
 export default Contact;
