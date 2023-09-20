@@ -23,6 +23,7 @@ const Container = styled.p`
   margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
+  color: currentColor;
 `;
 
 const Year = styled.span``;
