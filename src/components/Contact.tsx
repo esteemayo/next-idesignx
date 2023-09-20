@@ -74,4 +74,6 @@ const Option = styled.option``;
 
 const TextArea = styled.textarea``;
 
+const Button = styled.button``;
+
 export default Contact;
