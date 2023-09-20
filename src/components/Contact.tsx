@@ -11,6 +11,14 @@ const Contact = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
+  const handleSubmit = useCallback(
+    (e: React.MouseEvent<HTMLFormControlsCollection>) => {
+      e.preventDefault();
+      console.log({ ...data });
+    },
+    [data]
+  );
+
   return (
     <Container>
       <Heading>Quick quote</Heading>
