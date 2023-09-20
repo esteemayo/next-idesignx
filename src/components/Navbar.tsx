@@ -29,6 +29,7 @@ const Navbar = () => {
           <Link href='/contact'></Link>
         </NavItem>
       </NavItems>
+      <Button>Upload your design</Button>
     </Container>
   );
 };
@@ -45,5 +46,7 @@ const Logo = styled(Link)``;
 const NavItems = styled.ul``;
 
 const NavItem = styled.li``;
+
+const Button = styled.button``;
 
 export default Navbar;
