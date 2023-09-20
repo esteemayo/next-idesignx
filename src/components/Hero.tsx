@@ -39,6 +39,12 @@ const Heading = styled.h1`
   grid-area: 2 / 1 / 3 / span 3;
   align-self: center;
   justify-self: center;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: var(--clr-white);
+  line-height: 1;
 `;
 
 const Text = styled.span`
