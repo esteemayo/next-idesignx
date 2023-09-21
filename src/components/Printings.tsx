@@ -22,4 +22,6 @@ const Container = styled.section`
 
 const Heading = styled.h4``;
 
+const Wrapper = styled.div``;
+
 export default Printings;
