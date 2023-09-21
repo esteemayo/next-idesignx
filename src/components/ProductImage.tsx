@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 interface ProductImageProps {
-  img: string;
+  img: string | null | undefined;
 }
 
 const ProductImage: React.FC<ProductImageProps> = ({ img }) => {
