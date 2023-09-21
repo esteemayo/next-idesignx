@@ -194,7 +194,9 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   text-transform: capitalize;
-  font-size: 2rem;
+  padding: 1rem 3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
 `;
 
 export default Contact;
