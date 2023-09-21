@@ -5,24 +5,23 @@ import styled from 'styled-components';
 interface SelectProps {
   name: string;
   label: string;
+  options: Array<object>;
   onChange(e: React.MouseEvent<HTMLFormControlsCollection>): void;
 }
 
-const Select: React.FC<SelectProps> = ({ name, label, onChange }) => {
+const Select: React.FC<SelectProps> = ({ name, label, options, onChange }) => {
   return (
     <FormGroup>
       <StyledSelect id={name} name={name} onChange={onChange} required>
         <Option value=''>{label}</Option>
-        <Option value='Logo Design'>Logo Design</Option>
-        <Option value='Branding'>Branding</Option>
-        <Option value='Product Packaging'>Product Packaging</Option>
-        <Option value='Corporate Gifts'>Corporate Gifts</Option>
-        <Option value='Custom Shirts'>Custom Shirts</Option>
-        <Option value='Stationery Materials'>Stationery Materials</Option>
-        <Option value='Signage'>Signage</Option>
-        <Option value='Canvas Prints'>Canvas Prints</Option>
-        <Option value='Fliers & Media prints'>Fliers & Media prints</Option>
-        <Option value='Posters'>Posters</Option>
+        {options.map((option) => {
+          const { id, text } = option;
+          return (
+            <Option key={id} value={text}>
+              {text}
+            </Option>
+          );
+        })}
       </StyledSelect>
     </FormGroup>
   );
