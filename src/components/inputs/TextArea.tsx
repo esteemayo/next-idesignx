@@ -5,6 +5,7 @@ import styled from 'styled-components';
 interface TextAreaProps {
   name: string;
   label: string;
+  value?: string;
   placeholder: string;
   onChange(): void;
 }
@@ -12,6 +13,7 @@ interface TextAreaProps {
 const TextArea: React.FC<TextAreaProps> = ({
   name,
   label,
+  value,
   placeholder,
   onChange,
 }) => {
@@ -20,6 +22,7 @@ const TextArea: React.FC<TextAreaProps> = ({
       <StyledTextArea
         id={name}
         name={name}
+        value={value}
         placeholder={placeholder}
         onChange={onChange}
         required

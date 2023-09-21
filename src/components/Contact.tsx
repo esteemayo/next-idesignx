@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
 import Input from './inputs/Input';
+import TextArea from './inputs/TextArea';
 
 const Contact = () => {
   const [data, setData] = useState({});
@@ -59,16 +60,12 @@ const Contact = () => {
             <Option value='Posters'>Posters</Option>
           </Select>
         </FormGroup>
-        <FormGroup>
-          <TextArea
-            id='content'
-            name='content'
-            onChange={handleChange}
-            placeholder='Content'
-            required
-          />
-          <Label htmlFor='content'>Content</Label>
-        </FormGroup>
+        <TextArea
+          name='content'
+          label='Content'
+          placeholder='Content'
+          onChange={handleChange}
+        />
         <Button type='submit'>Submit</Button>
       </Form>
     </Container>
@@ -145,41 +142,41 @@ const Option = styled.option`
   letter-spacing: 0.5rem;
 `;
 
-const TextArea = styled.textarea`
-  width: 100%;
-  display: inline-block;
-  border: none;
-  resize: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  padding: 2rem;
-  background-color: var(--clr-white);
-  color: var(--clr-gray-dark-2);
-  outline-color: var(--clr-purple-light-3);
-  caret-color: var(--clr-purple-light-3);
-  transition: all 0.3s;
+// const TextArea = styled.textarea`
+//   width: 100%;
+//   display: inline-block;
+//   border: none;
+//   resize: none;
+//   font-family: inherit;
+//   font-size: 1.5rem;
+//   padding: 2rem;
+//   background-color: var(--clr-white);
+//   color: var(--clr-gray-dark-2);
+//   outline-color: var(--clr-purple-light-3);
+//   caret-color: var(--clr-purple-light-3);
+//   transition: all 0.3s;
 
-  &::placeholder {
-    font-size: 1.4rem;
-    color: var(--clr-gray-dark-2);
-  }
+//   &::placeholder {
+//     font-size: 1.4rem;
+//     color: var(--clr-gray-dark-2);
+//   }
 
-  &:focus {
-    outline: none;
-    border-bottom: 3px solid var(--clr-green);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
-  }
+//   &:focus {
+//     outline: none;
+//     border-bottom: 3px solid var(--clr-green);
+//     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
+//   }
 
-  &:focus:invalid {
-    border-bottom: 3px solid var(--clr-orange-dark);
-  }
+//   &:focus:invalid {
+//     border-bottom: 3px solid var(--clr-orange-dark);
+//   }
 
-  &:placeholder-shown + ${Label} {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem);
-  }
-`;
+//   &:placeholder-shown + ${Label} {
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(-4rem);
+//   }
+// `;
 
 const Button = styled.button`
   margin-top: 2rem;
