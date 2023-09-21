@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <Container>
       <Logo />
-      <NavItems links={navItems} pathname={pathname} />
+      <NavItems links={navItems} path={pathname} />
       <Button>Upload your design</Button>
     </Container>
   );

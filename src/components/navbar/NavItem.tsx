@@ -5,13 +5,13 @@ import { useMemo } from 'react';
 interface NavItemProps {
   url: string;
   label: string;
-  pathname: string;
+  path: string;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ url, label, pathname }) => {
+const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   const isActive = useMemo(() => {
-    return url === pathname;
-  }, [pathname, url]);
+    return url === path;
+  }, [path, url]);
 
   return (
     <Container isActive={isActive}>
