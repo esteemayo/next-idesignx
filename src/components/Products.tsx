@@ -15,7 +15,9 @@ const Products = () => {
           return <ProductImage key={item.id} {...item} />;
         })}
       </Wrapper>
-      <StyledLink href='/products'>All products</StyledLink>
+      <Box>
+        <StyledLink href='/products'>All products</StyledLink>
+      </Box>
     </Container>
   );
 };
