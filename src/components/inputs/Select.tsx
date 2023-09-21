@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import { FormGroup } from '../form/FormGroup';
 import { Option, StyledSelect } from '../form/StyledSelect';
 
