@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import Card from './Card';
 
 const Printings = () => {
   return (
@@ -11,7 +12,9 @@ const Printings = () => {
           and <b>design</b> services
         </span>
       </Heading>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Card />
+      </Wrapper>
     </Container>
   );
 };
