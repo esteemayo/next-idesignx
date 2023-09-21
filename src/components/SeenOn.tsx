@@ -45,7 +45,13 @@ const Text = styled.div`
   }
 `;
 
-const LogoContainer = styled.div``;
+const LogoContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, minmax(min-content, 1fr));
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+`;
 
 const StyledImage = styled(Image)``;
 
