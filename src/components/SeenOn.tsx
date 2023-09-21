@@ -18,4 +18,6 @@ const Container = styled.section`
 
 const Text = styled.div``;
 
+const LogoContainer = styled.div``;
+
 export default SeenOn;
