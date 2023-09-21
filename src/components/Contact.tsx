@@ -126,6 +126,7 @@ const Input = styled.input`
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
   border-radius: 2px;
+  outline-color: var(--clr-purple-light-3);
   caret-color: var(--clr-purple-light-3);
 `;
 
