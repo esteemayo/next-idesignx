@@ -32,6 +32,8 @@ const Container = styled.section`
   background-position: center;
 `;
 
+const Wrapper = styled.div``;
+
 const Heading = styled.h4`
   font-weight: 400;
   font-size: 3rem;
