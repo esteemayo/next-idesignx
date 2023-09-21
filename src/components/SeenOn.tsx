@@ -48,11 +48,15 @@ const Text = styled.div`
 const LogoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(min-content, 1fr));
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
   justify-items: center;
 `;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  max-width: 100%;
+  max-height: 5rem;
+  object-fit: contain;
+`;
 
 export default SeenOn;
