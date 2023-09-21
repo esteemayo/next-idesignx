@@ -129,8 +129,10 @@ const Input = styled.input`
 `;
 
 const Label = styled.label`
+  display: block;
   font-weight: 700;
   font-size: 1.2rem;
+  color: var(--clr-gray-dark-2);
 `;
 
 const Select = styled.select``;
