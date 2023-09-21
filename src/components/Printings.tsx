@@ -11,9 +11,9 @@ const Printings = () => {
       <Wrapper>
         <Heading>
           We produce the best <Bold>printing</Bold>
-          <span>
+          <Span>
             and <Bold>design</Bold> services
-          </span>
+          </Span>
         </Heading>
         <Box>
           {printItems.map((item) => {
