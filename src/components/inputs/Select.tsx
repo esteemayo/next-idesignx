@@ -34,10 +34,4 @@ const Select: React.FC<SelectProps> = ({ name, label, options, onChange }) => {
   );
 };
 
-// const Option = styled.option`
-//   font-size: 1.4rem;
-//   color: #bbb;
-//   letter-spacing: 0.5rem;
-// `;
-
 export default Select;
