@@ -31,8 +31,8 @@ const Container = styled.section`
 
 const Heading = styled.h4`
   font-weight: 400;
-  font-size: 1.9rem;
-  text-transform: capitalize;
+  font-size: 3rem;
+  text-transform: none;
 `;
 
 const Wrapper = styled.div``;
