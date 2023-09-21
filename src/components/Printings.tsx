@@ -23,6 +23,7 @@ const Printings = () => {
 
 const Container = styled.section`
   grid-column: full-start / full-end;
+  margin-bottom: 7rem;
 `;
 
 const Wrapper = styled.div`
