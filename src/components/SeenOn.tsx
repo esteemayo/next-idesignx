@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const SeenOn = () => {
@@ -20,5 +21,7 @@ const Container = styled.section`
 const Text = styled.div``;
 
 const LogoContainer = styled.div``;
+
+const StyledImage = styled(Image)``;
 
 export default SeenOn;
