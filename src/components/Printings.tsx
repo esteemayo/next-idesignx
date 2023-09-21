@@ -53,6 +53,8 @@ const Heading = styled.h4`
   }
 `;
 
+const Bold = styled.b``;
+
 const Box = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
