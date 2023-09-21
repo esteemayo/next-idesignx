@@ -128,6 +128,11 @@ const Input = styled.input`
   border-radius: 2px;
   outline-color: var(--clr-purple-light-3);
   caret-color: var(--clr-purple-light-3);
+
+  &::placeholder {
+    font-size: 1.4rem;
+    color: var(--clr-gray-dark-2);
+  }
 `;
 
 const Label = styled.label`
