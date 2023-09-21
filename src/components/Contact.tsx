@@ -139,6 +139,10 @@ const Input = styled.input`
     border-bottom: 3px solid var(--clr-green);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
   }
+
+  &:focus:invalid {
+    border-bottom: 3px solid var(--clr-orange-dark);
+  }
 `;
 
 const Label = styled.label`
