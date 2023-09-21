@@ -33,6 +33,7 @@ const Heading = styled.h4`
   font-weight: 400;
   font-size: 3rem;
   text-transform: none;
+  line-height: 1.1;
 `;
 
 const Wrapper = styled.div``;
