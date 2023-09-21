@@ -6,6 +6,7 @@ const Products = () => {
   return (
     <Container>
       <Heading>Our products</Heading>
+      <Wrapper></Wrapper>
     </Container>
   );
 };
