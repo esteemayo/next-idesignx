@@ -19,4 +19,6 @@ const Container = styled.section`
 
 const Heading = styled.h3``;
 
+const Wrapper = styled.figure``;
+
 export default Products;
