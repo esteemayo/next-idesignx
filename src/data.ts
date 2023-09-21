@@ -77,3 +77,18 @@ export const productImages = [
     img: '/img/stationery-2.jpg',
   },
 ];
+
+export const printItems = [
+  {
+    id: 1,
+    title: 'Print',
+    desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
+    icon: '',
+  },
+  {
+    id: 2,
+    title: 'Design',
+    desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
+    icon: '',
+  },
+];
