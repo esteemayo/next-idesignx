@@ -144,7 +144,11 @@ const Label = styled.label`
   margin-top: 0.7rem;
 `;
 
-const Select = styled.select``;
+const Select = styled.select`
+  width: 100%;
+  display: inline-block;
+  border: none;
+`;
 
 const Option = styled.option``;
 
