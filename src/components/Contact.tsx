@@ -133,6 +133,8 @@ const Label = styled.label`
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--clr-gray-dark-2);
+  margin-left: 2rem;
+  margin-top: 0.7rem;
 `;
 
 const Select = styled.select``;
