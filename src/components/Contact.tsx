@@ -159,7 +159,8 @@ const Select = styled.select`
 `;
 
 const Option = styled.option`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: #bbb;
   letter-spacing: 0.5rem;
 `;
 
