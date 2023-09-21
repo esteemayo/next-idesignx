@@ -9,9 +9,11 @@ const Products = () => {
   return (
     <Container>
       <Heading>Our products</Heading>
-      {productImages.map((item) => {
-        return <ProductImage key={item.id} {...item} />;
-      })}
+      <Wrapper>
+        {productImages.map((item) => {
+          return <ProductImage key={item.id} {...item} />;
+        })}
+      </Wrapper>
     </Container>
   );
 };
