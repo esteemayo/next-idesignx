@@ -55,7 +55,9 @@ const Heading = styled.h4`
 
 const Bold = styled.b``;
 
-const Span = styled.span``;
+const Span = styled.span`
+  display: block;
+`;
 
 const Box = styled.div`
   display: grid;
