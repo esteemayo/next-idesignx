@@ -152,7 +152,11 @@ const Select = styled.select`
 
 const Option = styled.option``;
 
-const TextArea = styled.textarea``;
+const TextArea = styled.textarea`
+  width: 100%;
+  display: inline-block;
+  border: none;
+`;
 
 const Button = styled.button``;
 
