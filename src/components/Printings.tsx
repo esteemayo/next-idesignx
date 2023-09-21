@@ -3,7 +3,16 @@
 import styled from 'styled-components';
 
 const Printings = () => {
-  return <Container>Printings</Container>;
+  return (
+    <Container>
+      <Heading>
+        We produce the best <b>printing</b>
+        <span>
+          and <b>design</b> services
+        </span>
+      </Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
