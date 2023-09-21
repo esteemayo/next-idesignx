@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const Products = () => {
@@ -21,5 +22,7 @@ const Container = styled.section`
 const Heading = styled.h3``;
 
 const Wrapper = styled.figure``;
+
+const StyledImage = styled(Image)``;
 
 export default Products;
