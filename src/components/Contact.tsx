@@ -213,6 +213,10 @@ const Button = styled.button`
   &:hover {
     opacity: 0.9;
   }
+
+  &:disabled {
+    opacity: 0.75;
+  }
 `;
 
 export default Contact;
