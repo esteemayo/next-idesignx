@@ -3,15 +3,18 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const Card = () => {
+interface CardProps {
+  icon?: string;
+  desc: string;
+  title: string;
+}
+
+const Card: React.FC<CardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
       icon
-      <Heading>Print</Heading>
-      <Text>
-        Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia
-        nostrum placeat.
-      </Text>
+      <Heading>{title}</Heading>
+      <Text>{desc}</Text>
       <StyledLink href='#'>Get started</StyledLink>
     </Container>
   );

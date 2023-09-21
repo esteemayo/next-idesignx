@@ -1,7 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
+
 import Card from './Card';
+import { printItems } from '@/data';
 
 const Printings = () => {
   return (
@@ -14,7 +16,9 @@ const Printings = () => {
           </span>
         </Heading>
         <Box>
-          <Card />
+          {printItems.map((item) => {
+            return <Card key={item.id} {...item} />;
+          })}
         </Box>
       </Wrapper>
     </Container>
