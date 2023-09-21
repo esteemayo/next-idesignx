@@ -1,13 +1,17 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Hero from '@/components/Hero';
-import Printings from '@/components/Printings';
-import SeenOn from '@/components/SeenOn';
-import Products from '@/components/Products';
+
+const Printings = dynamic(() => import('@/components/Printings'), {
+  ssr: false,
+});
+const SeenOn = dynamic(() => import('@/components/SeenOn'), { ssr: false });
+const Products = dynamic(() => import('@/components/Products'), { ssr: false });
 
 const Home = () => {
   return (
