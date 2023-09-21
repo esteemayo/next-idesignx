@@ -116,6 +116,7 @@ const FormGroup = styled.div`
 `;
 
 const Input = styled.input`
+  width: 100%;
   display: inline-block;
   border: none;
   font-family: inherit;
