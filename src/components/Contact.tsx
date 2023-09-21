@@ -190,7 +190,7 @@ const TextArea = styled.textarea`
   resize: none;
   font-family: inherit;
   font-size: 1.5rem;
-  padding: 2rem 3rem;
+  padding: 2rem;
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
