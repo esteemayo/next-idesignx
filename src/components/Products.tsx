@@ -3,11 +3,16 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 
+import { productImages } from '@/data';
+import ProductImage from './ProductImage';
+
 const Products = () => {
   return (
     <Container>
       <Heading>Our products</Heading>
-      <Wrapper></Wrapper>
+      {productImages.map((item) => {
+        return <ProductImage key={item.id} {...item} />;
+      })}
     </Container>
   );
 };
