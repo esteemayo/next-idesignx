@@ -34,6 +34,7 @@ const Text = styled.div`
   grid-template-columns: 1fr min-content 1fr;
   gap: 2vw;
   align-items: center;
+  color: var(--clr-purple-light-1);
 `;
 
 const LogoContainer = styled.div``;
