@@ -8,36 +8,16 @@ const SeenOn = () => {
     <Container>
       <Text>As seen on</Text>
       <LogoContainer>
-        <StyledImage
-          src='/img/access.jpg'
-          width={80}
-          height={50}
-          alt=''
-        />
+        <StyledImage src='/img/access.jpg' width={80} height={50} alt='' />
         <StyledImage
           src='/img/Stanbic-Bank-Logo.jpg'
           width={80}
           height={50}
           alt=''
         />
-        <StyledImage
-          src='/img/zenith.png'
-          width={80}
-          height={50}
-          alt=''
-        />
-        <StyledImage
-          src='/img/union-bank.jpg'
-          width={80}
-          height={50}
-          alt=''
-        />
-        <StyledImage
-          src='/img/first-bank.png'
-          width={80}
-          height={50}
-          alt=''
-        />
+        <StyledImage src='/img/zenith.png' width={80} height={50} alt='' />
+        <StyledImage src='/img/union-bank.jpg' width={80} height={50} alt='' />
+        <StyledImage src='/img/first-bank.png' width={80} height={50} alt='' />
       </LogoContainer>
     </Container>
   );
@@ -49,7 +29,12 @@ const Container = styled.section`
   margin-top: -14rem;
 `;
 
-const Text = styled.div``;
+const Text = styled.div`
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  gap: 2vw;
+  align-items: center;
+`;
 
 const LogoContainer = styled.div``;
 
