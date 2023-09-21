@@ -193,6 +193,8 @@ const TextArea = styled.textarea`
 const Button = styled.button`
   display: inline-block;
   border: none;
+  text-transform: capitalize;
+  font-size: 2rem;
 `;
 
 export default Contact;
