@@ -44,6 +44,8 @@ const Text = styled.p`
 `;
 
 const StyledLink = styled(Link)`
+  justify-self: start;
+
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
