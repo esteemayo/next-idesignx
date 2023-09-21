@@ -6,6 +6,7 @@ interface InputProps {
   name: string;
   label: string;
   type?: string;
+  value?: string;
   placeholder: string;
   onChange(): void;
 }
@@ -14,6 +15,7 @@ const Input: React.FC<InputProps> = ({
   name,
   label,
   type = 'text',
+  value,
   placeholder,
   onChange,
 }) => {
@@ -23,6 +25,7 @@ const Input: React.FC<InputProps> = ({
         id={name}
         name={name}
         type={type}
+        value={value}
         placeholder={placeholder}
         onChange={onChange}
         required
