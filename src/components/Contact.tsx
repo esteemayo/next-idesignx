@@ -168,6 +168,7 @@ const TextArea = styled.textarea`
   width: 100%;
   display: inline-block;
   border: none;
+  resize: none;
   font-family: inherit;
   font-size: 1.5rem;
 `;
