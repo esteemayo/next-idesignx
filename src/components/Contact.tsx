@@ -1,7 +1,9 @@
 'use client';
 
-import { useCallback, useState } from 'react';
 import styled from 'styled-components';
+import { useCallback, useState } from 'react';
+
+import Input from './inputs/Input';
 
 const Contact = () => {
   const [data, setData] = useState({});
@@ -24,28 +26,19 @@ const Contact = () => {
       <Heading>Quick quote</Heading>
       <Text>Get anything Printed in no time!</Text>
       <Form onSubmit={handleSubmit}>
-        <FormGroup>
-          <Input
-            id='name'
-            name='name'
-            type='text'
-            placeholder='Your name'
-            required
-            onChange={handleChange}
-          />
-          <Label htmlFor='name'>Your name</Label>
-        </FormGroup>
-        <FormGroup>
-          <Input
-            id='email'
-            name='email'
-            type='email'
-            placeholder='Your email'
-            required
-            onChange={handleChange}
-          />
-          <Label htmlFor='email'>Your email</Label>
-        </FormGroup>
+        <Input
+          name='name'
+          label='Your name'
+          placeholder='Your name'
+          onChange={handleChange}
+        />
+        <Input
+          name='email'
+          type='email'
+          label='Your email'
+          placeholder='Your email'
+          onChange={handleChange}
+        />
         <FormGroup>
           <Select
             id='category'
@@ -126,42 +119,42 @@ const Label = styled.label`
   margin-top: 0.7rem;
 `;
 
-const Input = styled.input`
-  width: 100%;
-  display: inline-block;
-  border: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
-  background-color: var(--clr-white);
-  color: var(--clr-gray-dark-2);
-  border: 3px solid transparent;
-  border-radius: 2px;
-  outline-color: var(--clr-purple-light-3);
-  caret-color: var(--clr-purple-light-3);
-  transition: all 0.3s;
+// const Input = styled.input`
+//   width: 100%;
+//   display: inline-block;
+//   border: none;
+//   font-family: inherit;
+//   font-size: 1.5rem;
+//   padding: 1.5rem 2rem;
+//   background-color: var(--clr-white);
+//   color: var(--clr-gray-dark-2);
+//   border: 3px solid transparent;
+//   border-radius: 2px;
+//   outline-color: var(--clr-purple-light-3);
+//   caret-color: var(--clr-purple-light-3);
+//   transition: all 0.3s;
 
-  &::placeholder {
-    font-size: 1.4rem;
-    color: var(--clr-gray-dark-2);
-  }
+//   &::placeholder {
+//     font-size: 1.4rem;
+//     color: var(--clr-gray-dark-2);
+//   }
 
-  &:focus {
-    outline: none;
-    border-bottom: 3px solid var(--clr-green);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
-  }
+//   &:focus {
+//     outline: none;
+//     border-bottom: 3px solid var(--clr-green);
+//     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
+//   }
 
-  &:focus:invalid {
-    border-bottom: 3px solid var(--clr-orange-dark);
-  }
+//   &:focus:invalid {
+//     border-bottom: 3px solid var(--clr-orange-dark);
+//   }
 
-  &:placeholder-shown + ${Label} {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem);
-  }
-`;
+//   &:placeholder-shown + ${Label} {
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(-4rem);
+//   }
+// `;
 
 const Select = styled.select`
   width: 100%;
