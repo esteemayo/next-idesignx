@@ -109,7 +109,11 @@ const Text = styled.p`
 
 const Form = styled.form``;
 
-const FormGroup = styled.div``;
+const FormGroup = styled.div`
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+`;
 
 const Input = styled.input``;
 
