@@ -11,7 +11,7 @@ export const StyledLink = styled(Link)`
   font-size: 1.5rem;
   background-image: linear-gradient(
     to right bottom,
-    var(--clr-purple-dark),
+    var(--clr-purple-dark-1),
     var(--clr-purple-light-1),
     var(--clr-purple-light-2),
     var(--clr-purple-light-3)
