@@ -107,15 +107,6 @@ const FormGroup = styled.div`
   }
 `;
 
-const Label = styled.label`
-  display: block;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--clr-gray-dark-2);
-  margin-left: 2rem;
-  margin-top: 0.7rem;
-`;
-
 const Select = styled.select`
   width: 100%;
   display: inline-block;
