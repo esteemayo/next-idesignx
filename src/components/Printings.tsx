@@ -20,8 +20,11 @@ const Printings = () => {
 };
 
 const Container = styled.section`
-  background-color: red;
   grid-column: full-start / full-end;
+  background-image: linear-gradient(rgba(9, 9, 9, 0.5), rgba(9, 9, 9, 0.5)),
+    url(../img/woman-2.jpg);
+  background-size: cover;
+  background-position: center;
 `;
 
 const Heading = styled.h4``;
