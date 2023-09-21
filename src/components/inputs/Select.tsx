@@ -52,8 +52,6 @@ const StyledSelect = styled.select`
   outline-color: var(--clr-purple-light-3);
 
   &:focus {
-    outline: none;
-    border-bottom: 3px solid var(--clr-green);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
   }
 `;
