@@ -2,10 +2,15 @@
 
 import styled from 'styled-components';
 
+type OptionTypes = {
+  id: number;
+  text: string;
+};
+
 interface SelectProps {
   name: string;
   label: string;
-  options: Array<object>;
+  options: Array<OptionTypes>;
   onChange(e: React.MouseEvent<HTMLFormControlsCollection>): void;
 }
 
