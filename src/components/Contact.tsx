@@ -178,6 +178,11 @@ const TextArea = styled.textarea`
   caret-color: var(--clr-purple-light-3);
   transition: all 0.3s;
 
+  &::placeholder {
+    font-size: 1.4rem;
+    color: var(--clr-gray-dark-2);
+  }
+
   &:focus {
     outline: none;
     border-bottom: 3px solid var(--color-green);
