@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Products = () => {
-  return <Container>Products</Container>;
+  return (
+    <Container>
+      <Heading>Our products</Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
