@@ -12,6 +12,7 @@ const Card = () => {
         Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia
         nostrum placeat.
       </Text>
+      <StyledLink href='#'>Get started</StyledLink>
     </Container>
   );
 };
