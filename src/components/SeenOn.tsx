@@ -12,4 +12,6 @@ const Container = styled.section`
   margin-top: -14rem;
 `;
 
+const Text = styled.div``;
+
 export default SeenOn;
