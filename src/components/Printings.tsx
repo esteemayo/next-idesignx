@@ -12,7 +12,7 @@ const Printings = () => {
         <Heading>
           We produce the best <Bold>printing</Bold>
           <span>
-            and <b>design</b> services
+            and <Bold>design</Bold> services
           </span>
         </Heading>
         <Box>
