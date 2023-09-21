@@ -40,7 +40,7 @@ const Heading = styled.h5`
 
 const Text = styled.p`
   font-size: 1.7rem;
-  line-height: 1.3;
+  line-height: 1.4;
 `;
 
 const StyledLink = styled(Link)``;
