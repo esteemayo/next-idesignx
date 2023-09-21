@@ -40,6 +40,11 @@ const Heading = styled.h4`
   }
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
+  gap: 6rem;
+  margin: 5rem 0;
+`;
 
 export default Printings;
