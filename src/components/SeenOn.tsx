@@ -31,7 +31,7 @@ const Container = styled.section`
 
 const Text = styled.div`
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr max-content 1fr;
   gap: 2vw;
   align-items: center;
   color: var(--clr-purple-light-1);
