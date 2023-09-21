@@ -27,7 +27,7 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.div`
-  padding: 7rem;
+  padding: 10rem 7rem;
   background-image: linear-gradient(
       rgba(153, 153, 153, 0.5),
       rgba(153, 153, 153, 0.5)
