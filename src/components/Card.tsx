@@ -61,6 +61,12 @@ const StyledLink = styled(Link)`
   );
   background-size: 220%;
   border-radius: 3px;
+
+  &:hover,
+  &:active {
+    color: var(--clr-white);
+    background-position: 100%;
+  }
 `;
 
 export default Card;
