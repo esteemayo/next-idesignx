@@ -21,7 +21,7 @@ const Header = styled.header`
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
-      rgba(3, 3, 3, 0.7)
+      rgba(51, 51, 51, 0.7)
     ),
     url(../img/hero.jpg);
   background-size: cover;
