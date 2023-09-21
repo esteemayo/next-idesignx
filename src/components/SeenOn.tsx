@@ -35,6 +35,14 @@ const Text = styled.div`
   gap: 2vw;
   align-items: center;
   color: var(--clr-purple-light-1);
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+  }
 `;
 
 const LogoContainer = styled.div``;
