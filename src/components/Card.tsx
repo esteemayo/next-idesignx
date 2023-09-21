@@ -66,6 +66,7 @@ const StyledLink = styled(Link)`
   );
   background-size: 220%;
   border-radius: 3px;
+  outline-color: #f9f9f9;
   transition: all 0.3s;
 
   &:hover,
