@@ -43,7 +43,7 @@ const Container = styled.li`
 `;
 
 const setActiveColor = (isActive: boolean) => {
-  return isActive ? 'var(--clr-purple-light-1)' : 'var(--clr-purple-light-3)';
+  return isActive ? 'var(--clr-purple-dark-2)' : 'var(--clr-purple-light-1)';
 };
 
 export default NavItem;
