@@ -34,6 +34,10 @@ const Heading = styled.h4`
   font-size: 3rem;
   text-transform: none;
   line-height: 1.1;
+
+  span {
+    display: block;
+  }
 `;
 
 const Wrapper = styled.div``;
