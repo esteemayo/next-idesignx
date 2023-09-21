@@ -10,7 +10,7 @@ const Printings = () => {
     <Container>
       <Wrapper>
         <Heading>
-          We produce the best <b>printing</b>
+          We produce the best <Bold>printing</Bold>
           <span>
             and <b>design</b> services
           </span>
