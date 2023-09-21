@@ -90,12 +90,6 @@ const Text = styled.p`
 
 const Form = styled.form``;
 
-const Option = styled.option`
-  font-size: 1.4rem;
-  color: #bbb;
-  letter-spacing: 0.5rem;
-`;
-
 const Button = styled.button`
   margin-top: 2rem;
   display: inline-block;
