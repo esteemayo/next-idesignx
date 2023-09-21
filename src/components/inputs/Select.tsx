@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { FormGroup } from '../form/FormGroup';
 
 type OptionTypes = {
   id: number;
@@ -32,11 +33,11 @@ const Select: React.FC<SelectProps> = ({ name, label, options, onChange }) => {
   );
 };
 
-const FormGroup = styled.div`
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-`;
+// const FormGroup = styled.div`
+//   &:not(:last-of-type) {
+//     margin-bottom: 2rem;
+//   }
+// `;
 
 const StyledSelect = styled.select`
   width: 100%;
