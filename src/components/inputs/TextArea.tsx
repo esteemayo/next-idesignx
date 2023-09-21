@@ -34,12 +34,6 @@ const TextArea: React.FC<TextAreaProps> = ({
   );
 };
 
-// const FormGroup = styled.div`
-//   &:not(:last-of-type) {
-//     margin-bottom: 2rem;
-//   }
-// `;
-
 // const Label = styled.label`
 //   display: block;
 //   font-weight: 400;
