@@ -61,7 +61,7 @@ const StyledLink = styled(Link)`
   );
   background-size: 220%;
   border-radius: 3px;
-  transition: all 0.2s;
+  transition: all 0.3s;
 
   &:hover,
   &:active {
