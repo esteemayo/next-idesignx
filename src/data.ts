@@ -58,3 +58,22 @@ export const menuItems = [
     label: 'Contact',
   },
 ];
+
+export const productImages = [
+  {
+    id: 1,
+    img: '/img/t-shirt.jpg',
+  },
+  {
+    id: 2,
+    img: '/img/brochure-1.jpg',
+  },
+  {
+    id: 3,
+    img: '/img/stationery-2.jpg',
+  },
+  {
+    id: 4,
+    img: '/img/brochure-2.jpg',
+  },
+];
