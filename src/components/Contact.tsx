@@ -137,6 +137,7 @@ const Input = styled.input`
   border-radius: 2px;
   outline-color: var(--clr-purple-light-3);
   caret-color: var(--clr-purple-light-3);
+  transition: all 0.3s;
 
   &::placeholder {
     font-size: 1.4rem;
