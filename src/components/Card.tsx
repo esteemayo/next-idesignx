@@ -7,6 +7,10 @@ const Card = () => {
     <Container>
       icon
       <Heading>Print</Heading>
+      <Text>
+        Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia
+        nostrum placeat.
+      </Text>
     </Container>
   );
 };
