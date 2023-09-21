@@ -6,6 +6,7 @@ const SeenOn = () => {
   return (
     <Container>
       <Text>As seen on</Text>
+      <LogoContainer></LogoContainer>
     </Container>
   );
 };
