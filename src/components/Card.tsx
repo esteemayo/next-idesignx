@@ -65,6 +65,7 @@ const StyledLink = styled(Link)`
     var(--clr-gray-dark-2) 50%
   );
   background-size: 220%;
+  backface-visibility: hidden;
   border-radius: 3px;
   outline-color: #f9f9f9;
   transition: all 0.3s;
