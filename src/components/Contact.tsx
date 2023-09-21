@@ -115,6 +115,15 @@ const FormGroup = styled.div`
   }
 `;
 
+const Label = styled.label`
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--clr-gray-dark-2);
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+`;
+
 const Input = styled.input`
   width: 100%;
   display: inline-block;
@@ -143,15 +152,12 @@ const Input = styled.input`
   &:focus:invalid {
     border-bottom: 3px solid var(--clr-orange-dark);
   }
-`;
 
-const Label = styled.label`
-  display: block;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--clr-gray-dark-2);
-  margin-left: 2rem;
-  margin-top: 0.7rem;
+  &:placeholder-shown + ${Label} {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
 `;
 
 const Select = styled.select`
