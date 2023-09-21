@@ -30,6 +30,11 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
 `;
 
-const Heading = styled.h3``;
+const Heading = styled.h3`
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--clr-purple-light-1);
+`;
 
 export default Products;
