@@ -118,6 +118,8 @@ const FormGroup = styled.div`
 const Input = styled.input`
   display: inline-block;
   border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
 `;
 
 const Label = styled.label``;
