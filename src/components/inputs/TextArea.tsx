@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import { StyledTextArea } from '../form/StyledTextArea';
 import { Label } from '../form/Label';
 import { FormGroup } from '../form/FormGroup';
