@@ -15,6 +15,9 @@ const ProductImage: React.FC<ProductImageProps> = ({ img }) => {
 
 const Wrapper = styled.figure``;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+`;
 
 export default ProductImage;
