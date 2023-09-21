@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const SeenOn = () => {
-  return <Container>SeenOn</Container>;
+  return (
+    <Container>
+      <Text>As seen on</Text>
+    </Container>
+  );
 };
 
 const Container = styled.section`
