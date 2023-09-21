@@ -20,6 +20,9 @@ const Card = () => {
 const Container = styled.article`
   display: grid;
   gap: 1.5rem;
+
+  padding: 3rem;
+  background-color: rgba(233, 233, 233, 0.1);
 `;
 
 const Heading = styled.h5``;
