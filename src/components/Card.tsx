@@ -17,7 +17,10 @@ const Card = () => {
   );
 };
 
-const Container = styled.article``;
+const Container = styled.article`
+  display: grid;
+  gap: 1.5rem;
+`;
 
 const Heading = styled.h5``;
 
