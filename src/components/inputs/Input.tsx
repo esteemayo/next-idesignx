@@ -1,7 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
-
 import { StyledInput } from '../form/StyleInput';
 import { Label } from '../form/Label';
 import { FormGroup } from '../form/FormGroup';
