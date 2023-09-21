@@ -6,7 +6,7 @@ export const StyledLink = styled(Link)`
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 1rem 3rem;
+  padding: 0.8rem 3rem;
   font-weight: 400;
   font-size: 1.5rem;
   background-image: linear-gradient(
