@@ -120,6 +120,8 @@ const Input = styled.input`
   border: none;
   font-family: inherit;
   font-size: 1.5rem;
+  background-color: var(--clr-white);
+  color: var(--clr-gray-dark-2);
 `;
 
 const Label = styled.label``;
