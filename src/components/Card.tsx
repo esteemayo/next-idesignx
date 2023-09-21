@@ -25,6 +25,11 @@ const Container = styled.article`
   background-color: rgba(233, 233, 233, 0.1);
   border-radius: 2px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
+
+  svg {
+    font-size: 4.5rem;
+    fill: var(--clr-white);
+  }
 `;
 
 const Heading = styled.h5``;
