@@ -50,6 +50,10 @@ const Button = styled.button`
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.9;
+  }
+
   &:disabled {
     opacity: 0.75;
   }
