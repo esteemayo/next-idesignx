@@ -174,6 +174,8 @@ const TextArea = styled.textarea`
   padding: 2rem 3rem;
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
+  outline-color: var(--clr-purple-light-3);
+  caret-color: var(--clr-purple-light-3);
 `;
 
 const Button = styled.button``;
