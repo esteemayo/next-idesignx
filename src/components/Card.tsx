@@ -43,6 +43,10 @@ const Text = styled.p`
   line-height: 1.4;
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.4rem;
+`;
 
 export default Card;
