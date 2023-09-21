@@ -19,13 +19,16 @@ const Products = () => {
 };
 
 const Container = styled.section`
-  background-color: blue;
   grid-column: full-start / full-end;
   margin: 8rem 0;
   padding: 3rem;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-rows: 38.7vw;
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+`;
 
 const Heading = styled.h3``;
 
