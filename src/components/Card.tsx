@@ -15,4 +15,6 @@ const Container = styled.article``;
 
 const Heading = styled.h5``;
 
+const Text = styled.p``;
+
 export default Card;
