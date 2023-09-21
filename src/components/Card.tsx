@@ -49,6 +49,7 @@ const StyledLink = styled(Link)`
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.4rem;
+  padding: 0.8rem 1.5rem;
 `;
 
 export default Card;
