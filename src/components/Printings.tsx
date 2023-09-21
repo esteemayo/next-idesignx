@@ -23,6 +23,9 @@ const Printings = () => {
 
 const Container = styled.section`
   grid-column: full-start / full-end;
+`;
+
+const Wrapper = styled.div`
   padding: 7rem;
   background-image: linear-gradient(
       rgba(153, 153, 153, 0.5),
@@ -33,8 +36,6 @@ const Container = styled.section`
   background-size: cover;
   background-position: center;
 `;
-
-const Wrapper = styled.div``;
 
 const Heading = styled.h4`
   font-weight: 400;
