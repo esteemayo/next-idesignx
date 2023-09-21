@@ -73,6 +73,7 @@ const Contact = () => {
             onChange={handleChange}
             required
           />
+          <Label htmlFor='content'>Content</Label>
         </FormGroup>
         <Button type='submit'>Submit</Button>
       </Form>
