@@ -40,6 +40,10 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
 `;
 
-const Box = styled.div``;
+const Box = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export default Products;
