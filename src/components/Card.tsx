@@ -32,7 +32,11 @@ const Container = styled.article`
   }
 `;
 
-const Heading = styled.h5``;
+const Heading = styled.h5`
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+`;
 
 const Text = styled.p``;
 
