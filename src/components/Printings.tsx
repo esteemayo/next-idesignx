@@ -11,6 +11,7 @@ const Printings = () => {
           and <b>design</b> services
         </span>
       </Heading>
+      <Wrapper></Wrapper>
     </Container>
   );
 };
