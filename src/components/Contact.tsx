@@ -190,6 +190,9 @@ const TextArea = styled.textarea`
   }
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  display: inline-block;
+  border: none;
+`;
 
 export default Contact;
