@@ -6,17 +6,27 @@ interface InputProps {
   name: string;
   label: string;
   type?: string;
+  placeholder: string;
+  onChange(): void;
 }
 
 const Input: React.FC<InputProps> = ({
   name,
   label,
   type = 'text',
-  ...rest
+  placeholder,
+  onChange,
 }) => {
   return (
     <FormGroup>
-      <StyledInput {...rest} id={name} name={name} type={type} required />
+      <StyledInput
+        id={name}
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+        required
+      />
       <Label htmlFor={name}>{label}</Label>
     </FormGroup>
   );
