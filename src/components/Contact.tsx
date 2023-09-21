@@ -133,6 +133,12 @@ const Input = styled.input`
     font-size: 1.4rem;
     color: var(--clr-gray-dark-2);
   }
+
+  &:focus {
+    outline: none;
+    border-bottom: 3px solid var(--clr-green);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
+  }
 `;
 
 const Label = styled.label`
