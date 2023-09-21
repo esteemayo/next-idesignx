@@ -128,7 +128,10 @@ const Input = styled.input`
   caret-color: var(--clr-purple-light-3);
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+  font-weight: 700;
+  font-size: 1.2rem;
+`;
 
 const Select = styled.select``;
 
