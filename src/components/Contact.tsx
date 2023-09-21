@@ -71,6 +71,7 @@ const Contact = () => {
             id='content'
             name='content'
             onChange={handleChange}
+            placeholder='Content'
             required
           />
           <Label htmlFor='content'>Content</Label>
