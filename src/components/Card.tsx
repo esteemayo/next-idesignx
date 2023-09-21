@@ -45,6 +45,8 @@ const Text = styled.p`
 
 const StyledLink = styled(Link)`
   display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 1.4rem;
 `;
