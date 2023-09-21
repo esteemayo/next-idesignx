@@ -6,15 +6,17 @@ import Card from './Card';
 const Printings = () => {
   return (
     <Container>
-      <Heading>
-        We produce the best <b>printing</b>
-        <span>
-          and <b>design</b> services
-        </span>
-      </Heading>
-      <Box>
-        <Card />
-      </Box>
+      <Wrapper>
+        <Heading>
+          We produce the best <b>printing</b>
+          <span>
+            and <b>design</b> services
+          </span>
+        </Heading>
+        <Box>
+          <Card />
+        </Box>
+      </Wrapper>
     </Container>
   );
 };
