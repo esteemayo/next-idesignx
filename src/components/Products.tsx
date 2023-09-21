@@ -38,4 +38,6 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
 `;
 
+const Box = styled.div``;
+
 export default Products;
