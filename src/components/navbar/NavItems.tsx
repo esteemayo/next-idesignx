@@ -30,6 +30,7 @@ const Container = styled.ul`
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
   align-items: center;
   justify-items: center;
+  gap: 2rem;
 `;
 
 export default NavItems;
