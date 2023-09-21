@@ -47,6 +47,7 @@ const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
   font-size: 1.4rem;
   padding: 0.8rem 1.5rem;
@@ -59,6 +60,7 @@ const StyledLink = styled(Link)`
     var(--clr-gray-dark-2) 50%
   );
   background-size: 220%;
+  border-radius: 3px;
 `;
 
 export default Card;
