@@ -191,6 +191,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
+  margin-top: 2rem;
   display: inline-block;
   border: none;
   text-transform: capitalize;
