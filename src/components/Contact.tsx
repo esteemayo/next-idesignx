@@ -115,7 +115,10 @@ const FormGroup = styled.div`
   }
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  display: inline-block;
+  border: none;
+`;
 
 const Label = styled.label``;
 
