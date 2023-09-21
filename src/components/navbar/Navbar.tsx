@@ -35,6 +35,7 @@ const Button = styled.button`
 
   display: inline-block;
   border: none;
+  font-weight: 400;
   font-size: 1.5rem;
   padding: 1rem 3rem;
   background-image: linear-gradient(
