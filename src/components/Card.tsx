@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const Card = () => {
@@ -20,5 +21,7 @@ const Container = styled.article``;
 const Heading = styled.h5``;
 
 const Text = styled.p``;
+
+const StyledLink = styled(Link)``;
 
 export default Card;
