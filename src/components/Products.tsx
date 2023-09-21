@@ -13,4 +13,6 @@ const Container = styled.section`
   padding: 3rem;
 `;
 
+const Heading = styled.h3``;
+
 export default Products;
