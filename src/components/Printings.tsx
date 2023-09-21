@@ -12,9 +12,9 @@ const Printings = () => {
           and <b>design</b> services
         </span>
       </Heading>
-      <Wrapper>
+      <Box>
         <Card />
-      </Wrapper>
+      </Box>
     </Container>
   );
 };
@@ -43,7 +43,7 @@ const Heading = styled.h4`
   }
 `;
 
-const Wrapper = styled.div`
+const Box = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
   gap: 6rem;
