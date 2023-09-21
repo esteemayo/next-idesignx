@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { productImages } from '@/data';
 import ProductImage from './ProductImage';
+import { StyledLink } from './buttons/StyledLink';
 
 const Products = () => {
   return (
@@ -14,6 +15,7 @@ const Products = () => {
           return <ProductImage key={item.id} {...item} />;
         })}
       </Wrapper>
+      <StyledLink href='/products'>All products</StyledLink>
     </Container>
   );
 };
