@@ -70,10 +70,10 @@ export const productImages = [
   },
   {
     id: 3,
-    img: '/img/stationery-2.jpg',
+    img: '/img/brochure-2.jpg',
   },
   {
     id: 4,
-    img: '/img/brochure-2.jpg',
+    img: '/img/stationery-2.jpg',
   },
 ];
