@@ -22,7 +22,10 @@ const Printings = () => {
 const Container = styled.section`
   grid-column: full-start / full-end;
   padding: 7rem;
-  background-image: linear-gradient(rgba(9, 9, 9, 0.5), rgba(9, 9, 9, 0.5)),
+  background-image: linear-gradient(
+      rgba(153, 153, 153, 0.5),
+      rgba(153, 153, 153, 0.5)
+    ),
     url(../img/woman-2.jpg);
   color: var(--clr-white);
   background-size: cover;

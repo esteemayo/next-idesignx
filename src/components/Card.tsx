@@ -23,6 +23,8 @@ const Container = styled.article`
 
   padding: 3rem;
   background-color: rgba(233, 233, 233, 0.1);
+  border-radius: 2px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
 `;
 
 const Heading = styled.h5``;
