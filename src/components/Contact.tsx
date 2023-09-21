@@ -209,6 +209,12 @@ const TextArea = styled.textarea`
   &:focus:invalid {
     border-bottom: 3px solid var(--clr-orange-dark);
   }
+
+  &:placeholder-shown + ${Label} {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
 `;
 
 const Button = styled.button`
