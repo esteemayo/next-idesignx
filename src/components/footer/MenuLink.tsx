@@ -24,9 +24,9 @@ const StyledLink = styled(Link)`
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   padding: 1.5rem;
   color: inherit;
-  text-align: center;
   outline-color: var(--clr-purple-light-3);
   transition: all 0.2s;
 
