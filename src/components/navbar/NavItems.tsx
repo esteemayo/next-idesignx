@@ -28,6 +28,8 @@ const Container = styled.ul`
   list-style: none;
   display: grid;
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  align-items: center;
+  justify-items: center;
 `;
 
 export default NavItems;
