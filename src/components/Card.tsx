@@ -8,4 +8,6 @@ const Card = () => {
 
 const Container = styled.article``;
 
+const Heading = styled.h5``;
+
 export default Card;
