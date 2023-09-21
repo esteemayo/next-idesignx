@@ -38,7 +38,10 @@ const Heading = styled.h5`
   letter-spacing: 1px;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  font-size: 1.7rem;
+  line-height: 1.3;
+`;
 
 const StyledLink = styled(Link)``;
 
