@@ -90,12 +90,6 @@ const Text = styled.p`
 
 const Form = styled.form``;
 
-const FormGroup = styled.div`
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-`;
-
 const Option = styled.option`
   font-size: 1.4rem;
   color: #bbb;
