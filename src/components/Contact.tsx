@@ -209,6 +209,10 @@ const Button = styled.button`
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
   transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 export default Contact;
