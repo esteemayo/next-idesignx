@@ -205,6 +205,9 @@ const Button = styled.button`
     var(--clr-purple-light-3)
   );
   color: var(--clr-white);
+  border-radius: 0.5rem;
+  outline-color: var(--clr-purple-light-3);
+  transition: all 0.2s;
 `;
 
 export default Contact;
