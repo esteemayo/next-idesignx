@@ -47,7 +47,6 @@ const StyledSelect = styled.select`
   padding: 1.5rem 2rem;
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
-  border: 3px solid transparent;
   border-radius: 2px;
   outline-color: var(--clr-purple-light-3);
 
