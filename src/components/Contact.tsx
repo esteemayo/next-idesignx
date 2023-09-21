@@ -176,6 +176,7 @@ const TextArea = styled.textarea`
   color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
   caret-color: var(--clr-purple-light-3);
+  transition: all 0.3s;
 
   &:focus {
     outline: none;
