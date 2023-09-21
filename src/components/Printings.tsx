@@ -11,4 +11,6 @@ const Container = styled.section`
   grid-column: full-start / full-end;
 `;
 
+const Heading = styled.h4``;
+
 export default Printings;
