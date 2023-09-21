@@ -52,6 +52,13 @@ const StyledLink = styled(Link)`
   padding: 0.8rem 1.5rem;
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    var(--clr-gray-dark-2) 50%
+  );
+  background-size: 220%;
 `;
 
 export default Card;
