@@ -7,6 +7,7 @@ const Featured = () => {
 };
 
 const Container = styled.section`
+  grid-column: full-start / col-end 4;
   background-color: crimson;
 `;
 
