@@ -22,6 +22,8 @@ const Input = styled.input`
   height: 0.1px;
   opacity: 0;
   overflow: hidden;
+  position: absolute;
+  z-index: -1;
 `;
 
 const Label = styled.label``;
