@@ -12,10 +12,10 @@ const Mission = () => {
           aim to present brands in grand style. Focusing on each drop in a
           massive rainfall is a way of life to us.
         </Text>
-        <Text>
+        <Paragraph>
           We treat every details with caution to set your brand in motion of
           excellence.
-        </Text>
+        </Paragraph>
       </Wrapper>
     </Container>
   );
@@ -37,8 +37,12 @@ const Container = styled.section`
 const Wrapper = styled.div`
   margin: 15rem 0;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 2rem;
+  align-items: center;
 `;
 
 const Heading = styled.h2`
@@ -53,7 +57,12 @@ const Heading = styled.h2`
 const Text = styled.p`
   width: 75%;
   letter-spacing: 2px;
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+`;
+
+const Paragraph = styled.p`
+  width: 75%;
+  letter-spacing: 2px;
 `;
 
 export default Mission;
