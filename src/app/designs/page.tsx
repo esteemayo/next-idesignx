@@ -25,6 +25,7 @@ const Designs = () => {
 };
 
 const Container = styled.main`
+  background-color: rgba(249, 249, 249, 0.1);
   display: grid;
   grid-template-rows: 80vh 40vw repeat(2, min-content);
   grid-template-columns:
