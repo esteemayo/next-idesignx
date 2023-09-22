@@ -1,9 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+import DesignHero from '@/components/hero/DesignHero';
 
 const Designs = () => {
-  return <Container>Designs</Container>;
+  return (
+    <Container>
+      <DesignHero />
+    </Container>
+  );
 };
 
 const Container = styled.main`
