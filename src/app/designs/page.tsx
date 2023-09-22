@@ -1,12 +1,16 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
-import Featured from '@/components/Featured';
 import DesignHero from '@/components/hero/DesignHero';
-import Mission from '@/components/Mission';
-import Statement from '@/components/Statement';
-import Request from '@/components/Request';
+
+const Featured = dynamic(() => import('@/components/Featured'), { ssr: false });
+const Mission = dynamic(() => import('@/components/Mission'), { ssr: false });
+const Statement = dynamic(() => import('@/components/Statement'), {
+  ssr: false,
+});
+const Request = dynamic(() => import('@/components/Request'), { ssr: false });
 
 const Designs = () => {
   return (
