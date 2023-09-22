@@ -1,9 +1,10 @@
 'use client';
 
 import styled from 'styled-components';
+import { FormGroup } from '../form/FormGroup';
 
 const UploadInput = () => {
-  return <Container>UploadInput</Container>;
+  return <FormGroup>UploadInput</FormGroup>;
 };
 
 const Container = styled.div``;
