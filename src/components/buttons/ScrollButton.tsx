@@ -21,9 +21,11 @@ const ScrollButton = () => {
 
   return (
     <Container>
-      <Button>
-        <FontAwesomeIcon icon={faArrowUp} />
-      </Button>
+      {isVisible && (
+        <Button type='button' onClick={handleScroll}>
+          <FontAwesomeIcon icon={faArrowUp} />
+        </Button>
+      )}
     </Container>
   );
 };
