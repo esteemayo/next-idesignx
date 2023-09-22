@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
+import Hamburger from './Hamburger';
 import NavItems from './NavItems';
 
 import { navItems } from '@/data';
@@ -13,6 +14,7 @@ const Navbar = () => {
 
   return (
     <Container>
+      <Hamburger />
       <Logo />
       <NavItems links={navItems} path={pathname} />
       <Button>Upload your design</Button>
