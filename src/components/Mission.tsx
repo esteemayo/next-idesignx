@@ -23,6 +23,7 @@ const Mission = () => {
 
 const Container = styled.section`
   grid-column: col-start 5 / full-end;
+  padding: 3rem;
   background-color: var(--clr-purple-dark-2);
   color: var(--clr-white);
 `;
