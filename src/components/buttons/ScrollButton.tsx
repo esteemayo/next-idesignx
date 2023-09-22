@@ -23,6 +23,7 @@ const Button = styled.button`
   padding: 1.5rem;
   background-color: transparent;
   color: var(--clr-purple-light-1);
+  backdrop-filter: blur(1rem);
 `;
 
 export default ScrollButton;
