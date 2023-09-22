@@ -10,15 +10,28 @@ type OptionTypes = {
 
 interface SelectProps {
   name: string;
+  value?: string;
   label: string;
   options: Array<OptionTypes>;
   onChange(e: React.MouseEvent<HTMLFormControlsCollection>): void;
 }
 
-const Select: React.FC<SelectProps> = ({ name, label, options, onChange }) => {
+const Select: React.FC<SelectProps> = ({
+  name,
+  value,
+  label,
+  options,
+  onChange,
+}) => {
   return (
     <FormGroup>
-      <StyledSelect id={name} name={name} onChange={onChange} required>
+      <StyledSelect
+        id={name}
+        name={name}
+        value={value}
+        onChange={onChange}
+        required
+      >
         <Option value=''>{label}</Option>
         {options.map((option) => {
           const { id, text } = option;
