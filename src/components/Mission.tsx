@@ -40,6 +40,7 @@ const Heading = styled.h2`
   font-size: 4rem;
   text-transform: capitalize;
   color: currentColor;
+  letter-spacing: 0.5px;
   line-height: 1;
 `;
 
