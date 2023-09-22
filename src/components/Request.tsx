@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Request = () => {
-  return <Container>Request</Container>;
+  return (
+    <Container>
+      <Heading>Fill in your requests</Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
