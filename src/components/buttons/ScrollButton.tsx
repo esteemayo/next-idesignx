@@ -12,7 +12,9 @@ const ScrollButton = () => {
     setIsVisible(window.scrollY > 500 ? true : false);
   };
 
-  const handleScroll = useCallback(() => {
+  const handleScroll = useCallback((e) => {
+    e.stopPropagation();
+
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
