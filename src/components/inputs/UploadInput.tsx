@@ -2,11 +2,17 @@
 
 import styled from 'styled-components';
 
-const UploadInput = () => {
+interface UploadInputProps {
+  id: string;
+  label: string;
+  onChange(): void;
+}
+
+const UploadInput: React.FC<UploadInputProps> = ({ id, label, onChange }) => {
   return (
     <Container>
-      <Input id='file' type='file' />
-      <Label htmlFor='file'>Attach a sample</Label>
+      <Input id={id} type='file' onChange={onChange} />
+      <Label htmlFor={id}>{label}</Label>
     </Container>
   );
 };
