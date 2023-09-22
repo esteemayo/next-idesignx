@@ -54,6 +54,11 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  svg {
+    font-size: inherit;
+    color: currentColor;
+  }
 `;
 
 export default ScrollButton;
