@@ -32,7 +32,7 @@ const Container = styled.article`
 
   svg {
     font-size: 4.5rem;
-    fill: var(--clr-white);
+    color: var(--clr-white);
   }
 `;
 
