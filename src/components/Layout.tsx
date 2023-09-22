@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Navbar from './navbar/Navbar';
 import Info from './Info';
 import Footer from './footer/Footer';
+import ScrollButton from './buttons/ScrollButton';
 import ClientOnly from './ClientOnly';
 
 interface LayoutProps {
@@ -19,6 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Navbar />
         {children}
         <Footer />
+        <ScrollButton />
       </Container>
     </ClientOnly>
   );
