@@ -7,7 +7,8 @@ const Statement = () => {
   return (
     <Container>
       <Paragraph>
-        Need a custom design and professional printing services?
+        Need a custom design and professional printing
+        <br /> services?
       </Paragraph>
       <StyledLink href='/contact'>Contact us</StyledLink>
     </Container>
@@ -17,6 +18,7 @@ const Statement = () => {
 const Container = styled.section`
   grid-column: full-start / full-end;
   background-color: var(--clr-white);
+  text-align: center;
   padding: 4rem 0;
 `;
 
