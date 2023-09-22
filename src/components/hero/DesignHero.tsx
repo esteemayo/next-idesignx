@@ -36,6 +36,10 @@ const Heading = styled.h1`
   grid-area: 2 / 3 / 3 / 5;
   align-self: self-end;
   justify-self: center;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  animation: moveInBottom 0.5s ease-out 0.75s backwards;
 `;
 
 const Text = styled.p``;
