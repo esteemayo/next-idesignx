@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 
 interface CardProps {
-  icon?: string;
+  icon: any;
   desc: string;
   title: string;
 }
@@ -12,7 +13,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
-      icon
+      <FontAwesomeIcon icon={icon} />
       <Heading>{title}</Heading>
       <Text>{desc}</Text>
       <StyledLink href='#'>Get started</StyledLink>
