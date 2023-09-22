@@ -50,7 +50,7 @@ const Text = styled.p`
   align-self: self-start;
   justify-self: start;
 
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: currentColor;
   letter-spacing: 1px;
   text-align: center;
