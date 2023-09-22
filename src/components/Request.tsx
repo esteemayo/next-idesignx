@@ -82,6 +82,7 @@ const Heading = styled.h3`
   font-size: 3rem;
   text-transform: capitalize;
   color: var(--clr-purple-light-1);
+  margin-bottom: 2rem;
 `;
 
 export default Request;
