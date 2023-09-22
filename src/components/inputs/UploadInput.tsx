@@ -44,6 +44,8 @@ const Input = styled.input`
     &:hover {
       background-color: var(--clr-purple-light-2);
       color: var(--clr-white);
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
+      transform: translateY(-2px);
     }
   }
 `;
