@@ -17,8 +17,8 @@ const ScrollButton = () => {
 const Container = styled.div`
   position: fixed;
   left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
+  bottom: 1rem;
+  transform: translate(-50%, -1rem);
 `;
 
 const Button = styled.button`
