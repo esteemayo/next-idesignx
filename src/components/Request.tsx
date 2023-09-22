@@ -73,6 +73,7 @@ const Request = () => {
         />
         <Select
           name='category'
+          value={data.category}
           label='Select Category'
           options={selectInputs}
           onChange={handleChange}
