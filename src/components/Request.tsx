@@ -15,6 +15,7 @@ import { selectInputs } from '@/formData';
 
 const Request = () => {
   const [data, setData] = useState({});
+  const [file, setFile] = useState(null);
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
