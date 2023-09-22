@@ -70,7 +70,7 @@ html {
 
 body {
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   line-height: 1.6;
   color: var(--clr-gray-dark);
   cursor: default;
