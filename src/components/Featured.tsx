@@ -21,9 +21,7 @@ const Container = styled.section`
 `;
 
 const StyledImage = styled(Image)`
-  justify-self: left;
-  grid-row: 3 / span 4;
-  grid-column: 3 / span 4;
+  grid-area: 2 / 1 / 8 / 8;
 
   width: 100%;
   height: 100%;
