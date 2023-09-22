@@ -22,9 +22,13 @@ const Request = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
-  }, []);
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      console.log({ ...data, file });
+    },
+    [data, file]
+  );
 
   return (
     <Container>
