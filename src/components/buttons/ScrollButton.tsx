@@ -17,6 +17,9 @@ const Container = styled.div`
   transform: translateX(-50%);
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  display: inline-block;
+  border: none;
+`;
 
 export default ScrollButton;
