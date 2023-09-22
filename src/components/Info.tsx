@@ -63,6 +63,11 @@ const EmailWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  svg {
+    font-size: 1.3rem;
+    color: currentColor;
+  }
 `;
 
 const EmailAddress = styled.span``;
