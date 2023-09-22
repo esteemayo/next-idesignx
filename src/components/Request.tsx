@@ -8,6 +8,8 @@ import Input from './inputs/Input';
 import TextArea from './inputs/TextArea';
 
 import Form from './form/Form';
+import Button from './buttons/Button';
+
 import { selectInputs } from '@/formData';
 
 const Request = () => {
@@ -58,6 +60,7 @@ const Request = () => {
           placeholder='Comment Here'
           onChange={handleChange}
         />
+        <Button label='Send request' />
       </Form>
     </Container>
   );
