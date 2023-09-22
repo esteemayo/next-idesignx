@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 const Heading = styled.h2``;
 
 const Text = styled.p`
-  width: 40%;
+  width: 75%;
   letter-spacing: 2px;
   margin: 2rem 0;
 `;
