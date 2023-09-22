@@ -82,8 +82,6 @@ const Container = styled.section`
 const Heading = styled.h3`
   font-weight: 400;
   font-size: 3rem;
-  text-transform: capitalize;
-  text-align: center;
   color: var(--clr-purple-light-1);
   margin-bottom: 3rem;
 `;
