@@ -2,11 +2,22 @@
 
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+
+  window.onscroll = () => {
+    setIsVisible(window.scrollY > 500 ? true : false);
+  };
+
+  const handleScroll = useCallback(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
 
   return (
     <Container>
