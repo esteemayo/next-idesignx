@@ -3,7 +3,13 @@
 import styled from 'styled-components';
 
 const Statement = () => {
-  return <Container>Statement</Container>;
+  return (
+    <Container>
+      <Paragraph>
+        Need a custom design and professional printing services?
+      </Paragraph>
+    </Container>
+  );
 };
 
 const Container = styled.section`
