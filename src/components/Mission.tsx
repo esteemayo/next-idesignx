@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: var(--clr-purple-dark-2);
 `;
 
+const Wrapper = styled.div``;
+
 export default Mission;
