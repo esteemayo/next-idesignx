@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Featured from '@/components/Featured';
 import DesignHero from '@/components/hero/DesignHero';
 import Mission from '@/components/Mission';
+import Statement from '@/components/Statement';
 import Request from '@/components/Request';
 
 const Designs = () => {
@@ -14,6 +15,7 @@ const Designs = () => {
       <Featured />
       <Mission />
       <Request />
+      <Statement />
     </Container>
   );
 };
