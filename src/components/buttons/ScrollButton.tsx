@@ -20,6 +20,8 @@ const Container = styled.div`
 const Button = styled.button`
   display: inline-block;
   border: none;
+  width: 4rem;
+  height: 4rem;
   padding: 1.5rem;
   font-size: 2rem;
   background-color: transparent;
