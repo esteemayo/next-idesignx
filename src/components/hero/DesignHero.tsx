@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 const DesignHero = () => {
-  return <Header>Custom designs</div>;
+  return <Header>Custom designs</Header>;
 };
 
 const Header = styled.header``;
