@@ -35,7 +35,8 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.div`
-  margin: 15rem 0;
+  height: 100%;
+  /* margin: 15rem 0; */
 
   /* display: flex;
   flex-direction: column; */
