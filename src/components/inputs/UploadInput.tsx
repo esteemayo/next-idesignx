@@ -7,10 +7,13 @@ const UploadInput = () => {
   return (
     <FormGroup>
       <Input id='file' type='file' />
+      <Label htmlFor='file'>Attach a sample</Label>
     </FormGroup>
   );
 };
 
 const Input = styled.input``;
+
+const Label = styled.label``;
 
 export default UploadInput;
