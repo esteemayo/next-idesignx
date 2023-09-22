@@ -1,13 +1,16 @@
 'use client';
 
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
+import {  faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Info = () => {
   return (
     <Container>
       <PhoneWrapper>
-        x<PhoneNumber>+2348136119251</PhoneNumber>
+        <FontAwesomeIcon icon={faPhone} />
+        <PhoneNumber>+2348136119251</PhoneNumber>
       </PhoneWrapper>
       <EmailWrapper>
         x<EmailAddress>esteemdesign19@gmail.com</EmailAddress>
