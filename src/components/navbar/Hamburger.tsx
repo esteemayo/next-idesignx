@@ -6,6 +6,9 @@ const Hamburger = () => {
   return <Container>Hamburger</Container>;
 };
 
-const Container = styled.button``;
+const Container = styled.button`
+  display: inline-block;
+  border: none;
+`;
 
 export default Hamburger;
