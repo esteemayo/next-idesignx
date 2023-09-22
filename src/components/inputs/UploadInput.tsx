@@ -36,7 +36,7 @@ const Input = styled.input`
     display: inline-block;
     text-decoration: none;
     padding: 3px;
-    color: var(--color-purple-light-2);
+    color: var(--clr-purple-light-2);
     border-bottom: 1px solid currentColor;
     transition: all 0.2s;
     cursor: pointer;
