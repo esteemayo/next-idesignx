@@ -31,6 +31,7 @@ const Button = styled.button`
   color: var(--clr-purple-dark-1);
   backdrop-filter: blur(1rem);
   border-radius: 0.5rem;
+  outline-color: var(--clr-purple-light-3);
   cursor: pointer;
 
   display: flex;
