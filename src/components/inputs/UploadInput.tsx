@@ -17,7 +17,10 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  width: 0.1px;
+  height: 0.1px;
+`;
 
 const Label = styled.label``;
 
