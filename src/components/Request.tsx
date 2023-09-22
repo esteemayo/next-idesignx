@@ -85,7 +85,7 @@ const Heading = styled.h3`
   text-transform: capitalize;
   text-align: center;
   color: var(--clr-purple-light-1);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 `;
 
 export default Request;
