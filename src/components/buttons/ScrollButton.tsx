@@ -18,7 +18,6 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  display: inline-block;
   border: none;
   width: 4rem;
   height: 4rem;
@@ -27,6 +26,7 @@ const Button = styled.button`
   background-color: transparent;
   color: var(--clr-purple-light-1);
   backdrop-filter: blur(1rem);
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
