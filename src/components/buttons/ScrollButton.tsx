@@ -21,6 +21,7 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   padding: 1.5rem;
+  font-size: 2rem;
   background-color: transparent;
   color: var(--clr-purple-light-1);
   backdrop-filter: blur(1rem);
