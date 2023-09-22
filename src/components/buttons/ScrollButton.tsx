@@ -22,14 +22,14 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
-  border: none;
   width: 4rem;
   height: 4rem;
   padding: 1.5rem;
   font-size: 1.5rem;
   background-color: transparent;
-  color: var(--clr-purple-dark-1);
+  color: var(--clr-purple-dark-2);
   backdrop-filter: blur(1rem);
+  border: 0.1px solid var(--clr-purple-light-2);
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
