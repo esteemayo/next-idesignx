@@ -9,6 +9,8 @@ const Hamburger = () => {
 const Container = styled.button`
   display: inline-block;
   border: none;
+  background-color: transparent;
+  color: var(--clr-purple-light-2);
 `;
 
 export default Hamburger;
