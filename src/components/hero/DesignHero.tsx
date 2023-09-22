@@ -14,7 +14,10 @@ const DesignHero = () => {
   );
 };
 
-const Header = styled.header``;
+const Header = styled.header`
+  grid-column: full-start / full-end;
+  background-color: pink;
+`;
 
 const Heading = styled.h1``;
 
