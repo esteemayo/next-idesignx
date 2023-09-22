@@ -40,6 +40,11 @@ const Input = styled.input`
     border-bottom: 1px solid currentColor;
     transition: all 0.2s;
     cursor: pointer;
+
+    &:hover {
+      background-color: var(--clr-purple-light-2);
+      color: var(--clr-white);
+    }
   }
 `;
 
