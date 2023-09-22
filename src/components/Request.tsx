@@ -62,7 +62,11 @@ const Request = () => {
           placeholder='Comment Here'
           onChange={handleChange}
         />
-        <UploadInput />
+        <UploadInput
+          id='file'
+          label='Attach a sample'
+          onChange={(e) => setFile(e.target.files[0])}
+        />
         <Button label='Send request' />
       </Form>
     </Container>
