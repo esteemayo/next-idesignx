@@ -13,4 +13,6 @@ const Container = styled.div`
   transform: translateX(-50%);
 `;
 
+const Button = styled.button``;
+
 export default ScrollButton;
