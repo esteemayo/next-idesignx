@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Mission = () => {
-  return <Container>Mission</Container>;
+  return (
+    <Container>
+      <Wrapper></Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.section`
