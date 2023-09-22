@@ -12,7 +12,10 @@ const UploadInput = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const Input = styled.input``;
 
