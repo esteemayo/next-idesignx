@@ -13,8 +13,6 @@ const ScrollButton = () => {
   };
 
   const handleScroll = useCallback((e) => {
-    e.stopPropagation();
-
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
