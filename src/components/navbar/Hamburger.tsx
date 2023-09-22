@@ -9,6 +9,7 @@ const Hamburger = () => {
 const Container = styled.button`
   display: inline-block;
   border: none;
+  font-weight: 400;
   background-color: transparent;
   color: var(--clr-purple-light-2);
 `;
