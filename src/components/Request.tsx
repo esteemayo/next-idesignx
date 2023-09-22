@@ -75,6 +75,8 @@ const Request = () => {
 
 const Container = styled.section`
   grid-column: center-start / center-end;
+  padding: 5rem;
+  margin: 8rem 0;
 `;
 
 const Heading = styled.h3`
