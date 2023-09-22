@@ -21,4 +21,6 @@ const Wrapper = styled.div``;
 
 const Heading = styled.h2``;
 
+const Text = styled.p``
+
 export default Mission;
