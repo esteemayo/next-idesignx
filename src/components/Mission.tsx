@@ -26,10 +26,10 @@ const Container = styled.section`
   padding: 3rem;
   background-image: linear-gradient(
     to bottom,
-    var(--clr-purple-dark-1),
     var(--clr-purple-light-1),
-    var(--clr-purple-dark-2),
-    var(--clr-purple-light-2)
+    var(--clr-purple-dark-1),
+    var(--clr-purple-light-2),
+    var(--clr-purple-dark-2)
   );
   color: var(--clr-white);
 `;
