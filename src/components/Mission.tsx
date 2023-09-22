@@ -28,7 +28,12 @@ const Container = styled.section`
   color: var(--clr-white);
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  margin: 15rem 0;
+
+  display: flex;
+  flex-direction: column;
+`;
 
 const Heading = styled.h2``;
 
