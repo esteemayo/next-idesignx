@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
-import {  faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Info = () => {
   return (
@@ -13,7 +13,8 @@ const Info = () => {
         <PhoneNumber>+2348136119251</PhoneNumber>
       </PhoneWrapper>
       <EmailWrapper>
-        x<EmailAddress>esteemdesign19@gmail.com</EmailAddress>
+        <FontAwesomeIcon icon={faEnvelope} />
+        <EmailAddress>esteemdesign19@gmail.com</EmailAddress>
       </EmailWrapper>
       <SocialWrapper>
         <StyledLink href='#'>icon</StyledLink>
