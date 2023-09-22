@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const ScrollButton = () => {
-  return <Container>ScrollButton</Container>;
+  return (
+    <Container>
+      <Button>^</Button>
+    </Container>
+  );
 };
 
 const Container = styled.div`
