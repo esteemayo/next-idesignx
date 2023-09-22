@@ -47,6 +47,7 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h2`
+  grid-row: 2 / 3;
   font-weight: 400;
   font-size: 4rem;
   text-transform: capitalize;
