@@ -17,6 +17,8 @@ const Container = styled.div`
   align-items: center;
 `;
 
+const Label = styled.label``;
+
 const Input = styled.input`
   width: 0.1px;
   height: 0.1px;
@@ -24,8 +26,11 @@ const Input = styled.input`
   overflow: hidden;
   position: absolute;
   z-index: -1;
-`;
 
-const Label = styled.label``;
+  &:focus + ${Label} {
+    outline: 3px solid var(--clr-purple-light-2);
+    outline-offset: 3px;
+  }
+`;
 
 export default UploadInput;
