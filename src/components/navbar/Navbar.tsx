@@ -34,7 +34,11 @@ const Container = styled.nav`
   align-items: center;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+`;
 
 const Button = styled.button`
   justify-self: end;
