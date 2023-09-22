@@ -4,7 +4,11 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const Featured = () => {
-  return <Container>Featured</Container>;
+  return (
+    <Container>
+      <StyledImage src='/img/woman-3.jpg' width={735} height={549} alt='' />
+    </Container>
+  );
 };
 
 const Container = styled.section`
