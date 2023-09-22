@@ -13,21 +13,35 @@ import Button from './buttons/Button';
 
 import { selectInputs } from '@/formData';
 
+const initialState = {
+  name: '',
+  email: '',
+  phone: '',
+  category: '',
+  comment: '',
+};
+
 const Request = () => {
-  const [data, setData] = useState({});
   const [file, setFile] = useState(null);
+  const [data, setData] = useState(initialState);
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
+  const handleClear = useCallback(() => {
+    setData(initialState);
+  }, []);
+
   const handleSubmit = useCallback(
     (e) => {
       e.preventDefault();
+
       console.log({ ...data, file });
+      handleClear();
     },
-    [data, file]
+    [data, file, handleClear]
   );
 
   return (
