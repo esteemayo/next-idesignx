@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: darkslateblue;
 `;
 
+const Paragraph = styled.p``;
+
 export default Statement;
