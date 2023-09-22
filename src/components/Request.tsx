@@ -77,6 +77,9 @@ const Container = styled.section`
   grid-column: center-start / center-end;
 `;
 
-const Heading = styled.h3``;
+const Heading = styled.h3`
+  font-weight: 400;
+  font-size: 3rem;
+`;
 
 export default Request;
