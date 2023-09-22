@@ -20,6 +20,7 @@ const Container = styled.div`
 const Button = styled.button`
   display: inline-block;
   border: none;
+  padding: 1.5rem;
 `;
 
 export default ScrollButton;
