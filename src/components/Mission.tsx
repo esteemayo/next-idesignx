@@ -8,7 +8,7 @@ const Mission = () => {
 
 const Container = styled.section`
   grid-column: col-start 5 / full-end;
-  background-color: orangered;
+  background-color: var(--clr-purple-dark-2);
 `;
 
 export default Mission;
