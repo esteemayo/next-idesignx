@@ -7,6 +7,7 @@ const Mission = () => {
 };
 
 const Container = styled.section`
+  grid-column: col-start 5 / full-end;
   background-color: orangered;
 `;
 
