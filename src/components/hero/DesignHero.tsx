@@ -32,7 +32,11 @@ const Header = styled.header`
   gap: 2rem;
 `;
 
-const Heading = styled.h1``;
+const Heading = styled.h1`
+  grid-area: 2 / 3 / 3 / 5;
+  align-self: self-end;
+  justify-self: center;
+`;
 
 const Text = styled.p``;
 
