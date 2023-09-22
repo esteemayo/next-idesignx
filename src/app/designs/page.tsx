@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Featured from '@/components/Featured';
 import DesignHero from '@/components/hero/DesignHero';
 import Mission from '@/components/Mission';
+import Request from '@/components/Request';
 
 const Designs = () => {
   return (
@@ -12,6 +13,7 @@ const Designs = () => {
       <DesignHero />
       <Featured />
       <Mission />
+      <Request />
     </Container>
   );
 };
