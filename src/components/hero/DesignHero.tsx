@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const DesignHero = () => {
-  return <Header>Custom designs</Header>;
+  return (
+    <Header>
+      <Heading>Custom designs</Heading>
+    </Header>
+  );
 };
 
 const Header = styled.header``;
