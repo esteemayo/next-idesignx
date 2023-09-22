@@ -6,6 +6,10 @@ const DesignHero = () => {
   return (
     <Header>
       <Heading>Custom designs</Heading>
+      <Text>
+        We offer you the easiest way to get your <br />
+        materials printed without breaking a sweat!
+      </Text>
     </Header>
   );
 };
