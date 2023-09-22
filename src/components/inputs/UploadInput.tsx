@@ -27,11 +27,16 @@ const Input = styled.input`
   position: absolute;
   z-index: -1;
 
-  &:focus + ${Label}{
+  &:focus + ${Label} {
     outline: 3px solid var(--clr-purple-light-2);
     outline-offset: 3px;
+
+    &:hover {
+      display: inline-block;
+      color: var(--clr-purple-light-2);
+      text-decoration: none;
+    }
   }
 `;
-
 
 export default UploadInput;
