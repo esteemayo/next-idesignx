@@ -10,4 +10,6 @@ const Container = styled.section`
   grid-column: center-start / center-end;
 `;
 
+const Heading = styled.h3``;
+
 export default Request;
