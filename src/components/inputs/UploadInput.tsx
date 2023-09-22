@@ -37,6 +37,7 @@ const Input = styled.input`
       padding: 3px;
       color: var(--clr-purple-light-2);
       border-bottom: 1px solid currentColor;
+      cursor: pointer;
     }
   }
 `;
