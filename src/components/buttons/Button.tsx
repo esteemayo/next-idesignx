@@ -5,7 +5,7 @@ import styled from 'styled-components';
 interface ButtonProps {
   label: string;
   type?: string;
-  onClick(): void;
+  onClick?(): void;
 }
 
 const Button: React.FC<ButtonProps> = ({ label, type = 'submit', onClick }) => {
