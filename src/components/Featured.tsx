@@ -13,7 +13,7 @@ const Featured = () => {
 
 const Container = styled.section`
   grid-column: full-start / col-end 4;
-  background-color: var(--clr-black);
+  background-color: var(--clr-white);
 
   display: grid;
   grid-template-rows: 0.5fr repeat(6, 1fr) 0.5fr;
@@ -21,6 +21,7 @@ const Container = styled.section`
 `;
 
 const StyledImage = styled(Image)`
+  justify-self: left;
   grid-row: 3 / span 4;
   grid-column: 3 / span 4;
 
@@ -28,6 +29,7 @@ const StyledImage = styled(Image)`
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 50%;
 `;
 
 export default Featured;
