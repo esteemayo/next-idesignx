@@ -48,6 +48,9 @@ const Heading = styled.h1`
 const Text = styled.p`
   grid-area: 3 / 3 / 4 / span 2;
   align-self: self-start;
+
+  font-size: 2.5rem;
+  color: currentColor;
 `;
 
 export default DesignHero;
