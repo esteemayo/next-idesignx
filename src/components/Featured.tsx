@@ -19,6 +19,8 @@ const Container = styled.section`
 const StyledImage = styled(Image)`
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 `;
 
 export default Featured;
