@@ -4,12 +4,14 @@ import styled from 'styled-components';
 
 import Featured from '@/components/Featured';
 import DesignHero from '@/components/hero/DesignHero';
+import Mission from '@/components/Mission';
 
 const Designs = () => {
   return (
     <Container>
       <DesignHero />
       <Featured />
+      <Mission />
     </Container>
   );
 };
