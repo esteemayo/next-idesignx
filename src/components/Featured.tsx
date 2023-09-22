@@ -16,6 +16,9 @@ const Container = styled.section`
   background-color: var(--clr-white);
 `;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+`;
 
 export default Featured;
