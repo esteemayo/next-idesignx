@@ -38,6 +38,9 @@ const Heading = styled.h1`
   justify-self: center;
 
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: var(--clr-white);
   letter-spacing: 0.5rem;
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 `;
