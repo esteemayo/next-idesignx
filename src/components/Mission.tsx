@@ -57,12 +57,14 @@ const Heading = styled.h2`
 `;
 
 const Text = styled.p`
+  grid-row: 3 / 4;
   width: 75%;
   letter-spacing: 2px;
   /* margin: 2rem 0; */
 `;
 
 const Paragraph = styled.p`
+  grid-row: 4 / 5;
   width: 75%;
   letter-spacing: 2px;
 `;
