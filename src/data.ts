@@ -1,3 +1,5 @@
+import { faBagShopping, faPrint } from '@fortawesome/free-solid-svg-icons';
+
 export const navItems = [
   {
     id: 1,
@@ -83,12 +85,12 @@ export const printItems = [
     id: 1,
     title: 'Print',
     desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
-    icon: '',
+    icon: faPrint,
   },
   {
     id: 2,
     title: 'Design',
     desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
-    icon: '',
+    icon: faBagShopping,
   },
 ];
