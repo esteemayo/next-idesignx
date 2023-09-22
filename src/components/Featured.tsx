@@ -14,6 +14,10 @@ const Featured = () => {
 const Container = styled.section`
   grid-column: full-start / col-end 4;
   background-color: var(--clr-white);
+
+  display: grid;
+  grid-template-rows: 0.5fr repeat(6, 1fr) 0.5fr;
+  grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
 `;
 
 const StyledImage = styled(Image)`
