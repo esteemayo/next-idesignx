@@ -21,6 +21,8 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   padding: 1.5rem;
+  background-color: transparent;
+  color: var(--clr-purple-light-1);
 `;
 
 export default ScrollButton;
