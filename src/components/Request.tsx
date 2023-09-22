@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
 import Form from './form/Form';
+import Select from './inputs/Select';
 import Input from './inputs/Input';
+
+import { selectInputs } from '@/formData';
 
 const Request = () => {
   const [data, setData] = useState({});
@@ -41,6 +44,11 @@ const Request = () => {
           label='Phone number'
           placeholder='Phone number'
           onChange={handleChange}
+        />
+        <Select
+          name='category'
+          label='Select Category'
+          options={selectInputs}
         />
       </Form>
     </Container>
