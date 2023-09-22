@@ -29,7 +29,7 @@ const Container = styled.nav`
   padding: 1.5rem;
 
   display: grid;
-  grid-template-columns: 4.5rem repeat(3, minmax(min-content, 1fr));
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
   gap: 5rem;
   align-items: center;
 `;
