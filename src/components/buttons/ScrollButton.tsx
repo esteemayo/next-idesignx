@@ -27,6 +27,9 @@ const Button = styled.button`
   background-color: transparent;
   color: var(--clr-purple-light-1);
   backdrop-filter: blur(1rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default ScrollButton;
