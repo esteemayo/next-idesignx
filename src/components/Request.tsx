@@ -51,6 +51,7 @@ const Request = () => {
         <Input
           name='name'
           label='Your name'
+          value={data.name}
           placeholder='Your name'
           onChange={handleChange}
         />
@@ -58,6 +59,7 @@ const Request = () => {
           name='email'
           type='email'
           label='Email'
+          value={data.email}
           placeholder='Email'
           onChange={handleChange}
         />
@@ -65,6 +67,7 @@ const Request = () => {
           name='phone'
           type='tel'
           label='Phone number'
+          value={data.phone}
           placeholder='Phone number'
           onChange={handleChange}
         />
@@ -77,6 +80,7 @@ const Request = () => {
         <TextArea
           name='comment'
           label='Comment Here'
+          value={data.comment}
           placeholder='Comment Here'
           onChange={handleChange}
         />
