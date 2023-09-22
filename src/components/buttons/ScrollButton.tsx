@@ -11,7 +11,6 @@ const ScrollButton = () => {
   if (typeof window !== 'undefined') {
     window.onscroll = () => {
       setIsVisible(window.scrollY > 500 ? true : false);
-
       return () => (window.onscroll = null);
     };
   }
