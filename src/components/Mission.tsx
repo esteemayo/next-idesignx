@@ -36,10 +36,6 @@ const Container = styled.section`
 
 const Wrapper = styled.div`
   height: 100%;
-  /* margin: 15rem 0; */
-
-  /* display: flex;
-  flex-direction: column; */
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   gap: 2rem;
