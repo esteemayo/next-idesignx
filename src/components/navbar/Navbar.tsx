@@ -14,8 +14,10 @@ const Navbar = () => {
 
   return (
     <Container>
-      <Hamburger />
-      <Logo />
+      <Wrapper>
+        <Hamburger />
+        <Logo />
+      </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Button>Upload your design</Button>
     </Container>
@@ -31,6 +33,8 @@ const Container = styled.nav`
   gap: 5rem;
   align-items: center;
 `;
+
+const Wrapper = styled.div``;
 
 const Button = styled.button`
   justify-self: end;
