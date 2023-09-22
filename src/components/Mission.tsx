@@ -35,7 +35,13 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-const Heading = styled.h2``;
+const Heading = styled.h2`
+  font-weight: 400;
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: currentColor;
+  line-height: 1;
+`;
 
 const Text = styled.p`
   width: 75%;
