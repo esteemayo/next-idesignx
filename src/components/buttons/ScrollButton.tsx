@@ -2,9 +2,12 @@
 
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const ScrollButton = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <Container>
       <Button>
