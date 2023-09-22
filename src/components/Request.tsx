@@ -3,10 +3,11 @@
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
-import Form from './form/Form';
 import Select from './inputs/Select';
 import Input from './inputs/Input';
+import TextArea from './inputs/TextArea';
 
+import Form from './form/Form';
 import { selectInputs } from '@/formData';
 
 const Request = () => {
@@ -49,6 +50,13 @@ const Request = () => {
           name='category'
           label='Select Category'
           options={selectInputs}
+          onChange={handleChange}
+        />
+        <TextArea
+          name='comment'
+          label='Comment Here'
+          placeholder='Comment Here'
+          onChange={handleChange}
         />
       </Form>
     </Container>
