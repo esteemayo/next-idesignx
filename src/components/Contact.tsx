@@ -5,6 +5,7 @@ import { useCallback, useState } from 'react';
 
 import Input from './inputs/Input';
 import TextArea from './inputs/TextArea';
+import Form from './form/Form';
 import Select from './inputs/Select';
 
 import { selectInputs } from '@/formData';
@@ -87,8 +88,6 @@ const Heading = styled.h2`
 const Text = styled.p`
   color: var(--clr-purple-light-1);
 `;
-
-const Form = styled.form``;
 
 const Button = styled.button`
   margin-top: 2rem;
