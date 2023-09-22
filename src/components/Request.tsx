@@ -74,7 +74,7 @@ const Request = () => {
 };
 
 const Container = styled.section`
-  grid-column: center-start / center-end;
+  grid-column: col-start 2 / col-end 7;
   padding: 5rem;
   margin: 8rem 0;
 `;
