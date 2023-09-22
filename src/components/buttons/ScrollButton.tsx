@@ -27,6 +27,8 @@ const Button = styled.button`
   color: var(--clr-purple-light-1);
   backdrop-filter: blur(1rem);
   border-radius: 0.5rem;
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
