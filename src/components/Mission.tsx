@@ -24,7 +24,13 @@ const Mission = () => {
 const Container = styled.section`
   grid-column: col-start 5 / full-end;
   padding: 3rem;
-  background-color: var(--clr-purple-dark-2);
+  background-image: linear-gradient(
+    to bottom,
+    var(--clr-purple-dark-1),
+    var(--clr-purple-light-1),
+    var(--clr-purple-dark-2),
+    var(--clr-purple-light-2)
+  );
   color: var(--clr-white);
 `;
 
