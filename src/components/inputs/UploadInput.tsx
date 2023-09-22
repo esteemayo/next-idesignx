@@ -33,8 +33,10 @@ const Input = styled.input`
 
     &:hover {
       display: inline-block;
-      color: var(--clr-purple-light-2);
       text-decoration: none;
+      padding: 3px;
+      color: var(--clr-purple-light-2);
+      border-bottom: 1px solid currentColor;
     }
   }
 `;
