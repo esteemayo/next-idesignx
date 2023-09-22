@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
 import Select from './inputs/Select';
+import UploadInput from './inputs/UploadInput';
 import Input from './inputs/Input';
 import TextArea from './inputs/TextArea';
 
@@ -60,6 +61,7 @@ const Request = () => {
           placeholder='Comment Here'
           onChange={handleChange}
         />
+        <UploadInput />
         <Button label='Send request' />
       </Form>
     </Container>
