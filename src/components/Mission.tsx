@@ -8,8 +8,9 @@ const Mission = () => {
       <Wrapper>
         <Heading>Custom designs</Heading>
         <Text>
-          We offer you the easiest way to get your <br />
-          materials printed without breaking a sweat!
+          We are a Creative Design, Brand development and activation firm. We
+          aim to present brands in grand style. Focusing on each drop in a
+          massive rainfall is a way of life to us.
         </Text>
       </Wrapper>
     </Container>
