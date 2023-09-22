@@ -5,10 +5,10 @@ import { FormGroup } from '../form/FormGroup';
 
 const UploadInput = () => {
   return (
-    <FormGroup>
+    <Container>
       <Input id='file' type='file' />
       <Label htmlFor='file'>Attach a sample</Label>
-    </FormGroup>
+    </Container>
   );
 };
 
