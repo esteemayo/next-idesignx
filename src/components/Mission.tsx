@@ -37,6 +37,10 @@ const Wrapper = styled.div`
 
 const Heading = styled.h2``;
 
-const Text = styled.p``;
+const Text = styled.p`
+  width: 40%;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+`;
 
 export default Mission;
