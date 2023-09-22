@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { StyledLink } from './buttons/StyledLink';
 
 const Statement = () => {
   return (
@@ -8,6 +9,7 @@ const Statement = () => {
       <Paragraph>
         Need a custom design and professional printing services?
       </Paragraph>
+      <StyledLink href='/contact'>Contact us</StyledLink>
     </Container>
   );
 };
