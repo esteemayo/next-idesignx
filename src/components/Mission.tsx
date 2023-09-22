@@ -12,6 +12,10 @@ const Mission = () => {
           aim to present brands in grand style. Focusing on each drop in a
           massive rainfall is a way of life to us.
         </Text>
+        <Text>
+          We treat every details with caution to set your brand in motion of
+          excellence.
+        </Text>
       </Wrapper>
     </Container>
   );
