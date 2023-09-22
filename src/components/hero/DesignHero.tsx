@@ -51,6 +51,8 @@ const Text = styled.p`
 
   font-size: 2.5rem;
   color: currentColor;
+  letter-spacing: 1px;
+  text-align: center;
 `;
 
 export default DesignHero;
