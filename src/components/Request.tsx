@@ -22,13 +22,25 @@ const Request = () => {
     <Container>
       <Heading>Fill in your requests</Heading>
       <Form onSubmit={handleSubmit}>
-        <Input name='name' label='Your name' placeholder='Your name' />
-        <Input name='email' type='email' label='Email' placeholder='Email' />
+        <Input
+          name='name'
+          label='Your name'
+          placeholder='Your name'
+          onChange={handleChange}
+        />
+        <Input
+          name='email'
+          type='email'
+          label='Email'
+          placeholder='Email'
+          onChange={handleChange}
+        />
         <Input
           name='phone'
           type='tel'
           label='Phone number'
           placeholder='Phone number'
+          onChange={handleChange}
         />
       </Form>
     </Container>
