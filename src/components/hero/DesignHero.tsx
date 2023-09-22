@@ -16,6 +16,7 @@ const DesignHero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+  color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
@@ -24,7 +25,6 @@ const Header = styled.header`
     url(../img/design-hero.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -40,11 +40,14 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5rem;
-  color: var(--clr-white);
+  color: currentColor;
   letter-spacing: 0.5rem;
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  grid-area: 3 / 3 / 4 / span 2;
+  align-self: self-start;
+`;
 
 export default DesignHero;
