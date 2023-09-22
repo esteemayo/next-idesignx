@@ -16,7 +16,7 @@ const Statement = () => {
 
 const Container = styled.section`
   grid-column: full-start / full-end;
-  background-color: darkslateblue;
+  background-color: var(--clr-white);
 `;
 
 const Paragraph = styled.p``;
