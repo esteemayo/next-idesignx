@@ -1,12 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
+
+import Featured from '@/components/Featured';
 import DesignHero from '@/components/hero/DesignHero';
 
 const Designs = () => {
   return (
     <Container>
       <DesignHero />
+      <Featured />
     </Container>
   );
 };
