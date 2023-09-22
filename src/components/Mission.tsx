@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const Mission = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Heading>Custom designs</Heading>
+      </Wrapper>
     </Container>
   );
 };
@@ -17,6 +19,6 @@ const Container = styled.section`
 
 const Wrapper = styled.div``;
 
-const Heading = styled.h2``
+const Heading = styled.h2``;
 
 export default Mission;
