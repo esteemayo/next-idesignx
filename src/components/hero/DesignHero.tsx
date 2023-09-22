@@ -8,4 +8,6 @@ const DesignHero = () => {
 
 const Header = styled.header``;
 
+const Heading = styled.h1``;
+
 export default DesignHero;
