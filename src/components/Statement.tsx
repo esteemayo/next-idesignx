@@ -22,6 +22,8 @@ const Container = styled.section`
   padding: 4rem 0;
 `;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
+  font-size: 2rem;
+`;
 
 export default Statement;
