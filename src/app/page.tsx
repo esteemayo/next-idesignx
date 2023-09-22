@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import About from '@/components/About';
 import Contact from '@/components/Contact';
-import Hero from '@/components/Hero';
+import Hero from '@/components/hero/Hero';
 
 const Printings = dynamic(() => import('@/components/Printings'), {
   ssr: false,
