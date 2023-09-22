@@ -30,15 +30,16 @@ const Input = styled.input`
   &:focus + ${Label} {
     outline: 3px solid var(--clr-purple-light-2);
     outline-offset: 3px;
+  }
 
-    &:hover {
-      display: inline-block;
-      text-decoration: none;
-      padding: 3px;
-      color: var(--clr-purple-light-2);
-      border-bottom: 1px solid currentColor;
-      cursor: pointer;
-    }
+  & + ${Label} {
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px;
+    color: var(--color-purple-light-2);
+    border-bottom: 1px solid currentColor;
+    transition: all 0.2s;
+    cursor: pointer;
   }
 `;
 
