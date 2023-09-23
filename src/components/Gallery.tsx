@@ -17,4 +17,6 @@ const Container = styled.section`
 
 const Heading = styled.h2``;
 
+const Wrapper = styled.div``;
+
 export default Gallery;
