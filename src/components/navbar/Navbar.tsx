@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
@@ -15,8 +16,12 @@ const Navbar = () => {
   const pathname = usePathname();
   const { showMenu, handleToggle } = useMenu();
 
+  const activeMenu = useMemo(() => {
+    return showMenu.toString();
+  }, [showMenu]);
+
   return (
-    <Container active={showMenu}>
+    <Container active={activeMenu}>
       <Wrapper>
         <Hamburger isOpen={showMenu} onToggle={handleToggle} />
         <Logo />
