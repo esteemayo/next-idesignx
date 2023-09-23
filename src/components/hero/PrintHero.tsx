@@ -44,6 +44,10 @@ const HeadingPrimary = styled.h1`
   grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
   justify-self: center;
+
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: var(--clr-white);
 `;
 
 const Text = styled.p``;
