@@ -7,7 +7,8 @@ const PrintContact = () => {
   return (
     <Container>
       <Paragraph>
-        Need a custom design and professional <Br>printing services?</Br>
+        Need a custom design and professional <Br />
+        printing services?
       </Paragraph>
       <StyledLink href='/contact'>Contact us</StyledLink>
     </Container>
