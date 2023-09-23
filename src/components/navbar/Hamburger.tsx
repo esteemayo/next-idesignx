@@ -17,8 +17,8 @@ const Container = styled.button`
   flex-direction: column;
   justify-content: space-between;
   border: none;
-  width: 4rem;
-  height: 4rem;
+  width: 3.2rem;
+  height: 2.5rem;
   font-weight: 400;
   background-color: transparent;
   color: var(--clr-purple-light-2);
