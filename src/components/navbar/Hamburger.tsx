@@ -30,6 +30,19 @@ const Span = styled.span`
   height: 3px;
   background-color: currentColor;
   transform-origin: left;
+
+  &:first-child {
+    transform: ${({ type }) => type === true && 'rotate(45deg)'};
+  }
+
+  &:nth-child(2) {
+    opacity: ${({ type }) => type === true && 0};
+    visibility: ${({ type }) => type === true && 'hidden'};
+  }
+
+  &:last-child {
+    transform: ${({ type }) => type === true && 'rotate(-45deg)'};
+  }
 `;
 
 export default Hamburger;
