@@ -29,6 +29,8 @@ const Navbar = () => {
 const Container = styled.nav`
   background-color: var(--clr-white);
   padding: 1.5rem;
+  position: relative;
+  z-index: 3000;
 
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
@@ -40,8 +42,6 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  position: relative;
-  z-index: 3000;
 `;
 
 const Button = styled.button`
