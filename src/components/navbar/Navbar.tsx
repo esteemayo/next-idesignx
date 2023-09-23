@@ -48,6 +48,8 @@ const Wrapper = styled.div`
   gap: 2rem;
 `;
 
+const Box = styled.div``;
+
 const Button = styled.button`
   justify-self: end;
 
