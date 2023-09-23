@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ label, type = 'submit', onClick }) => {
   return (
-    <StyledButton type='submit' onClick={onClick}>
+    <StyledButton type={type} onClick={onClick}>
       {label}
     </StyledButton>
   );
