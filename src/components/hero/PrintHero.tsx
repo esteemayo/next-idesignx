@@ -45,9 +45,12 @@ const HeadingPrimary = styled.h1`
   align-self: self-end;
   justify-self: center;
 
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5rem;
   color: var(--clr-white);
+  letter-spacing: 0.7rem;
+  line-height: 1;
 `;
 
 const Text = styled.p``;
