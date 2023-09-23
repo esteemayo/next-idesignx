@@ -16,7 +16,9 @@ const MenuItem: React.FC<MenuItemProps> = ({ url, label }) => {
   );
 };
 
-const ListItem = styled.li``;
+const ListItem = styled.li`
+  color: currentColor;
+`;
 
 const StyledLink = styled(Link)``;
 
