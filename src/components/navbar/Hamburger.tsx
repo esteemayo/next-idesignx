@@ -1,5 +1,6 @@
 'use client';
 
+import { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 interface HamburgerProps {
@@ -8,11 +9,22 @@ interface HamburgerProps {
 }
 
 const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
+  const [openMenu, setOpenMenu] = useState(isOpen);
+
+  const toggleHandler = useCallback(() => {
+    setOpenMenu(false);
+    onToggle();
+  }, [onToggle]);
+
+  useEffect(() => {
+    setOpenMenu(isOpen);
+  }, [isOpen]);
+
   return (
-    <Container type={isOpen} onClick={onToggle}>
-      <Span type={isOpen}>&nbsp;</Span>
-      <Span type={isOpen}>&nbsp;</Span>
-      <Span type={isOpen}>&nbsp;</Span>
+    <Container type={openMenu} onClick={toggleHandler}>
+      <Span type={openMenu}>&nbsp;</Span>
+      <Span type={openMenu}>&nbsp;</Span>
+      <Span type={openMenu}>&nbsp;</Span>
     </Container>
   );
 };
