@@ -3,7 +3,13 @@
 import styled from 'styled-components';
 
 const PrintContact = () => {
-  return <Container>PrintContact</Container>;
+  return (
+    <Container>
+      <Paragraph>
+        Need a custom design and professional <Br>printing services?</Br>
+      </Paragraph>
+    </Container>
+  );
 };
 
 const Container = styled.section`
@@ -17,6 +23,8 @@ const Container = styled.section`
   background-size: cover;
   background-position: center;
 `;
+
+const Br = styled.br``;
 
 const Paragraph = styled.p``;
 
