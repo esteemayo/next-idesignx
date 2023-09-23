@@ -25,10 +25,10 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
   }, [isOpen]);
 
   return (
-    <Container type={activeMenu} onClick={toggleHandler}>
-      <Span type={activeMenu}>&nbsp;</Span>
-      <Span type={activeMenu}>&nbsp;</Span>
-      <Span type={activeMenu}>&nbsp;</Span>
+    <Container active={activeMenu} onClick={toggleHandler}>
+      <Span active={activeMenu}>&nbsp;</Span>
+      <Span active={activeMenu}>&nbsp;</Span>
+      <Span active={activeMenu}>&nbsp;</Span>
     </Container>
   );
 };
@@ -42,8 +42,8 @@ const Container = styled.button`
   height: 2.5rem;
   font-weight: 400;
   background-color: transparent;
-  color: ${({ type }) =>
-    type === 'true' ? 'var(--clr-white)' : 'var(--clr-purple-light-2)'};
+  color: ${({ active }) =>
+    active === 'true' ? 'var(--clr-white)' : 'var(--clr-purple-light-2)'};
   cursor: pointer;
 
   @media only screen and (min-width: 48em) {
@@ -58,17 +58,18 @@ const Span = styled.span`
   transform-origin: left;
 
   &:first-child {
-    transform: ${({ type }) => (type === 'true' ? 'rotate(45deg)' : undefined)};
+    transform: ${({ active }) =>
+      active === 'true' ? 'rotate(45deg)' : undefined};
   }
 
   &:nth-child(2) {
-    opacity: ${({ type }) => (type === 'true' ? 0 : undefined)};
-    visibility: ${({ type }) => (type === 'true' ? 'hidden' : undefined)};
+    opacity: ${({ active }) => (active === 'true' ? 0 : undefined)};
+    visibility: ${({ active }) => (active === 'true' ? 'hidden' : undefined)};
   }
 
   &:last-child {
-    transform: ${({ type }) =>
-      type === 'true' ? 'rotate(-45deg)' : undefined};
+    transform: ${({ active }) =>
+      active === 'true' ? 'rotate(-45deg)' : undefined};
   }
 `;
 
