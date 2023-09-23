@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 
 import AboutHero from '@/components/hero/AboutHero';
+import StoryImage from '@/components/StoryImage';
 import StoryDetails from '@/components/StoryDetails';
 
 const About = () => {
@@ -10,6 +11,7 @@ const About = () => {
     <Container>
       <AboutHero />
       <StoryDetails />
+      <StoryImage />
     </Container>
   );
 };
