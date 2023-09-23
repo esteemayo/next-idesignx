@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Hamburger = ({ isOpen }) => {
   return (
-    <Container>
+    <Container type={isOpen}>
       <Span type={isOpen}>&nbsp;</Span>
       <Span type={isOpen}>&nbsp;</Span>
       <Span type={isOpen}>&nbsp;</Span>
@@ -21,7 +21,8 @@ const Container = styled.button`
   height: 2.5rem;
   font-weight: 400;
   background-color: transparent;
-  color: var(--clr-purple-light-2);
+  color: ${({ type }) =>
+    type === true ? 'var(--clr-white)' : 'var(--clr-purple-light-2)'};
   cursor: pointer;
 `;
 
