@@ -31,7 +31,13 @@ const Container = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--clr-purple-light-1);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-purple-dark-1),
+    var(--clr-purple-light-1),
+    var(--clr-purple-light-2),
+    var(--clr-purple-light-3)
+  );
   color: var(--clr-white);
   z-index: 2000;
 
