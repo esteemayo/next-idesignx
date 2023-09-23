@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Logo from '../navbar/Logo';
 import Hamburger from '../navbar/Hamburger';
 
+import MenuItems from './MenuItems';
 import Button from '../buttons/Button';
 
 const Sidebar = () => {
@@ -20,6 +21,7 @@ const Sidebar = () => {
         </LogoBox>
         <Button nav type='button' label='Upload your design' />
       </Wrapper>
+      <MenuItems />
     </Container>
   );
 };
