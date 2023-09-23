@@ -10,11 +10,11 @@ const PrintHero = () => {
         We offer you the easiest way to get your <Br />
         materials printed without breaking a sweat!
       </Text>
-      <HeadingSecondary>
+      <HeadingSecondary className='heading-left'>
         <HeadingMain>Be assured</HeadingMain>
         <HeadingSub>Sample prints</HeadingSub>
       </HeadingSecondary>
-      <HeadingSecondary>
+      <HeadingSecondary className='heading-right'>
         <HeadingMain>Guaranteed</HeadingMain>
         <HeadingSub>5 days max</HeadingSub>
       </HeadingSecondary>
