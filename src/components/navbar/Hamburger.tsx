@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const Hamburger = ({ isOpen }) => {
   return (
     <Container>
-      <Span>&nbsp;</Span>
-      <Span>&nbsp;</Span>
-      <Span>&nbsp;</Span>
+      <Span type={isOpen}>&nbsp;</Span>
+      <Span type={isOpen}>&nbsp;</Span>
+      <Span type={isOpen}>&nbsp;</Span>
     </Container>
   );
 };
