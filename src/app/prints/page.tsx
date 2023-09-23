@@ -1,9 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+import PrintHero from '@/components/hero/PrintHero';
 
 const Prints = () => {
-  return <Container>Prints</Container>;
+  return (
+    <Container>
+      <PrintHero />
+    </Container>
+  );
 };
 
 const Container = styled.main`
