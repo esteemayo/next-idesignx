@@ -1,7 +1,7 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 interface HamburgerProps {
   isOpen: boolean;
