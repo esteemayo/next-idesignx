@@ -83,6 +83,11 @@ const HeadingMain = styled.span`
   letter-spacing: 3px;
 `;
 
-const HeadingSub = styled.span``;
+const HeadingSub = styled.span`
+  display: block;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
+  animation: moveInBottom 0.5s ease-out 1s backwards;
+`;
 
 export default PrintHero;
