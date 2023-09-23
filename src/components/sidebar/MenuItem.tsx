@@ -20,6 +20,8 @@ const ListItem = styled.li`
   color: currentColor;
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  color: inherit;
+`;
 
 export default MenuItem;
