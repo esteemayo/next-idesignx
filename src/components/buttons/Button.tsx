@@ -23,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 const StyledButton = styled.button`
-  margin-top: ${({ nav }) => !nav && '2rem'};
+  margin-top: ${({ nav }) => (!nav ? '2rem' : undefined)};
   display: inline-block;
   border: none;
   text-transform: capitalize;
