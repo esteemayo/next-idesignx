@@ -22,6 +22,9 @@ const ListItem = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 2rem;
   color: inherit;
 `;
 
