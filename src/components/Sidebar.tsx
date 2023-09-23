@@ -45,6 +45,7 @@ const Wrapper = styled.div`
 const LogoBox = styled.div`
   display: flex;
   align-items: center;
+  gap: 2rem;
 `;
 
 export default Sidebar;
