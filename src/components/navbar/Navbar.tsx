@@ -40,6 +40,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  z-index: 3000;
 `;
 
 const Button = styled.button`
