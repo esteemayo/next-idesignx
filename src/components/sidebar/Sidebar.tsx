@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-import Logo from './navbar/Logo';
-import Hamburger from './navbar/Hamburger';
+import Logo from '../navbar/Logo';
+import Hamburger from '../navbar/Hamburger';
 
-import Button from './buttons/Button';
+import Button from '../buttons/Button';
 
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(true);
