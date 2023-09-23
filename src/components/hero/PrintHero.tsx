@@ -10,10 +10,10 @@ const PrintHero = () => {
         We offer you the easiest way to get your <Br />
         materials printed without breaking a sweat!
       </Text>
-      <HeadingSecondary>
+      <HeadingSecondaryLeft>
         <HeadingMain>Be assured</HeadingMain>
         <HeadingSub>Sample prints</HeadingSub>
-      </HeadingSecondary>
+      </HeadingSecondaryLeft>
     </Header>
   );
 };
@@ -29,7 +29,9 @@ const Text = styled.p``;
 
 const Br = styled.br``;
 
-const HeadingSecondary = styled.h2``;
+const HeadingSecondaryLeft = styled.h2``;
+
+const HeadingSecondaryRight = styled.h2``;
 
 const HeadingMain = styled.span``;
 
