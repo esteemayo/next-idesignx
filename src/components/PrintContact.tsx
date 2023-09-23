@@ -30,6 +30,9 @@ const Container = styled.section`
 
 const Br = styled.br``;
 
-const Paragraph = styled.p``;
+const Paragraph = styled.p`
+  font-size: 3rem;
+  color: currentColor;
+`;
 
 export default PrintContact;
