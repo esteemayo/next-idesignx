@@ -36,6 +36,9 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
-const LogoBox = styled.div``;
+const LogoBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 export default Sidebar;
