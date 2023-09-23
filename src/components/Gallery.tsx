@@ -20,4 +20,6 @@ const Heading = styled.h2``;
 
 const Wrapper = styled.div``;
 
+const ImageContainer = styled.figure``;
+
 export default Gallery;
