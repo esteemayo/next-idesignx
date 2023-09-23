@@ -25,7 +25,7 @@ const Gallery = () => {
 
 const Container = styled.section`
   grid-column: center-start / center-end;
-  background-color: orangered;
+  margin: 15rem 0;
 `;
 
 const Heading = styled.h2``;
