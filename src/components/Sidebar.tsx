@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import Logo from './navbar/Logo';
 import Hamburger from './navbar/Hamburger';
 
+import Button from './buttons/Button';
+
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(true);
 
@@ -16,6 +18,7 @@ const Sidebar = () => {
           <Hamburger isOpen={showMenu} />
           <Logo />
         </LogoBox>
+        <Button nav type='button' label='Upload your design' />
       </Wrapper>
     </Container>
   );
