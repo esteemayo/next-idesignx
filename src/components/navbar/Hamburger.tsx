@@ -15,6 +15,8 @@ const Hamburger = () => {
 const Container = styled.button`
   display: inline-block;
   border: none;
+  width: 4rem;
+  height: 4rem;
   font-weight: 400;
   background-color: transparent;
   color: var(--clr-purple-light-2);
