@@ -33,6 +33,11 @@ const Header = styled.header`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: min-content repeat(3, 1fr);
+  gap: 1.5rem;
 `;
 
 const HeadingPrimary = styled.h1``;
