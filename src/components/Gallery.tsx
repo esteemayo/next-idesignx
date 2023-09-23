@@ -40,6 +40,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
   justify-content: center;
+  grid-auto-rows: 25rem;
 `;
 
 const ImageContainer = styled.figure`
