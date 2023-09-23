@@ -78,7 +78,10 @@ const HeadingSecondary = styled.h2`
   animation: moveInBottom 0.5s ease-out 1s backwards;
 `;
 
-const HeadingMain = styled.span``;
+const HeadingMain = styled.span`
+  display: block;
+  letter-spacing: 3px;
+`;
 
 const HeadingSub = styled.span``;
 
