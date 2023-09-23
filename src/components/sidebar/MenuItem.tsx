@@ -6,11 +6,12 @@ import styled from 'styled-components';
 interface MenuItemProps {
   url: string;
   label: string;
+  onClick?(): void;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ url, label }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ url, label, onClick }) => {
   return (
-    <ListItem>
+    <ListItem onClick={onClick}>
       <StyledLink href={url}>{label}</StyledLink>
     </ListItem>
   );
