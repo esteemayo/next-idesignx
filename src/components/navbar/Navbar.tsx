@@ -55,32 +55,4 @@ const Box = styled.div`
   justify-self: end;
 `;
 
-// const Button = styled.button`
-//   display: inline-block;
-//   border: none;
-//   font-weight: 400;
-//   font-size: 1.5rem;
-//   padding: 1rem 3rem;
-//   background-image: linear-gradient(
-//     to right bottom,
-//     var(--clr-purple-dark-1),
-//     var(--clr-purple-light-1),
-//     var(--clr-purple-light-2),
-//     var(--clr-purple-light-3)
-//   );
-//   color: var(--clr-white);
-//   border-radius: 0.5rem;
-//   outline-color: var(--clr-purple-light-3);
-//   cursor: pointer;
-//   transition: all 0.2s;
-
-//   &:hover {
-//     opacity: 0.9;
-//   }
-
-//   &:disabled {
-//     opacity: 0.75;
-//   }
-// `;
-
 export default Navbar;
