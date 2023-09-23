@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const PrintHero = () => {
-  return <Header>PrintHero</Header>;
+  return (
+    <Header>
+      <Heading>Print</Heading>
+    </Header>
+  );
 };
 
 const Header = styled.header`
