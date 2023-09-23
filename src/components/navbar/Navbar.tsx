@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Hamburger />
+        <Hamburger isOpen={openMenu} />
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
