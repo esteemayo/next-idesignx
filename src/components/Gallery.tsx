@@ -6,6 +6,7 @@ const Gallery = () => {
   return (
     <Container>
       <Heading>Gallery</Heading>
+      <Wrapper></Wrapper>
     </Container>
   );
 };
