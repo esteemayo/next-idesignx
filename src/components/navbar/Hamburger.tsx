@@ -38,8 +38,8 @@ const Container = styled.button`
   flex-direction: column;
   justify-content: space-between;
   border: none;
-  width: 3.2rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 2rem;
   font-weight: 400;
   background-color: transparent;
   color: ${({ active }) =>
