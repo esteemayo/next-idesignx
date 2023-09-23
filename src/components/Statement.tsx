@@ -3,9 +3,13 @@
 import styled from 'styled-components';
 import { StyledLink } from './buttons/StyledLink';
 
-const Statement = () => {
+interface StatementProps {
+  bg?: boolean;
+}
+
+const Statement: React.FC<StatementProps> = ({ bg }) => {
   return (
-    <Container>
+    <Container bg={bg}>
       <Paragraph>
         Need a custom design and professional printing
         <br /> services?
