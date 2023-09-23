@@ -54,7 +54,9 @@ const HeadingPrimary = styled.h1`
   animation: moveInTop 0.5s ease-out 0.75s backwards;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  grid-area: 3 / 1 / 4 / -1;
+`;
 
 const Br = styled.br``;
 
