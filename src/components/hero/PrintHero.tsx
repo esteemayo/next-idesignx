@@ -51,6 +51,7 @@ const HeadingPrimary = styled.h1`
   color: var(--clr-white);
   letter-spacing: 0.7rem;
   line-height: 1;
+  animation: moveInTop 0.5s ease-out 0.75s backwards;
 `;
 
 const Text = styled.p``;
