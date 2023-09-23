@@ -21,7 +21,7 @@ const Sidebar = () => {
           <Hamburger isOpen={showMenu} onToggle={handleToggle} />
           <Logo />
         </LogoBox>
-        <Button nav={true} type='button' label='Upload your design' />
+        <Button nav='true' type='button' label='Upload your design' />
       </Wrapper>
       <MenuItems links={navItems} />
     </Container>
