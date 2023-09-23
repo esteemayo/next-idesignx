@@ -21,6 +21,7 @@ const ListItem = styled.li`
 `;
 
 const StyledLink = styled(Link)`
+  text-decoration: none;
   color: inherit;
 `;
 
