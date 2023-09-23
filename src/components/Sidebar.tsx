@@ -16,4 +16,6 @@ const Container = styled.aside`
   color: var(--clr-white);
 `;
 
+const Wrapper = styled.div``;
+
 export default Sidebar;
