@@ -38,7 +38,7 @@ const Container = styled.div`
   left: 50%;
   bottom: 1rem;
   transform: translate(-50%, -1rem);
-  z-index: 3000;
+  z-index: 1000;
 `;
 
 const Button = styled.button`
