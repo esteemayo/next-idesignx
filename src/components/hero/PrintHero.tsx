@@ -10,14 +10,14 @@ const PrintHero = () => {
         We offer you the easiest way to get your <Br />
         materials printed without breaking a sweat!
       </Text>
-      <HeadingSecondaryLeft>
+      <HeadingSecondary>
         <HeadingMain>Be assured</HeadingMain>
         <HeadingSub>Sample prints</HeadingSub>
-      </HeadingSecondaryLeft>
-      <HeadingSecondaryRight>
+      </HeadingSecondary>
+      <HeadingSecondary>
         <HeadingMain>Guaranteed</HeadingMain>
         <HeadingSub>5 days max</HeadingSub>
-      </HeadingSecondaryRight>
+      </HeadingSecondary>
     </Header>
   );
 };
@@ -69,9 +69,7 @@ const Text = styled.p`
 
 const Br = styled.br``;
 
-const HeadingSecondaryLeft = styled.h2``;
-
-const HeadingSecondaryRight = styled.h2``;
+const HeadingSecondary = styled.h2``;
 
 const HeadingMain = styled.span``;
 
