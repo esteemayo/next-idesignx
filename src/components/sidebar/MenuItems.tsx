@@ -23,6 +23,8 @@ const MenuItems: React.FC<MenuItemsProps> = ({ links }) => {
   );
 };
 
-const Container = styled.ul``;
+const Container = styled.ul`
+  list-style: none;
+`;
 
 export default MenuItems;
