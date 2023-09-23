@@ -34,6 +34,10 @@ const Container = styled.aside`
   background-color: var(--clr-purple-light-1);
   color: var(--clr-white);
   z-index: 2000;
+
+  @media only screen and (min-width: 48em) {
+    display: none;
+  }
 `;
 
 const Wrapper = styled.div`
