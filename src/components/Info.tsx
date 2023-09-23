@@ -36,8 +36,6 @@ const Container = styled.div`
   font-size: 1.4rem;
   padding: 1.5rem;
   color: var(--clr-white);
-  /* position: relative;
-  z-index: 3000; */
 
   display: grid;
   grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
