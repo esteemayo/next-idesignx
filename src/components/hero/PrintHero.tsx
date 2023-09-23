@@ -58,6 +58,10 @@ const HeadingPrimary = styled.h1`
 const Text = styled.p`
   grid-area: 3 / 1 / 4 / -1;
   justify-self: center;
+
+  font-size: 2.5rem;
+  text-align: center
+  color: currentColor;
 `;
 
 const Br = styled.br``;
