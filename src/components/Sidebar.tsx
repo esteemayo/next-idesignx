@@ -20,6 +20,9 @@ const Container = styled.aside`
   color: var(--clr-white);
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  /* position: absolute;
+  top: 20%; */
+`;
 
 export default Sidebar;
