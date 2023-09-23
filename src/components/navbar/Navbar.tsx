@@ -30,19 +30,19 @@ const Navbar = () => {
 };
 
 const Container = styled.nav`
-  display: none;
+  /* display: none; */
 
-  @media only screen and (min-width: 48em) {
-    background-color: var(--clr-white);
-    padding: 1.5rem;
-    position: relative;
-    z-index: 3000;
+  background-color: var(--clr-white);
+  padding: 1.5rem;
+  position: relative;
+  z-index: 3000;
 
-    display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    gap: 5rem;
-    align-items: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  gap: 5rem;
+  align-items: center;
+  /* @media only screen and (min-width: 48em) {
+  } */
 `;
 
 const Wrapper = styled.div`
