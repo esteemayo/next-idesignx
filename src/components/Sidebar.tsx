@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Sidebar = () => {
-  return <Container>Sidebar</Container>;
+  return (
+    <Container>
+      <Wrapper>Sidebar</Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.aside`
