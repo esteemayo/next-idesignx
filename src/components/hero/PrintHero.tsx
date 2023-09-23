@@ -86,6 +86,7 @@ const HeadingMain = styled.span`
 
 const HeadingSub = styled.span`
   display: block;
+  font-size: 1.6rem;
   letter-spacing: 3px;
   animation: moveInBottom 0.5s ease-out 1s backwards;
 `;
