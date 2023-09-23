@@ -60,8 +60,11 @@ const Text = styled.p`
   justify-self: center;
 
   font-size: 2.5rem;
-  text-align: center
+  text-align: center;
   color: currentColor;
+  letter-spacing: 1px;
+  animation: moveInRight 1s ease-out;
+  backface-visibility: hidden;
 `;
 
 const Br = styled.br``;
