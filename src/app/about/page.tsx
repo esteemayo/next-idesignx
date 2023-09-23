@@ -1,9 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+import AboutHero from '@/components/hero/AboutHero';
 
 const About = () => {
-  return <Container>About</Container>;
+  return (
+    <Container>
+      <AboutHero />
+    </Container>
+  );
 };
 
 const Container = styled.main`
