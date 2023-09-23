@@ -30,6 +30,7 @@ const Container = styled.section`
 
 const Heading = styled.h2`
   text-transform: capitalize;
+  text-align: center;
   font-weight: 400;
   font-size: 3rem;
   color: var(--clr-purple-light-2);
