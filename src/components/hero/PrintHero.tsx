@@ -71,6 +71,7 @@ const Br = styled.br``;
 
 const HeadingSecondary = styled.h2`
   grid-row: 4 / -1;
+  justify-self: center;
 
   font-weight: lighter;
   text-transform: uppercase;

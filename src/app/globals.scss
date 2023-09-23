@@ -79,12 +79,10 @@ body {
 
 .heading-left {
   grid-column: 1 / span 4;
-  justify-self: center;
 }
 
 .heading-right {
   grid-column: 5 / span 4;
-  justify-self: center;
 }
 
 @keyframes moveInRight {
