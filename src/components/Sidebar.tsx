@@ -18,6 +18,7 @@ const Container = styled.aside`
   left: 0;
   background-color: var(--clr-purple-light-1);
   color: var(--clr-white);
+  z-index: 2000;
 `;
 
 const Wrapper = styled.div`
