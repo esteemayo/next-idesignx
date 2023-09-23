@@ -6,6 +6,8 @@ const PrintHero = () => {
   return <Header>PrintHero</Header>;
 };
 
-const Header = styled.header``;
+const Header = styled.header`
+  background-color: crimson;
+`;
 
 export default PrintHero;

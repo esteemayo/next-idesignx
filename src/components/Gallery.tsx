@@ -6,6 +6,8 @@ const Gallery = () => {
   return <Container>Gallery</Container>;
 };
 
-const Container = styled.section``;
+const Container = styled.section`
+  background-color: orangered;
+`;
 
 export default Gallery;
