@@ -1,12 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
+
 import AboutHero from '@/components/hero/AboutHero';
+import StoryDetails from '@/components/StoryDetails';
 
 const About = () => {
   return (
     <Container>
       <AboutHero />
+      <StoryDetails />
     </Container>
   );
 };
