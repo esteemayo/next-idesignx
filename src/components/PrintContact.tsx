@@ -18,4 +18,6 @@ const Container = styled.section`
   background-position: center;
 `;
 
+const Paragraph = styled.p``;
+
 export default PrintContact;
