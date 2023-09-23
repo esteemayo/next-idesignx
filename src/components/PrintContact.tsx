@@ -37,6 +37,8 @@ const Br = styled.br``;
 
 const Paragraph = styled.p`
   grid-area: 2 / 1 / 3 / -1;
+  align-self: center;
+  justify-self: center;
 
   text-align: center;
   font-size: 3rem;
