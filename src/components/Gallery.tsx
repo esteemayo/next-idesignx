@@ -36,7 +36,11 @@ const Heading = styled.h2`
   margin-bottom: 8rem;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
+  justify-content: center;
+`;
 
 const ImageContainer = styled.figure`
   width: 100%;
