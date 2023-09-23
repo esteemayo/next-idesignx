@@ -3,15 +3,15 @@
 import styled from 'styled-components';
 
 import Gallery from '@/components/Gallery';
+import PrintContact from '@/components/PrintContact';
 import PrintHero from '@/components/hero/PrintHero';
-import Statement from '@/components/Statement';
 
 const Prints = () => {
   return (
     <Container>
       <PrintHero />
       <Gallery />
-      <Statement />
+      <PrintContact />
     </Container>
   );
 };
