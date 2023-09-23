@@ -70,6 +70,8 @@ const Text = styled.p`
 const Br = styled.br``;
 
 const HeadingSecondary = styled.h2`
+  grid-area: 4 / 2 / -1 / 5;
+
   font-weight: lighter;
   text-transform: uppercase;
   color: currentColor;
