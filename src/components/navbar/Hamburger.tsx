@@ -3,7 +3,13 @@
 import styled from 'styled-components';
 
 const Hamburger = () => {
-  return <Container>Hamburger</Container>;
+  return (
+    <Container>
+      <Span>&nbsp;</Span>
+      <Span>&nbsp;</Span>
+      <Span>&nbsp;</Span>
+    </Container>
+  );
 };
 
 const Container = styled.button`
