@@ -17,6 +17,7 @@ const PrintContact = () => {
 
 const Container = styled.section`
   grid-column: full-start / full-end;
+  margin: 8rem 0;
   text-align: center;
   color: var(--clr-white);
   background-image: linear-gradient(
