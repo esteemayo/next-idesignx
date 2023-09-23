@@ -16,7 +16,7 @@ const Navbar = () => {
   const { showMenu, handleToggle } = useMenu();
 
   return (
-    <Container>
+    <Container active={showMenu}>
       <Wrapper>
         <Hamburger isOpen={showMenu} onToggle={handleToggle} />
         <Logo />
@@ -37,7 +37,7 @@ const Container = styled.nav`
   position: relative;
   z-index: 3000;
 
-  display: grid;
+  display: ${({ active }) => (active === true ? 'none' : 'grid')};
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
   gap: 5rem;
   align-items: center;
