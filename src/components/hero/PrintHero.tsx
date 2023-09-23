@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const PrintHero = () => {
   return (
     <Header>
-      <Heading>Print</Heading>
+      <HeadingPrimary>Print</HeadingPrimary>
       <Text>
         We offer you the easiest way to get your <Br />
         materials printed without breaking a sweat!
@@ -19,10 +19,12 @@ const Header = styled.header`
   background-color: crimson;
 `;
 
-const Heading = styled.h1``;
+const HeadingPrimary = styled.h1``;
 
 const Text = styled.p``;
 
 const Br = styled.br``;
+
+const HaedingSecondary = styled.h2``;
 
 export default PrintHero;
