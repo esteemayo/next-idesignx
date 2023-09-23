@@ -24,6 +24,7 @@ const PrintHero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+  color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
@@ -48,7 +49,7 @@ const HeadingPrimary = styled.h1`
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5rem;
-  color: var(--clr-white);
+  color: currentColor;
   letter-spacing: 0.7rem;
   line-height: 1;
   animation: moveInTop 0.5s ease-out 0.75s backwards;
