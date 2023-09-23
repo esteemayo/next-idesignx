@@ -69,7 +69,12 @@ const Text = styled.p`
 
 const Br = styled.br``;
 
-const HeadingSecondary = styled.h2``;
+const HeadingSecondary = styled.h2`
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: currentColor;
+  animation: moveInBottom 0.5s ease-out 1s backwards;
+`;
 
 const HeadingMain = styled.span``;
 
