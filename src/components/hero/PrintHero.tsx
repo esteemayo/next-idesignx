@@ -11,4 +11,6 @@ const Header = styled.header`
   background-color: crimson;
 `;
 
+const Heading = styled.h1``;
+
 export default PrintHero;
