@@ -8,8 +8,12 @@ interface MenuItemProps {
   label: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ label, url }) => {
-  return <ListItem>MenuItem</ListItem>;
+const MenuItem: React.FC<MenuItemProps> = ({ url, label }) => {
+  return (
+    <ListItem>
+      <StyledLink href={url}>{label}</StyledLink>
+    </ListItem>
+  );
 };
 
 const ListItem = styled.li``;
