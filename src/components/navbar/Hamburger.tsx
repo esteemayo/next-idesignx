@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 
 interface HamburgerProps {
@@ -15,6 +15,10 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
     setOpenMenu(false);
     onToggle();
   }, [onToggle]);
+
+  const activeMenu = useMemo(() => {
+    return openMenu.toString();
+  }, [openMenu]);
 
   useEffect(() => {
     setOpenMenu(isOpen);
