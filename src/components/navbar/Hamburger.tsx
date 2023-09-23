@@ -25,10 +25,10 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
   }, [isOpen]);
 
   return (
-    <Container type={openMenu} onClick={toggleHandler}>
-      <Span type={openMenu}>&nbsp;</Span>
-      <Span type={openMenu}>&nbsp;</Span>
-      <Span type={openMenu}>&nbsp;</Span>
+    <Container type={activeMenu} onClick={toggleHandler}>
+      <Span type={activeMenu}>&nbsp;</Span>
+      <Span type={activeMenu}>&nbsp;</Span>
+      <Span type={activeMenu}>&nbsp;</Span>
     </Container>
   );
 };
