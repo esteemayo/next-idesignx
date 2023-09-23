@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-const Hamburger = () => {
+const Hamburger = ({ isOpen }) => {
   return (
     <Container>
       <Span>&nbsp;</Span>
