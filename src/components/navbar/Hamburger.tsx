@@ -2,9 +2,14 @@
 
 import styled from 'styled-components';
 
-const Hamburger = ({ isOpen }) => {
+interface HamburgerProps {
+  isOpen: boolean;
+  onToggle(): void;
+}
+
+const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
   return (
-    <Container type={isOpen}>
+    <Container type={isOpen} onClick={onToggle}>
       <Span type={isOpen}>&nbsp;</Span>
       <Span type={isOpen}>&nbsp;</Span>
       <Span type={isOpen}>&nbsp;</Span>

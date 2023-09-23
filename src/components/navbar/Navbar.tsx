@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Hamburger isOpen={showMenu} />
+        <Hamburger isOpen={showMenu} onToggle={handleToggle} />
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
