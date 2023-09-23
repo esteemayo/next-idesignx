@@ -38,7 +38,10 @@ const Heading = styled.h2`
 
 const Wrapper = styled.div``;
 
-const ImageContainer = styled.figure``;
+const ImageContainer = styled.figure`
+  width: 100%;
+  height: 100%;
+`;
 
 const StyledImage = styled(Image)``;
 
