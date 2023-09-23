@@ -67,6 +67,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
+  transition: all 0.2s;
 
   &:hover {
     opacity: 0.9;
