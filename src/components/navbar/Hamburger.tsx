@@ -43,7 +43,7 @@ const Container = styled.button`
   font-weight: 400;
   background-color: transparent;
   color: ${({ type }) =>
-    type === true ? 'var(--clr-white)' : 'var(--clr-purple-light-2)'};
+    type === 'true' ? 'var(--clr-white)' : 'var(--clr-purple-light-2)'};
   cursor: pointer;
 
   @media only screen and (min-width: 48em) {
@@ -58,16 +58,16 @@ const Span = styled.span`
   transform-origin: left;
 
   &:first-child {
-    transform: ${({ type }) => type === true && 'rotate(45deg)'};
+    transform: ${({ type }) => type === 'true' && 'rotate(45deg)'};
   }
 
   &:nth-child(2) {
-    opacity: ${({ type }) => type === true && 0};
-    visibility: ${({ type }) => type === true && 'hidden'};
+    opacity: ${({ type }) => type === 'true' && 0};
+    visibility: ${({ type }) => type === 'true' && 'hidden'};
   }
 
   &:last-child {
-    transform: ${({ type }) => type === true && 'rotate(-45deg)'};
+    transform: ${({ type }) => type === 'true' && 'rotate(-45deg)'};
   }
 `;
 
