@@ -11,12 +11,12 @@ const PrintHero = () => {
         materials printed without breaking a sweat!
       </Text>
       <HeadingSecondary className='heading-left'>
-        <HeadingMain>Be assured</HeadingMain>
-        <HeadingSub>Sample prints</HeadingSub>
+        <HeadingSub>Be assured</HeadingSub>
+        <HeadingMain>Sample prints</HeadingMain>
       </HeadingSecondary>
       <HeadingSecondary className='heading-right'>
-        <HeadingMain>Guaranteed</HeadingMain>
-        <HeadingSub>5 days max</HeadingSub>
+        <HeadingSub>Guaranteed</HeadingSub>
+        <HeadingMain>5 days max</HeadingMain>
       </HeadingSecondary>
     </Header>
   );
