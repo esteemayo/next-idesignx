@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Gallery = () => {
-  return <Container>Gallery</Container>;
+  return (
+    <Container>
+      <Heading>Gallery</Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
