@@ -40,7 +40,9 @@ const Header = styled.header`
   gap: 1.5rem;
 `;
 
-const HeadingPrimary = styled.h1``;
+const HeadingPrimary = styled.h1`
+  grid-area: 2 / 1 / 3 / -1;
+`;
 
 const Text = styled.p``;
 
