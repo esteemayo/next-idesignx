@@ -43,6 +43,10 @@ const Container = styled.nav`
   align-items: center;
   /* @media only screen and (min-width: 48em) {
   } */
+
+  @media only screen and (max-width: 48em) {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  }
 `;
 
 const Wrapper = styled.div`
