@@ -29,6 +29,7 @@ const Span = styled.span`
   width: 100%;
   height: 3px;
   background-color: currentColor;
+  transform-origin: left;
 `;
 
 export default Hamburger;
