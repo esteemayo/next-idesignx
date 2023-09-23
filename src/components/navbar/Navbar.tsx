@@ -28,7 +28,7 @@ const Navbar = () => {
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
-        <Button nav type='button' label='Upload your design' />
+        <Button nav={true} type='button' label='Upload your design' />
       </Box>
     </Container>
   );
