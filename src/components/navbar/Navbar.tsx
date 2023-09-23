@@ -12,12 +12,12 @@ import { navItems } from '@/data';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const [openMenu, setOpenMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(true);
 
   return (
     <Container>
       <Wrapper>
-        <Hamburger isOpen={openMenu} />
+        <Hamburger isOpen={showMenu} />
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />

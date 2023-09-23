@@ -1,11 +1,20 @@
 'use client';
 
+import { useState } from 'react';
 import styled from 'styled-components';
 
+import Logo from './navbar/Logo';
+import Hamburger from './navbar/Hamburger';
+
 const Sidebar = () => {
+  const [showMenu, setShowMenu] = useState(true);
+
   return (
     <Container>
-      <Wrapper>Sidebar</Wrapper>
+      <Wrapper>
+        <Hamburger isOpen={showMenu} />
+        <Logo />
+      </Wrapper>
     </Container>
   );
 };
@@ -22,8 +31,7 @@ const Container = styled.aside`
 `;
 
 const Wrapper = styled.div`
-  /* position: absolute;
-  top: 20%; */
+  display: flex;
 `;
 
 export default Sidebar;
