@@ -14,6 +14,10 @@ const PrintHero = () => {
         <HeadingMain>Be assured</HeadingMain>
         <HeadingSub>Sample prints</HeadingSub>
       </HeadingSecondaryLeft>
+      <HeadingSecondaryRight>
+        <HeadingMain>Guaranteed</HeadingMain>
+        <HeadingSub>5 days max</HeadingSub>
+      </HeadingSecondaryRight>
     </Header>
   );
 };
