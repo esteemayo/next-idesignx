@@ -80,13 +80,13 @@ const HeadingSecondary = styled.h2`
 
 const HeadingMain = styled.span`
   display: block;
-  letter-spacing: 3px;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
 `;
 
 const HeadingSub = styled.span`
   display: block;
-  font-size: 2.4rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 3px;
   animation: moveInBottom 0.5s ease-out 1s backwards;
 `;
 
