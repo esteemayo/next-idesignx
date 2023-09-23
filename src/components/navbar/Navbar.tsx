@@ -10,14 +10,11 @@ import NavItems from './NavItems';
 import Button from '../buttons/Button';
 
 import { navItems } from '@/data';
+import { useMenu } from '@/hooks/useMenu';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const [showMenu, setShowMenu] = useState(false);
-
-  const handleToggle = useCallback(() => {
-    setShowMenu((value) => !value);
-  }, []);
+  const { showMenu, handleToggle } = useMenu();
 
   return (
     <Container>
