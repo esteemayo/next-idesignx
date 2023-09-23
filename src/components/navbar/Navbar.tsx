@@ -21,7 +21,9 @@ const Navbar = () => {
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
-      <Button>Upload your design</Button>
+      <Box>
+        <Button>Upload your design</Button>
+      </Box>
     </Container>
   );
 };
