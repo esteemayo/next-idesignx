@@ -25,16 +25,12 @@ const NavItems: React.FC<NavItemsProps> = ({ links, path }) => {
 };
 
 const Container = styled.ul`
-  display: none;
-
-  @media only screen and (min-width: 48em) {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(6, minmax(min-content, 1fr));
-    align-items: center;
-    justify-items: center;
-    gap: 2rem;
-  }
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
 `;
 
 export default NavItems;
