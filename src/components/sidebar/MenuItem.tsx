@@ -2,7 +2,12 @@
 
 import styled from 'styled-components';
 
-const MenuItem = () => {
+interface MenuItemProps {
+  url: string;
+  label: string;
+}
+
+const MenuItem: React.FC<MenuItemProps> = ({ label, url }) => {
   return <ListItem>MenuItem</ListItem>;
 };
 

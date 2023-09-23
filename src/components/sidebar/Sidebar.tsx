@@ -9,6 +9,8 @@ import Hamburger from '../navbar/Hamburger';
 import MenuItems from './MenuItems';
 import Button from '../buttons/Button';
 
+import { navItems } from '@/data';
+
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(true);
 
@@ -21,7 +23,7 @@ const Sidebar = () => {
         </LogoBox>
         <Button nav type='button' label='Upload your design' />
       </Wrapper>
-      <MenuItems />
+      <MenuItems links={navItems} />
     </Container>
   );
 };
