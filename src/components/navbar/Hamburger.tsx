@@ -26,7 +26,7 @@ const Container = styled.button`
 
 const Span = styled.span`
   width: 100%;
-  height: 1px;
+  height: 3px;
   background-color: currentColor;
 `;
 
