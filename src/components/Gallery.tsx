@@ -28,7 +28,12 @@ const Container = styled.section`
   margin: 15rem 0;
 `;
 
-const Heading = styled.h2``;
+const Heading = styled.h2`
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--clr-purple-light-2);
+`;
 
 const Wrapper = styled.div``;
 
