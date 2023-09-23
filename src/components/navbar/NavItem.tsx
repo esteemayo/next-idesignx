@@ -29,7 +29,6 @@ const Container = styled.li`
       text-decoration: none;
       text-transform: capitalize;
       font-weight: 300;
-      font-size: 1.6rem;
       color: currentColor;
       outline-color: var(--clr-purple-light-3);
       transition: all 0.2s;
