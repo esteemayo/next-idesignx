@@ -22,6 +22,7 @@ const Container = styled.button`
   font-weight: 400;
   background-color: transparent;
   color: var(--clr-purple-light-2);
+  cursor: pointer;
 `;
 
 const Span = styled.span`
