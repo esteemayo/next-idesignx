@@ -42,6 +42,8 @@ const Header = styled.header`
 
 const HeadingPrimary = styled.h1`
   grid-area: 2 / 1 / 3 / -1;
+  align-self: self-end;
+  justify-self: center;
 `;
 
 const Text = styled.p``;
