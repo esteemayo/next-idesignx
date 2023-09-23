@@ -29,6 +29,10 @@ const Container = styled.button`
   color: ${({ type }) =>
     type === true ? 'var(--clr-white)' : 'var(--clr-purple-light-2)'};
   cursor: pointer;
+
+  @media only screen and (min-width: 48em) {
+    display: none;
+  }
 `;
 
 const Span = styled.span`
