@@ -4,20 +4,26 @@ import styled from 'styled-components';
 
 interface ButtonProps {
   label: string;
+  nav?: boolean;
   type?: string;
   onClick?(): void;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, type = 'submit', onClick }) => {
+const Button: React.FC<ButtonProps> = ({
+  label,
+  nav,
+  type = 'submit',
+  onClick,
+}) => {
   return (
-    <StyledButton type={type} onClick={onClick}>
+    <StyledButton nav={nav} type={type} onClick={onClick}>
       {label}
     </StyledButton>
   );
 };
 
 const StyledButton = styled.button`
-  margin-top: 2rem;
+  margin-top: ${({ nav }) => !nav && '2rem'};
   display: inline-block;
   border: none;
   text-transform: capitalize;
