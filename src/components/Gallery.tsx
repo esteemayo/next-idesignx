@@ -6,7 +6,9 @@ const Gallery = () => {
   return (
     <Container>
       <Heading>Gallery</Heading>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <ImageContainer></ImageContainer>
+      </Wrapper>
     </Container>
   );
 };
