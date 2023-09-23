@@ -18,6 +18,10 @@ const MenuItem: React.FC<MenuItemProps> = ({ url, label }) => {
 
 const ListItem = styled.li`
   color: currentColor;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const StyledLink = styled(Link)`
