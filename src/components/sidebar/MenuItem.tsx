@@ -26,6 +26,7 @@ const StyledLink = styled(Link)`
   font-weight: 300;
   font-size: 2rem;
   color: inherit;
+  outline-color: var(--clr-purple-light-3);
 `;
 
 export default MenuItem;
