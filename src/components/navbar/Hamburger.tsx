@@ -39,7 +39,7 @@ const Container = styled.button`
   justify-content: space-between;
   border: none;
   width: 3rem;
-  height: 2rem;
+  height: 2.3rem;
   font-weight: 400;
   background-color: transparent;
   color: ${({ active }) =>
