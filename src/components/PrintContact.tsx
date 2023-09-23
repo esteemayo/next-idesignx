@@ -31,6 +31,12 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
+
+  & > a {
+    grid-area: 3 / 2 / -1 / span 2;
+    align-self: center;
+    justify-self: center;
+  }
 `;
 
 const Br = styled.br``;
