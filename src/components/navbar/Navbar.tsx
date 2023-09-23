@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
@@ -11,6 +12,7 @@ import { navItems } from '@/data';
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [openMenu, setOpenMenu] = useState(true);
 
   return (
     <Container>
