@@ -10,7 +10,7 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   const isActive = useMemo(() => {
-    return url === path;
+    return (url === path).toString();
   }, [path, url]);
 
   return (
@@ -41,7 +41,7 @@ const Container = styled.li`
   }
 `;
 
-const setActiveColor = (isActive: boolean) => {
+const setActiveColor = (isActive: string) => {
   return isActive ? 'var(--clr-purple-dark-2)' : 'var(--clr-purple-light-1)';
 };
 
