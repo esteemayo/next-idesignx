@@ -10,13 +10,10 @@ import MenuItems from './MenuItems';
 import Button from '../buttons/Button';
 
 import { navItems } from '@/data';
+import { useMenu } from '@/hooks/useMenu';
 
 const Sidebar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const handleToggle = useCallback(() => {
-    setShowMenu((value) => !value);
-  }, []);
+  const { showMenu, handleToggle } = useMenu();
 
   return (
     <Container active={showMenu}>
