@@ -13,7 +13,7 @@ import { navItems } from '@/data';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleToggle = useCallback(() => {
     setShowMenu((value) => !value);
