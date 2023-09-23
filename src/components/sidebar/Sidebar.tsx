@@ -12,14 +12,14 @@ import Button from '../buttons/Button';
 import { navItems } from '@/data';
 
 const Sidebar = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleToggle = useCallback(() => {
     setShowMenu((value) => !value);
   }, []);
 
   return (
-    <Container>
+    <Container active={showMenu}>
       <Wrapper>
         <LogoBox>
           <Hamburger isOpen={showMenu} onToggle={handleToggle} />
@@ -38,7 +38,7 @@ const Container = styled.aside`
   padding: 3px 2rem;
   position: fixed;
   top: 0;
-  left: 0;
+  left: ${({ active }) => (active ? '0' : '-100%')};
   background-image: linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
