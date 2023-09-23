@@ -34,4 +34,6 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
+const LogoBox = styled.div``;
+
 export default Sidebar;
