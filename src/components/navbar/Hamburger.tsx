@@ -14,4 +14,6 @@ const Container = styled.button`
   color: var(--clr-purple-light-2);
 `;
 
+const Span = styled.span``;
+
 export default Hamburger;
