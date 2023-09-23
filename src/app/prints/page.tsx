@@ -1,5 +1,11 @@
+'use client';
+
+import styled from 'styled-components';
+
 const Prints = () => {
-  return <div>Prints</div>;
+  return <Container>Prints</Container>;
 };
+
+const Container = styled.main``;
 
 export default Prints;
