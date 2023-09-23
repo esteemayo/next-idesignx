@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import AboutHero from '@/components/hero/AboutHero';
 import StoryImage from '@/components/StoryImage';
 import StoryDetails from '@/components/StoryDetails';
+import AboutCard from '@/components/AboutCard';
 
 const About = () => {
   return (
@@ -12,6 +13,7 @@ const About = () => {
       <AboutHero />
       <StoryDetails />
       <StoryImage />
+      <AboutCard />
     </Container>
   );
 };
