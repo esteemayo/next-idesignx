@@ -18,7 +18,6 @@ const PrintContact = () => {
 const Container = styled.section`
   grid-column: full-start / full-end;
   margin: 8rem 0;
-  text-align: center;
   color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
@@ -28,11 +27,16 @@ const Container = styled.section`
     url(/img/contact-1.jpg);
   background-size: cover;
   background-position: center;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 `;
 
 const Br = styled.br``;
 
 const Paragraph = styled.p`
+  text-align: center;
   font-size: 3rem;
   color: currentColor;
 `;
