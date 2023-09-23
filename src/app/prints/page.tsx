@@ -1,10 +1,14 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
-import Gallery from '@/components/Gallery';
-import PrintContact from '@/components/PrintContact';
 import PrintHero from '@/components/hero/PrintHero';
+
+const Gallery = dynamic(() => import('@/components/Gallery'), { ssr: false });
+const PrintContact = dynamic(() => import('@/components/PrintContact'), {
+  ssr: false,
+});
 
 const Prints = () => {
   return (
