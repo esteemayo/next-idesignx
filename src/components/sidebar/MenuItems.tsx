@@ -3,10 +3,22 @@
 import styled from 'styled-components';
 import MenuItem from './MenuItem';
 
-const MenuItems = () => {
+type MenuItemsType = {
+  id: number;
+  url: string;
+  label: string;
+};
+
+interface MenuItemsProps {
+  links: Array<MenuItemsType>;
+}
+
+const MenuItems: React.FC<MenuItemsProps> = ({ links }) => {
   return (
     <Container>
-      <MenuItem />
+      {links.map((link) => {
+        return <MenuItem key={link.id} {...link} />;
+      })}
     </Container>
   );
 };
