@@ -50,11 +50,11 @@ const Wrapper = styled.div`
   gap: 2rem;
 `;
 
-const Box = styled.div``;
+const Box = styled.div`
+  justify-self: end;
+`;
 
 const Button = styled.button`
-  justify-self: end;
-
   display: inline-block;
   border: none;
   font-weight: 400;
