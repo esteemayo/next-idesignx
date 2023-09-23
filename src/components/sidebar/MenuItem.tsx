@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styled from 'styled-components';
 
 interface MenuItemProps {
@@ -12,5 +13,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ label, url }) => {
 };
 
 const ListItem = styled.li``;
+
+const StyledLink = styled(Link)``;
 
 export default MenuItem;
