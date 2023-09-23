@@ -13,7 +13,9 @@ const Hamburger = () => {
 };
 
 const Container = styled.button`
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: none;
   width: 4rem;
   height: 4rem;
@@ -22,6 +24,10 @@ const Container = styled.button`
   color: var(--clr-purple-light-2);
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+`;
 
 export default Hamburger;
