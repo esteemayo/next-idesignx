@@ -24,6 +24,7 @@ const Sidebar = () => {
 const Container = styled.aside`
   width: 45rem;
   height: 100%;
+  padding: 1rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
