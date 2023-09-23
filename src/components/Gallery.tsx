@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const Gallery = () => {
@@ -23,5 +24,7 @@ const Heading = styled.h2``;
 const Wrapper = styled.div``;
 
 const ImageContainer = styled.figure``;
+
+const StyledImage = styled(Image)``;
 
 export default Gallery;
