@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
@@ -14,6 +14,10 @@ import { navItems } from '@/data';
 const Navbar = () => {
   const pathname = usePathname();
   const [showMenu, setShowMenu] = useState(true);
+
+  const handleToggle = useCallback(() => {
+    setShowMenu((value) => !value);
+  }, []);
 
   return (
     <Container>
