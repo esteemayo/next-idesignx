@@ -12,8 +12,10 @@ const Sidebar = () => {
   return (
     <Container>
       <Wrapper>
-        <Hamburger isOpen={showMenu} />
-        <Logo />
+        <LogoBox>
+          <Hamburger isOpen={showMenu} />
+          <Logo />
+        </LogoBox>
       </Wrapper>
     </Container>
   );
