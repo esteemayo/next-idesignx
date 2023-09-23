@@ -25,6 +25,7 @@ const Header = styled.header`
     url(../img/design-hero.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   display: grid;
   grid-template-rows: repeat(4, 1fr);
