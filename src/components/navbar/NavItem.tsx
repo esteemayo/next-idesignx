@@ -14,14 +14,14 @@ const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   }, [path, url]);
 
   return (
-    <Container isActive={isActive}>
+    <Container active={isActive}>
       <Link href={url}>{label}</Link>
     </Container>
   );
 };
 
 const Container = styled.li`
-  color: ${({ isActive }) => setActiveColor(isActive)};
+  color: ${({ active }) => setActiveColor(active)};
 
   a {
     &:link,
