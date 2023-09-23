@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 import Logo from '../navbar/Logo';
@@ -14,11 +14,15 @@ import { navItems } from '@/data';
 const Sidebar = () => {
   const [showMenu, setShowMenu] = useState(true);
 
+  const handleToggle = useCallback(() => {
+    setShowMenu((value) => !value);
+  }, []);
+
   return (
     <Container>
       <Wrapper>
         <LogoBox>
-          <Hamburger isOpen={showMenu} />
+          <Hamburger isOpen={showMenu} onToggle={handleToggle} />
           <Logo />
         </LogoBox>
         <Button nav type='button' label='Upload your design' />
