@@ -22,6 +22,14 @@ const Statement: React.FC<StatementProps> = ({ bg }) => {
 const Container = styled.section`
   grid-column: full-start / full-end;
   background-color: var(--clr-white);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(51, 51, 51, 0.7)
+    ),
+    url(/img/contact-1.jpg);
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 4rem 0;
 `;
