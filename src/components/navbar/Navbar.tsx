@@ -30,8 +30,6 @@ const Navbar = () => {
 };
 
 const Container = styled.nav`
-  /* display: none; */
-
   background-color: var(--clr-white);
   padding: 1.5rem;
   position: relative;
