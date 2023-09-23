@@ -41,6 +41,8 @@ const Wrapper = styled.div``;
 const ImageContainer = styled.figure`
   width: 100%;
   height: 100%;
+  display: block;
+  object-fit: cover;
 `;
 
 const StyledImage = styled(Image)``;
