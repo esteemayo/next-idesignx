@@ -34,7 +34,7 @@ const Container = styled.section`
 
   & > a {
     grid-area: 3 / 2 / -1 / span 2;
-    align-self: center;
+    align-self: self-start;
     justify-self: center;
   }
 `;
