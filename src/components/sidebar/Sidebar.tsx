@@ -1,6 +1,5 @@
 'use client';
 
-import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 import Logo from '../navbar/Logo';
