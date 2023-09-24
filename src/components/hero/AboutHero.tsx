@@ -8,6 +8,7 @@ const AboutHero = () => {
 };
 
 const Header = styled.header`
+  grid-column: full-start / full-end;
   background-color: crimson;
 `;
 
