@@ -1,12 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
+
+import ContactForm from '@/components/ContactForm';
 import ContactHero from '@/components/hero/ContactHero';
 
 const Contact = () => {
   return (
     <Container>
       <ContactHero />
+      <ContactForm />
     </Container>
   );
 };
