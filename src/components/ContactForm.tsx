@@ -76,6 +76,9 @@ const ContactForm = () => {
 
 const Container = styled.section`
   grid-column: col-start 1 / col-end 4;
+  display: grid;
+  justify-content: center;
+
   background-color: #f9f9f9;
   margin: 10rem 0;
   padding: 4.5rem;
