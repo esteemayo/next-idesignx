@@ -9,9 +9,7 @@ const Contact = () => {
       <Text>
         Need a custom design and professional <Span>printing services?</Span>
       </Text>
-      <Wrapper>
-        <StyledLink href='/contact'>Contact us</StyledLink>
-      </Wrapper>
+      <StyledLink href='/contact'>Contact us</StyledLink>
     </Container>
   );
 };
@@ -33,7 +31,5 @@ const Text = styled.p`
 const Span = styled.span`
   display: block;
 `;
-
-const Wrapper = styled.div``;
 
 export default Contact;
