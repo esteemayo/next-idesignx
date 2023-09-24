@@ -7,6 +7,7 @@ const StoryDetails = () => {
 };
 
 const Container = styled.section`
+  grid-column: col-start 1 / col-end 4;
   background-color: orangered;
 `;
 
