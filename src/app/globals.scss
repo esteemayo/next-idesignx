@@ -85,6 +85,10 @@ body {
   grid-column: 5 / span 4;
 }
 
+.img-1 {
+  grid-area: 3 / 2 / span 5 / span 5;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
