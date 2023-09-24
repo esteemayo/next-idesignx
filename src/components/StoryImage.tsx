@@ -17,6 +17,10 @@ const Container = styled.section`
   grid-column: col-start 5 / full-end;
   margin-top: 10rem;
   position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(11, 1fr);
 `;
 
 const StyledImage = styled(Image)`
