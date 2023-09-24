@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Location = () => {
   return (
@@ -89,6 +89,16 @@ const Logo = styled.span`
   display: inline-block;
   width: 2rem;
   height: 2rem;
+  background-image: ${({ icon }) =>
+    icon === 'instagram' &&
+    css`
+  linear-gradient(
+    to bottom left,
+    #8134af,
+    #dd2a7b,
+    #feda77
+  )
+  `};
   background-color: ${({ icon }) =>
     icon === 'facebook' ? 'var(--clr-facebook)' : undefined};
   background-color: ${({ icon }) =>
