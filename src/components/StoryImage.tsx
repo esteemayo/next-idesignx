@@ -6,9 +6,27 @@ import styled from 'styled-components';
 const StoryImage = () => {
   return (
     <Container>
-      <StyledImage src='/img/story-pic-1.jpg' width={287} height={182} alt='' className='img-1' />
-      <StyledImage src='/img/story-pic-2.jpg' width={287} height={182} alt='' />
-      <StyledImage src='/img/story-pic-3.jpg' width={287} height={182} alt='' />
+      <StyledImage
+        src='/img/story-pic-1.jpg'
+        width={287}
+        height={182}
+        alt=''
+        className='img-1'
+      />
+      <StyledImage
+        src='/img/story-pic-2.jpg'
+        width={287}
+        height={182}
+        alt=''
+        className='img-2'
+      />
+      <StyledImage
+        src='/img/story-pic-3.jpg'
+        width={287}
+        height={182}
+        alt=''
+        className='img-3'
+      />
     </Container>
   );
 };
