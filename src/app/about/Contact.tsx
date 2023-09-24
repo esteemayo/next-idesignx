@@ -25,7 +25,10 @@ const Container = styled.section`
   justify-content: space-between;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  font-size: 3.2rem;
+  line-height: 1;
+`;
 
 const Span = styled.span``;
 
