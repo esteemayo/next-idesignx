@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import AboutHero from '@/components/hero/AboutHero';
 import StoryImage from '@/components/StoryImage';
 import StoryDetails from '@/components/StoryDetails';
+import StoryCards from '@/components/StoryCards';
 
-import Card from './Card';
 import Contact from './Contact';
 import Photo from './Photo';
 
@@ -16,7 +16,7 @@ const About = () => {
       <AboutHero />
       <StoryDetails />
       <StoryImage />
-      <Card />
+      <StoryCards />
       <Photo />
       <Contact />
     </Container>
