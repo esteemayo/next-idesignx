@@ -56,6 +56,7 @@ const Text = styled.p`
 
 const Span = styled.span`
   display: block;
+  text-align: center;
 `;
 
 export default AboutHero;
