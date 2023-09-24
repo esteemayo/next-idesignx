@@ -21,4 +21,6 @@ const Text = styled.p``;
 
 const Span = styled.span``;
 
+const Wrapper = styled.div``;
+
 export default Contact;
