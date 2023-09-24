@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const Location = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Heading>Our location</Heading>
+      </Wrapper>
     </Container>
   );
 };
