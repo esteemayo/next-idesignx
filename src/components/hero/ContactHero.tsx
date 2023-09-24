@@ -39,6 +39,8 @@ const Heading = styled.h1`
 
   font-weight: 400;
   font-size: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
 `;
 
 const Text = styled.p``;
