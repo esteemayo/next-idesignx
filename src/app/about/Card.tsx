@@ -41,10 +41,6 @@ const Container = styled.article`
   }
 `;
 
-const SVG = styled.svg``;
-
-const Use = styled.use``;
-
 const Heading = styled.h4`
   font-weight: 400;
   font-size: 1.9rem;
