@@ -26,6 +26,11 @@ const Container = styled.article`
   grid-template-columns: min-content 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
+
+  svg {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
 `;
 
 const Heading = styled.h4``;
