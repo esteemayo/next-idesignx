@@ -41,6 +41,8 @@ const Heading = styled.h1`
   font-size: 4.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
+  line-height: 1;
+  animation: moveInBottom 0.5s ease-out 0.75s backwards;
 `;
 
 const Text = styled.p``;
