@@ -54,6 +54,8 @@ const Text = styled.p`
   justify-self: center;
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+  display: block;
+`;
 
 export default AboutHero;
