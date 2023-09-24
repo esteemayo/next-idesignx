@@ -15,8 +15,8 @@ const StoryImage = () => {
             src={img}
             width={287}
             height={182}
-            alt=''
             className={className}
+            alt=''
           />
         );
       })}
