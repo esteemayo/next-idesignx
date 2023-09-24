@@ -84,6 +84,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Logo = styled.span``;
+const Logo = styled.span`
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+`;
 
 export default Location;
