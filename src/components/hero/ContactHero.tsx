@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const ContactHero = () => {
-  return <Header>ContactHero</Header>;
+  return (
+    <Header>
+      <Heading>Contact us</Heading>
+    </Header>
+  );
 };
 
 const Header = styled.header`
