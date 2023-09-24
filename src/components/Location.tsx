@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Location = () => {
-  return <Container>Location</Container>;
+  return (
+    <Container>
+      <Wrapper></Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.section`
