@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import Icon from '@/components/Icon';
 
 interface CardProps {
   id: number;
@@ -12,9 +13,7 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
-      <SVG>
-        <Use xlinkHref={`img/sprite.svg#${icon}`}></Use>
-      </SVG>
+      <Icon icon={icon} />
       <Heading>{title}</Heading>
       <Text>{desc}</Text>
     </Container>
@@ -26,9 +25,7 @@ const Container = styled.article`
   grid-template-columns: min-content 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
-`;
 
-const SVG = styled.svg`
   grid-row: 1 / span 2;
 
   width: 4.5rem;
@@ -41,6 +38,8 @@ const SVG = styled.svg`
     fill: var(--clr-purple-light-2);
   }
 `;
+
+const SVG = styled.svg``;
 
 const Use = styled.use``;
 
