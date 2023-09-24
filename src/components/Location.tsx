@@ -41,7 +41,9 @@ const Container = styled.section`
   border-radius: 3px;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  margin-bottom: 3rem;
+`;
 
 const Heading = styled.h3``;
 
