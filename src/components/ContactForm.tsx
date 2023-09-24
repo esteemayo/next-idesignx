@@ -79,6 +79,8 @@ const Container = styled.section`
   background-color: #f9f9f9;
   margin: 10rem 0;
   padding: 4.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
 `;
 
 const Heading = styled.h3``;
