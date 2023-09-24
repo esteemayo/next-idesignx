@@ -36,6 +36,9 @@ const Heading = styled.h1`
   grid-area: 2 / 2 / 3 / span 4;
   align-self: self-end;
   justify-self: center;
+
+  font-weight: 400;
+  font-size: 4.5rem;
 `;
 
 const Text = styled.p``;
