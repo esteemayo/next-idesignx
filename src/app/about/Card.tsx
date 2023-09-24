@@ -24,4 +24,6 @@ const Wrapper = styled.article``;
 
 const Heading = styled.h4``;
 
+const Text = styled.p``;
+
 export default Card;
