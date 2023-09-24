@@ -66,4 +66,6 @@ const LogoBox = styled.div``;
 
 const StyledLink = styled(Link)``;
 
+const Logo = styled.span``;
+
 export default Location;
