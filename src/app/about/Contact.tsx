@@ -3,7 +3,13 @@
 import styled from 'styled-components';
 
 const Contact = () => {
-  return <Container>Contact</Container>;
+  return (
+    <Container>
+      <Text>
+        Need a custom design and professional <Span>printing services?</Span>
+      </Text>
+    </Container>
+  );
 };
 
 const Container = styled.section`
@@ -12,5 +18,7 @@ const Container = styled.section`
 `;
 
 const Text = styled.p``;
+
+const Span = styled.span``;
 
 export default Contact;
