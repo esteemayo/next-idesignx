@@ -29,6 +29,8 @@ const Location = () => {
 const Container = styled.section`
   grid-column: col-start 5 / col-end 8;
   background-color: yellowgreen;
+  margin: 15rem 0;
+  padding: 5rem;
 `;
 
 const Wrapper = styled.div``;
