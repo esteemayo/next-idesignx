@@ -58,4 +58,6 @@ const Text = styled.p`
 
 const Br = styled.br``;
 
+const LogoBox = styled.div``;
+
 export default Location;
