@@ -42,7 +42,12 @@ const Container = styled.article`
   }
 `;
 
-const Heading = styled.h4``;
+const Heading = styled.h4`
+  font-weight: 400;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  color: var(--clr-gray-dark-3);
+`;
 
 const Text = styled.p`
   font-size: 1.7rem;
