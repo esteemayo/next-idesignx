@@ -51,6 +51,7 @@ const Heading = styled.h4`
 
 const Text = styled.p`
   font-size: 1.7rem;
+  line-height: 1.4;
 `;
 
 export default Card;
