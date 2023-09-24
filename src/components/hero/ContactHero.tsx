@@ -49,6 +49,9 @@ const Text = styled.p`
   grid-area: 3 / 2 / 4 / span 4;
   align-self: self-start;
   justify-self: center;
+
+  font-size: 2.5rem;
+  text-align: center;
 `;
 
 const Br = styled.br``;
