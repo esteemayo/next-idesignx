@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const Location = () => {
@@ -60,5 +61,7 @@ const Text = styled.p`
 const Br = styled.br``;
 
 const LogoBox = styled.div``;
+
+const StyledLink = styled(Link)``;
 
 export default Location;
