@@ -7,6 +7,10 @@ const Location = () => {
     <Container>
       <Wrapper>
         <Heading>Our location</Heading>
+        <Text>
+          123 Lagos street, Lagos <Br />
+          state, Lagos Nigeria
+        </Text>
       </Wrapper>
     </Container>
   );
@@ -22,5 +26,7 @@ const Wrapper = styled.div``;
 const Heading = styled.h3``;
 
 const Text = styled.p``;
+
+const Br = styled.br``;
 
 export default Location;
