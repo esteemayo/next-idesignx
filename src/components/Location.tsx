@@ -80,7 +80,9 @@ const LogoBox = styled.div`
   justify-content: start;
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
 
 const Logo = styled.span``;
 
