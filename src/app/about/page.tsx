@@ -5,9 +5,10 @@ import styled from 'styled-components';
 import AboutHero from '@/components/hero/AboutHero';
 import StoryImage from '@/components/StoryImage';
 import StoryDetails from '@/components/StoryDetails';
-import AboutCard from '@/components/AboutCard';
-import AboutImage from '@/components/AboutImage';
-import AboutContact from '@/components/AboutContact';
+
+import Card from './Card';
+import Contact from './Contact';
+import Photo from './Photo';
 
 const About = () => {
   return (
@@ -15,9 +16,9 @@ const About = () => {
       <AboutHero />
       <StoryDetails />
       <StoryImage />
-      <AboutCard />
-      <AboutImage />
-      <AboutContact />
+      <Card />
+      <Photo />
+      <Contact />
     </Container>
   );
 };

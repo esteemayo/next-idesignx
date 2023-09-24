@@ -2,12 +2,12 @@
 
 import styled from 'styled-components';
 
-const AboutCard = () => {
-  return <Container>AboutCard</Container>;
+const Card = () => {
+  return <Container>Card</Container>;
 };
 
 const Container = styled.section`
   background-color: palevioletred;
 `;
 
-export default AboutCard;
+export default Card;
