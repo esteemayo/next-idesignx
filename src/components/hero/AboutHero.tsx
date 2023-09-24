@@ -52,11 +52,14 @@ const Text = styled.p`
   grid-area: 3 / 2 / 4 / span 4;
   align-self: self-start;
   justify-self: center;
+
+  font-size: 2.5rem;
+  text-align: center;
+  color: currentColor;
 `;
 
 const Span = styled.span`
   display: block;
-  text-align: center;
 `;
 
 export default AboutHero;
