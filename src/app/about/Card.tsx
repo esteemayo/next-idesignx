@@ -10,6 +10,10 @@ const Card = () => {
           <use xlinkHref='img/sprite.svg#icon-pencil'></use>
         </svg>
         <Heading>Our vision</Heading>
+        <Text>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          distinctio necessitatibus pariatur voluptatibus.
+        </Text>
       </Wrapper>
     </Container>
   );
