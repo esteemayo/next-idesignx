@@ -2,17 +2,21 @@
 
 import styled from 'styled-components';
 
-const Card = () => {
+interface CardProps {
+  id: number;
+  icon: string;
+  title: string;
+  text: string;
+}
+
+const Card: React.FC<CardProps> = ({ icon, text, title }) => {
   return (
     <Container>
       <svg>
-        <use xlinkHref='img/sprite.svg#icon-pencil'></use>
+        <use xlinkHref={`img/sprite.svg#${icon}`}></use>
       </svg>
-      <Heading>Our vision</Heading>
-      <Text>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-        distinctio necessitatibus pariatur voluptatibus.
-      </Text>
+      <Heading>{title}</Heading>
+      <Text>{text}</Text>
     </Container>
   );
 };
