@@ -1,8 +1,17 @@
 'use client';
 
 import styled from 'styled-components';
+import { useCallback, useState } from 'react';
+
+const initialState = {
+  name: '',
+  email: '',
+  subject: '',
+  message: '',
+};
 
 const ContactForm = () => {
+  const [data, setData] = useState(initialState);
   return (
     <Container>
       <Heading>
