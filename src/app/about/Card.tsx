@@ -26,16 +26,18 @@ const Container = styled.article`
   row-gap: 1.5rem;
   column-gap: 2.5rem;
 
-  grid-row: 1 / span 2;
+  svg {
+    grid-row: 1 / span 2;
 
-  width: 4.5rem;
-  height: 4.5rem;
-  fill: var(--clr-purple-light-1);
-  transform: translateY(-1rem);
-  transition: all 0.2s;
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: var(--clr-purple-light-1);
+    transform: translateY(-1rem);
+    transition: all 0.2s;
 
-  &:hover {
-    fill: var(--clr-purple-light-2);
+    &:hover {
+      fill: var(--clr-purple-light-2);
+    }
   }
 `;
 
