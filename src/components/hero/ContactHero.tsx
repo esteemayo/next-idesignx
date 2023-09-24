@@ -52,6 +52,9 @@ const Text = styled.p`
 
   font-size: 2.5rem;
   text-align: center;
+  animation: moveInLeft 0.5s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 `;
 
 const Br = styled.br``;
