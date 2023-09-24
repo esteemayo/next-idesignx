@@ -1,9 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
+import ContactHero from '@/components/hero/ContactHero';
 
 const Contact = () => {
-  return <Container>Contact</Container>;
+  return (
+    <Container>
+      <ContactHero />
+    </Container>
+  );
 };
 
 const Container = styled.main`
