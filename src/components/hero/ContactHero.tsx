@@ -33,7 +33,7 @@ const Header = styled.header`
 `;
 
 const Heading = styled.h1`
-  grid-area: 2 / 2 / 3 / span 4;
+  grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
   justify-self: center;
 
@@ -46,7 +46,7 @@ const Heading = styled.h1`
 `;
 
 const Text = styled.p`
-  grid-area: 3 / 2 / 4 / span 4;
+  grid-area: 3 / 1 / 4 / -1;
   align-self: self-start;
   justify-self: center;
 
