@@ -49,6 +49,7 @@ const StyledImage = styled(Image)`
   box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
   z-index: 1000;
   outline-offset: 2rem;
+  transition: all 0.2s;
 
   &:hover {
     outline: 1.5rem solid var(--clr-purple-light-1);
