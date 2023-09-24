@@ -28,6 +28,11 @@ const Location = () => {
 
 const Container = styled.section`
   grid-column: col-start 5 / col-end 8;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   background-color: yellowgreen;
   color: var(--clr-white);
   margin: 15rem 0;
