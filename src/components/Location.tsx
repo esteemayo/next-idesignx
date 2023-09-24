@@ -96,7 +96,9 @@ const Logo = styled.span`
   mask-image: url(${({ icon }) =>
     icon === 'facebook' ? '/img/facebook.svg' : undefined});
   mask-image: url(${({ icon }) =>
-    icon === 'facebook' ? '/img/twitter.svg' : undefined});
+    icon === 'twitter' ? '/img/twitter.svg' : undefined});
+  mask-image: url(${({ icon }) =>
+    icon === 'instagram' ? '/img/instagram.svg' : undefined});
   mask-size: cover;
 `;
 
