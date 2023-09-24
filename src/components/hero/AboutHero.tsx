@@ -7,6 +7,10 @@ const AboutHero = () => {
   return (
     <Header>
       <Heading>About us</Heading>
+      <Text>
+        We are a Creative Design, Brand development and activation firm.
+        <Span>We aim to present brands in grand style.</Span>
+      </Text>
     </Header>
   );
 };
@@ -19,5 +23,7 @@ const Header = styled.header`
 const Heading = styled.h1``;
 
 const Text = styled.p``;
+
+const Span = styled.span``;
 
 export default AboutHero;
