@@ -5,7 +5,11 @@ import styled from 'styled-components';
 const Card = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <svg>
+          <use xlinkHref='img/sprite.svg#icon-pencil'></use>
+        </svg>
+      </Wrapper>
     </Container>
   );
 };
