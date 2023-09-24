@@ -12,6 +12,12 @@ const initialState = {
 
 const ContactForm = () => {
   const [data, setData] = useState(initialState);
+
+  const handleChange = useCallback(({ target: input }) => {
+    const { name, value } = input;
+    setData((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
   return (
     <Container>
       <Heading>
