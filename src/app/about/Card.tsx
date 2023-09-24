@@ -11,4 +11,6 @@ const Container = styled.section`
   margin: 15rem 0;
 `;
 
+const Wrapper = styled.article``;
+
 export default Card;
