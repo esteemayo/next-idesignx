@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 const Photo = () => {
-  return <Container>Photo</Container>;
+  return <Container>&nbsp;</Container>;
 };
 
 const Container = styled.section`
