@@ -18,6 +18,14 @@ const ContactForm = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      console.log({ ...data });
+    },
+    [data]
+  );
+
   return (
     <Container>
       <Heading>
