@@ -21,4 +21,6 @@ const Container = styled.section`
 
 const Wrapper = styled.article``;
 
+const Heading = styled.h4``;
+
 export default Card;
