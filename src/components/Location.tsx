@@ -74,7 +74,11 @@ const Text = styled.p`
 
 const Br = styled.br``;
 
-const LogoBox = styled.div``;
+const LogoBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: start;
+`;
 
 const StyledLink = styled(Link)``;
 
