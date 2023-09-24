@@ -25,17 +25,17 @@ const Location = () => {
       </Wrapper>
       <LogoBox>
         <StyledLink href='#'>
-          <Logo>&nbsp;</Logo>
+          <Logo icon='facebook'>&nbsp;</Logo>
         </StyledLink>
       </LogoBox>
       <LogoBox>
         <StyledLink href='#'>
-          <Logo>&nbsp;</Logo>
+          <Logo icon='twitter'>&nbsp;</Logo>
         </StyledLink>
       </LogoBox>
       <LogoBox>
         <StyledLink href='#'>
-          <Logo>&nbsp;</Logo>
+          <Logo icon='instagram'>&nbsp;</Logo>
         </StyledLink>
       </LogoBox>
     </Container>
