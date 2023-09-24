@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 
 import ContactForm from '@/components/ContactForm';
+import Location from '@/components/Location';
 import ContactHero from '@/components/hero/ContactHero';
 
 const Contact = () => {
@@ -10,6 +11,7 @@ const Contact = () => {
     <Container>
       <ContactHero />
       <ContactForm />
+      <Location />
     </Container>
   );
 };
