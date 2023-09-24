@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: yellowgreen;
 `;
 
+const Wrapper = styled.div``;
+
 export default Location;
