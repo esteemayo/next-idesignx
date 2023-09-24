@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Card = () => {
-  return <Container>Card</Container>;
+  return (
+    <Container>
+      <Wrapper></Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.section`
