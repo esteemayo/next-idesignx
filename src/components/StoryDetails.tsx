@@ -37,6 +37,8 @@ const Heading = styled.h2`
   line-height: 1;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  letter-spacing: 2px;
+`;
 
 export default StoryDetails;
