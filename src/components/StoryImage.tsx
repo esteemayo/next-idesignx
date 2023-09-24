@@ -7,7 +7,7 @@ const StoryImage = () => {
 };
 
 const Container = styled.section`
-  grid-column: col-start 5 / col-end 8;
+  grid-column: col-start 5 / full-end;
   background-color: greenyellow;
 `;
 
