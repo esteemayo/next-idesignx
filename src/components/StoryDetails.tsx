@@ -29,7 +29,10 @@ const Container = styled.section`
   align-content: center;
 `;
 
-const Heading = styled.h2``;
+const Heading = styled.h2`
+  font-weight: 400;
+  font-size: 4rem;
+`;
 
 const Text = styled.p``;
 
