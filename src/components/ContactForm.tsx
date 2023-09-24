@@ -3,7 +3,15 @@
 import styled from 'styled-components';
 
 const ContactForm = () => {
-  return <Container>ContactForm</Container>;
+  return (
+    <Container>
+      <Heading>
+        In case you have question, comments
+        <Br />
+        or just want to say hello.
+      </Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
@@ -12,5 +20,7 @@ const Container = styled.section`
 `;
 
 const Heading = styled.h3``;
+
+const Br = styled.br``;
 
 export default ContactForm;
