@@ -1,11 +1,19 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
 import AboutHero from '@/components/hero/AboutHero';
-import StoryImage from '@/components/StoryImage';
-import StoryDetails from '@/components/StoryDetails';
-import StoryCards from '@/components/StoryCards';
+
+const StoryImage = dynamic(() => import('@/components/StoryImage'), {
+  ssr: false,
+});
+const StoryDetails = dynamic(() => import('@/components/StoryDetails'), {
+  ssr: false,
+});
+const StoryCards = dynamic(() => import('@/components/StoryCards'), {
+  ssr: false,
+});
 
 import Contact from './Contact';
 import Photo from './Photo';
