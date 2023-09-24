@@ -45,7 +45,11 @@ const Heading = styled.h1`
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  grid-area: 3 / 2 / 4 / span 4;
+  align-self: self-start;
+  justify-self: center;
+`;
 
 const Br = styled.br``;
 
