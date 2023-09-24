@@ -22,7 +22,8 @@ const StoryDetails = () => {
 
 const Container = styled.section`
   grid-column: col-start 1 / col-end 4;
-  background-color: orangered;
+  margin: 10rem 0;
+  padding: 4.5rem;
 `;
 
 const Heading = styled.h2``;
