@@ -6,6 +6,7 @@ import AboutHero from '@/components/hero/AboutHero';
 import StoryImage from '@/components/StoryImage';
 import StoryDetails from '@/components/StoryDetails';
 import AboutCard from '@/components/AboutCard';
+import AboutImage from '@/components/AboutImage';
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
       <StoryDetails />
       <StoryImage />
       <AboutCard />
+      <AboutImage />
     </Container>
   );
 };
