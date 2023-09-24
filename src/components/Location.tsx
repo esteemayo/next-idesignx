@@ -109,6 +109,7 @@ const Logo = styled.span`
     icon === 'twitter' ? '/img/twitter.svg' : undefined});
   mask-image: url(${({ icon }) =>
     icon === 'instagram' ? '/img/instagram.svg' : undefined});
+  -webkit-mask-size: cover;
   mask-size: cover;
 `;
 
