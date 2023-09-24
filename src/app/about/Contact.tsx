@@ -30,7 +30,9 @@ const Text = styled.p`
   line-height: 1;
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+  display: block;
+`;
 
 const Wrapper = styled.div``;
 
