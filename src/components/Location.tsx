@@ -103,6 +103,8 @@ const Logo = styled.span`
     icon === 'facebook' ? 'var(--clr-facebook)' : undefined};
   background-color: ${({ icon }) =>
     icon === 'twitter' ? 'var(--clr-twitter)' : undefined};
+  -webkit-mask-image: url(${({ icon }) =>
+    icon === 'facebook' ? '/img/facebook.svg' : undefined});
   mask-image: url(${({ icon }) =>
     icon === 'facebook' ? '/img/facebook.svg' : undefined});
   mask-image: url(${({ icon }) =>
