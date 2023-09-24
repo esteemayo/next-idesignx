@@ -27,6 +27,11 @@ const Header = styled.header`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 1rem;
 `;
 
 const Heading = styled.h1``;
