@@ -12,6 +12,11 @@ const Location = () => {
           state, Lagos Nigeria
         </Text>
       </Wrapper>
+      <Wrapper>
+        <Heading>Email</Heading>
+        <Text>project@xteemdesigns.com</Text>
+        <Text>esteemdesign19@gmail.com</Text>
+      </Wrapper>
     </Container>
   );
 };
