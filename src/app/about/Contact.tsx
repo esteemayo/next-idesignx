@@ -7,6 +7,7 @@ const Contact = () => {
 };
 
 const Container = styled.section`
+  grid-column: center-start / center-end;
   background-color: purple;
 `;
 
