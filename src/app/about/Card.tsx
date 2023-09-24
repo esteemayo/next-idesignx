@@ -44,6 +44,8 @@ const Container = styled.article`
 
 const Heading = styled.h4``;
 
-const Text = styled.p``;
+const Text = styled.p`
+  font-size: 1.7rem;
+`;
 
 export default Card;
