@@ -1,5 +1,6 @@
 'use client';
 
+import { StyledLink } from '@/components/buttons/StyledLink';
 import styled from 'styled-components';
 
 const Contact = () => {
@@ -8,6 +9,9 @@ const Contact = () => {
       <Text>
         Need a custom design and professional <Span>printing services?</Span>
       </Text>
+      <Wrapper>
+        <StyledLink href='/contact'>Contact us</StyledLink>
+      </Wrapper>
     </Container>
   );
 };
