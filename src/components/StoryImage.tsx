@@ -15,7 +15,8 @@ const StoryImage = () => {
 
 const Container = styled.section`
   grid-column: col-start 5 / full-end;
-  background-color: greenyellow;
+  margin-top: 10rem;
+  position: relative;
 `;
 
 const StyledImage = styled(Image)``;
