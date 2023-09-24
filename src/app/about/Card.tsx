@@ -29,10 +29,11 @@ const Container = styled.article`
 
   svg {
     grid-row: 1 / span 2;
-    
+
     width: 4.5rem;
     height: 4.5rem;
     fill: var(--clr-purple-light-1);
+    transform: translateY(-1rem);
   }
 `;
 
