@@ -9,6 +9,7 @@ const Card = () => {
         <svg>
           <use xlinkHref='img/sprite.svg#icon-pencil'></use>
         </svg>
+        <Heading>Our vision</Heading>
       </Wrapper>
     </Container>
   );
