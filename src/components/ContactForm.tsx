@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: #f9f9f9;
 `;
 
+const Heading = styled.h3``;
+
 export default ContactForm;
