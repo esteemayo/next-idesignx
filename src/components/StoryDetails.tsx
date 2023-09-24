@@ -39,6 +39,10 @@ const Heading = styled.h2`
 
 const Text = styled.p`
   letter-spacing: 2px;
+
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
 `;
 
 export default StoryDetails;
