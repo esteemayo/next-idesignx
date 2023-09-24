@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: purple;
 `;
 
+const Text = styled.p``;
+
 export default Contact;
