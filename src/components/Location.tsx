@@ -17,6 +17,11 @@ const Location = () => {
         <Text>project@xteemdesigns.com</Text>
         <Text>esteemdesign19@gmail.com</Text>
       </Wrapper>
+      <Wrapper>
+        <Heading>Phone number</Heading>
+        <Text>+2348136119251</Text>
+        <Text>+2349134211583</Text>
+      </Wrapper>
     </Container>
   );
 };
