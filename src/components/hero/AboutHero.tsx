@@ -56,6 +56,8 @@ const Text = styled.p`
   font-size: 2.5rem;
   text-align: center;
   color: currentColor;
+  letter-spacing: 1px;
+  animation: moveInTop 0.5s ease-out 0.75s backwards;
 `;
 
 const Span = styled.span`
