@@ -31,16 +31,6 @@ const StoryImage = () => {
   );
 };
 
-const Container = styled.section`
-  grid-column: col-start 5 / full-end;
-  margin-top: 10rem;
-  position: relative;
-
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(11, 1fr);
-`;
-
 const StyledImage = styled(Image)`
   width: 100%;
   height: 100%;
@@ -56,6 +46,20 @@ const StyledImage = styled(Image)`
     transform: scale(1.03) translate(-0.5rem);
     box-shadow: 0 1rem 4rem rgba(00, 00, 00, 0.09);
     z-index: 2000;
+  }
+`;
+
+const Container = styled.section`
+  grid-column: col-start 5 / full-end;
+  margin-top: 10rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+
+  &:hover ${StyledImage}:not(:hover) {
+    transform: scale(0.95);
   }
 `;
 
