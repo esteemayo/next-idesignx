@@ -17,4 +17,6 @@ const Container = styled.section`
 
 const Wrapper = styled.div``;
 
+const Heading = styled.h3``;
+
 export default Location;
