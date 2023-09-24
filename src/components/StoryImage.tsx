@@ -47,13 +47,14 @@ const StyledImage = styled(Image)`
   display: block;
   object-fit: cover;
   box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
-  z-index: 10;
+  z-index: 1000;
   outline-offset: 2rem;
 
   &:hover {
     outline: 1.5rem solid var(--clr-purple-light-1);
     transform: scale(1.03) translate(-0.5rem);
     box-shadow: 0 1rem 4rem rgba(00, 00, 00, 0.09);
+    z-index: 2000;
   }
 `;
 
