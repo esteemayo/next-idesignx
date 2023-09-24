@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const StoryDetails = () => {
-  return <Container>StoryDetails</Container>;
+  return (
+    <Container>
+      <Heading>Who are we</Heading>
+    </Container>
+  );
 };
 
 const Container = styled.section`
