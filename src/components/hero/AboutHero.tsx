@@ -38,6 +38,14 @@ const Heading = styled.h1`
   grid-area: 2 / 2 / 3 / span 4;
   align-self: self-end;
   justify-self: center;
+
+  font-weight: 400;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: currentColor;
+  letter-spacing: 0.7rem;
+  line-height: 1;
+  animation: moveInBottom 0.7s ease-out 1s backwards;
 `;
 
 const Text = styled.p``;
