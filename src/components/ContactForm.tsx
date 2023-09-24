@@ -8,7 +8,7 @@ const ContactForm = () => {
 
 const Container = styled.section`
   grid-column: col-start 1 / col-end 4;
-  background-color: palevioletred;
+  background-color: #f9f9f9;
 `;
 
 export default ContactForm;
