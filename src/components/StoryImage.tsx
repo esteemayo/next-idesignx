@@ -1,8 +1,9 @@
 'use client';
 
-import { storyImages } from '@/data';
 import Image from 'next/image';
 import styled from 'styled-components';
+
+import { storyImages } from '@/data';
 
 const StoryImage = () => {
   return (
