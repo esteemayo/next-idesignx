@@ -23,7 +23,9 @@ const Location = () => {
         <Text>+2348136119251</Text>
         <Text>+2349134211583</Text>
       </Wrapper>
-      <LogoBox></LogoBox>
+      <LogoBox>
+        <StyledLink href='#'></StyledLink>
+      </LogoBox>
     </Container>
   );
 };
