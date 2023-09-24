@@ -31,10 +31,14 @@ const Header = styled.header`
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(6, 1fr);
-  row-gap: 1rem;
+  gap: 1rem;
 `;
 
-const Heading = styled.h1``;
+const Heading = styled.h1`
+  grid-area: 2 / 2 / 3 / span 4;
+  align-self: self-end;
+  justify-self: center;
+`;
 
 const Text = styled.p``;
 
