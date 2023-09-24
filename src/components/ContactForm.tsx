@@ -3,6 +3,11 @@
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
+import Button from './buttons/Button';
+import Form from './form/Form';
+import TextArea from './inputs/TextArea';
+import Input from './inputs/Input';
+
 const initialState = {
   name: '',
   email: '',
@@ -33,6 +38,38 @@ const ContactForm = () => {
         <Br />
         or just want to say hello.
       </Heading>
+      <Form onSubmit={handleSubmit}>
+        <Input
+          name='name'
+          label='Your name'
+          value={data.name}
+          placeholder='Your name'
+          onChange={handleChange}
+        />
+        <Input
+          name='email'
+          type='email'
+          label='Your email'
+          value={data.email}
+          placeholder='Your email'
+          onChange={handleChange}
+        />
+        <Input
+          name='subject'
+          label='Subject'
+          value={data.subject}
+          placeholder='Subject'
+          onChange={handleChange}
+        />
+        <TextArea
+          name='message'
+          label='Message'
+          value={data.message}
+          placeholder='Message'
+          onChange={handleChange}
+        />
+        <Button label='Submit' />
+      </Form>
     </Container>
   );
 };
