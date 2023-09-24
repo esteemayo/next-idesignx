@@ -24,6 +24,7 @@ const StyledImage = styled(Image)`
   height: 100%;
   display: block;
   object-fit: cover;
+  box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
 `;
 
 export default StoryImage;
