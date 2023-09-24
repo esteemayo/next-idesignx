@@ -8,7 +8,10 @@ const Photo = () => {
 
 const Container = styled.section`
   grid-column: full-start / full-end;
-  background-color: pink;
+
+  background-image: url(/img/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
 `;
 
 export default Photo;
