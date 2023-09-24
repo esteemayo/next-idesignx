@@ -30,6 +30,7 @@ const Container = styled.article`
   svg {
     width: 4.5rem;
     height: 4.5rem;
+    fill: var(--clr-purple-light-1);
   }
 `;
 
