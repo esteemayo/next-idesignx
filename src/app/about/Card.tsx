@@ -28,6 +28,8 @@ const Container = styled.article`
   column-gap: 2.5rem;
 
   svg {
+    grid-row: 1 / span 2;
+    
     width: 4.5rem;
     height: 4.5rem;
     fill: var(--clr-purple-light-1);
