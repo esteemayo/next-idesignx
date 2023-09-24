@@ -89,6 +89,10 @@ const Logo = styled.span`
   display: inline-block;
   width: 2rem;
   height: 2rem;
+  background-color: ${({ icon }) =>
+    icon === 'facebook' ? 'var(--clr-facebook)' : undefined};
+  background-color: ${({ icon }) =>
+    icon === 'twitter' ? 'var(--clr-twitter)' : undefined};
 `;
 
 export default Location;
