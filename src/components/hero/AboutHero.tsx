@@ -18,4 +18,6 @@ const Header = styled.header`
 
 const Heading = styled.h1``;
 
+const Text = styled.p``;
+
 export default AboutHero;
