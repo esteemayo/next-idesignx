@@ -12,9 +12,9 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
-      <svg>
-        <use xlinkHref={`img/sprite.svg#${icon}`}></use>
-      </svg>
+      <SVG>
+        <Use xlinkHref={`img/sprite.svg#${icon}`}></Use>
+      </SVG>
       <Heading>{title}</Heading>
       <Text>{desc}</Text>
     </Container>
@@ -26,21 +26,23 @@ const Container = styled.article`
   grid-template-columns: min-content 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
+`;
 
-  svg {
-    grid-row: 1 / span 2;
+const SVG = styled.svg`
+  grid-row: 1 / span 2;
 
-    width: 4.5rem;
-    height: 4.5rem;
-    fill: var(--clr-purple-light-1);
-    transform: translateY(-1rem);
-    transition: all 0.2s;
+  width: 4.5rem;
+  height: 4.5rem;
+  fill: var(--clr-purple-light-1);
+  transform: translateY(-1rem);
+  transition: all 0.2s;
 
-    &:hover {
-      fill: var(--clr-purple-light-2);
-    }
+  &:hover {
+    fill: var(--clr-purple-light-2);
   }
 `;
+
+const Use = styled.use``;
 
 const Heading = styled.h4`
   font-weight: 400;
