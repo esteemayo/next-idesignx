@@ -21,4 +21,6 @@ const Wrapper = styled.div``;
 
 const Heading = styled.h3``;
 
+const Text = styled.p``;
+
 export default Location;
