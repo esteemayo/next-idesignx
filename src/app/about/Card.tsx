@@ -21,7 +21,10 @@ const Card: React.FC<CardProps> = ({ icon, text, title }) => {
   );
 };
 
-const Container = styled.article``;
+const Container = styled.article`
+  display: grid;
+  grid-template-columns: min-content 1fr;
+`;
 
 const Heading = styled.h4``;
 
