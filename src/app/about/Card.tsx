@@ -34,6 +34,11 @@ const Container = styled.article`
     height: 4.5rem;
     fill: var(--clr-purple-light-1);
     transform: translateY(-1rem);
+    transition: all 0.2s;
+
+    &:hover {
+      fill: var(--clr-purple-light-2);
+    }
   }
 `;
 
