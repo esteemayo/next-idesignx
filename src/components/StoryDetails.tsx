@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: orangered;
 `;
 
+const Heading = styled.h2``;
+
 export default StoryDetails;
