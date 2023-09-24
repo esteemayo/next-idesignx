@@ -20,6 +20,7 @@ const Header = styled.header`
   grid-template-columns: repeat(6, 1fr);
   row-gap: 1rem;
 
+  color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
