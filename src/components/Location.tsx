@@ -52,7 +52,9 @@ const Heading = styled.h3`
   margin-bottom: 1rem;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  font-size: 1.8rem;
+`;
 
 const Br = styled.br``;
 
