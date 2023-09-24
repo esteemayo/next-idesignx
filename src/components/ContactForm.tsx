@@ -86,7 +86,11 @@ const Container = styled.section`
   box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
 `;
 
-const Heading = styled.h3``;
+const Heading = styled.h3`
+  font-weight: lighter;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+`;
 
 const Br = styled.br``;
 
