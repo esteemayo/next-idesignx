@@ -169,18 +169,18 @@ export const cardItems = [
     id: 1,
     icon: 'icon-pencil',
     title: 'Our vision',
-    text: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.',
+    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.',
   },
   {
     id: 2,
     icon: 'icon-office',
     title: 'Mission',
-    text: 'Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.',
+    desc: 'Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.',
   },
   {
     id: 3,
     icon: 'icon-book',
     title: 'Commitment',
-    text: 'Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.',
+    desc: 'Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.',
   },
 ];

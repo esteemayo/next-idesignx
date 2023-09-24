@@ -6,17 +6,17 @@ interface CardProps {
   id: number;
   icon: string;
   title: string;
-  text: string;
+  desc: string;
 }
 
-const Card: React.FC<CardProps> = ({ icon, text, title }) => {
+const Card: React.FC<CardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
       <svg>
         <use xlinkHref={`img/sprite.svg#${icon}`}></use>
       </svg>
       <Heading>{title}</Heading>
-      <Text>{text}</Text>
+      <Text>{desc}</Text>
     </Container>
   );
 };
