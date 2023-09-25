@@ -30,7 +30,7 @@ const Location = () => {
       </LogoBox>
       <LogoBox>
         <StyledLink href='#'>
-          <Logo icon='twitter'>&nbsp;</Logo>
+          <TwitterLogo icon='twitter'>&nbsp;</TwitterLogo>
         </StyledLink>
       </LogoBox>
       <LogoBox>
@@ -104,19 +104,28 @@ const Logo = styled.span`
   background-color: ${({ icon }) =>
     icon === 'twitter' ? 'var(--clr-twitter)' : undefined};
   -webkit-mask-image: url(${({ icon }) =>
-    icon === 'facebook' ? '/img/facebook.svg' : undefined});
+    icon === 'facebook' ? '../img/facebook.svg' : undefined});
   mask-image: url(${({ icon }) =>
-    icon === 'facebook' ? '/img/facebook.svg' : undefined});
--webkit-mask-image: url(${({ icon }) =>
+    icon === 'facebook' ? '../img/facebook.svg' : undefined});
+  -webkit-mask-image: url(${({ icon }) =>
     icon === 'twitter' ? '/img/twitter.svg' : undefined});
   mask-image: url(${({ icon }) =>
     icon === 'twitter' ? '/img/twitter.svg' : undefined});
-    -webkit-mask-image: url(${({ icon }) =>
+  -webkit-mask-image: url(${({ icon }) =>
     icon === 'instagram' ? '/img/instagram.svg' : undefined});
   mask-image: url(${({ icon }) =>
     icon === 'instagram' ? '/img/instagram.svg' : undefined});
   -webkit-mask-size: cover;
   mask-size: cover;
+`;
+
+const TwitterLogo = styled.span`
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--clr-twitter);
+  -webkit-mask-image: url(/img/facebook.svg);
+  mask-image: url(/img/twitter.svg);
 `;
 
 export default Location;
