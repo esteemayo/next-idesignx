@@ -89,52 +89,26 @@ const Logo = styled.span`
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-image: ${({ icon }) =>
-    icon === 'instagram' &&
-    css`
-  linear-gradient(
-    to bottom left,
-    #8134af,
-    #dd2a7b,
-    #feda77
-  )
-  `};
-  background-color: ${({ icon }) =>
-    icon === 'facebook' ? 'var(--clr-facebook)' : undefined};
-  background-color: ${({ icon }) =>
-    icon === 'twitter' ? 'var(--clr-twitter)' : undefined};
-  -webkit-mask-image: url(${({ icon }) =>
-    icon === 'facebook' ? '../img/facebook.svg' : undefined});
-  mask-image: url(${({ icon }) =>
-    icon === 'facebook' ? '../img/facebook.svg' : undefined});
-  -webkit-mask-image: url(${({ icon }) =>
-    icon === 'twitter' ? '/img/twitter.svg' : undefined});
-  mask-image: url(${({ icon }) =>
-    icon === 'twitter' ? '/img/twitter.svg' : undefined});
-  -webkit-mask-image: url(${({ icon }) =>
-    icon === 'instagram' ? '/img/instagram.svg' : undefined});
-  mask-image: url(${({ icon }) =>
-    icon === 'instagram' ? '/img/instagram.svg' : undefined});
-  -webkit-mask-size: cover;
-  mask-size: cover;
 `;
 
 const Facebook = styled.span`
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--clr-facebook);
   -webkit-mask-image: url(/img/facebook.svg);
   mask-image: url(/img/facebook.svg);
 `;
 
 const TwitterLogo = styled.span`
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  ${Logo}
   background-color: var(--clr-twitter);
   -webkit-mask-image: url(/img/twitter.svg);
   mask-image: url(/img/twitter.svg);
 `;
 
 const Instagram = styled.span`
+  ${Logo}
   background-color: var(--clr-instagram);
   -webkit-mask-image: url(/img/instagram.svg);
   mask-image: url(/img/instagram.svg);
