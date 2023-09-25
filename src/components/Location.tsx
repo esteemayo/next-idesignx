@@ -25,7 +25,7 @@ const Location = () => {
       </Wrapper>
       <LogoBox>
         <StyledLink href='#'>
-          <Logo icon='facebook'>&nbsp;</Logo>
+          <Facebook>&nbsp;</Facebook>
         </StyledLink>
       </LogoBox>
       <LogoBox>
@@ -119,7 +119,7 @@ const Logo = styled.span`
   mask-size: cover;
 `;
 
-const FAcebook = styled.span`
+const Facebook = styled.span`
   background-color: var(--clr-facebook);
   -webkit-mask-image: url(/img/facebook.svg);
   mask-image: url(/img/facebook.svg);
