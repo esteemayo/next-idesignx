@@ -30,7 +30,7 @@ const Location = () => {
       </LogoBox>
       <LogoBox>
         <StyledLink href='#'>
-          <TwitterLogo icon='twitter'>&nbsp;</TwitterLogo>
+          <TwitterLogo>&nbsp;</TwitterLogo>
         </StyledLink>
       </LogoBox>
       <LogoBox>
