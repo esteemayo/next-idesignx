@@ -109,6 +109,8 @@ const TwitterLogo = styled.span`
   background-color: var(--clr-twitter);
   -webkit-mask-image: url(/img/twitter.svg);
   mask-image: url(/img/twitter.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
 `;
 
 const Instagram = styled.span`
