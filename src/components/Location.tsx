@@ -45,7 +45,7 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: space-around;
 
-  background-color: yellowgreen;
+  background-color: rgba(188, 105, 240, 0.5);
   color: var(--clr-white);
   margin: 15rem 0;
   padding: 5rem;
