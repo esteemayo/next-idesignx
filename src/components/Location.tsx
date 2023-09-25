@@ -45,8 +45,8 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: space-around;
 
-  background-color: rgba(188, 105, 240, 0.5);
-  color: var(--clr-white);
+  background-color: rgba(204, 126, 252, 0.5);
+  color: inherit;
   margin: 15rem 0;
   padding: 5rem;
   line-height: 1.4;
