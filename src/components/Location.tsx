@@ -119,12 +119,18 @@ const Logo = styled.span`
   mask-size: cover;
 `;
 
+const FAcebook = styled.span`
+  background-color: var(--clr-facebook);
+  -webkit-mask-image: url(/img/facebook.svg);
+  mask-image: url(/img/facebook.svg);
+`;
+
 const TwitterLogo = styled.span`
   display: inline-block;
   width: 2rem;
   height: 2rem;
   background-color: var(--clr-twitter);
-  -webkit-mask-image: url(/img/facebook.svg);
+  -webkit-mask-image: url(/img/twitter.svg);
   mask-image: url(/img/twitter.svg);
 `;
 
