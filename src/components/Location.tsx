@@ -101,7 +101,9 @@ const Facebook = styled.span`
 `;
 
 const TwitterLogo = styled.span`
-  ${Logo}
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--clr-twitter);
   -webkit-mask-image: url(/img/twitter.svg);
   mask-image: url(/img/twitter.svg);
