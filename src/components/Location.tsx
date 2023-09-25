@@ -28,7 +28,7 @@ const Location = () => {
           <Facebook>&nbsp;</Facebook>
         </StyledLink>
         <StyledLink href='#'>
-          <TwitterLogo>&nbsp;</TwitterLogo>
+          <Twitter>&nbsp;</Twitter>
         </StyledLink>
         <StyledLink href='#'>
           <Instagram>&nbsp;</Instagram>
@@ -98,7 +98,7 @@ const Facebook = styled.span`
   mask-size: cover;
 `;
 
-const TwitterLogo = styled.span`
+const Twitter = styled.span`
   display: inline-block;
   width: 2rem;
   height: 2rem;
