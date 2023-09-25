@@ -35,7 +35,7 @@ const Location = () => {
       </LogoBox>
       <LogoBox>
         <StyledLink href='#'>
-          <Logo icon='instagram'>&nbsp;</Logo>
+          <Instagram>&nbsp;</Instagram>
         </StyledLink>
       </LogoBox>
     </Container>
@@ -132,6 +132,12 @@ const TwitterLogo = styled.span`
   background-color: var(--clr-twitter);
   -webkit-mask-image: url(/img/twitter.svg);
   mask-image: url(/img/twitter.svg);
+`;
+
+const Instagram = styled.span`
+  background-color: var(--clr-instagram);
+  -webkit-mask-image: url(/img/instagram.svg);
+  mask-image: url(/img/instagram.svg);
 `;
 
 export default Location;
