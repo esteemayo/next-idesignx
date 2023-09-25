@@ -27,13 +27,9 @@ const Location = () => {
         <StyledLink href='#'>
           <Facebook>&nbsp;</Facebook>
         </StyledLink>
-      </LogoBox>
-      <LogoBox>
         <StyledLink href='#'>
           <TwitterLogo>&nbsp;</TwitterLogo>
         </StyledLink>
-      </LogoBox>
-      <LogoBox>
         <StyledLink href='#'>
           <Instagram>&nbsp;</Instagram>
         </StyledLink>
