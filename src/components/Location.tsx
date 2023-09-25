@@ -138,6 +138,7 @@ const Instagram = styled.span`
   background-color: var(--clr-instagram);
   -webkit-mask-image: url(/img/instagram.svg);
   mask-image: url(/img/instagram.svg);
+  background-image: linear-gradient(to bottom left, #8134af, #dd2a7b, #feda77);
 `;
 
 export default Location;
