@@ -110,7 +110,9 @@ const TwitterLogo = styled.span`
 `;
 
 const Instagram = styled.span`
-  ${Logo}
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
   background-color: var(--clr-instagram);
   -webkit-mask-image: url(/img/instagram.svg);
   mask-image: url(/img/instagram.svg);
