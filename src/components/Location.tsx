@@ -98,6 +98,8 @@ const Facebook = styled.span`
   background-color: var(--clr-facebook);
   -webkit-mask-image: url(/img/facebook.svg);
   mask-image: url(/img/facebook.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
 `;
 
 const TwitterLogo = styled.span`
