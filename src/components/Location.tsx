@@ -50,7 +50,8 @@ const Container = styled.section`
   margin: 15rem 0;
   padding: 5rem;
   line-height: 1.4;
-  border-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 `;
 
 const Wrapper = styled.div`
