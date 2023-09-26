@@ -12,13 +12,13 @@ import { navItems } from '@/data';
 import { useMenu } from '@/hooks/useMenu';
 
 const Sidebar = () => {
-  const { showMenu, handleToggle } = useMenu();
+  const { isOpen, onClose } = useMenu();
 
   return (
-    <Container active={showMenu}>
+    <Container active={isOpen}>
       <Wrapper>
         <LogoBox>
-          <Hamburger isOpen={showMenu} onToggle={handleToggle} />
+          <Hamburger isOpen={isOpen} onToggle={onClose} />
           <Logo />
         </LogoBox>
         <Button nav='true' type='button' label='Upload your design' />
