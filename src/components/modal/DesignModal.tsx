@@ -2,8 +2,13 @@
 
 import styled from 'styled-components';
 
+import Modal from './Modal';
+import { useDesignModal } from '@/hooks/useDesignModal';
+
 const DesignModal = () => {
-  return <Container>DesignModal</Container>;
+  const { isOpen, onClose, onOpen } = useDesignModal();
+
+  return <Modal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />;
 };
 
 const Container = styled.div``;
