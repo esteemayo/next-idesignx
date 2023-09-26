@@ -119,6 +119,8 @@ const CloseButton = styled.button`
   padding: 0.5rem;
   background-color: transparent;
   color: inherit;
+  outline-color: var(--clr-gray-dark-2);
+  cursor: pointer;
 `;
 
 export default Modal;
