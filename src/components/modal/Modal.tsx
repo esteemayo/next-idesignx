@@ -148,7 +148,9 @@ const Heading = styled.h1`
   margin-top: 1rem;
 `;
 
-const Body = styled.div``;
+const Body = styled.div`
+  padding: 2.4rem 0;
+`;
 
 const Footer = styled.div``;
 
