@@ -39,7 +39,7 @@ const Container = styled.aside`
   padding: 3px 2rem;
   position: fixed;
   top: 0;
-  left: ${({ active }) => (active === 'true' ? '0' : '-100%')};
+  left: ${({ active }) => (active === 'true' ? 0 : '-100%')};
   background-image: linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
