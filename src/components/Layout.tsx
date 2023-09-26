@@ -9,7 +9,7 @@ import Footer from './footer/Footer';
 import ClientOnly from './ClientOnly';
 import Info from './Info';
 import Sidebar from './sidebar/Sidebar';
-import Modal from './Modal';
+import Modal from './modal/Modal';
 
 interface LayoutProps {
   children: React.ReactNode;
