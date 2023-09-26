@@ -44,10 +44,10 @@ const StyledButton = styled.button`
   padding: ${({ small }) => (small ? '1rem' : '1rem 3rem')};
   font-weight: 400;
   font-size: 1.5rem;
-  background-color: ${({ outline }) => outline && 'transparent'};
+  background-color: ${({ outline }) => outline ? 'transparent': undefined};
   background-image: ${({ outline }) =>
-    !outline &&
-    css`
+    !outline
+      ? css`
   linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
@@ -55,7 +55,8 @@ const StyledButton = styled.button`
     var(--clr-purple-light-2),
     var(--clr-purple-light-3)
   )
-  `};
+  `
+      : undefined};
   color: ${({ outline }) =>
     outline ? 'var(--clr-gray-dark)' : 'var(--clr-white)'};
   border-radius: 0.5rem;
