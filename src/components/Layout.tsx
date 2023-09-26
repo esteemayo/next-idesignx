@@ -6,9 +6,9 @@ import Navbar from './navbar/Navbar';
 import ScrollButton from './buttons/ScrollButton';
 import Footer from './footer/Footer';
 
+import ClientOnly from './ClientOnly';
 import Info from './Info';
 import Sidebar from './sidebar/Sidebar';
-import ClientOnly from './ClientOnly';
 import Modal from './Modal';
 
 interface LayoutProps {
