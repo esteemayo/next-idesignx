@@ -2,13 +2,13 @@
 
 import { create } from 'zustand';
 
-interface useMenuProps {
+interface MenuProps {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
 }
 
-export const useMenu = create<useMenuProps>((set) => ({
+export const useMenu = create<MenuProps>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
