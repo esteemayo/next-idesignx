@@ -8,6 +8,8 @@ import Form from './form/Form';
 import TextArea from './inputs/TextArea';
 import Input from './inputs/Input';
 
+import { useForm } from '@/hooks/useForm';
+
 const initialState = {
   name: '',
   email: '',
@@ -16,19 +18,28 @@ const initialState = {
 };
 
 const ContactForm = () => {
-  const [data, setData] = useState(initialState);
+  // const [data, setData] = useState(initialState);
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setData((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  // const handleChange = useCallback(({ target: input }) => {
+  //   const { name, value } = input;
+  //   setData((prev) => ({ ...prev, [name]: value }));
+  // }, []);
 
-  const handleSubmit = useCallback(
-    (e) => {
-      e.preventDefault();
-      console.log({ ...data });
-    },
-    [data]
+  // const handleSubmit = useCallback(
+  //   (e) => {
+  //     e.preventDefault();
+  //     console.log({ ...data });
+  //   },
+  //   [data]
+  // );
+
+  const onSubmitHandler = () => {
+    console.log();
+  };
+
+  const { data, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState
   );
 
   return (
