@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import styled from 'styled-components';
 
 interface ModalProps {
@@ -9,6 +10,8 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
+  const [showModal, setShowModal] = useState(isOpen);
+
   return <Container>Modal</Container>;
 };
 
