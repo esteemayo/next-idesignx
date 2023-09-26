@@ -11,7 +11,7 @@ export const useForm = (callback: () => void, initialState: object = {}) => {
   }, []);
 
   const handleSubmit = useCallback(
-    (e) => {
+    (e: React.MouseEvent<HTMLFormControlsCollection>) => {
       e.preventDefault();
 
       callback();
