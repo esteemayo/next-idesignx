@@ -1,7 +1,7 @@
 'use client';
 
-import { useCallback, useState } from 'react';
 import styled from 'styled-components';
+import { useCallback, useEffect, useState } from 'react';
 
 interface ModalProps {
   isOpen: boolean;
@@ -16,6 +16,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
     setShowModal(false);
     onClose();
   }, [onClose]);
+
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
 
   return <Container>Modal</Container>;
 };
