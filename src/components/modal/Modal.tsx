@@ -17,7 +17,19 @@ interface ModalProps {
   secondaryAction(): void;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
+const Modal: React.FC<ModalProps> = ({
+  isOpen,
+  title,
+  actionLabel,
+  secondaryActionLabel,
+  disabled,
+  body,
+  footer,
+  onOpen,
+  onClose,
+  onSubmit,
+  secondaryAction,
+}) => {
   const [showModal, setShowModal] = useState(isOpen);
 
   const handleClose = useCallback(() => {
