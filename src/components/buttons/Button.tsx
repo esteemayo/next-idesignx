@@ -38,7 +38,8 @@ const Button: React.FC<ButtonProps> = ({
 const StyledButton = styled.button`
   margin-top: ${({ nav }) => (!nav ? '2rem' : undefined)};
   display: inline-block;
-  border: none;
+  border: ${({ outline }) =>
+    outline ? '1px solid var(--clr-purple-light-1)' : 'none'};
   text-transform: capitalize;
   padding: 1rem 3rem;
   font-weight: 400;
