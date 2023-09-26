@@ -14,16 +14,16 @@ import { useMenu } from '@/hooks/useMenu';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const { showMenu, handleToggle } = useMenu();
+  const { isOpen, onOpen } = useMenu();
 
   const activeMenu = useMemo(() => {
-    return showMenu.toString();
-  }, [showMenu]);
+    return isOpen.toString();
+  }, [isOpen]);
 
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <Hamburger isOpen={showMenu} onToggle={handleToggle} />
+        <Hamburger isOpen={isOpen} onToggle={onOpen} />
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
