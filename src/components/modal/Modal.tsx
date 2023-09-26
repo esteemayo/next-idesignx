@@ -1,12 +1,20 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 
 interface ModalProps {
   isOpen?: boolean;
+  title?: string;
+  actionLabel: string;
+  secondaryActionLabel?: string;
+  disabled?: boolean;
+  body?: React.ReactElement;
+  footer?: React.ReactElement;
   onOpen(): void;
   onClose(): void;
+  onSubmit(): void;
+  secondaryAction(): void;
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
