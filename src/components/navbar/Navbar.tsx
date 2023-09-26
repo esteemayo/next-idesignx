@@ -35,12 +35,12 @@ const Navbar = () => {
 };
 
 const Container = styled.nav`
+  display: ${({ active }) => (active === 'true' ? 'none' : 'grid')};
   background-color: var(--clr-white);
   padding: 1.5rem;
   position: relative;
   z-index: 3000;
 
-  display: ${({ active }) => (active === 'true' ? 'none' : 'grid')};
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
   gap: 5rem;
   align-items: center;
