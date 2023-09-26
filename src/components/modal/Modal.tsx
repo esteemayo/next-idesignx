@@ -156,6 +156,7 @@ const Footer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  padding: 2.4rem 0;
 `;
 
 export default Modal;
