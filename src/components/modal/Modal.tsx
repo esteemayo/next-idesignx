@@ -146,4 +146,6 @@ const Heading = styled.h1`
   margin-top: 1rem;
 `;
 
+const Body = styled.div``;
+
 export default Modal;
