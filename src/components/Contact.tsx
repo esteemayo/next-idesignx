@@ -10,22 +10,39 @@ import Select from './inputs/Select';
 import Form from './form/Form';
 import Button from './buttons/Button';
 
+import { useForm } from '@/hooks/useForm';
 import { selectInputs } from '@/formData';
 
+const initialState = {
+  name: '',
+  email: '',
+  category: '',
+  content: '',
+};
+
 const Contact = () => {
-  const [data, setData] = useState({});
+  // const [data, setData] = useState({});
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setData((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  // const handleChange = useCallback(({ target: input }) => {
+  //   const { name, value } = input;
+  //   setData((prev) => ({ ...prev, [name]: value }));
+  // }, []);
 
-  const handleSubmit = useCallback(
-    (e: React.MouseEvent<HTMLFormControlsCollection>) => {
-      e.preventDefault();
-      console.log({ ...data });
-    },
-    [data]
+  // const handleSubmit = useCallback(
+  //   (e: React.MouseEvent<HTMLFormControlsCollection>) => {
+  //     e.preventDefault();
+  //     console.log({ ...data });
+  //   },
+  //   [data]
+  // );
+
+  const onSubmitHandler = () => {
+    console.log({ ...data });
+  };
+
+  const { data, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState
   );
 
   return (
@@ -36,6 +53,7 @@ const Contact = () => {
         <Input
           name='name'
           label='Your name'
+          value={data.name}
           placeholder='Your name'
           onChange={handleChange}
         />
@@ -43,18 +61,21 @@ const Contact = () => {
           name='email'
           type='email'
           label='Your email'
+          value={data.email}
           placeholder='Your email'
           onChange={handleChange}
         />
         <Select
           name='category'
           label='Select products'
+          value={data.categorye}
           options={selectInputs}
           onChange={handleChange}
         />
         <TextArea
           name='content'
           label='Content'
+          value={data.content}
           placeholder='Content'
           onChange={handleChange}
         />
