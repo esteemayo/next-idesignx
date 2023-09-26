@@ -88,8 +88,8 @@ const Facebook = styled.span`
   width: 2rem;
   height: 2rem;
   background-color: var(--clr-facebook);
-  -webkit-mask-image: url(/img/facebook.svg);
-  mask-image: url(/img/facebook.svg);
+  -webkit-mask-image: url(/svg/facebook.svg);
+  mask-image: url(/svg/facebook.svg);
   -webkit-mask-size: cover;
   mask-size: cover;
 `;
@@ -99,8 +99,8 @@ const Twitter = styled.span`
   width: 2rem;
   height: 2rem;
   background-color: var(--clr-twitter);
-  -webkit-mask-image: url(/img/twitter.svg);
-  mask-image: url(/img/twitter.svg);
+  -webkit-mask-image: url(/svg/twitter.svg);
+  mask-image: url(/svg/twitter.svg);
   -webkit-mask-size: cover;
   mask-size: cover;
 `;
@@ -110,8 +110,8 @@ const Instagram = styled.span`
   width: 2rem;
   height: 2rem;
   background-color: var(--clr-instagram);
-  -webkit-mask-image: url(/img/instagram.svg);
-  mask-image: url(/img/instagram.svg);
+  -webkit-mask-image: url(/svg/instagram.svg);
+  mask-image: url(/svg/instagram.svg);
   background-image: linear-gradient(to bottom left, #8134af, #dd2a7b, #feda77);
   -webkit-mask-size: cover;
   mask-size: cover;
