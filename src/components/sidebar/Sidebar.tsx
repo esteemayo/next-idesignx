@@ -1,5 +1,6 @@
 'use client';
 
+import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import Logo from '../navbar/Logo';
@@ -14,8 +15,12 @@ import { useMenu } from '@/hooks/useMenu';
 const Sidebar = () => {
   const { isOpen, onClose } = useMenu();
 
+  const activeMenu = useMemo(() => {
+    return isOpen.toString();
+  }, [isOpen]);
+
   return (
-    <Container active={isOpen}>
+    <Container active={activeMenu}>
       <Wrapper>
         <LogoBox>
           <Hamburger isOpen={isOpen} onToggle={onClose} />
@@ -34,7 +39,7 @@ const Container = styled.aside`
   padding: 3px 2rem;
   position: fixed;
   top: 0;
-  left: ${({ active }) => (active === true ? '0' : '-100%')};
+  left: ${({ active }) => (active === 'true' ? '0' : '-100%')};
   background-image: linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
