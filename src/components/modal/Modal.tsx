@@ -10,7 +10,7 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
-  const [showModal, setShowModal] = useState(isOpen);
+  const [showModal, setShowModal] = useState(false);
 
   const handleClose = useCallback(() => {
     setShowModal(false);
