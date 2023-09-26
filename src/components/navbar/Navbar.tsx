@@ -31,7 +31,7 @@ const Navbar = () => {
     <Container active={activeMenu}>
       <Wrapper>
         <Hamburger isOpen={isOpen} onToggle={onOpen} />
-        <Logo />
+        <Logo onClose={handleClose} />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
