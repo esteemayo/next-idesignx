@@ -82,6 +82,7 @@ const Modal: React.FC<ModalProps> = ({
           <Heading>title</Heading>
         </CloseButtonContainer>
         <Body>{body}</Body>
+        <Footer>{footer}</Footer>
       </Wrapper>
     </Container>
   );
