@@ -149,4 +149,6 @@ const Heading = styled.h1`
 
 const Body = styled.div``;
 
+const Footer = styled.div``;
+
 export default Modal;
