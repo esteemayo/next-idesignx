@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
 
 import Button from './buttons/Button';
 import Form from './form/Form';
