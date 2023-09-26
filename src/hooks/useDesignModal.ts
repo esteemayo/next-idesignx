@@ -2,13 +2,13 @@
 
 import { create } from 'zustand';
 
-interface DesignModalProps {
+interface DesignModalStore {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
 }
 
-export const useDesignModal = create<DesignModalProps>((set) => ({
+export const useDesignModal = create<DesignModalStore>((set) => ({
   isOpen: false,
   onOpen: () => ({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
