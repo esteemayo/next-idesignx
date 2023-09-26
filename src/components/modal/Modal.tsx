@@ -127,6 +127,10 @@ const CloseButton = styled.button`
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
   svg {
     font-size: inherit;
     color: currentColor;
