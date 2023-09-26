@@ -20,7 +20,13 @@ const Button: React.FC<ButtonProps> = ({
   small,
 }) => {
   return (
-    <StyledButton nav={nav} type={type} onClick={onClick} disabled={disabled}>
+    <StyledButton
+      nav={nav}
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      small={small}
+    >
       {label}
     </StyledButton>
   );
