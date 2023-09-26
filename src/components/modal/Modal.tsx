@@ -126,6 +126,7 @@ const CloseButton = styled.button`
   color: inherit;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
+  transition: all 0.2s;
 
   &:hover {
     opacity: 0.7;
