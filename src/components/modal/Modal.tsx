@@ -65,7 +65,11 @@ const Modal: React.FC<ModalProps> = ({
     return null;
   }
 
-  return <Container>Modal</Container>;
+  return (
+    <Container>
+      <Wrapper>Modal</Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.aside`
