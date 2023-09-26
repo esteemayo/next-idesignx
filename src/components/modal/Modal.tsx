@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import React, { useCallback, useEffect, useState } from 'react';
 
+import Button from '../buttons/Button';
+
 interface ModalProps {
   isOpen?: boolean;
   title?: string;
@@ -83,7 +85,14 @@ const Modal: React.FC<ModalProps> = ({
         </CloseButtonContainer>
         <Body>{body}</Body>
         <Footer>
-          <ButtonContainer></ButtonContainer>
+          <ButtonContainer>
+            <Button
+              type='button'
+              outline
+              label={secondaryActionLabel}
+              onClick={handleSecondaryAction}
+            />
+          </ButtonContainer>
           {footer}
         </Footer>
       </Wrapper>
