@@ -2,7 +2,13 @@
 
 import styled from 'styled-components';
 
-const Modal = () => {
+interface ModalProps {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
+
+const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
   return <Container>Modal</Container>;
 };
 
