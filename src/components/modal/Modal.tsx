@@ -143,6 +143,7 @@ const CloseButton = styled.button`
 const Heading = styled.h1`
   font-weight: 300;
   font-size: 1.8rem;
+  margin-top: 1rem;
 `;
 
 export default Modal;
