@@ -126,6 +126,11 @@ const CloseButton = styled.button`
   color: inherit;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    color: currentColor;
+  }
 `;
 
 export default Modal;
