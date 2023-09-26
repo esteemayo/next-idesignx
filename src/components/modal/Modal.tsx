@@ -120,6 +120,7 @@ const CloseButton = styled.button`
 
   display: inline-block;
   border: none;
+  font-size: 2rem;
   padding: 0.5rem;
   background-color: transparent;
   color: inherit;
