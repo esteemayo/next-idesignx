@@ -22,7 +22,8 @@ const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   }, [isOpen, onClose]);
 
   const isActive = useMemo(() => {
-    return (url === path).toString();
+    const activeUrl = url === path;
+    return activeUrl.toString();
   }, [path, url]);
 
   return (
@@ -54,7 +55,9 @@ const Container = styled.li`
 `;
 
 const setActiveColor = (isActive: string) => {
-  return isActive ? 'var(--clr-purple-dark-2)' : 'var(--clr-purple-light-1)';
+  return isActive === 'true'
+    ? 'var(--clr-purple-dark-2)'
+    : 'var(--clr-purple-light-1)';
 };
 
 export default NavItem;
