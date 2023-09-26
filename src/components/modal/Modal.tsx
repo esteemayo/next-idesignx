@@ -82,4 +82,6 @@ const Container = styled.aside`
   justify-content: center;
 `;
 
+const Wrapper = styled.div``;
+
 export default Modal;
