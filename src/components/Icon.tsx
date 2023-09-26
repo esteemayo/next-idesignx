@@ -9,7 +9,7 @@ interface IconProps {
 const Icon: React.FC<IconProps> = ({ icon }) => {
   return (
     <SVG>
-      <Use xlinkHref={`img/sprite.svg#${icon}`}></Use>
+      <Use xlinkHref={`svg/sprite.svg#${icon}`}></Use>
     </SVG>
   );
 };
