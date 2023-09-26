@@ -177,6 +177,10 @@ const Footer = styled.div`
   padding: 2.4rem 0;
 `;
 
-const ButtonContainer = styled.div``;
+const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+`;
 
 export default Modal;
