@@ -86,6 +86,9 @@ const Container = styled.aside`
   justify-content: center;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 50rem;
+  background-color: var(--clr-white);
+`;
 
 export default Modal;
