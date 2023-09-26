@@ -2,13 +2,13 @@
 
 import { create } from 'zustand';
 
-interface MenuStores {
+interface MenuStore {
   isOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
 }
 
-export const useMenu = create<MenuStores>((set) => ({
+export const useMenu = create<MenuStore>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
