@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
@@ -14,7 +14,14 @@ import { useMenu } from '@/hooks/useMenu';
 
 const Navbar = () => {
   const pathname = usePathname();
-  const { isOpen, onOpen } = useMenu();
+  const { isOpen, onClose, onOpen } = useMenu();
+
+  const handleClose = useCallback(() => {
+    if (isOpen) {
+      onClose();
+      return;
+    }
+  }, [isOpen, onClose]);
 
   const activeMenu = useMemo(() => {
     return isOpen.toString();
