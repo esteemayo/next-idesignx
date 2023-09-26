@@ -6,7 +6,9 @@ interface ButtonProps {
   label: string;
   nav?: boolean;
   type?: string;
-  onClick?(): void;
+  onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
+  disabled?: boolean;
+  small?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,6 +16,8 @@ const Button: React.FC<ButtonProps> = ({
   nav,
   type = 'submit',
   onClick,
+  disabled,
+  small,
 }) => {
   return (
     <StyledButton nav={nav} type={type} onClick={onClick}>
