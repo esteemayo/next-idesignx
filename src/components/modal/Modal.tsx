@@ -113,6 +113,9 @@ const CloseButtonContainer = styled.div`
 const CloseButton = styled.button`
   position: absolute;
   left: 0;
+
+  display: inline-block;
+  border: none;
 `;
 
 export default Modal;
