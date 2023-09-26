@@ -18,7 +18,7 @@ const initialState = {
 
 const ContactForm = () => {
   const onSubmitHandler = () => {
-    console.log();
+    console.log(data);
   };
 
   const { data, handleChange, handleSubmit } = useForm(
