@@ -41,7 +41,7 @@ const StyledButton = styled.button`
   border: ${({ outline }) =>
     outline ? '1px solid var(--clr-purple-light-1)' : 'none'};
   text-transform: capitalize;
-  padding: 1rem 3rem;
+  padding: ${({ small }) => (small ? '1rem' : '1rem 3rem')};
   font-weight: 400;
   font-size: 1.5rem;
   background-image: ${({ outline }) =>
