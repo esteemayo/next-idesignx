@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 interface ModalProps {
@@ -11,6 +11,11 @@ interface ModalProps {
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
   const [showModal, setShowModal] = useState(isOpen);
+
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+    onClose();
+  }, [onClose]);
 
   return <Container>Modal</Container>;
 };
