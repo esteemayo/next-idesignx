@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
 
 import Input from './inputs/Input';
 import TextArea from './inputs/TextArea';
