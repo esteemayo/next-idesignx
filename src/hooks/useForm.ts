@@ -13,11 +13,11 @@ export const useForm = (callback: () => void, initialState: object = {}) => {
   const handleSubmit = useCallback(
     (e) => {
       e.preventDefault();
-      console.log({ ...data });
+
       callback();
       setData(initialState);
     },
-    [data, callback, initialState]
+    [callback, initialState]
   );
 
   return {
