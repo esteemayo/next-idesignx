@@ -4,7 +4,11 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const Logo = ({ onClose }) => {
+interface LogoProps {
+  onClose: () => void;
+}
+
+const Logo: React.FC<LogoProps> = ({ onClose }) => {
   return (
     <Container>
       <StyledLink href='/'>
