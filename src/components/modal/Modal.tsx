@@ -67,7 +67,9 @@ const Modal: React.FC<ModalProps> = ({
 
   return (
     <Container>
-      <Wrapper>Modal</Wrapper>
+      <Wrapper>
+        <CloseButtonContainer></CloseButtonContainer>
+      </Wrapper>
     </Container>
   );
 };
