@@ -11,7 +11,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ onClose }) => {
   return (
     <Container>
-      <StyledLink href='/'>
+      <StyledLink href='/' onClick={onClose}>
         <StyledImage src='/img/logo.png' width={45} height={45} alt='logo' />
       </StyledLink>
     </Container>
