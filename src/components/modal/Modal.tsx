@@ -18,7 +18,7 @@ interface ModalProps {
   onOpen(): void;
   onClose(): void;
   onSubmit(): void;
-  secondaryAction(): void;
+  secondaryAction?(): void;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -86,13 +86,15 @@ const Modal: React.FC<ModalProps> = ({
         <Body>{body}</Body>
         <Footer>
           <ButtonContainer>
-            <Button
-              type='button'
-              outline
-              disabled={disabled}
-              label={secondaryActionLabel}
-              onClick={handleSecondaryAction}
-            />
+            {secondaryActionLabel && secondaryAction && (
+              <Button
+                type='button'
+                outline
+                disabled={disabled}
+                label={secondaryActionLabel}
+                onClick={handleSecondaryAction}
+              />
+            )}
             <Button
               type='button'
               disabled={disabled}
