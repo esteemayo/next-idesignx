@@ -178,6 +178,7 @@ const Footer = styled.div`
 `;
 
 const ButtonContainer = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1.6rem;
