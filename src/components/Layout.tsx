@@ -8,6 +8,7 @@ import Footer from './footer/Footer';
 import ScrollButton from './buttons/ScrollButton';
 import Sidebar from './sidebar/Sidebar';
 import ClientOnly from './ClientOnly';
+import Modal from './Modal';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -20,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Info />
         <Navbar />
         <Sidebar />
+        <Modal />
         {children}
         <Footer />
         <ScrollButton />
