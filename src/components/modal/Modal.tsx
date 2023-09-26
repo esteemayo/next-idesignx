@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({
     <Container>
       <Wrapper>
         <CloseButtonContainer>
-          <CloseButton>X</CloseButton>
+          <CloseButton onClick={handleClose}>X</CloseButton>
         </CloseButtonContainer>
       </Wrapper>
     </Container>
