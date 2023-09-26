@@ -26,7 +26,7 @@ const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   }, [path, url]);
 
   return (
-    <Container active={isActive}>
+    <Container active={isActive} onClick={handleClose}>
       <Link href={url}>{label}</Link>
     </Container>
   );
