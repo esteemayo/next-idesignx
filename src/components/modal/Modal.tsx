@@ -19,7 +19,10 @@ const Container = styled.aside`
   width: 100vw;
   height: 100%;
   background-color: rgba(38, 38, 38, 0.7);
-  z-index: 5000;
+  display: ${({ show }) => (show === 'true' ? 'block' : 'none')};
+  opacity: ${({ show }) => (show === 'true' ? 1 : 0)};
+  visibility: ${({ show }) => (show === 'true' ? 'visible' : 'hidden')};
+  z-index: ${({ show }) => (show === 'true' ? 5000 : -1)};
 `;
 
 export default Modal;
