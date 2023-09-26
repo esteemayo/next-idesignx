@@ -1,16 +1,15 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { create } from 'zustand';
 
-export const useMenu = () => {
-  const [showMenu, setShowMenu] = useState<boolean>(false);
+interface useMenuProps {
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
+}
 
-  const handleToggle = useCallback(() => {
-    setShowMenu((value) => !value);
-  }, []);
-
-  return {
-    showMenu,
-    handleToggle,
-  };
-};
+export const useMenu = create<useMenuProps>((set) => ({
+  isOpen: false,
+  onOpen: () => set({ isOpen: true }),
+  onClose: () => set({ isOpen: false }),
+}));
