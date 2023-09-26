@@ -2,14 +2,14 @@
 
 import styled from 'styled-components';
 
-import Navbar from './navbar/Navbar';
 import ScrollButton from './buttons/ScrollButton';
+import Navbar from './navbar/Navbar';
+import DesignModal from './modal/DesignModal';
 import Footer from './footer/Footer';
-
-import ClientOnly from './ClientOnly';
-import Info from './Info';
 import Sidebar from './sidebar/Sidebar';
-import Modal from './modal/Modal';
+
+import Info from './Info';
+import ClientOnly from './ClientOnly';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Info />
         <Navbar />
         <Sidebar />
-        <Modal />
+        <DesignModal />
         {children}
         <Footer />
         <ScrollButton />
