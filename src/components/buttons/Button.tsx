@@ -18,6 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   type = 'submit',
   onClick,
   disabled,
+  outline,
   small,
 }) => {
   return (
