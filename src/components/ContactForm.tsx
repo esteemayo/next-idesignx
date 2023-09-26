@@ -2,10 +2,11 @@
 
 import styled from 'styled-components';
 
-import Button from './buttons/Button';
-import Form from './form/Form';
-import TextArea from './inputs/TextArea';
 import Input from './inputs/Input';
+import TextArea from './inputs/TextArea';
+
+import Form from './form/Form';
+import Button from './buttons/Button';
 
 import { useForm } from '@/hooks/useForm';
 
