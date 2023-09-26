@@ -152,6 +152,8 @@ const Body = styled.div`
   padding: 2.4rem 0;
 `;
 
-const Footer = styled.div``;
+const Footer = styled.div`
+  display: flex;
+`;
 
 export default Modal;
