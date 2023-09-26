@@ -102,7 +102,10 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
 `;
 
-const CloseButtonContainer = styled.div``;
+const CloseButtonContainer = styled.div`
+  position: relative;
+  display: flex;
+`;
 
 const CloseButton = styled.button``;
 
