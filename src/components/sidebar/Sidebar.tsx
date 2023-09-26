@@ -49,6 +49,9 @@ const Container = styled.aside`
   );
   color: var(--clr-white);
   z-index: 2000;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1),
+    cubic-bezier(0.77, 0.2, 0.05, 1), cubic-bezier(0.77, 0.2, 0.05, 1);
 
   @media only screen and (min-width: 48em) {
     display: none;
