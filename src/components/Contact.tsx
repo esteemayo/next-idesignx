@@ -21,9 +21,6 @@ const initialState = {
 };
 
 const Contact = () => {
-  // const [data, setData] = useState({});ta((prev) => ({ ...prev, [name]: value }));
-  // }, []);
-
   const onSubmitHandler = () => {
     console.log({ ...data });
   };
