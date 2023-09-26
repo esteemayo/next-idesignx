@@ -44,6 +44,7 @@ const StyledButton = styled.button`
   padding: ${({ small }) => (small ? '1rem' : '1rem 3rem')};
   font-weight: 400;
   font-size: 1.5rem;
+  background-color: ${({ outline }) => outline && 'transparent'};
   background-image: ${({ outline }) =>
     !outline &&
     css`
