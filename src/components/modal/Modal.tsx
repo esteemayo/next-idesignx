@@ -21,6 +21,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onOpen, onClose }) => {
     setShowModal(isOpen);
   }, [isOpen]);
 
+  if (!isOpen) {
+    return null;
+  }
+
   return <Container>Modal</Container>;
 };
 
