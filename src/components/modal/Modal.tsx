@@ -116,6 +116,7 @@ const CloseButton = styled.button`
 
   display: inline-block;
   border: none;
+  padding: 0.5rem;
 `;
 
 export default Modal;
