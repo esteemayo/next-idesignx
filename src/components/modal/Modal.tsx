@@ -97,4 +97,6 @@ const Wrapper = styled.div`
 
 const CloseButtonContainer = styled.div``;
 
+const CloseButton = styled.button``;
+
 export default Modal;
