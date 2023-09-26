@@ -1,6 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import React, { useCallback, useEffect, useState } from 'react';
 
 interface ModalProps {
@@ -74,7 +76,9 @@ const Modal: React.FC<ModalProps> = ({
     <Container>
       <Wrapper>
         <CloseButtonContainer>
-          <CloseButton onClick={handleClose}>X</CloseButton>
+          <CloseButton onClick={handleClose}>
+            <FontAwesomeIcon icon={faTimes} />
+          </CloseButton>
         </CloseButtonContainer>
       </Wrapper>
     </Container>
