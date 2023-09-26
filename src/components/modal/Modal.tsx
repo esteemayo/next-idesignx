@@ -79,6 +79,7 @@ const Modal: React.FC<ModalProps> = ({
           <CloseButton onClick={handleClose}>
             <FontAwesomeIcon icon={faTimes} />
           </CloseButton>
+          <Heading>title</Heading>
         </CloseButtonContainer>
       </Wrapper>
     </Container>
