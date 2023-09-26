@@ -89,6 +89,7 @@ const Container = styled.aside`
 const Wrapper = styled.div`
   width: 50rem;
   background-color: var(--clr-white);
+  padding: 2rem;
 `;
 
 export default Modal;
