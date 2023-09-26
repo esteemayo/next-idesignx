@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 
 interface ModalProps {
-  isOpen: boolean;
+  isOpen?: boolean;
   onOpen(): void;
   onClose(): void;
 }
