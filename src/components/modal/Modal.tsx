@@ -32,14 +32,19 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
-  const handleClose = useCallback(() => {
-    if (disabled) {
-      return;
-    }
+  const handleClose = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
 
-    setShowModal(false);
-    onClose();
-  }, [disabled, onClose]);
+      if (disabled) {
+        return;
+      }
+
+      setShowModal(false);
+      onClose();
+    },
+    [disabled, onClose]
+  );
 
   const handleSubmit = useCallback(() => {
     if (disabled) {
