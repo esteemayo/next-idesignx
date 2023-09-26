@@ -90,6 +90,7 @@ const Wrapper = styled.div`
   width: 50rem;
   background-color: var(--clr-white);
   padding: 2rem;
+  border-radius: 0.5rem;
 `;
 
 export default Modal;
