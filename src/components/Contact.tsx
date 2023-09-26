@@ -21,11 +21,7 @@ const initialState = {
 };
 
 const Contact = () => {
-  // const [data, setData] = useState({});
-
-  // const handleChange = useCallback(({ target: input }) => {
-  //   const { name, value } = input;
-  //   setData((prev) => ({ ...prev, [name]: value }));
+  // const [data, setData] = useState({});ta((prev) => ({ ...prev, [name]: value }));
   // }, []);
 
   const onSubmitHandler = () => {
