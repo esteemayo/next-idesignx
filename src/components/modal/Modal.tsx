@@ -159,4 +159,6 @@ const Footer = styled.div`
   padding: 2.4rem 0;
 `;
 
+const ButtonContainer = styled.div``;
+
 export default Modal;
