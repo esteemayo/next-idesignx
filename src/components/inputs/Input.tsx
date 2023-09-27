@@ -3,6 +3,7 @@
 import { StyledInput } from '../form/StyleInput';
 import { Label } from '../form/Label';
 import { FormGroup } from '../form/FormGroup';
+import { ChangeEvent } from 'react';
 
 interface InputProps {
   name: string;
@@ -10,7 +11,7 @@ interface InputProps {
   type?: string;
   value?: string;
   placeholder: string;
-  onChange(): void;
+  onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
 const Input: React.FC<InputProps> = ({
