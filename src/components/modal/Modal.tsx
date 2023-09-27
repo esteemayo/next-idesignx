@@ -136,10 +136,6 @@ const Container = styled.aside<IContainer>`
   opacity: ${({ active }) => (active ? 1 : 0)};
   visibility: ${({ active }) => (active ? 'visible' : 'hidden')};
   z-index: ${({ active }) => (active ? 5000 : -1)};
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const Wrapper = styled.div`
