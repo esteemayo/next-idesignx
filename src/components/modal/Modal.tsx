@@ -8,7 +8,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Button from '../buttons/Button';
 
 interface IContainer {
-  active: boolean | undefined;
+  active: boolean;
 }
 
 interface ModalProps {
@@ -93,33 +93,35 @@ const Modal: React.FC<ModalProps> = ({
       onClick={closeModalHandler}
     >
       <Wrapper>
-        <CloseButtonContainer>
-          <CloseButton onClick={handleClose}>
-            <FontAwesomeIcon icon={faTimes} />
-          </CloseButton>
-          <Heading>{title}</Heading>
-        </CloseButtonContainer>
-        <Body>{body}</Body>
-        <Footer>
-          <ButtonContainer>
-            {secondaryActionLabel && secondaryAction && (
+        <Box>
+          <CloseButtonContainer>
+            <CloseButton onClick={handleClose}>
+              <FontAwesomeIcon icon={faTimes} />
+            </CloseButton>
+            <Heading>{title}</Heading>
+          </CloseButtonContainer>
+          <Body>{body}</Body>
+          <Footer>
+            <ButtonContainer>
+              {secondaryActionLabel && secondaryAction && (
+                <Button
+                  type='button'
+                  outline
+                  disabled={disabled}
+                  label={secondaryActionLabel}
+                  onClick={handleSecondaryAction}
+                />
+              )}
               <Button
                 type='button'
-                outline
                 disabled={disabled}
-                label={secondaryActionLabel}
-                onClick={handleSecondaryAction}
+                label={actionLabel}
+                onClick={handleSubmit}
               />
-            )}
-            <Button
-              type='button'
-              disabled={disabled}
-              label={actionLabel}
-              onClick={handleSubmit}
-            />
-          </ButtonContainer>
-          {footer}
-        </Footer>
+            </ButtonContainer>
+            {footer}
+          </Footer>
+        </Box>
       </Wrapper>
     </Container>
   );
@@ -132,18 +134,16 @@ const Container = styled.aside<IContainer>`
   width: 100vw;
   height: 100%;
   background-color: rgba(38, 38, 38, 0.7);
-  display: ${({ active }) => (active ? 'block' : 'none')};
-  opacity: ${({ active }) => (active ? 1 : 0)};
-  visibility: ${({ active }) => (active ? 'visible' : 'hidden')};
-  z-index: ${({ active }) => (active ? 5000 : -1)};
+  z-index: 5000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-const Wrapper = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+const Wrapper = styled.div``;
 
+const Box = styled.div`
   width: 50rem;
   background-color: var(--clr-white);
   padding: 2rem;
