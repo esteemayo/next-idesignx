@@ -1,9 +1,10 @@
 'use client';
 
+import { ChangeEvent } from 'react';
+
 import { StyledInput } from '../form/StyleInput';
 import { Label } from '../form/Label';
 import { FormGroup } from '../form/FormGroup';
-import { ChangeEvent } from 'react';
 
 interface InputProps {
   name: string;
