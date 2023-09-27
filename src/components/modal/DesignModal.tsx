@@ -30,6 +30,14 @@ const DesignModal = () => {
     }
   }, [handleNext, step]);
 
+  const actionLabelHandler = useCallback(() => {
+    if (step === STEPS.IMAGES) {
+      return 'Create';
+    }
+
+    return 'Next';
+  }, [step]);
+
   return (
     <Modal
       title='Upload your design'
