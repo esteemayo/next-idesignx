@@ -36,6 +36,16 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
+  const closeModalHandler = useCallback(
+    (e) => {
+      if (e.target.classList.contains('overlay')) {
+        setShowModal(false);
+        onClose();
+      }
+    },
+    [onClose]
+  );
+
   const handleClose = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
