@@ -24,8 +24,6 @@ const Navbar = () => {
   const designModal = useDesignModal();
   const { isOpen, onOpen } = useMenu();
 
-  console.log(designModal.isOpen);
-
   const activeMenu = useMemo(() => {
     return isOpen.toString();
   }, [isOpen]);
