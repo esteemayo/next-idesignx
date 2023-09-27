@@ -8,6 +8,10 @@ interface HamburgerProps {
   onToggle(): void;
 }
 
+interface IProps {
+  active: string;
+}
+
 const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
   const [openMenu, setOpenMenu] = useState(isOpen);
 
@@ -33,7 +37,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
   );
 };
 
-const Container = styled.button`
+const Container = styled.button<IProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +55,7 @@ const Container = styled.button`
   }
 `;
 
-const Span = styled.span`
+const Span = styled.span<IProps>`
   width: 100%;
   height: 2px;
   background-color: currentColor;
