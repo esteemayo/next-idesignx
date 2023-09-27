@@ -12,6 +12,10 @@ import Button from '../buttons/Button';
 import { navItems } from '@/data';
 import { useMenu } from '@/hooks/useMenu';
 
+interface IContainer {
+  active: string;
+}
+
 const Sidebar = () => {
   const { isOpen, onClose } = useMenu();
 
@@ -26,14 +30,14 @@ const Sidebar = () => {
           <Hamburger isOpen={isOpen} onToggle={onClose} />
           <Logo />
         </LogoBox>
-        <Button nav='true' type='button' label='Upload your design' />
+        <Button nav type='button' label='Upload your design' />
       </Wrapper>
       <MenuItems links={navItems} />
     </Container>
   );
 };
 
-const Container = styled.aside`
+const Container = styled.aside<IContainer>`
   width: 45rem;
   height: 100%;
   padding: 3px 2rem;
