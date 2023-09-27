@@ -38,7 +38,7 @@ const Request = () => {
   }, []);
 
   const handleSubmit = useCallback(
-    (e: React.MouseEvent<HTMLFormControlsCollection>) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       console.log({ ...data, file });
