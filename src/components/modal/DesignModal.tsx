@@ -30,7 +30,14 @@ const DesignModal = () => {
     }
   }, [handleNext, step]);
 
-  return <Modal title='Upload your design' isOpen={isOpen} onClose={onClose} />;
+  return (
+    <Modal
+      title='Upload your design'
+      isOpen={isOpen}
+      onClose={onClose}
+      onSubmit={handleSubmit}
+    />
+  );
 };
 
 const Container = styled.div``;
