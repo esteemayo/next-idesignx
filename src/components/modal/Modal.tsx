@@ -75,7 +75,7 @@ const Modal: React.FC<ModalProps> = ({
   }
 
   return (
-    <Container>
+    <Container className='overlay'>
       <Wrapper>
         <CloseButtonContainer>
           <CloseButton onClick={handleClose}>
