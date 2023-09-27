@@ -38,30 +38,24 @@ const Modal: React.FC<ModalProps> = ({
 }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
+  const handleClose = useCallback(() => {
+    if (disabled) {
+      return;
+    }
+
+    setShowModal(false);
+    setTimeout(() => {
+      onClose();
+    }, 300);
+  }, [disabled, onClose]);
+
   const closeModalHandler = useCallback(
     (e) => {
       if (e.target.classList.contains('overlay')) {
-        setShowModal(false);
-        onClose();
+        handleClose();
       }
     },
-    [onClose]
-  );
-
-  const handleClose = useCallback(
-    (e: React.MouseEvent<HTMLButtonElement>) => {
-      e.stopPropagation();
-
-      if (disabled) {
-        return;
-      }
-
-      setShowModal(false);
-      setTimeout(() => {
-        onClose();
-      }, 300);
-    },
-    [disabled, onClose]
+    [handleClose]
   );
 
   const handleSubmit = useCallback(() => {
