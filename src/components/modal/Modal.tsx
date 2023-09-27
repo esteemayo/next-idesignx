@@ -12,7 +12,7 @@ interface IWrapper {
 }
 
 interface IBox {
-  type: string;
+  type: string | undefined;
 }
 
 interface ModalProps {
