@@ -8,7 +8,7 @@ export const InputStyled = styled.input`
   padding: 1.5rem 2rem;
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
-  border: 1px solid var(--clr-purple-light-1);
+  border: 1px solid var(--clr-gray-dark-2);
   border-radius: 2px;
   outline-color: var(--clr-purple-light-3);
   caret-color: var(--clr-purple-light-3);
