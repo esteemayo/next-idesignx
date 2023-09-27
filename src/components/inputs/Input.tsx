@@ -9,7 +9,7 @@ import { InputStyled } from '../InputStyled';
 
 interface InputProps {
   name: string;
-  label: string;
+  label?: string;
   type?: string;
   value?: string;
   placeholder: string;
@@ -43,7 +43,7 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <FormGroup>
-      <Label htmlFor={name}>{label}</Label>
+      {label && <Label htmlFor={name}>{label}</Label>}
       <InputStyled
         id={name}
         name={name}
