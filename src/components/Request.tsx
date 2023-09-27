@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 
 import Select from './inputs/Select';
 import UploadInput from './inputs/UploadInput';
@@ -25,10 +25,13 @@ const Request = () => {
   const [file, setFile] = useState(null);
   const [data, setData] = useState(initialState);
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setData((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  const handleChange = useCallback(
+    ({ target: input }: ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = input;
+      setData((prev) => ({ ...prev, [name]: value }));
+    },
+    []
+  );
 
   const handleClear = useCallback(() => {
     setData(initialState);
