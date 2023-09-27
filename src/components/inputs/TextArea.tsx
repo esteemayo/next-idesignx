@@ -1,5 +1,7 @@
 'use client';
 
+import { ChangeEvent } from 'react';
+
 import { StyledTextArea } from '../form/StyledTextArea';
 import { Label } from '../form/Label';
 import { FormGroup } from '../form/FormGroup';
@@ -9,7 +11,7 @@ interface TextAreaProps {
   label: string;
   value?: string;
   placeholder: string;
-  onChange(): void;
+  onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
 const TextArea: React.FC<TextAreaProps> = ({
