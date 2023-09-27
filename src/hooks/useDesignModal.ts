@@ -9,7 +9,7 @@ interface DesignModalStore {
 }
 
 export const useDesignModal = create<DesignModalStore>((set) => ({
-  isOpen: true,
-  onOpen: () => ({ isOpen: true }),
+  isOpen: false,
+  onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
 }));
