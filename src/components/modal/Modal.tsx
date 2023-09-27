@@ -50,7 +50,7 @@ const Modal: React.FC<ModalProps> = ({
   }, [disabled, onClose]);
 
   const closeModalHandler = useCallback(
-    (e: Event): void => {
+    (e: React.MouseEvent<HTMLDivElement>): void => {
       const target = e.target as Element;
 
       if (target.contains('overlay')) {
