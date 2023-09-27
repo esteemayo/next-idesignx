@@ -26,13 +26,6 @@ const Navbar = () => {
 
   console.log(designModal.isOpen);
 
-  const handleClose = useCallback(() => {
-    if (isOpen) {
-      onClose();
-      return;
-    }
-  }, [isOpen, onClose]);
-
   const activeMenu = useMemo(() => {
     return isOpen.toString();
   }, [isOpen]);
@@ -41,7 +34,7 @@ const Navbar = () => {
     <Container active={activeMenu}>
       <Wrapper>
         <Hamburger isOpen={isOpen} onToggle={onOpen} />
-        <Logo onClose={handleClose} />
+        <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
