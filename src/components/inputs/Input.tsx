@@ -4,8 +4,8 @@ import { ChangeEvent } from 'react';
 
 import { StyledInput } from '../form/StyleInput';
 import { Label } from '../form/Label';
+import { InputStyled } from '../form/InputStyled';
 import { FormGroup } from '../form/FormGroup';
-import { InputStyled } from '../InputStyled';
 
 interface InputProps {
   name: string;
