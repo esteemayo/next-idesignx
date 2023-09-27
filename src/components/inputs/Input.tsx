@@ -6,6 +6,7 @@ import { StyledInput } from '../form/StyleInput';
 import { Label } from '../form/Label';
 import { InputStyled } from '../form/InputStyled';
 import { FormGroup } from '../form/FormGroup';
+import { StyledLabel } from '../form/StyledLabel';
 
 interface InputProps {
   name: string;
@@ -45,7 +46,7 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <FormGroup>
-      {label && <Label htmlFor={name}>{label}</Label>}
+      {label && <StyledLabel htmlFor={name}>{label}</StyledLabel>}
       <InputStyled
         id={name}
         name={name}
