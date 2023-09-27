@@ -12,6 +12,12 @@ interface ButtonProps {
   small?: boolean;
 }
 
+interface IBtn {
+  nav?: boolean;
+  small?: boolean;
+  outline?: boolean;
+}
+
 const Button: React.FC<ButtonProps> = ({
   label,
   nav,
@@ -35,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<IBtn>`
   margin-top: ${({ nav }) => (!nav ? '2rem' : undefined)};
   display: inline-block;
   border: ${({ outline }) =>
@@ -44,7 +50,7 @@ const StyledButton = styled.button`
   padding: ${({ small }) => (small ? '1rem' : '1rem 3rem')};
   font-weight: 400;
   font-size: 1.5rem;
-  background-color: ${({ outline }) => outline ? 'transparent': undefined};
+  background-color: ${({ outline }) => (outline ? 'transparent' : undefined)};
   background-image: ${({ outline }) =>
     !outline
       ? css`
