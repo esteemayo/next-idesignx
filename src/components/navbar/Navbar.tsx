@@ -20,6 +20,8 @@ const Navbar = () => {
   const designModal = useDesignModal();
   const { isOpen, onClose, onOpen } = useMenu();
 
+  console.log(designModal.isOpen);
+
   const handleClose = useCallback(() => {
     if (isOpen) {
       onClose();
