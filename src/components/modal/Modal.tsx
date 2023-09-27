@@ -132,7 +132,10 @@ const Container = styled.aside<IContainer>`
   width: 100vw;
   height: 100%;
   background-color: rgba(38, 38, 38, 0.7);
-  z-index: 5000;
+  display: ${({ active }) => (active ? 'block' : 'none')};
+  opacity: ${({ active }) => (active ? 1 : 0)};
+  visibility: ${({ active }) => (active ? 'visible' : 'hidden')};
+  z-index: ${({ active }) => (active ? 5000 : -1)};
 
   display: flex;
   align-items: center;
