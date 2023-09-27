@@ -10,7 +10,7 @@ export const TextAreaStyled = styled.textarea`
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
   border: 2px solid #aaa;
-  outline-color: #eee;
+  outline-color: #979797;
   caret-color: var(--clr-purple-light-3);
   transition: all 0.3s;
 
