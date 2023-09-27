@@ -15,6 +15,9 @@ enum STEPS {
 
 const initialState = {
   name: '',
+  email: '',
+  address: '',
+  phone: '',
 };
 
 const DesignModal = () => {
@@ -65,15 +68,46 @@ const DesignModal = () => {
 
   if (step === STEPS.INFO) {
     bodyContent = (
-      <FormGroup>
-        <Input
-          name='name'
-          label='Name'
-          value={data.name}
-          placeholder='Name'
-          onChange={handleChange}
-        />
-      </FormGroup>
+      <Container>
+        <FormGroup>
+          <Input
+            name='name'
+            label='Your name'
+            value={data.name}
+            placeholder='Your name'
+            onChange={handleChange}
+          />
+        </FormGroup>
+        <FormGroup>
+          <Input
+            name='email'
+            type='email'
+            label='Your email'
+            value={data.email}
+            placeholder='Your email'
+            onChange={handleChange}
+          />
+        </FormGroup>
+        <FormGroup>
+          <Input
+            name='address'
+            label='Your address'
+            value={data.address}
+            placeholder='Your address'
+            onChange={handleChange}
+          />
+        </FormGroup>
+        <FormGroup>
+          <Input
+            type='tel'
+            name='phone'
+            label='Phone'
+            value={data.phone}
+            placeholder='Phone'
+            onChange={handleChange}
+          />
+        </FormGroup>
+      </Container>
     );
   }
 
