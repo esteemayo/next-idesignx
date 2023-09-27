@@ -1,20 +1,35 @@
 'use  client';
 
 import styled from 'styled-components';
-import { useCallback, useMemo, useState } from 'react';
+import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
 import Modal from './Modal';
 import { useDesignModal } from '@/hooks/useDesignModal';
+import { FormGroup } from '../form/FormGroup';
+import Input from '../inputs/Input';
 
 enum STEPS {
   INFO = 0,
   IMAGES = 1,
 }
 
+const initialState = {
+  name: '',
+};
+
 const DesignModal = () => {
   const { isOpen, onClose } = useDesignModal();
 
   const [step, setStep] = useState(STEPS.INFO);
+  const [data, setData] = useState(initialState);
+
+  const handleChange = useCallback(
+    ({ target: input }: ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = input;
+      setData((prev) => ({ ...prev, [name]: value }));
+    },
+    []
+  );
 
   const handlePrev = useCallback(() => {
     setStep((value) => value - 1);
@@ -49,7 +64,17 @@ const DesignModal = () => {
   let bodyContent;
 
   if (step === STEPS.INFO) {
-    bodyContent = 'body';
+    bodyContent = (
+      <FormGroup>
+        <Input
+          name='name'
+          label='Name'
+          value={data.name}
+          placeholder='Name'
+          onChange={handleChange}
+        />
+      </FormGroup>
+    );
   }
 
   return (
