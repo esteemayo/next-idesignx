@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 
 import Logo from './Logo';
