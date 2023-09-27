@@ -139,6 +139,11 @@ const Container = styled.aside<IContainer>`
 `;
 
 const Wrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 50rem;
   background-color: var(--clr-white);
   padding: 2rem;
