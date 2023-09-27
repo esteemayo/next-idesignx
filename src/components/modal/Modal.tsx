@@ -142,7 +142,7 @@ const Wrapper = styled.div<IWrapper>`
 const Box = styled.div`
   width: 50rem;
   background-color: var(--clr-white);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 0.5rem;
 `;
 
