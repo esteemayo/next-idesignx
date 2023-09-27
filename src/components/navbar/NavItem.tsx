@@ -10,6 +10,10 @@ interface NavItemProps {
   path: string;
 }
 
+interface IContainer {
+  active: string;
+}
+
 const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   const { isOpen, onClose } = useMenu();
 
@@ -33,7 +37,7 @@ const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   );
 };
 
-const Container = styled.li`
+const Container = styled.li<IContainer>`
   color: ${({ active }) => setActiveColor(active)};
 
   a {
