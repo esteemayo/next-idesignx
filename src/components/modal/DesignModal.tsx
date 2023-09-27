@@ -20,6 +20,10 @@ const DesignModal = () => {
     setStep((value) => value - 1);
   }, []);
 
+  const handleNext = useCallback(() => {
+    setStep((value) => value + 1);
+  }, []);
+
   return <Modal title='Upload your design' isOpen={isOpen} onClose={onClose} />;
 };
 
