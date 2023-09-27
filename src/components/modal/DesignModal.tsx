@@ -121,7 +121,7 @@ const DesignModal = () => {
             name='subject'
             label='Subject'
             value={data.subject}
-            placeholder='subject'
+            placeholder='Subject'
             onChange={handleChange}
           />
         </FormGroup>
