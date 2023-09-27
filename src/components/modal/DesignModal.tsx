@@ -1,7 +1,7 @@
 'use  client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 import Modal from './Modal';
 import { useDesignModal } from '@/hooks/useDesignModal';
@@ -30,7 +30,7 @@ const DesignModal = () => {
     }
   }, [handleNext, step]);
 
-  const actionLabelHandler = useCallback(() => {
+  const actionLabelHandler = useMemo(() => {
     if (step === STEPS.IMAGES) {
       return 'Create';
     }
@@ -40,8 +40,9 @@ const DesignModal = () => {
 
   return (
     <Modal
-      title='Upload your design'
       isOpen={isOpen}
+      title='Upload your design'
+      actionLabel={actionLabelHandler}
       onClose={onClose}
       onSubmit={handleSubmit}
     />
