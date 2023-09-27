@@ -11,7 +11,7 @@ interface IWrapper {
   active: boolean | undefined;
 }
 
-interface IBody {
+interface IBox {
   type: string;
 }
 
@@ -91,14 +91,14 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <Container className='overlay' onClick={closeModalHandler}>
       <Wrapper active={showModal}>
-        <Box>
+        <Box type={type}>
           <CloseButtonContainer>
             <CloseButton onClick={handleClose}>
               <FontAwesomeIcon icon={faTimes} />
             </CloseButton>
             <Heading>{title}</Heading>
           </CloseButtonContainer>
-          <Body type={type}>{body}</Body>
+          <Body>{body}</Body>
           <Footer>
             <ButtonContainer>
               {secondaryActionLabel && secondaryAction && (
@@ -145,7 +145,7 @@ const Wrapper = styled.div<IWrapper>`
   transition: all 300ms;
 `;
 
-const Box = styled.div`
+const Box = styled.div<IBox>`
   width: 50rem;
   background-color: var(--clr-white);
   padding: 2rem;
@@ -191,7 +191,7 @@ const Heading = styled.h1`
   margin-top: 1rem;
 `;
 
-const Body = styled.div<IBody>`
+const Body = styled.div`
   padding: 2.4rem 0;
 `;
 
