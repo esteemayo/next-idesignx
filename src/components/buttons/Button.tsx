@@ -65,7 +65,7 @@ const StyledButton = styled.button<IBtn>`
   `
       : undefined};
   color: ${({ outline }) =>
-    outline ? 'var(--clr-gray-dark)' : 'var(--clr-white)'};
+    outline ? 'var(--clr-purple-light-1)' : 'var(--clr-white)'};
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
