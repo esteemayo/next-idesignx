@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 interface LogoProps {
-  onClose: () => void;
+  onClose?: () => void;
 }
 
 const Logo: React.FC<LogoProps> = ({ onClose }) => {
