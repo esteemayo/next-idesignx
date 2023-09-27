@@ -39,6 +39,7 @@ const Contact = () => {
           label='Your name'
           value={data.name}
           placeholder='Your name'
+          style='true'
           onChange={handleChange}
         />
         <Input
@@ -47,6 +48,7 @@ const Contact = () => {
           label='Your email'
           value={data.email}
           placeholder='Your email'
+          style='true'
           onChange={handleChange}
         />
         <Select
@@ -54,6 +56,7 @@ const Contact = () => {
           label='Select products'
           value={data.categorye}
           options={selectInputs}
+          style='true'
           onChange={handleChange}
         />
         <TextArea
@@ -61,6 +64,7 @@ const Contact = () => {
           label='Content'
           value={data.content}
           placeholder='Content'
+          style='true'
           onChange={handleChange}
         />
         <Button label='Submit' />
