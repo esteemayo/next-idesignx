@@ -147,7 +147,8 @@ const Wrapper = styled.div<IWrapper>`
 
 const Box = styled.div<IBox>`
   width: 50rem;
-  background-color: var(--clr-white);
+  background-color: ${({ type }) =>
+    type === 'form' ? '#f9f9f9' : 'var(--clr-white)'};
   padding: 2rem;
   border-radius: 0.5rem;
 `;
