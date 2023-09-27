@@ -30,7 +30,7 @@ const DesignModal = () => {
     }
   }, [handleNext, step]);
 
-  const actionLabelHandler = useMemo(() => {
+  const actionLabel = useMemo(() => {
     if (step === STEPS.IMAGES) {
       return 'Create';
     }
@@ -42,7 +42,7 @@ const DesignModal = () => {
     <Modal
       isOpen={isOpen}
       title='Upload your design'
-      actionLabel={actionLabelHandler}
+      actionLabel={actionLabel}
       onClose={onClose}
       onSubmit={handleSubmit}
     />
