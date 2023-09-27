@@ -142,7 +142,6 @@ const DesignModal = () => {
     <Modal
       isOpen={isOpen}
       title='Upload your design'
-      type='form'
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       body={bodyContent}

@@ -11,14 +11,9 @@ interface IWrapper {
   active: boolean | undefined;
 }
 
-interface IBox {
-  type: string | undefined;
-}
-
 interface ModalProps {
   isOpen?: boolean;
   title?: string;
-  type?: string;
   actionLabel: string;
   secondaryActionLabel?: string;
   disabled?: boolean;
@@ -32,7 +27,6 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({
   isOpen,
   title,
-  type,
   actionLabel,
   secondaryActionLabel,
   disabled,
@@ -91,7 +85,7 @@ const Modal: React.FC<ModalProps> = ({
   return (
     <Container className='overlay' onClick={closeModalHandler}>
       <Wrapper active={showModal}>
-        <Box type={type}>
+        <Box>
           <CloseButtonContainer>
             <CloseButton onClick={handleClose}>
               <FontAwesomeIcon icon={faTimes} />
@@ -145,10 +139,9 @@ const Wrapper = styled.div<IWrapper>`
   transition: all 300ms;
 `;
 
-const Box = styled.div<IBox>`
+const Box = styled.div`
   width: 50rem;
-  background-color: ${({ type }) =>
-    type === 'form' ? '#f9f9f9' : 'var(--clr-white)'};
+  background-color: var(--clr-white);
   padding: 2rem;
   border-radius: 0.5rem;
 `;
