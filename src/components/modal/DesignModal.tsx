@@ -8,7 +8,14 @@ import { useDesignModal } from '@/hooks/useDesignModal';
 const DesignModal = () => {
   const { isOpen, onClose, onOpen } = useDesignModal();
 
-  return <Modal isOpen={isOpen} onOpen={onOpen} onClose={onClose} />;
+  return (
+    <Modal
+      title='Upload your design'
+      isOpen={isOpen}
+      onOpen={onOpen}
+      onClose={onClose}
+    />
+  );
 };
 
 const Container = styled.div``;
