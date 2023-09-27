@@ -140,6 +140,7 @@ const Container = styled.aside`
 const Wrapper = styled.div<IWrapper>`
   transform: translateY(${({ active }) => (active ? 0 : '100%')});
   opacity: ${({ active }) => (active ? 1 : 0)};
+  transition: all 300ms;
 `;
 
 const Box = styled.div`
