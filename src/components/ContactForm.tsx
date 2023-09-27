@@ -40,6 +40,7 @@ const ContactForm = () => {
           label='Your name'
           value={data.name}
           placeholder='Your name'
+          style='true'
           onChange={handleChange}
         />
         <Input
@@ -48,6 +49,7 @@ const ContactForm = () => {
           label='Your email'
           value={data.email}
           placeholder='Your email'
+          style='true'
           onChange={handleChange}
         />
         <Input
@@ -55,6 +57,7 @@ const ContactForm = () => {
           label='Subject'
           value={data.subject}
           placeholder='Subject'
+          style='true'
           onChange={handleChange}
         />
         <TextArea
@@ -62,6 +65,7 @@ const ContactForm = () => {
           label='Message'
           value={data.message}
           placeholder='Message'
+          style='true'
           onChange={handleChange}
         />
         <Button label='Submit' />

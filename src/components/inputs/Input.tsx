@@ -27,18 +27,20 @@ const Input: React.FC<InputProps> = ({
   onChange,
 }) => {
   if (style === 'true') {
-    <FormGroup>
-      <StyledInput
-        id={name}
-        name={name}
-        type={type}
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
-        required
-      />
-      <Label htmlFor={name}>{label}</Label>
-    </FormGroup>;
+    return (
+      <FormGroup>
+        <StyledInput
+          id={name}
+          name={name}
+          type={type}
+          value={value}
+          placeholder={placeholder}
+          onChange={onChange}
+          required
+        />
+        <Label htmlFor={name}>{label}</Label>
+      </FormGroup>
+    );
   }
 
   return (
