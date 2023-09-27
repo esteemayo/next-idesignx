@@ -15,6 +15,7 @@ import { useDesignModal } from '@/hooks/useDesignModal';
 
 const Navbar = () => {
   const pathname = usePathname();
+
   const designModal = useDesignModal();
   const { isOpen, onClose, onOpen } = useMenu();
 
