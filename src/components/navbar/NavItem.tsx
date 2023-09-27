@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { useMenu } from '@/hooks/useMenu';
 
@@ -17,21 +17,13 @@ interface IContainer {
 const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
   const { isOpen, onClose } = useMenu();
 
-  const handleClose = useCallback(() => {
-    if (isOpen) {
-      onClose();
-    }
-
-    return undefined;
-  }, [isOpen, onClose]);
-
   const isActive = useMemo(() => {
     const activeUrl = url === path;
     return activeUrl.toString();
   }, [path, url]);
 
   return (
-    <Container active={isActive} onClick={handleClose}>
+    <Container active={isActive}>
       <Link href={url}>{label}</Link>
     </Container>
   );
