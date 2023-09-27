@@ -24,6 +24,12 @@ const DesignModal = () => {
     setStep((value) => value + 1);
   }, []);
 
+  const handleSubmit = useCallback(() => {
+    if (step !== STEPS.IMAGES) {
+      return handleNext();
+    }
+  }, [handleNext, step]);
+
   return <Modal title='Upload your design' isOpen={isOpen} onClose={onClose} />;
 };
 
