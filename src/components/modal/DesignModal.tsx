@@ -6,7 +6,7 @@ import Modal from './Modal';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
 const DesignModal = () => {
-  const { isOpen, onClose, onOpen } = useDesignModal();
+  const { isOpen, onClose } = useDesignModal();
 
   return <Modal title='Upload your design' isOpen={isOpen} onClose={onClose} />;
 };
