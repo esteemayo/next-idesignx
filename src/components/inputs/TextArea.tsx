@@ -27,7 +27,6 @@ const TextArea: React.FC<TextAreaProps> = ({
   if (style === 'true') {
     return (
       <FormGroup>
-        <Label htmlFor={name}>{label}</Label>
         <StyledTextArea
           id={name}
           name={name}
@@ -36,12 +35,14 @@ const TextArea: React.FC<TextAreaProps> = ({
           onChange={onChange}
           required
         />
+        <Label htmlFor={name}>{label}</Label>
       </FormGroup>
     );
   }
 
   return (
     <FormGroup>
+      <Label htmlFor={name}>{label}</Label>
       <TextAreaStyled
         id={name}
         name={name}
@@ -50,7 +51,6 @@ const TextArea: React.FC<TextAreaProps> = ({
         onChange={onChange}
         required
       />
-      <Label htmlFor={name}>{label}</Label>
     </FormGroup>
   );
 };
