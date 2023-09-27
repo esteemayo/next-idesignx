@@ -7,6 +7,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 
 import Button from '../buttons/Button';
 
+interface IContainer {
+  active: boolean;
+}
+
 interface ModalProps {
   isOpen?: boolean;
   title?: string;
@@ -83,7 +87,11 @@ const Modal: React.FC<ModalProps> = ({
   }
 
   return (
-    <Container className='overlay' onClick={closeModalHandler}>
+    <Container
+      className='overlay'
+      active={showModal}
+      onClick={closeModalHandler}
+    >
       <Wrapper>
         <CloseButtonContainer>
           <CloseButton onClick={handleClose}>
@@ -117,7 +125,7 @@ const Modal: React.FC<ModalProps> = ({
   );
 };
 
-const Container = styled.aside`
+const Container = styled.aside<IContainer>`
   position: fixed;
   top: 0;
   left: 0;
