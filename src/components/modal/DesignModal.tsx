@@ -7,10 +7,12 @@ import Modal from './Modal';
 import { useDesignModal } from '@/hooks/useDesignModal';
 import { FormGroup } from '../form/FormGroup';
 import Input from '../inputs/Input';
+import TextArea from '../inputs/TextArea';
 
 enum STEPS {
   INFO = 0,
-  IMAGES = 1,
+  DESC = 1,
+  IMAGES = 2,
 }
 
 const initialState = {
@@ -18,6 +20,8 @@ const initialState = {
   email: '',
   address: '',
   phone: '',
+  subject: '',
+  desc: '',
 };
 
 const DesignModal = () => {
@@ -108,6 +112,31 @@ const DesignModal = () => {
       </FormGroup>
     </Container>
   );
+
+  if (step === STEPS.DESC) {
+    bodyContent = (
+      <Container>
+        <FormGroup>
+          <Input
+            name='subject'
+            label='subject'
+            value={data.subject}
+            placeholder='subject'
+            onChange={handleChange}
+          />
+        </FormGroup>
+        <FormGroup>
+          <TextArea
+            name='desc'
+            value={data.desc}
+            label='Description'
+            placeholder='Description'
+            onChange={handleChange}
+          />
+        </FormGroup>
+      </Container>
+    );
+  }
 
   return (
     <Modal
