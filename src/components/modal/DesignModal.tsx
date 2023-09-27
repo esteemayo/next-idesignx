@@ -119,7 +119,7 @@ const DesignModal = () => {
         <FormGroup>
           <Input
             name='subject'
-            label='subject'
+            label='Subject'
             value={data.subject}
             placeholder='subject'
             onChange={handleChange}
