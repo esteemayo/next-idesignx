@@ -9,9 +9,10 @@ import Hamburger from './Hamburger';
 import NavItems from './NavItems';
 import Button from '../buttons/Button';
 
-import { navItems } from '@/data';
 import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
+
+import { navItems } from '@/data';
 
 const Navbar = () => {
   const pathname = usePathname();
