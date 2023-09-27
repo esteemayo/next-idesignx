@@ -1,7 +1,7 @@
 'use client';
 
-import { useMemo } from 'react';
 import styled from 'styled-components';
+import { useCallback, useMemo } from 'react';
 
 import Logo from '../navbar/Logo';
 import Hamburger from '../navbar/Hamburger';
@@ -19,6 +19,13 @@ interface IContainer {
 const Sidebar = () => {
   const { isOpen, onClose } = useMenu();
 
+  const handleClose = useCallback(() => {
+    if (isOpen) {
+      onClose();
+      return;
+    }
+  }, [isOpen, onClose]);
+
   const activeMenu = useMemo(() => {
     return isOpen.toString();
   }, [isOpen]);
@@ -28,7 +35,7 @@ const Sidebar = () => {
       <Wrapper>
         <LogoBox>
           <Hamburger isOpen={isOpen} onToggle={onClose} />
-          <Logo />
+          <Logo onClose={handleClose} />
         </LogoBox>
         <Button nav type='button' label='Upload your design' />
       </Wrapper>
