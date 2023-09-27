@@ -15,7 +15,6 @@ interface ModalProps {
   disabled?: boolean;
   body?: React.ReactElement;
   footer?: React.ReactElement;
-  onOpen(): void;
   onClose(): void;
   onSubmit(): void;
   secondaryAction?(): void;
@@ -29,7 +28,6 @@ const Modal: React.FC<ModalProps> = ({
   disabled,
   body,
   footer,
-  onOpen,
   onClose,
   onSubmit,
   secondaryAction,
