@@ -137,7 +137,10 @@ const Container = styled.aside`
   justify-content: center;
 `;
 
-const Wrapper = styled.div<IWrapper>``;
+const Wrapper = styled.div<IWrapper>`
+  transform: translateY(${({ active }) => (active ? 0 : '100%')});
+  opacity: ${({ active }) => (active ? 1 : 0)};
+`;
 
 const Box = styled.div`
   width: 50rem;
