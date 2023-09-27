@@ -1,5 +1,7 @@
 'use client';
 
+import { ChangeEvent } from 'react';
+
 import { FormGroup } from '../form/FormGroup';
 import { Option, StyledSelect } from '../form/StyledSelect';
 
@@ -13,7 +15,7 @@ interface SelectProps {
   value?: string;
   label: string;
   options: Array<OptionTypes>;
-  onChange(e: React.MouseEvent<HTMLFormControlsCollection>): void;
+  onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
 const Select: React.FC<SelectProps> = ({
