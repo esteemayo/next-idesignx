@@ -54,6 +54,7 @@ const DesignModal = () => {
       secondaryActionLabel={secondaryActionLabel}
       onClose={onClose}
       onSubmit={handleSubmit}
+      secondaryAction={step === STEPS.INFO ? undefined : handlePrev}
     />
   );
 };
