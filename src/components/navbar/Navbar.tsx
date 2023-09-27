@@ -14,6 +14,10 @@ import { useDesignModal } from '@/hooks/useDesignModal';
 
 import { navItems } from '@/data';
 
+interface IContainer {
+  active: string;
+}
+
 const Navbar = () => {
   const pathname = usePathname();
 
@@ -52,7 +56,7 @@ const Navbar = () => {
   );
 };
 
-const Container = styled.nav`
+const Container = styled.nav<IContainer>`
   display: ${({ active }) => (active === 'true' ? 'none' : 'grid')};
   background-color: var(--clr-white);
   padding: 1.5rem;
