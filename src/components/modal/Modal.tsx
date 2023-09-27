@@ -8,7 +8,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Button from '../buttons/Button';
 
 interface IContainer {
-  active: boolean;
+  active: boolean | undefined;
 }
 
 interface ModalProps {
