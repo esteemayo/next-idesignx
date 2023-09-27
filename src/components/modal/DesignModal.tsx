@@ -38,6 +38,14 @@ const DesignModal = () => {
     return 'Next';
   }, [step]);
 
+  const secondaryActionLabel = useMemo(() => {
+    if (step === STEPS.INFO) {
+      return undefined;
+    }
+
+    return 'Back';
+  }, [step]);
+
   return (
     <Modal
       isOpen={isOpen}
