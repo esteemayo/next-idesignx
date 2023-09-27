@@ -6,6 +6,7 @@ import { Label } from '../form/Label';
 import { TextAreaStyled } from '../form/TextAreaStyled';
 import { FormGroup } from '../form/FormGroup';
 import { StyledTextArea } from '../form/StyledTextArea';
+import { StyledLabel } from '../form/StyledLabel';
 
 interface TextAreaProps {
   name: string;
@@ -42,7 +43,7 @@ const TextArea: React.FC<TextAreaProps> = ({
 
   return (
     <FormGroup>
-      <Label htmlFor={name}>{label}</Label>
+      <StyledLabel htmlFor={name}>{label}</StyledLabel>
       <TextAreaStyled
         id={name}
         name={name}
