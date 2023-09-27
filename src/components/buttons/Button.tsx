@@ -14,6 +14,7 @@ interface ButtonProps {
 
 interface IBtn {
   nav?: boolean;
+  type?: string;
   small?: boolean;
   outline?: boolean;
 }
