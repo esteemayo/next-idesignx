@@ -91,7 +91,9 @@ const Request = () => {
         <UploadInput
           id='file'
           label='Attach a sample'
-          onChange={(e) => setFile(e.target.files[0])}
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            setFile(e.target.files[0])
+          }
         />
         <Button label='Send request' />
       </Form>
