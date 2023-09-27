@@ -51,6 +51,7 @@ const DesignModal = () => {
       isOpen={isOpen}
       title='Upload your design'
       actionLabel={actionLabel}
+      secondaryActionLabel={secondaryActionLabel}
       onClose={onClose}
       onSubmit={handleSubmit}
     />
