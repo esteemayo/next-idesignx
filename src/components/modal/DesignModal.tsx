@@ -46,12 +46,19 @@ const DesignModal = () => {
     return 'Back';
   }, [step]);
 
+  let bodyContent;
+
+  if (step === STEPS.INFO) {
+    bodyContent = 'body';
+  }
+
   return (
     <Modal
       isOpen={isOpen}
       title='Upload your design'
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
+      body={bodyContent}
       onClose={onClose}
       onSubmit={handleSubmit}
       secondaryAction={step === STEPS.INFO ? undefined : handlePrev}
