@@ -50,8 +50,10 @@ const Modal: React.FC<ModalProps> = ({
   }, [disabled, onClose]);
 
   const closeModalHandler = useCallback(
-    (e) => {
-      if (e.target.classList.contains('overlay')) {
+    (e: Event): void => {
+      const target = e.target as Element;
+
+      if (target.contains('overlay')) {
         handleClose();
       }
     },
