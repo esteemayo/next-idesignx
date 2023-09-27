@@ -1,11 +1,12 @@
 'use client';
 
+import { ChangeEvent } from 'react';
 import styled from 'styled-components';
 
 interface UploadInputProps {
   id: string;
   label: string;
-  onChange(): void;
+  onChange(): ChangeEvent<HTMLInputElement>;
 }
 
 const UploadInput: React.FC<UploadInputProps> = ({ id, label, onChange }) => {
