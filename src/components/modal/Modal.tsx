@@ -11,9 +11,14 @@ interface IWrapper {
   active: boolean | undefined;
 }
 
+interface IBody {
+  type: string;
+}
+
 interface ModalProps {
   isOpen?: boolean;
   title?: string;
+  type?: string;
   actionLabel: string;
   secondaryActionLabel?: string;
   disabled?: boolean;
@@ -27,6 +32,7 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({
   isOpen,
   title,
+  type,
   actionLabel,
   secondaryActionLabel,
   disabled,
@@ -92,7 +98,7 @@ const Modal: React.FC<ModalProps> = ({
             </CloseButton>
             <Heading>{title}</Heading>
           </CloseButtonContainer>
-          <Body>{body}</Body>
+          <Body type={type}>{body}</Body>
           <Footer>
             <ButtonContainer>
               {secondaryActionLabel && secondaryAction && (
@@ -185,7 +191,7 @@ const Heading = styled.h1`
   margin-top: 1rem;
 `;
 
-const Body = styled.div`
+const Body = styled.div<IBody>`
   padding: 2.4rem 0;
 `;
 
