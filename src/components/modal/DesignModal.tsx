@@ -1,7 +1,7 @@
 'use  client';
 
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import Modal from './Modal';
 import { useDesignModal } from '@/hooks/useDesignModal';
@@ -15,6 +15,10 @@ const DesignModal = () => {
   const { isOpen, onClose } = useDesignModal();
 
   const [step, setStep] = useState(STEPS.INFO);
+
+  const handlePrev = useCallback(() => {
+    setStep((value) => value - 1);
+  }, []);
 
   return <Modal title='Upload your design' isOpen={isOpen} onClose={onClose} />;
 };
