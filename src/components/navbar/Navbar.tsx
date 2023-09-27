@@ -11,9 +11,11 @@ import Button from '../buttons/Button';
 
 import { navItems } from '@/data';
 import { useMenu } from '@/hooks/useMenu';
+import { useDesignModal } from '@/hooks/useDesignModal';
 
 const Navbar = () => {
   const pathname = usePathname();
+  const designModal = useDesignModal();
   const { isOpen, onClose, onOpen } = useMenu();
 
   const handleClose = useCallback(() => {
@@ -35,7 +37,12 @@ const Navbar = () => {
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
-        <Button nav='true' type='button' label='Upload your design' />
+        <Button
+          nav='true'
+          type='button'
+          label='Upload your design'
+          onClick={designModal.onOpen}
+        />
       </Box>
     </Container>
   );
