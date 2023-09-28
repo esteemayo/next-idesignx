@@ -14,15 +14,17 @@ interface ImageUploadProps {
 const ImageUpload: React.FC<ImageUploadProps> = ({ files, onChange }) => {
   return (
     <Container>
-      <Label htmlFor='file'>
-        <FontAwesomeIcon icon={faFileArrowUp} />
-      </Label>
-      <Input
-        id='file'
-        type='file'
-        multiple
-        onChange={(e) => onChange(e.target.files)}
-      />
+      <Wrapper>
+        <Label htmlFor='file'>
+          <FontAwesomeIcon icon={faFileArrowUp} />
+        </Label>
+        <Input
+          id='file'
+          type='file'
+          multiple
+          onChange={(e) => onChange(e.target.files)}
+        />
+      </Wrapper>
       {files && (
         <StyledImage
           src={URL.createObjectURL(files[0])}
