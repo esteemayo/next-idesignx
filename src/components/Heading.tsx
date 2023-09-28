@@ -9,7 +9,7 @@ interface HeadingProps {
 }
 
 interface IContainer {
-  center: boolean;
+  center: boolean | undefined | null;
 }
 
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
