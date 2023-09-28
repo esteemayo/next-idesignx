@@ -154,6 +154,7 @@ const DesignModal = () => {
           value={data.name}
           placeholder='Your name'
           onChange={handleChange}
+          error={errors.name}
         />
       </FormGroup>
       <FormGroup>
