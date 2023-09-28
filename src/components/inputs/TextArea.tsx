@@ -45,7 +45,11 @@ const TextArea: React.FC<TextAreaProps> = ({
 
   return (
     <FormGroup>
-      {label && <StyledLabel htmlFor={name}>{label}</StyledLabel>}
+      {label && (
+        <StyledLabel htmlFor={name} error={error}>
+          {label}
+        </StyledLabel>
+      )}
       <TextAreaStyled
         id={name}
         name={name}
