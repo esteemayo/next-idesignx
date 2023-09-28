@@ -27,8 +27,9 @@ const Container = styled.div<IContainer>`
 `;
 
 const HeadingPrimary = styled.h1`
+  font-weight: 400;
   font-size: 2.4rem;
-  line-height: 3.2rem;
+  line-height: 1.2;
 `;
 
 const HeadingSecondary = styled.h2`
