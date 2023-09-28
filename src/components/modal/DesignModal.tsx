@@ -158,7 +158,7 @@ const DesignModal = () => {
           title='Upload your design images'
           subtitle='Show us what your designs looks like!'
         />
-        <ImageUpload />
+        <ImageUpload files={files} onChange={(value) => setFiles(value)} />
       </Container>
     );
   }
