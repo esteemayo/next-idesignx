@@ -5,6 +5,7 @@ import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
 import { FormGroup } from '../form/FormGroup';
 import Input from '../inputs/Input';
+import ImageUpload from '../inputs/ImageUpload';
 import TextArea from '../inputs/TextArea';
 
 import Modal from './Modal';
@@ -157,6 +158,7 @@ const DesignModal = () => {
           title='Upload your design images'
           subtitle='Show us what your designs looks like!'
         />
+        <ImageUpload />
       </Container>
     );
   }
