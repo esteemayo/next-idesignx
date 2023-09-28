@@ -107,22 +107,22 @@ const DesignModal = () => {
           onChange={handleChange}
         />
       </FormGroup>
-      <FormGroup>
-        <Input
-          type='tel'
-          name='phone'
-          label='Phone'
-          value={data.phone}
-          placeholder='Phone'
-          onChange={handleChange}
-        />
-      </FormGroup>
     </Container>
   );
 
   if (step === STEPS.DESC) {
     bodyContent = (
       <Container>
+        <FormGroup>
+          <Input
+            type='tel'
+            name='phone'
+            label='Phone'
+            value={data.phone}
+            placeholder='Phone'
+            onChange={handleChange}
+          />
+        </FormGroup>
         <FormGroup>
           <Input
             name='subject'
