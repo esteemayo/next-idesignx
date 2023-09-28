@@ -4,14 +4,24 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { ChangeEvent } from 'react';
 
-const ImageUpload = () => {
+interface ImageUploadProps {
+  onChange(e: ChangeEvent<HTMLInputElement>): void;
+}
+
+const ImageUpload: React.FC<ImageUploadProps> = ({ onChange }) => {
   return (
     <Container>
       <Label htmlFor='file'>
         <FontAwesomeIcon icon={faFileArrowUp} />
       </Label>
-      <Input id='file' type='file' multiple />
+      <Input
+        id='file'
+        type='file'
+        multiple
+        onChange={(e) => onChange(e.target.files)}
+      />
       <StyledImage src='' width={440} height={200} alt='' />
     </Container>
   );
