@@ -147,35 +147,29 @@ const DesignModal = () => {
         title='Share some basics info about you'
         subtitle='Tell us about you'
       />
-      <FormGroup>
-        <Input
-          name='name'
-          label='Your name'
-          value={data.name}
-          placeholder='Your name'
-          onChange={handleChange}
-          error={errors.name}
-        />
-      </FormGroup>
-      <FormGroup>
-        <Input
-          name='email'
-          type='email'
-          label='Your email'
-          value={data.email}
-          placeholder='Your email'
-          onChange={handleChange}
-        />
-      </FormGroup>
-      <FormGroup>
-        <Input
-          name='address'
-          label='Your address'
-          value={data.address}
-          placeholder='Your address'
-          onChange={handleChange}
-        />
-      </FormGroup>
+      <Input
+        name='name'
+        label='Your name'
+        value={data.name}
+        placeholder='Your name'
+        onChange={handleChange}
+        error={errors.name}
+      />
+      <Input
+        name='email'
+        type='email'
+        label='Your email'
+        value={data.email}
+        placeholder='Your email'
+        onChange={handleChange}
+      />
+      <Input
+        name='address'
+        label='Your address'
+        value={data.address}
+        placeholder='Your address'
+        onChange={handleChange}
+      />
     </Container>
   );
 
