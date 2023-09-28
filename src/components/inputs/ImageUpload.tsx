@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { ChangeEvent } from 'react';
 
@@ -37,6 +37,12 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ files, onChange }) => {
   );
 };
 
+const Spin = keyframes`
+  to {
+    border: 2px dashed #ccc;
+  }
+`;
+
 const Container = styled.div`
   width: 100%;
   height: 20rem;
@@ -46,6 +52,7 @@ const Container = styled.div`
   border-radius: 2px;
   cursor: pointer;
   position: relative;
+  animation: ${Spin} 1s linear infinite;
 
   svg {
     position: absolute;
