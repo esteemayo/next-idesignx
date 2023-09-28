@@ -10,6 +10,7 @@ export const SelectStyled = styled.select`
   color: var(--clr-gray-dark-2);
   border: 2px solid #aaa;
   border-radius: 2px;
+  outline-color: #979797;
 `;
 
 export const Option = styled.option`
