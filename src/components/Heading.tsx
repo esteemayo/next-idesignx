@@ -5,11 +5,11 @@ import styled from 'styled-components';
 interface HeadingProps {
   title: string;
   subtitle?: string;
-  center?: boolean;
+  center?: string;
 }
 
 interface IContainer {
-  center: boolean | undefined | null;
+  center: string | undefined | null;
 }
 
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
@@ -22,7 +22,7 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
 };
 
 const Container = styled.div<IContainer>`
-  text-align: ${({ center }) => (center ? 'center' : 'left')};
+  text-align: ${({ center }) => (center === 'true' ? 'center' : 'left')};
   margin-bottom: 2rem;
 `;
 
