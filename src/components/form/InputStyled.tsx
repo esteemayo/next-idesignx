@@ -14,7 +14,7 @@ export const InputStyled = styled.input<IInput>`
   color: var(--clr-gray-dark-2);
   border: 2px solid ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
-  outline-color: #979797;
+  outline-color: ${({ error }) => setOutlineColor(error)};
   caret-color: var(--clr-purple-light-3);
   transition: all 0.3s;
 
@@ -26,6 +26,10 @@ export const InputStyled = styled.input<IInput>`
 
 const setBorderColor = (error: string | undefined) => {
   return error === 'true' ? '#f00' : '#aaa';
+};
+
+const setOutlineColor = (error: string | undefined) => {
+  return error === 'true' ? '#f00' : '#979797';
 };
 
 const setPlaceholderColor = (error: string | undefined) => {
