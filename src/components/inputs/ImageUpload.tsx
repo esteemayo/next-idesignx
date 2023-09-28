@@ -40,6 +40,12 @@ const Label = styled.label`
   cursor: pointer;
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+`;
 
 export default ImageUpload;
