@@ -34,7 +34,7 @@ const HeadingPrimary = styled.h1`
 
 const HeadingSecondary = styled.h2`
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   color: rgba(115, 115, 115, 1);
   line-height: 1;
   margin-top: 0.8rem;
