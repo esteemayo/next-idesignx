@@ -8,6 +8,7 @@ const ImageUpload = () => {
   return (
     <Container>
       <FontAwesomeIcon icon={faFileArrowUp} />
+      <Input type='file' multiple />
     </Container>
   );
 };
