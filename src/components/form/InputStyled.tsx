@@ -25,19 +25,17 @@ export const InputStyled = styled.input<IInput>`
 `;
 
 const setBorderColor = (error: string | undefined) => {
-  return error === 'true' ? 'rgba(244, 63, 94, 1)' : '#aaa';
+  return error === 'true' ? 'var(--clr-red)' : '#aaa';
 };
 
 const setOutlineColor = (error: string | undefined) => {
-  return error === 'true' ? 'rgba(244, 63, 94, 1)' : '#979797';
+  return error === 'true' ? 'var(--clr-red)' : '#979797';
 };
 
 const setCaretColor = (error: string | undefined) => {
-  return error === 'true'
-    ? 'rgba(244, 63, 94, 1)'
-    : 'var(--clr-purple-light-3)';
+  return error === 'true' ? 'var(--clr-red)' : 'var(--clr-purple-light-3)';
 };
 
 const setPlaceholderColor = (error: string | undefined) => {
-  return error === 'true' ? 'rgba(244, 63, 94, 1)' : '#bbb';
+  return error === 'true' ? 'var(--clr-red)' : '#bbb';
 };
