@@ -75,7 +75,7 @@ const Modal: React.FC<ModalProps> = ({
   }, [disabled, secondaryAction]);
 
   const activeModal = useMemo(() => {
-    return showModal.toString();
+    return showModal?.toString();
   }, [showModal]);
 
   useEffect(() => {
