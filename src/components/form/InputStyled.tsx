@@ -6,7 +6,7 @@ export const InputStyled = styled.input`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  background-color: var(--clr-white);
+  background-color: transparent;
   color: var(--clr-gray-dark-2);
   border: 2px solid #aaa;
   border-radius: 2px;
