@@ -122,7 +122,7 @@ const DesignModal = () => {
     setStep(STEPS.INFO);
     onClose();
   }, [data, files, handleClear, handleNext, onClose, step, validateInputs]);
-  console.log(errors);
+
   const actionLabel = useMemo(() => {
     if (step === STEPS.IMAGES) {
       return 'Create';
