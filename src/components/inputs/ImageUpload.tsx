@@ -36,7 +36,9 @@ const Container = styled.div`
   }
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+  cursor: pointer;
+`;
 
 const Input = styled.input``;
 
