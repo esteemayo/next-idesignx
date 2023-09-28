@@ -19,6 +19,7 @@ const Container = styled.div`
   color: var(--clr-gray-dark-2);
   border: 2px dashed var(--clr-gray-dark-2);
   border-radius: 2px;
+  cursor: pointer;
   position: relative;
 
   svg {
