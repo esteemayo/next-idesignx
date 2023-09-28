@@ -1,6 +1,5 @@
 'use  client';
 
-import styled from 'styled-components';
 import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
 import Input from '../inputs/Input';
