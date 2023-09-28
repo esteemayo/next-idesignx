@@ -162,6 +162,7 @@ const DesignModal = () => {
         value={data.email}
         placeholder='Your email'
         onChange={handleChange}
+        error={errors.email}
       />
       <Input
         name='address'
@@ -169,6 +170,7 @@ const DesignModal = () => {
         value={data.address}
         placeholder='Your address'
         onChange={handleChange}
+        error={errors.address}
       />
     </Container>
   );
