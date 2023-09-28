@@ -34,6 +34,8 @@ const Container = styled.div`
   }
 `;
 
+const Label = styled.label``;
+
 const Input = styled.input``;
 
 export default ImageUpload;
