@@ -8,16 +8,20 @@ interface HeadingProps {
   center?: boolean;
 }
 
+interface IContainer {
+  center: string;
+}
+
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
   return (
-    <Container>
+    <Container center={center}>
       <HeadingPrimary>{title}</HeadingPrimary>
       <HeadingSecondary>{subtitle}</HeadingSecondary>
     </Container>
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div<IContainer>``;
 
 const HeadingPrimary = styled.h1``;
 
