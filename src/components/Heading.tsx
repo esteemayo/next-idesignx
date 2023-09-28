@@ -30,6 +30,9 @@ const HeadingPrimary = styled.h1`
   line-height: 3.2rem;
 `;
 
-const HeadingSecondary = styled.h2``;
+const HeadingSecondary = styled.h2`
+  font-size: 1.4rem;
+  line-height: 2rem;
+`;
 
 export default Heading;
