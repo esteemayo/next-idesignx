@@ -13,7 +13,7 @@ export const SelectStyled = styled.select`
   outline-color: #979797;
 `;
 
-export const Option = styled.option`
+export const StyledOption = styled.option`
   font-size: 1.4rem;
   color: var(--clr-gray-dark-2);
   letter-spacing: 0.5rem;
