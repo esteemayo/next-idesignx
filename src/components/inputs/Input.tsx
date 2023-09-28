@@ -48,7 +48,11 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <FormGroup>
-      {label && <StyledLabel htmlFor={name}>{label}</StyledLabel>}
+      {label && (
+        <StyledLabel htmlFor={name} error={error}>
+          {label}
+        </StyledLabel>
+      )}
       <InputStyled
         id={name}
         name={name}
