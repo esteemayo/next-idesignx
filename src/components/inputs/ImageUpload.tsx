@@ -37,6 +37,9 @@ const Container = styled.div`
 `;
 
 const Label = styled.label`
+  display: block;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 
