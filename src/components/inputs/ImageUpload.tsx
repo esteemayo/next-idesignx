@@ -1,9 +1,15 @@
 'use client';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
+import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const ImageUpload = () => {
-  return <Container>ImageUpload</Container>;
+  return (
+    <Container>
+      <FontAwesomeIcon icon={faFileArrowUp} />
+    </Container>
+  );
 };
 
 const Container = styled.div`
