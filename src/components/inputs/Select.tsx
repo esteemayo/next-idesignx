@@ -18,6 +18,7 @@ interface SelectProps {
   options: Array<OptionTypes>;
   style?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
+  error?: string;
 }
 
 const Select: React.FC<SelectProps> = ({
@@ -27,6 +28,7 @@ const Select: React.FC<SelectProps> = ({
   options,
   style,
   onChange,
+  error,
 }) => {
   if (style === 'true') {
     return (
