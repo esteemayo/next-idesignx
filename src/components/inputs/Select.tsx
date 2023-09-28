@@ -4,6 +4,7 @@ import { ChangeEvent } from 'react';
 
 import { FormGroup } from '../form/FormGroup';
 import { Option, StyledSelect } from '../form/StyledSelect';
+import { SelectStyled } from '../form/SelectStyled';
 
 type OptionTypes = {
   id: number;
@@ -15,6 +16,7 @@ interface SelectProps {
   value?: string;
   label: string;
   options: Array<OptionTypes>;
+  style: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
@@ -23,17 +25,36 @@ const Select: React.FC<SelectProps> = ({
   value,
   label,
   options,
+  style,
   onChange,
 }) => {
+  if (style === 'true') {
+    return (
+      <FormGroup>
+        <StyledSelect
+          id={name}
+          name={name}
+          value={value}
+          onChange={onChange}
+          required
+        >
+          <Option value=''>{label}</Option>
+          {options.map((option) => {
+            const { id, text } = option;
+            return (
+              <Option key={id} value={text}>
+                {text}
+              </Option>
+            );
+          })}
+        </StyledSelect>
+      </FormGroup>
+    );
+  }
+
   return (
     <FormGroup>
-      <StyledSelect
-        id={name}
-        name={name}
-        value={value}
-        onChange={onChange}
-        required
-      >
+      <SelectStyled id={name} name={name} value={value} onChange={onChange}>
         <Option value=''>{label}</Option>
         {options.map((option) => {
           const { id, text } = option;
@@ -43,7 +64,7 @@ const Select: React.FC<SelectProps> = ({
             </Option>
           );
         })}
-      </StyledSelect>
+      </SelectStyled>
     </FormGroup>
   );
 };
