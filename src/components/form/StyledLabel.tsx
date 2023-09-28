@@ -13,5 +13,5 @@ export const StyledLabel = styled.label<ILabel>`
 `;
 
 const setColor = (error: string | undefined) => {
-  return error === 'true' ? 'rgba(244, 63, 94, 1)' : 'var(--clr-gray-dark-2)';
+  return error === 'true' ? 'var(--clr-red)' : 'var(--clr-gray-dark-2)';
 };
