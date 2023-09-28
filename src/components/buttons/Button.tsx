@@ -4,19 +4,19 @@ import styled, { css } from 'styled-components';
 
 interface ButtonProps {
   label: string;
-  nav?: boolean;
+  nav?: string;
   type?: string;
   onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
-  outline?: boolean;
-  small?: boolean;
+  outline?: string;
+  small?: string;
 }
 
 interface IBtn {
-  nav?: boolean;
+  nav?: string;
   type?: string;
-  small?: boolean;
-  outline?: boolean;
+  small?: string;
+  outline?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -43,17 +43,18 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 const StyledButton = styled.button<IBtn>`
-  margin-top: ${({ nav }) => (!nav ? '2rem' : undefined)};
+  margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   display: inline-block;
   border: ${({ outline }) =>
-    outline ? '1px solid var(--clr-purple-light-1)' : 'none'};
+    outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
   text-transform: capitalize;
-  padding: ${({ small }) => (small ? '1rem' : '1rem 3rem')};
+  padding: ${({ small }) => (small === 'true' ? '1rem' : '1rem 3rem')};
   font-weight: 400;
   font-size: 1.5rem;
-  background-color: ${({ outline }) => (outline ? 'transparent' : undefined)};
+  background-color: ${({ outline }) =>
+    outline === 'true' ? 'transparent' : undefined};
   background-image: ${({ outline }) =>
-    !outline
+    outline !== 'true'
       ? css`
   linear-gradient(
     to right bottom,
@@ -65,7 +66,7 @@ const StyledButton = styled.button<IBtn>`
   `
       : undefined};
   color: ${({ outline }) =>
-    outline ? 'var(--clr-purple-light-1)' : 'var(--clr-white)'};
+    outline === 'true' ? 'var(--clr-purple-light-1)' : 'var(--clr-white)'};
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
