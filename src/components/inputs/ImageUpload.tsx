@@ -71,6 +71,10 @@ const Input = styled.input`
   display: none;
 `;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
 
 export default ImageUpload;
