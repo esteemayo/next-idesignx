@@ -149,6 +149,17 @@ const DesignModal = () => {
     );
   }
 
+  if (step === STEPS.IMAGES) {
+    bodyContent = (
+      <Container>
+        <Heading
+          title='Upload your design images'
+          subtitle='Show us what your designs looks like!'
+        />
+      </Container>
+    );
+  }
+
   return (
     <Modal
       isOpen={isOpen}
