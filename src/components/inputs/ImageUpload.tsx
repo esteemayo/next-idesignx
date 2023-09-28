@@ -7,8 +7,10 @@ import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 const ImageUpload = () => {
   return (
     <Container>
-      <FontAwesomeIcon icon={faFileArrowUp} />
-      <Input type='file' multiple />
+      <Label htmlFor='file'>
+        <FontAwesomeIcon icon={faFileArrowUp} />
+      </Label>
+      <Input id='file' type='file' multiple />
     </Container>
   );
 };
