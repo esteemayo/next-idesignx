@@ -140,7 +140,7 @@ const DesignModal = () => {
   let bodyContent;
 
   bodyContent = (
-    <Container>
+    <>
       <Heading
         title='Share some basics info about you'
         subtitle='Tell us about you'
@@ -170,7 +170,7 @@ const DesignModal = () => {
         onChange={handleChange}
         error={errors.address}
       />
-    </Container>
+    </>
   );
 
   if (step === STEPS.DESC) {
