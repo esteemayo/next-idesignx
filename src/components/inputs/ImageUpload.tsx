@@ -12,6 +12,7 @@ const ImageUpload = () => {
         <FontAwesomeIcon icon={faFileArrowUp} />
       </Label>
       <Input id='file' type='file' multiple />
+      <StyledImage src='' width={440} height={200} alt='' />
     </Container>
   );
 };
