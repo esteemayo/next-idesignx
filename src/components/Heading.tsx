@@ -9,7 +9,7 @@ interface HeadingProps {
 }
 
 interface IContainer {
-  center: string;
+  center: boolean;
 }
 
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
@@ -21,7 +21,9 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
   );
 };
 
-const Container = styled.div<IContainer>``;
+const Container = styled.div<IContainer>`
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
+`;
 
 const HeadingPrimary = styled.h1``;
 
