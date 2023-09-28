@@ -38,6 +38,7 @@ const DesignModal = () => {
   const [step, setStep] = useState(STEPS.INFO);
   const [files, setFiles] = useState(null);
   const [data, setData] = useState(initialState);
+  const [errors, setErrors] = useState({});
 
   const handleChange = useCallback(
     ({ target: input }: ChangeEvent<HTMLInputElement>) => {
