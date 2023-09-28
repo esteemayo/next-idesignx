@@ -8,12 +8,21 @@ import styled, { keyframes } from 'styled-components';
 
 interface ImageUploadProps {
   files?: Array<object> | null | undefined;
+  error?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
-const ImageUpload: React.FC<ImageUploadProps> = ({ files, onChange }) => {
+interface IContainer {
+  error?: string;
+}
+
+const ImageUpload: React.FC<ImageUploadProps> = ({
+  files,
+  error,
+  onChange,
+}) => {
   return (
-    <Container>
+    <Container error={error}>
       <Wrapper>
         <Label htmlFor='file'>
           <FontAwesomeIcon icon={faFileArrowUp} />
@@ -43,12 +52,12 @@ const Spin = keyframes`
   }
 `;
 
-const Container = styled.div`
+const Container = styled.div<IContainer>`
   width: 100%;
   height: 20rem;
   background-color: #f9f9f9;
   color: var(--clr-gray-dark-2);
-  border: 2px dashed var(--clr-gray-dark-2);
+  border: 2px dashed ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
   cursor: pointer;
   position: relative;
@@ -96,5 +105,9 @@ const StyledImage = styled(Image)`
   display: block;
   object-fit: cover;
 `;
+
+const setBorderColor = (error: string | undefined) => {
+  return error === 'true' ? 'rgba(244, 63, 94, 1)' : 'var(--clr-gray-dark-2)';
+};
 
 export default ImageUpload;
