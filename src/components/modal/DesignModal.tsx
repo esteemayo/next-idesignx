@@ -240,6 +240,4 @@ const DesignModal = () => {
   );
 };
 
-const Container = styled.div``;
-
 export default DesignModal;
