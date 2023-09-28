@@ -17,6 +17,7 @@ const Container = styled.div`
   height: 20rem;
   background-color: #f9f9f9;
   color: var(--clr-gray-dark-2);
+  border: 2px dashed var(--clr-gray-dark-2);
   border-radius: 2px;
   position: relative;
 
