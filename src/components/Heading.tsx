@@ -12,6 +12,7 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
   return (
     <Container>
       <HeadingPrimary>{title}</HeadingPrimary>
+      <HeadingSecondary>{subtitle}</HeadingSecondary>
     </Container>
   );
 };
