@@ -37,7 +37,7 @@ const Navbar = () => {
       <NavItems links={navItems} path={pathname} />
       <Box>
         <Button
-          nav
+          nav='true'
           type='button'
           label='Upload your design'
           onClick={designModal.onOpen}
