@@ -9,6 +9,7 @@ const ImageUpload = () => {
 const Container = styled.div`
   width: 100%;
   height: 20rem;
+  border-radius: 2px;
   background-color: tomato;
 `;
 
