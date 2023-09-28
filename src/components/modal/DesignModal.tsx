@@ -66,7 +66,8 @@ const DesignModal = () => {
     }
 
     console.log({ ...data, files });
-  }, [data, files, handleNext, step]);
+    handleClear();
+  }, [data, files, handleClear, handleNext, step]);
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.IMAGES) {
