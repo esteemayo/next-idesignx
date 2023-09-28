@@ -16,7 +16,7 @@ interface SelectProps {
   value?: string;
   label: string;
   options: Array<OptionTypes>;
-  style: string;
+  style?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
