@@ -34,6 +34,7 @@ const HeadingSecondary = styled.h2`
   font-weight: 300;
   font-size: 1.4rem;
   line-height: 2rem;
+  color: rgba(115, 115, 115, 1);
 `;
 
 export default Heading;
