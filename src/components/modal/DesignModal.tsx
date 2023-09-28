@@ -221,6 +221,7 @@ const DesignModal = () => {
           label='Select a category'
           options={selectInputs}
           onChange={handleChange}
+          error={errors.category}
         />
         <ImageUpload files={files} onChange={(value) => setFiles(value)} />
       </>
