@@ -55,6 +55,11 @@ const DesignModal = () => {
     setStep((value) => value + 1);
   }, []);
 
+  const handleClear = useCallback(() => {
+    setData(initialState);
+    setFiles(null);
+  }, []);
+
   const handleSubmit = useCallback(() => {
     if (step !== STEPS.IMAGES) {
       return handleNext();
