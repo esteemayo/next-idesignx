@@ -112,6 +112,7 @@ const DesignModal = () => {
     if (Object.keys(errors).length > 0) {
       return setErrors(errors);
     }
+
     setErrors({});
 
     console.log({ ...data, files });
