@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled, { keyframes } from 'styled-components';
-import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { ChangeEvent } from 'react';
+import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
+import styled, { keyframes } from 'styled-components';
 
 interface ImageUploadProps {
   files?: Array<object> | null | undefined;
