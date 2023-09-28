@@ -20,4 +20,6 @@ const Container = styled.div``;
 
 const HeadingPrimary = styled.h1``;
 
+const HeadingSecondary = styled.h2``;
+
 export default Heading;
