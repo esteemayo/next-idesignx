@@ -25,7 +25,10 @@ const Container = styled.div<IContainer>`
   text-align: ${({ center }) => (center ? 'center' : 'left')};
 `;
 
-const HeadingPrimary = styled.h1``;
+const HeadingPrimary = styled.h1`
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+`;
 
 const HeadingSecondary = styled.h2``;
 
