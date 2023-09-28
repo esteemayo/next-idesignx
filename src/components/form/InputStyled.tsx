@@ -20,10 +20,14 @@ export const InputStyled = styled.input<IInput>`
 
   &::placeholder {
     font-size: 1.4rem;
-    color: #bbb;
+    color: ${({ error }) => setPlaceholderColor(error)};
   }
 `;
 
 const setBorderColor = (error: string | undefined) => {
   return error === 'true' ? '#f00' : '#aaa';
+};
+
+const setPlaceholderColor = (error: string | undefined) => {
+  return error === 'true' ? '#f00' : '#bbb';
 };
