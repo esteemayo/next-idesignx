@@ -3,8 +3,8 @@
 import { ChangeEvent } from 'react';
 
 import { FormGroup } from '../form/FormGroup';
+import { SelectStyled, StyledOption } from '../form/SelectStyled';
 import { Option, StyledSelect } from '../form/StyledSelect';
-import { SelectStyled } from '../form/SelectStyled';
 
 type OptionTypes = {
   id: number;
@@ -55,13 +55,13 @@ const Select: React.FC<SelectProps> = ({
   return (
     <FormGroup>
       <SelectStyled id={name} name={name} value={value} onChange={onChange}>
-        <Option value=''>{label}</Option>
+        <StyledOption value=''>{label}</StyledOption>
         {options.map((option) => {
           const { id, text } = option;
           return (
-            <Option key={id} value={text}>
+            <StyledOption key={id} value={text}>
               {text}
-            </Option>
+            </StyledOption>
           );
         })}
       </SelectStyled>
