@@ -113,6 +113,10 @@ const DesignModal = () => {
   if (step === STEPS.DESC) {
     bodyContent = (
       <Container>
+        <Heading
+          title='Describe your design ideas'
+          subtitle='What inspired the design(s)?'
+        />
         <FormGroup>
           <Input
             type='tel'
