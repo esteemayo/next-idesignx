@@ -19,6 +19,13 @@ const Container = styled.div`
   color: var(--clr-gray-dark-2);
   border-radius: 2px;
   position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 export default ImageUpload;
