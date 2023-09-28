@@ -16,6 +16,7 @@ interface InputProps {
   placeholder: string;
   style?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
+  error?: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -26,6 +27,7 @@ const Input: React.FC<InputProps> = ({
   placeholder,
   style,
   onChange,
+  error,
 }) => {
   if (style === 'true') {
     return (
@@ -54,7 +56,7 @@ const Input: React.FC<InputProps> = ({
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        required
+        error={error}
       />
     </FormGroup>
   );
