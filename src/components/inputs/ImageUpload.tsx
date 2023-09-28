@@ -7,10 +7,11 @@ import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { ChangeEvent } from 'react';
 
 interface ImageUploadProps {
+  files?: Array<object> | null | undefined;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
 
-const ImageUpload: React.FC<ImageUploadProps> = ({ onChange }) => {
+const ImageUpload: React.FC<ImageUploadProps> = ({ files, onChange }) => {
   return (
     <Container>
       <Label htmlFor='file'>
@@ -22,7 +23,14 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange }) => {
         multiple
         onChange={(e) => onChange(e.target.files)}
       />
-      <StyledImage src='' width={440} height={200} alt='' />
+      {files && (
+        <StyledImage
+          src={URL.createObjectURL(files[0])}
+          width={440}
+          height={200}
+          alt=''
+        />
+      )}
     </Container>
   );
 };
