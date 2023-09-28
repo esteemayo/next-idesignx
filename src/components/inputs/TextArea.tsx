@@ -15,6 +15,7 @@ interface TextAreaProps {
   placeholder: string;
   style?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
+  error?: string;
 }
 
 const TextArea: React.FC<TextAreaProps> = ({
@@ -24,6 +25,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   placeholder,
   style,
   onChange,
+  error,
 }) => {
   if (style === 'true') {
     return (
@@ -43,14 +45,14 @@ const TextArea: React.FC<TextAreaProps> = ({
 
   return (
     <FormGroup>
-      <StyledLabel htmlFor={name}>{label}</StyledLabel>
+      {label && <StyledLabel htmlFor={name}>{label}</StyledLabel>}
       <TextAreaStyled
         id={name}
         name={name}
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        required
+        error={error}
       />
     </FormGroup>
   );
