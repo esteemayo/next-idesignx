@@ -111,12 +111,18 @@ const DesignModal = () => {
       return handleNext();
     }
 
+    const errors = validateInputs();
+    if (Object.keys(errors).length > 0) {
+      return setErrors(errors);
+    }
+    setErrors({});
+
     console.log({ ...data, files });
     handleClear();
     setStep(STEPS.INFO);
     onClose();
-  }, [data, files, handleClear, handleNext, onClose, step]);
-
+  }, [data, files, handleClear, handleNext, onClose, step, validateInputs]);
+  console.log(errors);
   const actionLabel = useMemo(() => {
     if (step === STEPS.IMAGES) {
       return 'Create';
