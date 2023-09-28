@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
@@ -50,5 +51,7 @@ const Input = styled.input`
   transform: translate(-50%, -50%);
   display: none;
 `;
+
+const StyledImage = styled(Image)``;
 
 export default ImageUpload;
