@@ -15,6 +15,6 @@ export const SelectStyled = styled.select`
 
 export const Option = styled.option`
   font-size: 1.4rem;
-  color: #bbb;
+  color: var(--clr-gray-dark-2);
   letter-spacing: 0.5rem;
 `;
