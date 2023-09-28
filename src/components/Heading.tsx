@@ -23,7 +23,7 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
 
 const Container = styled.div<IContainer>`
   text-align: ${({ center }) => (center ? 'center' : 'left')};
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
 `;
 
 const HeadingPrimary = styled.h1`
