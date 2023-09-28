@@ -14,4 +14,6 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
 
 const Container = styled.div``;
 
+const HeadingSecondary = styled.h1``;
+
 export default Heading;
