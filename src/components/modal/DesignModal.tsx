@@ -182,34 +182,30 @@ const DesignModal = () => {
           title='Describe your design ideas'
           subtitle='What inspired the design(s)?'
         />
-        <FormGroup>
-          <Input
-            type='tel'
-            name='phone'
-            label='Phone'
-            value={data.phone}
-            placeholder='Phone'
-            onChange={handleChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <Input
-            name='subject'
-            label='Subject'
-            value={data.subject}
-            placeholder='Subject'
-            onChange={handleChange}
-          />
-        </FormGroup>
-        <FormGroup>
-          <TextArea
-            name='desc'
-            value={data.desc}
-            label='Description'
-            placeholder='Description'
-            onChange={handleChange}
-          />
-        </FormGroup>
+        <Input
+          type='tel'
+          name='phone'
+          label='Phone'
+          value={data.phone}
+          placeholder='Phone'
+          onChange={handleChange}
+          error={errors.phone}
+        />
+        <Input
+          name='subject'
+          label='Subject'
+          value={data.subject}
+          placeholder='Subject'
+          onChange={handleChange}
+          error={errors.subject}
+        />
+        <TextArea
+          name='desc'
+          value={data.desc}
+          label='Description'
+          placeholder='Description'
+          onChange={handleChange}
+        />
       </Container>
     );
   }
