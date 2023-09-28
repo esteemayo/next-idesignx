@@ -31,6 +31,7 @@ const DesignModal = () => {
   const { isOpen, onClose } = useDesignModal();
 
   const [step, setStep] = useState(STEPS.INFO);
+  const [files, setFiles] = useState(null);
   const [data, setData] = useState(initialState);
 
   const handleChange = useCallback(
