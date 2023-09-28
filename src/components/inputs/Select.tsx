@@ -56,7 +56,13 @@ const Select: React.FC<SelectProps> = ({
 
   return (
     <FormGroup>
-      <SelectStyled id={name} name={name} value={value} onChange={onChange}>
+      <SelectStyled
+        id={name}
+        name={name}
+        value={value}
+        onChange={onChange}
+        error={error}
+      >
         <StyledOption value=''>{label}</StyledOption>
         {options.map((option) => {
           const { id, text } = option;
