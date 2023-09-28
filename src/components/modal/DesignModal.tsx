@@ -3,14 +3,17 @@
 import styled from 'styled-components';
 import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
-import { FormGroup } from '../form/FormGroup';
 import Input from '../inputs/Input';
 import ImageUpload from '../inputs/ImageUpload';
+import Select from '../inputs/Select';
 import TextArea from '../inputs/TextArea';
 
 import Modal from './Modal';
 import Heading from '../Heading';
 
+import { FormGroup } from '../form/FormGroup';
+
+import { selectInputs } from '@/formData';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
 enum STEPS {
@@ -26,6 +29,7 @@ const initialState = {
   phone: '',
   subject: '',
   desc: '',
+  category: '',
 };
 
 const DesignModal = () => {
@@ -157,6 +161,13 @@ const DesignModal = () => {
         <Heading
           title='Upload your design images'
           subtitle='Show us what your designs looks like!'
+        />
+        <Select
+          name='category'
+          value={data.category}
+          label='Select a category'
+          options={selectInputs}
+          onChange={handleChange}
         />
         <ImageUpload files={files} onChange={(value) => setFiles(value)} />
       </Container>
