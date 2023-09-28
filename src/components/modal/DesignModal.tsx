@@ -16,6 +16,16 @@ import { FormGroup } from '../form/FormGroup';
 import { selectInputs } from '@/formData';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
+interface IErrors {
+  name?: string;
+  email?: string;
+  address?: string;
+  phone?: string;
+  subject?: string;
+  desc?: string;
+  category?: string;
+}
+
 enum STEPS {
   INFO = 0,
   DESC = 1,
@@ -47,6 +57,41 @@ const DesignModal = () => {
     },
     []
   );
+
+  const validateInputs = useCallback(() => {
+    let errors: IErrors = {};
+    const { name, email, address, phone, subject, desc, category } = data;
+
+    if (name.trim() === '') {
+      errors.name = 'true';
+    }
+
+    if (email.trim() === '') {
+      errors.email = 'true';
+    }
+
+    if (address.trim() === '') {
+      errors.address = 'true';
+    }
+
+    if (phone.trim() === '') {
+      errors.phone = 'true';
+    }
+
+    if (subject.trim() === '') {
+      errors.subject = 'true';
+    }
+
+    if (desc.trim() === '') {
+      errors.desc = 'true';
+    }
+
+    if (category.trim() === '') {
+      errors.category = 'true';
+    }
+
+    return errors;
+  }, [data]);
 
   const handlePrev = useCallback(() => {
     setStep((value) => value - 1);
