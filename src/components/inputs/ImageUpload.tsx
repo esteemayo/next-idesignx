@@ -28,6 +28,7 @@ const Container = styled.div`
     transform: translate(-50%, -50%);
 
     font-size: 5rem;
+    color: currentColor;
   }
 `;
 
