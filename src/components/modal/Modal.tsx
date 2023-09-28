@@ -3,12 +3,12 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 
 import Button from '../buttons/Button';
 
 interface IWrapper {
-  active: boolean | undefined;
+  active: string | undefined;
 }
 
 interface ModalProps {
@@ -36,7 +36,7 @@ const Modal: React.FC<ModalProps> = ({
   onSubmit,
   secondaryAction,
 }) => {
-  const [showModal, setShowModal] = useState(isOpen);
+  const [showModal, setShowModal] = useState<boolean | undefined>(isOpen);
 
   const handleClose = useCallback(() => {
     if (disabled) {
@@ -74,6 +74,10 @@ const Modal: React.FC<ModalProps> = ({
     secondaryAction();
   }, [disabled, secondaryAction]);
 
+  const activeModal = useMemo(() => {
+    return showModal.toString();
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -84,7 +88,7 @@ const Modal: React.FC<ModalProps> = ({
 
   return (
     <Container className='overlay' onClick={closeModalHandler}>
-      <Wrapper active={showModal}>
+      <Wrapper active={activeModal}>
         <Box>
           <CloseButtonContainer>
             <CloseButton onClick={handleClose}>
@@ -134,8 +138,8 @@ const Container = styled.aside`
 `;
 
 const Wrapper = styled.div<IWrapper>`
-  transform: translateY(${({ active }) => (active ? 0 : '100%')});
-  opacity: ${({ active }) => (active ? 1 : 0)};
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
   transition: all 300ms;
 `;
 
