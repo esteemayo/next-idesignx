@@ -11,8 +11,6 @@ import TextArea from '../inputs/TextArea';
 import Modal from './Modal';
 import Heading from '../Heading';
 
-import { FormGroup } from '../form/FormGroup';
-
 import { selectInputs } from '@/formData';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
