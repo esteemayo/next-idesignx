@@ -3,11 +3,14 @@
 import styled from 'styled-components';
 import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
-import Modal from './Modal';
-import { useDesignModal } from '@/hooks/useDesignModal';
 import { FormGroup } from '../form/FormGroup';
 import Input from '../inputs/Input';
 import TextArea from '../inputs/TextArea';
+
+import Modal from './Modal';
+import Heading from '../Heading';
+
+import { useDesignModal } from '@/hooks/useDesignModal';
 
 enum STEPS {
   INFO = 0,
@@ -72,6 +75,10 @@ const DesignModal = () => {
 
   bodyContent = (
     <Container>
+      <Heading
+        title='Share some basics info about you'
+        subtitle='Tell us about you'
+      />
       <FormGroup>
         <Input
           name='name'
