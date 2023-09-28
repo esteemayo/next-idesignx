@@ -9,11 +9,15 @@ interface HeadingProps {
 }
 
 const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
-  return <Container>Heading</Container>;
+  return (
+    <Container>
+      <HeadingPrimary>{title}</HeadingPrimary>
+    </Container>
+  );
 };
 
 const Container = styled.div``;
 
-const HeadingSecondary = styled.h1``;
+const HeadingPrimary = styled.h1``;
 
 export default Heading;
