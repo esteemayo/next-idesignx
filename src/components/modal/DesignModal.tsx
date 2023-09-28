@@ -202,6 +202,7 @@ const DesignModal = () => {
           label='Description'
           placeholder='Description'
           onChange={handleChange}
+          error={errors.desc}
         />
       </>
     );
