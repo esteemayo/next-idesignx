@@ -16,8 +16,9 @@ const Container = styled.div`
   width: 100%;
   height: 20rem;
   background-color: #f9f9f9;
-  color: var(--clr-white);
+  color: var(--clr-gray-dark-2);
   border-radius: 2px;
+  position: relative;
 `;
 
 export default ImageUpload;
