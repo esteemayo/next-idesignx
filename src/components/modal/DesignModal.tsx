@@ -210,7 +210,7 @@ const DesignModal = () => {
 
   if (step === STEPS.IMAGES) {
     bodyContent = (
-      <Container>
+      <>
         <Heading
           title='Upload your design images'
           subtitle='Show us what your designs looks like!'
@@ -223,7 +223,7 @@ const DesignModal = () => {
           onChange={handleChange}
         />
         <ImageUpload files={files} onChange={(value) => setFiles(value)} />
-      </Container>
+      </>
     );
   }
 
