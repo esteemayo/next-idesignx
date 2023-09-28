@@ -2,7 +2,13 @@
 
 import styled from 'styled-components';
 
-const Heading = () => {
+interface HeadingProps {
+  title: string;
+  subtitle?: string;
+  center?: boolean;
+}
+
+const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
   return <Container>Heading</Container>;
 };
 
