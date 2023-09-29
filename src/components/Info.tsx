@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
+import Icon from './Icon';
+
 const Info = () => {
   return (
     <Container>
@@ -17,7 +19,9 @@ const Info = () => {
         <EmailAddress>esteemdesign19@gmail.com</EmailAddress>
       </EmailWrapper>
       <SocialWrapper>
-        <StyledLink href='#'>icon</StyledLink>
+        <StyledLink href='#'>
+          <Icon icon='facebook' />
+        </StyledLink>
         <StyledLink href='#'>icon</StyledLink>
         <StyledLink href='#'>icon</StyledLink>
       </SocialWrapper>

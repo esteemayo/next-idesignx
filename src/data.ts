@@ -167,19 +167,19 @@ export const storyImages = [
 export const cardItems = [
   {
     id: 1,
-    icon: 'icon-pencil',
+    icon: 'pencil',
     title: 'Our vision',
     desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.',
   },
   {
     id: 2,
-    icon: 'icon-office',
+    icon: 'office',
     title: 'Mission',
     desc: 'Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.',
   },
   {
     id: 3,
-    icon: 'icon-book',
+    icon: 'book',
     title: 'Commitment',
     desc: 'Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.',
   },
