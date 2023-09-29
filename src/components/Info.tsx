@@ -22,7 +22,9 @@ const Info = () => {
         <StyledLink href='#'>
           <Icon icon='facebook' />
         </StyledLink>
-        <StyledLink href='#'>icon</StyledLink>
+        <StyledLink href='#'>
+        <Icon icon='twitter' />
+        </StyledLink>
         <StyledLink href='#'>icon</StyledLink>
       </SocialWrapper>
     </Container>
