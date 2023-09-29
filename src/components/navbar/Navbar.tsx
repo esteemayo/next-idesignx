@@ -49,17 +49,18 @@ const Navbar = () => {
 
 const Container = styled.nav<IContainer>`
   display: ${({ active }) => (active === 'true' ? 'none' : 'grid')};
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  gap: 5rem;
+  align-items: center;
+
   background-color: var(--clr-white);
   padding: 1.5rem;
   position: relative;
   z-index: 3000;
 
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  gap: 5rem;
-  align-items: center;
-
-  @media only screen and (max-width: 48em) {
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  @media only screen and (min-width: 48em) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
   }
 `;
 
