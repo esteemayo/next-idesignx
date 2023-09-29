@@ -20,6 +20,11 @@ const Sidebar = () => {
   const designModal = useDesignModal();
   const { isOpen, onClose } = useMenu();
 
+  const handleOpen = useCallback(() => {
+    designModal.onOpen();
+    onClose();
+  }, [designModal, onClose]);
+
   const activeMenu = useMemo(() => {
     return isOpen.toString();
   }, [isOpen]);
