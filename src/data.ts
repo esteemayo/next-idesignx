@@ -1,5 +1,23 @@
 import { faBagShopping, faPrint } from '@fortawesome/free-solid-svg-icons';
 
+export const socialIcons = [
+  {
+    id: 1,
+    url: '#',
+    icon: 'facebook',
+  },
+  {
+    id: 2,
+    url: '#',
+    icon: 'twitter',
+  },
+  {
+    id: 3,
+    url: '#',
+    icon: 'instagram',
+  },
+];
+
 export const navItems = [
   {
     id: 1,
