@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import Icon from './Icon';
+import { socialIcons } from '@/data';
 
 const Info = () => {
   return (
@@ -19,15 +20,14 @@ const Info = () => {
         <EmailAddress>esteemdesign19@gmail.com</EmailAddress>
       </EmailWrapper>
       <SocialWrapper>
-        <StyledLink href='#'>
-          <Icon icon='facebook' />
-        </StyledLink>
-        <StyledLink href='#'>
-          <Icon icon='twitter' />
-        </StyledLink>
-        <StyledLink href='#'>
-          <Icon icon='instagram' />
-        </StyledLink>
+        {socialIcons.map((item) => {
+          const { id, url, icon } = item;
+          return (
+            <StyledLink key={id} href={url}>
+              <Icon icon={icon} />
+            </StyledLink>
+          );
+        })}
       </SocialWrapper>
     </Container>
   );
