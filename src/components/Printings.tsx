@@ -44,6 +44,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 37.5em) {
     padding: 4rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    padding: 3rem;
+  }
 `;
 
 const Heading = styled.h4`
