@@ -43,6 +43,7 @@ const Heading = styled.h3`
   text-transform: capitalize;
   color: var(--clr-purple-light-1);
 `;
+
 const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 38.7vw;
