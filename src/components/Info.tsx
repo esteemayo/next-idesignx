@@ -23,9 +23,11 @@ const Info = () => {
           <Icon icon='facebook' />
         </StyledLink>
         <StyledLink href='#'>
-        <Icon icon='twitter' />
+          <Icon icon='twitter' />
         </StyledLink>
-        <StyledLink href='#'>icon</StyledLink>
+        <StyledLink href='#'>
+          <Icon icon='instagram' />
+        </StyledLink>
       </SocialWrapper>
     </Container>
   );
