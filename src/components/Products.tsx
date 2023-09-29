@@ -59,6 +59,8 @@ const Wrapper = styled.div`
 `;
 
 const Box = styled.div`
+  margin-bottom: 5rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
