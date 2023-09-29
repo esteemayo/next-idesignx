@@ -44,6 +44,10 @@ const Heading = styled.h2`
   color: var(--clr-purple-light-1);
   line-height: 1;
   margin-bottom: 4rem;
+
+  @media only screen and (max-width: 50em) {
+    margin-bottom: 2.5rem;
+  }
 `;
 
 const Span = styled.span`
