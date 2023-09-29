@@ -112,6 +112,10 @@ const Heading = styled.h2`
   text-transform: capitalize;
   color: var(--clr-purple-light-1);
   line-height: 1;
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Text = styled.p`
