@@ -55,6 +55,10 @@ const Heading = styled.h4`
   font-size: 3rem;
   text-transform: none;
   line-height: 1.1;
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2.75rem;
+  }
 `;
 
 const Bold = styled.b``;
