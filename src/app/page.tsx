@@ -43,6 +43,10 @@ const Container = styled.div`
   @media only screen and (max-width: 37.5em) {
     grid-template-rows: 60vh;
   }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-rows: 40vh;
+  }
 `;
 
 export default Home;
