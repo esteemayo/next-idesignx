@@ -26,7 +26,7 @@ const Container = styled.section`
   align-items: flex-start;
 
   @media only screen and (max-width: 50em) {
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
     grid-column: center-start / center-end;
     margin: 8rem 0;
   }
