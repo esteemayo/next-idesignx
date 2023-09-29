@@ -52,6 +52,10 @@ const Span = styled.span`
 
 const Text = styled.p`
   margin-bottom: 6rem;
+
+  @media only screen and (max-width: 50em) {
+    margin-bottom: 3rem;
+  }
 `;
 
 export default About;
