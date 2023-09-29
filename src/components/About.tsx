@@ -51,7 +51,6 @@ const Span = styled.span`
 `;
 
 const Text = styled.p`
-  font-size: 1.5rem;
   margin-bottom: 6rem;
 `;
 
