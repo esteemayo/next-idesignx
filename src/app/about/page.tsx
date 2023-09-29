@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
+import type { Metadata } from 'next';
 
 import Photo from './Photo';
 import Contact from './Contact';
@@ -17,6 +18,10 @@ const StoryDetails = dynamic(() => import('@/components/StoryDetails'), {
 const StoryCards = dynamic(() => import('@/components/StoryCards'), {
   ssr: false,
 });
+
+export const metadata: Metadata = {
+  title: 'iDesignx | Contact',
+};
 
 const About = () => {
   return (
