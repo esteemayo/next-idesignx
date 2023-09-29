@@ -9,14 +9,17 @@ import Hamburger from '../navbar/Hamburger';
 import MenuItems from './MenuItems';
 import Button from '../buttons/Button';
 
-import { navItems } from '@/data';
 import { useMenu } from '@/hooks/useMenu';
+import { useDesignModal } from '@/hooks/useDesignModal';
+
+import { navItems } from '@/data';
 
 interface IContainer {
   active: string;
 }
 
 const Sidebar = () => {
+  const designModal = useDesignModal();
   const { isOpen, onClose } = useMenu();
 
   const activeMenu = useMemo(() => {
