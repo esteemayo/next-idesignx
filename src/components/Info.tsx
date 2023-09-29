@@ -84,17 +84,10 @@ const SocialWrapper = styled.div`
   align-self: center;
   justify-self: self-end;
 
-  width: 1.3rem;
-  height: 1.3rem;
   margin-right: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
-  @media only screen and (max-width: 25em) {
-    width: 1rem;
-    height: 1rem;
-  }
 `;
 
 const StyledLink = styled(Link)`
