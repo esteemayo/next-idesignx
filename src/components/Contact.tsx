@@ -80,6 +80,7 @@ const Container = styled.section`
   transform: translateY(-28rem);
   padding: 3rem;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
+  box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
   border-radius: 1rem;
 
   display: grid;
