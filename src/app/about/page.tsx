@@ -20,7 +20,7 @@ const StoryCards = dynamic(() => import('@/components/StoryCards'), {
 });
 
 export const metadata: Metadata = {
-  title: 'iDesignx | Contact',
+  title: 'iDesignx | About',
 };
 
 const About = () => {
