@@ -100,6 +100,10 @@ const Container = styled.section`
     margin-top: 7rem;
     margin-bottom: 10rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    grid-column: full-start / full-end;
+  }
 `;
 
 const Heading = styled.h2`
