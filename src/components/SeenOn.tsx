@@ -33,6 +33,10 @@ const Container = styled.section`
     margin: 5rem;
     margin-bottom: -5rem;
   }
+
+  @media only screen and (max-width: 50em) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const Text = styled.div`
