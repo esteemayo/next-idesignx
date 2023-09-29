@@ -74,19 +74,19 @@ const Contact = () => {
 };
 
 const Container = styled.section`
-  background-color: #f9f9f9;
   grid-column: col-start 5 / col-end 8;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 1rem;
+  align-content: start;
+
+  background-color: #f9f9f9;
   margin: 8rem;
   transform: translateY(-28rem);
   padding: 3rem;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
   box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
   border-radius: 1rem;
-
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-  gap: 1rem;
-  align-content: start;
 `;
 
 const Heading = styled.h2`
