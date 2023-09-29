@@ -80,6 +80,14 @@ const Container = styled.section`
   gap: 1rem;
   align-content: start;
 
+  background-color: #f9f9f9;
+  margin: 8rem;
+  transform: translateY(-28rem);
+  padding: 3rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
+  box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
+  border-radius: 1rem;
+
   @media only screen and (max-width: 50em) {
     grid-row: 5 / 6;
     grid-column: center-start / center-end;
@@ -88,13 +96,10 @@ const Container = styled.section`
     margin: 3rem 0;
   }
 
-  background-color: #f9f9f9;
-  margin: 8rem;
-  transform: translateY(-28rem);
-  padding: 3rem;
-  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
-  box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
-  border-radius: 1rem;
+  @media only screen and (max-width: 31.25em) {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Heading = styled.h2`
