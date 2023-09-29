@@ -68,6 +68,11 @@ const Box = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(25rem, min-content));
   gap: 6rem;
   margin: 5rem 0;
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
+  }
 `;
 
 export default Printings;
