@@ -31,6 +31,10 @@ const Container = styled.ul`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: center;
   gap: 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    gap: 1rem;
+  }
 `;
 
 export default MenuLinks;
