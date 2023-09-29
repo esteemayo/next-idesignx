@@ -2,6 +2,10 @@
 
 import styled from 'styled-components';
 
+interface IText {
+  type: string;
+}
+
 const Hero = () => {
   return (
     <Header>
@@ -47,7 +51,7 @@ const Heading = styled.h1`
   line-height: 1;
 `;
 
-const Text = styled.span`
+const Text = styled.span<IText>`
   display: block;
   letter-spacing: 5px;
   line-height: 1.3;
