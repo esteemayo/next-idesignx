@@ -72,10 +72,4 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const LogoBox = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-`;
-
 export default Sidebar;
