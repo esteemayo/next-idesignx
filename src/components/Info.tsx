@@ -103,7 +103,7 @@ const StyledLink = styled(Link)`
   }
 
   svg {
-    color: currentColor;
+    fill: currentColor;
     width: 1.5rem;
     height: 1.5rem;
   }
