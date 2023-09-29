@@ -21,6 +21,12 @@ export const StyledLink = styled(Link)`
   outline-color: var(--clr-purple-light-3);
   transition: all 0.2s;
 
+  @media only screen and (max-width: 25em) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.45rem;
+  }
+
   &:active {
     color: currentColor;
   }
