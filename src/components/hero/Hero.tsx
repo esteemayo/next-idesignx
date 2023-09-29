@@ -44,6 +44,10 @@ const Heading = styled.h1`
   align-self: center;
   justify-self: center;
 
+  @media only screen and (max-width: 56.25em) {
+    margin-left: -5rem;
+  }
+
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5rem;
