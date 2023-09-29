@@ -27,6 +27,12 @@ const Container = styled.section`
   grid-column: center-start / center-end;
   background-color: var(--clr-white);
   margin-top: -14rem;
+
+  @media only screen and (max-width: 56.25em) {
+    grid-column: full-start / full-end;
+    margin: 5rem;
+    margin-bottom: -5rem;
+  }
 `;
 
 const Text = styled.div`
