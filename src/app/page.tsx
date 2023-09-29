@@ -35,6 +35,10 @@ const Container = styled.div`
       [col-start] minmax(min-content, 15rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: 50em) {
+    grid-template-rows: 80vh repeat(5, min-content);
+  }
 `;
 
 export default Home;
