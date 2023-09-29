@@ -52,6 +52,10 @@ const Heading = styled.h3`
   @media only screen and (max-width: 50em) {
     word-spacing: 1px;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.23rem;
+  }
 `;
 
 const Wrapper = styled.div`
