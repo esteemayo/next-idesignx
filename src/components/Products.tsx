@@ -74,6 +74,7 @@ const Box = styled.div`
   justify-content: center;
 
   @media only screen and (max-width: 50em) {
+    margin-top: 3rem;
     justify-content: start;
   }
 `;
