@@ -25,6 +25,12 @@ const Container = styled.section`
   flex-direction: column;
   align-items: flex-start;
 
+  @media only screen and (max-width: 48em) {
+    grid-row: 4 / 5;
+    grid-column: center-start / center-end;
+    margin: 8rem 0;
+  }
+
   background-color: var(--clr-white);
   margin: calc(16rem - 8rem) 0;
   color: var(--clr-gray-dark);
