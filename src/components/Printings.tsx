@@ -56,7 +56,7 @@ const Heading = styled.h4`
   text-transform: none;
   line-height: 1.1;
 
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 18.75em) {
     font-size: 2.75rem;
   }
 `;
