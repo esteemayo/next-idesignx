@@ -80,6 +80,14 @@ const Container = styled.section`
   gap: 1rem;
   align-content: start;
 
+  @media only screen and (max-width: 50em) {
+    grid-row: 5 / 6;
+    grid-column: center-start / center-end;
+    transform: translate(0);
+    box-shadow: none;
+    margin: 3rem 0;
+  }
+
   background-color: #f9f9f9;
   margin: 8rem;
   transform: translateY(-28rem);
