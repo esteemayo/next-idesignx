@@ -33,10 +33,7 @@ const Sidebar = () => {
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <LogoBox>
-          <Hamburger isOpen={isOpen} onToggle={onClose} />
-          <Logo onClose={handleClose} />
-        </LogoBox>
+        <Hamburger isOpen={isOpen} onToggle={onClose} />
         <Button nav='true' type='button' label='Upload your design' />
       </Wrapper>
       <MenuItems links={navItems} />
