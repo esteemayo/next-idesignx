@@ -36,7 +36,7 @@ const Wrapper = styled.div`
       rgba(153, 153, 153, 0.5),
       rgba(153, 153, 153, 0.5)
     ),
-    url(../img/woman-2.jpg);
+    url(/img/woman-2.jpg);
   color: var(--clr-white);
   background-size: cover;
   background-position: center;
