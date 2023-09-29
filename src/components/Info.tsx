@@ -84,6 +84,8 @@ const SocialWrapper = styled.div`
   align-self: center;
   justify-self: self-end;
 
+  width: 1.3rem;
+  height: 1.3rem;
   margin-right: 0.5rem;
   display: flex;
   align-items: center;
