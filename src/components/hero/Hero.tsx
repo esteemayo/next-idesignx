@@ -53,6 +53,11 @@ const Heading = styled.h1`
   font-size: 4.5rem;
   color: var(--clr-white);
   line-height: 1;
+
+  @media only screen and (max-width: 50em) {
+    grid-column: 1 / -1;
+    font-size: 4rem;
+  }
 `;
 
 const Text = styled.span<IText>`
