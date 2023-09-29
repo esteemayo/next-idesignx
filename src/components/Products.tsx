@@ -61,6 +61,10 @@ const Heading = styled.h3`
 const Wrapper = styled.div`
   margin-top: 3rem;
 
+  @media only screen and (max-width: 50em) {
+    margin-top: 2.5rem;
+  }
+
   display: grid;
   grid-template-rows: 38.7vw;
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
