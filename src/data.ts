@@ -79,6 +79,29 @@ export const menuItems = [
   },
 ];
 
+export const brands = [
+  {
+    id: 1,
+    img: '/img/access.jpg',
+  },
+  {
+    id: 2,
+    img: '/img/Stanbic-Bank-Logo.jpg',
+  },
+  {
+    id: 3,
+    img: '/img/zenith.png',
+  },
+  {
+    id: 4,
+    img: '/img/union-bank.jpg',
+  },
+  {
+    id: 5,
+    img: '/img/first-bank.png',
+  },
+];
+
 export const productImages = [
   {
     id: 1,
