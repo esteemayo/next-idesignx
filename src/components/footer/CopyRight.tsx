@@ -24,6 +24,12 @@ const Container = styled.p`
   margin-left: auto;
   margin-right: auto;
   color: currentColor;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
 `;
 
 const Year = styled.span``;
