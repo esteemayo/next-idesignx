@@ -40,6 +40,10 @@ const Container = styled.div`
   align-items: center;
   justify-items: center;
 
+  @media only screen and (max-width: 25em) {
+    gap: 3rem;
+  }
+
   background-image: linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
