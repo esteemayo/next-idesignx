@@ -50,6 +50,7 @@ const Heading = styled.h3`
   color: var(--clr-purple-light-1);
 
   @media only screen and (max-width: 50em) {
+    font-size: 3.5rem;
     word-spacing: 1px;
   }
 
