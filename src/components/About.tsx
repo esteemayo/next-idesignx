@@ -25,16 +25,21 @@ const Container = styled.section`
   flex-direction: column;
   align-items: flex-start;
 
+  background-color: var(--clr-white);
+  margin: calc(16rem - 8rem) 0;
+  color: var(--clr-gray-dark);
+  padding: 1rem;
+
   @media only screen and (max-width: 50em) {
     grid-row: 3 / 4;
     grid-column: center-start / center-end;
     margin: 8rem 0;
   }
 
-  background-color: var(--clr-white);
-  margin: calc(16rem - 8rem) 0;
-  color: var(--clr-gray-dark);
-  padding: 1rem;
+  @media only screen and (max-width: 25em) {
+    grid-column: full-start / full-end;
+    padding: 0 3rem;
+  }
 `;
 
 const Heading = styled.h2`
