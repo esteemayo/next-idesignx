@@ -1,8 +1,9 @@
 'use client';
 
-import styled from 'styled-components';
-import MenuLink from './MenuLink';
 import React from 'react';
+import styled from 'styled-components';
+
+import MenuLink from './MenuLink';
 
 type MenuLinksType = {
   id: number;
