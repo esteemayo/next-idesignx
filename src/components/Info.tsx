@@ -26,6 +26,12 @@ const Info = () => {
 };
 
 const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
+  gap: 6rem;
+  align-items: center;
+  justify-items: center;
+
   background-image: linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
@@ -36,12 +42,6 @@ const Container = styled.div`
   font-size: 1.4rem;
   padding: 1.5rem;
   color: var(--clr-white);
-
-  display: grid;
-  grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
-  gap: 6rem;
-  align-items: center;
-  justify-items: center;
 `;
 
 const PhoneWrapper = styled.div`
