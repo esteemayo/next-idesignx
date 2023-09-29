@@ -23,7 +23,7 @@ const SeenOn = () => {
 
 const Container = styled.section`
   grid-column: center-start / center-end;
-  background-color: var(--clr-white);
+  background-color: transparent;
   margin-top: -14rem;
 
   @media only screen and (max-width: 56.25em) {
