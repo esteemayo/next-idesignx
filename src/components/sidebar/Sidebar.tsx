@@ -65,6 +65,10 @@ const Container = styled.aside<IContainer>`
   transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1),
     cubic-bezier(0.77, 0.2, 0.05, 1), cubic-bezier(0.77, 0.2, 0.05, 1);
 
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+  }
+
   @media only screen and (min-width: 48em) {
     display: none;
   }
