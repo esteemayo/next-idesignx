@@ -36,6 +36,11 @@ const Container = styled.footer`
   @media only screen and (max-width: 37.5em) {
     padding: 4rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 export default Footer;
