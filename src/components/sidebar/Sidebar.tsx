@@ -3,10 +3,8 @@
 import styled from 'styled-components';
 import { useCallback, useMemo } from 'react';
 
-import Logo from '../navbar/Logo';
-import Hamburger from '../navbar/Hamburger';
-
 import MenuItems from './MenuItems';
+import Hamburger from '../navbar/Hamburger';
 import Button from '../buttons/Button';
 
 import { useMenu } from '@/hooks/useMenu';
