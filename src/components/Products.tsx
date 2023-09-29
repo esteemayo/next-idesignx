@@ -48,6 +48,10 @@ const Heading = styled.h3`
   font-size: 3rem;
   text-transform: capitalize;
   color: var(--clr-purple-light-1);
+
+  @media only screen and (max-width: 50em) {
+    word-spacing: 1px;
+  }
 `;
 
 const Wrapper = styled.div`
