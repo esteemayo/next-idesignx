@@ -83,7 +83,7 @@ const Container = styled.section`
   margin: 10rem 0;
   padding: 4.5rem;
   border-radius: 1rem;
-  box-shadow: rgba(202, 198, 198, 0.09) 0 1px 0.5rem 0;
+  box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
 `;
 
 const Heading = styled.h3`
