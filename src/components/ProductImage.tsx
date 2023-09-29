@@ -13,10 +13,7 @@ const ProductImage: React.FC<ProductImageProps> = ({ img }) => {
   );
 };
 
-const Wrapper = styled.figure`
-  /* margin-top: 3rem;
-  margin-bottom: 5rem; */
-`;
+const Wrapper = styled.figure``;
 
 const StyledImage = styled(Image)`
   width: 100%;
