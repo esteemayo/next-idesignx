@@ -34,6 +34,7 @@ const Container = styled.section`
 
     margin: 0;
     margin-bottom: 3rem;
+    padding: 0;
   }
 `;
 
