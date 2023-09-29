@@ -97,8 +97,8 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 31.25em) {
-    margin: 0;
-    margin-bottom: 1rem;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
   }
 `;
 
