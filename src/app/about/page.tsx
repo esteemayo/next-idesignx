@@ -3,6 +3,9 @@
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
+import Photo from './Photo';
+import Contact from './Contact';
+
 import AboutHero from '@/components/hero/AboutHero';
 
 const StoryImage = dynamic(() => import('@/components/StoryImage'), {
@@ -14,9 +17,6 @@ const StoryDetails = dynamic(() => import('@/components/StoryDetails'), {
 const StoryCards = dynamic(() => import('@/components/StoryCards'), {
   ssr: false,
 });
-
-import Contact from './Contact';
-import Photo from './Photo';
 
 const About = () => {
   return (
