@@ -40,6 +40,10 @@ const Wrapper = styled.div`
   color: var(--clr-white);
   background-size: cover;
   background-position: center;
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 4rem;
+  }
 `;
 
 const Heading = styled.h4`
