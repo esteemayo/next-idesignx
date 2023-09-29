@@ -19,13 +19,6 @@ interface IContainer {
 const Sidebar = () => {
   const { isOpen, onClose } = useMenu();
 
-  const handleClose = useCallback(() => {
-    if (isOpen) {
-      onClose();
-      return;
-    }
-  }, [isOpen, onClose]);
-
   const activeMenu = useMemo(() => {
     return isOpen.toString();
   }, [isOpen]);
