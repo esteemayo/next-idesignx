@@ -60,7 +60,7 @@ const Heading = styled.h1`
   }
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 `;
 
