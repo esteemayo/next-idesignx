@@ -54,6 +54,8 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 38.7vw;
   grid-template-columns: repeat(4, minmax(min-content, 1fr));
+
+  margin-top: 3rem;
 `;
 
 const Box = styled.div`
