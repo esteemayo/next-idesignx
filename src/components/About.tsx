@@ -51,6 +51,7 @@ const Heading = styled.h2`
   margin-bottom: 4rem;
 
   @media only screen and (max-width: 50em) {
+    word-spacing: 1px;
     margin-bottom: 2.5rem;
   }
 
