@@ -31,6 +31,11 @@ const StyledLink = styled(Link)`
   outline-color: var(--clr-purple-light-3);
   transition: all 0.2s;
 
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+  }
+
   &:hover,
   &:active {
     background-image: linear-gradient(
