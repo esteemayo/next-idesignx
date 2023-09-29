@@ -3,21 +3,19 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 
+import { brands } from '@/data';
+
 const SeenOn = () => {
   return (
     <Container>
       <Text>As seen on</Text>
       <LogoContainer>
-        <StyledImage src='/img/access.jpg' width={80} height={50} alt='' />
-        <StyledImage
-          src='/img/Stanbic-Bank-Logo.jpg'
-          width={80}
-          height={50}
-          alt=''
-        />
-        <StyledImage src='/img/zenith.png' width={80} height={50} alt='' />
-        <StyledImage src='/img/union-bank.jpg' width={80} height={50} alt='' />
-        <StyledImage src='/img/first-bank.png' width={80} height={50} alt='' />
+        {brands.map((item) => {
+          const { id, img } = item;
+          return (
+            <StyledImage key={id} src={img} width={80} height={50} alt='' />
+          );
+        })}
       </LogoContainer>
     </Container>
   );
