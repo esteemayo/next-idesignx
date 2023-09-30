@@ -81,6 +81,7 @@ const Heading = styled.h2`
 
   @media only screen and (max-width: 25em) {
     grid-row: 1 / 2;
+    align-self: center;
   }
 
   @media only screen and (max-width: 20em) {
