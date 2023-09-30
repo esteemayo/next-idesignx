@@ -137,6 +137,11 @@ const Paragraph = styled.p`
     letter-spacing: 3px;
   }
 
+  @media only screen and (max-width: 25em) {
+    grid-row: 3 / 4;
+    align-self: self-end;
+  }
+
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
     letter-spacing: 1px;
