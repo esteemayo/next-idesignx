@@ -77,6 +77,10 @@ const Text = styled.p`
 
   &:not(:last-child) {
     margin-bottom: 4rem;
+
+    @media only screen and (max-width: 37.5em) {
+      margin-bottom: 3.5rem;
+    }
   }
 `;
 
