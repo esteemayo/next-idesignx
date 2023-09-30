@@ -55,7 +55,7 @@ const Heading = styled.h3`
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 `;
 
