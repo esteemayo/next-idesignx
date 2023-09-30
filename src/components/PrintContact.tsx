@@ -61,6 +61,11 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 56.25em) {
     font-size: 2.8rem;
   }
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 export default PrintContact;
