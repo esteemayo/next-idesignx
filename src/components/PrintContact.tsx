@@ -17,6 +17,10 @@ const PrintContact = () => {
 
 const Container = styled.section`
   grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
   margin: 8rem 0;
   color: var(--clr-white);
   background-image: linear-gradient(
@@ -27,10 +31,6 @@ const Container = styled.section`
     url(/img/contact-1.jpg);
   background-size: cover;
   background-position: center;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
 
   & > a {
     grid-area: 3 / 2 / -1 / span 2;
