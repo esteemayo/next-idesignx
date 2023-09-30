@@ -66,7 +66,7 @@ const Heading = styled.h1`
 
 const Text = styled.span<IText>`
   display: block;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
   line-height: 1.3;
   animation: ${({ type }) => type === 'right' && 'moveInRight 1s ease-out'};
   animation: ${({ type }) => type === 'left' && 'moveInLeft 1s ease-out'};
