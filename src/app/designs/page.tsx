@@ -46,7 +46,7 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 37.5em) {
-    grid-template-rows: repeat(2, min-content) 45vh;
+    grid-template-rows: 45vh;
   }
 `;
 
