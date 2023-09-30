@@ -102,6 +102,11 @@ const Paragraph = styled.p`
     width: 90%;
     font-size: 1.5rem;
   }
+
+  @media only screen and (max-width: 43.75em) {
+    width: 100%;
+    letter-spacing: 1px;
+  }
 `;
 
 export default Mission;
