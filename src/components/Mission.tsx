@@ -49,6 +49,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 37.5em) {
     grid-template-rows: repeat(5, 1fr);
   }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-rows: repeat(4, 7rem);
+  }
 `;
 
 const Heading = styled.h2`
