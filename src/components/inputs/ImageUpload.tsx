@@ -56,7 +56,7 @@ const Container = styled.div<IContainer>`
   width: 100%;
   height: 20rem;
   background-color: #f9f9f9;
-  color: var(--clr-gray-dark-2);
+  color: #cac7c7;
   border: 1px dashed ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
   cursor: pointer;
