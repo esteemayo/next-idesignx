@@ -53,6 +53,10 @@ const Container = styled.main`
   @media only screen and (max-width: 37.5em) {
     grid-template-rows: 40vh min-content 30vw min-content 20vw;
   }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-rows: 30vh min-content 30vw min-content 20vw;
+  }
 `;
 
 export default About;
