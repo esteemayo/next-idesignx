@@ -112,6 +112,7 @@ const Container = styled.section`
   margin: 8rem 0;
 
   @media only screen and (max-width: 37.5em) {
+    grid-column: full-start / full-end;
     margin: 0;
   }
 `;
