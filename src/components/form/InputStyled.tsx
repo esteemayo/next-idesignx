@@ -12,7 +12,7 @@ export const InputStyled = styled.input<IInput>`
   padding: 1.5rem 2rem;
   background-color: transparent;
   color: var(--clr-gray-dark-2);
-  border: 2px solid ${({ error }) => setBorderColor(error)};
+  border: 1px solid ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
   outline-color: ${({ error }) => setOutlineColor(error)};
   caret-color: ${({ error }) => setCaretColor(error)};
