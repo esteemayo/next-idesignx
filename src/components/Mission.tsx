@@ -79,6 +79,10 @@ const Heading = styled.h2`
     letter-spacing: 3px;
   }
 
+  @media only screen and (max-width: 25em) {
+    grid-row: 1 / 2;
+  }
+
   @media only screen and (max-width: 20em) {
     font-size: 2rem;
     letter-spacing: 2px;
