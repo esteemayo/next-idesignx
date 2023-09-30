@@ -24,6 +24,15 @@ const PrintHero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: min-content repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media only screen and (max-width: 31.25em) {
+    gap: 0;
+  }
+
   color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
@@ -34,15 +43,6 @@ const Header = styled.header`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: min-content repeat(3, 1fr);
-  gap: 1.5rem;
-
-  @media only screen and (max-width: 31.25em) {
-    gap: 0;
-  }
 
   @media only screen and (max-width: 25em) {
     background-attachment: scroll;
