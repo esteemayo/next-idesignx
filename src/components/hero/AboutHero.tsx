@@ -46,6 +46,11 @@ const Heading = styled.h1`
   letter-spacing: 0.7rem;
   line-height: 1;
   animation: moveInBottom 0.7s ease-out 1s backwards;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 4rem;
+    letter-spacing: 4px;
+  }
 `;
 
 const Text = styled.p`
