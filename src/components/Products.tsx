@@ -57,6 +57,10 @@ const Heading = styled.h3`
   @media only screen and (max-width: 25em) {
     font-size: 2.75rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2rem;
+  }
 `;
 
 const Wrapper = styled.div`
