@@ -49,6 +49,16 @@ const Container = styled.section`
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(11, 1fr);
 
+  @media only screen and (max-width: 56.25em) {
+    grid-row: 3 / 4;
+    grid-column: center-start / center-end;
+
+    margin-top: 0;
+
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(15, 1fr);
+  }
+
   margin-top: 10rem;
   position: relative;
 
