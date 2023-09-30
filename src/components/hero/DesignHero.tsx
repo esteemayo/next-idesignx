@@ -67,6 +67,7 @@ const Text = styled.p`
   text-align: center;
 
   @media only screen and (max-width: 75em) {
+    grid-column: 1 / -1;
     font-size: 2.3rem;
     letter-spacing: 0;
   }
