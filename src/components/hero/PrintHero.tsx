@@ -108,6 +108,10 @@ const HeadingMain = styled.span`
   @media only screen and (max-width: 56.25em) {
     letter-spacing: 2px;
   }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2rem;
+  }
 `;
 
 const HeadingSub = styled.span`
