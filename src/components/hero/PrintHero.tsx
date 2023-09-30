@@ -43,6 +43,10 @@ const Header = styled.header`
   @media only screen and (max-width: 31.25em) {
     gap: 0;
   }
+
+  @media only screen and (max-width: 25em) {
+    background-attachment: scroll;
+  }
 `;
 
 const HeadingPrimary = styled.h1`
