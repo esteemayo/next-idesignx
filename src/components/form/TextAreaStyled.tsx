@@ -13,7 +13,7 @@ export const TextAreaStyled = styled.textarea<ITextArea>`
   padding: 2rem;
   background-color: var(--clr-white);
   color: var(--clr-gray-dark-2);
-  border: 2px solid ${({ error }) => setBorderColor(error)};
+  border: 1px solid ${({ error }) => setBorderColor(error)};
   outline-color: ${({ error }) => setOutlineColor(error)};
   caret-color: ${({ error }) => setCaretColor(error)};
   transition: all 0.3s;
