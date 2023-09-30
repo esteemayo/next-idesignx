@@ -120,6 +120,10 @@ const HeadingSub = styled.span`
     font-size: 1rem;
     letter-spacing: 2px;
   }
+
+  @media only screen and(max-width: 18.75em) {
+    letter-spacing: 1px;
+  }
 `;
 
 export default PrintHero;
