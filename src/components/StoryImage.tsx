@@ -67,6 +67,10 @@ const Container = styled.section`
     grid-column: full-start / full-end;
   }
 
+  @media only screen and (max-width: 25em) {
+    padding: 0 3rem;
+  }
+
   margin-top: 10rem;
   position: relative;
 
