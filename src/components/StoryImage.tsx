@@ -45,12 +45,12 @@ const StyledImage = styled(Image)`
 
 const Container = styled.section`
   grid-column: col-start 5 / full-end;
-  margin-top: 10rem;
-  position: relative;
-
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(11, 1fr);
+
+  margin-top: 10rem;
+  position: relative;
 
   &:hover ${StyledImage}:not(:hover) {
     transform: scale(0.95);
