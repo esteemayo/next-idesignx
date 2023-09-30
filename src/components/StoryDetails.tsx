@@ -22,11 +22,11 @@ const StoryDetails = () => {
 
 const Container = styled.section`
   grid-column: col-start 1 / col-end 4;
-  margin: 10rem 0;
-  padding: 4.5rem;
-
   display: grid;
   align-content: center;
+
+  margin: 10rem 0;
+  padding: 4.5rem;
 `;
 
 const Heading = styled.h2`
