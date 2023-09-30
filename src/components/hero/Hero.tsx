@@ -72,6 +72,10 @@ const Text = styled.span<IText>`
   animation: ${({ type }) => type === 'left' && 'moveInLeft 1s ease-out'};
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  @media only screen and (max-width: 18.75em) {
+    letter-spacing: 3px;
+  }
 `;
 
 export default Hero;
