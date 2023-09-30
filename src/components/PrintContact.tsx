@@ -66,6 +66,10 @@ const Paragraph = styled.p`
     font-size: 2.4rem;
     margin-bottom: 1rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: var(--default-font-size);
+  }
 `;
 
 export default PrintContact;
