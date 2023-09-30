@@ -27,6 +27,10 @@ const Container = styled.section`
 
   margin: 10rem 0;
   padding: 4.5rem;
+
+  @media only screen and (max-width: 68.75em) {
+    margin: 25rem 0;
+  }
 `;
 
 const Heading = styled.h2`
