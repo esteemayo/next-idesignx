@@ -59,6 +59,10 @@ const Container = styled.section`
     grid-template-columns: repeat(15, 1fr);
   }
 
+  @media only screen and (max-width: 31.25em) {
+    grid-column: full-start / full-end;
+  }
+
   margin-top: 10rem;
   position: relative;
 
