@@ -134,6 +134,7 @@ const Heading = styled.h3`
 
   @media only screen and (max-width: 37.5em) {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   @media only screen and (max-width: 20em) {
