@@ -57,6 +57,10 @@ const Heading = styled.h2`
   color: currentColor;
   letter-spacing: 0.5px;
   line-height: 1;
+
+  @media only screen and (max-width: 50em) {
+    font-size: 3rem;
+  }
 `;
 
 const Text = styled.p`
