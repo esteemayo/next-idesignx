@@ -49,6 +49,10 @@ const Heading = styled.h1`
     grid-column: 2 / span 4;
     letter-spacing: 0.7rem;
   }
+
+  @media only screen and (max-width: 75em) {
+    letter-spacing: 0;
+  }
 `;
 
 const Text = styled.p`
