@@ -104,6 +104,26 @@ const HeadingSecondary = styled.h2`
   animation: moveInBottom 0.5s ease-out 1s backwards;
 `;
 
+const HeadingSub = styled.span`
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  animation: moveInBottom 0.5s ease-out 1s backwards;
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    letter-spacing: 1px;
+  }
+`;
+
 const HeadingMain = styled.span`
   display: block;
   font-size: 2.4rem;
@@ -123,26 +143,6 @@ const HeadingMain = styled.span`
 
   @media only screen and (max-width: 18.75em) {
     font-size: 1.35rem;
-    letter-spacing: 1px;
-  }
-`;
-
-const HeadingSub = styled.span`
-  display: block;
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  animation: moveInBottom 0.5s ease-out 1s backwards;
-
-  @media only screen and (max-width: 50em) {
-    font-size: 1.2rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1rem;
-    letter-spacing: 2px;
-  }
-
-  @media only screen and (max-width: 18.75em) {
     letter-spacing: 1px;
   }
 `;
