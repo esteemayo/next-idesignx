@@ -32,6 +32,10 @@ const Container = styled.section`
   background-size: cover;
   background-position: center;
 
+  @media only screen and (max-width: 50em) {
+    margin: 4rem 0;
+  }
+
   & > a {
     grid-area: 3 / 2 / -1 / span 2;
     align-self: self-start;
