@@ -53,7 +53,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 26.25em) {
     grid-auto-rows: auto;
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 `;
 
