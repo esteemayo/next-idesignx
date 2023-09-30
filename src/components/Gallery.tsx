@@ -50,6 +50,11 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
   justify-content: center;
   grid-auto-rows: 25rem;
+
+  @media only screen and (max-width: 25em) {
+    grid-auto-rows: auto;
+    row-gap: 1rem;
+  }
 `;
 
 const ImageContainer = styled.figure`
@@ -65,7 +70,7 @@ const StyledImage = styled(Image)`
 
   @media only screen and (max-width: 25em) {
     width: 40rem;
-    height: 40rem;
+    height: 30rem;
   }
 `;
 
