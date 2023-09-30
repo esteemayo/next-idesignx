@@ -34,7 +34,7 @@ const Header = styled.header`
 `;
 
 const Heading = styled.h1`
-  grid-area: 2 / 3 / 3 / span 2;
+  grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
   justify-self: center;
 
@@ -46,12 +46,15 @@ const Heading = styled.h1`
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 
   @media only screen and (max-width: 81.25em), (min-width: 81.25em) {
-    grid-column: 2 / span 4;
     letter-spacing: 0.7rem;
   }
 
   @media only screen and (max-width: 75em) {
     letter-spacing: 0;
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    letter-spacing: 3px;
   }
 `;
 
