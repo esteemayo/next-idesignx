@@ -99,7 +99,6 @@ const Text = styled.p`
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
     letter-spacing: 1px;
-    margin: 1rem 0;
   }
 `;
 
@@ -120,6 +119,11 @@ const Paragraph = styled.p`
 
   @media only screen and (max-width: 37.5em) {
     letter-spacing: 3px;
+  }
+
+  @media only screen and (max-width: 20em) {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
   }
 `;
 
