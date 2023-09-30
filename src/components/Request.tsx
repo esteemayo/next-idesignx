@@ -127,6 +127,10 @@ const Heading = styled.h3`
   font-size: 3rem;
   color: var(--clr-purple-light-1);
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2.5rem;
+  }
 `;
 
 export default Request;
