@@ -18,6 +18,14 @@ const Container = styled.section`
   display: grid;
   grid-template-rows: 0.5fr repeat(6, 1fr) 0.5fr;
   grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
+
+  @media only screen and (max-width: 37.5em) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    z-index: -1;
+  }
 `;
 
 const StyledImage = styled(Image)`
