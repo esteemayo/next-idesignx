@@ -111,6 +111,10 @@ const Paragraph = styled.p`
     width: 100%;
     letter-spacing: 1px;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    letter-spacing: 3px;
+  }
 `;
 
 export default Mission;
