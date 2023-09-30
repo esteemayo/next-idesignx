@@ -191,7 +191,7 @@ const Heading = styled.h1`
 `;
 
 const Body = styled.div`
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 `;
 
 const Footer = styled.div`
