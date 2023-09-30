@@ -75,6 +75,11 @@ const Heading = styled.h2`
 const Text = styled.p`
   letter-spacing: 2px;
 
+  @media only screen and (max-width: 37.5em) {
+    letter-spacing: 0;
+    word-spacing: 1px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 4rem;
 
