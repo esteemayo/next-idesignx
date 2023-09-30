@@ -61,10 +61,15 @@ const Text = styled.p`
     justify-self: center;
   }
 
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: currentColor;
   letter-spacing: 1px;
   text-align: center;
+
+  @media only screen and (max-width: 75em) {
+    font-size: 2.3rem;
+    letter-spacing: 0;
+  }
 `;
 
 export default DesignHero;
