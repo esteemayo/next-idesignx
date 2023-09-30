@@ -38,6 +38,10 @@ const Container = styled.main`
   @media only screen and (max-width: 50em) {
     grid-template-rows: 60vh;
   }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-rows: 40vh;
+  }
 `;
 
 export default Prints;
