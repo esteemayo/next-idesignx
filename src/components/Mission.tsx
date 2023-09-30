@@ -105,10 +105,6 @@ const Text = styled.p`
     letter-spacing: 1px;
   }
 
-  @media only screen and (max-width: 37.5em) {
-    letter-spacing: 3px;
-  }
-
   @media only screen and (max-width: 25em) {
     grid-row: 2 / 3;
   }
@@ -132,10 +128,6 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 43.75em) {
     width: 100%;
     letter-spacing: 1px;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    letter-spacing: 3px;
   }
 
   @media only screen and (max-width: 25em) {
