@@ -51,7 +51,7 @@ const Wrapper = styled.div`
   justify-content: center;
   grid-auto-rows: 25rem;
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     grid-auto-rows: auto;
     row-gap: 1rem;
   }
