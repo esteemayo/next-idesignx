@@ -75,6 +75,10 @@ const Text = styled.p`
   @media only screen and (max-width: 23.13em) {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 20em) {
+    font-size: 1.8rem;
+  }
 `;
 
 export default DesignHero;
