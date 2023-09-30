@@ -87,6 +87,11 @@ const Text = styled.p`
     font-size: var(--default-font-size);
     letter-spacing: 0.25px;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.4rem;
+    letter-spacing: 0.1px;
+  }
 `;
 
 const Span = styled.span`
