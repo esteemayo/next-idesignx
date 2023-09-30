@@ -56,6 +56,11 @@ const Text = styled.p`
   align-self: self-start;
   justify-self: start;
 
+  @media only screen and (max-width: 81.25em), (min-width: 81.25em) {
+    grid-column: 2 / span 4;
+    justify-self: center;
+  }
+
   font-size: 2.3rem;
   color: currentColor;
   letter-spacing: 1px;
