@@ -57,6 +57,10 @@ const Paragraph = styled.p`
   text-align: center;
   font-size: 3rem;
   color: currentColor;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.8rem;
+  }
 `;
 
 export default PrintContact;
