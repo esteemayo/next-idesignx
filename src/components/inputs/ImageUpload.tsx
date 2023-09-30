@@ -87,8 +87,9 @@ const Label = styled.label`
   display: block;
   width: 100%;
   height: 100%;
-  cursor: pointer;
+  position: relative;
   z-index: 2000;
+  cursor: pointer;
 `;
 
 const Input = styled.input`
