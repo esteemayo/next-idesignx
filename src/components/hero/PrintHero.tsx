@@ -69,6 +69,10 @@ const Text = styled.p`
   letter-spacing: 1px;
   animation: moveInRight 1s ease-out;
   backface-visibility: hidden;
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2.3rem;
+  }
 `;
 
 const Br = styled.br``;
