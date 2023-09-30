@@ -68,7 +68,7 @@ const StyledImage = styled(Image)`
   display: block;
   object-fit: cover;
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     width: 40rem;
     height: 30rem;
   }
