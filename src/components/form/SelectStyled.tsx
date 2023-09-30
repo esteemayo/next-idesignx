@@ -12,7 +12,7 @@ export const SelectStyled = styled.select<ISelect>`
   padding: 1.5rem 2rem;
   background-color: transparent;
   color: ${({ error }) => setColor(error)};
-  border: 2px solid ${({ error }) => setBorderColor(error)};
+  border: 1px solid ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
   outline-color: #979797;
 `;
