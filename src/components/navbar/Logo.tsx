@@ -32,7 +32,6 @@ const StyledImage = styled(Image)`
   height: 4.5rem;
 
   @media only screen and (max-width: 48em) {
-    width: 4rem;
     height: 4rem;
   }
 
