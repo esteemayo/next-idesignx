@@ -84,7 +84,7 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 31.25em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
     letter-spacing: 0.25px;
   }
 `;
