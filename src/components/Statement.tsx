@@ -30,6 +30,11 @@ const Container = styled.section`
 const Paragraph = styled.p`
   font-size: 2rem;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.85rem;
+    margin-bottom: 1.7rem;
+  }
 `;
 
 export default Statement;
