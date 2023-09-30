@@ -72,6 +72,10 @@ const StyledButton = styled.button<IBtn>`
   cursor: pointer;
   transition: all 0.2s;
 
+  @media only screen and (max-width: 50em) {
+    margin-top: ${({ nav }) => (nav !== 'true' ? '1rem' : undefined)};
+  }
+
   @media only screen and (max-width: 25em) {
     font-size: 1.45rem;
     padding-left: 2rem;
