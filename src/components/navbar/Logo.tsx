@@ -30,6 +30,11 @@ const StyledLink = styled(Link)`
 const StyledImage = styled(Image)`
   width: 4.5rem;
   height: 4.5rem;
+
+  @media only screen and (max-width: 48em) {
+    width: 4rem;
+    height: 4rem;
+  }
 `;
 
 export default Logo;
