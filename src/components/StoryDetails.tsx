@@ -37,6 +37,10 @@ const Container = styled.section`
     grid-column: center-start / center-end;
     margin: 8rem 0;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    margin: 4rem 0;
+  }
 `;
 
 const Heading = styled.h2`
