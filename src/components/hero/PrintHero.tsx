@@ -111,6 +111,10 @@ const HeadingSub = styled.span`
   font-size: 1.6rem;
   letter-spacing: 3px;
   animation: moveInBottom 0.5s ease-out 1s backwards;
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.2rem;
+  }
 `;
 
 export default PrintHero;
