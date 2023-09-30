@@ -20,6 +20,10 @@ const Container = styled.section`
   background-color: var(--clr-white);
   text-align: center;
   padding: 4rem 0;
+
+  @media only screen and (max-width: 75em) {
+    padding: 3rem 0;
+  }
 `;
 
 const Paragraph = styled.p`
