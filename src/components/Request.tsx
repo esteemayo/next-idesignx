@@ -110,6 +110,10 @@ const Container = styled.section`
   grid-column: col-start 2 / col-end 7;
   padding: 5rem;
   margin: 8rem 0;
+
+  @media only screen and (max-width: 37.5em) {
+    margin: 0;
+  }
 `;
 
 const Heading = styled.h3`
