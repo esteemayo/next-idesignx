@@ -23,7 +23,13 @@ const Mission = () => {
 
 const Container = styled.section`
   grid-column: col-start 5 / full-end;
+
+  @media only screen and (max-width: 37.5em) {
+    grid-column: full-start / full-end;
+  }
+
   padding: 3rem;
+  color: var(--clr-white);
   background-image: linear-gradient(
     to bottom,
     var(--clr-purple-light-1),
@@ -31,7 +37,6 @@ const Container = styled.section`
     var(--clr-purple-light-2),
     var(--clr-purple-dark-2)
   );
-  color: var(--clr-white);
 `;
 
 const Wrapper = styled.div`
