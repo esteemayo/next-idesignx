@@ -113,8 +113,13 @@ const HeadingMain = styled.span`
     font-size: 2rem;
   }
 
-  @media only screen and(max-width: 25em) {
+  @media only screen and (max-width: 25em) {
     font-size: var(--default-font-size);
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.35rem;
+    letter-spacing: 1px;
   }
 `;
 
@@ -128,12 +133,12 @@ const HeadingSub = styled.span`
     font-size: 1.2rem;
   }
 
-  @media only screen and(max-width: 25em) {
+  @media only screen and (max-width: 25em) {
     font-size: 1rem;
     letter-spacing: 2px;
   }
 
-  @media only screen and(max-width: 18.75em) {
+  @media only screen and (max-width: 18.75em) {
     letter-spacing: 1px;
   }
 `;
