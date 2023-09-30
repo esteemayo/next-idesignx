@@ -41,6 +41,10 @@ const Container = styled.section`
   @media only screen and (max-width: 37.5em) {
     margin: 4rem 0;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    grid-column: full-start / full-end;
+  }
 `;
 
 const Heading = styled.h2`
