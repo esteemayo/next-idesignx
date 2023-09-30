@@ -48,7 +48,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
 
 const Spin = keyframes`
   to {
-    border: 2px dashed #ccc;
+    border: 1px dashed #ccc;
   }
 `;
 
@@ -57,7 +57,7 @@ const Container = styled.div<IContainer>`
   height: 20rem;
   background-color: #f9f9f9;
   color: var(--clr-gray-dark-2);
-  border: 2px dashed ${({ error }) => setBorderColor(error)};
+  border: 1px dashed ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
   cursor: pointer;
   position: relative;
