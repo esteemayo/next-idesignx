@@ -76,6 +76,10 @@ const StyledButton = styled.button<IBtn>`
     margin-top: ${({ nav }) => (nav !== 'true' ? '1rem' : undefined)};
   }
 
+  @media only screen and (max-width: 37.5em) {
+    width: ${({ nav }) => (nav !== 'true' ? '100%' : undefined)};
+  }
+
   @media only screen and (max-width: 25em) {
     font-size: 1.45rem;
     padding-left: 2rem;
