@@ -39,6 +39,10 @@ const Header = styled.header`
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: min-content repeat(3, 1fr);
   gap: 1.5rem;
+
+  @media only screen and (max-width: 31.25em) {
+    gap: 0;
+  }
 `;
 
 const HeadingPrimary = styled.h1`
