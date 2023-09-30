@@ -32,6 +32,10 @@ const Header = styled.header`
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  @media only screen and (max-width: 25em) {
+    background-attachment: scroll;
+  }
 `;
 
 const Heading = styled.h1`
