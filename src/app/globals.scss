@@ -101,6 +101,11 @@ body {
 
 .img-2 {
   grid-area: 5 / 3 / span 5 / span 5;
+
+  @media only screen and (max-width: 56.25em) {
+    grid-area: 4 / 6 / -1 / span 5;
+    transform: scale(1.2);
+  }
 }
 
 .img-3 {
