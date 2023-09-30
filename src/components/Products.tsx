@@ -3,9 +3,9 @@
 import styled from 'styled-components';
 
 import ProductImage from './ProductImage';
+import { StyledLink } from './buttons/StyledLink';
 
 import { productImages } from '@/data';
-import { StyledLink } from './buttons/StyledLink';
 
 const Products = () => {
   return (
