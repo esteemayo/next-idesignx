@@ -71,6 +71,10 @@ const Text = styled.p`
     font-size: 2.3rem;
     letter-spacing: 0;
   }
+
+  @media only screen and (max-width: 23.13em) {
+    font-size: 2rem;
+  }
 `;
 
 export default DesignHero;
