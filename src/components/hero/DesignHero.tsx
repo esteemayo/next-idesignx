@@ -60,6 +60,11 @@ const Heading = styled.h1`
   @media only screen and (max-width: 23.13em) {
     font-size: 2.7rem;
   }
+
+  @media only screen and (max-width: 20em) {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
 `;
 
 const Text = styled.p`
