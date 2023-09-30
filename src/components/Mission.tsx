@@ -92,6 +92,11 @@ const Paragraph = styled.p`
   grid-row: 4 / 5;
   width: 75%;
   letter-spacing: 2px;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 90%;
+    font-size: 1.5rem;
+  }
 `;
 
 export default Mission;
