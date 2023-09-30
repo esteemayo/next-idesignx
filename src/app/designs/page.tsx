@@ -40,6 +40,10 @@ const Container = styled.main`
       [col-start] minmax(min-content, 15rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: 64em) {
+    grid-template-rows: 50vh 40vw repeat(2, min-content);
+  }
 `;
 
 export default Designs;
