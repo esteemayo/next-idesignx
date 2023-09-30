@@ -35,6 +35,10 @@ const StyledImage = styled(Image)`
     width: 4rem;
     height: 4rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    height: 3.5rem;
+  }
 `;
 
 export default Logo;
