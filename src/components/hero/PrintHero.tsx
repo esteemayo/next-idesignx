@@ -77,6 +77,10 @@ const Text = styled.p`
   @media only screen and (max-width: 43.75em) {
     align-self: center;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2.15rem;
+  }
 `;
 
 const Br = styled.br``;
