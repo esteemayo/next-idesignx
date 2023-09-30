@@ -81,6 +81,11 @@ const Text = styled.p`
   @media only screen and (max-width: 31.25em) {
     font-size: 2.15rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: var(--default-font-size);
+    letter-spacing: 1px;
+  }
 `;
 
 const Br = styled.br``;
