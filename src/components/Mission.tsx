@@ -65,6 +65,11 @@ const Heading = styled.h2`
   @media only screen and (max-width: 43.75em) {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+  }
 `;
 
 const Text = styled.p`
