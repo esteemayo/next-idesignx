@@ -48,7 +48,7 @@ const Heading = styled.h1`
   animation: moveInBottom 0.7s ease-out 1s backwards;
 
   @media only screen and (max-width: 43.75em) {
-    font-size: 4rem;
+    font-size: 4.25rem;
     letter-spacing: 4px;
   }
 `;
@@ -63,6 +63,10 @@ const Text = styled.p`
   color: currentColor;
   letter-spacing: 1px;
   animation: moveInTop 0.5s ease-out 0.75s backwards;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.23rem;
+  }
 `;
 
 const Span = styled.span`
