@@ -81,6 +81,10 @@ const Text = styled.p`
     @media only screen and (max-width: 37.5em) {
       margin-bottom: 3.5rem;
     }
+
+    @media only screen and (max-width: 25em) {
+      margin-bottom: 2.5rem;
+    }
   }
 `;
 
