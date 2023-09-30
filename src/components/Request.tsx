@@ -131,6 +131,10 @@ const Heading = styled.h3`
   @media only screen and (max-width: 50em) {
     font-size: 2.5rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2rem;
+  }
 `;
 
 export default Request;
