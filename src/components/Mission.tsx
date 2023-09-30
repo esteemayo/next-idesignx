@@ -91,6 +91,10 @@ const Text = styled.p`
     width: 100%;
     letter-spacing: 1px;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    letter-spacing: 3px;
+  }
 `;
 
 const Paragraph = styled.p`
