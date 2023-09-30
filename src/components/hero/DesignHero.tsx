@@ -44,6 +44,11 @@ const Heading = styled.h1`
   color: currentColor;
   letter-spacing: 0.5rem;
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
+
+  @media only screen and (max-width: 81.25em), (min-width: 81.25em) {
+    grid-column: 2 / span 4;
+    letter-spacing: 0.7rem;
+  }
 `;
 
 const Text = styled.p`
