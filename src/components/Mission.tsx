@@ -108,6 +108,10 @@ const Text = styled.p`
     letter-spacing: 3px;
   }
 
+  @media only screen and (max-width: 25em) {
+    grid-row: 2 / 3;
+  }
+
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
     letter-spacing: 1px;
