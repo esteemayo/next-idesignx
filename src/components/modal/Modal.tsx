@@ -157,7 +157,6 @@ const CloseButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem;
 `;
 
 const CloseButton = styled.button`
