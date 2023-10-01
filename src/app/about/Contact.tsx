@@ -25,11 +25,16 @@ const Container = styled.section`
     margin: 5rem 2rem;
   }
 
-  margin: 7rem 0;
-
   @media only screen and (max-width: 31.25em) {
     margin: 3rem 1rem;
   }
+
+  @media only screen and (max-width: 20.63em) {
+    row-gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+
+  margin: 7rem 0;
 `;
 
 const Text = styled.p`
