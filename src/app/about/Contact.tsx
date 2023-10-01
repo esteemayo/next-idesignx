@@ -30,7 +30,6 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 20.63em) {
-    row-gap: 1.5rem;
     margin: 2.5rem 0;
   }
 
