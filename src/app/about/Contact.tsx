@@ -20,6 +20,11 @@ const Container = styled.section`
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (max-width: 37.5em) {
+    grid-column: full-start / full-end;
+    margin: 5rem 2rem;
+  }
+
   margin: 7rem 0;
 `;
 
