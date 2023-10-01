@@ -1,7 +1,7 @@
 'use client';
 
-import { StyledLink } from '@/components/buttons/StyledLink';
 import styled from 'styled-components';
+import { StyledLink } from '@/components/buttons/StyledLink';
 
 const Contact = () => {
   return (
