@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { brands } from '@/data';
 
@@ -57,12 +57,23 @@ const Text = styled.div`
   }
 `;
 
+const ScrollX = keyframes`
+  from {
+    left: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+`;
+
 const LogoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(5, minmax(min-content, 1fr));
   gap: 1rem;
   align-items: center;
   justify-items: center;
+  animation: ${ScrollX} 10s linear infinite;
 `;
 
 const StyledImage = styled(Image)`
