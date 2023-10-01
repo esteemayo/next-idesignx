@@ -34,6 +34,10 @@ const Container = styled.main`
       [col-start] minmax(min-content, 15rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: 56.25em) {
+    grid-template-rows: 60vh repeat(2, min-content);
+  }
 `;
 
 export default Contact;
