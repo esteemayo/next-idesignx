@@ -38,6 +38,10 @@ const Container = styled.main`
   @media only screen and (max-width: 56.25em) {
     grid-template-rows: 60vh repeat(2, min-content);
   }
+
+  @media only screen and (max-width: 50em) {
+    grid-template-rows: 40vh;
+  }
 `;
 
 export default Contact;
