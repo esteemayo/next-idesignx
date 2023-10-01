@@ -68,12 +68,17 @@ const ScrollX = keyframes`
 `;
 
 const LogoContainer = styled.div`
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: ${ScrollX} 10s linear infinite;
+  background-color: #cac7c7;
+  /* display: grid;
   grid-template-columns: repeat(5, minmax(min-content, 1fr));
   gap: 1rem;
   align-items: center;
   justify-items: center;
-  animation: ${ScrollX} 10s linear infinite;
+  animation: ${ScrollX} 10s linear infinite; */
 `;
 
 const StyledImage = styled(Image)`
