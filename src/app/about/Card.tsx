@@ -35,6 +35,11 @@ const Container = styled.article`
     transform: translateY(-1rem);
     transition: all 0.2s;
 
+    @media only screen and (max-width: 37.5em) {
+      width: 4rem;
+      height: 4rem;
+    }
+
     &:hover {
       fill: var(--clr-purple-light-2);
     }
