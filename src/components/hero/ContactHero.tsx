@@ -74,6 +74,10 @@ const Text = styled.p`
   animation: moveInLeft 0.5s ease-out;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  @media only screen and (max-width: 112.5em) {
+    font-size: 3.7rem;
+  }
 `;
 
 const Br = styled.br``;
