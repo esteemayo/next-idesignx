@@ -26,6 +26,10 @@ const Container = styled.section`
   }
 
   margin: 7rem 0;
+
+  @media only screen and (max-width: 31.25em) {
+    margin: 3rem 1rem;
+  }
 `;
 
 const Text = styled.p`
