@@ -16,11 +16,11 @@ const Contact = () => {
 
 const Container = styled.section`
   grid-column: center-start / center-end;
-  margin: 7rem 0;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: 7rem 0;
 `;
 
 const Text = styled.p`
