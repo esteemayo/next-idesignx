@@ -60,6 +60,10 @@ const Container = styled.section`
     margin: 5rem 0;
     border-radius: 1rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    margin-top: 3rem;
+  }
 `;
 
 const Wrapper = styled.div`
