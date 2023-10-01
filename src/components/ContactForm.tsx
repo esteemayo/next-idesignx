@@ -99,6 +99,11 @@ const Container = styled.section`
     margin: 2.5rem 0;
     padding: 4rem 2rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const Heading = styled.h3`
