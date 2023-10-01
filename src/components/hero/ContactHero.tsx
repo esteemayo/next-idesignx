@@ -90,6 +90,10 @@ const Text = styled.p`
   @media only screen and (max-width: 31.25em) {
     font-size: 2.8rem;
   }
+
+  @media only screen and (max-width: 17.5em) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Br = styled.br``;
