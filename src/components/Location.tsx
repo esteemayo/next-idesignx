@@ -52,6 +52,14 @@ const Container = styled.section`
   line-height: 1.4;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+
+  @media only screen and (max-width: 56.25em) {
+    grid-row: 3 / 4;
+    grid-column: center-start / center-end;
+
+    margin: 5rem 0;
+    border-radius: 1rem;
+  }
 `;
 
 const Wrapper = styled.div`
