@@ -105,6 +105,10 @@ const Heading = styled.h3`
   font-weight: lighter;
   font-size: 2.5rem;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.35rem;
+  }
 `;
 
 const Br = styled.br``;
