@@ -91,7 +91,6 @@ const Container = styled.section`
 
     box-shadow: none;
     margin: 5rem 0;
-    border-radius: revert;
   }
 
   @media only screen and (max-width: 31.25em) {
