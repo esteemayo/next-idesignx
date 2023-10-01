@@ -15,6 +15,7 @@ const ContactHero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(6, 1fr);
