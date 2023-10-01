@@ -84,6 +84,15 @@ const Container = styled.section`
   padding: 4.5rem;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
+
+  @media only screen and (max-width: 56.25em) {
+    grid-row: 2 / 3;
+    grid-column: center-start / center-end;
+
+    box-shadow: none;
+    margin: 5rem 0;
+    border-radius: revert;
+  }
 `;
 
 const Heading = styled.h3`
