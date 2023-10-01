@@ -86,18 +86,34 @@ export const brands = [
   },
   {
     id: 2,
-    img: '/img/Stanbic-Bank-Logo.jpg',
+    img: '/img/logo-bbc.png',
   },
   {
     id: 3,
-    img: '/img/zenith.png',
+    img: '/img/Stanbic-Bank-Logo.jpg',
   },
   {
     id: 4,
-    img: '/img/union-bank.jpg',
+    img: '/img/logo-bi.png',
   },
   {
     id: 5,
+    img: '/img/zenith.png',
+  },
+  {
+    id: 6,
+    img: '/img/logo-forbes.png',
+  },
+  {
+    id: 7,
+    img: '/img/union-bank.jpg',
+  },
+  {
+    id: 8,
+    img: '/img/logo-techcrunch.png',
+  },
+  {
+    id: 9,
     img: '/img/first-bank.png',
   },
 ];
