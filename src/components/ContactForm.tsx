@@ -93,6 +93,11 @@ const Container = styled.section`
     margin: 5rem 0;
     border-radius: revert;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    /* grid-column: full-start / full-end; */
+    margin: 2.5rem 0;
+  }
 `;
 
 const Heading = styled.h3`
