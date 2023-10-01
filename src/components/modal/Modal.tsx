@@ -150,6 +150,10 @@ const Box = styled.div`
   background-color: var(--clr-white);
   padding: 3rem;
   border-radius: 0.5rem;
+
+  @media only screen and (max-width: 25em) {
+    width: 45rem;
+  }
 `;
 
 const CloseButtonContainer = styled.div`
