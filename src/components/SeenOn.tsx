@@ -70,11 +70,12 @@ const ScrollX = keyframes`
 `;
 
 const Wrapper = styled.div`
+  width: max-content;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 2rem;
-  animation: ${ScrollX} 10s linear infinite;
+  /* gap: 2rem; */
+  /* animation: ${ScrollX} 10s linear infinite; */
 
   /* display: grid;
   grid-template-columns: repeat(5, minmax(min-content, 1fr));
@@ -92,7 +93,7 @@ const LogoContainer = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  max-width: 100%;
+  max-width: 5rem;
   max-height: 5rem;
   object-fit: contain;
 `;
