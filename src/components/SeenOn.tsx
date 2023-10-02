@@ -10,7 +10,7 @@ const SeenOn = () => {
   return (
     <Container>
       <Text>As seen on</Text>
-      <Marquee speed={100} gradient pauseOnHover>
+      <Marquee speed={100} gradient>
         <Wrapper>
           {brands.map((item) => {
             const { id, img } = item;
