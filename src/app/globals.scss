@@ -146,25 +146,34 @@ body {
 }
 
 @keyframes moveInTop {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(-20rem);
   }
 
-  100% {
+  to {
     opacity: 1;
     transform: translate(0);
   }
 }
 
 @keyframes moveInBottom {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(20rem);
   }
 
-  100% {
+  to {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes scrollX {
+  from {
+    left: translateX(0);
+  }
+
+  to {
   }
 }
