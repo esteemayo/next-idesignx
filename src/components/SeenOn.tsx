@@ -74,21 +74,6 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  /* justify-content: space-around; */
-  /* animation: ${ScrollX} 10s linear infinite; */
-
-  /* display: grid;
-  grid-template-columns: repeat(5, minmax(min-content, 1fr));
-  gap: 1rem;
-  align-items: center;
-  justify-items: center;
-  animation: ${ScrollX} 10s linear infinite; */
-`;
-
-const LogoContainer = styled.div`
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.09);
-  border-radius: 0.5rem;
 `;
 
 const StyledImage = styled(Image)`
