@@ -98,6 +98,11 @@ const DesignModal = () => {
     setStep((value) => value + 1);
   }, []);
 
+  const handleClose = useCallback(() => {
+    onClose();
+    setErrors({});
+  }, [onClose]);
+
   const handleClear = useCallback(() => {
     setData(initialState);
     setFiles(null);
