@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import styled, { keyframes } from 'styled-components';
 import Marquee from 'react-fast-marquee';
+import styled from 'styled-components';
 
 import { brands } from '@/data';
 
@@ -57,16 +57,6 @@ const Text = styled.div`
     display: block;
     height: 1px;
     background-color: currentColor;
-  }
-`;
-
-const ScrollX = keyframes`
-  from {
-    left: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
   }
 `;
 
