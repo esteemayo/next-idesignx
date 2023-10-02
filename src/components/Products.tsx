@@ -17,7 +17,7 @@ const Products = () => {
         })}
       </Wrapper>
       <Box>
-        <StyledLink href='/products'>All products</StyledLink>
+        <StyledLink href='/designs'>All products</StyledLink>
       </Box>
     </Container>
   );
