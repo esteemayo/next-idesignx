@@ -89,8 +89,9 @@ const Wrapper = styled.div`
 const LogoContainer = styled.div`
   padding: 1rem 2rem;
   /* background-color: rgba(224, 192, 243, 0.3); */
+  border: 1px solid rgba(0, 0, 0, 0.09);
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0; */
 `;
 
 const StyledImage = styled(Image)`
