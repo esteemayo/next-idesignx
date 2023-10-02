@@ -94,50 +94,42 @@ export const brands = [
   },
   {
     id: 4,
-    img: '/img/aero-contractors.png',
-  },
-  {
-    id: 5,
     img: '/img/zenith.png',
   },
   {
-    id: 6,
+    id: 5,
     img: '/img/aella-credit.png',
   },
   {
-    id: 7,
+    id: 6,
     img: '/img/union.png',
   },
   {
-    id: 8,
+    id: 7,
     img: '/img/acumen-digital.png',
   },
   {
-    id: 9,
+    id: 8,
     img: '/img/first.png',
   },
   {
-    id: 10,
-    img: '/img/air-peace.png',
-  },
-  {
-    id: 11,
+    id: 9,
     img: '/img/alpha-cx.png',
   },
   {
-    id: 12,
+    id: 10,
     img: '/img/alt-school.png',
   },
   {
-    id: 13,
+    id: 12,
     img: '/img/fidelity.png',
   },
   {
-    id: 14,
+    id: 13,
     img: '/img/heritage.png',
   },
   {
-    id: 9,
+    id: 14,
     img: '/img/first.png',
   },
 ];
