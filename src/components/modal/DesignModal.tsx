@@ -240,7 +240,7 @@ const DesignModal = () => {
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       body={bodyContent}
-      onClose={onClose}
+      onClose={handleClose}
       onSubmit={handleSubmit}
       secondaryAction={step === STEPS.INFO ? undefined : handlePrev}
     />
