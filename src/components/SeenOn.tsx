@@ -9,14 +9,16 @@ const SeenOn = () => {
   return (
     <Container>
       <Text>As seen on</Text>
-      <LogoContainer>
+      <Wrapper>
         {brands.map((item) => {
           const { id, img } = item;
           return (
-            <StyledImage key={id} src={img} width={80} height={50} alt='' />
+            <LogoContainer key={id}>
+              <StyledImage src={img} width={80} height={50} alt='' />
+            </LogoContainer>
           );
         })}
-      </LogoContainer>
+      </Wrapper>
     </Container>
   );
 };
@@ -67,18 +69,24 @@ const ScrollX = keyframes`
   }
 `;
 
-const LogoContainer = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
   animation: ${ScrollX} 10s linear infinite;
-  background-color: #cac7c7;
+
   /* display: grid;
   grid-template-columns: repeat(5, minmax(min-content, 1fr));
   gap: 1rem;
   align-items: center;
   justify-items: center;
   animation: ${ScrollX} 10s linear infinite; */
+`;
+
+const LogoContainer = styled.div`
+  padding: 1rem 2rem;
+  background-color: rgba(224, 192, 243, 0.3);
+  border-radius: 0.5rem;
 `;
 
 const StyledImage = styled(Image)`
