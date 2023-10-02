@@ -98,7 +98,7 @@ export const brands = [
   },
   {
     id: 5,
-    img: '/img/aella-credit.png',
+    img: '/img/alt-school.png',
   },
   {
     id: 6,
@@ -118,7 +118,7 @@ export const brands = [
   // },
   // {
   //   id: 10,
-  //   img: '/img/alt-school.png',
+  //   img: '/img/aella-credit.png',
   // },
   // {
   //   id: 12,
