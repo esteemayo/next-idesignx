@@ -112,26 +112,26 @@ export const brands = [
     id: 8,
     img: '/img/first.png',
   },
-  {
-    id: 9,
-    img: '/img/alpha-cx.png',
-  },
-  {
-    id: 10,
-    img: '/img/alt-school.png',
-  },
-  {
-    id: 12,
-    img: '/img/fidelity.png',
-  },
-  {
-    id: 13,
-    img: '/img/heritage.png',
-  },
-  {
-    id: 14,
-    img: '/img/first.png',
-  },
+  // {
+  //   id: 9,
+  //   img: '/img/alpha-cx.png',
+  // },
+  // {
+  //   id: 10,
+  //   img: '/img/alt-school.png',
+  // },
+  // {
+  //   id: 12,
+  //   img: '/img/fidelity.png',
+  // },
+  // {
+  //   id: 13,
+  //   img: '/img/heritage.png',
+  // },
+  // {
+  //   id: 14,
+  //   img: '/img/first.png',
+  // },
 ];
 
 export const productImages = [
