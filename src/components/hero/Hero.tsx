@@ -32,6 +32,10 @@ const Header = styled.header`
   background-position: center;
   background-attachment: fixed;
 
+  @media only screen and (max-width: 25em) {
+    background-attachment: scroll;
+  }
+
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(4, 1fr);
