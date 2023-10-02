@@ -74,7 +74,8 @@ const Wrapper = styled.div`
   overflow-x: hidden;
   display: flex;
   align-items: center;
-  /* gap: 2rem; */
+  justify-content: space-around;
+  /* gap: 0.5rem; */
   /* animation: ${ScrollX} 10s linear infinite; */
 
   /* display: grid;
@@ -87,7 +88,7 @@ const Wrapper = styled.div`
 
 const LogoContainer = styled.div`
   padding: 1rem 2rem;
-  background-color: rgba(224, 192, 243, 0.3);
+  /* background-color: rgba(224, 192, 243, 0.3); */
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
 `;
