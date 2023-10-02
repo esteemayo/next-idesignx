@@ -61,9 +61,10 @@ const Text = styled.div`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  column-gap: 3rem;
+  overflow-x: hidden;
 `;
 
 const StyledImage = styled(Image)`
