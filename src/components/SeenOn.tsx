@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import styled, { keyframes } from 'styled-components';
+import Marquee from 'react-fast-marquee';
 
 import { brands } from '@/data';
 
@@ -9,16 +10,18 @@ const SeenOn = () => {
   return (
     <Container>
       <Text>As seen on</Text>
-      <Wrapper>
-        {brands.map((item) => {
-          const { id, img } = item;
-          return (
-            <LogoContainer key={id}>
-              <StyledImage src={img} width={80} height={50} alt='' />
-            </LogoContainer>
-          );
-        })}
-      </Wrapper>
+      <Marquee>
+        <Wrapper>
+          {brands.map((item) => {
+            const { id, img } = item;
+            return (
+              <LogoContainer key={id}>
+                <StyledImage src={img} width={80} height={50} alt='' />
+              </LogoContainer>
+            );
+          })}
+        </Wrapper>
+      </Marquee>
     </Container>
   );
 };
@@ -72,8 +75,9 @@ const ScrollX = keyframes`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  animation: ${ScrollX} 10s linear infinite;
+  gap: 2rem;
+  /* justify-content: space-around; */
+  /* animation: ${ScrollX} 10s linear infinite; */
 
   /* display: grid;
   grid-template-columns: repeat(5, minmax(min-content, 1fr));
