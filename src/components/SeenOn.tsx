@@ -15,9 +15,7 @@ const SeenOn = () => {
           {brands.map((item) => {
             const { id, img } = item;
             return (
-              <LogoContainer key={id}>
-                <StyledImage src={img} width={80} height={50} alt='' />
-              </LogoContainer>
+              <StyledImage key={id} src={img} width={80} height={50} alt='' />
             );
           })}
         </Wrapper>
