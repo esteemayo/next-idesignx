@@ -86,15 +86,15 @@ export const brands = [
   },
   {
     id: 2,
-    img: '/img/logo-bbc.png',
+    img: '/img/africa-fintech-foundry.png',
   },
   {
     id: 3,
-    img: '/img/Stanbic-Bank-Logo.jpg',
+    img: '/img/stanbic.png',
   },
   {
     id: 4,
-    img: '/img/logo-bi.png',
+    img: '/img/aero-contractors.png',
   },
   {
     id: 5,
@@ -102,19 +102,43 @@ export const brands = [
   },
   {
     id: 6,
-    img: '/img/logo-forbes.png',
+    img: '/img/aella-credit.png',
   },
   {
     id: 7,
-    img: '/img/union-bank.jpg',
+    img: '/img/union.png',
   },
   {
     id: 8,
-    img: '/img/logo-techcrunch.png',
+    img: '/img/acumen-digital.png',
   },
   {
     id: 9,
-    img: '/img/first-bank.png',
+    img: '/img/first.png',
+  },
+  {
+    id: 10,
+    img: '/img/air-peace.png',
+  },
+  {
+    id: 11,
+    img: '/img/alpha-cx.png',
+  },
+  {
+    id: 12,
+    img: '/img/alt-school.png',
+  },
+  {
+    id: 13,
+    img: '/img/fidelity.png',
+  },
+  {
+    id: 14,
+    img: '/img/heritage.png',
+  },
+  {
+    id: 9,
+    img: '/img/first.png',
   },
 ];
 
