@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import Icon from './Icon';
+// import Icon from './Icon';
 import { socialIcons } from '@/data';
 
 const Info = () => {
@@ -21,10 +21,10 @@ const Info = () => {
       </EmailWrapper>
       <SocialWrapper>
         {socialIcons.map((item) => {
-          const { id, url, icon } = item;
+          const { id, url, icon: Icon } = item;
           return (
             <StyledLink key={id} href={url}>
-              <Icon icon={icon} />
+              <Icon />
             </StyledLink>
           );
         })}
