@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-// import Icon from './Icon';
 import { socialIcons } from '@/data';
 
 const Info = () => {
