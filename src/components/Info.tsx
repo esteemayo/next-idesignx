@@ -112,7 +112,6 @@ const SocialWrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)<IMode>`
-  display: inline-block;
   text-decoration: none;
   color: currentColor;
   outline-color: var(--clr-purple-light-3);
