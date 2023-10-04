@@ -8,7 +8,7 @@ export const darkTheme = {
   textLight: 'var(--clr-white)',
   textNav: 'var(--clr-white)',
   textActive: '#b0b8C4',
-  textNavHov: '#1f262e',
+  textNavHov: '#e3e5e7',
 };
 
 export const lightTheme = {
