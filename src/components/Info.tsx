@@ -45,7 +45,6 @@ const Info = () => {
 };
 
 const Container = styled.div<IMode>`
-  height: 7rem;
   display: grid;
   grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
   gap: 6rem;
