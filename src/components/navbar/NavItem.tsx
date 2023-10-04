@@ -27,7 +27,8 @@ const NavItem: React.FC<NavItemProps> = ({ url, label, path }) => {
 
 const Container = styled.li<IContainer>`
   color: ${({ active }) => setActiveColor(active)};
-  color: ${({ active, theme }) => (active === 'true' ? theme.textActive : theme.textNav)};
+  color: ${({ active, theme }) =>
+    active === 'true' ? theme.textActive : theme.textNav};
 
   a {
     &:link,
@@ -42,7 +43,7 @@ const Container = styled.li<IContainer>`
 
     &:hover,
     &:active {
-      color: var(--clr-purple-light-2);
+      color: ${({ theme }) => theme.textNavHov};
     }
   }
 `;
