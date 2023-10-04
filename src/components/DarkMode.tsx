@@ -7,9 +7,11 @@ const DarkMode = () => {
 };
 
 const Container = styled.div`
-  width: 50rem;
+  width: 20rem;
   height: fit-content;
-  position: fixed;
+  position: absolute;
+  right: 3rem;
+  bottom: 10rem;
 `;
 
 export default DarkMode;
