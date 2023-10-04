@@ -13,7 +13,9 @@ const DarkMode = () => {
 
   return (
     <Container>
-      <Wrapper>DarkMode</Wrapper>
+      <Wrapper>
+        <LightModeOutlinedIcon />
+      </Wrapper>
     </Container>
   );
 };
