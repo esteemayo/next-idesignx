@@ -64,6 +64,10 @@ const Button = styled.button`
   svg {
     font-size: 2.2rem;
     fill: currentColor;
+
+    &:hover {
+      font-size: 2rem;
+    }
   }
 `;
 
