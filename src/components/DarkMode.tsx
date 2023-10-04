@@ -1,6 +1,10 @@
 'use client';
 
 import styled from 'styled-components';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
+import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 
 const DarkMode = () => {
   return <Container>DarkMode</Container>;
