@@ -14,13 +14,15 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper>
-        <LightModeOutlinedIcon />
-      </Wrapper>
-      <Wrapper>
-        <DesktopWindowsOutlinedIcon />
-      </Wrapper>
-      <Wrapper>
-        <DarkModeOutlinedIcon />
+        <Box>
+          <LightModeOutlinedIcon />
+        </Box>
+        <Box>
+          <DesktopWindowsOutlinedIcon />
+        </Box>
+        <Box>
+          <DarkModeOutlinedIcon />
+        </Box>
       </Wrapper>
     </Container>
   );
