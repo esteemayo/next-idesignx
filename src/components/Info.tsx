@@ -120,6 +120,7 @@ const StyledLink = styled(Link)<IMode>`
   height: 3rem;
   background-color: transparent;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
