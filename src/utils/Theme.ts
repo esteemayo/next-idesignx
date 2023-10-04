@@ -4,7 +4,7 @@ export const darkTheme = {
   bgInput: '#141a1f',
   text: 'var(--clr-white)',
   textSoft: '#b0b8C4',
-  textLight: '#b0b8C4',
+  textLight: 'var(--clr-white)',
 };
 
 export const lightTheme = {

@@ -50,7 +50,7 @@ const Heading = styled.h4`
   font-weight: 400;
   font-size: 1.9rem;
   text-transform: capitalize;
-  color: var(--clr-gray-dark-3);
+  color: ${({ theme }) => theme.textLight};
 `;
 
 const Text = styled.p`
