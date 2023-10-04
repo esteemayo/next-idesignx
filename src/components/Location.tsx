@@ -45,8 +45,8 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: space-around;
 
-  background-color: ${({theme}) => theme.bgLoc};
-  color: inherit;
+  background-color: ${({ theme }) => theme.bgLoc};
+  color: ${({ theme }) => theme.textSoft};
   margin: 15rem 0;
   padding: 5rem;
   line-height: 1.4;
