@@ -2,14 +2,26 @@
 
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { useMemo } from 'react';
 
 import { socialIcons } from '@/data';
+import { useDarkMode } from '@/hooks/useDarkMode';
+
+interface IContainer {
+  mode: string;
+}
 
 const Info = () => {
+  const mode = useDarkMode((state) => state.mode);
+
+  const activeMode = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   return (
-    <Container>
+    <Container mode={activeMode}>
       <PhoneWrapper>
         <FontAwesomeIcon icon={faPhone} />
         <PhoneNumber>+2348136119251</PhoneNumber>
@@ -32,7 +44,7 @@ const Info = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.div<IContainer>`
   display: grid;
   grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
   gap: 6rem;
@@ -43,13 +55,18 @@ const Container = styled.div`
     gap: 3rem;
   }
 
-  background-image: linear-gradient(
+  background-color: ${({ mode }) => mode === 'true' && '#101418'};
+  background-image: ${({ mode }) =>
+    mode === 'false' &&
+    css`
+  linear-gradient(
     to right bottom,
     var(--clr-purple-dark-1),
     var(--clr-purple-light-1),
     var(--clr-purple-light-2),
     var(--clr-purple-light-3)
-  );
+  )
+  `};
   font-size: 1.4rem;
   padding: 1.5rem;
   color: var(--clr-white);
