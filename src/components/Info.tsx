@@ -45,6 +45,7 @@ const Info = () => {
 };
 
 const Container = styled.div<IMode>`
+  height: 7rem;
   display: grid;
   grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
   gap: 6rem;
@@ -107,7 +108,7 @@ const SocialWrapper = styled.div`
   margin-right: 0.5rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 `;
 
 const StyledLink = styled(Link)<IMode>`
@@ -115,14 +116,21 @@ const StyledLink = styled(Link)<IMode>`
   text-decoration: none;
   color: currentColor;
   outline-color: var(--clr-purple-light-3);
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover,
   &:active {
     display: ${({ mode }) => (mode === 'true' ? 'flex' : undefined)};
     align-items: ${({ mode }) => (mode === 'true' ? 'center' : undefined)};
     justify-content: ${({ mode }) => (mode === 'true' ? 'center' : undefined)};
-    width: ${({ mode }) => (mode === 'true' ? '4rem' : undefined)};
-    height: ${({ mode }) => (mode === 'true' ? '4rem' : undefined)};
+    width: 3rem;
+    height: 3rem;
     background-color: ${({ mode }) =>
       mode === 'true' ? '#1c2127' : undefined};
     color: currentColor;
