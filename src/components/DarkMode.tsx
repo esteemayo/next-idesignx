@@ -52,6 +52,10 @@ const Box = styled.div`
   background-color: var(--clr-purple-light-2);
   color: hsl(277, 94%, 87%);
   border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default DarkMode;
