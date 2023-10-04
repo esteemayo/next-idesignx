@@ -52,6 +52,7 @@ const Box = styled.div`
   background-color: var(--clr-purple-light-2);
   color: hsl(277, 94%, 87%);
   border-radius: 50%;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
