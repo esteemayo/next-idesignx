@@ -2,15 +2,23 @@
 
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
+import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import { brands } from '@/data';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const SeenOn = () => {
+  const mode = useDarkMode((state) => state.mode);
+
+  const gradientEffect = useMemo(() => {
+    return mode ? false : true;
+  }, [mode]);
+
   return (
     <Container>
       <Text>As seen on</Text>
-      <Marquee speed={100} gradient>
+      <Marquee speed={100} gradient={gradientEffect}>
         <Wrapper>
           {brands.map((item) => {
             const { id, img } = item;
