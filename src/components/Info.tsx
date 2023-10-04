@@ -90,7 +90,7 @@ const EmailWrapper = styled.div`
   grid-column: 2 / 3;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
   svg {
     font-size: 1.3rem;
