@@ -9,6 +9,9 @@ const DarkMode = () => {
 const Container = styled.div`
   width: 20rem;
   height: fit-content;
+  padding: 2.5rem;
+  background-color: hsl(277, 94%, 87%);
+  color: var(--clr-white);
   position: absolute;
   right: 3rem;
   bottom: 10rem;
