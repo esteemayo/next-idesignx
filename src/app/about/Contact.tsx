@@ -42,6 +42,7 @@ const Container = styled.section`
 
 const Text = styled.p`
   font-size: 3.2rem;
+  color: ${({ theme }) => theme.textSoft};
   line-height: 1;
 
   @media only screen and (max-width: 62.5em) {
