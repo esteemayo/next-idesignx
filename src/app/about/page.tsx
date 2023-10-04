@@ -37,6 +37,8 @@ const About = () => {
 };
 
 const Container = styled.main`
+  background-color: ${({ theme }) => theme.bg};
+
   display: grid;
   grid-template-rows: 60vh 40vw min-content 20vw min-content;
   grid-template-columns:
