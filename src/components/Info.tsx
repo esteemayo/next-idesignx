@@ -9,7 +9,7 @@ import { useMemo } from 'react';
 import { socialIcons } from '@/data';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-interface IContainer {
+interface IMode {
   mode: string;
 }
 
@@ -44,7 +44,7 @@ const Info = () => {
   );
 };
 
-const Container = styled.div<IContainer>`
+const Container = styled.div<IMode>`
   display: grid;
   grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
   gap: 6rem;
