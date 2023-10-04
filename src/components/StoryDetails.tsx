@@ -73,6 +73,7 @@ const Heading = styled.h2`
 `;
 
 const Text = styled.p`
+  color: ${({ theme }) => theme.textSoft};
   letter-spacing: 2px;
 
   @media only screen and (max-width: 37.5em) {
