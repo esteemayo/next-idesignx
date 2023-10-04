@@ -10,6 +10,7 @@ import Sidebar from './sidebar/Sidebar';
 
 import Info from './Info';
 import ClientOnly from './ClientOnly';
+import DarkMode from './DarkMode';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -26,6 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
         <Footer />
         <ScrollButton />
+        <DarkMode />
       </Container>
     </ClientOnly>
   );
