@@ -47,6 +47,7 @@ const Wrapper = styled.div`
 `;
 
 const Button = styled.button`
+  all: unset;
   width: 3rem;
   height: 3rem;
   background-color: var(--clr-purple-light-2);
