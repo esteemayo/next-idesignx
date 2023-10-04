@@ -55,6 +55,7 @@ const Heading = styled.h4`
 
 const Text = styled.p`
   font-size: 1.7rem;
+  color: ${({ theme }) => theme.textSoft};
   line-height: 1.4;
 `;
 
