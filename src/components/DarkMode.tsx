@@ -11,7 +11,11 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 const DarkMode = () => {
   const { dark, light, mode } = useDarkMode();
 
-  return <Container>DarkMode</Container>;
+  return (
+    <Container>
+      <Wrapper>DarkMode</Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.div`
