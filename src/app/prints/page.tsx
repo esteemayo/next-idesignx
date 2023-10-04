@@ -26,6 +26,8 @@ const Prints = () => {
 };
 
 const Container = styled.main`
+  background-color: ${({ theme }) => theme.bg};
+
   display: grid;
   grid-template-rows: 70vh repeat(2, min-content);
   grid-template-columns:
