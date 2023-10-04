@@ -55,6 +55,8 @@ const Container = styled.div<IContainer>`
     gap: 3rem;
   }
 
+  font-size: 1.4rem;
+  padding: 1.5rem;
   background-color: ${({ mode }) => mode === 'true' && '#101418'};
   background-image: ${({ mode }) =>
     mode === 'false' &&
@@ -67,8 +69,6 @@ const Container = styled.div<IContainer>`
     var(--clr-purple-light-3)
   )
   `};
-  font-size: 1.4rem;
-  padding: 1.5rem;
   color: var(--clr-white);
 `;
 
