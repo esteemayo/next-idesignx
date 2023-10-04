@@ -53,7 +53,7 @@ const Container = styled.nav<IContainer>`
   gap: 5rem;
   align-items: center;
 
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   padding: 1.5rem;
   position: relative;
   z-index: 3000;
