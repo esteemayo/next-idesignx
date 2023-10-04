@@ -19,7 +19,7 @@ const MenuLinks: React.FC<MenuLinksProps> = ({ links, mode }) => {
   return (
     <Container>
       {links.map((link) => {
-        return <MenuLink key={link.id} {...link} activeMode={mode} />;
+        return <MenuLink key={link.id} {...link} mode={mode} />;
       })}
     </Container>
   );
