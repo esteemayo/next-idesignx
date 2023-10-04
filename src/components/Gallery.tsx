@@ -41,7 +41,7 @@ const Heading = styled.h2`
   text-align: center;
   font-weight: 400;
   font-size: 3rem;
-  color: var(--clr-purple-light-2);
+  color: ${({ theme }) => theme.text};
   margin-bottom: 8rem;
 `;
 
