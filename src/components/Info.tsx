@@ -118,6 +118,7 @@ const StyledLink = styled(Link)<IMode>`
   height: 3rem;
   background-color: transparent;
   border-radius: 50%;
+  transition: all 0.2s;
 
   display: flex;
   align-items: center;
