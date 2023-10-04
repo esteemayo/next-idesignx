@@ -51,6 +51,7 @@ const Box = styled.div`
   height: 3rem;
   background-color: var(--clr-purple-light-2);
   color: hsl(277, 94%, 87%);
+  border-radius: 50%;
 `;
 
 export default DarkMode;
