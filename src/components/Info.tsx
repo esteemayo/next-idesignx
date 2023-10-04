@@ -127,7 +127,7 @@ const StyledLink = styled(Link)<IMode>`
   &:hover,
   &:active {
     background-color: ${({ mode }) =>
-      mode === 'true' ? '#1c2127' : '#e5bffd'};
+      mode === 'true' ? '#2b3138' : '#e5bffd'};
     color: currentColor;
   }
 
