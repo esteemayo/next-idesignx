@@ -4,7 +4,7 @@ export const darkTheme = {
   text: 'var(--clr-white)',
   textSoft: '#b0b8C4'
 };
-// #B0B8C4
+
 export const lightTheme = {
   bg: 'var(--clr-white)',
   bgLighter: '#f9f9f9',
