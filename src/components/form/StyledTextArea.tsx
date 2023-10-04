@@ -9,7 +9,7 @@ export const StyledTextArea = styled.textarea`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 2rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgInput};
   color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
   caret-color: var(--clr-purple-light-3);
