@@ -80,7 +80,7 @@ const Container = styled.section`
   gap: 1rem;
   align-content: start;
 
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.bgLighter};
   margin: 8rem;
   transform: translateY(-28rem);
   padding: 3rem;
