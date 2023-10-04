@@ -29,7 +29,7 @@ const DarkMode = () => {
 };
 
 const Container = styled.div`
-  width: 20rem;
+  width: 15rem;
   height: fit-content;
   padding: 2.5rem;
   background-color: hsl(277, 94%, 87%);
@@ -40,7 +40,11 @@ const Container = styled.div`
   bottom: 10rem;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 const Box = styled.div``;
 
