@@ -119,7 +119,7 @@ const Heading = styled.h2`
 `;
 
 const Text = styled.p`
-  color: var(--clr-purple-light-1);
+  color:  ${({ theme }) => theme.text};
 `;
 
 export default Contact;
