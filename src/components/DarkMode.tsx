@@ -57,6 +57,11 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  svg {
+    font-size: 2.2rem;
+    fill: currentColor;
+  }
 `;
 
 export default DarkMode;
