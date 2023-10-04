@@ -6,7 +6,11 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
 import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 
+import { useDarkMode } from '@/hooks/useDarkMode';
+
 const DarkMode = () => {
+  const { dark, light, mode } = useDarkMode();
+
   return <Container>DarkMode</Container>;
 };
 
@@ -21,5 +25,7 @@ const Container = styled.div`
   right: 3rem;
   bottom: 10rem;
 `;
+
+const Wrapper = styled.div``;
 
 export default DarkMode;
