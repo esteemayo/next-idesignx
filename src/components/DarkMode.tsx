@@ -50,6 +50,7 @@ const Box = styled.div`
   width: 3rem;
   height: 3rem;
   background-color: var(--clr-purple-light-2);
+  color: hsl(277, 94%, 87%);
 `;
 
 export default DarkMode;
