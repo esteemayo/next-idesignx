@@ -27,6 +27,8 @@ const Home = () => {
 };
 
 const Container = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+
   display: grid;
   grid-template-rows: 80vh repeat(4, min-content);
   grid-template-columns:
