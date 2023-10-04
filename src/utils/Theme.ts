@@ -1,7 +1,7 @@
 export const darkTheme = {
   bg: '#141a1f',
   bgLighter: '#101418',
-  bgInput: '#101418',
+  bgInput: '#141a1f',
   text: 'var(--clr-white)',
   textSoft: '#b0b8C4',
 };
