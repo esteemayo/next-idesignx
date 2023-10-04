@@ -27,7 +27,7 @@ const Container = styled.section`
 
   background-color: transparent;
   margin: calc(16rem - 8rem) 0;
-  color: var(--clr-gray-dark);
+  color: ${({ theme }) => theme.textSoft};
   padding: 1rem;
 
   @media only screen and (max-width: 50em) {
