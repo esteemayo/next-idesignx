@@ -14,15 +14,15 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper>
-        <Box>
+        <Button>
           <LightModeOutlinedIcon />
-        </Box>
-        <Box>
+        </Button>
+        <Button>
           <DesktopWindowsOutlinedIcon />
-        </Box>
-        <Box>
+        </Button>
+        <Button>
           <DarkModeOutlinedIcon />
-        </Box>
+        </Button>
       </Wrapper>
     </Container>
   );
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Box = styled.div`
+const Button = styled.button`
   width: 3rem;
   height: 3rem;
   background-color: var(--clr-purple-light-2);
