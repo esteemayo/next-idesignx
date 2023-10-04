@@ -34,6 +34,7 @@ const Container = styled.footer`
     var(--clr-purple-light-3)
   );
   color: var(--clr-white);
+  position: relative;
 
   @media only screen and (max-width: 37.5em) {
     padding: 4rem;
