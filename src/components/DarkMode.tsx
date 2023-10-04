@@ -40,4 +40,6 @@ const Container = styled.div`
 
 const Wrapper = styled.div``;
 
+const Box = styled.div``;
+
 export default DarkMode;
