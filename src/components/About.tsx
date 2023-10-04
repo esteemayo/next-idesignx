@@ -25,7 +25,7 @@ const Container = styled.section`
   flex-direction: column;
   align-items: flex-start;
 
-  background-color: var(--clr-white);
+  background-color: transparent;
   margin: calc(16rem - 8rem) 0;
   color: var(--clr-gray-dark);
   padding: 1rem;
