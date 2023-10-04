@@ -47,12 +47,14 @@ const Wrapper = styled.div`
 `;
 
 const Button = styled.button`
-  all: unset;
+  display: inline-block;
+  border: none;
   width: 3rem;
   height: 3rem;
   background-color: var(--clr-purple-light-2);
   color: hsl(277, 94%, 87%);
   border-radius: 50%;
+  outline-color: var(--clr-purple-light-3);
   cursor: pointer;
 
   display: flex;
