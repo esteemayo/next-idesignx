@@ -46,6 +46,10 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Box = styled.div``;
+const Box = styled.div`
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--clr-purple-light-2);
+`;
 
 export default DarkMode;
