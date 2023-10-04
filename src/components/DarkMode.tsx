@@ -19,6 +19,9 @@ const DarkMode = () => {
       <Wrapper>
         <DesktopWindowsOutlinedIcon />
       </Wrapper>
+      <Wrapper>
+        <DarkModeOutlinedIcon />
+      </Wrapper>
     </Container>
   );
 };
