@@ -9,18 +9,18 @@ import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 const DarkMode = () => {
-  const { dark, light, mode } = useDarkMode();
+  const { dark, light } = useDarkMode();
 
   return (
     <Container>
       <Wrapper>
-        <Button>
+        <Button onClick={() => light()}>
           <LightModeOutlinedIcon />
         </Button>
         <Button>
           <DesktopWindowsOutlinedIcon />
         </Button>
-        <Button>
+        <Button onClick={() => dark()}>
           <DarkModeOutlinedIcon />
         </Button>
       </Wrapper>
