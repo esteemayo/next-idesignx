@@ -17,5 +17,5 @@ export const lightTheme = {
   text: 'var(--clr-purple-light-1)',
   textSoft: 'inherit',
   textLight: 'var(--clr-gray-dark-3)',
-  navText: 'var(--clr-purple-light-1)',
+  navText: 'var(--clr-purple-light-3)',
 };
