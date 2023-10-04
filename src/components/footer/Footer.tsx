@@ -7,6 +7,7 @@ import CopyRight from './CopyRight';
 import MenuLinks from './MenuLinks';
 
 import { menuItems } from '@/data';
+import DarkMode from '../DarkMode';
 
 const Footer = () => {
   const copyRightLabel = useMemo(() => {
@@ -18,6 +19,7 @@ const Footer = () => {
     <Container>
       <MenuLinks links={menuItems} />
       <CopyRight value={copyRightLabel} />
+      <DarkMode />
     </Container>
   );
 };
