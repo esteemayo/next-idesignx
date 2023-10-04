@@ -118,6 +118,18 @@ const StyledLink = styled(Link)<IMode>`
 
   &:hover,
   &:active {
+    ${(mode) =>
+      mode === 'true'
+        ? css`
+            width: 3rem;
+            height: 3rem;
+            background-color: #141a1f;
+          `
+        : undefined};
+    width: ${({ mode }) => (mode === 'true' ? '3rem' : undefined)};
+    height: ${({ mode }) => (mode === 'true' ? '3rem' : undefined)};
+    background-color: ${({ mode }) =>
+      mode === 'true' ? '#141a1f' : undefined};
     color: currentColor;
   }
 
