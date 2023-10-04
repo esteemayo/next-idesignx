@@ -7,7 +7,7 @@ export const StyledSelect = styled.select`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgInput};
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
   border-radius: 2px;
