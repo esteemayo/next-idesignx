@@ -121,11 +121,12 @@ const StyledLink = styled(Link)<IMode>`
     display: ${({ mode }) => (mode === 'true' ? 'flex' : undefined)};
     align-items: ${({ mode }) => (mode === 'true' ? 'center' : undefined)};
     justify-content: ${({ mode }) => (mode === 'true' ? 'center' : undefined)};
-    width: ${({ mode }) => (mode === 'true' ? '3rem' : undefined)};
-    height: ${({ mode }) => (mode === 'true' ? '3rem' : undefined)};
+    width: ${({ mode }) => (mode === 'true' ? '4rem' : undefined)};
+    height: ${({ mode }) => (mode === 'true' ? '4rem' : undefined)};
     background-color: ${({ mode }) =>
-      mode === 'true' ? '#141a1f' : undefined};
+      mode === 'true' ? '#1c2127' : undefined};
     color: currentColor;
+    border-radius: ${({ mode }) => (mode === 'true' ? '50%' : undefined)};
   }
 
   svg {
