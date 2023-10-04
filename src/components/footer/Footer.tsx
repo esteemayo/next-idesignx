@@ -4,10 +4,10 @@ import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import CopyRight from './CopyRight';
+import DarkMode from '../DarkMode';
 import MenuLinks from './MenuLinks';
 
 import { menuItems } from '@/data';
-import DarkMode from '../DarkMode';
 
 const Footer = () => {
   const copyRightLabel = useMemo(() => {
