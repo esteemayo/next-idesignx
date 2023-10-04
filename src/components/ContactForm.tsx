@@ -107,6 +107,7 @@ const Container = styled.section`
 const Heading = styled.h3`
   font-weight: lighter;
   font-size: 2.5rem;
+  color: ${({ theme }) => theme.textSoft};
   margin-bottom: 2rem;
 
   @media only screen and (max-width: 56.25em) {
