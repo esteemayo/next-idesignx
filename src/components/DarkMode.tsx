@@ -1,10 +1,10 @@
 'use client';
 
 import styled from 'styled-components';
-import { useState } from 'react';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import { useEffect, useState } from 'react';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
@@ -13,6 +13,10 @@ const DarkMode = () => {
   const { dark, light } = useDarkMode();
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
+  useEffect(() => {
+    setScreenSize(window.innerWidth);
+  }, []);
+
   return (
     <Container>
       <Wrapper>
@@ -20,7 +24,11 @@ const DarkMode = () => {
           <LightModeOutlinedIcon />
         </Button>
         <Button>
-          <DesktopWindowsOutlinedIcon />
+          {screenSize <= 768 ? (
+            <SmartphoneOutlinedIcon />
+          ) : (
+            <DesktopWindowsOutlinedIcon />
+          )}
         </Button>
         <Button onClick={() => dark()}>
           <DarkModeOutlinedIcon />
