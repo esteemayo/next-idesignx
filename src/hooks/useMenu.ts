@@ -9,7 +9,7 @@ interface MenuStore {
   onClose: () => void;
 }
 
-export const useMenu = create<MenuStore>(
+export const useMenu = create<MenuStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openMenu'),
