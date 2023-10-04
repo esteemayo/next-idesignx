@@ -22,7 +22,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const { isOpen, onOpen } = useMenu();
-  const designModal = useDesignModal();
+  const designModal = useDesignModal((state) => ({ ...state }));
 
   const activeMenu = useMemo(() => {
     return isOpen.toString();
