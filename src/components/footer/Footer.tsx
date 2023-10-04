@@ -4,7 +4,6 @@ import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import CopyRight from './CopyRight';
-import DarkMode from '../DarkMode';
 import MenuLinks from './MenuLinks';
 
 import { menuItems } from '@/data';
@@ -19,7 +18,6 @@ const Footer = () => {
     <Container>
       <MenuLinks links={menuItems} />
       <CopyRight value={copyRightLabel} />
-      <DarkMode />
     </Container>
   );
 };
@@ -34,7 +32,6 @@ const Container = styled.footer`
     var(--clr-purple-light-3)
   );
   color: var(--clr-white);
-  position: relative;
 
   @media only screen and (max-width: 37.5em) {
     padding: 4rem;
