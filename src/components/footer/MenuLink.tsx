@@ -3,24 +3,20 @@
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
-import { useDarkMode } from '@/hooks/useDarkMode';
-
 interface MenuLinkProps {
   url: string;
   label: string;
-  activeMode: string;
+  mode: string;
 }
 
 interface ILink {
   mode: string;
 }
 
-const MenuLink: React.FC<MenuLinkProps> = ({ url, label, activeMode }) => {
-  const mode = useDarkMode((state) => state.mode);
-
+const MenuLink: React.FC<MenuLinkProps> = ({ url, label, mode }) => {
   return (
     <Container>
-      <StyledLink href={url} mode={activeMode}>
+      <StyledLink href={url} mode={mode}>
         {label}
       </StyledLink>
     </Container>
