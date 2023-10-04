@@ -12,13 +12,14 @@ type MenuLinksType = {
 
 interface MenuLinksProps {
   links: Array<MenuLinksType>;
+  mode: string;
 }
 
-const MenuLinks: React.FC<MenuLinksProps> = ({ links }) => {
+const MenuLinks: React.FC<MenuLinksProps> = ({ links, mode }) => {
   return (
     <Container>
       {links.map((link) => {
-        return <MenuLink key={link.id} {...link} />;
+        return <MenuLink key={link.id} {...link} activeMode={mode} />;
       })}
     </Container>
   );

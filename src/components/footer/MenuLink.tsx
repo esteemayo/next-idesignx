@@ -1,17 +1,28 @@
 'use client';
 
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface MenuLinkProps {
   url: string;
   label: string;
+  activeMode: string;
 }
 
-const MenuLink: React.FC<MenuLinkProps> = ({ url, label }) => {
+interface ILink {
+  mode: string;
+}
+
+const MenuLink: React.FC<MenuLinkProps> = ({ url, label, activeMode }) => {
+  const mode = useDarkMode((state) => state.mode);
+
   return (
     <Container>
-      <StyledLink href={url}>{label}</StyledLink>
+      <StyledLink href={url} mode={activeMode}>
+        {label}
+      </StyledLink>
     </Container>
   );
 };
@@ -20,7 +31,7 @@ const Container = styled.li`
   color: currentColor;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link)<ILink>`
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -38,13 +49,18 @@ const StyledLink = styled(Link)`
 
   &:hover,
   &:active {
-    background-image: linear-gradient(
+    background-color: ${({ mode }) => mode === 'true' && '#141a1f'};
+    background-image: ${({ mode }) =>
+      mode === 'false' &&
+      css`
+    linear-gradient(
       to right bottom,
       var(--clr-purple-dark-1),
       var(--clr-purple-light-1),
       var(--clr-purple-light-2),
       var(--clr-purple-light-3)
-    );
+    )
+    `};
     transform: translateY(-3px) scale(1.1);
   }
 `;

@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <Container mode={activeMode}>
-      <MenuLinks links={menuItems} />
+      <MenuLinks links={menuItems} mode={activeMode} />
       <CopyRight value={copyRightLabel} />
     </Container>
   );
