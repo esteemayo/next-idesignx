@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useState } from 'react';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
@@ -10,6 +11,7 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 
 const DarkMode = () => {
   const { dark, light } = useDarkMode();
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   return (
     <Container>
