@@ -34,7 +34,7 @@ const Info = () => {
         {socialIcons.map((item) => {
           const { id, url, icon: Icon } = item;
           return (
-            <StyledLink key={id} href={url}>
+            <StyledLink key={id} href={url} mode={activeMode}>
               <Icon />
             </StyledLink>
           );
@@ -110,7 +110,7 @@ const SocialWrapper = styled.div`
   gap: 0.5rem;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link)<IMode>`
   display: inline-block;
   text-decoration: none;
   color: currentColor;
