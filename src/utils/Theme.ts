@@ -7,6 +7,7 @@ export const darkTheme = {
   textSoft: '#b0b8C4',
   textLight: 'var(--clr-white)',
   navText: 'var(--clr-white)',
+  textActive: '#b0b8C4',
 };
 
 export const lightTheme = {
@@ -18,4 +19,5 @@ export const lightTheme = {
   textSoft: 'inherit',
   textLight: 'var(--clr-gray-dark-3)',
   navText: 'var(--clr-purple-light-1)',
+  textActive: 'var(--clr-purple-dark-2)',
 };
