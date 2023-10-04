@@ -118,14 +118,9 @@ const StyledLink = styled(Link)<IMode>`
 
   &:hover,
   &:active {
-    ${(mode) =>
-      mode === 'true'
-        ? css`
-            width: 3rem;
-            height: 3rem;
-            background-color: #141a1f;
-          `
-        : undefined};
+    display: ${({ mode }) => (mode === 'true' ? 'flex' : undefined)};
+    align-items: ${({ mode }) => (mode === 'true' ? 'center' : undefined)};
+    justify-content: ${({ mode }) => (mode === 'true' ? 'center' : undefined)};
     width: ${({ mode }) => (mode === 'true' ? '3rem' : undefined)};
     height: ${({ mode }) => (mode === 'true' ? '3rem' : undefined)};
     background-color: ${({ mode }) =>
