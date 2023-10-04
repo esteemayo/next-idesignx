@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Nunito } from 'next/font/google';
 
 import Layout from '@/components/Layout';
+import ModeProvider from '@/providers/ModeProvider';
 
 import './globals.scss';
 
@@ -26,7 +27,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={nunito.className}>
-        <Layout>{children}</Layout>
+        <ModeProvider>
+          <Layout>{children}</Layout>
+        </ModeProvider>
       </body>
     </html>
   );
