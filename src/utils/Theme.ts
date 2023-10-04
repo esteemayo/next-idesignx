@@ -2,7 +2,7 @@ export const darkTheme = {
   bg: '#141a1f',
   bgLighter: '#101418',
   bgInput: '#141a1f',
-  bgLoc: '#6b7a90',
+  bgLoc: '#1c2127',
   text: 'var(--clr-white)',
   textSoft: '#b0b8C4',
   textLight: 'var(--clr-white)',
