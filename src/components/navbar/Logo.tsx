@@ -24,7 +24,7 @@ const Container = styled.div`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
-  outline-color: var(--clr-purple-light-3);
+  outline-color: ${({ theme }) => theme.outline};
 `;
 
 const StyledImage = styled(Image)`
