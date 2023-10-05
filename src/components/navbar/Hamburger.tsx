@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import styled from 'styled-components';
 
 interface HamburgerProps {
-  activeMenu: string;
+  activeMenu?: string;
   onToggle(): void;
 }
 
@@ -12,10 +12,7 @@ interface IProps {
   active: string;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({
-  activeMenu,
-  onToggle,
-}) => {
+const Hamburger: React.FC<HamburgerProps> = ({ activeMenu, onToggle }) => {
   const toggleHandler = useCallback(() => {
     onToggle();
   }, [onToggle]);
