@@ -7,7 +7,6 @@ import CopyRight from './CopyRight';
 import MenuLinks from './MenuLinks';
 
 import { menuItems } from '@/data';
-import { useDarkMode } from '@/hooks/useDarkMode';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IContainer {
