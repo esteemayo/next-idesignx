@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 interface HamburgerProps {
   isOpen: boolean;
-  activeMenu?: string;
   onToggle(): void;
 }
 
