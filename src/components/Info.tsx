@@ -8,17 +8,14 @@ import { useMemo } from 'react';
 
 import { socialIcons } from '@/data';
 import { useDarkMode } from '@/hooks/useDarkMode';
+import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IMode {
   mode: string;
 }
 
 const Info = () => {
-  const mode = useDarkMode((state) => state.mode);
-
-  const activeMode = useMemo(() => {
-    return mode.toString();
-  }, [mode]);
+  const { activeMode } = useActiveMode();
 
   return (
     <Container mode={activeMode}>
