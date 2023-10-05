@@ -18,16 +18,9 @@ const Hamburger: React.FC<HamburgerProps> = ({
   activeMenu,
   onToggle,
 }) => {
-  const [openMenu, setOpenMenu] = useState(isOpen);
-
   const toggleHandler = useCallback(() => {
-    setOpenMenu(false);
     onToggle();
   }, [onToggle]);
-
-  useEffect(() => {
-    setOpenMenu(isOpen);
-  }, [isOpen]);
 
   return (
     <Container active={activeMenu} onClick={toggleHandler}>
