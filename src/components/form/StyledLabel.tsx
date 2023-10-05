@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ILabel {
   error?: string | undefined;
+  mode: string;
 }
 
 export const StyledLabel = styled.label<ILabel>`

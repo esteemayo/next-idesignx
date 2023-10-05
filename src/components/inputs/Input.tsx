@@ -8,6 +8,8 @@ import { InputStyled } from '../form/InputStyled';
 import { FormGroup } from '../form/FormGroup';
 import { StyledLabel } from '../form/StyledLabel';
 
+import { useActiveMode } from '@/hooks/useActiveMode';
+
 interface InputProps {
   name: string;
   label?: string;
@@ -29,6 +31,8 @@ const Input: React.FC<InputProps> = ({
   onChange,
   error,
 }) => {
+  const { activeMode } = useActiveMode();
+
   if (style === 'true') {
     return (
       <FormGroup>
@@ -49,7 +53,7 @@ const Input: React.FC<InputProps> = ({
   return (
     <FormGroup>
       {label && (
-        <StyledLabel htmlFor={name} error={error}>
+        <StyledLabel htmlFor={name} error={error} mode={activeMode}>
           {label}
         </StyledLabel>
       )}
