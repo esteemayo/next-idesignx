@@ -30,7 +30,7 @@ const Sidebar = () => {
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <Hamburger isOpen={isOpen} onToggle={onClose} />
+        <Hamburger onToggle={onClose} />
         <Button
           nav='true'
           type='button'
