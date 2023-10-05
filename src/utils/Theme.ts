@@ -1,6 +1,6 @@
 export const darkTheme = {
   bg: 'var(--clr-bg-dark-primary)',
-  bgLighter: '#101418',
+  bgLighter: 'var(--clr-bg-dark-secondary)',
   bgInput: 'var(--clr-bg-dark-primary)',
   bgLoc: '#1c2127',
   text: 'var(--clr-white)',
