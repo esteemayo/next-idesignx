@@ -129,7 +129,7 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:first-child:hover {
-    color: var(--clr-facebook);
+    color: ${({ mode }) => mode !== 'true' && 'var(--clr-facebook)'};
   }
 
   &:nth-child(2):hover {
