@@ -67,7 +67,7 @@ const Span = styled.span<IProps>`
   }
 
   &:nth-child(2) {
-    opacity: ${({ active }) => (active === 'true' ? 0 : undefined)};
+    opacity: ${({ active }) => setProperty(active, 0, undefined)};
     visibility: ${({ active }) => (active === 'true' ? 'hidden' : undefined)};
   }
 
@@ -79,7 +79,7 @@ const Span = styled.span<IProps>`
 
 const setProperty = (
   active: string,
-  value1: string,
+  value1: string | number,
   value2: string | undefined
 ) => {
   return active === 'true' ? value1 : value2;
