@@ -10,6 +10,7 @@ export const darkTheme = {
   textActive: 'var(--clr-light-1)',
   textNavHov: 'var(--clr-light-2)',
   outline: 'var(--clr-outline-dark)',
+  caret: 'var(--clr-caret-dark)',
 };
 
 export const lightTheme = {
@@ -24,4 +25,5 @@ export const lightTheme = {
   textActive: 'var(--clr-purple-dark-2)',
   textNavHov: 'var(--clr-purple-light-2)',
   outline: 'var(--clr-outline-light)',
+  caret: 'var(--clr-caret-light)',
 };
