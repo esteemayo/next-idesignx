@@ -22,7 +22,7 @@ const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
 };
 
 const Container = styled.div<IContainer>`
-  text-align: ${({ center }) => (center === 'true' ? 'center' : 'left')};
+  text-align: ${({ center }) => setAlignment(center)};
   margin-bottom: 2rem;
 `;
 
@@ -40,5 +40,9 @@ const HeadingSecondary = styled.h2`
   line-height: 1;
   margin-top: 0.8rem;
 `;
+
+const setAlignment = (val: string | null | undefined): string => {
+  return val === 'true' ? 'center' : 'left';
+};
 
 export default Heading;
