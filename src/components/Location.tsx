@@ -3,7 +3,11 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-const Location = () => {
+interface LocationProps {
+  mode: string;
+}
+
+const Location: React.FC<LocationProps> = ({ mode }) => {
   return (
     <Container>
       <Wrapper>
@@ -99,11 +103,16 @@ const LogoBox = styled.div`
   gap: 1rem;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link)<LocationProps>`
   width: 4rem;
   height: 4rem;
   text-decoration: none;
   outline-color: ${({ theme }) => theme.outline};
+
+  &:hover {
+    background-color: ${({ mode }) =>
+      mode === 'true' ? '#2b3138' : '#e5bffd'};
+  }
 `;
 
 const Facebook = styled.span`
