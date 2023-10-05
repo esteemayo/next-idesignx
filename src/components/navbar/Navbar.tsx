@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <Hamburger isOpen={isOpen} activeMenu={activeMenu} onToggle={onOpen} />
+        <Hamburger isOpen={isOpen} onToggle={onOpen} />
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
