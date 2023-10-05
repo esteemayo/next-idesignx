@@ -108,12 +108,12 @@ const SocialWrapper = styled.div`
 `;
 
 const StyledLink = styled(Link)<IMode>`
-  text-decoration: none;
-  color: currentColor;
-  outline-color: ${({ theme }) => theme.outline};
   width: 3rem;
   height: 3rem;
+  text-decoration: none;
   background-color: transparent;
+  color: currentColor;
+  outline-color: ${({ theme }) => theme.outline};
   border-radius: 50%;
   transition: all 0.2s;
 
