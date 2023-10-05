@@ -8,6 +8,8 @@ import { FormGroup } from '../form/FormGroup';
 import { StyledTextArea } from '../form/StyledTextArea';
 import { StyledLabel } from '../form/StyledLabel';
 
+import { useActiveMode } from '@/hooks/useActiveMode';
+
 interface TextAreaProps {
   name: string;
   label: string;
@@ -27,6 +29,8 @@ const TextArea: React.FC<TextAreaProps> = ({
   onChange,
   error,
 }) => {
+  const { activeMode } = useActiveMode();
+
   if (style === 'true') {
     return (
       <FormGroup>
@@ -46,7 +50,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   return (
     <FormGroup>
       {label && (
-        <StyledLabel htmlFor={name} error={error}>
+        <StyledLabel htmlFor={name} error={error} mode={activeMode}>
           {label}
         </StyledLabel>
       )}
