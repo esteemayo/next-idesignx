@@ -10,7 +10,7 @@ export const SelectStyled = styled.select<ISelect>`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.bgInput};
   color: ${({ error }) => setColor(error)};
   border: 1px solid ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
