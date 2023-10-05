@@ -21,6 +21,6 @@ const setColor: IColor = (error: string | undefined, mode: string): string => {
   return error === 'true'
     ? 'var(--clr-red)'
     : mode === 'true'
-    ? 'var(--clr-gray-light)'
+    ? 'var(--clr-gray-light-2)'
     : 'var(--clr-gray-dark-2)';
 };
