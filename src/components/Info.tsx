@@ -7,7 +7,6 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useMemo } from 'react';
 
 import { socialIcons } from '@/data';
-import { useDarkMode } from '@/hooks/useDarkMode';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IMode {
