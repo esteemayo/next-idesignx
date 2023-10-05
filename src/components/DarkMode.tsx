@@ -10,7 +10,7 @@ import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 const DarkMode = () => {
-  const { dark, light } = useDarkMode();
+  const { mode, dark, light } = useDarkMode();
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper>
-        <Button onClick={() => light()}>
+        <Button disabled={!mode} onClick={() => light()}>
           <LightModeOutlinedIcon />
         </Button>
         <Button>
@@ -30,7 +30,7 @@ const DarkMode = () => {
             <DesktopWindowsOutlinedIcon />
           )}
         </Button>
-        <Button onClick={() => dark()}>
+        <Button disabled={mode} onClick={() => dark()}>
           <DarkModeOutlinedIcon />
         </Button>
       </Wrapper>
