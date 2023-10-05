@@ -21,8 +21,8 @@ interface IContainer {
 const Navbar = () => {
   const pathname = usePathname();
 
-  const { isOpen, onOpen } = useMenu();
   const designModal = useDesignModal();
+  const onOpen = useMenu((state) => state.onOpen);
   const { activeMenu } = useActiveMenu();
 
   return (
