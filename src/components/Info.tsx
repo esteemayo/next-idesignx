@@ -136,6 +136,9 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:nth-child(2) {
+    color: ${({ mode }) =>
+      setColor(mode, 'currentColor', 'var(--clr-twitter)')};
+
     &:hover {
       color: ${({ mode }) =>
         setColor(mode, 'var(--clr-twitter)', 'currentColor')};
