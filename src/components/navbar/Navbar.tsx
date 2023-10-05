@@ -9,6 +9,7 @@ import Hamburger from './Hamburger';
 import NavItems from './NavItems';
 import Button from '../buttons/Button';
 
+import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
@@ -23,10 +24,7 @@ const Navbar = () => {
 
   const { isOpen, onOpen } = useMenu();
   const designModal = useDesignModal();
-
-  const activeMenu = useMemo(() => {
-    return isOpen.toString();
-  }, [isOpen]);
+  const { activeMenu } = useActiveMenu();
 
   return (
     <Container active={activeMenu}>
