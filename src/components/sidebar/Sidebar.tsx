@@ -7,6 +7,7 @@ import MenuItems from './MenuItems';
 import Hamburger from '../navbar/Hamburger';
 import Button from '../buttons/Button';
 
+import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
@@ -17,17 +18,14 @@ interface IContainer {
 }
 
 const Sidebar = () => {
-  const designModal = useDesignModal();
   const { isOpen, onClose } = useMenu();
+  const designModal = useDesignModal();
+  const { activeMenu } = useActiveMenu();
 
   const handleOpen = useCallback(() => {
     designModal.onOpen();
     onClose();
   }, [designModal, onClose]);
-
-  const activeMenu = useMemo(() => {
-    return isOpen.toString();
-  }, [isOpen]);
 
   return (
     <Container active={activeMenu}>
