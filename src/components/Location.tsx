@@ -100,7 +100,7 @@ const LogoBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 1rem;
+  gap: 0.5rem;
 `;
 
 const StyledLink = styled(Link)<LocationProps>`
