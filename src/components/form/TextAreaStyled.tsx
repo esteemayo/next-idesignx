@@ -11,7 +11,7 @@ export const TextAreaStyled = styled.textarea<ITextArea>`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 2rem;
-  background-color: var(--clr-white);
+  background-color: transparent;
   color: var(--clr-gray-dark-2);
   border: 1px solid ${({ error }) => setBorderColor(error)};
   outline-color: ${({ error }) => setOutlineColor(error)};
