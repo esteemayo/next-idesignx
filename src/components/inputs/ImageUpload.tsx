@@ -108,7 +108,7 @@ const StyledImage = styled(Image)`
 `;
 
 const setBorderColor = (error: string | undefined) => {
-  return error === 'true' ? 'rgba(244, 63, 94, 1)' : 'var(--clr-gray-dark-2)';
+  return error === 'true' ? 'var(--clr-red)' : 'var(--clr-gray-dark-2)';
 };
 
 export default ImageUpload;
