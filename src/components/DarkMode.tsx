@@ -71,6 +71,10 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
 
+  &:disabled {
+    opacity: 0.75;
+  }
+
   svg {
     font-size: 2.2rem;
     fill: currentColor;
