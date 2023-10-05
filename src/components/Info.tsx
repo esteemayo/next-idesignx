@@ -142,9 +142,11 @@ const StyledLink = styled(Link)<IMode>`
     }
   }
 
-  &:last-child:hover {
-    color: ${({ mode }) =>
-      setColor(mode, 'var(--clr-instagram-2)', 'currentColor')};
+  &:last-child {
+    &:hover{
+      color: ${({ mode }) =>
+        setColor(mode, 'var(--clr-instagram-2)', 'currentColor')};
+    }
   }
 
   svg {
