@@ -16,7 +16,6 @@ interface IContainer {
 
 const Footer = () => {
   const { activeMode } = useActiveMode();
-  const mode = useDarkMode((state) => state.mode);
 
   const copyRightLabel = useMemo(() => {
     const now = new Date();
