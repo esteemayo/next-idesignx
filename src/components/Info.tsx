@@ -52,7 +52,8 @@ const Container = styled.div<IMode>`
 
   font-size: 1.4rem;
   padding: 1.5rem;
-  background-color: ${({ mode }) => mode === 'true' && '#101418'};
+  background-color: ${({ mode }) =>
+    mode === 'true' && 'var(--clr-bg-dark-secondary)'};
   background-image: ${({ mode }) =>
     mode === 'false' &&
     css`
@@ -129,8 +130,8 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:first-child {
-      color: ${({ mode }) =>
-        setColor(mode, 'currentColor', 'var(--clr-facebook)')};
+    color: ${({ mode }) =>
+      setColor(mode, 'currentColor', 'var(--clr-facebook)')};
 
     &:hover {
       color: ${({ mode }) =>
