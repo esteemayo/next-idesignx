@@ -62,25 +62,23 @@ const Span = styled.span<IProps>`
   transform-origin: left;
 
   &:first-child {
-    transform: ${({ active }) =>
-      setProperty(active, 'rotate(45deg)', undefined)};
+    transform: ${({ active }) => setProperty(active, 'rotate(45deg)')};
   }
 
   &:nth-child(2) {
-    opacity: ${({ active }) => setProperty(active, 0, undefined)};
+    opacity: ${({ active }) => setProperty(active, 0)};
     visibility: ${({ active }) => (active === 'true' ? 'hidden' : undefined)};
   }
 
   &:last-child {
-    transform: ${({ active }) =>
-      setProperty(active, 'rotate(-45deg)', undefined)};
+    transform: ${({ active }) => setProperty(active, 'rotate(-45deg)')};
   }
 `;
 
 const setProperty = (
   active: string,
   value1: string | number,
-  value2: string | undefined
+  value2: string | undefined = undefined
 ) => {
   return active === 'true' ? value1 : value2;
 };
