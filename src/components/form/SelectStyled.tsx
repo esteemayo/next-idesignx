@@ -19,6 +19,7 @@ export const SelectStyled = styled.select<ISelect>`
 
 export const StyledOption = styled.option`
   font-size: 1.4rem;
+  background-color: red;
   color: var(--clr-gray-dark-2);
   letter-spacing: 0.5rem;
 `;

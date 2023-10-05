@@ -6,6 +6,8 @@ import { FormGroup } from '../form/FormGroup';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
 import { Option, StyledSelect } from '../form/StyledSelect';
 
+import { useActiveMode } from '@/hooks/useActiveMode';
+
 type OptionTypes = {
   id: number;
   text: string;
@@ -30,6 +32,8 @@ const Select: React.FC<SelectProps> = ({
   onChange,
   error,
 }) => {
+  const { activeMode } = useActiveMode();
+
   if (style === 'true') {
     return (
       <FormGroup>
@@ -63,7 +67,9 @@ const Select: React.FC<SelectProps> = ({
         onChange={onChange}
         error={error}
       >
-        <StyledOption value=''>{label}</StyledOption>
+        <StyledOption value='' mode={activeMode}>
+          {label}
+        </StyledOption>
         {options.map((option) => {
           const { id, text } = option;
           return (
