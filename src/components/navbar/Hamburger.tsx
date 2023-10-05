@@ -76,7 +76,7 @@ const Span = styled.span<IProps>`
 `;
 
 const setProperty = (
-  active: string,
+  active: string | undefined,
   value1: string | number,
   value2: string | undefined = undefined
 ) => {
