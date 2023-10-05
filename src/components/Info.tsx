@@ -137,7 +137,7 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:last-child:hover {
-    color: var(--clr-instagram-2);
+    color: color: ${({ mode }) => mode !== 'true' && 'var(--clr-instagram-2)'};
   }
 
   svg {
