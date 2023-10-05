@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { useMemo } from 'react';
 import type { Metadata } from 'next';
 
+import { useDarkMode } from '@/hooks/useDarkMode';
 import ContactHero from '@/components/hero/ContactHero';
 
 const Location = dynamic(() => import('@/components/Location'), { ssr: false });
