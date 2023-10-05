@@ -150,7 +150,12 @@ const Instagram = styled.span`
   background-color: var(--clr-instagram);
   -webkit-mask-image: url(/svg/instagram.svg);
   mask-image: url(/svg/instagram.svg);
-  background-image: linear-gradient(to bottom left, #8134af, #dd2a7b, #feda77);
+  background-image: linear-gradient(
+    to bottom left,
+    var(--clr-instagram-1),
+    var(--clr-instagram-2),
+    var(--clr-instagram-3)
+  );
   -webkit-mask-size: cover;
   mask-size: cover;
 `;
