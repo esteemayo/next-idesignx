@@ -9,7 +9,7 @@ export const StyledLabel = styled.label<ILabel>`
   display: inline-block;
   font-weight: 500;
   font-size: 1.4rem;
-  color: ${({ error }) => setColor(error)};
+  color: ${({ error, mode }) => setColor(error, mode)};
   margin-bottom: 1rem;
 `;
 
