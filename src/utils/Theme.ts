@@ -4,10 +4,10 @@ export const darkTheme = {
   bgInput: 'var(--clr-bg-dark-primary)',
   bgLoc: 'var(--clr-bg-dark-tertiary)',
   text: 'var(--clr-white)',
-  textSoft: '#b0b8C4',
+  textSoft: 'var(--clr-light-1)',
   textLight: 'var(--clr-white)',
   textNav: 'var(--clr-white)',
-  textActive: '#b0b8C4',
+  textActive: 'var(--clr-light-1)',
   textNavHov: '#e3e5e7',
   outline: 'var(--clr-outline-dark)',
 };
