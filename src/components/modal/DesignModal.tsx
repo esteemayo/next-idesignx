@@ -128,7 +128,7 @@ const DesignModal = () => {
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.IMAGES) {
-      return 'Create';
+      return 'Submit';
     }
 
     return 'Next';
