@@ -69,6 +69,7 @@ const Container = styled.div<IMode>`
 
 const PhoneWrapper = styled.div`
   grid-column: 1 / 2;
+
   display: flex;
   align-items: center;
   gap: 1rem;
