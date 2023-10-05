@@ -1,9 +1,10 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 
 interface HamburgerProps {
+  isOpen: boolean;
   activeMenu?: string;
   onToggle(): void;
 }
@@ -12,23 +13,27 @@ interface IProps {
   active?: string;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({ activeMenu, onToggle }) => {
-  const [showMenu, setShowMenu] = useState(activeMenu);
+const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
+  const [showMenu, setShowMenu] = useState(isOpen);
 
   const toggleHandler = useCallback(() => {
-    setShowMenu('false');
+    setShowMenu(false);
     onToggle();
   }, [onToggle]);
 
+  const activeMenu = useMemo(() => {
+    return showMenu.toString();
+  }, [showMenu]);
+
   useEffect(() => {
-    setShowMenu(activeMenu);
-  }, [activeMenu]);
+    setShowMenu(isOpen);
+  }, [isOpen]);
 
   return (
-    <Container active={showMenu} onClick={toggleHandler}>
-      <Span active={showMenu}>&nbsp;</Span>
-      <Span active={showMenu}>&nbsp;</Span>
-      <Span active={showMenu}>&nbsp;</Span>
+    <Container active={activeMenu} onClick={toggleHandler}>
+      <Span active={activeMenu}>&nbsp;</Span>
+      <Span active={activeMenu}>&nbsp;</Span>
+      <Span active={activeMenu}>&nbsp;</Span>
     </Container>
   );
 };
