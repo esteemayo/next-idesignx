@@ -29,6 +29,7 @@ const Container = styled.div<IContainer>`
 const HeadingPrimary = styled.h1`
   font-weight: 400;
   font-size: 2.4rem;
+  color: ${({ theme }) => theme.textSoft};
   line-height: 1.2;
 `;
 
