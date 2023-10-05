@@ -8,22 +8,20 @@ import MenuLinks from './MenuLinks';
 
 import { menuItems } from '@/data';
 import { useDarkMode } from '@/hooks/useDarkMode';
+import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IContainer {
   mode: string;
 }
 
 const Footer = () => {
+  const { activeMode } = useActiveMode();
   const mode = useDarkMode((state) => state.mode);
 
   const copyRightLabel = useMemo(() => {
     const now = new Date();
     return now.getFullYear();
   }, []);
-
-  const activeMode = useMemo(() => {
-    return mode.toString();
-  }, [mode]);
 
   return (
     <Container mode={activeMode}>
