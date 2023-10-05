@@ -16,7 +16,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   bg: 'var(--clr-white)',
-  bgLighter: '#f9f9f9',
+  bgLighter: 'var(--clr-gray-light-1)',
   bgInput: 'var(--clr-white)',
   bgLoc: 'rgba(204, 126, 252, 0.5)',
   text: 'var(--clr-purple-light-1)',
