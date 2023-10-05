@@ -128,6 +128,10 @@ const StyledLink = styled(Link)<IMode>`
     color: currentColor;
   }
 
+  &:first-child:hover {
+    color: var(--clr-facebook);
+  }
+
   svg {
     font-size: 2rem;
     fill: currentColor;
