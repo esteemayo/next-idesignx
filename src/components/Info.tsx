@@ -133,7 +133,7 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:nth-child(2):hover {
-    color: var(--clr-twitter);
+    color: ${({ mode }) => mode !== 'true' && 'var(--clr-twitter)'};
   }
 
   &:last-child:hover {
