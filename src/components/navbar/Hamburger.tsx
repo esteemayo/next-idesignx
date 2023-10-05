@@ -25,10 +25,6 @@ const Hamburger: React.FC<HamburgerProps> = ({
     onToggle();
   }, [onToggle]);
 
-  const activeMenu = useMemo(() => {
-    return openMenu.toString();
-  }, [openMenu]);
-
   useEffect(() => {
     setOpenMenu(isOpen);
   }, [isOpen]);
