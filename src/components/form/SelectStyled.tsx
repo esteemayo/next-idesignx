@@ -4,10 +4,6 @@ interface ISelect {
   error?: string | undefined;
 }
 
-interface IOption {
-  mode: string;
-}
-
 export const SelectStyled = styled.select<ISelect>`
   width: 100%;
   display: inline-block;
@@ -21,7 +17,7 @@ export const SelectStyled = styled.select<ISelect>`
   outline-color: #979797;
 `;
 
-export const StyledOption = styled.option<IOption>`
+export const StyledOption = styled.option`
   font-size: 1.4rem;
   color: var(--clr-gray-dark-2);
   letter-spacing: 0.5rem;
