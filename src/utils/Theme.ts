@@ -2,7 +2,7 @@ export const darkTheme = {
   bg: 'var(--clr-bg-dark-primary)',
   bgLighter: 'var(--clr-bg-dark-secondary)',
   bgInput: 'var(--clr-bg-dark-primary)',
-  bgLoc: '#1c2127',
+  bgLoc: 'var(--clr-bg-dark-tertiary)',
   text: 'var(--clr-white)',
   textSoft: '#b0b8C4',
   textLight: 'var(--clr-white)',
