@@ -55,7 +55,7 @@ const Spin = keyframes`
 const Container = styled.div<IContainer>`
   width: 100%;
   height: 20rem;
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.bgUpload};
   color: #cac7c7;
   border: 1px dashed ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
