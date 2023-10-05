@@ -37,7 +37,7 @@ const Container = styled.li<IContainer>`
       text-transform: capitalize;
       font-weight: 300;
       color: currentColor;
-      outline-color: var(--clr-purple-light-3);
+      outline-color: ${({ theme }) => theme.outline};
       transition: all 0.2s;
     }
 
