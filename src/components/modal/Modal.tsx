@@ -147,7 +147,7 @@ const Wrapper = styled.div<IWrapper>`
 
 const Box = styled.div`
   width: 50rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   padding: 3rem;
   border-radius: 0.5rem;
 
