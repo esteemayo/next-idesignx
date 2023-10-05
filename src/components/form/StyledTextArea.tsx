@@ -12,7 +12,7 @@ export const StyledTextArea = styled.textarea`
   background-color: ${({ theme }) => theme.bgInput};
   color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
-  caret-color: var(--clr-purple-light-3);
+  caret-color: ${({ theme }) => theme.caret};
   transition: all 0.3s;
 
   &::placeholder {
