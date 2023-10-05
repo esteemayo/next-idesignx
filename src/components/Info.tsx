@@ -129,7 +129,7 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:first-child:hover {
-    color: ${({ mode }) => mode !== 'true' && 'var(--clr-facebook)'};
+    color: ${({ mode }) => setColorLight(mode, 'var(--clr-facebook)')};
   }
 
   &:nth-child(2):hover {
@@ -145,5 +145,9 @@ const StyledLink = styled(Link)<IMode>`
     fill: currentColor;
   }
 `;
+
+const setColorLight = (mode: string, color: string) => {
+  return mode !== 'true' && color;
+};
 
 export default Info;
