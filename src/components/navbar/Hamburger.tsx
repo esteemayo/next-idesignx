@@ -73,7 +73,7 @@ const Span = styled.span<IProps>`
 
   &:last-child {
     transform: ${({ active }) =>
-      active === 'true' ? 'rotate(-45deg)' : undefined};
+      setProperty(active, 'rotate(-45deg)', undefined)};
   }
 `;
 
