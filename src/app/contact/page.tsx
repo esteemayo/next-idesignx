@@ -2,10 +2,9 @@
 
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import { useMemo } from 'react';
 import type { Metadata } from 'next';
 
-import { useDarkMode } from '@/hooks/useDarkMode';
+import { useActiveMode } from '@/hooks/useActiveMode';
 import ContactHero from '@/components/hero/ContactHero';
 
 const Location = dynamic(() => import('@/components/Location'), { ssr: false });
@@ -18,11 +17,7 @@ export const metadata: Metadata = {
 };
 
 const Contact = () => {
-  const mode = useDarkMode((state) => state.mode);
-
-  const activeMode = useMemo(() => {
-    return mode.toString();
-  }, [mode]);
+  const { activeMode } = useActiveMode();
 
   return (
     <Container>
