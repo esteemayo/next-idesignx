@@ -107,6 +107,7 @@ const StyledLink = styled(Link)<LocationProps>`
   width: 4rem;
   height: 4rem;
   text-decoration: none;
+  border-radius: 50%;
   outline-color: ${({ theme }) => theme.outline};
 
   display: flex;
