@@ -9,7 +9,7 @@ interface HamburgerProps {
 }
 
 interface IProps {
-  active: string;
+  active?: string;
 }
 
 const Hamburger: React.FC<HamburgerProps> = ({ activeMenu, onToggle }) => {
