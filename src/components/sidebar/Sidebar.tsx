@@ -1,7 +1,7 @@
 'use client';
 
+import { useCallback } from 'react';
 import styled from 'styled-components';
-import { useCallback, useMemo } from 'react';
 
 import MenuItems from './MenuItems';
 import Hamburger from '../navbar/Hamburger';
