@@ -1,10 +1,9 @@
 'use client';
 
+import { useCallback } from 'react';
 import styled from 'styled-components';
-import { useCallback, useEffect, useMemo, useState } from 'react';
 
 interface HamburgerProps {
-  isOpen: boolean;
   activeMenu: string;
   onToggle(): void;
 }
@@ -14,7 +13,6 @@ interface IProps {
 }
 
 const Hamburger: React.FC<HamburgerProps> = ({
-  isOpen,
   activeMenu,
   onToggle,
 }) => {
