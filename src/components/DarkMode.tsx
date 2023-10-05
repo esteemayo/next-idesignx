@@ -57,7 +57,6 @@ const Wrapper = styled.div`
 `;
 
 const Button = styled.button`
-  display: inline-block;
   border: none;
   width: 3rem;
   height: 3rem;
