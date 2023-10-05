@@ -28,13 +28,13 @@ const Location: React.FC<LocationProps> = ({ mode }) => {
         <Text>+2349134211583</Text>
       </Wrapper>
       <LogoBox>
-        <StyledLink href='#'>
+        <StyledLink href='#' mode={mode}>
           <Facebook>&nbsp;</Facebook>
         </StyledLink>
-        <StyledLink href='#'>
+        <StyledLink href='#' mode={mode}>
           <Twitter>&nbsp;</Twitter>
         </StyledLink>
-        <StyledLink href='#'>
+        <StyledLink href='#' mode={mode}>
           <Instagram>&nbsp;</Instagram>
         </StyledLink>
       </LogoBox>
