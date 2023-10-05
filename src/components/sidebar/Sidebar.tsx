@@ -18,8 +18,8 @@ interface IContainer {
 }
 
 const Sidebar = () => {
+  const { isOpen, onClose } = useMenu();
   const designModal = useDesignModal();
-  const onClose = useMenu((state) => state.onClose);
   const { activeMenu } = useActiveMenu();
 
   const handleOpen = useCallback(() => {
@@ -30,7 +30,7 @@ const Sidebar = () => {
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <Hamburger onToggle={onClose} />
+        <Hamburger isOpen={isOpen} onToggle={onClose} />
         <Button
           nav='true'
           type='button'
