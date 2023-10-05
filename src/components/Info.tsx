@@ -132,6 +132,10 @@ const StyledLink = styled(Link)<IMode>`
     color: var(--clr-facebook);
   }
 
+  &:nth-child(2):hover {
+    color: var(--clr-twitter);
+  }
+
   svg {
     font-size: 2rem;
     fill: currentColor;
