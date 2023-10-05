@@ -128,9 +128,11 @@ const StyledLink = styled(Link)<IMode>`
     color: currentColor;
   }
 
-  &:first-child:hover {
-    color: ${({ mode }) =>
-      setColor(mode, 'var(--clr-facebook)', 'currentColor')};
+  &:first-child {
+    &:hover {
+      color: ${({ mode }) =>
+        setColor(mode, 'var(--clr-facebook)', 'currentColor')};
+    }
   }
 
   &:nth-child(2):hover {
