@@ -100,6 +100,8 @@ const LogoBox = styled.div`
 `;
 
 const StyledLink = styled(Link)`
+  width: 4rem;
+  height: 4rem;
   text-decoration: none;
   outline-color: ${({ theme }) => theme.outline};
 `;
