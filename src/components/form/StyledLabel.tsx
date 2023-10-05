@@ -5,6 +5,10 @@ interface ILabel {
   mode: string;
 }
 
+interface IColor {
+  (error: string | undefined, mode: string): string;
+}
+
 export const StyledLabel = styled.label<ILabel>`
   display: inline-block;
   font-weight: 500;
@@ -13,7 +17,7 @@ export const StyledLabel = styled.label<ILabel>`
   margin-bottom: 1rem;
 `;
 
-const setColor = (error: string | undefined, mode: string): string => {
+const setColor: IColor = (error: string | undefined, mode: string): string => {
   return error === 'true'
     ? 'var(--clr-red)'
     : mode === 'true'
