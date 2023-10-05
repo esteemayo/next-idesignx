@@ -67,7 +67,7 @@ const Span = styled.span<IProps>`
 
   &:nth-child(2) {
     opacity: ${({ active }) => setProperty(active, 0)};
-    visibility: ${({ active }) => (active === 'true' ? 'hidden' : undefined)};
+    visibility: ${({ active }) => setProperty(active, 'hidden')};
   }
 
   &:last-child {
