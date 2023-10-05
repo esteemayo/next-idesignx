@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { useMemo } from 'react';
 
 import { socialIcons } from '@/data';
 import { useActiveMode } from '@/hooks/useActiveMode';
