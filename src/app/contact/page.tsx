@@ -2,6 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
+import { useMemo } from 'react';
 import type { Metadata } from 'next';
 
 import ContactHero from '@/components/hero/ContactHero';
@@ -16,11 +17,17 @@ export const metadata: Metadata = {
 };
 
 const Contact = () => {
+  const mode = useDarkMode((state) => state.mode);
+
+  const activeMode = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   return (
     <Container>
       <ContactHero />
       <ContactForm />
-      <Location />
+      <Location mode={activeMode} />
     </Container>
   );
 };
