@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 interface HamburgerProps {
   isOpen: boolean;
+  activeMenu: string;
   onToggle(): void;
 }
 
@@ -12,7 +13,11 @@ interface IProps {
   active: string;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
+const Hamburger: React.FC<HamburgerProps> = ({
+  isOpen,
+  activeMenu,
+  onToggle,
+}) => {
   const [openMenu, setOpenMenu] = useState(isOpen);
 
   const toggleHandler = useCallback(() => {
