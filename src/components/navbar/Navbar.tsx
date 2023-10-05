@@ -22,8 +22,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const designModal = useDesignModal();
-  const { isOpen, onOpen } = useMenu();
   const { activeMenu } = useActiveMenu();
+  const { isOpen, onOpen } = useMenu();
 
   return (
     <Container active={activeMenu}>
