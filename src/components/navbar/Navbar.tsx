@@ -22,13 +22,13 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const designModal = useDesignModal();
-  const onOpen = useMenu((state) => state.onOpen);
+  const { isOpen, onOpen } = useMenu();
   const { activeMenu } = useActiveMenu();
 
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <Hamburger activeMenu={activeMenu} onToggle={onOpen} />
+        <Hamburger isOpen={isOpen} activeMenu={activeMenu} onToggle={onOpen} />
         <Logo />
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
