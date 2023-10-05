@@ -129,15 +129,18 @@ const StyledLink = styled(Link)<IMode>`
   }
 
   &:first-child:hover {
-    color: ${({ mode }) => setColorLight(mode, 'var(--clr-facebook)')};
+    color: ${({ mode }) =>
+      setColor(mode, 'var(--clr-facebook)', 'currentColor')};
   }
 
   &:nth-child(2):hover {
-    color: ${({ mode }) => setColorLight(mode, 'var(--clr-twitter)')};
+    color: ${({ mode }) =>
+      setColor(mode, 'var(--clr-twitter)', 'currentColor')};
   }
 
   &:last-child:hover {
-    color: ${({ mode }) => setColorLight(mode, 'var(--clr-instagram-2)')};
+    color: ${({ mode }) =>
+      setColor(mode, 'var(--clr-instagram-2)', 'currentColor')};
   }
 
   svg {
@@ -146,8 +149,8 @@ const StyledLink = styled(Link)<IMode>`
   }
 `;
 
-const setColorLight = (mode: string, color: string) => {
-  return mode !== 'true' && color;
+const setColor = (mode: string, color1: string, color2: string) => {
+  return mode !== 'true' ? color1 : color2;
 };
 
 export default Info;
