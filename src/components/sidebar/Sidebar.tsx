@@ -18,8 +18,8 @@ interface IContainer {
 }
 
 const Sidebar = () => {
-  const { isOpen, onClose } = useMenu();
   const designModal = useDesignModal();
+  const onClose = useMenu((state) => state.onClose);
   const { activeMenu } = useActiveMenu();
 
   const handleOpen = useCallback(() => {
