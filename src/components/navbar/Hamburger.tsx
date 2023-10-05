@@ -12,6 +12,14 @@ interface IProps {
   active?: string;
 }
 
+interface IProperty {
+  (
+    active: string | undefined,
+    value1: string | number,
+    value2?: string | undefined
+  ): string | number | undefined;
+}
+
 const Hamburger: React.FC<HamburgerProps> = ({ isOpen, onToggle }) => {
   const [showMenu, setShowMenu] = useState(isOpen);
 
@@ -75,11 +83,11 @@ const Span = styled.span<IProps>`
   }
 `;
 
-const setProperty = (
+const setProperty: IProperty = (
   active: string | undefined,
   value1: string | number,
   value2: string | undefined = undefined
-) => {
+): string | number | undefined => {
   return active === 'true' ? value1 : value2;
 };
 
