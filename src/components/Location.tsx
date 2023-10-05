@@ -109,6 +109,10 @@ const StyledLink = styled(Link)<LocationProps>`
   text-decoration: none;
   outline-color: ${({ theme }) => theme.outline};
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &:hover {
     background-color: ${({ mode }) =>
       mode === 'true' ? '#2b3138' : '#e5bffd'};
