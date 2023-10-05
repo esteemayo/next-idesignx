@@ -63,7 +63,7 @@ const Span = styled.span<IProps>`
 
   &:first-child {
     transform: ${({ active }) =>
-      active === 'true' ? 'rotate(45deg)' : undefined};
+      setProperty(active, 'rotate(45deg)', undefined)};
   }
 
   &:nth-child(2) {
@@ -76,5 +76,13 @@ const Span = styled.span<IProps>`
       active === 'true' ? 'rotate(-45deg)' : undefined};
   }
 `;
+
+const setProperty = (
+  active: string,
+  value1: string,
+  value2: string | undefined
+) => {
+  return active === 'true' ? value1 : value2;
+};
 
 export default Hamburger;
