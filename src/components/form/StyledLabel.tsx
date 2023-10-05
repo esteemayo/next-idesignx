@@ -12,6 +12,10 @@ export const StyledLabel = styled.label<ILabel>`
   margin-bottom: 1rem;
 `;
 
-const setColor = (error: string | undefined): string => {
-  return error === 'true' ? 'var(--clr-red)' : 'var(--clr-gray-dark-2)';
+const setColor = (error: string | undefined, mode: string): string => {
+  return error === 'true'
+    ? 'var(--clr-red)'
+    : mode === 'true'
+    ? 'var(--clr-gray-light)'
+    : 'var(--clr-gray-dark-2)';
 };
