@@ -6,14 +6,23 @@ import styled from 'styled-components';
 const GalleryHero = () => {
   const textRef = useRef();
 
-  return <Header>
-    <Heading>Gallery</Heading>
-    <Text>We <Span ref={textRef}></Span></Text>
-  </Header>;
+  return (
+    <Header>
+      <Heading>Gallery</Heading>
+      <Text>
+        We <Span ref={textRef}></Span>
+      </Text>
+    </Header>
+  );
 };
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
 
   background-image: linear-gradient(
       to right bottom,
