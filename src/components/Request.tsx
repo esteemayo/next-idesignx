@@ -58,6 +58,7 @@ const Request = () => {
           placeholder='Your name'
           style='true'
           onChange={handleChange}
+          path='design'
         />
         <Input
           name='email'
