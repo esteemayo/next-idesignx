@@ -87,6 +87,7 @@ const Request = () => {
           options={selectInputs}
           style='true'
           onChange={handleChange}
+          path='design'
         />
         <TextArea
           name='comment'
