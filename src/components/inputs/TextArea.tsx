@@ -16,6 +16,7 @@ interface TextAreaProps {
   value?: string;
   placeholder: string;
   style?: string;
+  path?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
   error?: string;
 }
@@ -26,6 +27,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   value,
   placeholder,
   style,
+  path,
   onChange,
   error,
 }) => {
@@ -40,6 +42,7 @@ const TextArea: React.FC<TextAreaProps> = ({
           value={value}
           placeholder={placeholder}
           onChange={onChange}
+          path={path}
           required
         />
         <Label htmlFor={name}>{label}</Label>
