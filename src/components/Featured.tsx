@@ -17,7 +17,7 @@ const Container = styled.section`
   grid-template-rows: 0.5fr repeat(6, 1fr) 0.5fr;
   grid-template-columns: 0.5fr repeat(6, 1fr) 0.5fr;
 
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
 
   @media only screen and (max-width: 37.5em) {
     display: none;
