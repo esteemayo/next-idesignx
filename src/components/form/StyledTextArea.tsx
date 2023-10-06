@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Label } from './Label';
 
 interface ITextArea {
-  path: string;
+  path?: string;
 }
 
 export const StyledTextArea = styled.textarea<ITextArea>`
