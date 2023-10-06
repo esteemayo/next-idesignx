@@ -44,7 +44,7 @@ const Container = styled.div`
   padding: 2.5rem 2rem;
   background-color: hsl(277, 94%, 87%);
   color: var(--clr-white);
-  border-radius: 2px;
+  border-radius: 0.5rem;
   position: fixed;
   right: 3rem;
   bottom: 10rem;
