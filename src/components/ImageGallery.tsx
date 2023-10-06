@@ -7,6 +7,7 @@ const ImageGallery = () => {
 };
 
 const Container = styled.section`
+  grid-column: full-start / full-end;
   background-color: tomato;
 `;
 
