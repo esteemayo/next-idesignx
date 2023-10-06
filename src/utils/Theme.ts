@@ -4,7 +4,7 @@ export const darkTheme = {
   bgInput: 'var(--clr-bg-dark-primary)',
   bgLoc: 'var(--clr-bg-dark-tertiary)',
   bgUpload: 'var(--clr-bg-dark-tertiary)',
-  bgDesign: 'var(--clr-bg-dark-primary)',
+  bgDesign: 'var(--clr-bg-dark-tertiary)',
   text: 'var(--clr-white)',
   textSoft: 'var(--clr-light-1)',
   textLight: 'var(--clr-white)',
