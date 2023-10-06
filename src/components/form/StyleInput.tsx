@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { Label } from './Label';
 
+type ThemeProps = {
+  bgInput?: string;
+  bgDesignInput?: string;
+};
+
 interface IStyledInput {
   path?: string;
 }
@@ -12,8 +17,7 @@ export const StyledInput = styled.input<IStyledInput>`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  background-color: ${({ path, theme }) =>
-    path === 'design' ? theme.bgDesignInput : theme.bgInput};
+  background-color: ${({ path, theme }) => setBgColor(path, theme)};
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
   border-radius: 2px;
@@ -42,3 +46,7 @@ export const StyledInput = styled.input<IStyledInput>`
     transform: translateY(-4rem);
   }
 `;
+
+const setBgColor = (path: string | undefined, theme: ThemeProps) => {
+  return path === 'design' ? theme.bgDesignInput : theme.bgInput;
+};
