@@ -173,7 +173,7 @@ const CloseButton = styled.button`
   font-size: 2rem;
   padding: 0.5rem;
   background-color: transparent;
-  color: inherit;
+  color: ${({ theme }) => theme.textSoft};
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
   transition: all 0.2s;
