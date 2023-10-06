@@ -41,6 +41,7 @@ const Heading = styled.h1`
 
 const Text = styled.p`
   grid-area: 3 / 1 / 4 / -1;
+  align-self: self-start;
 `;
 
 const Span = styled.span``;
