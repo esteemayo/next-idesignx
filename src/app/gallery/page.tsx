@@ -11,6 +11,8 @@ const Gallery = () => {
   );
 };
 
-const Container = styled.main``;
+const Container = styled.main`
+  background-color: ${({ theme }) => theme.bg};
+`;
 
 export default Gallery;
