@@ -125,7 +125,7 @@ const Container = styled.section`
 const Heading = styled.h3`
   font-weight: 400;
   font-size: 3rem;
-  color: var(--clr-purple-light-1);
+  color: ${({ theme }) => theme.text};
   margin-bottom: 3rem;
 
   @media only screen and (max-width: 50em) {
