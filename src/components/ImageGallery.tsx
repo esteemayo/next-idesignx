@@ -6,6 +6,8 @@ const ImageGallery = () => {
   return <Container>ImageGallery</Container>;
 };
 
-const Container = styled.section``;
+const Container = styled.section`
+  background-color: tomato;
+`;
 
 export default ImageGallery;
