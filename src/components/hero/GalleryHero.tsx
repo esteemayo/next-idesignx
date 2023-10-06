@@ -6,6 +6,8 @@ const GalleryHero = () => {
   return <Header>GalleryHero</Header>;
 };
 
-const Header = styled.header``;
+const Header = styled.header`
+  background-color: crimson;
+`;
 
 export default GalleryHero;
