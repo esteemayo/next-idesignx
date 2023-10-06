@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
-export const StyledSelect = styled.select`
+interface ISelect {
+  path?: string;
+}
+
+export const StyledSelect = styled.select<ISelect>`
   width: 100%;
   display: inline-block;
   border: none;
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  background-color: ${({ theme }) => theme.bgInput};
+  background-color: ${({ path, theme }) =>
+    path === 'design' ? theme.bgDesignInput : theme.bgInput};
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
   border-radius: 2px;
