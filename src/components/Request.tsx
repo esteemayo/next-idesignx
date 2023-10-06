@@ -96,6 +96,7 @@ const Request = () => {
           placeholder='Comment Here'
           style='true'
           onChange={handleChange}
+          path='design'
         />
         <UploadInput
           id='file'
