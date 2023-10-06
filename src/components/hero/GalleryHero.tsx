@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const GalleryHero = () => {
   return <Header>
     <Heading>Gallery</Heading>
+    <Text>We <Span></Span></Text>
   </Header>;
 };
 
@@ -24,6 +25,8 @@ const Header = styled.header`
 
 const Heading = styled.h1``;
 
-const Text = styled.span``;
+const Text = styled.p``;
+
+const Span = styled.span``;
 
 export default GalleryHero;
