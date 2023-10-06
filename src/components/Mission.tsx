@@ -1,10 +1,17 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { useActiveMode } from '@/hooks/useActiveMode';
+
+interface IContainer {
+  mode: string;
+}
 
 const Mission = () => {
+  const { activeMode } = useActiveMode();
+
   return (
-    <Container>
+    <Container mode={activeMode}>
       <Wrapper>
         <Heading>Custom designs</Heading>
         <Text>
@@ -21,7 +28,7 @@ const Mission = () => {
   );
 };
 
-const Container = styled.section`
+const Container = styled.section<IContainer>`
   grid-column: col-start 5 / full-end;
 
   @media only screen and (max-width: 37.5em) {
@@ -30,13 +37,17 @@ const Container = styled.section`
 
   padding: 3rem;
   color: var(--clr-white);
-  background-image: linear-gradient(
+  background-image: ${({ mode }) =>
+    mode === 'false' &&
+    css`
+  linear-gradient(
     to bottom,
     var(--clr-purple-light-1),
     var(--clr-purple-dark-1),
     var(--clr-purple-light-2),
     var(--clr-purple-dark-2)
-  );
+  )
+  `};
 `;
 
 const Wrapper = styled.div`
