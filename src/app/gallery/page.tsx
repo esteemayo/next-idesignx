@@ -1,7 +1,7 @@
 'use client';
 
-import GalleryHero from '@/components/hero/GalleryHero';
 import styled from 'styled-components';
+import GalleryHero from '@/components/hero/GalleryHero';
 
 const Gallery = () => {
   return (
