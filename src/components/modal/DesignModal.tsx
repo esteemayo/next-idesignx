@@ -142,6 +142,10 @@ const DesignModal = () => {
     return 'Back';
   }, [step]);
 
+  const handleSecondaryAction = useMemo(() => {
+    return step === STEPS.INFO ? undefined : handlePrev;
+  }, [handlePrev, step]);
+
   let bodyContent;
 
   bodyContent = (
@@ -242,7 +246,7 @@ const DesignModal = () => {
       body={bodyContent}
       onClose={handleClose}
       onSubmit={handleSubmit}
-      secondaryAction={step === STEPS.INFO ? undefined : handlePrev}
+      secondaryAction={handleSecondaryAction}
     />
   );
 };
