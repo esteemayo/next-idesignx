@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+type ThemeProps = {
+  bgInput?: string;
+  bgDesignInput?: string;
+};
+
 interface ISelect {
   path?: string;
 }
@@ -11,8 +16,7 @@ export const StyledSelect = styled.select<ISelect>`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
-  background-color: ${({ path, theme }) =>
-    path === 'design' ? theme.bgDesignInput : theme.bgInput};
+  background-color: ${({ path, theme }) => setBgColor(path, theme)};
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
   border-radius: 2px;
@@ -29,3 +33,7 @@ export const Option = styled.option`
   color: #bbb;
   letter-spacing: 0.5rem;
 `;
+
+const setBgColor = (path: string | undefined, theme: ThemeProps) => {
+  return path === 'design' ? theme.bgDesignInput : theme.bgInput;
+};
