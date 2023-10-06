@@ -24,6 +24,7 @@ const Header = styled.header`
   align-items: center;
   justify-items: center;
 
+  color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
