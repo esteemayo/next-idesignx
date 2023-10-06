@@ -1,11 +1,14 @@
 'use client';
 
+import { useRef } from 'react';
 import styled from 'styled-components';
 
 const GalleryHero = () => {
+  const textRef = useRef();
+
   return <Header>
     <Heading>Gallery</Heading>
-    <Text>We <Span></Span></Text>
+    <Text>We <Span ref={textRef}></Span></Text>
   </Header>;
 };
 
