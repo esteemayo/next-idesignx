@@ -30,7 +30,7 @@ const Designs = () => {
 };
 
 const Container = styled.main`
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.bgDesign};
   display: grid;
   grid-template-rows: 80vh 40vw repeat(2, min-content);
   grid-template-columns:
