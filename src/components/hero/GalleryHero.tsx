@@ -38,6 +38,7 @@ const Header = styled.header`
 
 const Heading = styled.h1`
   grid-area: 2 / 1 / 3 / -1;
+  align-self: self-end;
 `;
 
 const Text = styled.p`
