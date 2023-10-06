@@ -5,7 +5,7 @@ export const darkTheme = {
   bgDesignInput: 'var(--clr-bg-dark-secondary)',
   bgLoc: 'var(--clr-bg-dark-tertiary)',
   bgUpload: 'var(--clr-bg-dark-tertiary)',
-  bgDesign: 'var(--clr-bg-dark-primary)',
+  bgDesign: 'var(--clr-bg-dark-tertiary)',
   bgState: 'var(--clr-bg-dark-secondary)',
   text: 'var(--clr-white)',
   textSoft: 'var(--clr-light-1)',
