@@ -35,7 +35,9 @@ const Header = styled.header`
   background-attachment: fixed;
 `;
 
-const Heading = styled.h1``;
+const Heading = styled.h1`
+  grid-area: 2 / 1 / 3 / -1;
+`;
 
 const Text = styled.p``;
 
