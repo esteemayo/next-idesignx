@@ -17,6 +17,7 @@ interface InputProps {
   value?: string;
   placeholder: string;
   style?: string;
+  path?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
   error?: string;
 }
@@ -28,6 +29,7 @@ const Input: React.FC<InputProps> = ({
   value,
   placeholder,
   style,
+  path,
   onChange,
   error,
 }) => {
@@ -43,6 +45,7 @@ const Input: React.FC<InputProps> = ({
           value={value}
           placeholder={placeholder}
           onChange={onChange}
+          path={path}
           required
         />
         <Label htmlFor={name}>{label}</Label>
