@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 
 const GalleryHero = () => {
-  return <Header>GalleryHero</Header>;
+  return <Header>
+    <Heading>Gallery</Heading>
+  </Header>;
 };
 
 const Header = styled.header`
