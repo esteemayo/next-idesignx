@@ -17,6 +17,7 @@ interface SelectProps {
   label: string;
   options: Array<OptionTypes>;
   style?: string;
+  path?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
   error?: string;
 }
@@ -27,6 +28,7 @@ const Select: React.FC<SelectProps> = ({
   label,
   options,
   style,
+  path,
   onChange,
   error,
 }) => {
@@ -38,6 +40,7 @@ const Select: React.FC<SelectProps> = ({
           name={name}
           value={value}
           onChange={onChange}
+          path={path}
           required
         >
           <Option value=''>{label}</Option>
