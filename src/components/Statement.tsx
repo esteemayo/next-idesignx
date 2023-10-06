@@ -18,7 +18,7 @@ const Statement = () => {
 const Container = styled.section`
   grid-column: full-start / full-end;
 
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.bgState};
   text-align: center;
   padding: 4rem 0;
 
