@@ -68,6 +68,7 @@ const Request = () => {
           placeholder='Email'
           style='true'
           onChange={handleChange}
+          path='design'
         />
         <Input
           name='phone'
