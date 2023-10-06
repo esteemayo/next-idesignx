@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { Label } from './Label';
 
-export const StyledTextArea = styled.textarea`
+interface ITextArea {
+  path: string;
+}
+
+export const StyledTextArea = styled.textarea<ITextArea>`
   width: 100%;
   display: inline-block;
   border: none;
@@ -9,7 +13,8 @@ export const StyledTextArea = styled.textarea`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 2rem;
-  background-color: ${({ theme }) => theme.bgInput};
+  background-color: ${({ path, theme }) =>
+    path === 'design' ? theme.bgDesignInput : theme.bgInput};
   color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
