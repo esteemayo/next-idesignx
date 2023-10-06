@@ -78,6 +78,7 @@ const Request = () => {
           placeholder='Phone number'
           style='true'
           onChange={handleChange}
+          path='design'
         />
         <Select
           name='category'
