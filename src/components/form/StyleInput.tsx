@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { Label } from './Label';
 
-export const StyledInput = styled.input`
+interface IStyledInput {
+  path?: string;
+}
+
+export const StyledInput = styled.input<IStyledInput>`
   width: 100%;
   display: inline-block;
   border: none;
