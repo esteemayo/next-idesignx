@@ -15,9 +15,11 @@ const Header = styled.header`
       rgba(51, 51, 51, 0.7)
     ),
     url(/img/gallery-hero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 `;
+
+const Heading = styled.h1``;
 
 export default GalleryHero;
