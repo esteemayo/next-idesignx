@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { Label } from './Label';
 
+type ThemeProps = {
+  bgInput?: string;
+  bgDesignInput?: string;
+};
+
 interface ITextArea {
   path?: string;
 }
@@ -13,8 +18,7 @@ export const StyledTextArea = styled.textarea<ITextArea>`
   font-family: inherit;
   font-size: 1.5rem;
   padding: 2rem;
-  background-color: ${({ path, theme }) =>
-    path === 'design' ? theme.bgDesignInput : theme.bgInput};
+  background-color: ${({ path, theme }) => setBgColor(path, theme)};
   color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
@@ -41,3 +45,7 @@ export const StyledTextArea = styled.textarea<ITextArea>`
     transform: translateY(-4rem);
   }
 `;
+
+const setBgColor = (path: string | undefined, theme: ThemeProps) => {
+  return path === 'design' ? theme.bgDesignInput : theme.bgInput;
+};
