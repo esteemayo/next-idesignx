@@ -94,4 +94,6 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
+const ButtonWrapper = styled.div``;
+
 export default ImageModal;
