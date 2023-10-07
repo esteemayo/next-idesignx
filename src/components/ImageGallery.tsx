@@ -11,7 +11,7 @@ const ImageGallery = () => {
 
   return (
     <Container>
-      {galleryItems.map((item, index) => {
+      {images.map((item, index) => {
         const { id, img } = item;
         return (
           <Wrapper key={id} className={`gallery-item--${index + 1}`}>
