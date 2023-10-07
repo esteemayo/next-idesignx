@@ -3,12 +3,19 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 
+import { galleryItems } from '@/data';
+
 const ImageGallery = () => {
   return (
     <Container>
-      <Wrapper>
-        <StyledImage src='' width={270} height={140} alt='' />
-      </Wrapper>
+      {galleryItems.map((item) => {
+        const { id, img } = item;
+        return (
+          <Wrapper key={id}>
+            <StyledImage src={img} width={270} height={140} alt='' />
+          </Wrapper>
+        );
+      })}
     </Container>
   );
 };
