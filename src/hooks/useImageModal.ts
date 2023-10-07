@@ -12,7 +12,7 @@ interface ImageModalStore {
 export const useImageModal = create<ImageModalStore>()(
   devtools((set) => ({
     isOpen: false,
-    onOpen: () => set({ isOpen: true }),
-    onClose: () => set({ isOpen: false }),
+    onOpen: () => set(() => ({ isOpen: true }), false, 'openModal'),
+    onClose: () => set(() => ({ isOpen: false }), false, 'closeModal'),
   }))
 );
