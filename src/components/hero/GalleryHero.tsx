@@ -9,7 +9,7 @@ const GalleryHero = () => {
 
   useEffect(() => {
     const elem = textRef.current;
-    init(elem, { showCursor: false, strings: ['Imagine', 'Print', 'Deliver'] });
+    init(elem, { showCursor: false, strings: ['Imagine.', 'Print.', 'Deliver.'] });
   }, []);
 
   return (
