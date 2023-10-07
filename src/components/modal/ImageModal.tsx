@@ -135,4 +135,6 @@ const CloseButton = styled.button`
   }
 `;
 
+const Button = styled.button``;
+
 export default ImageModal;
