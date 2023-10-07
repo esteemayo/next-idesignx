@@ -9,7 +9,10 @@ const GalleryHero = () => {
 
   useEffect(() => {
     const elem = textRef.current;
-    init(elem, { showCursor: false, strings: ['Imagine.', 'Print.', 'Deliver.'] });
+    init(elem, {
+      showCursor: false,
+      strings: ['Imagine.', 'Print.', 'Deliver.'],
+    });
   }, []);
 
   return (
@@ -56,6 +59,9 @@ const Heading = styled.h1`
 const Text = styled.p`
   grid-area: 3 / 1 / 4 / -1;
   align-self: self-start;
+
+  font-size: 2.5rem;
+  text-align: center;
 `;
 
 const Span = styled.span``;
