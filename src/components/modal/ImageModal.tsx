@@ -20,4 +20,6 @@ const Overlay = styled.aside`
   justify-content: center;
 `;
 
+const Wrapper = styled.div``;
+
 export default ImageModal;
