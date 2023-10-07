@@ -154,6 +154,9 @@ const Button = styled.button<IBtn>`
 
   display: inline-block;
   border: none;
+  font-size: 4rem;
+  background-color: transparent;
+  color: var(--clr-white);
 `;
 
 export default ImageModal;
