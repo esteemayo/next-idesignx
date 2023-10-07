@@ -1,9 +1,13 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
-import ImageGallery from '@/components/ImageGallery';
 import GalleryHero from '@/components/hero/GalleryHero';
+
+const ImageGallery = dynamic(() => import('@/components/ImageGallery'), {
+  ssr: false,
+});
 
 const Gallery = () => {
   return (
