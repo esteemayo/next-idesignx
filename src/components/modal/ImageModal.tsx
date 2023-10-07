@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
 import styled from 'styled-components';
+import { useCallback, useEffect, useState } from 'react';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -10,6 +10,17 @@ interface ImageModalProps {
 
 const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
   const [showModal, setShowModal] = useState(isOpen);
+
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+    setTimeout(() => {
+      onClose();
+    }, 300);
+  }, [onClose]);
+
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
 
   return (
     <Overlay>
