@@ -168,8 +168,8 @@ const CloseButton = styled.button`
 const ButtonContainer = styled.div<IBtn>`
   position: absolute;
   top: 50%;
-  left: ${({ direction }) => direction === 'left' && '10rem'};
-  right: ${({ direction }) => direction === 'right' && '10rem'};
+  left: ${({ direction }) => direction === 'left' && '6rem'};
+  right: ${({ direction }) => direction === 'right' && '6rem'};
   transform: translateY(-50%);
 `;
 
