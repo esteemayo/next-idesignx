@@ -159,6 +159,7 @@ const Button = styled.button<IBtn>`
   color: var(--clr-white);
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
+  cursor: pointer;
 `;
 
 export default ImageModal;
