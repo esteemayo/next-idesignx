@@ -2,7 +2,12 @@
 
 import styled from 'styled-components';
 
-const ImageModal = () => {
+interface ImageModalProps {
+  isOpen: boolean;
+  onClose(): void;
+}
+
+const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
   return (
     <Overlay>
       <Wrapper>
