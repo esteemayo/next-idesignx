@@ -60,7 +60,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
         </ImageContainer>
       </Wrapper>
       <ButtonWrapper>
-        <CloseButton>
+        <CloseButton onClick={handleClose}>
           <CloseIcon />
         </CloseButton>
       </ButtonWrapper>
