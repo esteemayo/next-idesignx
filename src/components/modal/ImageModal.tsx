@@ -112,8 +112,8 @@ const CloseButton = styled.button`
   justify-content: center;
 
   border: none;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
   font-size: 3rem;
   background-color: transparent;
   color: var(--clr-white);
@@ -124,6 +124,7 @@ const CloseButton = styled.button`
 
   &:hover {
     background-color: #29292a;
+    transform : scale(0.9);
   }
 
   svg {
