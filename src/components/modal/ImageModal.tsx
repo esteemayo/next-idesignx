@@ -158,12 +158,7 @@ const ButtonContainer = styled.div<IBtn>`
 `;
 
 const Button = styled.button<IBtn>`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 5rem;
-  height: 5rem;
+  display: inline-block;
   border: none;
   font-size: 4rem;
   background-color: transparent;
@@ -171,12 +166,6 @@ const Button = styled.button<IBtn>`
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: #29292a;
-    transform: scale(0.9);
-  }
 
   svg {
     font-size: inherit;
