@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import styled from 'styled-components';
 
 interface ImageModalProps {
@@ -8,6 +9,8 @@ interface ImageModalProps {
 }
 
 const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
+  const [showModal, setShowModal] = useState(isOpen);
+
   return (
     <Overlay>
       <Wrapper>
