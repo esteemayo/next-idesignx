@@ -109,6 +109,8 @@ const ButtonWrapper = styled.div`
 const CloseButton = styled.button`
   display: inline-block;
   border: none;
+  width: 3.5rem;
+  height: 3.5rem;
 `;
 
 export default ImageModal;
