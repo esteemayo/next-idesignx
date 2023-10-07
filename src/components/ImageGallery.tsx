@@ -21,7 +21,7 @@ const ImageGallery = () => {
 };
 
 const Container = styled.section`
-  padding: 1.5rem;
+  padding: 10rem 3rem;
   background-color: var(--clr-gray-light-1);
 
   grid-column: full-start / full-end;
