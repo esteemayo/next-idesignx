@@ -8,6 +8,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 interface ImageModalProps {
+  image: string;
   isOpen: boolean;
   onClose(): void;
 }
@@ -20,7 +21,7 @@ interface IBtn {
   direction: string;
 }
 
-const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
+const ImageModal: React.FC<ImageModalProps> = ({ image, isOpen, onClose }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
   const handleClose = useCallback(() => {
@@ -62,12 +63,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
       </ButtonContainer>
       <Wrapper active={activeModal}>
         <ImageContainer>
-          <StyledImage
-            src='/img/gallery-hero.jpg'
-            width={1000}
-            height={500}
-            alt=''
-          />
+          <StyledImage src={image} width={1000} height={500} alt='' />
         </ImageContainer>
       </Wrapper>
       <ButtonContainer direction='right'>

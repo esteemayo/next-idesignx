@@ -15,9 +15,13 @@ const ImageGallery = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [images, setImages] = useState(galleryItems);
 
-  const handleOpen = useCallback(() => {
-    onOpen();
-  }, [onOpen]);
+  const handleOpen = useCallback(
+    (index: number) => {
+      onOpen();
+      setSlideIndex(index);
+    },
+    [onOpen]
+  );
 
   return (
     <>
@@ -28,7 +32,7 @@ const ImageGallery = () => {
             <Wrapper
               key={id}
               className={`gallery-item--${index + 1}`}
-              onClick={handleOpen}
+              onClick={() => handleOpen(index)}
             >
               <StyledImage src={img} width={270} height={140} alt='' />
             </Wrapper>
