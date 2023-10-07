@@ -111,7 +111,7 @@ const Wrapper = styled.div<IWrapper>`
 const Box = styled.div`
   width: 120rem;
   height: 60rem;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.bgDesign};
   border-radius: 0.5rem;
 
   display: flex;
@@ -178,7 +178,7 @@ const Button = styled.button<IBtn>`
   border: none;
   font-size: 3rem;
   background-color: transparent;
-  color: var(--clr-white);
+  color: var(--clr-text-small-dark);
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
