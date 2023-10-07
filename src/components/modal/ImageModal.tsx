@@ -55,9 +55,11 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
-      <Button direction='left'>
-        <ArrowBackIosIcon />
-      </Button>
+      <ButtonContainer direction='left'>
+        <Button direction='left'>
+          <ArrowBackIosIcon />
+        </Button>
+      </ButtonContainer>
       <Wrapper active={activeModal}>
         <ImageContainer>
           <StyledImage
@@ -68,9 +70,11 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
           />
         </ImageContainer>
       </Wrapper>
-      <Button direction='right'>
-        <ArrowForwardIosIcon />
-      </Button>
+      <ButtonContainer direction='right'>
+        <Button direction='right'>
+          <ArrowForwardIosIcon />
+        </Button>
+      </ButtonContainer>
       <ButtonWrapper>
         <CloseButton onClick={handleClose}>
           <CloseIcon />
@@ -145,13 +149,15 @@ const CloseButton = styled.button`
   }
 `;
 
-const Button = styled.button<IBtn>`
+const ButtonContainer = styled.div<IBtn>`
   position: absolute;
   top: 50%;
   left: ${({ direction }) => direction === 'left' && '10rem'};
   right: ${({ direction }) => direction === 'right' && '10rem'};
   transform: translateY(-50%);
+`;
 
+const Button = styled.button<IBtn>`
   display: flex;
   align-items: center;
   justify-content: center;
