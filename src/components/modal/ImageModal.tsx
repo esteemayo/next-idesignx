@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
+import Image from 'next/image';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -33,9 +34,9 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
     setShowModal(isOpen);
   }, [isOpen]);
 
-  if (!isOpen) {
-    return null;
-  }
+  // if (!isOpen) {
+  //   return null;
+  // }
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
@@ -63,5 +64,7 @@ const Overlay = styled.aside`
 const Wrapper = styled.div``;
 
 const ImageContainer = styled.div``;
+
+const StyledImage = styled(Image)``;
 
 export default ImageModal;
