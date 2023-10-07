@@ -2,10 +2,13 @@
 
 import Image from 'next/image';
 import styled from 'styled-components';
+import { useState } from 'react';
 
 import { galleryItems } from '@/data';
 
 const ImageGallery = () => {
+  const [images, setImages] = useState(galleryItems);
+
   return (
     <Container>
       {galleryItems.map((item, index) => {
