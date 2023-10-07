@@ -33,6 +33,10 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
     setShowModal(isOpen);
   }, [isOpen]);
 
+  if (!isOpen) {
+    return null;
+  }
+
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
       <Wrapper>
