@@ -4,11 +4,13 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const ImageGallery = () => {
-  return <Container>
-    <Wrapper>
-      <StyledImage src='' width={270} height={140} alt='' />
-    </Wrapper>
-  </Container>;
+  return (
+    <Container>
+      <Wrapper>
+        <StyledImage src='' width={270} height={140} alt='' />
+      </Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.section`
