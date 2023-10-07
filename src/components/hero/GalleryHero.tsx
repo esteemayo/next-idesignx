@@ -11,7 +11,7 @@ const GalleryHero = () => {
     const elem = textRef.current;
     init(elem, {
       showCursor: false,
-      strings: ['You imagine.', 'We print.', 'We deliver.'],
+      strings: ['You imagine.', 'We design.', 'We print.', 'We deliver.'],
     });
   }, []);
 
