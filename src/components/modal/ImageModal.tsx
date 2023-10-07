@@ -111,7 +111,7 @@ const Wrapper = styled.div<IWrapper>`
 const Box = styled.div`
   width: 120rem;
   height: 60rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   border-radius: 0.5rem;
 
   display: flex;
