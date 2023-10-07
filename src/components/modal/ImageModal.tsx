@@ -51,6 +51,9 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
+      <Button>
+        <ArrowBackIosIcon />
+      </Button>
       <Wrapper active={activeModal}>
         <ImageContainer>
           <StyledImage
@@ -61,6 +64,9 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
           />
         </ImageContainer>
       </Wrapper>
+      <Button>
+        <ArrowForwardIosIcon />
+      </Button>
       <ButtonWrapper>
         <CloseButton onClick={handleClose}>
           <CloseIcon />
