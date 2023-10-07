@@ -11,4 +11,6 @@ const Container = styled.section`
   background-color: tomato;
 `;
 
+const Wrapper = styled.figure``;
+
 export default ImageGallery;
