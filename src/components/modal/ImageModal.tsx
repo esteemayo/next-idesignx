@@ -32,7 +32,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
   }, [isOpen]);
 
   return (
-    <Overlay className='overlay'>
+    <Overlay className='overlay' onClick={closeModalHandler}>
       <Wrapper>
         <ImageContainer>ImageModal</ImageContainer>
       </Wrapper>
