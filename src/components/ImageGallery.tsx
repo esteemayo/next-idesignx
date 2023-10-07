@@ -21,8 +21,12 @@ const ImageGallery = () => {
 };
 
 const Container = styled.section`
+  background-color: var(--clr-gray-light-1);
+
   grid-column: full-start / full-end;
-  background-color: tomato;
+  display: grid;
+  grid-template-rows: repeat(7, 5vw);
+  grid-template-columns: repeat(8, 1fr);
 `;
 
 const Wrapper = styled.figure``;
