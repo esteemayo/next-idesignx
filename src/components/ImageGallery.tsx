@@ -39,7 +39,11 @@ const ImageGallery = () => {
           );
         })}
       </Container>
-      <ImageModal image={images[slideIndex]} isOpen={isOpen} onClose={onClose} />
+      <ImageModal
+        image={images[slideIndex].img}
+        isOpen={isOpen}
+        onClose={onClose}
+      />
     </>
   );
 };
