@@ -160,6 +160,11 @@ const Button = styled.button<IBtn>`
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    fill: currentColor;
+  }
 `;
 
 export default ImageModal;
