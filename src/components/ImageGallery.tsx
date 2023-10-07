@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
 
 import ImageModal from './modal/ImageModal';
@@ -23,6 +23,10 @@ const ImageGallery = () => {
     [onOpen]
   );
 
+  const selectedImage = useMemo(() => {
+    return images[slideIndex].img;
+  }, [images, slideIndex]);
+
   return (
     <>
       <Container>
@@ -39,11 +43,7 @@ const ImageGallery = () => {
           );
         })}
       </Container>
-      <ImageModal
-        image={images[slideIndex].img}
-        isOpen={isOpen}
-        onClose={onClose}
-      />
+      <ImageModal image={selectedImage} isOpen={isOpen} onClose={onClose} />
     </>
   );
 };
