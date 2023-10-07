@@ -30,10 +30,10 @@ const ImageGallery = () => {
 
       if (direction === 'left') {
         newSlideIndex = slideIndex === 0 ? lastIndex : slideIndex - 1;
-        return;
+      } else {
+        newSlideIndex = slideIndex === lastIndex ? 0 : slideIndex + 1;
       }
 
-      newSlideIndex = slideIndex === lastIndex ? 0 : slideIndex + 1;
       setSlideIndex(newSlideIndex);
     },
     [images, slideIndex]
@@ -59,7 +59,12 @@ const ImageGallery = () => {
           );
         })}
       </Container>
-      <ImageModal image={selectedImage} isOpen={isOpen} onClose={onClose} />
+      <ImageModal
+        image={selectedImage}
+        isOpen={isOpen}
+        onClose={onClose}
+        onClick={handleClick}
+      />
     </>
   );
 };

@@ -11,6 +11,7 @@ interface ImageModalProps {
   image: string;
   isOpen: boolean;
   onClose(): void;
+  onClick(direction: string): void;
 }
 
 interface IWrapper {
@@ -21,7 +22,12 @@ interface IBtn {
   direction: string;
 }
 
-const ImageModal: React.FC<ImageModalProps> = ({ image, isOpen, onClose }) => {
+const ImageModal: React.FC<ImageModalProps> = ({
+  image,
+  isOpen,
+  onClose,
+  onClick,
+}) => {
   const [showModal, setShowModal] = useState(isOpen);
 
   const handleClose = useCallback(() => {
@@ -57,7 +63,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ image, isOpen, onClose }) => {
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
       <ButtonContainer direction='left'>
-        <Button direction='left'>
+        <Button direction='left' onClick={() => onClick('left')}>
           <ArrowBackIosIcon />
         </Button>
       </ButtonContainer>
@@ -66,7 +72,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ image, isOpen, onClose }) => {
           <StyledImage src={image} width={1000} height={500} alt='' />
         </ImageContainer>
       </Wrapper>
-      <ButtonContainer direction='right'>
+      <ButtonContainer direction='right' onClick={() => onClick('right')}>
         <Button direction='right'>
           <ArrowForwardIosIcon />
         </Button>
