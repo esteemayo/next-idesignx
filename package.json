@@ -34,6 +34,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
+    "@types/ityped": "^1.0.1",
     "@types/styled-components": "^5.1.28"
   }
 }
