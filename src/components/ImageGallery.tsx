@@ -4,10 +4,13 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import { useState } from 'react';
 
-import { galleryItems } from '@/data';
 import ImageModal from './modal/ImageModal';
+import { useImageModal } from '@/hooks/useImageModal';
+
+import { galleryItems } from '@/data';
 
 const ImageGallery = () => {
+  const { isOpen, onOpen, onClose } = useImageModal();
   const [images, setImages] = useState(galleryItems);
 
   return (
@@ -22,7 +25,7 @@ const ImageGallery = () => {
           );
         })}
       </Container>
-      <ImageModal />
+      <ImageModal isOpen={isOpen} onClose={onClose} />
     </>
   );
 };
