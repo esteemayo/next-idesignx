@@ -107,7 +107,10 @@ const ButtonWrapper = styled.div`
 `;
 
 const CloseButton = styled.button`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: none;
   width: 3.5rem;
   height: 3.5rem;
@@ -120,7 +123,7 @@ const CloseButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    bacground-color: #2b3138;
+    background-color: #29292a;
   }
 
   svg {
