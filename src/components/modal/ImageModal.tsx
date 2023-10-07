@@ -153,6 +153,8 @@ const Button = styled.button<IBtn>`
   transform: translateY(-50%);
 
   display: inline-block;
+  width: 5rem;
+  height: 5rem;
   border: none;
   font-size: 4rem;
   background-color: transparent;
