@@ -100,7 +100,9 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
-const ButtonWrapper = styled.div``;
+const ButtonWrapper = styled.div`
+  position: absolute;
+`;
 
 const CloseButton = styled.button``;
 
