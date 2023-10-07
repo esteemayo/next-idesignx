@@ -22,7 +22,7 @@ const ImageGallery = () => {
 
 const Container = styled.section`
   padding: 10rem 3rem;
-  background-color: var(--clr-gray-light-1);
+  background-color: ${({ theme }) => theme.bgDesign};
 
   grid-column: full-start / full-end;
   display: grid;
