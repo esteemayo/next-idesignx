@@ -31,6 +31,9 @@ const Container = styled.section`
 
 const Wrapper = styled.figure``;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+`;
 
 export default ImageGallery;
