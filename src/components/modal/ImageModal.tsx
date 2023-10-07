@@ -152,7 +152,10 @@ const Button = styled.button<IBtn>`
   right: ${({ direction }) => direction === 'right' && '10rem'};
   transform: translateY(-50%);
 
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 5rem;
   height: 5rem;
   border: none;
