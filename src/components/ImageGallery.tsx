@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 
 const ImageGallery = () => {
-  return <Container>ImageGallery</Container>;
+  return <Container>
+    <Wrapper></Wrapper>
+  </Container>;
 };
 
 const Container = styled.section`
