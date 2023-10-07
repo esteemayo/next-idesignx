@@ -23,7 +23,11 @@ const ImageGallery = () => {
         {images.map((item, index) => {
           const { id, img } = item;
           return (
-            <Wrapper key={id} className={`gallery-item--${index + 1}`}>
+            <Wrapper
+              key={id}
+              className={`gallery-item--${index + 1}`}
+              onClick={handleOpen}
+            >
               <StyledImage src={img} width={270} height={140} alt='' />
             </Wrapper>
           );
