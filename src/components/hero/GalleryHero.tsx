@@ -11,16 +11,14 @@ const GalleryHero = () => {
     const elem = textRef.current;
     init(elem, {
       showCursor: false,
-      strings: ['Imagine.', 'Print.', 'Deliver.'],
+      strings: ['You imagine.', 'We print.', 'We deliver.'],
     });
   }, []);
 
   return (
     <Header>
       <Heading>Gallery</Heading>
-      <Text>
-        We <Span ref={textRef}></Span>
-      </Text>
+      <Text ref={textRef}>&nbsp;</Text>
     </Header>
   );
 };
