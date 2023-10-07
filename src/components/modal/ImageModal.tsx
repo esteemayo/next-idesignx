@@ -58,6 +58,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
           />
         </ImageContainer>
       </Wrapper>
+      <ButtonWrapper></ButtonWrapper>
     </Overlay>
   );
 };
