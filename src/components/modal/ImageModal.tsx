@@ -112,6 +112,7 @@ const Box = styled.div`
   width: 120rem;
   height: 60rem;
   background-color: var(--clr-white);
+  border-radius: 0.5rem;
 
   display: flex;
   align-items: center;
