@@ -126,6 +126,10 @@ body {
   }
 }
 
+.gallery-item--1 {
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
