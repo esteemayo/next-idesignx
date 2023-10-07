@@ -59,7 +59,7 @@ const Text = styled.p`
   grid-area: 3 / 1 / 4 / -1;
   align-self: self-start;
 
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
   color: currentColor;
 `;
