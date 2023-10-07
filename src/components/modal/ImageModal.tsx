@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
+import CloseIcon from '@mui/icons-material/Close';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -58,7 +59,11 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
           />
         </ImageContainer>
       </Wrapper>
-      <ButtonWrapper></ButtonWrapper>
+      <ButtonWrapper>
+        <CloseButton>
+          <CloseIcon />
+        </CloseButton>
+      </ButtonWrapper>
     </Overlay>
   );
 };
