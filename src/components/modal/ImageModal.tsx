@@ -111,9 +111,12 @@ const CloseButton = styled.button`
   border: none;
   width: 3.5rem;
   height: 3.5rem;
+  font-size: 3rem;
   background-color: transparent;
   color: var(--clr-white);
   border-radius: 50%;
+  outline-color: var(--clr-gray-dark-2);
+  cursor: pointer;
 `;
 
 export default ImageModal;
