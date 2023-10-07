@@ -126,6 +126,15 @@ body {
   }
 }
 
+.ityped-cursor {
+  font-size: 2.2rem;
+  opacity: 1;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -188,5 +197,11 @@ body {
   }
 
   to {
+  }
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
   }
 }
