@@ -16,6 +16,10 @@ interface IWrapper {
   active: string | null | undefined;
 }
 
+interface IBtn {
+  direction: string;
+}
+
 const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
@@ -51,7 +55,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
-      <Button>
+      <Button direction='left'>
         <ArrowBackIosIcon />
       </Button>
       <Wrapper active={activeModal}>
@@ -64,7 +68,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
           />
         </ImageContainer>
       </Wrapper>
-      <Button>
+      <Button direction='right'>
         <ArrowForwardIosIcon />
       </Button>
       <ButtonWrapper>
@@ -141,6 +145,9 @@ const CloseButton = styled.button`
   }
 `;
 
-const Button = styled.button``;
+const Button = styled.button<IBtn>`
+  display: inline-block;
+  border: none;
+`;
 
 export default ImageModal;
