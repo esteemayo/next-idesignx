@@ -260,3 +260,62 @@ export const cardItems = [
     desc: 'Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.',
   },
 ];
+
+export const galleryItems = [
+  {
+    id: 1,
+    img: '/img/gallery/gal-1.jpg',
+  },
+  {
+    id: 2,
+    img: '/img/gallery/gal-2.jpg',
+  },
+  {
+    id: 3,
+    img: '/img/gallery/gal-3.jpg',
+  },
+  {
+    id: 4,
+    img: '/img/gallery/gal-4.jpg',
+  },
+  {
+    id: 5,
+    img: '/img/gallery/gal-5.jpg',
+  },
+  {
+    id: 6,
+    img: '/img/gallery/gal-6.jpg',
+  },
+  {
+    id: 7,
+    img: '/img/gallery/gal-7.jpg',
+  },
+  {
+    id: 8,
+    img: '/img/gallery/gal-8.jpg',
+  },
+  {
+    id: 9,
+    img: '/img/gallery/gal-9.jpg',
+  },
+  {
+    id: 10,
+    img: '/img/gallery/gal-10.jpg',
+  },
+  {
+    id: 11,
+    img: '/img/gallery/gal-11.jpg',
+  },
+  {
+    id: 12,
+    img: '/img/gallery/gal-12.jpg',
+  },
+  {
+    id: 13,
+    img: '/img/gallery/gal-13.jpg',
+  },
+  {
+    id: 14,
+    img: '/img/gallery/gal-14.jpg',
+  },
+];
