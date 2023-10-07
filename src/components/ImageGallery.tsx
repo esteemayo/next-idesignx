@@ -11,6 +11,8 @@ import { galleryItems } from '@/data';
 
 const ImageGallery = () => {
   const { isOpen, onOpen, onClose } = useImageModal();
+
+  const [slideIndex, setSlideIndex] = useState(0);
   const [images, setImages] = useState(galleryItems);
 
   const handleOpen = useCallback(() => {
