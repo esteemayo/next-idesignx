@@ -176,7 +176,7 @@ const ButtonContainer = styled.div<IBtn>`
 const Button = styled.button<IBtn>`
   display: inline-block;
   border: none;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: transparent;
   color: var(--clr-white);
   border-radius: 50%;
