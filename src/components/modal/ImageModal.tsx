@@ -146,6 +146,11 @@ const CloseButton = styled.button`
 `;
 
 const Button = styled.button<IBtn>`
+  position: absolute;
+  top: 50%;
+  left: ${({ direction }) => direction === 'left' && '10rem'};
+  right: ${({ direction }) => direction === 'right' && '10rem'};
+
   display: inline-block;
   border: none;
 `;
