@@ -162,6 +162,12 @@ const Button = styled.button<IBtn>`
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #29292a;
+    transform: scale(0.9);
+  }
 
   svg {
     font-size: inherit;
