@@ -52,6 +52,7 @@ const Heading = styled.h1`
   font-weight: 400;
   font-size: 4.5rem;
   text-transform: uppercase;
+  color: currentColor;
   letter-spacing: 0.7rem;
   line-height: 1.2;
 `;
