@@ -72,6 +72,11 @@ const Wrapper = styled.div``;
 
 const ImageContainer = styled.div``;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  display: block;
+  width: 100rem;
+  height: 50rem;
+  object-fit: cover;
+`;
 
 export default ImageModal;
