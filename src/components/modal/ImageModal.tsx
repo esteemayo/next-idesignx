@@ -70,12 +70,15 @@ const Overlay = styled.aside`
 
 const Wrapper = styled.div``;
 
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+  width: 100rem;
+  height: 50rem;
+`;
 
 const StyledImage = styled(Image)`
   display: block;
-  width: 100rem;
-  height: 50rem;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 `;
 
