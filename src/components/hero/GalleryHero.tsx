@@ -10,8 +10,9 @@ const GalleryHero = () => {
   useEffect(() => {
     const elem = textRef.current;
     init(elem, {
-      showCursor: true,
-      backDelay: 1000,
+      showCursor: false,
+      backDelay: 1500,
+      backSpeed: 60,
       strings: ['You imagine.', 'We design.', 'We print.', 'We deliver.'],
     });
   }, []);
