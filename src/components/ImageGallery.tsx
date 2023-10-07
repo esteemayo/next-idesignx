@@ -5,7 +5,9 @@ import styled from 'styled-components';
 
 const ImageGallery = () => {
   return <Container>
-    <Wrapper></Wrapper>
+    <Wrapper>
+      <StyledImage src='' width={270} height={140} alt='' />
+    </Wrapper>
   </Container>;
 };
 
