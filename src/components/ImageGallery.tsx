@@ -23,6 +23,22 @@ const ImageGallery = () => {
     [onOpen]
   );
 
+  const handleClick = useCallback(
+    (direction: string) => {
+      let newSlideIndex;
+      const lastIndex = images.length - 1;
+
+      if (direction === 'left') {
+        newSlideIndex = slideIndex === 0 ? lastIndex : slideIndex - 1;
+        return;
+      }
+
+      newSlideIndex = slideIndex === lastIndex ? 0 : slideIndex + 1;
+      setSlideIndex(newSlideIndex);
+    },
+    [images, slideIndex]
+  );
+
   const selectedImage = useMemo(() => {
     return images[slideIndex].img;
   }, [images, slideIndex]);
