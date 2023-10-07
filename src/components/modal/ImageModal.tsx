@@ -68,9 +68,11 @@ const ImageModal: React.FC<ImageModalProps> = ({
         </Button>
       </ButtonContainer>
       <Wrapper active={activeModal}>
-        <ImageContainer>
-          <StyledImage src={image} width={1000} height={600} alt='' />
-        </ImageContainer>
+        <Box>
+          <ImageContainer>
+            <StyledImage src={image} width={1000} height={600} alt='' />
+          </ImageContainer>
+        </Box>
       </Wrapper>
       <ButtonContainer direction='right' onClick={() => onClick('right')}>
         <Button direction='right'>
