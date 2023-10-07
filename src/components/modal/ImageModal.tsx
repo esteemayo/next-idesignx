@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseIcon from '@mui/icons-material/Close';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -124,7 +126,7 @@ const CloseButton = styled.button`
 
   &:hover {
     background-color: #29292a;
-    transform : scale(0.9);
+    transform: scale(0.9);
   }
 
   svg {
