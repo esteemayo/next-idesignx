@@ -19,8 +19,10 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
   }, [onClose]);
 
   const closeModalHandler = useCallback(
-    (e) => {
-      if (e.target.classList.contains('overlay')) {
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      const target = e.target as Element;
+
+      if (target.classList.contains('overlay')) {
         handleClose();
       }
     },
