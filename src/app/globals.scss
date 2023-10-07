@@ -146,6 +146,10 @@ body {
   grid-area: 3 / 1 / span 3 / span 2;
 }
 
+.gallery-item--6 {
+  grid-area: 4 / 3 / span 2 / span 2;
+}
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
