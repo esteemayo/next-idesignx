@@ -12,6 +12,8 @@ const Overlay = styled.aside`
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(38, 38, 38, 0.7);
+  z-index: 5000;
 `;
 
 export default ImageModal;
