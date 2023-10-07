@@ -70,7 +70,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
       <Wrapper active={activeModal}>
         <Box>
           <ImageContainer>
-            <StyledImage src={image} width={1000} height={600} alt='' />
+            <StyledImage src={image} width={1000} height={500} alt='' />
           </ImageContainer>
         </Box>
       </Wrapper>
@@ -110,13 +110,17 @@ const Wrapper = styled.div<IWrapper>`
 
 const Box = styled.div`
   width: 120rem;
-  height: 70rem;
+  height: 60rem;
   background-color: var(--clr-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ImageContainer = styled.div`
   width: 100rem;
-  height: 60rem;
+  height: 50rem;
 `;
 
 const StyledImage = styled(Image)`
