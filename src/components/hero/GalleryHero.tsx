@@ -64,10 +64,4 @@ const Text = styled.p`
   color: currentColor;
 `;
 
-const Span = styled.span`
-  display: inline-block;
-  font-size: 2.25rem;
-  color: var(--clr-purple-light-1);
-`;
-
 export default GalleryHero;
