@@ -108,7 +108,11 @@ const Wrapper = styled.div<IWrapper>`
   transition: all 300ms;
 `;
 
-const Box = styled.div``;
+const Box = styled.div`
+  width: 120rem;
+  height: 70rem;
+  background-color: var(--clr-white);
+`;
 
 const ImageContainer = styled.div`
   width: 100rem;
