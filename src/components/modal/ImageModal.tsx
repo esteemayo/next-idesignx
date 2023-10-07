@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 
 const ImageModal = () => {
-  return <Overlay>ImageModal</Overlay>;
+  return <Overlay>
+    <Wrapper>ImageModal</Wrapper>
+    </Overlay>;
 };
 
 const Overlay = styled.aside`
