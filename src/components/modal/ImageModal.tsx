@@ -70,7 +70,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
       <Wrapper active={activeModal}>
         <Box>
           <ImageContainer>
-            <StyledImage src={image} width={1000} height={500} alt='' />
+            <StyledImage src={image} width={1100} height={500} alt='' />
           </ImageContainer>
         </Box>
       </Wrapper>
@@ -120,7 +120,7 @@ const Box = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 100rem;
+  width: 110rem;
   height: 50rem;
 `;
 
