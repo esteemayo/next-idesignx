@@ -62,6 +62,7 @@ const Text = styled.p`
 
   font-size: 2.5rem;
   text-align: center;
+  color: currentColor;
 `;
 
 const Span = styled.span`
