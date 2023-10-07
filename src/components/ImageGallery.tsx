@@ -5,21 +5,25 @@ import styled from 'styled-components';
 import { useState } from 'react';
 
 import { galleryItems } from '@/data';
+import ImageModal from './modal/ImageModal';
 
 const ImageGallery = () => {
   const [images, setImages] = useState(galleryItems);
 
   return (
-    <Container>
-      {images.map((item, index) => {
-        const { id, img } = item;
-        return (
-          <Wrapper key={id} className={`gallery-item--${index + 1}`}>
-            <StyledImage src={img} width={270} height={140} alt='' />
-          </Wrapper>
-        );
-      })}
-    </Container>
+    <>
+      <Container>
+        {images.map((item, index) => {
+          const { id, img } = item;
+          return (
+            <Wrapper key={id} className={`gallery-item--${index + 1}`}>
+              <StyledImage src={img} width={270} height={140} alt='' />
+            </Wrapper>
+          );
+        })}
+      </Container>
+      <ImageModal />
+    </>
   );
 };
 
