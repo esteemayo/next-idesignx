@@ -64,6 +64,10 @@ const Text = styled.p`
   text-align: center;
 `;
 
-const Span = styled.span``;
+const Span = styled.span`
+  display: inline-block;
+  font-size: 2.25rem;
+  color: var(--clr-purple-light-1);
+`;
 
 export default GalleryHero;
