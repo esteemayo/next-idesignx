@@ -97,4 +97,6 @@ const StyledImage = styled(Image)`
 
 const ButtonWrapper = styled.div``;
 
+const CloseButton = styled.button``;
+
 export default ImageModal;
