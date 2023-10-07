@@ -134,8 +134,8 @@ const StyledImage = styled(Image)`
 
 const ButtonWrapper = styled.div`
   position: absolute;
-  top: 7rem;
-  left: 10rem;
+  top: 1rem;
+  left: 1rem;
 `;
 
 const CloseButton = styled.button`
