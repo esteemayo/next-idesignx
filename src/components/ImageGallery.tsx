@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const ImageGallery = () => {
@@ -14,5 +15,7 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.figure``;
+
+const StyledImage = styled(Image)``;
 
 export default ImageGallery;
