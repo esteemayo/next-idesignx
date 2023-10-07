@@ -1,10 +1,16 @@
 'use client';
 
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import { init } from 'ityped';
 
 const GalleryHero = () => {
   const textRef = useRef();
+
+  useEffect(() => {
+    const elem = textRef.current;
+    init(elem, { showCursor: false, strings: ['Imagine', 'Print', 'Deliver'] });
+  }, []);
 
   return (
     <Header>
