@@ -18,12 +18,21 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
     }, 300);
   }, [onClose]);
 
+  const closeModalHandler = useCallback(
+    (e) => {
+      if (e.target.classList.contains('overlay')) {
+        handleClose();
+      }
+    },
+    [handleClose]
+  );
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
 
   return (
-    <Overlay>
+    <Overlay className='overlay'>
       <Wrapper>
         <ImageContainer>ImageModal</ImageContainer>
       </Wrapper>
