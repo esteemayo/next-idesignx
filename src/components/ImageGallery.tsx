@@ -8,10 +8,10 @@ import { galleryItems } from '@/data';
 const ImageGallery = () => {
   return (
     <Container>
-      {galleryItems.map((item) => {
+      {galleryItems.map((item, index) => {
         const { id, img } = item;
         return (
-          <Wrapper key={id}>
+          <Wrapper key={id} className={`gallery-item--${index}`}>
             <StyledImage src={img} width={270} height={140} alt='' />
           </Wrapper>
         );
