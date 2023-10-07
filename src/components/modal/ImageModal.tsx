@@ -24,4 +24,6 @@ const Overlay = styled.aside`
 
 const Wrapper = styled.div``;
 
+const ImageContainer = styled.div``;
+
 export default ImageModal;
