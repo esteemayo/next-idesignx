@@ -41,7 +41,14 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
       <Wrapper>
-        <ImageContainer>ImageModal</ImageContainer>
+        <ImageContainer>
+          <StyledImage
+            src='/img/gallery-hero.jpg'
+            width={1000}
+            height={500}
+            alt=''
+          />
+        </ImageContainer>
       </Wrapper>
     </Overlay>
   );
