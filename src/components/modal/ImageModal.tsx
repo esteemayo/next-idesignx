@@ -1,12 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 
 interface ImageModalProps {
   isOpen: boolean;
   onClose(): void;
+}
+
+interface IWrapper {
+  active: string | null | undefined;
 }
 
 const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
@@ -30,6 +34,10 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
     [handleClose]
   );
 
+  const activeModal = useMemo(() => {
+    return showModal?.toString();
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -40,7 +48,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
-      <Wrapper>
+      <Wrapper active={activeModal}>
         <ImageContainer>
           <StyledImage
             src='/img/gallery-hero.jpg'
@@ -68,7 +76,11 @@ const Overlay = styled.aside`
   justify-content: center;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div<IWrapper>`
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '-100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
+  transition: all 300ms;
+`;
 
 const ImageContainer = styled.div`
   width: 100rem;
