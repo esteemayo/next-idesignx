@@ -34,7 +34,9 @@ const Container = styled.section`
   gap: 1.5rem;
 `;
 
-const Wrapper = styled.figure``;
+const Wrapper = styled.figure`
+  cursor: pointer;
+`;
 
 const StyledImage = styled(Image)`
   width: 100%;
