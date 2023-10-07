@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
-import { useState } from 'react';
 
 import ImageModal from './modal/ImageModal';
 import { useImageModal } from '@/hooks/useImageModal';
@@ -12,6 +12,10 @@ import { galleryItems } from '@/data';
 const ImageGallery = () => {
   const { isOpen, onOpen, onClose } = useImageModal();
   const [images, setImages] = useState(galleryItems);
+
+  const handleOpen = useCallback(() => {
+    onOpen();
+  }, [onOpen]);
 
   return (
     <>
