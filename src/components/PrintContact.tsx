@@ -1,11 +1,15 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { StyledLink } from './buttons/StyledLink';
 
-const PrintContact = () => {
+interface PrintContactProps {
+  bcg?: string;
+}
+
+const PrintContact: React.FC<PrintContactProps> = ({ bcg }) => {
   return (
-    <Container>
+    <Container bcg={bcg ?? '/img/contact-1.jpg'}>
       <Paragraph>
         Need a custom design and professional <Br />
         printing services?
@@ -15,7 +19,7 @@ const PrintContact = () => {
   );
 };
 
-const Container = styled.section`
+const Container = styled.section<PrintContactProps>`
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -23,12 +27,16 @@ const Container = styled.section`
 
   margin: 8rem 0;
   color: var(--clr-white);
-  background-image: linear-gradient(
+  background-image: ${({ bcg }) =>
+    bcg &&
+    css`
+  linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
       rgba(51, 51, 51, 0.7)
     ),
-    url(/img/contact-1.jpg);
+    url(${bcg})
+  `};
   background-size: cover;
   background-position: center;
 
