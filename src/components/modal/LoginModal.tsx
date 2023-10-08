@@ -1,7 +1,8 @@
 'use client';
 
-import { ChangeEventHandler, FormEvent, useCallback, useState } from 'react';
+import { ChangeEventHandler, useCallback, useState } from 'react';
 
+import Heading from '../Heading';
 import Modal from './Modal';
 import Input from '../inputs/Input';
 
@@ -35,6 +36,7 @@ const LoginModal = () => {
 
   const bodyContent = (
     <>
+      <Heading title='Welcome back' subtitle='Log into your account' />
       <Input
         name='email'
         type='email'
