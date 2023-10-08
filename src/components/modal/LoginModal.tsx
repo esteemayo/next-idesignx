@@ -15,8 +15,6 @@ const LoginModal = () => {
   const isOpen = useLoginModal((state) => state.isOpen);
   const onClose = useLoginModal((state) => state.onClose);
 
-  const;
-
   const onSubmitHandler = () => {};
 
   const { data, handleChange, handleSubmit } = useForm(
@@ -49,7 +47,7 @@ const LoginModal = () => {
       title='Login'
       actionLabel='Login'
       onClose={onClose}
-      onSubmit={onSubmitHandler}
+      onSubmit={handleSubmit}
       body={bodyContent}
     />
   );
