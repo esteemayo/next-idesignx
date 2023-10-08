@@ -20,6 +20,10 @@ const Button = styled.button`
   color: ${({ theme }) => theme.textNav};
   outline-color: ${({ theme }) => theme.outline};
   cursor: pointer;
+
+  &:hover {
+    color: ${({ theme }) => theme.textNavHov};
+  }
 `;
 
 export default NavButton;
