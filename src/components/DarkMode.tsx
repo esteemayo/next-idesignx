@@ -65,7 +65,6 @@ const Button = styled.button`
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
-  transition: all 0.2s;
 
   display: flex;
   align-items: center;
