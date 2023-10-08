@@ -23,10 +23,11 @@ interface IContainer {
 const Navbar = () => {
   const pathname = usePathname();
 
+  const isOpen = useMenu((state) => state.isOpen);
   const designModal = useDesignModal();
+  const loginModal = useLoginModal((state) => state.onOpen);
   const { activeMenu } = useActiveMenu();
-  const loginModal = useLoginModal();
-  const { isOpen, onOpen } = useMenu();
+  const onOpen = useMenu((state) => state.onOpen);
 
   return (
     <Container active={activeMenu}>
@@ -36,7 +37,7 @@ const Navbar = () => {
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
-        <NavButton label='Login' onClick={loginModal.onOpen} />
+        <NavButton label='Login' onClick={loginModal} />
         <Button
           nav='true'
           type='button'
