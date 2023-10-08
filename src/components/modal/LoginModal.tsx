@@ -30,7 +30,8 @@ const LoginModal = () => {
 
   const handleSubmit = useCallback(() => {
     console.log({ ...data });
-  }, [data]);
+    handleClear();
+  }, [data, handleClear]);
 
   const bodyContent = (
     <>
