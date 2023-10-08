@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import LoginModal from './modal/LoginModal';
 import DesignModal from './modal/DesignModal';
 
-import ScrollButton from './buttons/ScrollButton';
 import Navbar from './navbar/Navbar';
+import ScrollButton from './buttons/ScrollButton';
 import Footer from './footer/Footer';
 import Sidebar from './sidebar/Sidebar';
 
