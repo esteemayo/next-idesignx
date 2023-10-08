@@ -14,7 +14,9 @@ const initialState = {
 };
 
 const LoginModal = () => {
-  const { isOpen, onClose } = useLoginModal();
+  const isOpen = useLoginModal((state) => state.isOpen);
+  const onClose = useLoginModal((state) => state.onClose);
+
   const [data, setData] = useState(initialState);
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
