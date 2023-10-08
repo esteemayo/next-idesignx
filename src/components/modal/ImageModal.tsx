@@ -129,7 +129,6 @@ const StyledImage = styled(Image)`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 2px;
 `;
 
 const ButtonWrapper = styled.div`
