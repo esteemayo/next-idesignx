@@ -81,7 +81,7 @@ const Button = styled.button`
     transition: all 0.2s;
 
     &:hover {
-      font-size: 2rem;
+      transform: scale(0.9);
     }
   }
 `;
