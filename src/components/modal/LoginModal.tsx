@@ -24,6 +24,10 @@ const LoginModal = () => {
     []
   );
 
+  const handleClear = useCallback(() => {
+    setData(initialState);
+  }, []);
+
   const handleSubmit = useCallback(() => {
     console.log({ ...data });
   }, [data]);
