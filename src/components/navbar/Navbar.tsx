@@ -11,6 +11,7 @@ import Button from '../buttons/Button';
 import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
+import { useLoginModal } from '@/hooks/useLoginModal';
 
 import { navItems } from '@/data';
 import NavButton from './NavButton';
@@ -25,6 +26,7 @@ const Navbar = () => {
   const designModal = useDesignModal();
   const { activeMenu } = useActiveMenu();
   const { isOpen, onOpen } = useMenu();
+  const loginModal = useLoginModal((state) => state.onOpen);
 
   return (
     <Container active={activeMenu}>
@@ -34,7 +36,7 @@ const Navbar = () => {
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
-        <NavButton />
+        <NavButton label='Login' onClick={loginModal} />
         <Button
           nav='true'
           type='button'
