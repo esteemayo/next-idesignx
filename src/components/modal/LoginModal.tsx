@@ -12,9 +12,8 @@ const initialState = {
 };
 
 const LoginModal = () => {
-  const isOpen = useLoginModal((state) => state.isOpen);
-  const onClose = useLoginModal((state) => state.onClose);
-
+  const { isOpen, onClose } = useLoginModal();
+  console.log(isOpen);
   const onSubmitHandler = () => {};
 
   const { data, handleChange, handleSubmit } = useForm(

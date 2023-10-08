@@ -25,8 +25,8 @@ const Navbar = () => {
 
   const designModal = useDesignModal();
   const { activeMenu } = useActiveMenu();
+  const loginModal = useLoginModal();
   const { isOpen, onOpen } = useMenu();
-  const loginModal = useLoginModal((state) => state.onOpen);
 
   return (
     <Container active={activeMenu}>
@@ -36,7 +36,7 @@ const Navbar = () => {
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
-        <NavButton label='Login' onClick={loginModal} />
+        <NavButton label='Login' onClick={loginModal.onOpen} />
         <Button
           nav='true'
           type='button'
