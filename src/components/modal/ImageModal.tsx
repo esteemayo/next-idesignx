@@ -135,6 +135,7 @@ const ButtonWrapper = styled.div`
   position: absolute;
   top: 1rem;
   left: 1rem;
+  z-index: 3000;
 `;
 
 const CloseButton = styled.button`
