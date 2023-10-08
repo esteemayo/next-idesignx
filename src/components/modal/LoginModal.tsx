@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEventHandler, useCallback, useState } from 'react';
+import { ChangeEventHandler, FormEvent, useCallback, useState } from 'react';
 
 import Modal from './Modal';
 import Input from '../inputs/Input';
@@ -23,6 +23,10 @@ const LoginModal = () => {
     },
     []
   );
+
+  const handleSubmit = useCallback(() => {
+    console.log({ ...data });
+  }, [data]);
 
   const bodyContent = (
     <>
