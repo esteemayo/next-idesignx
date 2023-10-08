@@ -1,12 +1,13 @@
 'use client';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
+import Modal from './Modal';
 
 const LoginModal = () => {
-  const onOpen = useLoginModal((state) => state.onOpen);
+  const isOpen = useLoginModal((state) => state.isOpen);
   const onClose = useLoginModal((state) => state.onClose);
 
-  return <div>LoginModal</div>;
+  return <Modal isOpen={isOpen} onClose={onClose} />;
 };
 
 export default LoginModal;
