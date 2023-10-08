@@ -28,7 +28,7 @@ const ImageModal: React.FC<ImageModalProps> = ({
   onClose,
   onClick,
 }) => {
-  const [showModal, setShowModal] = useState(isOpen);
+  const [showModal, setShowModal] = useState<boolean | undefined>(isOpen);
 
   const handleClose = useCallback(() => {
     setShowModal(false);
