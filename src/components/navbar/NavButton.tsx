@@ -15,6 +15,8 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   font-weight: 300;
+  background-color: transparent;
+  color: ${({ theme }) => theme.textNav};
 `;
 
 export default NavButton;
