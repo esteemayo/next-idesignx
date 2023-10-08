@@ -78,6 +78,7 @@ const Button = styled.button`
   svg {
     font-size: 2.2rem;
     fill: currentColor;
+    transition: all 0.2s;
 
     &:hover {
       font-size: 2rem;
