@@ -1,9 +1,9 @@
 'use client';
 
-import { useLoginModal } from '@/hooks/useLoginModal';
-import Modal from './Modal';
-import Form from '../form/Form';
 import { useForm } from '@/hooks/useForm';
+import { useLoginModal } from '@/hooks/useLoginModal';
+
+import Modal from './Modal';
 import Input from '../inputs/Input';
 
 const initialState = {
@@ -15,6 +15,8 @@ const LoginModal = () => {
   const isOpen = useLoginModal((state) => state.isOpen);
   const onClose = useLoginModal((state) => state.onClose);
 
+  const;
+
   const onSubmitHandler = () => {};
 
   const { data, handleChange, handleSubmit } = useForm(
@@ -23,7 +25,7 @@ const LoginModal = () => {
   );
 
   const bodyContent = (
-    <Form onSubmit={handleSubmit}>
+    <>
       <Input
         name='name'
         label='Email address'
@@ -38,10 +40,19 @@ const LoginModal = () => {
         placeholder='********'
         onChange={handleChange}
       />
-    </Form>
+    </>
   );
 
-  return <Modal isOpen={isOpen} onClose={onClose} body={bodyContent} />;
+  return (
+    <Modal
+      isOpen={isOpen}
+      title='Login'
+      actionLabel='Login'
+      onClose={onClose}
+      onSubmit={onSubmitHandler}
+      body={bodyContent}
+    />
+  );
 };
 
 export default LoginModal;
