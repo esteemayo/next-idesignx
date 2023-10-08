@@ -15,6 +15,7 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   font-weight: 300;
+  font-size: var(--default-font-size);
   background-color: transparent;
   color: ${({ theme }) => theme.textNav};
 `;
