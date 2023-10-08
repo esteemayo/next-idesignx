@@ -148,7 +148,7 @@ const CloseButton = styled.button`
   height: 4rem;
   font-size: 2.3rem;
   background-color: transparent;
-  color: var(--clr-text-small-dark);
+  color: var(--clr-white);
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
@@ -178,7 +178,7 @@ const Button = styled.button<IBtn>`
   border: none;
   font-size: 3rem;
   background-color: transparent;
-  color: var(--clr-text-small-dark);
+  color: var(--clr-white);
   border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
