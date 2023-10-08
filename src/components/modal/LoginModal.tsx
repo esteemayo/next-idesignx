@@ -39,6 +39,7 @@ const LoginModal = () => {
       />
       <Input
         name='password'
+        type='password'
         label='Password'
         value={data.password}
         placeholder='********'
