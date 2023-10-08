@@ -31,14 +31,14 @@ const LoginModal = () => {
   const bodyContent = (
     <>
       <Input
-        name='name'
+        name='email'
         label='Email address'
         value={data.email}
         placeholder='Email address'
         onChange={handleChange}
       />
       <Input
-        name='name'
+        name='password'
         label='Password'
         value={data.password}
         placeholder='********'
