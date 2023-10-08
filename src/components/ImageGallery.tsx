@@ -72,7 +72,7 @@ const ImageGallery = () => {
 const Container = styled.section`
   padding: 10rem 3rem;
   padding-bottom: 0;
-  background-color: ${({ theme }) => theme.bgDesign};
+  background-color: ${({ theme }) => theme.bg};
 
   grid-column: full-start / full-end;
   display: grid;
