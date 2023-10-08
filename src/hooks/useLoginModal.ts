@@ -13,6 +13,6 @@ export const useLoginModal = create<LoginModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openLoginModal'),
-    onClose: () => set(() => ({ isOpen: true }), false, 'closeLoginModal'),
+    onClose: () => set(() => ({ isOpen: false }), false, 'closeLoginModal'),
   }))
 );
