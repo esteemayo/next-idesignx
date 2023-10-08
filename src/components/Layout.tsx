@@ -2,9 +2,11 @@
 
 import styled from 'styled-components';
 
+import LoginModal from './modal/LoginModal';
+import DesignModal from './modal/DesignModal';
+
 import ScrollButton from './buttons/ScrollButton';
 import Navbar from './navbar/Navbar';
-import DesignModal from './modal/DesignModal';
 import Footer from './footer/Footer';
 import Sidebar from './sidebar/Sidebar';
 
@@ -24,6 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Navbar />
         <Sidebar />
         <DesignModal />
+        <LoginModal />
         {children}
         <Footer />
         <ScrollButton />
