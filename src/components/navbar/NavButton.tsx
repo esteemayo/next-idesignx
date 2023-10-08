@@ -18,6 +18,8 @@ const Button = styled.button`
   font-size: var(--default-font-size);
   background-color: transparent;
   color: ${({ theme }) => theme.textNav};
+  outline-color: ${({ theme }) => theme.outline};
+  cursor: pointer;
 `;
 
 export default NavButton;
