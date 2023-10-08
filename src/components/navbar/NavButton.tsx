@@ -14,6 +14,7 @@ const NavButton: React.FC<NavButtonProps> = ({ label, onClick }) => {
 const Button = styled.button`
   display: inline-block;
   border: none;
+  font-weight: 300;
 `;
 
 export default NavButton;
