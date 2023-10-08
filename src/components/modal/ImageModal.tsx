@@ -179,7 +179,6 @@ const Button = styled.button<IBtn>`
   font-size: 3rem;
   background-color: transparent;
   color: var(--clr-white);
-  border-radius: 50%;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
 
