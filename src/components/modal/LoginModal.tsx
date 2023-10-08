@@ -1,10 +1,11 @@
 'use client';
 
-import { useForm } from '@/hooks/useForm';
-import { useLoginModal } from '@/hooks/useLoginModal';
+import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import Modal from './Modal';
 import Input from '../inputs/Input';
+
+import { useLoginModal } from '@/hooks/useLoginModal';
 
 const initialState = {
   email: '',
@@ -13,12 +14,14 @@ const initialState = {
 
 const LoginModal = () => {
   const { isOpen, onClose } = useLoginModal();
-  console.log(isOpen);
-  const onSubmitHandler = () => {};
+  const [data, setData] = useState(initialState);
 
-  const { data, handleChange, handleSubmit } = useForm(
-    onSubmitHandler,
-    initialState
+  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
+    ({ target: input }) => {
+      const { name, value } = input;
+      setData((prev) => ({ ...prev, [name]: value }));
+    },
+    []
   );
 
   const bodyContent = (
