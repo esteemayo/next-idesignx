@@ -52,7 +52,7 @@ const ImageGallery = () => {
             <Wrapper
               key={id}
               className={`gallery-item--${index + 1}`}
-              onClick={() => handleOpen(index)}
+              onClick={() => handleOpen(index as number)}
             >
               <StyledImage src={img} width={270} height={140} alt='' />
             </Wrapper>
