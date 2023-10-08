@@ -37,6 +37,7 @@ const LoginModal = () => {
     <>
       <Input
         name='email'
+        type='email'
         label='Email address'
         value={data.email}
         placeholder='Email address'
