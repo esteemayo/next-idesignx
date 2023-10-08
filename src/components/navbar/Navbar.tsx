@@ -13,6 +13,7 @@ import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
 import { navItems } from '@/data';
+import NavButton from './NavButton';
 
 interface IContainer {
   active: string;
@@ -33,6 +34,7 @@ const Navbar = () => {
       </Wrapper>
       <NavItems links={navItems} path={pathname} />
       <Box>
+        <NavButton />
         <Button
           nav='true'
           type='button'
