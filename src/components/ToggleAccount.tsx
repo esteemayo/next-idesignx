@@ -36,7 +36,9 @@ const Wrapper = styled.div`
   gap: 0.8rem;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  color: ${({ theme }) => theme.textSoft};
+`;
 
 const Button = styled.button`
   display: inline-block;
