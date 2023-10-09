@@ -8,6 +8,7 @@ import ToggleAccount from '../ToggleAccount';
 import Heading from '../Heading';
 import LoginOptions from '../LoginOptions';
 
+import { Line } from '../Line';
 import Input from '../inputs/Input';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
@@ -100,11 +101,11 @@ const Container = styled.div`
 
 const Wrapper = styled.div``;
 
-const Line = styled.span`
-  width: 100%;
-  height: 0.1px;
-  background-color: #d7d5d5;
-  margin-top: 2rem;
-`;
+// const Line = styled.span`
+//   width: 100%;
+//   height: 0.1px;
+//   background-color: #d7d5d5;
+//   margin-top: 2rem;
+// `;
 
 export default LoginModal;
