@@ -129,7 +129,7 @@ const LoginModal = () => {
     <Modal
       isOpen={isOpen}
       title='Login'
-      actionLabel='Login'
+      actionLabel='Log in'
       onClose={handleClose}
       onSubmit={handleSubmit}
       body={bodyContent}
