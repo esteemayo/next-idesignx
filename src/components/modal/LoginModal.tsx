@@ -73,7 +73,7 @@ const LoginModal = () => {
   );
 
   const footerContent = (
-    <>
+    <Wrapper>
       <Line />
       <LoginOptions />
       <ToggleAccount
@@ -81,7 +81,7 @@ const LoginModal = () => {
         label='Create an account'
         onClick={handleToggle}
       />
-    </>
+    </Wrapper>
   );
 
   return (
@@ -101,12 +101,7 @@ const Container = styled.div`
   margin-top: 1rem;
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-`;
+const Wrapper = styled.div``;
 
 const Line = styled.span`
   width: 100%;
