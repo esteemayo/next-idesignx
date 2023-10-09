@@ -59,6 +59,11 @@ const RegisterModal = () => {
     loginModal.onOpen();
   }, [loginModal, onClose]);
 
+  const handleClose = useCallback(() => {
+    onClose();
+    setErrors({});
+  }, [onClose]);
+
   const handleChange = useCallback(
     ({ target: input }: ChangeEvent<HTMLInputElement>) => {
       const { name, value } = input;
