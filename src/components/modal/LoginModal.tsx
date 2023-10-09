@@ -104,4 +104,6 @@ const Line = styled.span`
 
 const AccountContainer = styled.div``;
 
+const AccountWrapper = styled.div``;
+
 export default LoginModal;
