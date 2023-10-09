@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { ChangeEvent, useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
 import Modal from './Modal';
 import Heading from '../Heading';
@@ -55,6 +55,14 @@ const RegisterModal = () => {
     handleClear();
   }, [data, handleClear]);
 
+  const actionLabel = useMemo(() => {
+    if (step === STEPS.CREDENTIALS) {
+      return 'Register';
+    }
+
+    return 'Next';
+  }, [step]);
+
   let bodyContent;
 
   bodyContent = (
@@ -97,7 +105,7 @@ const RegisterModal = () => {
     <Modal
       isOpen={isOpen}
       title='Register'
-      actionLabel='Register'
+      actionLabel={actionLabel}
       onClose={onClose}
       body={bodyContent}
       onSubmit={handleSubmit}
