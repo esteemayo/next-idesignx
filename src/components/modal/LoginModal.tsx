@@ -8,6 +8,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Modal from './Modal';
 import ToggleAccount from '../ToggleAccount';
 import Heading from '../Heading';
+import LoginOptions from '../LoginOptions';
 
 import Input from '../inputs/Input';
 import Button from '../buttons/Button';
@@ -74,22 +75,7 @@ const LoginModal = () => {
   const footerContent = (
     <>
       <Line />
-      <Wrapper>
-        <Button
-          small='true'
-          outline='true'
-          type='button'
-          label='Login with Google'
-          icon={GoogleIcon}
-        />
-        <Button
-          small='true'
-          outline='true'
-          type='button'
-          label='Login with Github'
-          icon={GitHubIcon}
-        />
-      </Wrapper>
+      <LoginOptions />
       <ToggleAccount
         title='First time using iDesignx?'
         label='Create an account'
