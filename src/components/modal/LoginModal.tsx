@@ -108,4 +108,6 @@ const AccountContainer = styled.div``;
 
 const AccountWrapper = styled.div``;
 
+const Text = styled.p``;
+
 export default LoginModal;
