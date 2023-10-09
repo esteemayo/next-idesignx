@@ -319,3 +319,18 @@ export const galleryItems = [
     img: '/img/gallery/gal-14.jpg',
   },
 ];
+
+export const genderLists = [
+  {
+    id: 1,
+    text: 'Male',
+  },
+  {
+    id: 2,
+    text: 'Female',
+  },
+  {
+    id: 3,
+    text: 'Other',
+  },
+];
