@@ -101,11 +101,4 @@ const Container = styled.div`
 
 const Wrapper = styled.div``;
 
-// const Line = styled.span`
-//   width: 100%;
-//   height: 0.1px;
-//   background-color: #d7d5d5;
-//   margin-top: 2rem;
-// `;
-
 export default LoginModal;
