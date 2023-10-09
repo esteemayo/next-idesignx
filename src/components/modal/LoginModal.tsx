@@ -1,9 +1,7 @@
 'use client';
 
-import GoogleIcon from '@mui/icons-material/Google';
 import styled from 'styled-components';
 import { ChangeEventHandler, useCallback, useState } from 'react';
-import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Modal from './Modal';
 import ToggleAccount from '../ToggleAccount';
@@ -11,7 +9,6 @@ import Heading from '../Heading';
 import LoginOptions from '../LoginOptions';
 
 import Input from '../inputs/Input';
-import Button from '../buttons/Button';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
