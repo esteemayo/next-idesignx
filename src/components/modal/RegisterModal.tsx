@@ -135,7 +135,7 @@ const RegisterModal = () => {
   }, [data, handleClear, handleNext, step, validateInputs]);
 
   const actionLabel = useMemo(() => {
-    if (step === STEPS.CREDENTIALS) {
+    if (step === STEPS.AVATAR) {
       return 'Register';
     }
 
