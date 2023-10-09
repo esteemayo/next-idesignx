@@ -31,7 +31,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 
   & > * {
     width: 100%;
