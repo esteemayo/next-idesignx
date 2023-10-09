@@ -40,6 +40,10 @@ const LoginModal = () => {
     handleClear();
   }, [data, handleClear]);
 
+  const handleToggle = useCallback(() => {
+    onClose();
+  }, [onClose]);
+
   const bodyContent = (
     <Container>
       <Heading title='Welcome back' subtitle='Log into your account' />
