@@ -121,6 +121,11 @@ const AccountButton = styled.button`
   color: inherit;
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
 `;
 
 export default LoginModal;
