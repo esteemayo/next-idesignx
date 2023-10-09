@@ -83,6 +83,10 @@ const LoginModal = () => {
 
 const Container = styled.div``;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+`;
 
 export default LoginModal;
