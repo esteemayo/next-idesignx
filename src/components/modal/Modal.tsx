@@ -197,7 +197,7 @@ const CloseButton = styled.button`
 const Heading = styled.h1`
   font-weight: 300;
   font-size: 3rem;
-  color: inherit;
+  color: ${({ theme }) => theme.textSoft};
   margin-top: 1rem;
 `;
 
