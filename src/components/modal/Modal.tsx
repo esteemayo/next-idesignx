@@ -190,7 +190,8 @@ const CloseButton = styled.button`
 
 const Heading = styled.h1`
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 4.25rem;
+  color: inherit;
   margin-top: 1rem;
 `;
 
