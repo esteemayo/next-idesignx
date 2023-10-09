@@ -5,14 +5,19 @@ import styled from 'styled-components';
 interface ToggleAccountProps {
   title: string;
   label: string;
+  onClick(): void;
 }
 
-const ToggleAccount: React.FC<ToggleAccountProps> = ({ title, label }) => {
+const ToggleAccount: React.FC<ToggleAccountProps> = ({
+  title,
+  label,
+  onClick,
+}) => {
   return (
     <Container>
       <Wrapper>
         <Text>{title}</Text>
-        <Button>{label}</Button>
+        <Button onClick={onClick}>{label}</Button>
       </Wrapper>
     </Container>
   );
