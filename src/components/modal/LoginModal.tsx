@@ -112,4 +112,6 @@ const AccountWrapper = styled.div``;
 
 const Text = styled.p``;
 
+const AccountButton = styled.button``;
+
 export default LoginModal;
