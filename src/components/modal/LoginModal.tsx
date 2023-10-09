@@ -76,6 +76,7 @@ const LoginModal = () => {
       <ToggleAccount
         title='First time using iDesignx?'
         label='Create an account'
+        onClick={handleToggle}
       />
     </>
   );
