@@ -98,16 +98,40 @@ const RegisterModal = () => {
         placeholder='Username'
         onChange={handleChange}
       />
-      <Input
-        name='phone'
-        type='tel'
-        label='Phone number'
-        value={data.phone}
-        placeholder='Phone number'
-        onChange={handleChange}
-      />
     </Container>
   );
+
+  if (step === STEPS.CREDENTIALS) {
+    bodyContent = (
+      <Container>
+        <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
+        <Input
+          name='phone'
+          type='tel'
+          label='Phone number'
+          value={data.phone}
+          placeholder='Phone number'
+          onChange={handleChange}
+        />
+        <Input
+          name='password'
+          type='password'
+          label='Password'
+          value={data.password}
+          placeholder='Password'
+          onChange={handleChange}
+        />
+        <Input
+          name='passwordConfirm'
+          type='password'
+          label='Confirm password'
+          value={data.passwordConfirm}
+          placeholder='Password'
+          onChange={handleChange}
+        />
+      </Container>
+    );
+  }
 
   return (
     <Modal
