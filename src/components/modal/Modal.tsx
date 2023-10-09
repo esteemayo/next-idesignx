@@ -202,7 +202,7 @@ const Footer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  padding: 1.5rem 0;
+  padding-bottom: 1rem;
 `;
 
 const ButtonContainer = styled.div`
