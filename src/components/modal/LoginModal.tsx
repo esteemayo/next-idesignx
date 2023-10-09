@@ -126,20 +126,4 @@ const AccountWrapper = styled.div`
 
 const Text = styled.p``;
 
-const AccountButton = styled.button`
-  display: inline-block;
-  border: none;
-  font-size: inherit;
-  background-color: transparent;
-  color: inherit;
-  outline-color: var(--clr-gray-dark-2);
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-  }
-`;
-
 export default LoginModal;
