@@ -52,7 +52,7 @@ const LoginModal = () => {
         type='email'
         label='Email address'
         value={data.email}
-        placeholder='Email address'
+        placeholder='you@user.com'
         onChange={handleChange}
       />
       <Input
