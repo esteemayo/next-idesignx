@@ -246,7 +246,7 @@ const RegisterModal = () => {
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       secondaryAction={handleSecondaryAction}
-      onClose={onClose}
+      onClose={handleClose}
       body={bodyContent}
       footer={footerContent}
       onSubmit={handleSubmit}
