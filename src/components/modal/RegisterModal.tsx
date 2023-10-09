@@ -67,6 +67,35 @@ const RegisterModal = () => {
     []
   );
 
+  const validateInputs = useCallback(() => {
+    let errors: IErrors = {};
+    const { name, email, username, password, passwordConfirm } = data;
+
+    if (name.trim() === '') {
+      errors.name = 'true';
+    }
+
+    if (email.trim() === '') {
+      errors.email = 'true';
+    } else {
+      const regEx =
+        /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
+      if (!email.match(regEx)) {
+        errors.email = 'true';
+      }
+    }
+
+    if (password === '') {
+      errors.password = 'true';
+    } else if (password.length < 8) {
+      errors.password = 'true';
+    } else if (password !== passwordConfirm) {
+      errors.passwordConfirm = 'true';
+    }
+
+    return errors;
+  }, [data]);
+
   const handleClear = useCallback(() => {
     setData(initialState);
   }, []);
@@ -76,10 +105,19 @@ const RegisterModal = () => {
       return handleNext();
     }
 
+    const errors = validateInputs();
+
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+      return;
+    }
+
+    setErrors({});
+
     console.log({ ...data });
     handleClear();
     setStep(STEPS.INFO);
-  }, [data, handleClear, handleNext, step]);
+  }, [data, handleClear, handleNext, step, validateInputs]);
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.CREDENTIALS) {
