@@ -77,33 +77,33 @@ const RegisterModal = () => {
     const { name, email, username, phone, password, passwordConfirm } = data;
 
     if (name.trim() === '') {
-      errors.name = 'true';
+      errors.name = 'Name must not be empty';
     }
 
     if (email.trim() === '') {
-      errors.email = 'true';
+      errors.email = 'Email must be a valid email address';
     } else {
       const regEx =
         /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
       if (!email.match(regEx)) {
-        errors.email = 'true';
+        errors.email = 'Username must not be empty';
       }
     }
 
     if (username.trim() === '') {
-      errors.username = 'true';
+      errors.username = 'username must not be empty';
     }
 
     if (phone.trim() === '') {
-      errors.phone = 'true';
+      errors.phone = 'Phone book must not be empty';
     }
 
     if (password === '') {
-      errors.password = 'true';
+      errors.password = 'Password must not be empty';
     } else if (password.length < 8) {
-      errors.password = 'true';
+      errors.password = 'Password should be at least 8 characters long';
     } else if (password !== passwordConfirm) {
-      errors.passwordConfirm = 'true';
+      errors.passwordConfirm = 'Passwords do not match';
     }
 
     return errors;
