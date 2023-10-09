@@ -1,7 +1,9 @@
 'use client';
 
+import GoogleIcon from '@mui/icons-material/Google';
 import styled from 'styled-components';
 import { ChangeEventHandler, useCallback, useState } from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Modal from './Modal';
 import ToggleAccount from '../ToggleAccount';
@@ -73,8 +75,18 @@ const LoginModal = () => {
     <>
       <Line />
       <Wrapper>
-        <Button outline='true' type='button' label='Login with Google' />
-        <Button outline='true' type='button' label='Login with Github' />
+        <Button
+          outline='true'
+          type='button'
+          label='Login with Google'
+          icon={GoogleIcon}
+        />
+        <Button
+          outline='true'
+          type='button'
+          label='Login with Github'
+          icon={GitHubIcon}
+        />
       </Wrapper>
       <ToggleAccount
         title='First time using iDesignx?'
