@@ -116,12 +116,4 @@ const AccountContainer = styled.div`
   margin-top: 1.5rem;
 `;
 
-const AccountWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-`;
-
 export default LoginModal;
