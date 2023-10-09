@@ -40,6 +40,21 @@ const LoginModal = () => {
     []
   );
 
+  const validateInputs = useCallback(() => {
+    let errors: IErrors = {};
+    const { email, password } = data;
+
+    if (email.trim() === '') {
+      errors.email = 'true';
+    }
+
+    if (password.trim() === '') {
+      errors.password = 'true';
+    }
+
+    return errors;
+  }, [data]);
+
   const handleClear = useCallback(() => {
     setData(initialState);
   }, []);
