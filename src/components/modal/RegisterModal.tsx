@@ -73,7 +73,7 @@ const RegisterModal = () => {
 
   const handleSecondaryAction = useMemo(() => {
     return step !== STEPS.INFO ? handleNext : undefined;
-  }, [step]);
+  }, [step, handleNext]);
 
   let bodyContent;
 
