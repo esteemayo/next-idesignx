@@ -51,9 +51,14 @@ const RegisterModal = () => {
   }, []);
 
   const handleSubmit = useCallback(() => {
+    if (step === STEPS.INFO) {
+      return handleNext();
+    }
+
     console.log({ ...data });
     handleClear();
-  }, [data, handleClear]);
+    setStep(STEPS.INFO);
+  }, [data, handleClear, handleNext, step]);
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.CREDENTIALS) {
