@@ -60,9 +60,16 @@ const LoginModal = () => {
   }, []);
 
   const handleSubmit = useCallback(() => {
+    const errors = validateInputs();
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+      return;
+    }
+    setErrors({});
+
     console.log({ ...data });
     handleClear();
-  }, [data, handleClear]);
+  }, [data, handleClear, validateInputs]);
 
   const handleToggle = useCallback(() => {
     onClose();
@@ -79,6 +86,7 @@ const LoginModal = () => {
         value={data.email}
         placeholder='you@user.com'
         onChange={handleChange}
+        error={errors.email}
       />
       <Input
         name='password'
@@ -87,6 +95,7 @@ const LoginModal = () => {
         value={data.password}
         placeholder='********'
         onChange={handleChange}
+        error={errors.password}
       />
     </Container>
   );
