@@ -2,12 +2,17 @@
 
 import styled from 'styled-components';
 
-const ToggleAccount = () => {
+interface ToggleAccountProps {
+  title: string;
+  label: string;
+}
+
+const ToggleAccount: React.FC<ToggleAccountProps> = ({ title, label }) => {
   return (
     <Container>
       <Wrapper>
-        <Text>First time using iDesignx?</Text>
-        <Button>Create an account</Button>
+        <Text>{title}</Text>
+        <Button>{label}</Button>
       </Wrapper>
     </Container>
   );
