@@ -91,6 +91,12 @@ const RegisterModal = () => {
     return step !== STEPS.INFO ? handlePrev : undefined;
   }, [step, handlePrev]);
 
+  const btnSize = useMemo(() => {
+    if (step === STEPS.INFO) {
+      return 'true';
+    }
+  }, [step]);
+
   let bodyContent;
 
   bodyContent = (
@@ -169,6 +175,7 @@ const RegisterModal = () => {
     <Modal
       isOpen={isOpen}
       title='Register'
+      size={btnSize}
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       secondaryAction={handleSecondaryAction}
