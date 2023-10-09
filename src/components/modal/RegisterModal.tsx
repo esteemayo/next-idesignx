@@ -14,6 +14,15 @@ import Input from '../inputs/Input';
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
+interface IErrors {
+  name?: string;
+  email?: string;
+  username?: string;
+  phone?: string;
+  password?: string;
+  passwordConfirm?: string;
+}
+
 enum STEPS {
   INFO = 0,
   CREDENTIALS = 1,
@@ -34,6 +43,7 @@ const RegisterModal = () => {
   const onClose = useRegisterModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
+  const [errors, setErrors] = useState<IErrors>({});
   const [data, setData] = useState(initialState);
 
   const handlePrev = useCallback(() => {
