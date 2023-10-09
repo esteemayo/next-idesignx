@@ -111,9 +111,4 @@ const Line = styled.span`
   margin-top: 2rem;
 `;
 
-const AccountContainer = styled.div`
-  font-weight: 300;
-  margin-top: 1.5rem;
-`;
-
 export default LoginModal;
