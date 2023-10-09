@@ -72,8 +72,8 @@ const RegisterModal = () => {
   }, [step]);
 
   const handleSecondaryAction = useMemo(() => {
-    return step !== STEPS.INFO ? handleNext : undefined;
-  }, [step, handleNext]);
+    return step !== STEPS.INFO ? handlePrev : undefined;
+  }, [step, handlePrev]);
 
   let bodyContent;
 
