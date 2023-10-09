@@ -189,6 +189,7 @@ const RegisterModal = () => {
           value={data.phone}
           placeholder='Phone number'
           onChange={handleChange}
+          error={errors.phone}
         />
         <Input
           name='password'
@@ -197,6 +198,7 @@ const RegisterModal = () => {
           value={data.password}
           placeholder='Password'
           onChange={handleChange}
+          error={errors.password}
         />
         <Input
           name='passwordConfirm'
@@ -205,6 +207,7 @@ const RegisterModal = () => {
           value={data.passwordConfirm}
           placeholder='Password'
           onChange={handleChange}
+          error={errors.passwordConfirm}
         />
       </Container>
     );
