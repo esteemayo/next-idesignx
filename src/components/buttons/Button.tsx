@@ -98,6 +98,11 @@ const StyledButton = styled.button<IBtn>`
   &:disabled {
     opacity: 0.75;
   }
+
+  svg {
+    font-size: 2rem;
+    fill: currentColor;
+  }
 `;
 
 export default Button;
