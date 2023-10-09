@@ -76,6 +76,11 @@ const LoginModal = () => {
     registerModal.onOpen();
   }, [onClose, registerModal]);
 
+  const handleClose = useCallback(() => {
+    onClose();
+    setErrors({});
+  }, [onClose]);
+
   const bodyContent = (
     <Container>
       <Heading title='Welcome back' subtitle='Log into your account' />
@@ -117,7 +122,7 @@ const LoginModal = () => {
       isOpen={isOpen}
       title='Login'
       actionLabel='Login'
-      onClose={onClose}
+      onClose={handleClose}
       onSubmit={handleSubmit}
       body={bodyContent}
       footer={footerContent}
