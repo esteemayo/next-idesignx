@@ -11,6 +11,7 @@ import Heading from '../Heading';
 
 import Input from '../inputs/Input';
 
+import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 enum STEPS {
@@ -29,6 +30,7 @@ const initialState = {
 
 const RegisterModal = () => {
   const isOpen = useRegisterModal((state) => state.isOpen);
+  const loginModal = useLoginModal();
   const onClose = useRegisterModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
@@ -41,6 +43,11 @@ const RegisterModal = () => {
   const handleNext = useCallback(() => {
     setStep((value) => value + 1);
   }, []);
+
+  const handleToggle = useCallback(() => {
+    onClose();
+    loginModal.onOpen();
+  }, [loginModal, onClose]);
 
   const handleChange = useCallback(
     ({ target: input }: ChangeEvent<HTMLInputElement>) => {
@@ -150,7 +157,11 @@ const RegisterModal = () => {
     <Container>
       <Line />
       <LoginOptions />
-      <ToggleAccount title='Already have an account?' label='Log in' />
+      <ToggleAccount
+        title='Already have an account?'
+        label='Log in'
+        onClick={handleToggle}
+      />
     </Container>
   );
 
