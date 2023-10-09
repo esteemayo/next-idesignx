@@ -24,9 +24,9 @@ export const StyledOption = styled.option`
 `;
 
 const setColor = (error: string | undefined) => {
-  return error === 'true' ? 'var(--clr-red)' : 'var(--clr-gray-dark-2)';
+  return error ? 'var(--clr-red)' : 'var(--clr-gray-dark-2)';
 };
 
 const setBorderColor = (error: string | undefined) => {
-  return error === 'true' ? 'var(--clr-red)' : '#aaa';
+  return error ? 'var(--clr-red)' : '#aaa';
 };
