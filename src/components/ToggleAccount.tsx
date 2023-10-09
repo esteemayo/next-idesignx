@@ -47,6 +47,7 @@ const Button = styled.button`
   background-color: transparent;
   color: ${({ theme }) => theme.textSoft};
   outline-color: var(--clr-gray-dark-2);
+  outline-offset: 0.5rem;
   cursor: pointer;
   transition: all 0.2s;
 
