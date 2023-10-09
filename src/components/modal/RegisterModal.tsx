@@ -156,6 +156,7 @@ const RegisterModal = () => {
         value={data.name}
         placeholder='Name'
         onChange={handleChange}
+        error={errors.name}
       />
       <Input
         name='email'
@@ -164,6 +165,7 @@ const RegisterModal = () => {
         value={data.email}
         placeholder='Email address'
         onChange={handleChange}
+        error={errors.email}
       />
       <Input
         name='username'
@@ -171,6 +173,7 @@ const RegisterModal = () => {
         value={data.username}
         placeholder='Username'
         onChange={handleChange}
+        error={errors.username}
       />
     </Container>
   );
