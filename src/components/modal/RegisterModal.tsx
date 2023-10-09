@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 
 import Modal from './Modal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
@@ -18,6 +18,14 @@ const RegisterModal = () => {
   const onClose = useRegisterModal((state) => state.onClose);
 
   const [data, setData] = useState(initialState);
+
+  const handleChange = useCallback(
+    ({ target: input }: ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = input;
+      setData((prev) => ({ ...prev, [name]: value }));
+    },
+    []
+  );
 
   const handleSubmit = useCallback(() => {}, []);
 
