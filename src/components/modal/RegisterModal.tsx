@@ -34,6 +34,10 @@ const RegisterModal = () => {
     setStep((value) => value - 1);
   }, []);
 
+  const handleNext = useCallback(() => {
+    setStep((value) => value + 1);
+  }, []);
+
   const handleChange = useCallback(
     ({ target: input }: ChangeEvent<HTMLInputElement>) => {
       const { name, value } = input;
