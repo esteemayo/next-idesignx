@@ -63,6 +63,14 @@ const RegisterModal = () => {
     return 'Next';
   }, [step]);
 
+  const secondaryActionLabel = useMemo(() => {
+    if (step !== STEPS.INFO) {
+      return 'Back';
+    }
+
+    return undefined;
+  }, [step]);
+
   let bodyContent;
 
   bodyContent = (
@@ -106,6 +114,7 @@ const RegisterModal = () => {
       isOpen={isOpen}
       title='Register'
       actionLabel={actionLabel}
+      secondaryActionLabel={secondaryActionLabel}
       onClose={onClose}
       body={bodyContent}
       onSubmit={handleSubmit}
