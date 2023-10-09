@@ -63,7 +63,7 @@ const LoginModal = () => {
 
   const footerContent = (
     <>
-      <Hr />
+      <Line />
       <Wrapper>
         <Button outline='true' type='button' label='Login with Google' />
         <Button outline='true' type='button' label='Login with Github' />
@@ -94,6 +94,10 @@ const Wrapper = styled.div`
   gap: 3rem;
 `;
 
-const Hr = styled.hr``;
+const Line = styled.span`
+  width: 100%;
+  height: 0.1px;
+  background-color: var(--clr-gray);
+`;
 
 export default LoginModal;
