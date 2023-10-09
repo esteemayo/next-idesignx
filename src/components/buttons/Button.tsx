@@ -45,8 +45,11 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 const StyledButton = styled.button<IBtn>`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
-  display: inline-block;
   border: ${({ outline }) =>
     outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
   text-transform: capitalize;
