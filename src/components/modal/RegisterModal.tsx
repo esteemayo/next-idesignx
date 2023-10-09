@@ -3,10 +3,14 @@
 import styled from 'styled-components';
 import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
+import LoginOptions from '../LoginOptions';
 import Modal from './Modal';
+import ToggleAccount from '../ToggleAccount';
+import { Line } from '../Line';
 import Heading from '../Heading';
 
 import Input from '../inputs/Input';
+
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 enum STEPS {
@@ -142,6 +146,14 @@ const RegisterModal = () => {
     );
   }
 
+  const footerContent = (
+    <Container>
+      <Line />
+      <LoginOptions />
+      <ToggleAccount title='Already have an account?' label='Log in' />
+    </Container>
+  );
+
   return (
     <Modal
       isOpen={isOpen}
@@ -151,6 +163,7 @@ const RegisterModal = () => {
       secondaryAction={handleSecondaryAction}
       onClose={onClose}
       body={bodyContent}
+      footer={footerContent}
       onSubmit={handleSubmit}
     />
   );
