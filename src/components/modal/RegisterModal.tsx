@@ -27,7 +27,14 @@ const RegisterModal = () => {
     []
   );
 
-  const handleSubmit = useCallback(() => {}, []);
+  const handleClear = useCallback(() => {
+    setData(initialState);
+  }, []);
+
+  const handleSubmit = useCallback(() => {
+    console.log({ ...data });
+    handleClear();
+  }, [data, handleClear]);
 
   return (
     <Modal
