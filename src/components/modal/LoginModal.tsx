@@ -124,6 +124,4 @@ const AccountWrapper = styled.div`
   gap: 0.8rem;
 `;
 
-const Text = styled.p``;
-
 export default LoginModal;
