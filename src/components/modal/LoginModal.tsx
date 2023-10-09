@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import Modal from './Modal';
+import ToggleAccount from '../ToggleAccount';
 import Heading from '../Heading';
 
 import Input from '../inputs/Input';
@@ -68,12 +69,10 @@ const LoginModal = () => {
         <Button outline='true' type='button' label='Login with Google' />
         <Button outline='true' type='button' label='Login with Github' />
       </Wrapper>
-      <AccountContainer>
-        <AccountWrapper>
-          <Text>First time using iDesignx?</Text>
-          <AccountButton>Create an account</AccountButton>
-        </AccountWrapper>
-      </AccountContainer>
+      <ToggleAccount
+        title='First time using iDesignx?'
+        label='Create an account'
+      />
     </>
   );
 
