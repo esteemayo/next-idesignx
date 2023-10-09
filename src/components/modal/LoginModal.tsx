@@ -91,4 +91,6 @@ const Wrapper = styled.div`
   gap: 3rem;
 `;
 
+const Hr = styled.hr``;
+
 export default LoginModal;
