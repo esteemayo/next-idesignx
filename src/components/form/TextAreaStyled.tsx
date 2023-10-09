@@ -25,17 +25,17 @@ export const TextAreaStyled = styled.textarea<ITextArea>`
 `;
 
 const setBorderColor = (error: string | undefined) => {
-  return error === 'true' ? 'var(--clr-red)' : '#aaa';
+  return error ? 'var(--clr-red)' : '#aaa';
 };
 
 const setOutlineColor = (error: string | undefined) => {
-  return error === 'true' ? 'var(--clr-red)' : '#979797';
+  return error ? 'var(--clr-red)' : '#979797';
 };
 
 const setCaretColor = (error: string | undefined) => {
-  return error === 'true' ? 'var(--clr-red)' : 'var(--clr-purple-light-3)';
+  return error ? 'var(--clr-red)' : 'var(--clr-purple-light-3)';
 };
 
 const setPlaceholderColor = (error: string | undefined) => {
-  return error === 'true' ? 'var(--clr-red)' : '#bbb';
+  return error ? 'var(--clr-red)' : '#bbb';
 };
