@@ -71,6 +71,7 @@ const LoginModal = () => {
       <AccountContainer>
         <AccountWrapper>
           <Text>First time using iDesignx?</Text>
+          <AccountButton>Create an account</AccountButton>
         </AccountWrapper>
       </AccountContainer>
     </>
