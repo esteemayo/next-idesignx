@@ -146,6 +146,12 @@ const DesignModal = () => {
     return step === STEPS.INFO ? undefined : handlePrev;
   }, [handlePrev, step]);
 
+  const btnSize = useMemo(() => {
+    if (step === STEPS.INFO) {
+      return 'true';
+    }
+  }, [step]);
+
   let bodyContent;
 
   bodyContent = (
@@ -242,6 +248,7 @@ const DesignModal = () => {
     <Modal
       isOpen={isOpen}
       title='Upload your designs'
+      size={btnSize}
       actionLabel={actionLabel}
       secondaryActionLabel={secondaryActionLabel}
       body={bodyContent}
