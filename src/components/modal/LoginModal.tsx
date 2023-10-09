@@ -11,6 +11,7 @@ import Input from '../inputs/Input';
 import Button from '../buttons/Button';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
+import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 const initialState = {
   email: '',
@@ -19,6 +20,7 @@ const initialState = {
 
 const LoginModal = () => {
   const isOpen = useLoginModal((state) => state.isOpen);
+  const registerModal = useRegisterModal();
   const onClose = useLoginModal((state) => state.onClose);
 
   const [data, setData] = useState(initialState);
@@ -42,7 +44,8 @@ const LoginModal = () => {
 
   const handleToggle = useCallback(() => {
     onClose();
-  }, [onClose]);
+    registerModal.onOpen();
+  }, [onClose, registerModal]);
 
   const bodyContent = (
     <Container>
