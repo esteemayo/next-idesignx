@@ -70,6 +70,10 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
 
+  &:nth-child(2) {
+    cursor: default;
+  }
+
   &:disabled {
     opacity: 0.75;
   }
