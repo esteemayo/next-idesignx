@@ -25,7 +25,9 @@ interface IErrors {
 
 enum STEPS {
   INFO = 0,
-  CREDENTIALS = 1,
+  DESC = 1,
+  CREDENTIALS = 2,
+  AVATAR = 3,
 }
 
 const initialState = {
@@ -180,21 +182,21 @@ const RegisterModal = () => {
         onChange={handleChange}
         error={errors.email}
       />
-      <Input
-        name='username'
-        label='Username'
-        value={data.username}
-        placeholder='Username'
-        onChange={handleChange}
-        error={errors.username}
-      />
     </Container>
   );
 
-  if (step === STEPS.CREDENTIALS) {
+  if (step === STEPS.DESC) {
     bodyContent = (
       <Container>
         <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
+        <Input
+          name='username'
+          label='Username'
+          value={data.username}
+          placeholder='Username'
+          onChange={handleChange}
+          error={errors.username}
+        />
         <Input
           name='phone'
           type='tel'
@@ -204,6 +206,14 @@ const RegisterModal = () => {
           onChange={handleChange}
           error={errors.phone}
         />
+      </Container>
+    );
+  }
+
+  if (step === STEPS.CREDENTIALS) {
+    bodyContent = (
+      <Container>
+        <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
         <Input
           name='password'
           type='password'
