@@ -10,15 +10,19 @@ import { Line } from '../Line';
 import Heading from '../Heading';
 
 import Input from '../inputs/Input';
+import Select from '../inputs/Select';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
+
+import { genderLists } from '@/data';
 
 interface IErrors {
   name?: string;
   email?: string;
   username?: string;
   phone?: string;
+  gender?: string;
   password?: string;
   passwordConfirm?: string;
 }
@@ -35,6 +39,7 @@ const initialState = {
   email: '',
   username: '',
   phone: '',
+  gender: '',
   password: '',
   passwordConfirm: '',
 };
@@ -231,6 +236,22 @@ const RegisterModal = () => {
           placeholder='Password'
           onChange={handleChange}
           error={errors.passwordConfirm}
+        />
+      </Container>
+    );
+  }
+
+  if (step === STEPS.AVATAR) {
+    bodyContent = (
+      <Container>
+        <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
+        <Select
+          name='gender'
+          value={data.gender}
+          label='Gender'
+          options={genderLists}
+          onChange={handleChange}
+          error={errors.gender}
         />
       </Container>
     );
