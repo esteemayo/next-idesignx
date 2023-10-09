@@ -40,7 +40,7 @@ const LoginModal = () => {
   }, [data, handleClear]);
 
   const bodyContent = (
-    <>
+    <Container>
       <Heading title='Welcome back' subtitle='Log into your account' />
       <Input
         name='email'
@@ -58,7 +58,7 @@ const LoginModal = () => {
         placeholder='********'
         onChange={handleChange}
       />
-    </>
+    </Container>
   );
 
   const footerContent = (
