@@ -67,6 +67,7 @@ const LoginModal = () => {
       <Wrapper>
         <Button outline='true' type='button' label='Login with Google' />
         <Button outline='true' type='button' label='Login with Github' />
+        <AccountContainer></AccountContainer>
       </Wrapper>
     </>
   );
