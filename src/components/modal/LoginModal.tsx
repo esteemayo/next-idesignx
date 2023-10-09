@@ -67,12 +67,12 @@ const LoginModal = () => {
       <Wrapper>
         <Button outline='true' type='button' label='Login with Google' />
         <Button outline='true' type='button' label='Login with Github' />
-        <AccountContainer>
-          <AccountWrapper>
-            <Text>First time using iDesignx?</Text>
-          </AccountWrapper>
-        </AccountContainer>
       </Wrapper>
+      <AccountContainer>
+        <AccountWrapper>
+          <Text>First time using iDesignx?</Text>
+        </AccountWrapper>
+      </AccountContainer>
     </>
   );
 
