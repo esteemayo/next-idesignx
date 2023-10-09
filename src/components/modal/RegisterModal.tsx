@@ -69,7 +69,7 @@ const RegisterModal = () => {
 
   const validateInputs = useCallback(() => {
     let errors: IErrors = {};
-    const { name, email, username, password, passwordConfirm } = data;
+    const { name, email, username, phone, password, passwordConfirm } = data;
 
     if (name.trim() === '') {
       errors.name = 'true';
@@ -83,6 +83,14 @@ const RegisterModal = () => {
       if (!email.match(regEx)) {
         errors.email = 'true';
       }
+    }
+
+    if (username.trim() === '') {
+      errors.username = 'true';
+    }
+
+    if (phone.trim() === '') {
+      errors.phone = 'true';
     }
 
     if (password === '') {
