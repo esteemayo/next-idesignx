@@ -72,7 +72,7 @@ const RegisterModal = () => {
         type='email'
         label='Email address'
         value={data.email}
-        placeholder='you@user.com'
+        placeholder='Email address'
         onChange={handleChange}
       />
       <Input
