@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 
 import LoginModal from './modal/LoginModal';
+import RegisterModal from './modal/RegisterModal';
 import DesignModal from './modal/DesignModal';
 
 import Navbar from './navbar/Navbar';
@@ -27,6 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Sidebar />
         <DesignModal />
         <LoginModal />
+        <RegisterModal />
         {children}
         <Footer />
         <ScrollButton />
