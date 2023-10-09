@@ -106,15 +106,15 @@ const LoginModal = () => {
   );
 
   const footerContent = (
-    <Wrapper>
+    <Container>
       <Line />
       <LoginOptions />
       <ToggleAccount
         title='First time using iDesignx?'
-        label='Create an account'
+        label='Create an account!'
         onClick={handleToggle}
       />
-    </Wrapper>
+    </Container>
   );
 
   return (
@@ -130,10 +130,6 @@ const LoginModal = () => {
   );
 };
 
-const Container = styled.div`
-  margin-top: 1rem;
-`;
-
-const Wrapper = styled.div``;
+const Container = styled.div``;
 
 export default LoginModal;
