@@ -32,6 +32,16 @@ const LoginModal = () => {
   const [data, setData] = useState(initialState);
   const [errors, setErrors] = useState<IErrors>({});
 
+  const handleToggle = useCallback(() => {
+    onClose();
+    registerModal.onOpen();
+  }, [onClose, registerModal]);
+
+  const handleClose = useCallback(() => {
+    onClose();
+    setErrors({});
+  }, [onClose]);
+
   const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
     ({ target: input }) => {
       const { name, value } = input;
@@ -70,16 +80,6 @@ const LoginModal = () => {
     console.log({ ...data });
     handleClear();
   }, [data, handleClear, validateInputs]);
-
-  const handleToggle = useCallback(() => {
-    onClose();
-    registerModal.onOpen();
-  }, [onClose, registerModal]);
-
-  const handleClose = useCallback(() => {
-    onClose();
-    setErrors({});
-  }, [onClose]);
 
   const bodyContent = (
     <Container>
