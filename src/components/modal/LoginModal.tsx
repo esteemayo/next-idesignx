@@ -107,7 +107,10 @@ const Line = styled.span`
   margin-top: 2rem;
 `;
 
-const AccountContainer = styled.div``;
+const AccountContainer = styled.div`
+  font-weight: 300;
+  margin-top: 1rem;
+`;
 
 const AccountWrapper = styled.div``;
 
