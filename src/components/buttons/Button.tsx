@@ -47,7 +47,7 @@ const Button: React.FC<ButtonProps> = ({
 const StyledButton = styled.button<IBtn>`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   border: ${({ outline }) =>
