@@ -14,6 +14,11 @@ import Input from '../inputs/Input';
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
+interface IErrors {
+  email?: string;
+  password?: string;
+}
+
 const initialState = {
   email: '',
   password: '',
@@ -25,6 +30,7 @@ const LoginModal = () => {
   const onClose = useLoginModal((state) => state.onClose);
 
   const [data, setData] = useState(initialState);
+  const [errors, setErrors] = useState<IErrors>({});
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
     ({ target: input }) => {
