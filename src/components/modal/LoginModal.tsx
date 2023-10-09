@@ -62,10 +62,10 @@ const LoginModal = () => {
   );
 
   const footerContent = (
-    <>
+    <Wrapper>
       <Button outline='true' type='button' label='Login with Google' />
       <Button outline='true' type='button' label='Login with Github' />
-    </>
+    </Wrapper>
   );
 
   return (
