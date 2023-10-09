@@ -81,7 +81,9 @@ const LoginModal = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  margin-top: 1rem;
+`;
 
 const Wrapper = styled.div`
   display: flex;
