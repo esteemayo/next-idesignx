@@ -18,7 +18,7 @@ export const StyledLabel = styled.label<ILabel>`
 `;
 
 const setColor: IColor = (error: string | undefined, mode: string): string => {
-  return error === 'true'
+  return error 
     ? 'var(--clr-red)'
     : mode === 'true'
     ? 'var(--clr-gray-light-2)'
