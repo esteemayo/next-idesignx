@@ -7,6 +7,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import Button from '../buttons/Button';
 
+interface IBtn {
+  size?: string | null | undefined;
+}
+
 interface IWrapper {
   active: string | undefined;
 }
@@ -17,6 +21,7 @@ interface ModalProps {
   actionLabel: string;
   secondaryActionLabel?: string;
   disabled?: boolean;
+  size?: string | null | undefined;
   body?: React.ReactElement;
   footer?: React.ReactElement;
   onClose(): void;
@@ -30,6 +35,7 @@ const Modal: React.FC<ModalProps> = ({
   actionLabel,
   secondaryActionLabel,
   disabled,
+  size,
   body,
   footer,
   onClose,
@@ -100,7 +106,7 @@ const Modal: React.FC<ModalProps> = ({
           </CloseButtonContainer>
           <Body>{body}</Body>
           <Footer>
-            <ButtonContainer>
+            <ButtonContainer size={size}>
               {secondaryActionLabel && secondaryAction && (
                 <Button
                   type='button'
@@ -190,7 +196,7 @@ const CloseButton = styled.button`
 
 const Heading = styled.h1`
   font-weight: 300;
-  font-size: 4.25rem;
+  font-size: 3rem;
   color: inherit;
   margin-top: 1rem;
 `;
@@ -206,14 +212,14 @@ const Footer = styled.div`
   padding-bottom: 1rem;
 `;
 
-const ButtonContainer = styled.div`
+const ButtonContainer = styled.div<IBtn>`
   width: 100%;
   display: flex;
   align-items: center;
   gap: 1.6rem;
 
   & > * {
-    width: 100%;
+    width: ${({ size }) => (size === 'true' ? '50%' : '100%')};
   }
 `;
 
