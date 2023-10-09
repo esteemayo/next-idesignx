@@ -76,12 +76,14 @@ const LoginModal = () => {
       <Line />
       <Wrapper>
         <Button
+          small='true'
           outline='true'
           type='button'
           label='Login with Google'
           icon={GoogleIcon}
         />
         <Button
+          small='true'
           outline='true'
           type='button'
           label='Login with Github'
