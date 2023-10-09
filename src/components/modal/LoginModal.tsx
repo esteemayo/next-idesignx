@@ -109,10 +109,16 @@ const Line = styled.span`
 
 const AccountContainer = styled.div`
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 `;
 
-const AccountWrapper = styled.div``;
+const AccountWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+`;
 
 const Text = styled.p``;
 
