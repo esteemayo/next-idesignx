@@ -116,6 +116,8 @@ const Text = styled.p``;
 const AccountButton = styled.button`
   display: inline-block;
   border: none;
+  color: rgba(38, 28, 38, 1);
+  outline-color: var(--clr-gray-dark-2);
 `;
 
 export default LoginModal;
