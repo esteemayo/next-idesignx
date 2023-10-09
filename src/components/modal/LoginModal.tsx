@@ -83,7 +83,7 @@ const LoginModal = () => {
 
   const bodyContent = (
     <Container>
-      <Heading title='Welcome back' subtitle='Log into your account' />
+      <Heading title='Welcome back' subtitle='Log into your account!' />
       <Input
         name='email'
         type='email'
@@ -111,7 +111,7 @@ const LoginModal = () => {
       <LoginOptions />
       <ToggleAccount
         title='First time using iDesignx?'
-        label='Create an account!'
+        label='Create an account'
         onClick={handleToggle}
       />
     </Container>
