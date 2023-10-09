@@ -1,5 +1,6 @@
 'use client';
 
+import styled from 'styled-components';
 import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import Modal from './Modal';
@@ -79,5 +80,7 @@ const LoginModal = () => {
     />
   );
 };
+
+const Container = styled.div``;
 
 export default LoginModal;
