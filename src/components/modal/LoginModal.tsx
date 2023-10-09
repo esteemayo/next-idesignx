@@ -2,9 +2,11 @@
 
 import { ChangeEventHandler, useCallback, useState } from 'react';
 
-import Heading from '../Heading';
 import Modal from './Modal';
+import Heading from '../Heading';
+
 import Input from '../inputs/Input';
+import Button from '../buttons/Button';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 
@@ -58,6 +60,13 @@ const LoginModal = () => {
     </>
   );
 
+  const footerContent = (
+    <>
+      <Button outline='true' type='button' label='Login with Google' />
+      <Button outline='true' type='button' label='Login with Github' />
+    </>
+  );
+
   return (
     <Modal
       isOpen={isOpen}
@@ -66,6 +75,7 @@ const LoginModal = () => {
       onClose={onClose}
       onSubmit={handleSubmit}
       body={bodyContent}
+      footer={footerContent}
     />
   );
 };
