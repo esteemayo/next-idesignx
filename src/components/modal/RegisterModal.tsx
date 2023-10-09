@@ -9,6 +9,11 @@ import Heading from '../Heading';
 import Input from '../inputs/Input';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
+enum STEPS {
+  INFO = 0,
+  CREDENTIALS = 1,
+}
+
 const initialState = {
   name: '',
   email: '',
@@ -22,6 +27,7 @@ const RegisterModal = () => {
   const isOpen = useRegisterModal((state) => state.isOpen);
   const onClose = useRegisterModal((state) => state.onClose);
 
+  const [step, setStep] = useState(STEPS.INFO);
   const [data, setData] = useState(initialState);
 
   const handleChange = useCallback(
