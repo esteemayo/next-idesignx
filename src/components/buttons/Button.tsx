@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components';
 interface ButtonProps {
   label: string;
   nav?: string;
+  icon?: any;
   type?: string;
   onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
@@ -22,6 +23,7 @@ interface IBtn {
 const Button: React.FC<ButtonProps> = ({
   label,
   nav,
+  icon: Icon,
   type = 'submit',
   onClick,
   disabled,
@@ -37,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
       outline={outline}
       small={small}
     >
-      {label}
+      {Icon && <Icon />} {label}
     </StyledButton>
   );
 };
