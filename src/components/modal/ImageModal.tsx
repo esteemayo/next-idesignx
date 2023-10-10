@@ -151,8 +151,8 @@ const Box = styled.div`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 35rem;
-    height: 35rem;
+    width: 40rem;
+    height: 30rem;
   }
 
   display: flex;
@@ -200,8 +200,8 @@ const ImageContainer = styled.div`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 25rem;
   }
 `;
 
