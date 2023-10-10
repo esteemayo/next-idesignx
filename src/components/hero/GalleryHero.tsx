@@ -88,6 +88,10 @@ const Text = styled.p`
   font-size: 3rem;
   text-align: center;
   color: currentColor;
+
+  @media only screen and (max-width: 112.5em) {
+    font-size: 3.7rem;
+  }
 `;
 
 export default GalleryHero;
