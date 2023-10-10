@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Featured = () => {
   return (
     <Container>
-      <StyledImage src='/img/woman-3.jpg' width={735} height={549} alt='' />
+      <StyledImage src='/img/woman/woman-3.jpg' width={735} height={549} alt='' />
     </Container>
   );
 };
