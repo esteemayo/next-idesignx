@@ -51,6 +51,7 @@ const RegisterModal = () => {
 
   const [step, setStep] = useState(STEPS.INFO);
   const [errors, setErrors] = useState<IErrors>({});
+  const [file, setFile] = useState('');
   const [data, setData] = useState(initialState);
 
   const handlePrev = useCallback(() => {

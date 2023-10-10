@@ -30,7 +30,6 @@ const LoginModal = () => {
   const onClose = useLoginModal((state) => state.onClose);
 
   const [data, setData] = useState(initialState);
-  const [file, setFile] = useState('');
   const [errors, setErrors] = useState<IErrors>({});
 
   const handleToggle = useCallback(() => {
