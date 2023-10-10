@@ -10,6 +10,10 @@ const Error: React.FC<ErrorProps> = ({ message }) => {
   return <Container>{message}</Container>;
 };
 
-const Container = styled.span``;
+const Container = styled.span`
+  font-size: 1.3rem;
+  color: var(--clr-red);
+  margin-top: 1px;
+`;
 
 export default Error;
