@@ -114,6 +114,10 @@ const Box = styled.div`
   background-color: ${({ theme }) => theme.bg};
   border-radius: 0.5rem;
 
+  @media only screen and (max-width: 87.5em) {
+    width: 110rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
