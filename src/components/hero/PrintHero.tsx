@@ -39,7 +39,7 @@ const Header = styled.header`
       rgba(0, 0, 0, 0.7),
       rgba(51, 51, 51, 0.7)
     ),
-    url(/img/prints-hero.jpg);
+    url(/img/hero/prints-hero.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
