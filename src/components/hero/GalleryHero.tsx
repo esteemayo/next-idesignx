@@ -13,7 +13,13 @@ const GalleryHero = () => {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['You imagine.', 'We design.', 'We print.', 'We deliver.'],
+      strings: [
+        'You imagine.',
+        'We design.',
+        'We brand',
+        'We print.',
+        'We deliver.',
+      ],
     });
   }, []);
 
