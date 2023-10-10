@@ -15,10 +15,16 @@ export const StyledLabel = styled.label<ILabel>`
   font-size: 1.4rem;
   color: ${({ error, mode }) => setColor(error, mode)};
   margin-bottom: 1rem;
+
+  &::after {
+    content: '*';
+    display: inline-block;
+    color: ${({ error, mode }) => setColor(error, mode)};
+  }
 `;
 
 const setColor: IColor = (error: string | undefined, mode: string): string => {
-  return error 
+  return error
     ? 'var(--clr-red)'
     : mode === 'true'
     ? 'var(--clr-gray-light-2)'
