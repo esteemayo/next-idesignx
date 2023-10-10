@@ -231,6 +231,10 @@ const Button = styled.button<IBtn>`
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
 
+  @media only screen and (max-width: 57.5em) {
+    font-size: 2.5rem;
+  }
+
   svg {
     font-size: inherit;
     fill: currentColor;
