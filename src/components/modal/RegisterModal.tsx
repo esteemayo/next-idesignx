@@ -52,7 +52,7 @@ const RegisterModal = () => {
 
   const [step, setStep] = useState(STEPS.INFO);
   const [errors, setErrors] = useState<IErrors>({});
-  const [file, setFile] = useState<File>(null);
+  const [file, setFile] = useState<File>();
   const [data, setData] = useState(initialState);
 
   const handlePrev = useCallback(() => {
