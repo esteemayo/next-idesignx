@@ -45,7 +45,7 @@ const Header = styled.header`
       rgba(0, 0, 0, 0.7),
       rgba(51, 51, 51, 0.7)
     ),
-    url(/img/gallery-hero.jpg);
+    url(/img/hero/gallery-hero.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
