@@ -12,7 +12,12 @@ const Logo: React.FC<LogoProps> = ({ onClose }) => {
   return (
     <Container onClick={onClose}>
       <StyledLink href='/'>
-        <StyledImage src='/img/logo.png' width={45} height={45} alt='logo' />
+        <StyledImage
+          src='/img/logo/logo.png'
+          width={45}
+          height={45}
+          alt='logo'
+        />
       </StyledLink>
     </Container>
   );
