@@ -115,26 +115,6 @@ export const brands = [
     id: 8,
     img: '/img/logo/first.png',
   },
-  // {
-  //   id: 9,
-  //   img: '/img/logo/alpha-cx.png',
-  // },
-  // {
-  //   id: 10,
-  //   img: '/img/logo/aella-credit.png',
-  // },
-  // {
-  //   id: 12,
-  //   img: '/img/logo/fidelity.png',
-  // },
-  // {
-  //   id: 13,
-  //   img: '/img/logo/heritage.png',
-  // },
-  // {
-  //   id: 14,
-  //   img: '/img/logo/first.png',
-  // },
 ];
 
 export const productImages = [
