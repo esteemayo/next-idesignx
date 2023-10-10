@@ -150,6 +150,11 @@ const Box = styled.div`
     height: 40rem;
   }
 
+  @media only screen and (max-width: 25em) {
+    width: 35rem;
+    height: 35rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
