@@ -179,6 +179,11 @@ const ButtonContainer = styled.div<IBtn>`
   left: ${({ direction }) => direction === 'left' && '6rem'};
   right: ${({ direction }) => direction === 'right' && '6rem'};
   transform: translateY(-50%);
+
+  @media only screen and (max-width: 87.5em) {
+    left: ${({ direction }) => direction === 'left' && '3rem'};
+    right: ${({ direction }) => direction === 'right' && '3rem'};
+  }
 `;
 
 const Button = styled.button<IBtn>`
