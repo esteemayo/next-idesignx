@@ -51,8 +51,7 @@ const Navbar = () => {
 
 const Container = styled.nav<IContainer>`
   display: ${({ active }) => (active === 'true' ? 'none' : 'grid')};
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  gap: 5rem;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
   align-items: center;
 
   background-color: ${({ theme }) => theme.bg};
@@ -62,6 +61,7 @@ const Container = styled.nav<IContainer>`
 
   @media only screen and (min-width: 48em) {
     display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
   }
 `;
 
