@@ -126,7 +126,7 @@ const RegisterModal = () => {
   }, []);
 
   const handleSubmit = useCallback(() => {
-    if (step === STEPS.INFO) {
+    if (step !== STEPS.AVATAR) {
       return handleNext();
     }
 
