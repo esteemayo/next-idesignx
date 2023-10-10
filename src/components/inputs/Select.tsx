@@ -4,6 +4,7 @@ import { ChangeEvent } from 'react';
 
 import { FormGroup } from '../form/FormGroup';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
+import Error from '../form/Error';
 import { Option, StyledSelect } from '../form/StyledSelect';
 
 type OptionTypes = {
@@ -76,6 +77,7 @@ const Select: React.FC<SelectProps> = ({
           );
         })}
       </SelectStyled>
+      {error && <Error message={error} />}
     </FormGroup>
   );
 };
