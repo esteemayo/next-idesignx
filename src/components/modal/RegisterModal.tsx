@@ -81,7 +81,8 @@ const RegisterModal = () => {
 
   const validateInputs = useCallback(() => {
     let errors: IErrors = {};
-    const { name, email, username, phone, password, passwordConfirm } = data;
+    const { name, email, username, phone, gender, password, passwordConfirm } =
+      data;
 
     if (name.trim() === '') {
       errors.name = 'Name must not be empty';
@@ -103,6 +104,10 @@ const RegisterModal = () => {
 
     if (phone.trim() === '') {
       errors.phone = 'Phone book must not be empty';
+    }
+
+    if (gender.trim() === '') {
+      errors.gender = 'Gender must not be empty';
     }
 
     if (password === '') {
