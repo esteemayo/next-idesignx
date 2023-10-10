@@ -171,6 +171,10 @@ const ButtonWrapper = styled.div`
   top: 1rem;
   left: 1rem;
   z-index: 3000;
+
+  @media only screen and (max-width: 57.5em) {
+    top: 3rem;
+  }
 `;
 
 const CloseButton = styled.button`
