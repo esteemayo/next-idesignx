@@ -10,6 +10,7 @@ import { Line } from '../Line';
 import Heading from '../Heading';
 
 import Input from '../inputs/Input';
+import UploadInput from '../inputs/UploadInput';
 import Select from '../inputs/Select';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
@@ -258,6 +259,11 @@ const RegisterModal = () => {
           options={genderLists}
           onChange={handleChange}
           error={errors.gender}
+        />
+        <UploadInput
+          id='file'
+          label='Upload avatar'
+          onChange={(e) => setFile(e.target.file)}
         />
       </Container>
     );
