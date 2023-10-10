@@ -147,7 +147,7 @@ const Box = styled.div`
 
   @media only screen and (max-width: 30em) {
     width: 45rem;
-    height: 30rem;
+    height: 40rem;
   }
 
   display: flex;
@@ -191,7 +191,7 @@ const ImageContainer = styled.div`
 
   @media only screen and (max-width: 30em) {
     width: 40rem;
-    height: 25rem;
+    height: 35rem;
   }
 `;
 
