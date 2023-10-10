@@ -84,6 +84,10 @@ const Container = styled.section`
     padding-top: 5rem;
     padding-bottom: 1rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    padding: 3rem;
+  }
 `;
 
 const Wrapper = styled.figure`
