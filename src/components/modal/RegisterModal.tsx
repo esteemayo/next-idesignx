@@ -154,7 +154,7 @@ const RegisterModal = () => {
 
   const secondaryActionLabel = useMemo(() => {
     if (step !== STEPS.INFO) {
-      return 'Back';
+      return 'Prev';
     }
 
     return undefined;
