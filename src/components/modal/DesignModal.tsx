@@ -139,7 +139,7 @@ const DesignModal = () => {
       return undefined;
     }
 
-    return 'Back';
+    return 'Prev';
   }, [step]);
 
   const handleSecondaryAction = useMemo(() => {
