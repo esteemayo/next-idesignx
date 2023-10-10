@@ -212,6 +212,10 @@ const ButtonWrapper = styled.div`
     top: 3rem;
     left: 0.5rem;
   }
+
+  @media only screen and (max-width: 30em) {
+    top: 10rem;
+  }
 `;
 
 const CloseButton = styled.button`
