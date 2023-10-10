@@ -52,7 +52,7 @@ const RegisterModal = () => {
 
   const [step, setStep] = useState(STEPS.INFO);
   const [errors, setErrors] = useState<IErrors>({});
-  const [file, setFile] = useState('');
+  const [file, setFile] = useState<File>(null);
   const [data, setData] = useState(initialState);
 
   const handlePrev = useCallback(() => {
@@ -80,6 +80,12 @@ const RegisterModal = () => {
     },
     []
   );
+
+  const handleFile = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    const { files } = e.target;
+    const selectedFile = files as FileList;
+    setFile(selectedFile?.[0]);
+  }, []);
 
   const validateInputs = useCallback(() => {
     let errors: IErrors = {};
@@ -260,11 +266,7 @@ const RegisterModal = () => {
           onChange={handleChange}
           error={errors.gender}
         />
-        <UploadInput
-          id='file'
-          label='Upload avatar'
-          onChange={(e) => setFile(e.target.file)}
-        />
+        <UploadInput id='file' label='Upload avatar' onChange={handleFile} />
       </Container>
     );
   }
