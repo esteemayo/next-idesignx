@@ -241,17 +241,17 @@ export const galleryImages = [
 export const storyImages = [
   {
     id: 1,
-    img: '/img/story-pic-1.jpg',
+    img: '/img/story/story-1.jpg',
     className: 'img-1',
   },
   {
     id: 2,
-    img: '/img/story-pic-2.jpg',
+    img: '/img/story/story-2.jpg',
     className: 'img-2',
   },
   {
     id: 3,
-    img: '/img/story-pic-3.jpg',
+    img: '/img/story/story-3.jpg',
     className: 'img-3',
   },
 ];
