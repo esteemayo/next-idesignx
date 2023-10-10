@@ -188,6 +188,11 @@ const ImageContainer = styled.div`
     width: 45rem;
     height: 40rem;
   }
+
+  @media only screen and (max-width: 30em) {
+    width: 35rem;
+    height: 25rem;
+  }
 `;
 
 const StyledImage = styled(Image)`
