@@ -14,6 +14,7 @@ export const StyledLabel = styled.label<ILabel>`
   align-items: center;
   gap: 0.5rem;
 
+  width: 30%;
   font-weight: 500;
   font-size: 1.4rem;
   color: ${({ error, mode }) => setColor(error, mode)};
