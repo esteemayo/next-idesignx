@@ -105,6 +105,10 @@ const Text = styled.p`
     font-size: 2.5rem;
     line-height: 1.3;
   }
+
+  @media only screen and (max-width: 17.5em) {
+    font-size: 2.5rem;
+  }
 `;
 
 export default GalleryHero;
