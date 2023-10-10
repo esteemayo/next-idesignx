@@ -79,6 +79,11 @@ const Container = styled.section`
   grid-template-rows: repeat(7, 5vw);
   grid-template-columns: repeat(8, 1fr);
   gap: 1.5rem;
+
+  @media only screen and (max-width: 50em) {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
 `;
 
 const Wrapper = styled.figure`
