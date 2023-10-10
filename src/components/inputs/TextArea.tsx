@@ -6,6 +6,7 @@ import { Label } from '../form/Label';
 import { TextAreaStyled } from '../form/TextAreaStyled';
 import { FormGroup } from '../form/FormGroup';
 import { StyledTextArea } from '../form/StyledTextArea';
+import Error from '../form/Error';
 import { StyledLabel } from '../form/StyledLabel';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
@@ -65,6 +66,7 @@ const TextArea: React.FC<TextAreaProps> = ({
         onChange={onChange}
         error={error}
       />
+      {error && <Error message={error} />}
     </FormGroup>
   );
 };
