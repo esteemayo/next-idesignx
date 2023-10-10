@@ -142,12 +142,14 @@ export const printItems = [
     title: 'Print',
     desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
     icon: faPrint,
+    url: '/gallery',
   },
   {
     id: 2,
     title: 'Design',
     desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
     icon: faBagShopping,
+    url: '/gallery',
   },
 ];
 
