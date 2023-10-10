@@ -7,9 +7,9 @@ import { Label } from '../form/Label';
 import { InputStyled } from '../form/InputStyled';
 import { FormGroup } from '../form/FormGroup';
 import { StyledLabel } from '../form/StyledLabel';
+import Error from '../form/Error';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
-import Error from '../form/Error';
 
 interface InputProps {
   name: string;
