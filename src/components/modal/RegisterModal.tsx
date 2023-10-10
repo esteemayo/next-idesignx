@@ -150,7 +150,8 @@ const RegisterModal = () => {
     console.log({ ...data, file });
     handleClear();
     setStep(STEPS.INFO);
-  }, [data, file, handleClear, handleNext, step, validateInputs]);
+    loginModal.onOpen();
+  }, [data, file, handleClear, handleNext, loginModal, step, validateInputs]);
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.AVATAR) {
