@@ -14,7 +14,7 @@ export const SelectStyled = styled.select<ISelect>`
   color: ${({ error }) => setColor(error)};
   border: 1px solid ${({ error }) => setBorderColor(error)};
   border-radius: 2px;
-  outline-color: #979797;
+  outline-color: ${({ error }) => setOulineColor(error)};
 `;
 
 export const StyledOption = styled.option`
@@ -29,4 +29,8 @@ const setColor = (error: string | undefined) => {
 
 const setBorderColor = (error: string | undefined) => {
   return error ? 'var(--clr-red)' : '#aaa';
+};
+
+const setOulineColor = (error: string | undefined) => {
+  return error ? 'var(--clr-red)' : '#979797';
 };
