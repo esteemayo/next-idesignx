@@ -74,11 +74,11 @@ const DesignModal = () => {
     }
 
     if (address.trim() === '') {
-      errors.address = 'true';
+      errors.address = 'Address must not be empty';
     }
 
     if (phone.trim() === '') {
-      errors.phone = 'true';
+      errors.phone = 'Phone book must not be empty';
     }
 
     if (subject.trim() === '') {
