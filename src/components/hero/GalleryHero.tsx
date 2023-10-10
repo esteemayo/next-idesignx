@@ -16,7 +16,7 @@ const GalleryHero = () => {
       strings: [
         'You imagine.',
         'We design.',
-        'We brand',
+        'We brand.',
         'We print.',
         'We deliver.',
       ],
