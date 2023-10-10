@@ -5,9 +5,9 @@ import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
 import LoginOptions from '../LoginOptions';
 import Modal from './Modal';
-import ToggleAccount from '../ToggleAccount';
-import { Line } from '../Line';
 import Heading from '../Heading';
+import { Line } from '../Line';
+import ToggleAccount from '../ToggleAccount';
 
 import Input from '../inputs/Input';
 import UploadInput from '../inputs/UploadInput';
