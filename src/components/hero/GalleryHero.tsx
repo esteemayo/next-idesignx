@@ -92,6 +92,10 @@ const Text = styled.p`
   @media only screen and (max-width: 112.5em) {
     font-size: 3.7rem;
   }
+
+  @media only screen and (max-width: 68.75em) {
+    font-size: 3.5rem;
+  }
 `;
 
 export default GalleryHero;
