@@ -215,6 +215,11 @@ const ButtonContainer = styled.div<IBtn>`
     left: ${({ direction }) => direction === 'left' && '3rem'};
     right: ${({ direction }) => direction === 'right' && '3rem'};
   }
+
+  @media only screen and (max-width: 57.5em) {
+    left: ${({ direction }) => direction === 'left' && '2rem'};
+    right: ${({ direction }) => direction === 'right' && '2rem'};
+  }
 `;
 
 const Button = styled.button<IBtn>`
