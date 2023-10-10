@@ -162,7 +162,7 @@ const RegisterModal = () => {
 
   const handleSecondaryAction = useMemo(() => {
     return step !== STEPS.INFO ? handlePrev : undefined;
-  }, [step, handlePrev]);
+  }, [handlePrev, step]);
 
   const btnSize = useMemo(() => {
     if (step === STEPS.INFO) {
