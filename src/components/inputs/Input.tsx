@@ -9,6 +9,7 @@ import { FormGroup } from '../form/FormGroup';
 import { StyledLabel } from '../form/StyledLabel';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
+import Error from '../form/Error';
 
 interface InputProps {
   name: string;
@@ -69,6 +70,7 @@ const Input: React.FC<InputProps> = ({
         onChange={onChange}
         error={error}
       />
+      {error && <Error message={error[name]} />}
     </FormGroup>
   );
 };
