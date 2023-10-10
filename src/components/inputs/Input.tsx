@@ -70,7 +70,7 @@ const Input: React.FC<InputProps> = ({
         onChange={onChange}
         error={error}
       />
-      {error && <Error message={error[name]} />}
+      {error && <Error message={error} />}
     </FormGroup>
   );
 };
