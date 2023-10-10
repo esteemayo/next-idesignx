@@ -77,6 +77,14 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   gap: 3rem;
+
+  @media only screen and (max-width: 48em) {
+    & > button {
+      &:nth-child(1) {
+        display: none;
+      }
+    }
+  }
 `;
 
 export default Navbar;
