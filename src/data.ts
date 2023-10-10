@@ -85,55 +85,55 @@ export const menuItems = [
 export const brands = [
   {
     id: 1,
-    img: '/img/access.jpg',
+    img: '/img/logo/access.jpg',
   },
   {
     id: 2,
-    img: '/img/africa-fintech-foundry.png',
+    img: '/img/logo/africa-fintech-foundry.png',
   },
   {
     id: 3,
-    img: '/img/stanbic.png',
+    img: '/img/logo/stanbic.png',
   },
   {
     id: 4,
-    img: '/img/zenith.png',
+    img: '/img/logo/zenith.png',
   },
   {
     id: 5,
-    img: '/img/alt-school.png',
+    img: '/img/logo/alt-school.png',
   },
   {
     id: 6,
-    img: '/img/union.png',
+    img: '/img/logo/union.png',
   },
   {
     id: 7,
-    img: '/img/acumen-digital.png',
+    img: '/img/logo/acumen-digital.png',
   },
   {
     id: 8,
-    img: '/img/first.png',
+    img: '/img/logo/first.png',
   },
   // {
   //   id: 9,
-  //   img: '/img/alpha-cx.png',
+  //   img: '/img/logo/alpha-cx.png',
   // },
   // {
   //   id: 10,
-  //   img: '/img/aella-credit.png',
+  //   img: '/img/logo/aella-credit.png',
   // },
   // {
   //   id: 12,
-  //   img: '/img/fidelity.png',
+  //   img: '/img/logo/fidelity.png',
   // },
   // {
   //   id: 13,
-  //   img: '/img/heritage.png',
+  //   img: '/img/logo/heritage.png',
   // },
   // {
   //   id: 14,
-  //   img: '/img/first.png',
+  //   img: '/img/logo/first.png',
   // },
 ];
 
