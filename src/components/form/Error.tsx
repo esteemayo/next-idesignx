@@ -7,10 +7,10 @@ interface ErrorProps {
 }
 
 const Error: React.FC<ErrorProps> = ({ message }) => {
-  return <Container>{message}</Container>;
+  return <ErrorMessage>{message}</ErrorMessage>;
 };
 
-const Container = styled.span`
+const ErrorMessage = styled.span`
   font-size: 1.3rem;
   color: var(--clr-red);
   margin-top: 1px;
