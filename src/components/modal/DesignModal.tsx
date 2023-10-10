@@ -82,15 +82,15 @@ const DesignModal = () => {
     }
 
     if (subject.trim() === '') {
-      errors.subject = 'true';
+      errors.subject = 'Subject must not be empty';
     }
 
     if (desc.trim() === '') {
-      errors.desc = 'true';
+      errors.desc = 'Description must not be empty';
     }
 
     if (category.trim() === '') {
-      errors.category = 'true';
+      errors.category = 'Category must not be empty';
     }
 
     return errors;
