@@ -41,7 +41,7 @@ const StyledLink = styled(Link)`
   font-weight: 300;
   font-size: 2rem;
   color: inherit;
-  outline-color: var(--clr-purple-light-3);
+  outline-color: ${({ theme }) => theme.outline};
 
   &:active {
     color: inherit;
