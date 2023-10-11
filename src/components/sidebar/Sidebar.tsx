@@ -28,9 +28,9 @@ interface IWrapper {
 }
 
 const Sidebar = () => {
+  const designModal = useDesignModal();
   const menu = useMenu();
   const loginModal = useLoginModal();
-  const designModal = useDesignModal();
 
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
