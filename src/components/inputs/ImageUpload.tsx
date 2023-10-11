@@ -36,7 +36,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
         <Label htmlFor='file'>
           <FontAwesomeIcon icon={faFileArrowUp} />
         </Label>
-        <Input id='file' type='file' multiple onChange={handleFile} />
+        <Input id='file' multiple onChange={handleFile} />
       </Wrapper>
       {value && (
         <StyledImage
@@ -96,7 +96,9 @@ const Label = styled.label`
   cursor: pointer;
 `;
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  type: 'file',
+})`
   display: none;
 `;
 
