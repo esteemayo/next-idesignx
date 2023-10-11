@@ -1,6 +1,5 @@
 'use client';
 
-import { useCallback } from 'react';
 import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
