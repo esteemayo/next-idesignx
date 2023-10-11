@@ -73,7 +73,7 @@ const Sidebar = () => {
 };
 
 const Container = styled.aside<IContainer>`
-  width: 45rem;
+  width: 50rem;
   height: 100%;
   position: fixed;
   top: 0;
