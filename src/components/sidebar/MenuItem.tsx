@@ -25,11 +25,14 @@ const MenuItem: React.FC<MenuItemProps> = ({ url, mode, label, onClick }) => {
 const ListItem = styled.li<IList>`
   padding: 1.5rem 0.5rem;
   color: currentColor;
-  border-bottom: 1px solid
-    ${({ mode }) =>
-      mode === 'true'
-        ? 'var(--clr-bg-dark-tertiary)'
-        : 'var(--clr-purple-light-3)'};
+
+  &:not(:last-child) {
+    border-bottom: 1px solid
+      ${({ mode }) =>
+        mode === 'true'
+          ? 'var(--clr-bg-dark-tertiary)'
+          : 'var(--clr-purple-light-3)'};
+  }
 `;
 
 const StyledLink = styled(Link)`
