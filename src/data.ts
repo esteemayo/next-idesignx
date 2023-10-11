@@ -140,7 +140,7 @@ export const printItems = [
   {
     id: 1,
     title: 'Print',
-    desc: 'A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations.',
+    desc: "A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people's lives simple.",
     icon: faPrint,
     url: '/gallery',
   },
