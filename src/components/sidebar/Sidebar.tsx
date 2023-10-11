@@ -82,6 +82,9 @@ const Container = styled.aside<IContainer>`
 `;
 
 const Wrapper = styled.div`
+  padding: 3rem;
+  background-color: var(--clr-purple-light-1);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
