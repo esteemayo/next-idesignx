@@ -41,7 +41,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ mode, links }) => {
 
 const Container = styled.ul`
   list-style: none;
-  padding: 3rem;
+  padding: 5rem 3rem;
 `;
 
 export default MenuItems;
