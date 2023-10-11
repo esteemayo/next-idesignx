@@ -48,13 +48,15 @@ const Sidebar = () => {
     <Container active={activeMenu} mode={activeMode}>
       <Wrapper mode={activeMode}>
         <Hamburger isOpen={isOpen} onToggle={onClose} />
-        <NavButton label='Login' onClick={handleClick} />
-        <Button
-          nav='true'
-          type='button'
-          label='Upload your design'
-          onClick={handleOpen}
-        />
+        <ButtonContainer>
+          <NavButton label='Login' onClick={handleClick} />
+          <Button
+            nav='true'
+            type='button'
+            label='Upload your design'
+            onClick={handleOpen}
+          />
+        </ButtonContainer>
       </Wrapper>
       <MenuItems mode={activeMode} links={navItems} />
     </Container>
