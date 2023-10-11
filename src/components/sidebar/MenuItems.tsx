@@ -4,7 +4,6 @@ import { useCallback } from 'react';
 import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
-import { useMenu } from '@/hooks/useMenu';
 
 type MenuItemsType = {
   id: number;
