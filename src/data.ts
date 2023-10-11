@@ -140,14 +140,14 @@ export const printItems = [
   {
     id: 1,
     title: 'Print',
-    desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
+    desc: 'A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations.',
     icon: faPrint,
     url: '/gallery',
   },
   {
     id: 2,
     title: 'Design',
-    desc: 'Lorem ipsum dolor sit amet, loremisps adipiscing elit. Repellendus quia nostrum placeat.',
+    desc: 'Use graphic design to sell things, explain things, make things look better, make people laugh, make people cry, and (every once in a while) change the world.',
     icon: faBagShopping,
     url: '/gallery',
   },
