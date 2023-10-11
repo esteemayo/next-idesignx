@@ -15,6 +15,8 @@ import Info from './Info';
 import ClientOnly from './ClientOnly';
 import DarkMode from './DarkMode';
 
+import ToastProvider from '@/providers/ToastProvider';
+
 interface LayoutProps {
   children: React.ReactNode;
 }
@@ -23,6 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <ClientOnly>
       <Container>
+        <ToastProvider />
         <Info />
         <Navbar />
         <Sidebar />
