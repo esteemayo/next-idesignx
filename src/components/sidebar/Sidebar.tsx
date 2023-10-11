@@ -45,7 +45,7 @@ const Sidebar = () => {
           onClick={handleOpen}
         />
       </Wrapper>
-      <MenuItems links={navItems} />
+      <MenuItems mode={activeMode} links={navItems} />
     </Container>
   );
 };
