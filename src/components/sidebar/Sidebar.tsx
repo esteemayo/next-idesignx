@@ -121,6 +121,7 @@ const ButtonContainer = styled.div`
 
   & > * {
     &:first-child {
+      font-weight: lighter;
       font-size: 2rem;
       color: currentColor;
     }
