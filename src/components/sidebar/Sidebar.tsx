@@ -119,6 +119,10 @@ const ButtonContainer = styled.div`
   align-items: center;
   gap: 5rem;
 
+  @media only screen and (max-width: 25em) {
+    gap: 3rem;
+  }
+
   & > * {
     &:first-child {
       font-weight: lighter;
