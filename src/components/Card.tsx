@@ -45,7 +45,9 @@ const Heading = styled.h5`
 `;
 
 const Text = styled.p`
+  text-align: justify;
   font-size: 1.7rem;
+  word-break: break-all;
   line-height: 1.4;
 `;
 
