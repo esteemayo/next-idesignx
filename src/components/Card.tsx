@@ -24,6 +24,8 @@ const Card: React.FC<CardProps> = ({ url, icon, desc, title }) => {
 
 const Container = styled.article`
   display: grid;
+  grid-template-rows: repeat(4, min-content);
+  align-content: center;
   gap: 1.5rem;
 
   padding: 3rem;
