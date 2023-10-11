@@ -31,10 +31,6 @@ const HeadingPrimary = styled.h1`
   font-size: 2.4rem;
   color: ${({ theme }) => theme.textSoft};
   line-height: 1.2;
-
-  @media only screen and (max-width: 37.5em) {
-    font-size: 2.2rem;
-  }
 `;
 
 const HeadingSecondary = styled.h2`
