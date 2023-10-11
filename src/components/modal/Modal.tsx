@@ -199,6 +199,10 @@ const Heading = styled.h1`
   font-size: 3rem;
   color: ${({ theme }) => theme.textSoft};
   margin-top: 1rem;
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.8rem;
+  }
 `;
 
 const Body = styled.div`
