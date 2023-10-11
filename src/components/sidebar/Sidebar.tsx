@@ -51,7 +51,7 @@ const Sidebar = () => {
     }
 
     return undefined;
-  }, [menu.isOpen, menu.onClose]);
+  }, [menu]);
 
   return (
     <Container active={activeMenu} mode={activeMode}>
