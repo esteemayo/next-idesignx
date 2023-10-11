@@ -13,10 +13,11 @@ type MenuItemsType = {
 };
 
 interface MenuItemsProps {
+  mode: string;
   links: Array<MenuItemsType>;
 }
 
-const MenuItems: React.FC<MenuItemsProps> = ({ links }) => {
+const MenuItems: React.FC<MenuItemsProps> = ({ mode, links }) => {
   const { isOpen, onClose } = useMenu();
 
   const handleClose = useCallback(() => {
@@ -30,7 +31,9 @@ const MenuItems: React.FC<MenuItemsProps> = ({ links }) => {
   return (
     <Container>
       {links.map((link) => {
-        return <MenuItem key={link.id} {...link} onClick={handleClose} />;
+        return (
+          <MenuItem key={link.id} {...link} mode={mode} onClick={handleClose} />
+        );
       })}
     </Container>
   );
