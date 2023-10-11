@@ -40,7 +40,8 @@ const initialState = {
 };
 
 const DesignModal = () => {
-  const { isOpen, onClose } = useDesignModal();
+  const isOpen = useDesignModal((state) => state.isOpen);
+  const onClose = useDesignModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
   const [files, setFiles] = useState<File>();
@@ -111,7 +112,7 @@ const DesignModal = () => {
 
   const handleClear = useCallback(() => {
     setData(initialState);
-    setFiles(null);
+    setFiles();
   }, []);
 
   const handleSubmit = useCallback(() => {
