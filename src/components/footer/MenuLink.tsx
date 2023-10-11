@@ -24,7 +24,6 @@ const MenuLink: React.FC<MenuLinkProps> = ({ url, label, mode }) => {
 };
 
 const Container = styled.li`
-  padding: 0.5rem;
   color: currentColor;
 `;
 
