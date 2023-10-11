@@ -15,24 +15,15 @@ type MenuItemsType = {
 interface MenuItemsProps {
   mode: string;
   links: Array<MenuItemsType>;
+  onClose(): void;
 }
 
-const MenuItems: React.FC<MenuItemsProps> = ({ mode, links }) => {
-  const { isOpen, onClose } = useMenu();
-
-  const handleClose = useCallback(() => {
-    if (isOpen) {
-      onClose();
-    }
-
-    return undefined;
-  }, [isOpen, onClose]);
-
+const MenuItems: React.FC<MenuItemsProps> = ({ mode, links, onClose }) => {
   return (
     <Container>
       {links.map((link) => {
         return (
-          <MenuItem key={link.id} {...link} mode={mode} onClick={handleClose} />
+          <MenuItem key={link.id} {...link} mode={mode} onClick={onClose} />
         );
       })}
     </Container>
