@@ -7,7 +7,7 @@ import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styled, { keyframes } from 'styled-components';
 
 interface ImageUploadProps {
-  files?: Array<object> | null | undefined;
+  files?: File;
   error?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
 }

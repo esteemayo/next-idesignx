@@ -43,7 +43,7 @@ const DesignModal = () => {
   const { isOpen, onClose } = useDesignModal();
 
   const [step, setStep] = useState(STEPS.INFO);
-  const [files, setFiles] = useState(null);
+  const [files, setFiles] = useState<File>();
   const [data, setData] = useState(initialState);
   const [errors, setErrors] = useState<IErrors>({});
 
