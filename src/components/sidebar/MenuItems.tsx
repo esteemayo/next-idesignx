@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-
 import MenuItem from './MenuItem';
 
 type MenuItemsType = {
