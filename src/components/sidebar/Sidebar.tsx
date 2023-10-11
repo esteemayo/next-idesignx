@@ -136,6 +136,12 @@ const ButtonContainer = styled.div`
         font-size: 1.85rem;
       }
     }
+
+    &:nth-child(2) {
+      @media only screen and (max-width: 25em) {
+        font-size: 1.65rem;
+      }
+    }
   }
 `;
 
