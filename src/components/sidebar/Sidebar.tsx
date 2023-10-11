@@ -39,11 +39,16 @@ const Sidebar = () => {
     onClose();
   }, [designModal, onClose]);
 
+  const handleClick = useCallback(() => {
+    loginModal.onOpen();
+    onClose();
+  }, [loginModal, onClose]);
+
   return (
     <Container active={activeMenu} mode={activeMode}>
       <Wrapper mode={activeMode}>
         <Hamburger isOpen={isOpen} onToggle={onClose} />
-        <NavButton label='Login' onClick={loginModal.onOpen} />
+        <NavButton label='Login' onClick={handleClick} />
         <Button
           nav='true'
           type='button'
