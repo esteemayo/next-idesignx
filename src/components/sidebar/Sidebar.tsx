@@ -28,7 +28,7 @@ interface IWrapper {
 }
 
 const Sidebar = () => {
-  const { isOpen, onClose } = useMenu();
+  const menu = useMenu();
   const loginModal = useLoginModal();
   const designModal = useDesignModal();
 
@@ -37,26 +37,26 @@ const Sidebar = () => {
 
   const handleOpen = useCallback(() => {
     designModal.onOpen();
-    onClose();
-  }, [designModal, onClose]);
+    menu.onClose();
+  }, [designModal, menu.onClose]);
 
   const handleClick = useCallback(() => {
     loginModal.onOpen();
-    onClose();
-  }, [loginModal, onClose]);
+    menu.onClose();
+  }, [loginModal, menu.onClose]);
 
   const handleClose = useCallback(() => {
-    if (isOpen) {
-      onClose();
+    if (menu.isOpen) {
+      menu.onClose();
     }
 
     return undefined;
-  }, [isOpen, onClose]);
+  }, [menu.isOpen, menu.onClose]);
 
   return (
     <Container active={activeMenu} mode={activeMode}>
       <Wrapper mode={activeMode}>
-        <Hamburger isOpen={isOpen} onToggle={onClose} />
+        <Hamburger isOpen={menu.isOpen} onToggle={menu.onClose} />
         <ButtonContainer>
           <NavButton label='Login' onClick={handleClick} />
           <Button
