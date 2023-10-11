@@ -117,6 +117,7 @@ const Wrapper = styled.div<IWrapper>`
 
 const ButtonContainer = styled.div`
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 5rem;
 
