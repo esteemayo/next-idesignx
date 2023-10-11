@@ -124,6 +124,10 @@ const ButtonContainer = styled.div`
       font-weight: lighter;
       font-size: 2rem;
       color: currentColor;
+
+      @media only screen and (max-width: 25em) {
+        font-size: 1.85rem;
+      }
     }
   }
 `;
