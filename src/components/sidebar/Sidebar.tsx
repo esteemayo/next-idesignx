@@ -29,10 +29,11 @@ interface IWrapper {
 
 const Sidebar = () => {
   const { isOpen, onClose } = useMenu();
+  const loginModal = useLoginModal();
   const designModal = useDesignModal();
+
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
-  const loginModal = useLoginModal();
 
   const handleOpen = useCallback(() => {
     designModal.onOpen();
