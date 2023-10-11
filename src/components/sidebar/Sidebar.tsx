@@ -19,6 +19,10 @@ interface IContainer {
   mode: string;
 }
 
+interface IWrapper {
+  mode: string;
+}
+
 const Sidebar = () => {
   const { isOpen, onClose } = useMenu();
   const designModal = useDesignModal();
@@ -32,7 +36,7 @@ const Sidebar = () => {
 
   return (
     <Container active={activeMenu} mode={activeMode}>
-      <Wrapper>
+      <Wrapper mode={activeMode}>
         <Hamburger isOpen={isOpen} onToggle={onClose} />
         <Button
           nav='true'
@@ -80,9 +84,10 @@ const Container = styled.aside<IContainer>`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<IWrapper>`
   padding: 3rem;
-  background-color: var(--clr-purple-light-1);
+  background-color: ${({ mode }) =>
+    mode === 'true' ? '--clr-bg-dark-primary' : 'var(--clr-purple-light-1)'};
 
   display: flex;
   align-items: center;
