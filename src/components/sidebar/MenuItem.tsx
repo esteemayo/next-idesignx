@@ -5,22 +5,31 @@ import styled from 'styled-components';
 
 interface MenuItemProps {
   url: string;
+  mode: string;
   label: string;
   onClick?(): void;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ url, label, onClick }) => {
+interface IList {
+  mode: string;
+}
+
+const MenuItem: React.FC<MenuItemProps> = ({ url, mode, label, onClick }) => {
   return (
-    <ListItem onClick={onClick}>
+    <ListItem mode={mode} onClick={onClick}>
       <StyledLink href={url}>{label}</StyledLink>
     </ListItem>
   );
 };
 
-const ListItem = styled.li`
+const ListItem = styled.li<IList>`
   padding: 1.5rem 0.5rem;
   color: currentColor;
-  border-bottom: 1px solid var(--clr-purple-light-3);
+  border-bottom: 1px solid
+    ${({ mode }) =>
+      mode === 'true'
+        ? 'var(--clr-bg-dark-tertiary)'
+        : 'var(--clr-purple-light-3)'};
 `;
 
 const StyledLink = styled(Link)`
