@@ -17,6 +17,7 @@ const GalleryHero = () => {
         'You imagine.',
         'We design.',
         'We brand.',
+        'We develop.',
         'We print.',
         'We deliver.',
       ],
