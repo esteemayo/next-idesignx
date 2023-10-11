@@ -66,7 +66,7 @@ const Sidebar = () => {
           />
         </ButtonContainer>
       </Wrapper>
-      <MenuItems mode={activeMode} links={navItems} />
+      <MenuItems mode={activeMode} links={navItems} onClose={handleClose} />
     </Container>
   );
 };
