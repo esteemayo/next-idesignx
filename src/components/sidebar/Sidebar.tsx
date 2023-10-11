@@ -87,7 +87,9 @@ const Container = styled.aside<IContainer>`
 const Wrapper = styled.div<IWrapper>`
   padding: 3rem;
   background-color: ${({ mode }) =>
-    mode === 'true' ? '--clr-bg-dark-primary' : 'var(--clr-purple-light-1)'};
+    mode === 'true'
+      ? 'var(--clr-bg-dark-primary)'
+      : 'var(--clr-purple-light-1)'};
 
   display: flex;
   align-items: center;
