@@ -107,10 +107,7 @@ const Container = styled.aside<IContainer>`
 
 const Wrapper = styled.div<IWrapper>`
   padding: 3rem;
-  background-color: ${({ mode }) =>
-    mode === 'true'
-      ? 'var(--clr-bg-dark-primary)'
-      : 'var(--clr-purple-light-1)'};
+  background-color: ${({ mode }) => setBcgColor(mode)};
 
   display: flex;
   align-items: center;
@@ -129,5 +126,11 @@ const ButtonContainer = styled.div`
     }
   }
 `;
+
+const setBcgColor = (mode: string): string => {
+  return mode === 'true'
+    ? 'var(--clr-bg-dark-primary)'
+    : 'var(--clr-purple-light-1)';
+};
 
 export default Sidebar;
