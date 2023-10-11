@@ -49,7 +49,6 @@ const Sidebar = () => {
 const Container = styled.aside<IContainer>`
   width: 45rem;
   height: 100%;
-  padding: 3px 2rem;
   position: fixed;
   top: 0;
   left: ${({ active }) => (active === 'true' ? 0 : '-100%')};
