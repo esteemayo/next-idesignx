@@ -3,13 +3,17 @@
 import { useCallback } from 'react';
 import styled, { css } from 'styled-components';
 
-import MenuItems from './MenuItems';
 import Hamburger from '../navbar/Hamburger';
+import NavButton from '../navbar/NavButton';
+
+import MenuItems from './MenuItems';
 import Button from '../buttons/Button';
 
-import { useActiveMenu } from '@/hooks/useActiveMenu';
-import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
+import { useMenu } from '@/hooks/useMenu';
+import { useLoginModal } from '@/hooks/useLoginModal';
+
+import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
@@ -28,6 +32,7 @@ const Sidebar = () => {
   const designModal = useDesignModal();
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
+  const loginModal = useLoginModal();
 
   const handleOpen = useCallback(() => {
     designModal.onOpen();
@@ -38,6 +43,7 @@ const Sidebar = () => {
     <Container active={activeMenu} mode={activeMode}>
       <Wrapper mode={activeMode}>
         <Hamburger isOpen={isOpen} onToggle={onClose} />
+        <NavButton label='Login' onClick={loginModal.onOpen} />
         <Button
           nav='true'
           type='button'
