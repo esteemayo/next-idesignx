@@ -44,6 +44,14 @@ const Sidebar = () => {
     onClose();
   }, [loginModal, onClose]);
 
+  const handleClose = useCallback(() => {
+    if (isOpen) {
+      onClose();
+    }
+
+    return undefined;
+  }, [isOpen, onClose]);
+
   return (
     <Container active={activeMenu} mode={activeMode}>
       <Wrapper mode={activeMode}>
