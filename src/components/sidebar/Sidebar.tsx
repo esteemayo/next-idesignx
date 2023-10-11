@@ -110,6 +110,10 @@ const Wrapper = styled.div<IWrapper>`
 `;
 
 const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
   & > * {
     &:first-child {
       color: currentColor;
