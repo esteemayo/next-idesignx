@@ -87,7 +87,7 @@ const StyledButton = styled.button<IBtn>`
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 1.45rem;
+    font-size: ${({ outline }) => (outline === 'true' ? '1.35rem' : '1.45rem')};
     padding-left: 2rem;
     padding-right: 2rem;
   }
