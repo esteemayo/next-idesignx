@@ -85,7 +85,7 @@ export const menuItems = [
 export const brands = [
   {
     id: 1,
-    img: '/img/logo/access.jpg',
+    img: '/img/logo/access.png',
   },
   {
     id: 2,
