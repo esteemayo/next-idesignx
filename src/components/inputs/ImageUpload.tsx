@@ -7,7 +7,7 @@ import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styled, { keyframes } from 'styled-components';
 
 interface ImageUploadProps {
-  files?: File;
+  value?: File;
   error?: string;
   onChange(e: ChangeEvent<HTMLInputElement>): void;
 }
@@ -17,7 +17,7 @@ interface IContainer {
 }
 
 const ImageUpload: React.FC<ImageUploadProps> = ({
-  files,
+  value,
   error,
   onChange,
 }) => {
@@ -38,9 +38,9 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
         </Label>
         <Input id='file' type='file' multiple onChange={handleFile} />
       </Wrapper>
-      {files && (
+      {value && (
         <StyledImage
-          src={URL.createObjectURL(files[0])}
+          src={URL.createObjectURL(value[0])}
           width={440}
           height={200}
           alt=''

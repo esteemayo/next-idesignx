@@ -245,7 +245,7 @@ const DesignModal = () => {
           onChange={handleChange}
           error={errors.category}
         />
-        <ImageUpload files={files} onChange={(value) => setFiles(value)} />
+        <ImageUpload value={files} onChange={(value) => setFiles(value)} />
       </>
     );
   }
