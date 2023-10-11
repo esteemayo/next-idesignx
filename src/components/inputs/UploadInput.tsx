@@ -12,7 +12,7 @@ interface UploadInputProps {
 const UploadInput: React.FC<UploadInputProps> = ({ id, label, onChange }) => {
   return (
     <Container>
-      <Input id={id} type='file' onChange={onChange} />
+      <Input id={id} onChange={onChange} />
       <Label htmlFor={id}>{label}</Label>
     </Container>
   );
@@ -25,7 +25,9 @@ const Container = styled.div`
 
 const Label = styled.label``;
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  type: 'file',
+})`
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
