@@ -18,7 +18,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ url, label, onClick }) => {
 };
 
 const ListItem = styled.li`
-  padding: 0.5rem;
+  padding: 1.5rem 0.5rem;
   color: currentColor;
   border-bottom: 1px solid var(--clr-purple-light-3);
 
