@@ -21,10 +21,6 @@ const ListItem = styled.li`
   padding: 1.5rem 0.5rem;
   color: currentColor;
   border-bottom: 1px solid var(--clr-purple-light-3);
-
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
 `;
 
 const StyledLink = styled(Link)`
