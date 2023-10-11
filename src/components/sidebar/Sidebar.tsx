@@ -38,7 +38,7 @@ const Sidebar = () => {
   const handleOpen = useCallback(() => {
     designModal.onOpen();
     menu.onClose();
-  }, [designModal, menu.onClose]);
+  }, [designModal, menu]);
 
   const handleClick = useCallback(() => {
     loginModal.onOpen();
