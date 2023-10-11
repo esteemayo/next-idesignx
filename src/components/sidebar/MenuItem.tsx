@@ -27,11 +27,7 @@ const ListItem = styled.li<IList>`
   color: currentColor;
 
   &:not(:last-child) {
-    border-bottom: 1px solid
-      ${({ mode }) =>
-        mode === 'true'
-          ? 'var(--clr-bg-dark-tertiary)'
-          : 'var(--clr-purple-light-3)'};
+    border-bottom: 1px solid ${({ mode }) => setBorderColor(mode)};
   }
 `;
 
@@ -47,5 +43,11 @@ const StyledLink = styled(Link)`
     color: inherit;
   }
 `;
+
+const setBorderColor = (mode: string): string => {
+  return mode === 'true'
+    ? 'var(--clr-bg-dark-tertiary)'
+    : 'var(--clr-purple-light-3)';
+};
 
 export default MenuItem;
