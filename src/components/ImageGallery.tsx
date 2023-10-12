@@ -1,7 +1,7 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
-import { FC, useCallback, useMemo, useState } from 'react';
 
 import ImageItem from './ImageItem';
 
@@ -17,16 +17,14 @@ interface ImageGalleryProps {
 
 const ImageGallery: FC<ImageGalleryProps> = ({ images, onOpen }) => {
   return (
-    <>
-      <Container>
-        {images.map((item, index) => {
-          const { id, img } = item;
-          return (
-            <ImageItem key={id} src={img} value={index} onClick={onOpen} />
-          );
-        })}
-      </Container>
-    </>
+    <Container>
+      {images.map((item, index) => {
+        const { id, img } = item;
+        return (
+          <ImageItem key={id} src={img} value={index} onClick={onOpen} />
+        );
+      })}
+    </Container>
   );
 };
 
