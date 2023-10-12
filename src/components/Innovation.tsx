@@ -22,7 +22,7 @@ const Container = styled.section`
   grid-column: full-start / col-end 4;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 
   background-color: ${({ theme }) => theme.bg};
 `;

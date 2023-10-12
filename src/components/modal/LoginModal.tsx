@@ -106,7 +106,7 @@ const LoginModal = () => {
         type='password'
         label='Password'
         value={data.password}
-        placeholder='********'
+        placeholder='Password'
         onChange={handleChange}
         error={errors.password}
       />
