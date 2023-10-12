@@ -1,11 +1,25 @@
 'use client';
 
+import { FC } from 'react';
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 import Card from './Card';
 import { printItems } from '@/data';
 
-const Printings = () => {
+type PrintItemValues = {
+  readonly id: number;
+  title: string;
+  desc: string;
+  icon: IconDefinition;
+  url: string;
+};
+
+interface PrintingsProps {
+  data: Array<PrintItemValues>;
+}
+
+const Printings: FC<PrintingsProps> = ({ data }) => {
   return (
     <Container>
       <Wrapper>
@@ -16,7 +30,7 @@ const Printings = () => {
           </Span>
         </Heading>
         <Box>
-          {printItems.map((item) => {
+          {data.map((item) => {
             return <Card key={item.id} {...item} />;
           })}
         </Box>
