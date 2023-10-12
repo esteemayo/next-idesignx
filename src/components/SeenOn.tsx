@@ -5,7 +5,6 @@ import Marquee from 'react-fast-marquee';
 import { FC, useMemo } from 'react';
 import styled from 'styled-components';
 
-import { brands } from '@/data';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 type BrandValues = {
