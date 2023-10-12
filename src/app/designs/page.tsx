@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import type { Metadata } from 'next';
 
 import DesignHero from '@/components/hero/DesignHero';
+import Innovation from '@/components/Innovation';
 
 const Featured = dynamic(() => import('@/components/Featured'), { ssr: false });
 const Mission = dynamic(() => import('@/components/Mission'), { ssr: false });
@@ -21,7 +22,8 @@ const Designs = () => {
   return (
     <Container>
       <DesignHero />
-      <Featured />
+      <Innovation />
+      {/* <Featured /> */}
       <Mission />
       <Request />
       <Statement />
