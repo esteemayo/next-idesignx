@@ -4,18 +4,16 @@ import Image from 'next/image';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-import { galleryImages } from '@/data';
-
 type GalleryImageValues = {
-  readonly id: number
-  img: string
-}
+  readonly id: number;
+  img: string;
+};
 
 interface GalleryProps {
-  data: Array<GalleryImageValues>
+  data: Array<GalleryImageValues>;
 }
 
-const Gallery: FC<GalleryProps> = ({data}) => {
+const Gallery: FC<GalleryProps> = ({ data }) => {
   return (
     <Container>
       <Heading>Gallery</Heading>
