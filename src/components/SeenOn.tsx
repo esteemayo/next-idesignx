@@ -2,13 +2,22 @@
 
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
-import { useMemo } from 'react';
+import { FC, useMemo } from 'react';
 import styled from 'styled-components';
 
 import { brands } from '@/data';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const SeenOn = () => {
+type BrandValues = {
+  readonly id: number;
+  img: string;
+};
+
+interface SeenOnProps {
+  data: BrandValues[];
+}
+
+const SeenOn: FC<SeenOnProps> = ({ data }) => {
   const mode = useDarkMode((state) => state.mode);
 
   const gradientEffect = useMemo(() => {
@@ -20,7 +29,7 @@ const SeenOn = () => {
       <Text>As seen on</Text>
       <Marquee speed={100} gradient={gradientEffect}>
         <Wrapper>
-          {brands.map((item) => {
+          {data.map((item) => {
             const { id, img } = item;
             return (
               <StyledImage key={id} src={img} width={80} height={50} alt='' />
