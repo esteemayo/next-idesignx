@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const NotFound = () => {
-  return <Container>NotFound</Container>;
+  return (
+    <Container>
+      <Wrapper>NotFound</Wrapper>
+    </Container>
+  );
 };
 
 const Container = styled.main`
