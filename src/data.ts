@@ -208,11 +208,11 @@ export const galleryImages = [
   },
   {
     id: 14,
-    img: '/img/gallery-hero.jpg',
+    img: '/img/gallery/gal-14.jpg',
   },
   {
     id: 15,
-    img: '/img/gallery/gal-14.jpg',
+    img: '/img/gallery/gal-15.jpg',
   },
   {
     id: 16,
