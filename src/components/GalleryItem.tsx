@@ -26,6 +26,11 @@ const StyledImage = styled(Image)`
   height: 100%;
   display: block;
   object-fit: cover;
+
+  @media only screen and (max-width: 26.25em) {
+    width: 40rem;
+    height: 30rem;
+  }
 `;
 
 export default GalleryItem;
