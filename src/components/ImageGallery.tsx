@@ -93,8 +93,4 @@ const Container = styled.section`
   }
 `;
 
-const Wrapper = styled.figure`
-  cursor: pointer;
-`;
-
 export default ImageGallery;
