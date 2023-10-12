@@ -29,7 +29,7 @@ const Container = styled.section`
 
 const Paragraph = styled.p`
   font-size: 2rem;
-  color: ${({ theme }) => theme.textSoft};
+  color: ${({ theme }) => theme.textDesign};
   margin-bottom: 2rem;
 
   @media only screen and (max-width: 25em) {
