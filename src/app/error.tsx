@@ -1,6 +1,8 @@
 'use client';
 
 import { FC, useEffect } from 'react';
+import styled from 'styled-components';
+
 import Heading from '@/components/Heading';
 
 interface ErrorProps {
@@ -16,5 +18,10 @@ const ErrorState: FC<ErrorProps> = ({ error }) => {
     <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
   );
 };
+
+const Container = styled.main`
+  width: 100%;
+  height: 80vh;
+`;
 
 export default ErrorState;
