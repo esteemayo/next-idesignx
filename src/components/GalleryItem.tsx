@@ -5,13 +5,13 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 interface GalleryItemProps {
-  img: string;
+  src: string;
 }
 
-const GalleryItem: FC<GalleryItemProps> = ({ img }) => {
+const GalleryItem: FC<GalleryItemProps> = ({ src }) => {
   return (
     <Container>
-      <StyledImage src={img} width={250} height={258} alt='' />
+      <StyledImage src={src} width={250} height={258} alt='' />
     </Container>
   );
 };
