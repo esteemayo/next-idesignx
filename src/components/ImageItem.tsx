@@ -1,7 +1,7 @@
 'use client';
 
+import { FC, useMemo } from 'react';
 import Image from 'next/image';
-import { FC } from 'react';
 import styled from 'styled-components';
 
 interface ImageItemProps {
@@ -11,9 +11,13 @@ interface ImageItemProps {
 }
 
 const ImageItem: FC<ImageItemProps> = ({ src, value, onClick }) => {
+  const galleryClass = useMemo(() => {
+    return `gallery-item--${value + 1}`;
+  }, [value]);
+
   return (
     <Container
-      className={`gallery-item--${value + 1}`}
+      className={galleryClass}
       onClick={() => onClick(value as number)}
     >
       <StyledImage src={src} width={270} height={140} alt='' />
