@@ -22,6 +22,7 @@ const ErrorState: FC<ErrorProps> = ({ error }) => {
 const Container = styled.main`
   width: 100%;
   height: 80vh;
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 export default ErrorState;
