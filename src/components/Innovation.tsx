@@ -24,6 +24,11 @@ const Container = styled.section`
   align-items: center;
   justify-content: end;
 
+  @media only screen and (max-width: 37.5em) {
+    grid-column: full-start / full-end;
+    justify-content: center;
+  }
+
   background-color: ${({ theme }) => theme.bg};
 `;
 
