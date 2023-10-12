@@ -10,4 +10,6 @@ const Container = styled.section`
   grid-column: full-start / full-end;
 `;
 
+const ImageWrapper = styled.div``;
+
 export default Innovation;
