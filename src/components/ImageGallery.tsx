@@ -7,8 +7,6 @@ import styled from 'styled-components';
 import ImageModal from './modal/ImageModal';
 import { useImageModal } from '@/hooks/useImageModal';
 
-import { galleryItems } from '@/data';
-
 type ImageValues = {
   readonly id: number;
   img: string;
