@@ -27,6 +27,9 @@ const ImageWrapper = styled.div`
   height: 45rem;
 `;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+`;
 
 export default Innovation;
