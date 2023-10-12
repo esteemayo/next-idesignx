@@ -11,6 +11,8 @@ const ImageItem: FC<ImageItemProps> = ({ src }) => {
   return <Container>ImageItem</Container>;
 };
 
-const Container = styled.figure``;
+const Container = styled.figure`
+  cursor: pointer;
+`;
 
 export default ImageItem;
