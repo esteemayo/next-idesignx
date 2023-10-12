@@ -37,7 +37,8 @@ const Container = styled.section<IContainer>`
 
   padding: 3rem;
   background-color: ${({ theme }) => theme.bg};
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textSoft};
+  /* color: var(--clr-white); */
   /* background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-tertiary)'};
   background-image: ${({ mode }) =>
