@@ -1,8 +1,7 @@
 'use client';
 
-import Image from 'next/image';
-import { FC, useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
+import { FC, useCallback, useMemo, useState } from 'react';
 
 import ImageItem from './ImageItem';
 import ImageModal from './modal/ImageModal';
