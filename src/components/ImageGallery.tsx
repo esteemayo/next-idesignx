@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useCallback, useMemo, useState } from 'react';
+import { FC, useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
 
 import ImageModal from './modal/ImageModal';
@@ -9,11 +9,20 @@ import { useImageModal } from '@/hooks/useImageModal';
 
 import { galleryItems } from '@/data';
 
-const ImageGallery = () => {
+type ImageValues = {
+  readonly id: number;
+  img: string;
+};
+
+interface ImageGalleryProps {
+  data: ImageValues[];
+}
+
+const ImageGallery: FC<ImageGalleryProps> = ({ data }) => {
   const { isOpen, onOpen, onClose } = useImageModal();
 
   const [slideIndex, setSlideIndex] = useState(0);
-  const [images, setImages] = useState(galleryItems);
+  const [images, setImages] = useState(data);
 
   const handleOpen = useCallback(
     (index: number) => {
