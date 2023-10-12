@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { FC } from 'react';
 import styled from 'styled-components';
 
+import GalleryItem from './GalleryItem';
+
 type GalleryImageValues = {
   readonly id: number;
   img: string;
@@ -20,11 +22,7 @@ const Gallery: FC<GalleryProps> = ({ data }) => {
       <Wrapper>
         {data.map((item) => {
           const { id, img } = item;
-          return (
-            <ImageContainer key={id}>
-              <StyledImage src={img} width={250} height={258} alt='' />
-            </ImageContainer>
-          );
+          return <GalleryItem key={id} img={img} />;
         })}
       </Wrapper>
     </Container>
