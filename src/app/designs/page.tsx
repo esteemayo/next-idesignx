@@ -5,9 +5,11 @@ import styled from 'styled-components';
 import type { Metadata } from 'next';
 
 import DesignHero from '@/components/hero/DesignHero';
-import Innovation from '@/components/Innovation';
 
-const Featured = dynamic(() => import('@/components/Featured'), { ssr: false });
+// const Featured = dynamic(() => import('@/components/Featured'), { ssr: false });
+const Innovation = dynamic(() => import('@/components/Innovation'), {
+  ssr: false,
+});
 const Mission = dynamic(() => import('@/components/Mission'), { ssr: false });
 const Statement = dynamic(() => import('@/components/Statement'), {
   ssr: false,
