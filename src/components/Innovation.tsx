@@ -20,6 +20,10 @@ const Innovation = () => {
 
 const Container = styled.section`
   grid-column: full-start / col-end 4;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ImageWrapper = styled.div`
