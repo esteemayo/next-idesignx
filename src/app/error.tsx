@@ -17,7 +17,12 @@ const ErrorState: FC<ErrorProps> = ({ error }) => {
 
   return (
     <Container>
-      <StyledImage src='/img/error-warning.png' width={575} height={434} alt='' />
+      <StyledImage
+        src='/img/error-warning.png'
+        width={575}
+        height={434}
+        alt=''
+      />
       <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
     </Container>
   );
@@ -29,6 +34,7 @@ const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
