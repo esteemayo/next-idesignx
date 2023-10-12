@@ -3,9 +3,13 @@
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import { Metadata } from 'next';
+import { useCallback, useMemo, useState } from 'react';
+
+import ImageModal from '@/components/modal/ImageModal';
+import GalleryHero from '@/components/hero/GalleryHero';
 
 import { galleryItems } from '@/data';
-import GalleryHero from '@/components/hero/GalleryHero';
+import { useImageModal } from '@/hooks/useImageModal';
 
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
   ssr: false,
@@ -19,11 +23,52 @@ export const metadata: Metadata = {
 };
 
 const Gallery = () => {
+  const isOpen = useImageModal((state) => state.isOpen);
+  const onClose = useImageModal((state) => state.onClose);
+  const onOpen = useImageModal((state) => state.onOpen);
+
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [images, setImages] = useState(galleryItems);
+
+  const handleOpen = useCallback(
+    (index: number) => {
+      onOpen();
+      setSlideIndex(index);
+    },
+    [onOpen]
+  );
+
+  const handleClick = useCallback(
+    (direction: string) => {
+      let newSlideIndex;
+      const lastIndex = images.length - 1;
+
+      if (direction === 'left') {
+        newSlideIndex = slideIndex === 0 ? lastIndex : slideIndex - 1;
+      } else {
+        newSlideIndex = slideIndex === lastIndex ? 0 : slideIndex + 1;
+      }
+
+      setSlideIndex(newSlideIndex);
+    },
+    [images, slideIndex]
+  );
+
+  const selectedImage = useMemo(() => {
+    return images[slideIndex].img;
+  }, [images, slideIndex]);
+
   return (
     <Container>
       <GalleryHero />
-      <ImageGallery data={galleryItems} />
+      <ImageGallery images={galleryItems} onOpen={handleOpen} />
       <PrintContact bcg='/img/gallery/gal-15.jpg' />
+      <ImageModal
+        image={selectedImage}
+        isOpen={isOpen}
+        onClose={onClose}
+        onClick={handleClick}
+      />
     </Container>
   );
 };
