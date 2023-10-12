@@ -25,9 +25,9 @@ const ImageGallery: FC<ImageGalleryProps> = ({ data }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleOpen = useCallback(
-    (index: number) => {
+    (value: number) => {
       onOpen();
-      setSlideIndex(index);
+      setSlideIndex(value);
     },
     [onOpen]
   );
