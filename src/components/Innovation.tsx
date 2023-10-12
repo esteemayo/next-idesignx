@@ -7,7 +7,12 @@ const Innovation = () => {
   return (
     <Container>
       <ImageWrapper>
-        <StyledImage src='/img/innovative.png' width={577} height={432} alt='' />
+        <StyledImage
+          src='/img/innovative.png'
+          width={577}
+          height={432}
+          alt=''
+        />
       </ImageWrapper>
     </Container>
   );
@@ -17,7 +22,10 @@ const Container = styled.section`
   grid-column: full-start / col-end 4;
 `;
 
-const ImageWrapper = styled.div``;
+const ImageWrapper = styled.div`
+  width: 60rem;
+  height: 45rem;
+`;
 
 const StyledImage = styled(Image)``;
 
