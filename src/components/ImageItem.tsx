@@ -9,7 +9,11 @@ interface ImageItemProps {
 }
 
 const ImageItem: FC<ImageItemProps> = ({ src }) => {
-  return <Container>ImageItem</Container>;
+  return (
+    <Container>
+      <StyledImage src={src} width={270} height={140} alt='' />
+    </Container>
+  );
 };
 
 const Container = styled.figure`
