@@ -17,6 +17,7 @@ const ErrorState: FC<ErrorProps> = ({ error }) => {
 
   return (
     <Container>
+      <StyledImage src='/img/error-warning' width={575} height={434} alt='' />
       <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
     </Container>
   );
