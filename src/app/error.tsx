@@ -15,7 +15,9 @@ const ErrorState: FC<ErrorProps> = ({ error }) => {
   }, [error]);
 
   return (
-    <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
+    <Container>
+      <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
+    </Container>
   );
 };
 
