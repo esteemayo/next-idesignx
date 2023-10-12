@@ -1,16 +1,26 @@
 'use client';
 
 import Image from 'next/image';
+import { FC } from 'react';
 import styled from 'styled-components';
 
 import { galleryImages } from '@/data';
 
-const Gallery = () => {
+type GalleryImageValues = {
+  readonly id: number
+  img: string
+}
+
+interface GalleryProps {
+  data: Array<GalleryImageValues>
+}
+
+const Gallery: FC<GalleryProps> = ({data}) => {
   return (
     <Container>
       <Heading>Gallery</Heading>
       <Wrapper>
-        {galleryImages.map((item) => {
+        {data.map((item) => {
           const { id, img } = item;
           return (
             <ImageContainer key={id}>
