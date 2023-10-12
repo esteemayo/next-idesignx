@@ -5,7 +5,6 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 import Card from './Card';
-import { printItems } from '@/data';
 
 type PrintItemValues = {
   readonly id: number;
