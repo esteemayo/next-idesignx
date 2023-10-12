@@ -23,7 +23,7 @@ const Gallery = () => {
     <Container>
       <GalleryHero />
       <ImageGallery data={galleryItems} />
-      <PrintContact bcg='/img/gallery/gal-16.jpg' />
+      <PrintContact bcg='/img/gallery/gal-15.jpg' />
     </Container>
   );
 };
