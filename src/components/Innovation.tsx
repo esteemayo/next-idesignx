@@ -36,6 +36,10 @@ const Container = styled.section`
 const ImageWrapper = styled.div`
   width: 60rem;
   height: 45rem;
+
+  @media only screen and (max-width: 31.25em) {
+    width: 50rem;
+  }
 `;
 
 const StyledImage = styled(Image)`
