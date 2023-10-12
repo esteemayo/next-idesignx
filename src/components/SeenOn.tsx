@@ -14,9 +14,10 @@ type BrandValues = {
 
 interface SeenOnProps {
   data: BrandValues[];
+  gradient: boolean;
 }
 
-const SeenOn: FC<SeenOnProps> = ({ data }) => {
+const SeenOn: FC<SeenOnProps> = ({ data, gradient }) => {
   const mode = useDarkMode((state) => state.mode);
 
   const gradientEffect = useMemo(() => {
@@ -26,7 +27,7 @@ const SeenOn: FC<SeenOnProps> = ({ data }) => {
   return (
     <Container>
       <Text>As seen on</Text>
-      <Marquee speed={100} gradient={gradientEffect}>
+      <Marquee speed={100} gradient={gradient}>
         <Wrapper>
           {data.map((item) => {
             const { id, img } = item;
