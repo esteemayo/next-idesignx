@@ -7,7 +7,7 @@ import ProductImage from './ProductImage';
 import { StyledLink } from './buttons/StyledLink';
 
 type ProductImageType = {
-  readonly id: string;
+  readonly id: number;
   img: string;
 };
 
