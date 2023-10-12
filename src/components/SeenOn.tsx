@@ -18,12 +18,6 @@ interface SeenOnProps {
 }
 
 const SeenOn: FC<SeenOnProps> = ({ data, gradient }) => {
-  const mode = useDarkMode((state) => state.mode);
-
-  const gradientEffect = useMemo(() => {
-    return mode ? false : true;
-  }, [mode]);
-
   return (
     <Container>
       <Text>As seen on</Text>
