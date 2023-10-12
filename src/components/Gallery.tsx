@@ -22,7 +22,7 @@ const Gallery: FC<GalleryProps> = ({ data }) => {
       <Wrapper>
         {data.map((item) => {
           const { id, img } = item;
-          return <GalleryItem key={id} img={img} />;
+          return <GalleryItem key={id} src={img} />;
         })}
       </Wrapper>
     </Container>
