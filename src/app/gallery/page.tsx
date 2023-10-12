@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 import { Metadata } from 'next';
 
+import { galleryItems } from '@/data';
 import GalleryHero from '@/components/hero/GalleryHero';
 
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
@@ -21,7 +22,7 @@ const Gallery = () => {
   return (
     <Container>
       <GalleryHero />
-      <ImageGallery />
+      <ImageGallery data={galleryItems} />
       <PrintContact bcg='/img/gallery/gal-16.jpg' />
     </Container>
   );
