@@ -19,8 +19,8 @@ const ErrorState: FC<ErrorProps> = ({ error }) => {
     <Container>
       <StyledImage
         src='/img/error-warning.png'
-        width={575}
-        height={434}
+        width={500}
+        height={400}
         alt=''
       />
       <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
@@ -43,8 +43,8 @@ const Container = styled.main`
   justify-content: center;
 
   & > img {
-    width: 58rem;
-    height: 44rem;
+    width: 50rem;
+    height: 40rem;
   }
 `;
 
