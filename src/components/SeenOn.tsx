@@ -1,8 +1,8 @@
-'use client';
+use client';
 
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
-import { FC, useMemo } from 'react';
+import { FC } from 'react';
 import styled from 'styled-components';
 
 type BrandValues = {
