@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 
 const Innovation = () => {
-  return <Container>Innovation</Container>;
+  return (
+    <Container>
+      <ImageWrapper>Innovation</ImageWrapper>
+    </Container>
+  );
 };
 
 const Container = styled.section`
