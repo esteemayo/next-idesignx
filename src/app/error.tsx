@@ -48,6 +48,9 @@ const Container = styled.main`
   }
 `;
 
-const StyledImage = styled(Image)``;
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+`;
 
 export default ErrorState;
