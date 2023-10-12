@@ -61,7 +61,7 @@ const Gallery = () => {
   return (
     <Container>
       <GalleryHero />
-      <ImageGallery images={galleryItems} onOpen={handleOpen} />
+      <ImageGallery images={images} onOpen={handleOpen} />
       <PrintContact bcg='/img/gallery/gal-15.jpg' />
       <ImageModal
         image={selectedImage}
