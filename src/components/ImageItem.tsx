@@ -6,11 +6,16 @@ import styled from 'styled-components';
 
 interface ImageItemProps {
   src: string;
+  index: number;
+  onClick(index: number): void;
 }
 
-const ImageItem: FC<ImageItemProps> = ({ src }) => {
+const ImageItem: FC<ImageItemProps> = ({ src, index, onClick }) => {
   return (
-    <Container>
+    <Container
+      className={`gallery-item--${index + 1}`}
+      onClick={() => onClick(index as number)}
+    >
       <StyledImage src={src} width={270} height={140} alt='' />
     </Container>
   );
