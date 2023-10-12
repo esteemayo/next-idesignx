@@ -9,7 +9,11 @@ interface GalleryItemProps {
 }
 
 const GalleryItem: FC<GalleryItemProps> = ({ img }) => {
-  return <Container>GalleryItem</Container>;
+  return (
+    <Container>
+      <StyledImage src={img} width={250} height={258} alt='' />
+    </Container>
+  );
 };
 
 const Container = styled.figure`
