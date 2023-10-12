@@ -6,7 +6,9 @@ import styled from 'styled-components';
 const Innovation = () => {
   return (
     <Container>
-      <ImageWrapper>Innovation</ImageWrapper>
+      <ImageWrapper>
+        <StyledImage src='/img/innovative.pg' width={577} height={432} alt='' />
+      </ImageWrapper>
     </Container>
   );
 };
