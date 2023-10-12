@@ -41,6 +41,11 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  & > img {
+    width: 58rem;
+    height: 44rem;
+  }
 `;
 
 const StyledImage = styled(Image)``;
