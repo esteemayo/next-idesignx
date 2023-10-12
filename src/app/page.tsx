@@ -1,12 +1,14 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Hero from '@/components/hero/Hero';
 
+import { useDarkMode } from '@/hooks/useDarkMode';
 import { brands, printItems, productImages } from '@/data';
 
 const Printings = dynamic(() => import('@/components/Printings'), {
@@ -16,12 +18,18 @@ const SeenOn = dynamic(() => import('@/components/SeenOn'), { ssr: false });
 const Products = dynamic(() => import('@/components/Products'), { ssr: false });
 
 const Home = () => {
+  const mode = useDarkMode((state) => state.mode);
+
+  const gradientEffect = useMemo(() => {
+    return mode ? false : true;
+  }, [mode]);
+
   return (
     <Container>
       <Hero />
       <About />
       <Contact />
-      <SeenOn data={brands} />
+      <SeenOn data={brands} gradient={gradientEffect} />
       <Products data={productImages} />
       <Printings data={printItems} />
     </Container>
