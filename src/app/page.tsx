@@ -7,6 +7,8 @@ import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Hero from '@/components/hero/Hero';
 
+import { productImages } from '@/data';
+
 const Printings = dynamic(() => import('@/components/Printings'), {
   ssr: false,
 });
@@ -20,7 +22,7 @@ const Home = () => {
       <About />
       <Contact />
       <SeenOn />
-      <Products />
+      <Products data={productImages} />
       <Printings />
     </Container>
   );
