@@ -7,14 +7,14 @@ const Innovation = () => {
   return (
     <Container>
       <ImageWrapper>
-        <StyledImage src='/img/innovative.pg' width={577} height={432} alt='' />
+        <StyledImage src='/img/innovative.png' width={577} height={432} alt='' />
       </ImageWrapper>
     </Container>
   );
 };
 
 const Container = styled.section`
-  grid-column: full-start / full-end;
+  grid-column: full-start / col-end 4;
 `;
 
 const ImageWrapper = styled.div``;
