@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 import ProductImage from './ProductImage';
@@ -7,12 +8,21 @@ import { StyledLink } from './buttons/StyledLink';
 
 import { productImages } from '@/data';
 
-const Products = () => {
+type ProductImageType = {
+  readonly id: string;
+  img: string;
+};
+
+interface ProductsProps {
+  data: ProductImageType[];
+}
+
+const Products: FC<ProductsProps> = ({ data }) => {
   return (
     <Container>
       <Heading>Our products</Heading>
       <Wrapper>
-        {productImages.map((item) => {
+        {data.map((item) => {
           return <ProductImage key={item.id} {...item} />;
         })}
       </Wrapper>
