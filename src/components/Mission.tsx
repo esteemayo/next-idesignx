@@ -36,8 +36,9 @@ const Container = styled.section<IContainer>`
   }
 
   padding: 3rem;
+  background-color: ${({ theme }) => theme.bg};
   color: var(--clr-white);
-  background-color: ${({ mode }) =>
+  /* background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-tertiary)'};
   background-image: ${({ mode }) =>
     mode === 'false' &&
@@ -49,7 +50,7 @@ const Container = styled.section<IContainer>`
     var(--clr-purple-light-2),
     var(--clr-purple-dark-2)
   )
-  `};
+  `}; */
 `;
 
 const Wrapper = styled.div`
