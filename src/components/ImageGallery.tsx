@@ -4,7 +4,9 @@ import Image from 'next/image';
 import { FC, useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
 
+import ImageItem from './ImageItem';
 import ImageModal from './modal/ImageModal';
+
 import { useImageModal } from '@/hooks/useImageModal';
 
 type ImageValues = {
@@ -56,13 +58,7 @@ const ImageGallery: FC<ImageGalleryProps> = ({ data }) => {
         {images.map((item, index) => {
           const { id, img } = item;
           return (
-            <Wrapper
-              key={id}
-              className={`gallery-item--${index + 1}`}
-              onClick={() => handleOpen(index as number)}
-            >
-              <StyledImage src={img} width={270} height={140} alt='' />
-            </Wrapper>
+            <ImageItem key={id} src={img} value={index} onClick={handleOpen} />
           );
         })}
       </Container>
