@@ -1,6 +1,7 @@
 'use client';
 
 import { FC, useEffect } from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 import Heading from '@/components/Heading';
@@ -34,5 +35,7 @@ const Container = styled.main`
     height: 100vh;
   }
 `;
+
+const StyledImage = styled(Image)``;
 
 export default ErrorState;
