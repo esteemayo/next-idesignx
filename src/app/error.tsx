@@ -33,14 +33,14 @@ const Container = styled.main`
   height: 80vh;
   background-color: ${({ theme }) => theme.bg};
 
+  @media only screen and (max-width: 26.875em) {
+    height: 100vh;
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  @media only screen and (max-width: 26.875em) {
-    height: 100vh;
-  }
 `;
 
 const StyledImage = styled(Image)``;
