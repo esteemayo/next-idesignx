@@ -26,6 +26,10 @@ const Container = styled.main`
   height: 80vh;
   background-color: ${({ theme }) => theme.bg};
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @media only screen and (max-width: 26.875em) {
     height: 100vh;
   }
