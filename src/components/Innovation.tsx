@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const Innovation = () => {
@@ -15,5 +16,7 @@ const Container = styled.section`
 `;
 
 const ImageWrapper = styled.div``;
+
+const StyledImage = styled(Image)``;
 
 export default Innovation;
