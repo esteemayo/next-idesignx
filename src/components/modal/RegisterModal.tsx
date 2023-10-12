@@ -247,7 +247,7 @@ const RegisterModal = () => {
           type='password'
           label='Confirm password'
           value={data.passwordConfirm}
-          placeholder='Password'
+          placeholder='Confirm password'
           onChange={handleChange}
           error={errors.passwordConfirm}
         />
