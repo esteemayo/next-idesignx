@@ -97,7 +97,7 @@ const LoginModal = () => {
         type='email'
         label='Email address'
         value={data.email}
-        placeholder='you@user.com'
+        placeholder='Email address'
         onChange={handleChange}
         error={errors.email}
       />
