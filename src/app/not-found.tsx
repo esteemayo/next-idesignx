@@ -6,7 +6,9 @@ import styled from 'styled-components';
 const NotFound = () => {
   return (
     <Container>
-      <Wrapper>NotFound</Wrapper>
+      <Wrapper>
+        <StyledImage src='/img/not-found.png' width={601} height={415} alt='' />
+      </Wrapper>
     </Container>
   );
 };
