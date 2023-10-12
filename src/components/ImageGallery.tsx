@@ -21,8 +21,8 @@ interface ImageGalleryProps {
 const ImageGallery: FC<ImageGalleryProps> = ({ data }) => {
   const { isOpen, onOpen, onClose } = useImageModal();
 
-  const [slideIndex, setSlideIndex] = useState(0);
   const [images, setImages] = useState(data);
+  const [slideIndex, setSlideIndex] = useState(0);
 
   const handleOpen = useCallback(
     (index: number) => {
