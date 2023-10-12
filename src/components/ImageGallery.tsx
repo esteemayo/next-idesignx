@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import { FC, useCallback, useMemo, useState } from 'react';
 
 import ImageItem from './ImageItem';
-import ImageModal from './modal/ImageModal';
-
-import { useImageModal } from '@/hooks/useImageModal';
 
 type ImageValues = {
   readonly id: number;
