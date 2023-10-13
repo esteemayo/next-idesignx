@@ -1,6 +1,8 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
+
 import MenuItem from './MenuItem';
 
 type MenuItemsType = {
@@ -15,7 +17,7 @@ interface MenuItemsProps {
   onClose(): void;
 }
 
-const MenuItems: React.FC<MenuItemsProps> = ({ mode, links, onClose }) => {
+const MenuItems: FC<MenuItemsProps> = ({ mode, links, onClose }) => {
   return (
     <Container>
       {links.map((link) => {
