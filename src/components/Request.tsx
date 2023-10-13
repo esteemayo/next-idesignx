@@ -3,10 +3,10 @@
 import styled from 'styled-components';
 import { ChangeEvent, useCallback, useState } from 'react';
 
-import Select from './inputs/Select';
+import FormTextArea from './inputs/FormTextArea';
+import FormInput from './inputs/FormInput';
 import UploadInput from './inputs/UploadInput';
-import Input from './inputs/Input';
-import TextArea from './inputs/TextArea';
+import FormSelect from './inputs/FormSelect';
 
 import Form from './form/Form';
 import Button from './buttons/Button';
@@ -51,50 +51,46 @@ const Request = () => {
     <Container>
       <Heading>Fill in your requests</Heading>
       <Form onSubmit={handleSubmit}>
-        <Input
+        <FormInput
           name='name'
+          type='text'
           label='Your name'
           value={data.name}
           placeholder='Your name'
-          style='true'
           onChange={handleChange}
           path='design'
         />
-        <Input
+        <FormInput
           name='email'
           type='email'
           label='Email'
           value={data.email}
           placeholder='Email'
-          style='true'
           onChange={handleChange}
           path='design'
         />
-        <Input
+        <FormInput
           name='phone'
           type='tel'
           label='Phone number'
           value={data.phone}
           placeholder='Phone number'
-          style='true'
           onChange={handleChange}
           path='design'
         />
-        <Select
+        <FormSelect
           name='category'
           value={data.category}
           label='Select Category'
           options={selectInputs}
-          style='true'
           onChange={handleChange}
           path='design'
         />
-        <TextArea
+        <FormTextArea
           name='comment'
           label='Comment Here'
           value={data.comment}
           placeholder='Comment Here'
-          style='true'
           onChange={handleChange}
           path='design'
         />
