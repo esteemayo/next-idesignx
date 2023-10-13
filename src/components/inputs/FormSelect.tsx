@@ -13,13 +13,20 @@ type OptionTypes = {
 interface FormSelectProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
+  path: string;
   options: Array<OptionTypes>;
 }
 
-const FormSelect: FC<FormSelectProps> = ({ name, label, options, ...rest }) => {
+const FormSelect: FC<FormSelectProps> = ({
+  name,
+  label,
+  path,
+  options,
+  ...rest
+}) => {
   return (
     <FormGroup>
-      <StyledSelect id={name} name={name} required>
+      <StyledSelect id={name} name={name} path={path} required>
         <Option value=''>{label}</Option>
         {options.map((option) => {
           const { id, text } = option;
