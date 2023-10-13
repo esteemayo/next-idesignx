@@ -3,7 +3,6 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-import { cardItems } from '@/data';
 import Card from '@/app/about/Card';
 
 type CardItemValues = {
