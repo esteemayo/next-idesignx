@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icon from '@/components/Icon';
 
 interface CardProps {
-  id: number;
+  readonly id?: number;
   icon: string;
   title: string;
   desc: string;
