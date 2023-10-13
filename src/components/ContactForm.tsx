@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 
-import Input from './inputs/Input';
-import TextArea from './inputs/TextArea';
+import FormInput from './inputs/FormInput';
+import FormTextArea from './inputs/FormTextArea';
 
 import Form from './form/Form';
 import Button from './buttons/Button';
@@ -35,37 +35,34 @@ const ContactForm = () => {
         or just want to say hello.
       </Heading>
       <Form onSubmit={handleSubmit}>
-        <Input
+        <FormInput
           name='name'
+          type='text'
           label='Your name'
           value={data.name}
           placeholder='Your name'
-          style='true'
           onChange={handleChange}
         />
-        <Input
+        <FormInput
           name='email'
           type='email'
           label='Your email'
           value={data.email}
           placeholder='Your email'
-          style='true'
           onChange={handleChange}
         />
-        <Input
+        <FormInput
           name='subject'
           label='Subject'
           value={data.subject}
           placeholder='Subject'
-          style='true'
           onChange={handleChange}
         />
-        <TextArea
+        <FormTextArea
           name='message'
           label='Message'
           value={data.message}
           placeholder='Message'
-          style='true'
           onChange={handleChange}
         />
         <Button label='Submit' />
