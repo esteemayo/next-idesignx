@@ -1,10 +1,10 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 
 interface FormProps {
-  children: React.ReactNode;
+  children: ReactNode;
   onSubmit(e: React.FormEvent<HTMLFormElement>): void;
 }
 
