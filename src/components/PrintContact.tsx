@@ -1,13 +1,15 @@
 'use client';
 
+import { FC } from 'react';
 import styled, { css } from 'styled-components';
+
 import { StyledLink } from './buttons/StyledLink';
 
 interface PrintContactProps {
   bcg?: string;
 }
 
-const PrintContact: React.FC<PrintContactProps> = ({ bcg }) => {
+const PrintContact: FC<PrintContactProps> = ({ bcg }) => {
   return (
     <Container bcg={bcg ?? '/img/contact-1.jpg'}>
       <Paragraph>
