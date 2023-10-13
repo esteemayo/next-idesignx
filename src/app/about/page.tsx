@@ -7,6 +7,7 @@ import type { Metadata } from 'next';
 import Photo from './Photo';
 import Contact from './Contact';
 
+import { storyImages } from '@/data';
 import AboutHero from '@/components/hero/AboutHero';
 
 const StoryImage = dynamic(() => import('@/components/StoryImage'), {
@@ -28,7 +29,7 @@ const About = () => {
     <Container>
       <AboutHero />
       <StoryDetails />
-      <StoryImage />
+      <StoryImage images={storyImages} />
       <StoryCards />
       <Photo />
       <Contact />
