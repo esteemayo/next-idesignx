@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 interface FormProps {
   children: React.ReactElement;
-  onSubmit(): React.FormEvent<HTMLFormElement>;
+  onSubmit(e: React.FormEvent<HTMLFormElement>): void;
 }
 
 const Form: React.FC<FormProps> = ({ children, onSubmit }) => {
