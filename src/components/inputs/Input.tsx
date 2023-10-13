@@ -1,58 +1,27 @@
 'use client';
 
-import { ChangeEvent } from 'react';
+import { FC, InputHTMLAttributes } from 'react';
 
-import { StyledInput } from '../form/StyleInput';
-import { Label } from '../form/Label';
 import { InputStyled } from '../form/InputStyled';
-import { FormGroup } from '../form/FormGroup';
-import { StyledLabel } from '../form/StyledLabel';
 import Error from '../form/Error';
+import { StyledLabel } from '../form/StyledLabel';
+import { FormGroup } from '../form/FormGroup';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
 
-interface InputProps {
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label?: string;
-  type?: string;
-  value?: string;
-  placeholder: string;
-  style?: string;
-  path?: string;
-  onChange(e: ChangeEvent<HTMLInputElement>): void;
   error?: string;
 }
 
-const Input: React.FC<InputProps> = ({
+const Input: FC<InputProps> = ({
   name,
   label,
-  type = 'text',
-  value,
-  placeholder,
-  style,
-  path,
-  onChange,
   error,
+  ...rest
 }) => {
   const { activeMode } = useActiveMode();
-
-  if (style === 'true') {
-    return (
-      <FormGroup>
-        <StyledInput
-          id={name}
-          name={name}
-          type={type}
-          value={value}
-          placeholder={placeholder}
-          onChange={onChange}
-          path={path}
-          required
-        />
-        <Label htmlFor={name}>{label}</Label>
-      </FormGroup>
-    );
-  }
 
   return (
     <FormGroup>
@@ -62,12 +31,9 @@ const Input: React.FC<InputProps> = ({
         </StyledLabel>
       )}
       <InputStyled
+        {...rest}
         id={name}
         name={name}
-        type={type}
-        value={value}
-        placeholder={placeholder}
-        onChange={onChange}
         error={error}
       />
       {error && <Error message={error} />}
