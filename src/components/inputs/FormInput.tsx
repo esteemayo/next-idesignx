@@ -9,12 +9,13 @@ import { StyledInput } from '../form/StyleInput';
 interface FormInputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
+  path?: string;
 }
 
-const FormInput: FC<FormInputProps> = ({ name, label, ...rest }) => {
+const FormInput: FC<FormInputProps> = ({ name, label, path, ...rest }) => {
   return (
     <FormGroup>
-      <StyledInput {...rest} id={name} name={name} required />
+      <StyledInput {...rest} id={name} name={name} path={path} required />
       <Label htmlFor={name}>{label}</Label>
     </FormGroup>
   );
