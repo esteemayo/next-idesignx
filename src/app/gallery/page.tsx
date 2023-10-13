@@ -14,7 +14,7 @@ import { useImageModal } from '@/hooks/useImageModal';
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
   ssr: false,
 });
-const ImageGallery = dynamic(() => import('@/components/ImageGallery'), {
+const ImageGallery = dynamic(() => import('@/components/gallery/ImageGallery'), {
   ssr: false,
 });
 
