@@ -1,6 +1,8 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
+
 import NavItem from './NavItem';
 
 type NavItemsType = {
@@ -14,7 +16,7 @@ interface NavItemsProps {
   path: string;
 }
 
-const NavItems: React.FC<NavItemsProps> = ({ links, path }) => {
+const NavItems: FC<NavItemsProps> = ({ links, path }) => {
   return (
     <Container>
       {links.map((link) => {
