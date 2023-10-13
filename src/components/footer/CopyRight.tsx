@@ -1,12 +1,13 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface CopyRightProps {
   value: number;
 }
 
-const CopyRight: React.FC<CopyRightProps> = ({ value }) => {
+const CopyRight: FC<CopyRightProps> = ({ value }) => {
   return (
     <Container>
       &copy; Copyright <Year>{value}</Year> by Emmanuel Adebayo. All rights
