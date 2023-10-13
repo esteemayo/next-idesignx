@@ -1,6 +1,8 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
+
 import Icon from '@/components/Icon';
 
 interface CardProps {
@@ -10,7 +12,7 @@ interface CardProps {
   desc: string;
 }
 
-const Card: React.FC<CardProps> = ({ icon, desc, title }) => {
+const Card: FC<CardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
       <Icon icon={icon} />
