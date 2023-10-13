@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface MenuItemProps {
@@ -14,7 +15,7 @@ interface IList {
   mode: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ url, mode, label, onClick }) => {
+const MenuItem: FC<MenuItemProps> = ({ url, mode, label, onClick }) => {
   return (
     <ListItem mode={mode} onClick={onClick}>
       <StyledLink href={url}>{label}</StyledLink>
