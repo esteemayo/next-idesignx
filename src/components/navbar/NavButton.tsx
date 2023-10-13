@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface NavButtonProps {
@@ -7,7 +8,7 @@ interface NavButtonProps {
   onClick(): void;
 }
 
-const NavButton: React.FC<NavButtonProps> = ({ label, onClick }) => {
+const NavButton: FC<NavButtonProps> = ({ label, onClick }) => {
   return <Button onClick={onClick}>{label}</Button>;
 };
 
