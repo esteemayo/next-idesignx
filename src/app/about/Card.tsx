@@ -31,7 +31,7 @@ const Container = styled.article`
 
     width: 4.5rem;
     height: 4.5rem;
-    fill: var(--clr-purple-light-1);
+    fill: var(--clr-purple-light-2);
     transform: translateY(-1rem);
     transition: all 0.2s;
 
@@ -41,7 +41,7 @@ const Container = styled.article`
     }
 
     &:hover {
-      fill: var(--clr-purple-light-2);
+      fill: var(--clr-purple-light-1);
     }
   }
 `;
