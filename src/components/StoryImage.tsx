@@ -1,10 +1,10 @@
 'use client';
 
 import Image from 'next/image';
+import { FC } from 'react';
 import styled from 'styled-components';
 
 import { storyImages } from '@/data';
-import { FC } from 'react';
 
 type ImageValues = {
   readonly id: number;
