@@ -1,14 +1,26 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 import { cardItems } from '@/data';
 import Card from '@/app/about/Card';
 
-const StoryCards = () => {
+type CardItemValues = {
+  readonly id: number;
+  icon: string;
+  title: string;
+  desc: string;
+};
+
+interface StoryCardsProps {
+  data: CardItemValues[];
+}
+
+const StoryCards: FC<StoryCardsProps> = ({ data }) => {
   return (
     <Container>
-      {cardItems.map((item) => {
+      {data.map((item) => {
         return <Card key={item.id} {...item} />;
       })}
     </Container>
