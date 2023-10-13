@@ -11,7 +11,7 @@ import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
-  label?: string;
+  label: string;
   error?: string;
 }
 
@@ -25,11 +25,9 @@ const Input: FC<InputProps> = ({
 
   return (
     <FormGroup>
-      {label && (
-        <StyledLabel htmlFor={name} error={error} mode={activeMode}>
-          {label}
-        </StyledLabel>
-      )}
+      <StyledLabel htmlFor={name} error={error} mode={activeMode}>
+        {label}
+      </StyledLabel>
       <InputStyled
         {...rest}
         id={name}
