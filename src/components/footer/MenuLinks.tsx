@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 import MenuLink from './MenuLink';
@@ -15,7 +16,7 @@ interface MenuLinksProps {
   mode: string;
 }
 
-const MenuLinks: React.FC<MenuLinksProps> = ({ links, mode }) => {
+const MenuLinks: FC<MenuLinksProps> = ({ links, mode }) => {
   return (
     <Container>
       {links.map((link) => {
