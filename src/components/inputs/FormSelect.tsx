@@ -10,7 +10,7 @@ type OptionTypes = {
   text: string;
 };
 
-interface FormSelectProps extends InputHTMLAttributes<HTMLInputElement> {
+interface FormSelectProps extends InputHTMLAttributes<HTMLSelectElement> {
   name: string;
   label: string;
   path?: string;
