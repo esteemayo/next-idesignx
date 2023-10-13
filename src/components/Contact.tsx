@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 
-import Input from './inputs/Input';
 import TextArea from './inputs/TextArea';
 import Select from './inputs/Select';
+import FormInput from './inputs/FormInput';
 
 import Form from './form/Form';
 import Button from './buttons/Button';
@@ -34,29 +34,27 @@ const Contact = () => {
       <Heading>Quick quote</Heading>
       <Text>Get anything Printed in no time!</Text>
       <Form onSubmit={handleSubmit}>
-        <Input
+        <FormInput
           name='name'
+          type='text'
           label='Your name'
           value={data.name}
           placeholder='Your name'
-          style='true'
           onChange={handleChange}
         />
-        <Input
+        <FormInput
           name='email'
           type='email'
           label='Your email'
           value={data.email}
           placeholder='Your email'
-          style='true'
           onChange={handleChange}
         />
         <Select
           name='category'
           label='Select products'
-          value={data.categorye}
+          value={data.category}
           options={selectInputs}
-          style='true'
           onChange={handleChange}
         />
         <TextArea
@@ -64,7 +62,6 @@ const Contact = () => {
           label='Content'
           value={data.content}
           placeholder='Content'
-          style='true'
           onChange={handleChange}
         />
         <Button label='Submit' />
@@ -119,7 +116,7 @@ const Heading = styled.h2`
 `;
 
 const Text = styled.p`
-  color:  ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.text};
 `;
 
 export default Contact;
