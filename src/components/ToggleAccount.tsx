@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface ToggleAccountProps {
@@ -8,11 +9,7 @@ interface ToggleAccountProps {
   onClick(): void;
 }
 
-const ToggleAccount: React.FC<ToggleAccountProps> = ({
-  title,
-  label,
-  onClick,
-}) => {
+const ToggleAccount: FC<ToggleAccountProps> = ({ title, label, onClick }) => {
   return (
     <Container>
       <Wrapper>
