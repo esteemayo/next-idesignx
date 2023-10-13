@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 interface FormProps {
-  children: React.ReactElement;
+  children: React.ReactNode;
   onSubmit(e: React.FormEvent<HTMLFormElement>): void;
 }
 
