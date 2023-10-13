@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseIcon from '@mui/icons-material/Close';
@@ -22,7 +22,7 @@ interface IBtn {
   direction: string;
 }
 
-const ImageModal: React.FC<ImageModalProps> = ({
+const ImageModal: FC<ImageModalProps> = ({
   image,
   isOpen,
   onClose,
