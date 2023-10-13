@@ -1,13 +1,14 @@
 'use client';
 
 import Link from 'next/link';
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface LocationProps {
   mode: string;
 }
 
-const Location: React.FC<LocationProps> = ({ mode }) => {
+const Location: FC<LocationProps> = ({ mode }) => {
   return (
     <Container>
       <Wrapper>
