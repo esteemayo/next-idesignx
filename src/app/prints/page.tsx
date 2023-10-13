@@ -7,7 +7,9 @@ import type { Metadata } from 'next';
 import { galleryImages } from '@/data';
 import PrintHero from '@/components/hero/PrintHero';
 
-const Gallery = dynamic(() => import('@/components/Gallery'), { ssr: false });
+const Gallery = dynamic(() => import('@/components/gallery/Gallery'), {
+  ssr: false,
+});
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
   ssr: false,
 });
