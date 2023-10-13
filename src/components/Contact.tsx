@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 import TextArea from './inputs/TextArea';
-import Select from './inputs/Select';
+import FormSelect from './inputs/FormSelect';
 import FormInput from './inputs/FormInput';
 
 import Form from './form/Form';
@@ -50,7 +50,7 @@ const Contact = () => {
           placeholder='Your email'
           onChange={handleChange}
         />
-        <Select
+        <FormSelect
           name='category'
           label='Select products'
           value={data.category}
