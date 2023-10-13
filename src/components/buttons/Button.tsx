@@ -1,5 +1,6 @@
 'use client';
 
+import { FC, MouseEvent } from 'react';
 import styled, { css } from 'styled-components';
 
 interface ButtonProps {
@@ -7,7 +8,7 @@ interface ButtonProps {
   nav?: string;
   icon?: any;
   type?: string;
-  onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
+  onClick?(e: MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
   outline?: string;
   small?: string;
@@ -20,7 +21,7 @@ interface IBtn {
   outline?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
   label,
   nav,
   icon: Icon,
