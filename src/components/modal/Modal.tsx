@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, ReactElement } from 'react';
 
 import Button from '../buttons/Button';
 
@@ -22,14 +23,14 @@ interface ModalProps {
   secondaryActionLabel?: string;
   disabled?: boolean;
   size?: string | null | undefined;
-  body?: React.ReactElement;
-  footer?: React.ReactElement;
+  body?: ReactElement;
+  footer?: ReactElement;
   onClose(): void;
   onSubmit(): void;
   secondaryAction?(): void;
 }
 
-const Modal: React.FC<ModalProps> = ({
+const Modal: FC<ModalProps> = ({
   isOpen,
   title,
   actionLabel,
