@@ -4,11 +4,22 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 import { storyImages } from '@/data';
+import { FC } from 'react';
 
-const StoryImage = () => {
+type ImageValues = {
+  readonly id: number;
+  img: string;
+  className: string;
+};
+
+interface StoryImageProps {
+  images: Array<ImageValues>;
+}
+
+const StoryImage: FC<StoryImageProps> = ({ images }) => {
   return (
     <Container>
-      {storyImages.map((item) => {
+      {images.map((item) => {
         const { id, img, className } = item;
         return (
           <StyledImage
