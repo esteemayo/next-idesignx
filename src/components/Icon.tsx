@@ -1,12 +1,13 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface IconProps {
   icon: string;
 }
 
-const Icon: React.FC<IconProps> = ({ icon }) => {
+const Icon: FC<IconProps> = ({ icon }) => {
   return (
     <SVG>
       <Use xlinkHref={`svg/sprite.svg#icon-${icon}`}></Use>
