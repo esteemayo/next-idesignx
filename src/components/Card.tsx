@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { FC } from 'react';
 
 interface CardProps {
   url: string;
@@ -12,7 +13,7 @@ interface CardProps {
   title: string;
 }
 
-const Card: React.FC<CardProps> = ({ url, icon, desc, title }) => {
+const Card: FC<CardProps> = ({ url, icon, desc, title }) => {
   return (
     <Container>
       <FontAwesomeIcon icon={icon} />
