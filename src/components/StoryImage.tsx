@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-import { storyImages } from '@/data';
-
 type ImageValues = {
   readonly id: number;
   img: string;
