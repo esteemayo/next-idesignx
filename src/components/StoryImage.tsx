@@ -39,19 +39,19 @@ const StyledImage = styled(Image)`
   height: 100%;
   display: block;
   object-fit: cover;
-  box-shadow: 0 0 4rem rgba(00, 00, 00, 0.09);
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
   z-index: 1000;
   outline-offset: 2rem;
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
-    box-shadow: 0 0 3rem rgba(00, 00, 00, 0.05);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05);
   }
 
   &:hover {
     outline: 1.5rem solid var(--clr-purple-light-1);
     transform: scale(1.03) translate(-0.5rem);
-    box-shadow: 0 1rem 4rem rgba(00, 00, 00, 0.09);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.09);
     z-index: 2000;
   }
 `;
