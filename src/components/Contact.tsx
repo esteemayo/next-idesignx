@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 
-import TextArea from './inputs/TextArea';
 import FormSelect from './inputs/FormSelect';
 import FormInput from './inputs/FormInput';
+import FormTextArea from './inputs/FormTextArea';
 
 import Form from './form/Form';
 import Button from './buttons/Button';
@@ -57,7 +57,7 @@ const Contact = () => {
           options={selectInputs}
           onChange={handleChange}
         />
-        <TextArea
+        <FormTextArea
           name='content'
           label='Content'
           value={data.content}
