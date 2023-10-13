@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import styled from 'styled-components';
 
 interface HeadingProps {
@@ -12,7 +13,7 @@ interface IContainer {
   center: string | undefined | null;
 }
 
-const Heading: React.FC<HeadingProps> = ({ title, subtitle, center }) => {
+const Heading: FC<HeadingProps> = ({ title, subtitle, center }) => {
   return (
     <Container center={center}>
       <HeadingPrimary>{title}</HeadingPrimary>
