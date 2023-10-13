@@ -1,14 +1,15 @@
 'use client';
 
+import { FC } from 'react';
 import Image from 'next/image';
-import styled from 'styled-components';
 import Link from 'next/link';
+import styled from 'styled-components';
 
 interface LogoProps {
   onClose?: () => void;
 }
 
-const Logo: React.FC<LogoProps> = ({ onClose }) => {
+const Logo: FC<LogoProps> = ({ onClose }) => {
   return (
     <Container onClick={onClose}>
       <StyledLink href='/'>
