@@ -13,7 +13,7 @@ type OptionTypes = {
 interface FormSelectProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
-  path: string;
+  path?: string;
   options: Array<OptionTypes>;
 }
 
