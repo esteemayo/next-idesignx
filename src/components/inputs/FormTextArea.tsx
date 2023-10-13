@@ -6,7 +6,7 @@ import { FormGroup } from '../form/FormGroup';
 import { Label } from '../form/Label';
 import { StyledTextArea } from '../form/StyledTextArea';
 
-interface FormTextAreaProps extends InputHTMLAttributes<HTMLInputElement> {
+interface FormTextAreaProps extends InputHTMLAttributes<HTMLTextAreaElement> {
   name: string;
   label: string;
   path?: string;
