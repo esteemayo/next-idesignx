@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import { Label } from './Label';
+import { CommonTextArea } from '../common/CommonTextArea';
 
 type ThemeProps = {
   bgInput?: string;
@@ -10,19 +12,11 @@ interface ITextArea {
   path?: string;
 }
 
-export const StyledTextArea = styled.textarea<ITextArea>`
-  width: 100%;
-  display: inline-block;
+export const StyledTextArea = styled(CommonTextArea)<ITextArea>`
   border: none;
-  resize: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  padding: 2rem;
   background-color: ${({ path, theme }) => setBgColor(path, theme)};
-  color: var(--clr-gray-dark-2);
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
-  transition: all 0.3s;
 
   &::placeholder {
     font-size: 1.4rem;
