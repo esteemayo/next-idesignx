@@ -88,6 +88,10 @@ const Button = styled.button`
     fill: currentColor;
     transition: all 0.2s;
 
+    @media only screen and (max-width: 31.25em) {
+      font-size: 1.85rem;
+    }
+
     &:hover {
       transform: scale(0.9);
     }
