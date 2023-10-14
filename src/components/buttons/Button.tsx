@@ -3,6 +3,8 @@
 import { FC, MouseEvent } from 'react';
 import styled, { css } from 'styled-components';
 
+import { CommonButton } from '../common/CommonButton';
+
 interface ButtonProps {
   label: string;
   nav?: string;
@@ -45,7 +47,7 @@ const Button: FC<ButtonProps> = ({
   );
 };
 
-const StyledButton = styled.button<IBtn>`
+const StyledButton = styled(CommonButton)<IBtn>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,10 +56,7 @@ const StyledButton = styled.button<IBtn>`
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   border: ${({ outline }) =>
     outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
-  text-transform: none;
   padding: ${({ small }) => (small === 'true' ? '1rem' : '1rem 3rem')};
-  font-weight: 400;
-  font-size: 1.5rem;
   background-color: ${({ outline }) =>
     outline === 'true' ? 'transparent' : undefined};
   background-image: ${({ outline }) =>
@@ -74,9 +73,6 @@ const StyledButton = styled.button<IBtn>`
       : undefined};
   color: ${({ outline }) =>
     outline === 'true' ? 'var(--clr-purple-light-1)' : 'var(--clr-white)'};
-  border-radius: 0.5rem;
-  outline-color: var(--clr-purple-light-3);
-  cursor: pointer;
   transition: all 0.2s;
 
   @media only screen and (max-width: 50em) {
