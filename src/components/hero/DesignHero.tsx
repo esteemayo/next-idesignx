@@ -17,6 +17,12 @@ const DesignHero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+
   color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
@@ -31,11 +37,6 @@ const Header = styled.header`
   @media only screen and (max-width: 25em) {
     background-attachment: scroll;
   }
-
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2rem;
 `;
 
 const Heading = styled(CommonHeading)`
