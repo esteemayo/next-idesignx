@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { CommonHeader } from '../common/CommonHeader';
 
 interface IText {
   type: string;
@@ -45,7 +46,7 @@ const Header = styled.header`
   }
 `;
 
-const Heading = styled(Header)`
+const Heading = styled(CommonHeader)`
   grid-area: 2 / 1 / 3 / span 3;
   align-self: center;
   justify-self: center;
