@@ -7,6 +7,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { FC, ReactElement } from 'react';
 
 import Button from '../buttons/Button';
+import { Overlay } from '../common/Overlay';
 
 interface IBtn {
   size?: string | null | undefined;
@@ -96,7 +97,7 @@ const Modal: FC<ModalProps> = ({
   }
 
   return (
-    <Container className='overlay' onClick={closeModalHandler}>
+    <Overlay className='overlay' onClick={closeModalHandler}>
       <Wrapper active={activeModal}>
         <Box>
           <CloseButtonContainer>
@@ -128,23 +129,9 @@ const Modal: FC<ModalProps> = ({
           </Footer>
         </Box>
       </Wrapper>
-    </Container>
+    </Overlay>
   );
 };
-
-const Container = styled.aside`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(38, 38, 38, 0.7);
-  z-index: 5000;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 const Wrapper = styled.div<IWrapper>`
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
