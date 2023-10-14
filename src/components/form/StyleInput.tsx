@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import { Label } from './Label';
+import { CommonInput } from './CommonInput';
 
 type ThemeProps = {
   bgInput?: string;
@@ -10,20 +12,12 @@ interface IStyledInput {
   path?: string;
 }
 
-export const StyledInput = styled.input<IStyledInput>`
-  width: 100%;
-  display: inline-block;
+export const StyledInput = styled(CommonInput)<IStyledInput>`
   border: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
   background-color: ${({ path, theme }) => setBgColor(path, theme)};
-  color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
-  border-radius: 2px;
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
-  transition: all 0.3s;
 
   &::placeholder {
     font-size: 1.4rem;
