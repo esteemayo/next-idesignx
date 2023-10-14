@@ -6,18 +6,10 @@ interface IInput {
 }
 
 export const InputStyled = styled(CommonInput)<IInput>`
-  width: 100%;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
   background-color: transparent;
-  color: var(--clr-gray-dark-2);
   border: 1px solid ${({ error }) => setBorderColor(error)};
-  border-radius: 2px;
   outline-color: ${({ error }) => setOutlineColor(error)};
   caret-color: ${({ error }) => setCaretColor(error)};
-  transition: all 0.3s;
 
   &::placeholder {
     font-size: 1.4rem;
