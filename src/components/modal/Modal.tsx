@@ -6,8 +6,10 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { FC, ReactElement } from 'react';
 
-import Button from '../buttons/Button';
 import { Overlay } from '../common/Overlay';
+import { Wrapper } from '../common/Wrapper';
+
+import Button from '../buttons/Button';
 
 interface IBtn {
   size?: string | null | undefined;
@@ -132,12 +134,6 @@ const Modal: FC<ModalProps> = ({
     </Overlay>
   );
 };
-
-const Wrapper = styled.div<IWrapper>`
-  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
-  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
-  transition: all 300ms;
-`;
 
 const Box = styled.div`
   width: 50rem;
