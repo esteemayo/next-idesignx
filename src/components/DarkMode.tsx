@@ -53,6 +53,10 @@ const Container = styled.div`
   position: fixed;
   right: 3rem;
   bottom: 10rem;
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 2rem;
+  }
 `;
 
 const Wrapper = styled.div`
