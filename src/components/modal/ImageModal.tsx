@@ -17,10 +17,6 @@ interface ImageModalProps {
   onClick(direction: string): void;
 }
 
-interface IWrapper {
-  active: string | null | undefined;
-}
-
 interface IBtn {
   direction: string;
 }
