@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { CommonHeading } from '../common/CommonHeading';
 
 const PrintHero = () => {
   return (
@@ -50,17 +51,13 @@ const Header = styled.header`
   }
 `;
 
-const HeadingPrimary = styled.h1`
+const HeadingPrimary = styled(CommonHeading)`
   grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
   justify-self: center;
 
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 4.5rem;
   color: currentColor;
   letter-spacing: 0.7rem;
-  line-height: 1;
   animation: moveInTop 0.5s ease-out 0.75s backwards;
 `;
 
