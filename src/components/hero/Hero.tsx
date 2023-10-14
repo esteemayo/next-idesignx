@@ -57,6 +57,7 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4.5rem;
+  color: currentColor;
   line-height: 1;
 
   @media only screen and (max-width: 50em) {
