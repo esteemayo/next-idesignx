@@ -49,7 +49,7 @@ const Button = styled.button`
   background-color: transparent;
   color: var(--clr-purple-dark-2);
   backdrop-filter: blur(1rem);
-  border: 0.1px solid var(--clr-purple-light-2);
+  border: 1px solid var(--clr-purple-light-1);
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
