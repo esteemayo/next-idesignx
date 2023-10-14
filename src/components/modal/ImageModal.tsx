@@ -7,6 +7,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
+import { Overlay } from '../common/Overlay';
+
 interface ImageModalProps {
   image: string;
   isOpen: boolean;
@@ -87,20 +89,6 @@ const ImageModal: FC<ImageModalProps> = ({
     </Overlay>
   );
 };
-
-const Overlay = styled.aside`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(38, 38, 38, 0.7);
-  z-index: 5000;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 const Wrapper = styled.div<IWrapper>`
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
