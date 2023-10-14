@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { CommonHeader } from '../common/CommonHeader';
+import { CommonHeading } from '../common/CommonHeading';
 
 const DesignHero = () => {
   return (
@@ -38,7 +38,7 @@ const Header = styled.header`
   gap: 2rem;
 `;
 
-const Heading = styled(CommonHeader)`
+const Heading = styled(CommonHeading)`
   grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
   justify-self: center;
