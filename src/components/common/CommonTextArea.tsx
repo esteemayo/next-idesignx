@@ -8,5 +8,5 @@ export const CommonTextArea = styled.textarea`
   font-size: 1.5rem;
   padding: 2rem;
   color: var(--clr-gray-dark-2);
-  transition: all 0.3s;
+  transition: all 0.2s;
 `;
