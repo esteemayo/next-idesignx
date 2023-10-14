@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { Label } from './Label';
-import { CommonInput } from './CommonInput';
+import { CommonInput } from '../common/CommonInput';
 
 type ThemeProps = {
   bgInput?: string;
