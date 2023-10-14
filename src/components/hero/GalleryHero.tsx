@@ -4,6 +4,8 @@ import { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import styled from 'styled-components';
 
+import { CommonHeading } from '../common/CommonHeading';
+
 const GalleryHero = () => {
   const textRef = useRef();
 
@@ -57,13 +59,10 @@ const Header = styled.header`
   }
 `;
 
-const Heading = styled.h1`
+const Heading = styled(CommonHeading)`
   grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
 
-  font-weight: 400;
-  font-size: 4.5rem;
-  text-transform: uppercase;
   color: currentColor;
   letter-spacing: 0.7rem;
   line-height: 1.2;
