@@ -8,6 +8,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 import { Overlay } from '../common/Overlay';
+import { Wrapper } from '../common/Wrapper';
 
 interface ImageModalProps {
   image: string;
@@ -89,12 +90,6 @@ const ImageModal: FC<ImageModalProps> = ({
     </Overlay>
   );
 };
-
-const Wrapper = styled.div<IWrapper>`
-  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
-  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
-  transition: all 300ms;
-`;
 
 const Box = styled.div`
   width: 120rem;
