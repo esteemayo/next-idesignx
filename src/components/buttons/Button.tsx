@@ -54,7 +54,7 @@ const StyledButton = styled.button<IBtn>`
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   border: ${({ outline }) =>
     outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
-  text-transform: capitalize;
+  text-transform: none;
   padding: ${({ small }) => (small === 'true' ? '1rem' : '1rem 3rem')};
   font-weight: 400;
   font-size: 1.5rem;
