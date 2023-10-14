@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { CommonInput } from './CommonInput';
 
 interface IInput {
   error?: string | undefined;
 }
 
-export const InputStyled = styled.input<IInput>`
+export const InputStyled = styled(CommonInput)<IInput>`
   width: 100%;
   display: inline-block;
   font-family: inherit;
