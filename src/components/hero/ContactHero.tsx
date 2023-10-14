@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { CommonHeader } from '../common/CommonHeader';
 
 const ContactHero = () => {
   return (
@@ -37,16 +38,12 @@ const Header = styled.header`
   }
 `;
 
-const Heading = styled.h1`
+const Heading = styled(CommonHeader)`
   grid-area: 2 / 1 / 3 / -1;
   align-self: self-end;
   justify-self: center;
 
-  font-weight: 400;
-  font-size: 4.5rem;
-  text-transform: uppercase;
   letter-spacing: 0.7rem;
-  line-height: 1;
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
 
   @media only screen and (max-width: 112.5em) {
