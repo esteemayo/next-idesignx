@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { CommonSelect } from '../common/CommonSelect';
 
 type ThemeProps = {
   bgInput?: string;
@@ -9,17 +10,11 @@ interface ISelect {
   path?: string;
 }
 
-export const StyledSelect = styled.select<ISelect>`
-  width: 100%;
-  display: inline-block;
+export const StyledSelect = styled(CommonSelect)<ISelect>`
   border: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
   background-color: ${({ path, theme }) => setBgColor(path, theme)};
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
-  border-radius: 2px;
 
   &:focus {
     outline: none;
