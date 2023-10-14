@@ -8,5 +8,5 @@ export const CommonInput = styled.input`
   padding: 1.5rem 2rem;
   color: var(--clr-gray-dark-2);
   border-radius: 2px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 `;
