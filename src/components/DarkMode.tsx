@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
@@ -13,9 +13,14 @@ const DarkMode = () => {
   const { mode, dark, light } = useDarkMode();
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
-  useEffect(() => {
+  const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
   }, []);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [handleResize]);
 
   return (
     <Container>
