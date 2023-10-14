@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CommonInput } from './CommonInput';
+import { CommonInput } from '../common/CommonInput';
 
 interface IInput {
   error?: string | undefined;
