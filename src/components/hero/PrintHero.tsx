@@ -24,6 +24,7 @@ const PrintHero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: min-content repeat(3, 1fr);
