@@ -22,6 +22,12 @@ const Hero = () => {
 
 const Header = styled.header`
   grid-column: full-start / full-end;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
@@ -35,12 +41,6 @@ const Header = styled.header`
   @media only screen and (max-width: 25em) {
     background-attachment: scroll;
   }
-
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-items: center;
 `;
 
 const Heading = styled.h1`
