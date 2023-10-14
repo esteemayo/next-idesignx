@@ -45,7 +45,7 @@ const Header = styled.header`
   }
 `;
 
-const Heading = styled.h1`
+const Heading = styled(Header)`
   grid-area: 2 / 1 / 3 / span 3;
   align-self: center;
   justify-self: center;
