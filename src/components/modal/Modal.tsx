@@ -15,10 +15,6 @@ interface IBtn {
   size?: string | null | undefined;
 }
 
-interface IWrapper {
-  active: string | undefined;
-}
-
 interface ModalProps {
   isOpen?: boolean;
   title?: string;
