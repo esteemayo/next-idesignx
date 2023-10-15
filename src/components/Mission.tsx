@@ -78,7 +78,7 @@ const Heading = styled.h2`
   font-weight: 400;
   font-size: 4rem;
   text-transform: capitalize;
-  color: currentColor;
+  color: ${({ theme }) => theme.text};
   letter-spacing: 0.5px;
   line-height: 1;
 
