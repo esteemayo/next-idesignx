@@ -93,6 +93,7 @@ const Button = styled.button`
   svg {
     font-size: 2.2rem;
     fill: currentColor;
+    transform: scale(0.9);
     transition: all 0.2s;
 
     @media only screen and (max-width: 31.25em) {
@@ -100,7 +101,7 @@ const Button = styled.button`
     }
 
     &:hover {
-      transform: scale(0.9);
+      transform: scale(1);
     }
   }
 `;
