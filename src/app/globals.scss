@@ -40,6 +40,8 @@
   --clr-instagram-3: #feda77;
 
   // font variables
+  --font-primary: 'Nunito', sans-serif;
+  --font-display: 'Josefin Sans', sans-serif;
   --default-font-size: 1.6rem;
 }
 
@@ -83,6 +85,7 @@ html {
 }
 
 body {
+  font-family: var(--font-primary);
   font-weight: 300;
   font-size: var(--default-font-size);
   line-height: 1.6;
