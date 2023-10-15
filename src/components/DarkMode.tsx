@@ -28,7 +28,7 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper>
-        <Button type='button' disabled={!mode} onClick={() => light()}>
+        <Button type='button' disabled={!mode} onClick={light}>
           <LightModeOutlinedIcon />
         </Button>
         <Button type='button'>
@@ -38,7 +38,7 @@ const DarkMode = () => {
             <DesktopWindowsOutlinedIcon />
           )}
         </Button>
-        <Button type='button' disabled={mode} onClick={() => dark()}>
+        <Button type='button' disabled={mode} onClick={dark}>
           <DarkModeOutlinedIcon />
         </Button>
       </Wrapper>
