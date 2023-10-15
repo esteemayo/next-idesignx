@@ -1,9 +1,8 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import styled from 'styled-components';
-import { Metadata } from 'next';
 import { useCallback, useMemo, useState } from 'react';
+import styled from 'styled-components';
 
 import ImageModal from '@/components/modal/ImageModal';
 import GalleryHero from '@/components/hero/GalleryHero';
@@ -17,10 +16,6 @@ const PrintContact = dynamic(() => import('@/components/PrintContact'), {
 const ImageGallery = dynamic(() => import('@/components/gallery/ImageGallery'), {
   ssr: false,
 });
-
-export const metadata: Metadata = {
-  title: 'iDesignx | Gallery',
-};
 
 const Gallery = () => {
   const isOpen = useImageModal((state) => state.isOpen);

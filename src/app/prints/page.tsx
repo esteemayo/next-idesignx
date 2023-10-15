@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import type { Metadata } from 'next';
 
 import { galleryImages } from '@/data';
 import PrintHero from '@/components/hero/PrintHero';
@@ -13,10 +12,6 @@ const Gallery = dynamic(() => import('@/components/gallery/Gallery'), {
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
   ssr: false,
 });
-
-export const metadata: Metadata = {
-  title: 'iDesignx | Prints',
-};
 
 const Prints = () => {
   return (

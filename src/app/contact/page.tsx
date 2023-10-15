@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import type { Metadata } from 'next';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
 import ContactHero from '@/components/hero/ContactHero';
@@ -11,10 +10,6 @@ const Location = dynamic(() => import('@/components/Location'), { ssr: false });
 const ContactForm = dynamic(() => import('@/components/ContactForm'), {
   ssr: false,
 });
-
-export const metadata: Metadata = {
-  title: 'iDesignx | Contact',
-};
 
 const Contact = () => {
   const { activeMode } = useActiveMode();

@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
-import type { Metadata } from 'next';
 
 import DesignHero from '@/components/hero/DesignHero';
 
@@ -15,10 +14,6 @@ const Statement = dynamic(() => import('@/components/Statement'), {
   ssr: false,
 });
 const Request = dynamic(() => import('@/components/Request'), { ssr: false });
-
-export const metadata: Metadata = {
-  title: 'iDesignx | Designs',
-};
 
 const Designs = () => {
   return (
