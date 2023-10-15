@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useState } from 'react';
+import { MouseEvent, useCallback, useState } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const ScrollButton = () => {
@@ -15,7 +15,9 @@ const ScrollButton = () => {
     };
   }
 
-  const handleScroll = useCallback(() => {
+  const handleScroll = useCallback((e: MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
