@@ -72,6 +72,7 @@ const Button = styled.button`
   border: none;
   width: 3rem;
   height: 3rem;
+  font-size: 2.2rem;
   background-color: var(--clr-purple-light-2);
   color: hsl(277, 94%, 87%);
   border-radius: 50%;
@@ -91,7 +92,7 @@ const Button = styled.button`
   }
 
   svg {
-    font-size: 2.2rem;
+    font-size: inherit;
     fill: currentColor;
     transform: scale(0.9);
     transition: all 0.2s;
