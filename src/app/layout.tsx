@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
-import { Nunito } from 'next/font/google';
+import { Josefin_Sans, Nunito } from 'next/font/google';
 
 import Layout from '@/components/Layout';
 import ModeProvider from '@/providers/ModeProvider';
 
 import './globals.scss';
+
+const josefinSans = Josefin_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+});
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -26,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={nunito.className}>
+      <body className={`${josefinSans.className} ${nunito.className}`}>
         <ModeProvider>
           <Layout>{children}</Layout>
         </ModeProvider>
