@@ -10,7 +10,10 @@ import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 const DarkMode = () => {
-  const { mode, dark, light } = useDarkMode();
+  const mode = useDarkMode((state) => state.mode);
+  const light = useDarkMode((state) => state.light);
+  const dark = useDarkMode((state) => state.dark);
+
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   const handleResize = useCallback(() => {
