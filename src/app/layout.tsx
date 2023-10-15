@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={`${josefinSans.className} ${nunito.className}`}>
+      <body className={`${nunito.className} ${josefinSans.className}`}>
         <ModeProvider>
           <Layout>{children}</Layout>
         </ModeProvider>
