@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import styled from 'styled-components';
 
-import { galleryImages } from '@/data/data';
+import { galleryImages } from '@/data';
 import PrintHero from '@/components/hero/PrintHero';
 
 const Gallery = dynamic(() => import('@/components/gallery/Gallery'), {
