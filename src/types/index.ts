@@ -34,6 +34,12 @@ export type Brands = {
   img: string;
 }[];
 
+export type MenuItem = {
+  id: number;
+  url: string;
+  label: string;
+}[];
+
 interface ProductImage {
   id: number;
   img: string;

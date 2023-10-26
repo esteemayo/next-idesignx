@@ -8,6 +8,7 @@ import {
   CardItems,
   GalleryImage,
   GalleryItem,
+  MenuItem,
   NavItem,
   PrintItems,
   ProductImages,
@@ -66,7 +67,7 @@ export const navItems: NavItem = [
   },
 ];
 
-export const menuItems = [
+export const menuItems: MenuItem = [
   {
     id: 1,
     url: '/about',
