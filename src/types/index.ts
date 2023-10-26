@@ -51,13 +51,8 @@ interface PrintItem {
 
 export type PrintItems = PrintItem[];
 
-type BrandValues = {
-  readonly id: number;
-  img: string;
-}[];
-
 export interface SeenOnProps {
-  data: BrandValues;
+  data: Brands;
   gradient: boolean;
 }
 
