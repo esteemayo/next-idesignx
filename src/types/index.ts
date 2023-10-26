@@ -48,3 +48,8 @@ export type GalleryImage = {
 export interface GalleryProps {
   data: GalleryImage;
 }
+
+export type GalleryItem = {
+  id: number;
+  img: string;
+}[];
