@@ -3,6 +3,8 @@ import { faBagShopping, faPrint } from '@fortawesome/free-solid-svg-icons';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
+import { Brands } from './types';
+
 export const socialIcons = [
   {
     id: 1,
@@ -82,7 +84,7 @@ export const menuItems = [
   },
 ];
 
-export const brands = [
+export const brands: Brands[] = [
   {
     id: 1,
     img: '/img/logo/access.png',
