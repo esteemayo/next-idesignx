@@ -8,6 +8,7 @@ import {
   CardItems,
   GalleryImage,
   GalleryItem,
+  NavItem,
   PrintItems,
   ProductImages,
   SocialIcons,
@@ -32,7 +33,7 @@ export const socialIcons: SocialIcons = [
   },
 ];
 
-export const navItems = [
+export const navItems: NavItem = [
   {
     id: 1,
     url: '/',
