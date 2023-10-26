@@ -7,15 +7,18 @@ import styled from 'styled-components';
 import ImageModal from '@/components/modal/ImageModal';
 import GalleryHero from '@/components/hero/GalleryHero';
 
-import { galleryItems } from '@/data';
+import { galleryItems } from '@/data/data';
 import { useImageModal } from '@/hooks/useImageModal';
 
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
   ssr: false,
 });
-const ImageGallery = dynamic(() => import('@/components/gallery/ImageGallery'), {
-  ssr: false,
-});
+const ImageGallery = dynamic(
+  () => import('@/components/gallery/ImageGallery'),
+  {
+    ssr: false,
+  }
+);
 
 const Gallery = () => {
   const isOpen = useImageModal((state) => state.isOpen);
