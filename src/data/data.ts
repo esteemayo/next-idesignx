@@ -10,10 +10,11 @@ import {
   GalleryItem,
   PrintItems,
   ProductImages,
+  SocialIcons,
   StoryImages,
 } from '../types';
 
-export const socialIcons = [
+export const socialIcons: SocialIcons = [
   {
     id: 1,
     url: '#',

@@ -1,4 +1,16 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { SvgIconTypeMap } from '@mui/material';
+import { OverridableComponent } from '@mui/material/OverridableComponent';
+
+export interface SocialIcon {
+  readonly id: number;
+  url: string;
+  icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
+    muiName: string;
+  };
+}
+
+export type SocialIcons = SocialIcon[];
 
 export interface Brands {
   id: number;
