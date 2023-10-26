@@ -31,3 +31,7 @@ export interface SeenOnProps {
   data: BrandValues;
   gradient: boolean;
 }
+
+export interface PrintingsProps {
+  data: PrintItems;
+}

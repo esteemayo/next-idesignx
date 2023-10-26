@@ -4,11 +4,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
-import { PrintItems } from '@/types';
-
-interface PrintingsProps {
-  data: PrintItems;
-}
+import { PrintingsProps } from '@/types';
 
 const Printings: FC<PrintingsProps> = ({ data }) => {
   return (
