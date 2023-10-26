@@ -1,3 +1,8 @@
+export interface Brands {
+  id: number;
+  img: string;
+}
+
 type BrandValues = {
   readonly id: number;
   img: string;
