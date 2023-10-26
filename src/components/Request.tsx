@@ -25,6 +25,8 @@ const Request = () => {
   const [file, setFile] = useState<File>();
   const [data, setData] = useState(initialState);
 
+  const { name, email, phone, category, comment } = data;
+
   const handleChange = useCallback(
     ({
       target: input,
@@ -65,7 +67,7 @@ const Request = () => {
           name='name'
           type='text'
           label='Your name'
-          value={data.name}
+          value={name}
           placeholder='Your name'
           onChange={handleChange}
           path='design'
@@ -74,7 +76,7 @@ const Request = () => {
           name='email'
           type='email'
           label='Email'
-          value={data.email}
+          value={email}
           placeholder='Email'
           onChange={handleChange}
           path='design'
@@ -83,14 +85,14 @@ const Request = () => {
           name='phone'
           type='tel'
           label='Phone number'
-          value={data.phone}
+          value={phone}
           placeholder='Phone number'
           onChange={handleChange}
           path='design'
         />
         <FormSelect
           name='category'
-          value={data.category}
+          value={category}
           label='Select Category'
           options={selectInputs}
           onChange={handleChange}
@@ -99,7 +101,7 @@ const Request = () => {
         <FormTextArea
           name='comment'
           label='Comment Here'
-          value={data.comment}
+          value={comment}
           placeholder='Comment Here'
           onChange={handleChange}
           path='design'
