@@ -5,15 +5,7 @@ import Marquee from 'react-fast-marquee';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-type BrandValues = {
-  readonly id: number;
-  img: string;
-};
-
-interface SeenOnProps {
-  data: BrandValues[];
-  gradient: boolean;
-}
+import { SeenOnProps } from '@/types';
 
 const SeenOn: FC<SeenOnProps> = ({ data, gradient }) => {
   return (
