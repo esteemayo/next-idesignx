@@ -3,16 +3,8 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
+import { GalleryProps } from '@/types';
 import GalleryItem from './GalleryItem';
-
-type GalleryImageValues = {
-  readonly id: number;
-  img: string;
-};
-
-interface GalleryProps {
-  data: Array<GalleryImageValues>;
-}
 
 const Gallery: FC<GalleryProps> = ({ data }) => {
   return (
