@@ -97,6 +97,13 @@ export interface PrintingsProps {
   data: PrintItems;
 }
 
+export interface CardProps {
+  url: string;
+  icon: IconDefinition;
+  desc: string;
+  title: string;
+}
+
 export type GalleryImage = {
   id: number;
   img: string;

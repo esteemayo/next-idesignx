@@ -2,16 +2,10 @@
 
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
-import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FC } from 'react';
+import styled from 'styled-components';
 
-interface CardProps {
-  url: string;
-  icon: IconDefinition;
-  desc: string;
-  title: string;
-}
+import { CardProps } from '@/types';
 
 const Card: FC<CardProps> = ({ url, icon, desc, title }) => {
   return (
