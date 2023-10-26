@@ -74,7 +74,7 @@ const RegisterModal = () => {
   }, [onClose]);
 
   const handleChange = useCallback(
-    ({ target: input }: ChangeEvent<HTMLInputElement>) => {
+    ({ target: input }: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
       const { name, value } = input;
       setData((prev) => ({ ...prev, [name]: value }));
     },
