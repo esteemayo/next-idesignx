@@ -3,10 +3,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface NavButtonProps {
-  label: string;
-  onClick(): void;
-}
+import { NavButtonProps } from '@/types';
 
 const NavButton: FC<NavButtonProps> = ({ label, onClick }) => {
   return <Button onClick={onClick}>{label}</Button>;
