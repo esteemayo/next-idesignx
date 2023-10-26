@@ -3,7 +3,7 @@ import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 
 export interface SocialIcon {
-  readonly id: number;
+  id: number;
   url: string;
   icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
     muiName: string;
@@ -13,7 +13,7 @@ export interface SocialIcon {
 export type SocialIcons = SocialIcon[];
 
 export type NavItem = {
-  readonly id: number;
+  id: number;
   url: string;
   label: string;
 }[];
@@ -107,7 +107,7 @@ export interface StoryImageProps {
 }
 
 export interface CardItem {
-  readonly id: number;
+  id: number;
   icon: string;
   title: string;
   desc: string;
@@ -124,11 +124,11 @@ export interface LocationProps {
 }
 
 export type SelectInput = {
-  readonly id: number;
+  id: number;
   text: string;
 }[];
 
 export type GenderList = {
-  readonly id: number;
+  id: number;
   text: string;
 }[];
