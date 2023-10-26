@@ -1,7 +1,7 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
-import { MouseEvent } from 'react';
+import { MouseEvent, ReactElement } from 'react';
 
 export interface SocialIcon {
   id: number;
@@ -178,4 +178,18 @@ export interface StoryCardProps {
   icon: string;
   title: string;
   desc: string;
+}
+
+export interface ModalProps {
+  isOpen?: boolean;
+  title?: string;
+  actionLabel: string;
+  secondaryActionLabel?: string;
+  disabled?: boolean;
+  size?: string | null | undefined;
+  body?: ReactElement;
+  footer?: ReactElement;
+  onClose(): void;
+  onSubmit(): void;
+  secondaryAction?(): void;
 }

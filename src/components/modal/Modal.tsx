@@ -3,30 +3,16 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { FC, ReactElement } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 
 import { Overlay } from '../common/Overlay';
 import { Wrapper } from '../common/Wrapper';
 
+import { ModalProps } from '@/types';
 import Button from '../buttons/Button';
 
 interface IBtn {
   size?: string | null | undefined;
-}
-
-interface ModalProps {
-  isOpen?: boolean;
-  title?: string;
-  actionLabel: string;
-  secondaryActionLabel?: string;
-  disabled?: boolean;
-  size?: string | null | undefined;
-  body?: ReactElement;
-  footer?: ReactElement;
-  onClose(): void;
-  onSubmit(): void;
-  secondaryAction?(): void;
 }
 
 const Modal: FC<ModalProps> = ({
