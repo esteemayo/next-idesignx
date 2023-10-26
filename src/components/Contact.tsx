@@ -22,6 +22,8 @@ const initialState = {
 const Contact = () => {
   const [data, setData] = useState(initialState);
 
+  const { name, email, category, content } = data;
+
   const handleChange: ChangeEventHandler<
     HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
   > = useCallback(({ target: input }) => {
@@ -48,7 +50,7 @@ const Contact = () => {
           name='name'
           type='text'
           label='Your name'
-          value={data.name}
+          value={name}
           placeholder='Your name'
           onChange={handleChange}
         />
@@ -56,21 +58,21 @@ const Contact = () => {
           name='email'
           type='email'
           label='Your email'
-          value={data.email}
+          value={email}
           placeholder='Your email'
           onChange={handleChange}
         />
         <FormSelect
           name='category'
           label='Select products'
-          value={data.category}
+          value={category}
           options={selectInputs}
           onChange={handleChange}
         />
         <FormTextArea
           name='content'
           label='Content'
-          value={data.content}
+          value={content}
           placeholder='Content'
           onChange={handleChange}
         />
