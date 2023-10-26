@@ -4,12 +4,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface MenuItemProps {
-  url: string;
-  mode: string;
-  label: string;
-  onClick?(): void;
-}
+import { MenuItemProps } from '@/types';
 
 interface IList {
   mode: string;

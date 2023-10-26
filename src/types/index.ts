@@ -36,6 +36,13 @@ export interface MenuItemsProps {
   onClose(): void;
 }
 
+export interface MenuItemProps {
+  url: string;
+  mode: string;
+  label: string;
+  onClick?(): void;
+}
+
 export interface ButtonProps {
   label: string;
   nav?: string;
