@@ -2,11 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { FC, useMemo } from 'react';
 
-interface NavItemProps {
-  url: string;
-  label: string;
-  path: string;
-}
+import { NavItemProps } from '@/types';
 
 interface IContainer {
   active: string;

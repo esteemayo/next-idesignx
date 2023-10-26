@@ -23,6 +23,12 @@ export interface NavItemsProps {
   path: string;
 }
 
+export interface NavItemProps {
+  url: string;
+  label: string;
+  path: string;
+}
+
 export interface Brands {
   id: number;
   img: string;
