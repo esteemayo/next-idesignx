@@ -1,14 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
+import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import FormInput from './inputs/FormInput';
 import FormTextArea from './inputs/FormTextArea';
 
 import Form from './form/Form';
 import Button from './buttons/Button';
-
-import { useForm } from '@/hooks/useForm';
 
 const initialState = {
   name: '',
@@ -18,13 +17,25 @@ const initialState = {
 };
 
 const ContactForm = () => {
-  const onSubmitHandler = () => {
-    console.log(data);
-  };
+  const [data, setData] = useState(initialState);
 
-  const { data, handleChange, handleSubmit } = useForm(
-    onSubmitHandler,
-    initialState
+  const { name, email, subject, message } = data;
+
+  const handleChange: ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = useCallback(({ target: input }) => {
+    const { name, value } = input;
+    setData((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
+  const handleSubmit = useCallback(
+    (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+
+      console.log(data);
+      setData(initialState);
+    },
+    [data]
   );
 
   return (
@@ -39,7 +50,7 @@ const ContactForm = () => {
           name='name'
           type='text'
           label='Your name'
-          value={data.name}
+          value={name}
           placeholder='Your name'
           onChange={handleChange}
         />
@@ -47,21 +58,21 @@ const ContactForm = () => {
           name='email'
           type='email'
           label='Your email'
-          value={data.email}
+          value={email}
           placeholder='Your email'
           onChange={handleChange}
         />
         <FormInput
           name='subject'
           label='Subject'
-          value={data.subject}
+          value={subject}
           placeholder='Subject'
           onChange={handleChange}
         />
         <FormTextArea
           name='message'
           label='Message'
-          value={data.message}
+          value={message}
           placeholder='Message'
           onChange={handleChange}
         />
