@@ -3,10 +3,7 @@
 import styled from 'styled-components';
 import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 
-interface HamburgerProps {
-  isOpen: boolean;
-  onToggle(): void;
-}
+import { HamburgerProps } from '@/types';
 
 interface IProps {
   active?: string;
