@@ -4,17 +4,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import NavItem from './NavItem';
-
-type NavItemsType = {
-  id: number;
-  url: string;
-  label: string;
-};
-
-interface NavItemsProps {
-  links: Array<NavItemsType>;
-  path: string;
-}
+import { NavItemsProps } from '@/types';
 
 const NavItems: FC<NavItemsProps> = ({ links, path }) => {
   return (
