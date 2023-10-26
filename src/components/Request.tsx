@@ -26,7 +26,11 @@ const Request = () => {
   const [data, setData] = useState(initialState);
 
   const handleChange = useCallback(
-    ({ target: input }: ChangeEvent<HTMLInputElement>) => {
+    ({
+      target: input,
+    }: ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >) => {
       const { name, value } = input;
       setData((prev) => ({ ...prev, [name]: value }));
     },
