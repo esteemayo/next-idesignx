@@ -6,13 +6,10 @@ import styled from 'styled-components';
 import ProductImage from './ProductImage';
 import { StyledLink } from './buttons/StyledLink';
 
-type ProductImageType = {
-  readonly id: number;
-  img: string;
-};
+import { ProductImages } from '@/types';
 
 interface ProductsProps {
-  data: ProductImageType[];
+  data: ProductImages;
 }
 
 const Products: FC<ProductsProps> = ({ data }) => {
