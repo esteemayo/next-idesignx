@@ -236,3 +236,7 @@ export interface HeadingProps {
 export interface IconProps {
   icon: string;
 }
+
+export interface ProductImageProps {
+  img: string;
+}
