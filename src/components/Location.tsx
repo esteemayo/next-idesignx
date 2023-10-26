@@ -116,7 +116,7 @@ const StyledLink = styled(Link)<LocationProps>`
 
   &:hover {
     background-color: ${({ mode }) =>
-      mode === 'true' ? '#2b3138' : '#bc9ad1'};
+      mode === 'true' ? '#2b3138' : '#f8e5fc'};
   }
 `;
 
