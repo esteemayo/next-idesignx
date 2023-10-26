@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MouseEvent, useCallback, useState } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
@@ -43,6 +43,16 @@ const Container = styled.div`
   z-index: 1000;
 `;
 
+const pulsate = keyframes`
+  from {
+    transform: scale(1) translateY(1rem);
+  }
+
+  to {
+    transform: scale(1.03) translateY(-1rem);
+  }
+`;
+
 const Button = styled.button`
   width: 4rem;
   height: 4rem;
@@ -55,6 +65,9 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
+  animation: ${pulsate} 1s infinite linear;
+  animation-fill-mode: both;
+  backface-visibility: hidden;
 
   display: flex;
   align-items: center;
