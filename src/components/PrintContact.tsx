@@ -4,10 +4,7 @@ import { FC } from 'react';
 import styled, { css } from 'styled-components';
 
 import { StyledLink } from './buttons/StyledLink';
-
-interface PrintContactProps {
-  bcg?: string;
-}
+import { PrintContactProps } from '@/types';
 
 const PrintContact: FC<PrintContactProps> = ({ bcg }) => {
   return (

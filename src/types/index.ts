@@ -58,3 +58,7 @@ export interface ImageGalleryProps {
   images: GalleryItem;
   onOpen(value: number): void;
 }
+
+export interface PrintContactProps {
+  bcg?: string;
+}
