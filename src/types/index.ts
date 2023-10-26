@@ -62,3 +62,10 @@ export interface ImageGalleryProps {
 export interface PrintContactProps {
   bcg?: string;
 }
+
+export interface ImageModalProps {
+  image: string;
+  isOpen: boolean;
+  onClose(): void;
+  onClick(direction: string): void;
+}

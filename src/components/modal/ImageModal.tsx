@@ -10,12 +10,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Overlay } from '../common/Overlay';
 import { Wrapper } from '../common/Wrapper';
 
-interface ImageModalProps {
-  image: string;
-  isOpen: boolean;
-  onClose(): void;
-  onClick(direction: string): void;
-}
+import { ImageModalProps } from '@/types';
 
 interface IBtn {
   direction: string;
