@@ -30,6 +30,12 @@ export interface NavItemProps {
   path: string;
 }
 
+export interface MenuItemsProps {
+  mode: string;
+  links: NavItem;
+  onClose(): void;
+}
+
 export interface ButtonProps {
   label: string;
   nav?: string;

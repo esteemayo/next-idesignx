@@ -4,18 +4,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
-
-type MenuItemsType = {
-  id: number;
-  url: string;
-  label: string;
-};
-
-interface MenuItemsProps {
-  mode: string;
-  links: Array<MenuItemsType>;
-  onClose(): void;
-}
+import { MenuItemsProps } from '@/types';
 
 const MenuItems: FC<MenuItemsProps> = ({ mode, links, onClose }) => {
   return (
