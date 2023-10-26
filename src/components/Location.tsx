@@ -4,9 +4,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface LocationProps {
-  mode: string;
-}
+import { LocationProps } from '@/types';
 
 const Location: FC<LocationProps> = ({ mode }) => {
   return (

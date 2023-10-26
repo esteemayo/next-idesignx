@@ -94,3 +94,7 @@ export type CardItems = CardItem[];
 export interface StoryCardsProps {
   data: CardItems;
 }
+
+export interface LocationProps {
+  mode: string;
+}
