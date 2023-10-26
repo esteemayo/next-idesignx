@@ -24,7 +24,7 @@ export const lightTheme = {
   bgLighter: 'var(--clr-gray-light-1)',
   bgInput: 'var(--clr-white)',
   bgDesignInput: 'var(--clr-white)',
-  bgLoc: '#fdf4ff',
+  bgLoc: 'var(--clr-purple-light-4)',
   bgUpload: 'var(--clr-gray-light-1)',
   bgDesign: 'var(--clr-gray-light-1)',
   bgState: 'var(--clr-white)',
