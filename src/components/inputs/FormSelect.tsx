@@ -5,16 +5,13 @@ import { FC, InputHTMLAttributes } from 'react';
 import { FormGroup } from '../form/FormGroup';
 import { Option, StyledSelect } from '../form/StyledSelect';
 
-type OptionTypes = {
-  id: number;
-  text: string;
-};
+import { GenderList } from '@/types';
 
 interface FormSelectProps extends InputHTMLAttributes<HTMLSelectElement> {
   name: string;
   label: string;
   path?: string;
-  options: Array<OptionTypes>;
+  options: GenderList;
 }
 
 const FormSelect: FC<FormSelectProps> = ({
