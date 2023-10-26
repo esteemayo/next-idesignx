@@ -53,3 +53,8 @@ export type GalleryItem = {
   id: number;
   img: string;
 }[];
+
+export interface ImageGalleryProps {
+  images: GalleryItem;
+  onOpen(value: number): void;
+}

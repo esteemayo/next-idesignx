@@ -4,25 +4,14 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import ImageItem from './ImageItem';
-
-type ImageValues = {
-  readonly id: number;
-  img: string;
-};
-
-interface ImageGalleryProps {
-  images: ImageValues[];
-  onOpen(value: number): void;
-}
+import { ImageGalleryProps } from '@/types';
 
 const ImageGallery: FC<ImageGalleryProps> = ({ images, onOpen }) => {
   return (
     <Container>
       {images.map((item, index) => {
         const { id, img } = item;
-        return (
-          <ImageItem key={id} src={img} value={index} onClick={onOpen} />
-        );
+        return <ImageItem key={id} src={img} value={index} onClick={onOpen} />;
       })}
     </Container>
   );
