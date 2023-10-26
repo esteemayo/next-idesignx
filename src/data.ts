@@ -9,6 +9,7 @@ import {
   GalleryItem,
   PrintItems,
   ProductImages,
+  StoryImages,
 } from './types';
 
 export const socialIcons = [
@@ -228,7 +229,7 @@ export const galleryImages: GalleryImage = [
   },
 ];
 
-export const storyImages = [
+export const storyImages: StoryImages = [
   {
     id: 1,
     img: '/img/story/story-1.jpg',

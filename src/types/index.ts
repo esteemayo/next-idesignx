@@ -69,3 +69,11 @@ export interface ImageModalProps {
   onClose(): void;
   onClick(direction: string): void;
 }
+
+interface StoryImage {
+  id: number;
+  img: string;
+  className: string;
+}
+
+export type StoryImages = StoryImage[];
