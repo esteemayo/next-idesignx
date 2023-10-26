@@ -3,9 +3,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface CopyRightProps {
-  value: number;
-}
+import { CopyRightProps } from '@/types';
 
 const CopyRight: FC<CopyRightProps> = ({ value }) => {
   return (

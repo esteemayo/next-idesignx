@@ -51,6 +51,10 @@ export interface MenuLinkProps {
   mode: string;
 }
 
+export interface CopyRightProps {
+  value: number;
+}
+
 interface ProductImage {
   id: number;
   img: string;
