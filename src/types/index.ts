@@ -39,3 +39,8 @@ export interface ProductsProps {
 export interface PrintingsProps {
   data: PrintItems;
 }
+
+export type GalleryImage = {
+  id: number;
+  img: string;
+}[];
