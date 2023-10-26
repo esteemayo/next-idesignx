@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import { socialIcons } from '@/data';
+import { socialIcons } from '@/data/data';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IMode {
