@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import FormSelect from './inputs/FormSelect';
 import FormInput from './inputs/FormInput';
@@ -9,7 +10,6 @@ import FormTextArea from './inputs/FormTextArea';
 import Form from './form/Form';
 import Button from './buttons/Button';
 
-import { useForm } from '@/hooks/useForm';
 import { selectInputs } from '@/data/formData';
 
 const initialState = {
@@ -20,13 +20,22 @@ const initialState = {
 };
 
 const Contact = () => {
-  const onSubmitHandler = () => {
-    console.log({ ...data });
-  };
+  const [data, setData] = useState(initialState);
 
-  const { data, handleChange, handleSubmit } = useForm(
-    onSubmitHandler,
-    initialState
+  const handleChange: ChangeEventHandler<
+    HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+  > = useCallback(({ target: input }) => {
+    const { name, value } = input;
+    setData((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
+  const handleSubmit = useCallback(
+    (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+
+      console.log({ ...data });
+    },
+    [data]
   );
 
   return (
