@@ -12,6 +12,12 @@ export interface SocialIcon {
 
 export type SocialIcons = SocialIcon[];
 
+export type NavItem = {
+  readonly id: number;
+  url: string;
+  label: string;
+}[];
+
 export interface Brands {
   id: number;
   img: string;
