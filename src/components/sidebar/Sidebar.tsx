@@ -16,7 +16,7 @@ import { useLoginModal } from '@/hooks/useLoginModal';
 import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
-import { navItems } from '@/data/data';
+import { navItems } from '@/data';
 
 interface IContainer {
   active: string;
