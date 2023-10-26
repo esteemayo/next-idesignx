@@ -11,7 +11,7 @@ import FormSelect from './inputs/FormSelect';
 import Form from './form/Form';
 import Button from './buttons/Button';
 
-import { selectInputs } from '@/formData';
+import { selectInputs } from '@/data/formData';
 
 const initialState = {
   name: '',
