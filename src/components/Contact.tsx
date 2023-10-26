@@ -34,6 +34,7 @@ const Contact = () => {
       e.preventDefault();
 
       console.log({ ...data });
+      setData(initialState);
     },
     [data]
   );
