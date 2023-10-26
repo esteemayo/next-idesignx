@@ -10,7 +10,7 @@ import TextArea from '../inputs/TextArea';
 import Modal from './Modal';
 import Heading from '../Heading';
 
-import { selectInputs } from '@/formData';
+import { selectInputs } from '@/data/formData';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
 interface IErrors {
