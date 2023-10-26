@@ -9,7 +9,7 @@ import Contact from '@/components/Contact';
 import Hero from '@/components/hero/Hero';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
-import { brands, printItems, productImages } from '@/data';
+import { brands, printItems, productImages } from '@/data/data';
 
 const Printings = dynamic(() => import('@/components/Printings'), {
   ssr: false,
