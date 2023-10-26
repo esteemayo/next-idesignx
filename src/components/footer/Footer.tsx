@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 import CopyRight from './CopyRight';
 import MenuLinks from './MenuLinks';
 
-import { menuItems } from '@/data';
+import { menuItems } from '@/data/data';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IContainer {
