@@ -26,7 +26,7 @@ const FormSelect: FC<FormSelectProps> = ({
 }) => {
   return (
     <FormGroup>
-      <StyledSelect id={name} name={name} path={path} required>
+      <StyledSelect {...rest} id={name} name={name} path={path} required>
         <Option value=''>{label}</Option>
         {options.map((option) => {
           const { id, text } = option;
