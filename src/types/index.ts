@@ -123,6 +123,12 @@ export interface ImageGalleryProps {
   onOpen(value: number): void;
 }
 
+export interface ImageItemProps {
+  src: string;
+  value: number;
+  onClick(value: number): void;
+}
+
 export interface PrintContactProps {
   bcg?: string;
 }

@@ -4,11 +4,7 @@ import { FC, useMemo } from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 
-interface ImageItemProps {
-  src: string;
-  value: number;
-  onClick(value: number): void;
-}
+import { ImageItemProps } from '@/types';
 
 const ImageItem: FC<ImageItemProps> = ({ src, value, onClick }) => {
   const galleryClass = useMemo(() => {
