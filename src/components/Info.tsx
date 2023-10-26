@@ -165,7 +165,7 @@ const StyledLink = styled(Link)<IMode>`
   }
 `;
 
-const setColor = (mode: string, color1: string, color2: string) => {
+const setColor = (mode: string, color1: string, color2: string): string => {
   return mode !== 'true' ? color1 : color2;
 };
 
