@@ -165,3 +165,10 @@ export type GenderList = {
   id: number;
   text: string;
 }[];
+
+export interface CardProps {
+  readonly id?: number;
+  icon: string;
+  title: string;
+  desc: string;
+}

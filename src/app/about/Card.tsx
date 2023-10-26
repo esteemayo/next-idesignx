@@ -3,14 +3,8 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
+import { CardProps } from '@/types';
 import Icon from '@/components/Icon';
-
-interface CardProps {
-  readonly id?: number;
-  icon: string;
-  title: string;
-  desc: string;
-}
 
 const Card: FC<CardProps> = ({ icon, desc, title }) => {
   return (
