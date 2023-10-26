@@ -16,7 +16,7 @@ interface IContainer {
 const Footer = () => {
   const { activeMode } = useActiveMode();
 
-  const copyRightLabel = useMemo(() => {
+  const copyRightLabel = useMemo((): number => {
     const now = new Date();
     return now.getFullYear();
   }, []);
