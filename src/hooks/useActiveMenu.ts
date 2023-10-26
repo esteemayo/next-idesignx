@@ -6,7 +6,7 @@ import { useMenu } from './useMenu';
 export const useActiveMenu = () => {
   const isOpen = useMenu((state) => state.isOpen);
 
-  const activeMenu = useMemo(() => {
+  const activeMenu = useMemo((): string => {
     return isOpen.toString();
   }, [isOpen]);
 
