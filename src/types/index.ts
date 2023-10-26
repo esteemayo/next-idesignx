@@ -226,3 +226,9 @@ export interface ModalProps {
   onSubmit(): void;
   secondaryAction?(): void;
 }
+
+export interface HeadingProps {
+  title: string;
+  subtitle?: string;
+  center?: string;
+}
