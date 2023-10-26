@@ -3,11 +3,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface ToggleAccountProps {
-  title: string;
-  label: string;
-  onClick(): void;
-}
+import { ToggleAccountProps } from '@/types';
 
 const ToggleAccount: FC<ToggleAccountProps> = ({ title, label, onClick }) => {
   return (
