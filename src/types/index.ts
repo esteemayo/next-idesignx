@@ -173,8 +173,8 @@ export type GenderList = {
   text: string;
 }[];
 
-export interface CardProps {
-  readonly id?: number;
+export interface StoryCardProps {
+  id?: number;
   icon: string;
   title: string;
   desc: string;

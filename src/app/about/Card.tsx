@@ -3,10 +3,10 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-import { CardProps } from '@/types';
 import Icon from '@/components/Icon';
+import { StoryCardProps } from '@/types';
 
-const Card: FC<CardProps> = ({ icon, desc, title }) => {
+const Card: FC<StoryCardProps> = ({ icon, desc, title }) => {
   return (
     <Container>
       <Icon icon={icon} />
