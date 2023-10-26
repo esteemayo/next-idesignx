@@ -14,7 +14,7 @@ import { useDesignModal } from '@/hooks/useDesignModal';
 import { useLoginModal } from '@/hooks/useLoginModal';
 
 import NavButton from './NavButton';
-import { navItems } from '@/data/data';
+import { navItems } from '@/data';
 
 interface IContainer {
   active: string;
