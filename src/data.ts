@@ -5,6 +5,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 import {
   Brands,
+  CardItems,
   GalleryImage,
   GalleryItem,
   PrintItems,
@@ -247,7 +248,7 @@ export const storyImages: StoryImages = [
   },
 ];
 
-export const cardItems = [
+export const cardItems: CardItems = [
   {
     id: 1,
     icon: 'pencil',

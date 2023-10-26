@@ -81,3 +81,12 @@ export type StoryImages = StoryImage[];
 export interface StoryImageProps {
   images: StoryImages;
 }
+
+export interface CardItem {
+  readonly id: number;
+  icon: string;
+  title: string;
+  desc: string;
+}
+
+export type CardItems = CardItem[];
