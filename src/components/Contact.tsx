@@ -10,7 +10,7 @@ import Form from './form/Form';
 import Button from './buttons/Button';
 
 import { useForm } from '@/hooks/useForm';
-import { selectInputs } from '@/formData';
+import { selectInputs } from '@/data/formData';
 
 const initialState = {
   name: '',
