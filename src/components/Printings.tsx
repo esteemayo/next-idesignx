@@ -5,17 +5,10 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
 import Card from './Card';
-
-type PrintItemValues = {
-  readonly id: number;
-  title: string;
-  desc: string;
-  icon: IconDefinition;
-  url: string;
-};
+import { PrintItems } from '@/types';
 
 interface PrintingsProps {
-  data: Array<PrintItemValues>;
+  data: PrintItems;
 }
 
 const Printings: FC<PrintingsProps> = ({ data }) => {
