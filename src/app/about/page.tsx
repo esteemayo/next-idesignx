@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Photo from './Photo';
 import Contact from './Contact';
 
-import { cardItems, storyImages } from '@/data/data';
+import { cardItems, storyImages } from '@/data';
 import AboutHero from '@/components/hero/AboutHero';
 
 const StoryImage = dynamic(() => import('@/components/StoryImage'), {
