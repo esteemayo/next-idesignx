@@ -49,7 +49,11 @@ const DesignModal = () => {
   const [errors, setErrors] = useState<IErrors>({});
 
   const handleChange = useCallback(
-    ({ target: input }: ChangeEvent<HTMLInputElement>) => {
+    ({
+      target: input,
+    }: ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >) => {
       const { name, value } = input;
       setData((prev) => ({ ...prev, [name]: value }));
     },
