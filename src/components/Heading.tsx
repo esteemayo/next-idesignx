@@ -3,11 +3,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface HeadingProps {
-  title: string;
-  subtitle?: string;
-  center?: string;
-}
+import { HeadingProps } from '@/types';
 
 interface IContainer {
   center: string | undefined | null;
