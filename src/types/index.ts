@@ -1,6 +1,7 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
+import { MouseEvent } from 'react';
 
 export interface SocialIcon {
   id: number;
@@ -27,6 +28,17 @@ export interface NavItemProps {
   url: string;
   label: string;
   path: string;
+}
+
+export interface ButtonProps {
+  label: string;
+  nav?: string;
+  icon?: any;
+  type?: string;
+  onClick?(e: MouseEvent<HTMLButtonElement>): void;
+  disabled?: boolean;
+  outline?: string;
+  small?: string;
 }
 
 export type Brands = {

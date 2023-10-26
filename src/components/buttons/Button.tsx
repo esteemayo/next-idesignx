@@ -3,18 +3,8 @@
 import { FC, MouseEvent } from 'react';
 import styled, { css } from 'styled-components';
 
+import { ButtonProps } from '@/types';
 import { CommonButton } from '../common/CommonButton';
-
-interface ButtonProps {
-  label: string;
-  nav?: string;
-  icon?: any;
-  type?: string;
-  onClick?(e: MouseEvent<HTMLButtonElement>): void;
-  disabled?: boolean;
-  outline?: string;
-  small?: string;
-}
 
 interface IBtn {
   nav?: string;
