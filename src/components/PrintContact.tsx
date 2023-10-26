@@ -3,8 +3,8 @@
 import { FC } from 'react';
 import styled, { css } from 'styled-components';
 
-import { StyledLink } from './buttons/StyledLink';
 import { PrintContactProps } from '@/types';
+import { StyledLink } from './buttons/StyledLink';
 
 const PrintContact: FC<PrintContactProps> = ({ bcg }) => {
   return (
