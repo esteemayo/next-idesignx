@@ -18,6 +18,11 @@ export type NavItem = {
   label: string;
 }[];
 
+export interface NavItemsProps {
+  links: NavItem;
+  path: string;
+}
+
 export interface Brands {
   id: number;
   img: string;
