@@ -232,3 +232,7 @@ export interface HeadingProps {
   subtitle?: string;
   center?: string;
 }
+
+export interface IconProps {
+  icon: string;
+}
