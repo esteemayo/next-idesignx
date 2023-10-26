@@ -16,7 +16,7 @@ import Select from '../inputs/Select';
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
-import { genderLists } from '@/data/data';
+import { genderLists } from '@/data/formData';
 
 interface IErrors {
   name?: string;
