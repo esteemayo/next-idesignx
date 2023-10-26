@@ -77,3 +77,7 @@ interface StoryImage {
 }
 
 export type StoryImages = StoryImage[];
+
+export interface StoryImageProps {
+  images: StoryImages;
+}
