@@ -240,3 +240,9 @@ export interface IconProps {
 export interface ProductImageProps {
   img: string;
 }
+
+export interface ToggleAccountProps {
+  title: string;
+  label: string;
+  onClick(): void;
+}
