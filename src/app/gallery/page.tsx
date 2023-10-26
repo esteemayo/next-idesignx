@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import ImageModal from '@/components/modal/ImageModal';
 import GalleryHero from '@/components/hero/GalleryHero';
 
-import { galleryItems } from '@/data/data';
+import { galleryItems } from '@/data';
 import { useImageModal } from '@/hooks/useImageModal';
 
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
