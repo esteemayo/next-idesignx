@@ -119,7 +119,7 @@ export const brands: Brands[] = [
   },
 ];
 
-export const productImages: ProductImages[] = [
+export const productImages: ProductImages = [
   {
     id: 1,
     img: '/img/t-shirt.jpg',

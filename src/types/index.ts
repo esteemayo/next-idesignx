@@ -5,10 +5,12 @@ export interface Brands {
   img: string;
 }
 
-export interface ProductImages {
+interface ProductImage {
   id: number;
   img: string;
 }
+
+export type ProductImages = ProductImage[];
 
 interface PrintItem {
   id: number;
