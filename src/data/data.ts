@@ -17,17 +17,17 @@ import {
 export const socialIcons: SocialIcons = [
   {
     id: 1,
-    url: '#',
+    url: '/',
     icon: FacebookIcon,
   },
   {
     id: 2,
-    url: '#',
+    url: '/',
     icon: TwitterIcon,
   },
   {
     id: 3,
-    url: '#',
+    url: '/',
     icon: InstagramIcon,
   },
 ];
