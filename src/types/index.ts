@@ -43,6 +43,11 @@ export interface MenuItemProps {
   onClick?(): void;
 }
 
+export interface HamburgerProps {
+  isOpen: boolean;
+  onToggle(): void;
+}
+
 export interface ButtonProps {
   label: string;
   nav?: string;
