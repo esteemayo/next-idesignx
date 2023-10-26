@@ -3,9 +3,7 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-interface IconProps {
-  icon: string;
-}
+import { IconProps } from '@/types';
 
 const Icon: FC<IconProps> = ({ icon }) => {
   return (
