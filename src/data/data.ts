@@ -94,7 +94,7 @@ export const menuItems = [
   },
 ];
 
-export const brands: Brands[] = [
+export const brands: Brands = [
   {
     id: 1,
     img: '/img/logo/access.png',

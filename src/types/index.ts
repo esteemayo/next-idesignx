@@ -29,10 +29,10 @@ export interface NavItemProps {
   path: string;
 }
 
-export interface Brands {
+export type Brands = {
   id: number;
   img: string;
-}
+}[];
 
 interface ProductImage {
   id: number;
