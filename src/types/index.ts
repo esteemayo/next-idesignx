@@ -32,6 +32,10 @@ export interface SeenOnProps {
   gradient: boolean;
 }
 
+export interface ProductsProps {
+  data: ProductImages;
+}
+
 export interface PrintingsProps {
   data: PrintItems;
 }

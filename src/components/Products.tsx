@@ -6,11 +6,7 @@ import styled from 'styled-components';
 import ProductImage from './ProductImage';
 import { StyledLink } from './buttons/StyledLink';
 
-import { ProductImages } from '@/types';
-
-interface ProductsProps {
-  data: ProductImages;
-}
+import { ProductsProps } from '@/types';
 
 const Products: FC<ProductsProps> = ({ data }) => {
   return (
