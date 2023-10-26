@@ -4,15 +4,7 @@ import Image from 'next/image';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-type ImageValues = {
-  readonly id: number;
-  img: string;
-  className: string;
-};
-
-interface StoryImageProps {
-  images: Array<ImageValues>;
-}
+import { StoryImageProps } from '@/types';
 
 const StoryImage: FC<StoryImageProps> = ({ images }) => {
   return (
