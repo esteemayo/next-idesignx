@@ -1,4 +1,4 @@
-import { SelectInput } from '@/types';
+import { GenderList, SelectInput } from '@/types';
 
 export const selectInputs: SelectInput = [
   {
@@ -43,7 +43,7 @@ export const selectInputs: SelectInput = [
   },
 ];
 
-export const genderLists = [
+export const genderLists: GenderList = [
   {
     id: 1,
     text: 'Male',

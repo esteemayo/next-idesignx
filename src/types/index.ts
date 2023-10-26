@@ -132,3 +132,8 @@ export type SelectInput = {
   readonly id: number;
   text: string;
 }[];
+
+export type GenderList = {
+  readonly id: number;
+  text: string;
+}[];
