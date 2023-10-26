@@ -6,15 +6,12 @@ import { FormGroup } from '../form/FormGroup';
 import Error from '../form/Error';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
 
-type OptionTypes = {
-  id: number;
-  text: string;
-};
+import { GenderList } from '@/types';
 
 interface SelectProps extends InputHTMLAttributes<HTMLSelectElement> {
   name: string;
   label: string;
-  options: Array<OptionTypes>;
+  options: GenderList;
   error?: string;
 }
 
