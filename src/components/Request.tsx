@@ -22,7 +22,7 @@ const initialState = {
 };
 
 const Request = () => {
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState<File>();
   const [data, setData] = useState(initialState);
 
   const handleChange = useCallback(
@@ -36,6 +36,12 @@ const Request = () => {
     },
     []
   );
+
+  const handleFile = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+    const { files } = e.target;
+    const selectedFile = files as FileList;
+    setFile(selectedFile?.[0]);
+  }, []);
 
   const handleClear = useCallback(() => {
     setData(initialState);
@@ -98,13 +104,7 @@ const Request = () => {
           onChange={handleChange}
           path='design'
         />
-        <UploadInput
-          id='file'
-          label='Attach a sample'
-          onChange={(e: ChangeEvent<HTMLInputElement>) =>
-            setFile(e.target.files[0])
-          }
-        />
+        <UploadInput id='file' label='Attach a sample' onChange={handleFile} />
         <Button label='Send request' />
       </Form>
     </Container>
