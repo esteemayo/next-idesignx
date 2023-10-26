@@ -4,17 +4,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import Card from '@/app/about/Card';
-
-type CardItemValues = {
-  readonly id: number;
-  icon: string;
-  title: string;
-  desc: string;
-};
-
-interface StoryCardsProps {
-  data: CardItemValues[];
-}
+import { StoryCardsProps } from '@/types';
 
 const StoryCards: FC<StoryCardsProps> = ({ data }) => {
   return (
