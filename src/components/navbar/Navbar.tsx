@@ -13,7 +13,7 @@ import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
 import { useLoginModal } from '@/hooks/useLoginModal';
 
-import { navItems } from '@/data';
+import { navItems } from '@/data/data';
 import NavButton from './NavButton';
 
 interface IContainer {
