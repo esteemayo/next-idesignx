@@ -4,17 +4,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 
 import MenuLink from './MenuLink';
-
-type MenuLinksType = {
-  id: number;
-  url: string;
-  label: string;
-};
-
-interface MenuLinksProps {
-  links: Array<MenuLinksType>;
-  mode: string;
-}
+import { MenuLinksProps } from '@/types';
 
 const MenuLinks: FC<MenuLinksProps> = ({ links, mode }) => {
   return (

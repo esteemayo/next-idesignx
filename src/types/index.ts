@@ -40,6 +40,11 @@ export type MenuItem = {
   label: string;
 }[];
 
+export interface MenuLinksProps {
+  links: MenuItem;
+  mode: string;
+}
+
 interface ProductImage {
   id: number;
   img: string;
