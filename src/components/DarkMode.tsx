@@ -89,6 +89,7 @@ const Button = styled.button`
 
   &:disabled {
     opacity: 0.75;
+    cursor: default;
   }
 
   svg {
