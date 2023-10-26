@@ -4,11 +4,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 import styled, { css } from 'styled-components';
 
-interface MenuLinkProps {
-  url: string;
-  label: string;
-  mode: string;
-}
+import { MenuLinkProps } from '@/types';
 
 interface ILink {
   mode: string;

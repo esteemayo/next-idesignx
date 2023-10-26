@@ -45,6 +45,12 @@ export interface MenuLinksProps {
   mode: string;
 }
 
+export interface MenuLinkProps {
+  url: string;
+  label: string;
+  mode: string;
+}
+
 interface ProductImage {
   id: number;
   img: string;
