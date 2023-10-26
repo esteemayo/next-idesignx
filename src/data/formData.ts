@@ -1,4 +1,6 @@
-export const selectInputs = [
+import { SelectInput } from '@/types';
+
+export const selectInputs: SelectInput = [
   {
     id: 1,
     text: 'Logo Design',

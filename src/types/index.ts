@@ -127,3 +127,8 @@ export interface StoryCardsProps {
 export interface LocationProps {
   mode: string;
 }
+
+export type SelectInput = {
+  readonly id: number;
+  text: string;
+}[];
