@@ -116,7 +116,7 @@ const DesignModal = () => {
 
   const handleClear = useCallback(() => {
     setData(initialState);
-    setFiles();
+    setFiles(undefined);
   }, []);
 
   const handleSubmit = useCallback(() => {
