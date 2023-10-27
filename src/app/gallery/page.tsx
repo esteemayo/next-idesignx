@@ -1,13 +1,15 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 
 import ImageModal from '@/components/modal/ImageModal';
 import GalleryHero from '@/components/hero/GalleryHero';
 
 import { galleryItems } from '@/data';
+import { GalleryItem } from '@/types';
+
 import { useImageModal } from '@/hooks/useImageModal';
 
 const PrintContact = dynamic(() => import('@/components/PrintContact'), {
@@ -26,7 +28,7 @@ const Gallery = () => {
   const onOpen = useImageModal((state) => state.onOpen);
 
   const [slideIndex, setSlideIndex] = useState(0);
-  const [images, setImages] = useState(galleryItems);
+  const [images, setImages] = useState<GalleryItem>([]);
 
   const handleOpen = useCallback(
     (index: number) => {
@@ -53,8 +55,12 @@ const Gallery = () => {
   );
 
   const selectedImage = useMemo(() => {
-    return images[slideIndex].img;
+    return images[slideIndex]?.img;
   }, [images, slideIndex]);
+
+  useEffect(() => {
+    setImages(galleryItems);
+  }, []);
 
   return (
     <Container>
