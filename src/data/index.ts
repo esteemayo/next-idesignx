@@ -153,7 +153,7 @@ export const printItems: PrintItems = [
   {
     id: 1,
     title: 'Print',
-    desc: "A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people's lives simple.",
+    desc: 'A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people\'s lives simple.',
     icon: faPrint,
     url: '/gallery',
   },
@@ -256,7 +256,7 @@ export const cardItems: CardItems = [
     id: 1,
     icon: 'pencil',
     title: 'Our vision',
-    desc: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.',
+    desc: 'A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people\'s lives simple.',
   },
   {
     id: 2,
@@ -268,7 +268,7 @@ export const cardItems: CardItems = [
     id: 3,
     icon: 'book',
     title: 'Commitment',
-    desc: 'Tenetur distinctio necessitatibus pariatur voluptatibus quidem consequatur harum.',
+    desc: 'Use graphic design to sell things, explain things, make things look better, make people laugh, make people cry, and (every once in a while) change the world.',
   },
 ];
 
