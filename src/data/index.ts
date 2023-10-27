@@ -153,7 +153,7 @@ export const printItems: PrintItems = [
   {
     id: 1,
     title: 'Print',
-    desc: 'A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people\'s lives simple.',
+    desc: "A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people's lives simple.",
     icon: faPrint,
     url: '/gallery',
   },
@@ -256,13 +256,13 @@ export const cardItems: CardItems = [
     id: 1,
     icon: 'pencil',
     title: 'Our vision',
-    desc: 'A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people\'s lives simple.',
+    desc: "A creative team for ambitious leaders. We are a design agency made for entrepreneurs and organizations. We design and develop experiences that makes people's lives simple.",
   },
   {
     id: 2,
     icon: 'office',
     title: 'Mission',
-    desc: 'Voluptatum mollitia quae. Vero ipsum sapiente molestias accusamus rerum sed a eligendi aut quia.',
+    desc: 'We help designers, small agencies and businesses bring their ideas to life. Powered by Figma, VS Code and coffee, We turn your requirements into a well-designed websites.',
   },
   {
     id: 3,
