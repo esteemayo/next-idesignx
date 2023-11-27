@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { ChangeEventHandler, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import FormInput from './inputs/FormInput';
 import FormTextArea from './inputs/FormTextArea';
@@ -21,7 +21,7 @@ const ContactForm = () => {
 
   const { name, email, subject, message } = data;
 
-  const handleChange: ChangeEventHandler<
+  const handleChange: React.ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement
   > = useCallback(({ target: input }) => {
     const { name, value } = input;
