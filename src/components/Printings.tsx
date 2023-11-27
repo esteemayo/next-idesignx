@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
 import { PrintingsProps } from '@/types';
 
-const Printings: FC<PrintingsProps> = ({ data }) => {
+const Printings = ({ data }: PrintingsProps) => {
   return (
     <Container>
       <Wrapper>
