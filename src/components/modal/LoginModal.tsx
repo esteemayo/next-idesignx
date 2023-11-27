@@ -1,7 +1,7 @@
 'use client';
 
+import { useCallback } from 'react';
 import styled from 'styled-components';
-import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import Modal from './Modal';
 import ToggleAccount from '../ToggleAccount';
@@ -12,14 +12,20 @@ import { Line } from '../Line';
 import Input from '../inputs/Input';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
+import useForm from '@/hooks/useForm';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
+
+interface IData {
+  email: string;
+  password: string;
+}
 
 interface IErrors {
   email?: string;
   password?: string;
 }
 
-const initialState = {
+const initialState: IData = {
   email: '',
   password: '',
 };
@@ -29,28 +35,17 @@ const LoginModal = () => {
   const registerModal = useRegisterModal();
   const onClose = useLoginModal((state) => state.onClose);
 
-  const [data, setData] = useState(initialState);
-  const [errors, setErrors] = useState<IErrors>({});
-
   const handleToggle = useCallback(() => {
     onClose();
     registerModal.onOpen();
   }, [onClose, registerModal]);
 
-  const handleClose = useCallback(() => {
+  const handleClose = () => {
     onClose();
     setErrors({});
-  }, [onClose]);
+  };
 
-  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
-    ({ target: input }) => {
-      const { name, value } = input;
-      setData((prev) => ({ ...prev, [name]: value }));
-    },
-    []
-  );
-
-  const validateInputs = useCallback(() => {
+  const validateInputs = (data: IData) => {
     let errors: IErrors = {};
     const { email, password } = data;
 
@@ -71,23 +66,17 @@ const LoginModal = () => {
     }
 
     return errors;
-  }, [data]);
+  };
 
-  const handleClear = useCallback(() => {
-    setData(initialState);
-  }, []);
-
-  const handleSubmit = useCallback(() => {
-    const errors = validateInputs();
-    if (Object.keys(errors).length > 0) {
-      setErrors(errors);
-      return;
-    }
-    setErrors({});
-
+  const onSubmitHandler = () => {
     console.log({ ...data });
-    handleClear();
-  }, [data, handleClear, validateInputs]);
+  };
+
+  const { data, errors, setErrors, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState,
+    validateInputs
+  );
 
   const bodyContent = (
     <Container>
