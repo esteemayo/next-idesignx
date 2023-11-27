@@ -7,10 +7,6 @@ export interface LayoutProps {
   children: ReactNode;
 }
 
-export interface ClientOnlyProps {
-  children: ReactNode;
-}
-
 export interface SocialIcon {
   id: number;
   url: string;
