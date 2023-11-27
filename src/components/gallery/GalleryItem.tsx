@@ -1,12 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import { GalleryItemProps } from '@/types';
 
-const GalleryItem: FC<GalleryItemProps> = ({ src }) => {
+const GalleryItem = ({ src }: GalleryItemProps) => {
   return (
     <Container>
       <StyledImage src={src} width={250} height={258} alt='' />
