@@ -156,10 +156,6 @@ export interface ImageItemProps {
   onClick(value: number): void;
 }
 
-export interface PrintContactProps {
-  bcg?: string;
-}
-
 export interface ImageModalProps {
   image: string;
   isOpen: boolean;
