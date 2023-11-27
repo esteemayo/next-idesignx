@@ -2,12 +2,11 @@
 
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import { SeenOnProps } from '@/types';
 
-const SeenOn: FC<SeenOnProps> = ({ data, gradient }) => {
+const SeenOn = ({ data, gradient }: SeenOnProps) => {
   return (
     <Container>
       <Text>As seen on</Text>
