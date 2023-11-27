@@ -1,6 +1,5 @@
 'use client';
 
-import { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 
 import LoginModal from './modal/LoginModal';
@@ -16,10 +15,9 @@ import Info from './Info';
 import ClientOnly from './ClientOnly';
 import DarkMode from './DarkMode';
 
-import { LayoutProps } from '@/types';
 import ToastProvider from '@/providers/ToastProvider';
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ClientOnly>
       <Container>
