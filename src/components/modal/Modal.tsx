@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { Overlay } from '../common/Overlay';
 import { Wrapper } from '../common/Wrapper';
@@ -15,7 +15,7 @@ interface IBtn {
   size?: string | null | undefined;
 }
 
-const Modal: FC<ModalProps> = ({
+const Modal = ({
   isOpen,
   title,
   actionLabel,
@@ -27,8 +27,8 @@ const Modal: FC<ModalProps> = ({
   onClose,
   onSubmit,
   secondaryAction,
-}) => {
-  const [showModal, setShowModal] = useState<boolean | undefined>(isOpen);
+}: ModalProps) => {
+  const [showModal, setShowModal] = useState(isOpen);
 
   const handleClose = useCallback(() => {
     if (disabled) {
