@@ -214,7 +214,7 @@ export interface ModalProps {
   body?: React.ReactElement;
   footer?: React.ReactElement;
   onClose(): void;
-  onSubmit(): void;
+  onSubmit(e?: React.FormEvent<HTMLFormElement>): void;
   secondaryAction?(): void;
 }
 
