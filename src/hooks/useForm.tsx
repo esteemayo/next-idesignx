@@ -2,7 +2,13 @@
 
 import { useCallback, useState } from 'react';
 
-const useForm = (callback: () => void, initialState = {}, validate: any) => {
+interface FormValues {
+  callback(): void;
+  initialState: object;
+  validate(data: object): object;
+}
+
+const useForm = ({ callback, initialState = {}, validate }: FormValues) => {
   const [errors, setErrors] = useState<any>({});
   const [data, setData] = useState<object>(initialState);
 
@@ -31,8 +37,8 @@ const useForm = (callback: () => void, initialState = {}, validate: any) => {
   );
 
   return {
-    errors,
     data,
+    errors,
     handleChange,
     handleSubmit,
   };
