@@ -192,10 +192,6 @@ export interface StoryCardsProps {
   data: CardItems;
 }
 
-export interface LocationProps {
-  mode: string;
-}
-
 export type SelectInput = {
   id: number;
   text: string;
