@@ -1,12 +1,11 @@
 'use client';
 
 import Image from 'next/image';
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import { StoryImageProps } from '@/types';
 
-const StoryImage: FC<StoryImageProps> = ({ images }) => {
+const StoryImage = ({ images }: StoryImageProps) => {
   return (
     <Container>
       {images.map((item) => {
