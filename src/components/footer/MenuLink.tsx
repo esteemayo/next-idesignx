@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { FC } from 'react';
 import styled, { css } from 'styled-components';
 
 import { MenuLinkProps } from '@/types';
@@ -10,7 +9,7 @@ interface ILink {
   mode: string;
 }
 
-const MenuLink: FC<MenuLinkProps> = ({ url, label, mode }) => {
+const MenuLink = ({ url, label, mode }: MenuLinkProps) => {
   return (
     <Container>
       <StyledLink href={url} mode={mode}>
