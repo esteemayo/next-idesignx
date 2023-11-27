@@ -1,6 +1,5 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import ProductImage from './ProductImage';
@@ -8,7 +7,7 @@ import { StyledLink } from './buttons/StyledLink';
 
 import { ProductsProps } from '@/types';
 
-const Products: FC<ProductsProps> = ({ data }) => {
+const Products = ({ data }: ProductsProps) => {
   return (
     <Container>
       <Heading>Our products</Heading>
