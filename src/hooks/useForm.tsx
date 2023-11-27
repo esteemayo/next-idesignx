@@ -2,21 +2,15 @@
 
 import { useCallback, useState } from 'react';
 
-interface FormValues {
-  callback(): void;
-  initialState: object;
-  validate(data: object): object;
-}
-
-const useForm = ({ callback, initialState = {}, validate }: FormValues) => {
+const useForm = (callback: () => void, initialState = {}, validate: any) => {
   const [errors, setErrors] = useState<any>({});
-  const [data, setData] = useState<object>(initialState);
+  const [data, setData] = useState<any>(initialState);
 
   const handleChange: React.ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
   > = useCallback(({ target: input }) => {
     const { name, value } = input;
-    setData((prev) => ({ ...prev, [name]: value }));
+    setData((prev: any) => ({ ...prev, [name]: value }));
   }, []);
 
   const handleSubmit = useCallback(
