@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import ImageItem from './ImageItem';
 import { ImageGalleryProps } from '@/types';
 
-const ImageGallery: FC<ImageGalleryProps> = ({ images, onOpen }) => {
+const ImageGallery = ({ images, onOpen }: ImageGalleryProps) => {
   return (
     <Container>
       {images.map((item, index) => {
