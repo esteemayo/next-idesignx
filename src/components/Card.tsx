@@ -2,12 +2,11 @@
 
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import { CardProps } from '@/types';
 
-const Card: FC<CardProps> = ({ url, icon, desc, title }) => {
+const Card = ({ url, icon, desc, title }: CardProps) => {
   return (
     <Container>
       <FontAwesomeIcon icon={icon} />
