@@ -2,19 +2,19 @@
 
 import { useCallback, useState } from 'react';
 
-const useForm = (
+const useForm = <T extends object>(
   callback: () => void,
-  initialState: object = {},
+  initialState: T,
   validate: any
 ) => {
   const [errors, setErrors] = useState<any>({});
-  const [data, setData] = useState<object | any>(initialState);
+  const [data, setData] = useState<T>(initialState);
 
   const handleChange: React.ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
   > = useCallback(({ target: input }) => {
     const { name, value } = input;
-    setData((prev: object | any) => ({ ...prev, [name]: value }));
+    setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
   const handleSubmit = useCallback(
