@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
 import { MenuItemsProps } from '@/types';
 
-const MenuItems: FC<MenuItemsProps> = ({ mode, links, onClose }) => {
+const MenuItems = ({ mode, links, onClose }: MenuItemsProps) => {
   return (
     <Container>
       {links.map((link) => {
