@@ -1,12 +1,12 @@
 'use client';
 
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 
 import { ImageItemProps } from '@/types';
 
-const ImageItem: FC<ImageItemProps> = ({ src, value, onClick }) => {
+const ImageItem = ({ src, value, onClick }: ImageItemProps) => {
   const galleryClass = useMemo(() => {
     return `gallery-item--${value + 1}`;
   }, [value]);
