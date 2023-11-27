@@ -2,27 +2,23 @@
 
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ChangeEvent, useCallback } from 'react';
+import { useCallback } from 'react';
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styled, { keyframes } from 'styled-components';
 
 interface ImageUploadProps {
   value?: File;
   error?: string;
-  onChange(e: ChangeEvent<HTMLInputElement>): void;
+  onChange(e: FileList): void;
 }
 
 interface IContainer {
   error?: string;
 }
 
-const ImageUpload: React.FC<ImageUploadProps> = ({
-  value,
-  error,
-  onChange,
-}) => {
+const ImageUpload = ({ value, error, onChange }: ImageUploadProps) => {
   const handleFile = useCallback(
-    (e: ChangeEvent<HTMLInputElement>) => {
+    (e: React.ChangeEvent<HTMLInputElement>) => {
       const { files } = e.target;
       const selectedFile = files as FileList;
       onChange(selectedFile);
