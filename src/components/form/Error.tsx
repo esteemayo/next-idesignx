@@ -1,13 +1,12 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 interface ErrorProps {
   message?: string;
 }
 
-const Error: FC<ErrorProps> = ({ message }) => {
+const Error = ({ message }: ErrorProps) => {
   return <ErrorMessage>{message}</ErrorMessage>;
 };
 
