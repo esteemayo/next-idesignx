@@ -23,6 +23,7 @@ const useForm = (callback: () => void, initialState = {}, validate: any) => {
       }
 
       setErrors({});
+
       callback();
       setFormData(initialState);
     },
