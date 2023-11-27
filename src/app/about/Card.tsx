@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import Icon from '@/components/Icon';
 import { StoryCardProps } from '@/types';
 
-const Card: FC<StoryCardProps> = ({ icon, desc, title }) => {
+const Card = ({ icon, desc, title }: StoryCardProps) => {
   return (
     <Container>
       <Icon icon={icon} />
