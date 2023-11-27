@@ -237,10 +237,6 @@ export interface HeadingProps {
   center?: string;
 }
 
-export interface IconProps {
-  icon: string;
-}
-
 export interface ProductImageProps {
   img: string;
 }

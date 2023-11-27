@@ -3,9 +3,11 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 
-import { IconProps } from '@/types';
+interface IconProps {
+  icon: string;
+}
 
-const Icon: FC<IconProps> = ({ icon }) => {
+const Icon = ({ icon }: IconProps) => {
   return (
     <SVG>
       <Use xlinkHref={`svg/sprite.svg#icon-${icon}`}></Use>
