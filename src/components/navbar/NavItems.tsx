@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import NavItem from './NavItem';
 import { NavItemsProps } from '@/types';
 
-const NavItems: FC<NavItemsProps> = ({ links, path }) => {
+const NavItems = ({ links, path }: NavItemsProps) => {
   return (
     <Container>
       {links.map((link) => {
