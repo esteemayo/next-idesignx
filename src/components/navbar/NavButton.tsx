@@ -1,11 +1,10 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import { NavButtonProps } from '@/types';
 
-const NavButton: FC<NavButtonProps> = ({ label, onClick }) => {
+const NavButton = ({ label, onClick }: NavButtonProps) => {
   return <Button onClick={onClick}>{label}</Button>;
 };
 
