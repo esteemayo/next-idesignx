@@ -1,21 +1,19 @@
 'use client';
 
-import { FC, InputHTMLAttributes } from 'react';
-
 import { FormGroup } from '../form/FormGroup';
 import Error from '../form/Error';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
 
 import { GenderList } from '@/types';
 
-interface SelectProps extends InputHTMLAttributes<HTMLSelectElement> {
+interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   name: string;
   label: string;
   options: GenderList;
   error?: string;
 }
 
-const Select: FC<SelectProps> = ({ name, label, options, error, ...rest }) => {
+const Select = ({ name, label, options, error, ...rest }: SelectProps) => {
   return (
     <FormGroup>
       <SelectStyled {...rest} id={name} name={name} error={error}>
