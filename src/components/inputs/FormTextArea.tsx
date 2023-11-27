@@ -1,23 +1,17 @@
 'use client';
 
-import { FC, InputHTMLAttributes } from 'react';
-
 import { FormGroup } from '../form/FormGroup';
 import { Label } from '../form/Label';
 import { StyledTextArea } from '../form/StyledTextArea';
 
-interface FormTextAreaProps extends InputHTMLAttributes<HTMLTextAreaElement> {
+interface FormTextAreaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   name: string;
   label: string;
   path?: string;
 }
 
-const FormTextArea: FC<FormTextAreaProps> = ({
-  name,
-  label,
-  path,
-  ...rest
-}) => {
+const FormTextArea = ({ name, label, path, ...rest }: FormTextAreaProps) => {
   return (
     <FormGroup>
       <StyledTextArea {...rest} id={name} name={name} path={path} required />
