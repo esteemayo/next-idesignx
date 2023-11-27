@@ -1,7 +1,7 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
-import { MouseEvent, ReactElement, ReactNode } from 'react';
+import { MouseEvent, ReactElement } from 'react';
 
 export interface SocialIcon {
   id: number;
