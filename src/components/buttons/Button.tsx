@@ -1,6 +1,5 @@
 'use client';
 
-import { FC } from 'react';
 import styled, { css } from 'styled-components';
 
 import { ButtonProps } from '@/types';
@@ -13,7 +12,7 @@ interface IBtn {
   outline?: string;
 }
 
-const Button: FC<ButtonProps> = ({
+const Button = ({
   label,
   nav,
   icon: Icon,
@@ -22,7 +21,7 @@ const Button: FC<ButtonProps> = ({
   disabled,
   outline,
   small,
-}) => {
+}: ButtonProps) => {
   return (
     <StyledButton
       nav={nav}
