@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import MenuLink from './MenuLink';
 import { MenuLinksProps } from '@/types';
 
-const MenuLinks: FC<MenuLinksProps> = ({ links, mode }) => {
+const MenuLinks = ({ links, mode }: MenuLinksProps) => {
   return (
     <Container>
       {links.map((link) => {
