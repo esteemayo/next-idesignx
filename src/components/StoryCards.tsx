@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import Card from '@/app/about/Card';
 import { StoryCardsProps } from '@/types';
 
-const StoryCards: FC<StoryCardsProps> = ({ data }) => {
+const StoryCards = ({ data }: StoryCardsProps) => {
   return (
     <Container>
       {data.map((item) => {
