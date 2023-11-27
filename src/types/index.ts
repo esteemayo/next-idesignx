@@ -1,7 +1,6 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
-import { MouseEvent } from 'react';
 
 export interface SocialIcon {
   id: number;
@@ -58,7 +57,7 @@ export interface ButtonProps {
   nav?: string;
   icon?: any;
   type?: string;
-  onClick?(e: MouseEvent<HTMLButtonElement>): void;
+  onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
   outline?: string;
   small?: string;
