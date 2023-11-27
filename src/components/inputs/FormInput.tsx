@@ -1,18 +1,16 @@
 'use client';
 
-import { FC, InputHTMLAttributes } from 'react';
-
 import { FormGroup } from '../form/FormGroup';
 import { Label } from '../form/Label';
 import { StyledInput } from '../form/StyleInput';
 
-interface FormInputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface FormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
   path?: string;
 }
 
-const FormInput: FC<FormInputProps> = ({ name, label, path, ...rest }) => {
+const FormInput = ({ name, label, path, ...rest }: FormInputProps) => {
   return (
     <FormGroup>
       <StyledInput {...rest} id={name} name={name} path={path} required />
