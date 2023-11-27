@@ -15,7 +15,7 @@ const useForm = (callback: () => void, initialState = {}, validate: any) => {
 
   const handleSubmit = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
+      e?.preventDefault();
 
       if (Object.values(validate(data)).length > 0) {
         setErrors(validate(data));
@@ -33,6 +33,7 @@ const useForm = (callback: () => void, initialState = {}, validate: any) => {
   return {
     data,
     errors,
+    setErrors,
     handleChange,
     handleSubmit,
   };
