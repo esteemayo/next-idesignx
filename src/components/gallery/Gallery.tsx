@@ -1,12 +1,11 @@
 'use client';
 
-import { FC } from 'react';
 import styled from 'styled-components';
 
 import { GalleryProps } from '@/types';
 import GalleryItem from './GalleryItem';
 
-const Gallery: FC<GalleryProps> = ({ data }) => {
+const Gallery = ({ data }: GalleryProps) => {
   return (
     <Container>
       <Heading>Gallery</Heading>
