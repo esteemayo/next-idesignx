@@ -1,12 +1,13 @@
 'use client';
 
 import Image from 'next/image';
-import { FC } from 'react';
 import styled from 'styled-components';
 
-import { ProductImageProps } from '@/types';
+interface ProductImageProps {
+  img: string;
+}
 
-const ProductImage: FC<ProductImageProps> = ({ img }) => {
+const ProductImage = ({ img }: ProductImageProps) => {
   return (
     <Wrapper>
       <StyledImage src={img} width={297} height={484} alt='' />
