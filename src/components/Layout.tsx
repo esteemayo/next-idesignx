@@ -11,8 +11,8 @@ import ScrollButton from './buttons/ScrollButton';
 import Footer from './footer/Footer';
 import Sidebar from './sidebar/Sidebar';
 
-import Info from './Info';
 import ClientOnly from './ClientOnly';
+import Info from './Info';
 import DarkMode from './DarkMode';
 
 import ToastProvider from '@/providers/ToastProvider';
