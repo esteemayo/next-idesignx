@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { NavItemProps } from '@/types';
 
@@ -8,7 +8,7 @@ interface IContainer {
   active: string;
 }
 
-const NavItem: FC<NavItemProps> = ({ url, label, path }) => {
+const NavItem = ({ url, label, path }: NavItemProps) => {
   const isActive = useMemo(() => {
     const activeUrl = url === path;
     return activeUrl.toString();
