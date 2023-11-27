@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { CommonHeading } from '../common/CommonHeading';
 
 const GalleryHero = () => {
-  const textRef = useRef();
+  const textRef = useRef<HTMLParagraphElement>();
 
   useEffect(() => {
     const elem = textRef.current;
