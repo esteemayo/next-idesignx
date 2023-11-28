@@ -1,10 +1,10 @@
 'use client';
 
 import { FC, useEffect } from 'react';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 import Heading from '@/components/Heading';
+import { CommonImage } from '@/components/common/CommonImage';
 
 interface ErrorProps {
   error: Error;
@@ -48,11 +48,6 @@ const Container = styled.main`
   }
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-`;
+const StyledImage = styled(CommonImage)``;
 
 export default ErrorState;
