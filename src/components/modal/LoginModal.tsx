@@ -12,7 +12,7 @@ import { Line } from '../Line';
 import Input from '../inputs/Input';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
-import useForm from '@/hooks/useForm';
+import { useForm } from '@/hooks/useForm';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 interface IData {
