@@ -2,12 +2,12 @@
 
 import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import Image from 'next/image';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseIcon from '@mui/icons-material/Close';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 import { Overlay } from '../common/Overlay';
+import { CommonImage } from '../common/CommonImage';
 import { Wrapper } from '../common/Wrapper';
 
 import { ImageModalProps } from '@/types';
@@ -174,12 +174,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`;
+const StyledImage = styled(CommonImage)``;
 
 const ButtonWrapper = styled.div`
   position: absolute;
