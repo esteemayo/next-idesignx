@@ -1,7 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import styled from 'styled-components';
+
+import { CommonImage } from './common/CommonImage';
 
 interface ProductImageProps {
   img: string;
@@ -20,11 +21,6 @@ const Wrapper = styled.figure`
   height: 100%;
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-`;
+const StyledImage = styled(CommonImage)``;
 
 export default ProductImage;
