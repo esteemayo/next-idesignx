@@ -1,10 +1,10 @@
 'use client';
 
 import { useMemo } from 'react';
-import Image from 'next/image';
 import styled from 'styled-components';
 
 import { ImageItemProps } from '@/types';
+import { CommonImage } from '../common/CommonImage';
 
 const ImageItem = ({ src, value, onClick }: ImageItemProps) => {
   const galleryClass = useMemo(() => {
@@ -25,11 +25,6 @@ const Container = styled.figure`
   cursor: pointer;
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-`;
+const StyledImage = styled(CommonImage)``;
 
 export default ImageItem;
