@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { ChangeEvent, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import FormTextArea from './inputs/FormTextArea';
 import FormInput from './inputs/FormInput';
@@ -30,7 +30,7 @@ const Request = () => {
   const handleChange = useCallback(
     ({
       target: input,
-    }: ChangeEvent<
+    }: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
     >) => {
       const { name, value } = input;
@@ -39,7 +39,7 @@ const Request = () => {
     []
   );
 
-  const handleFile = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = e.target;
     const selectedFile = files as FileList;
     setFile(selectedFile?.[0]);
