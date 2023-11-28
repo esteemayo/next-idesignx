@@ -84,14 +84,16 @@ const RegisterModal = () => {
   }, [onClose]);
 
   const handleChange = useCallback(
-    ({ target: input }: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    ({
+      target: input,
+    }: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
       const { name, value } = input;
       setData((prev) => ({ ...prev, [name]: value }));
     },
     []
   );
 
-  const handleFile = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = e.target;
     const selectedFile = files as FileList;
     setFile(selectedFile?.[0]);
