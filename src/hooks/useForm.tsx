@@ -18,22 +18,17 @@ const useForm = <T extends object, U extends object>(
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const handleSubmit = useCallback(
-    (e: React.FormEvent<HTMLFormElement>) => {
-      e?.preventDefault();
+  const handleSubmit = useCallback(() => {
+    if (Object.values(validate(data)).length > 0) {
+      setErrors(validate(data));
+      return;
+    }
 
-      if (Object.values(validate(data)).length > 0) {
-        setErrors(validate(data));
-        return;
-      }
+    setErrors(initialError);
 
-      setErrors(initialError);
-
-      callback();
-      setData(initialState);
-    },
-    [callback, data, initialError, initialState, validate]
-  );
+    callback();
+    setData(initialState);
+  }, [callback, data, initialError, initialState, validate]);
 
   return {
     data,
