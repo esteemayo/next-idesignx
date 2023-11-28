@@ -44,7 +44,7 @@ const DesignModal = () => {
   const onClose = useDesignModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
-  const [files, setFiles] = useState<File | FileList|Blob | MediaSource>();
+  const [files, setFiles] = useState<File | FileList|Blob | MediaSource | any>();
   const [data, setData] = useState(initialState);
   const [errors, setErrors] = useState<IErrors>({});
 
