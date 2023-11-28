@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import styled from 'styled-components';
 
 import { StoryImageProps } from '@/types';
+import { CommonImage } from './common/CommonImage';
 
 const StoryImage = ({ images }: StoryImageProps) => {
   return (
@@ -25,11 +25,7 @@ const StoryImage = ({ images }: StoryImageProps) => {
   );
 };
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+const StyledImage = styled(CommonImage)`
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
   z-index: 1000;
   outline-offset: 2rem;
