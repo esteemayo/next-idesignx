@@ -1,10 +1,11 @@
 'use client';
 
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styled, { keyframes } from 'styled-components';
+
+import { CommonImage } from '../common/CommonImage';
 
 interface ImageUploadProps {
   value?: File | FileList | Blob | MediaSource | any;
@@ -98,15 +99,10 @@ const Input = styled.input.attrs({
   display: none;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   position: absolute;
   top: 0;
   left: 0;
-
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
 `;
 
 const setBorderColor = (error: string | undefined) => {
