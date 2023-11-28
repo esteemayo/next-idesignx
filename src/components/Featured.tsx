@@ -1,7 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import styled from 'styled-components';
+
+import { CommonImage } from './common/CommonImage';
 
 const Featured = () => {
   return (
@@ -33,13 +34,8 @@ const Container = styled.section`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   grid-area: 2 / 1 / 8 / 8;
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
   border-radius: 50%;
 `;
 
