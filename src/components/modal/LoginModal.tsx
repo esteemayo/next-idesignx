@@ -30,6 +30,11 @@ const initialState: IData = {
   password: '',
 };
 
+const initialError: IErrors = {
+  email: '',
+  password: '',
+};
+
 const LoginModal = () => {
   const isOpen = useLoginModal((state) => state.isOpen);
   const registerModal = useRegisterModal();
@@ -75,6 +80,7 @@ const LoginModal = () => {
   const { data, errors, setErrors, handleChange, handleSubmit } = useForm(
     onSubmitHandler,
     initialState,
+    initialError,
     validateInputs
   );
 
