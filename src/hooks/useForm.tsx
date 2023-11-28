@@ -6,7 +6,7 @@ const useForm = <T extends object, U extends object>(
   callback: () => void,
   initialState: T,
   initialError: U,
-  validate: any
+  validate: (data: T) => U
 ) => {
   const [data, setData] = useState<T>(initialState);
   const [errors, setErrors] = useState<U>(initialError);
