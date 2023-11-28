@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 import styled from 'styled-components';
 
 import Heading from '@/components/Heading';
@@ -10,7 +10,7 @@ interface ErrorProps {
   error: Error;
 }
 
-const ErrorState: FC<ErrorProps> = ({ error }) => {
+const ErrorState = ({ error }: ErrorProps) => {
   useEffect(() => {
     console.error(error);
   }, [error]);
