@@ -1,8 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
+
+import { CommonImage } from '../common/CommonImage';
 
 interface LogoProps {
   onClose?: () => void;
@@ -32,7 +33,7 @@ const StyledLink = styled(Link)`
   outline-color: ${({ theme }) => theme.outline};
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 4.5rem;
   height: 4.5rem;
 
