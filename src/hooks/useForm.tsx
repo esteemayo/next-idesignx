@@ -2,13 +2,14 @@
 
 import { useCallback, useState } from 'react';
 
-const useForm = <T extends object>(
+const useForm = <T extends object, U extends object>(
   callback: () => void,
   initialState: T,
+  initialError: U,
   validate: any
 ) => {
-  const [errors, setErrors] = useState<any>({});
   const [data, setData] = useState<T>(initialState);
+  const [errors, setErrors] = useState<U>(initialError);
 
   const handleChange: React.ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -26,12 +27,12 @@ const useForm = <T extends object>(
         return;
       }
 
-      setErrors({});
+      setErrors(initialError);
 
       callback();
       setData(initialState);
     },
-    [callback, data, initialState, validate]
+    [callback, data, initialError, initialState, validate]
   );
 
   return {
