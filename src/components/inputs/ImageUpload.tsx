@@ -7,9 +7,9 @@ import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styled, { keyframes } from 'styled-components';
 
 interface ImageUploadProps {
-  value?: File;
+  value?: File | FileList | Blob | MediaSource;
   error?: string;
-  onChange(e: FileList): void;
+  onChange(e: FileList | File): void;
 }
 
 interface IContainer {
