@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from 'react';
 
-const useForm = <T extends object, U extends object>(
+export const useForm = <T extends object, U extends object>(
   callback: () => void,
   initialState: T,
   initialError: U,
@@ -38,5 +38,3 @@ const useForm = <T extends object, U extends object>(
     handleSubmit,
   };
 };
-
-export default useForm;
