@@ -7,10 +7,10 @@ import styled from 'styled-components';
 import { CommonHeading } from '../common/CommonHeading';
 
 const GalleryHero = () => {
-  const textRef = useRef<HTMLParagraphElement>();
+  const textRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    const elem = textRef.current;
+    const elem = textRef.current as string | Element;
     init(elem, {
       showCursor: false,
       backDelay: 1500,
