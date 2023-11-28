@@ -1,6 +1,6 @@
 'use  client';
 
-import { ChangeEvent, useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 import Input from '../inputs/Input';
 import ImageUpload from '../inputs/ImageUpload';
@@ -51,7 +51,7 @@ const DesignModal = () => {
   const handleChange = useCallback(
     ({
       target: input,
-    }: ChangeEvent<
+    }: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
     >) => {
       const { name, value } = input;
