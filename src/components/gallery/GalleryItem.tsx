@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import styled from 'styled-components';
 
 import { GalleryItemProps } from '@/types';
+import { CommonImage } from '../common/CommonImage';
 
 const GalleryItem = ({ src }: GalleryItemProps) => {
   return (
@@ -18,12 +18,7 @@ const Container = styled.figure`
   height: 100%;
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-
+const StyledImage = styled(CommonImage)`
   @media only screen and (max-width: 26.25em) {
     width: 40rem;
     height: 30rem;
