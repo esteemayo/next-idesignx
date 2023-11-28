@@ -18,16 +18,6 @@ import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 import { genderLists } from '@/data/formData';
 
-interface IData {
-  name: string;
-  email: string;
-  username: string;
-  phone: string;
-  gender: string;
-  password: string;
-  passwordConfirm: string;
-}
-
 interface IErrors {
   name?: string;
   email?: string;
@@ -45,7 +35,7 @@ enum STEPS {
   AVATAR = 3,
 }
 
-const initialState: IData = {
+const initialState = {
   name: '',
   email: '',
   username: '',
