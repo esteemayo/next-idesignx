@@ -2,8 +2,11 @@
 
 import styled from 'styled-components';
 
-import { GalleryItemProps } from '@/types';
 import { CommonImage } from '../common/CommonImage';
+
+interface GalleryItemProps {
+  src: string;
+}
 
 const GalleryItem = ({ src }: GalleryItemProps) => {
   return (
