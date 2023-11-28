@@ -2,7 +2,9 @@
 
 import styled from 'styled-components';
 
-import { CopyRightProps } from '@/types';
+interface CopyRightProps {
+  value: number;
+}
 
 const CopyRight = ({ value }: CopyRightProps) => {
   return (
