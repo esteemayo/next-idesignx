@@ -5,7 +5,7 @@ import { init } from 'ityped';
 import styled from 'styled-components';
 
 import { CommonHeading } from '../common/CommonHeading';
-import { CommonHeroBcg } from '../common/CommonHeroBcg';
+import { CommonHeroBcg } from '../common/CommonHero';
 
 const GalleryHero = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
