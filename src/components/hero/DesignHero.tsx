@@ -1,7 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
+
 import { CommonHeading } from '../common/CommonHeading';
+import { CommonHeroBcg } from '../common/CommonHeroBcg';
 
 const DesignHero = () => {
   return (
@@ -15,7 +17,7 @@ const DesignHero = () => {
   );
 };
 
-const Header = styled.header`
+const Header = styled(CommonHeroBcg)`
   grid-column: full-start / full-end;
 
   display: grid;
@@ -23,20 +25,12 @@ const Header = styled.header`
   grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
 
-  color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
       rgba(51, 51, 51, 0.7)
     ),
     url(/img/hero/design-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-  @media only screen and (max-width: 25em) {
-    background-attachment: scroll;
-  }
 `;
 
 const Heading = styled(CommonHeading)`
