@@ -2,10 +2,6 @@
 
 import styled from 'styled-components';
 
-import LoginModal from './modal/LoginModal';
-import RegisterModal from './modal/RegisterModal';
-import DesignModal from './modal/DesignModal';
-
 import Navbar from './navbar/Navbar';
 import ScrollButton from './buttons/ScrollButton';
 import Footer from './footer/Footer';
@@ -16,6 +12,7 @@ import Info from './Info';
 import DarkMode from './DarkMode';
 
 import ToastProvider from '@/providers/ToastProvider';
+import ModalProvider from '@/providers/ModalProvider';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -25,9 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <Info />
         <Navbar />
         <Sidebar />
-        <DesignModal />
-        <LoginModal />
-        <RegisterModal />
+        <ModalProvider />
         {children}
         <Footer />
         <ScrollButton />
