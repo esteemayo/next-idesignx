@@ -104,7 +104,6 @@ export type PrintItems = PrintItem[];
 
 export interface SeenOnProps {
   data: Brands;
-  gradient: boolean;
 }
 
 export interface ProductsProps {
