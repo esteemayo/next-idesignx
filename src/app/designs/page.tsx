@@ -1,17 +1,11 @@
-import dynamic from 'next/dynamic';
-
 import DesignHero from '@/components/hero/DesignHero';
+import Mission from '@/components/Mission';
 import DesignsLayout from '@/components/layouts/DesignsLayout';
+import Request from '@/components/Request';
+import Innovation from '@/components/Innovation';
+import Statement from '@/components/Statement';
 
-// const Featured = dynamic(() => import('@/components/Featured'), { ssr: false });
-const Innovation = dynamic(() => import('@/components/Innovation'), {
-  ssr: false,
-});
-const Mission = dynamic(() => import('@/components/Mission'), { ssr: false });
-const Statement = dynamic(() => import('@/components/Statement'), {
-  ssr: false,
-});
-const Request = dynamic(() => import('@/components/Request'), { ssr: false });
+// import Featured from '@/components/Featured';
 
 const Designs = () => {
   return (
