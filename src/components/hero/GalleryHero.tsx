@@ -4,8 +4,8 @@ import { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import styled from 'styled-components';
 
+import { CommonHero } from '../common/CommonHero';
 import { CommonHeading } from '../common/CommonHeading';
-import { CommonHeroBcg } from '../common/CommonHero';
 
 const GalleryHero = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
@@ -35,7 +35,7 @@ const GalleryHero = () => {
   );
 };
 
-const Header = styled(CommonHeroBcg)`
+const Header = styled(CommonHero)`
   grid-column: full-start / full-end;
 
   display: grid;
