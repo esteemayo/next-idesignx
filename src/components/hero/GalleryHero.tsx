@@ -5,6 +5,7 @@ import { init } from 'ityped';
 import styled from 'styled-components';
 
 import { CommonHeading } from '../common/CommonHeading';
+import { CommonHeroBcg } from '../common/CommonHeroBcg';
 
 const GalleryHero = () => {
   const textRef = useRef<HTMLParagraphElement>(null);
@@ -34,7 +35,7 @@ const GalleryHero = () => {
   );
 };
 
-const Header = styled.header`
+const Header = styled(CommonHeroBcg)`
   grid-column: full-start / full-end;
 
   display: grid;
@@ -43,20 +44,12 @@ const Header = styled.header`
   align-items: center;
   justify-items: center;
 
-  color: var(--clr-white);
   background-image: linear-gradient(
       to right bottom,
       rgba(0, 0, 0, 0.7),
       rgba(51, 51, 51, 0.7)
     ),
     url(/img/hero/gallery-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-  @media only screen and (max-width: 25em) {
-    background-attachment: scroll;
-  }
 `;
 
 const Heading = styled(CommonHeading)`
