@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 
+import { CommonHero } from '../common/CommonHero';
 import { CommonHeading } from '../common/CommonHeading';
-import { CommonHeroBcg } from '../common/CommonHero';
 
 const AboutHero = () => {
   return (
@@ -17,7 +17,7 @@ const AboutHero = () => {
   );
 };
 
-const Header = styled(CommonHeroBcg)`
+const Header = styled(CommonHero)`
   grid-column: full-start / full-end;
 
   display: grid;
