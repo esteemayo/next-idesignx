@@ -1,9 +1,7 @@
-'use client';
-
 import dynamic from 'next/dynamic';
-import styled from 'styled-components';
 
 import DesignHero from '@/components/hero/DesignHero';
+import DesignsLayout from '@/components/layouts/DesignsLayout';
 
 // const Featured = dynamic(() => import('@/components/Featured'), { ssr: false });
 const Innovation = dynamic(() => import('@/components/Innovation'), {
@@ -17,39 +15,15 @@ const Request = dynamic(() => import('@/components/Request'), { ssr: false });
 
 const Designs = () => {
   return (
-    <Container>
+    <DesignsLayout>
       <DesignHero />
       <Innovation />
       {/* <Featured /> */}
       <Mission />
       <Request />
       <Statement />
-    </Container>
+    </DesignsLayout>
   );
 };
-
-const Container = styled.main`
-  background-color: ${({ theme }) => theme.bgDesign};
-  display: grid;
-  grid-template-rows: 80vh 40vw repeat(2, min-content);
-  grid-template-columns:
-    [full-start] minmax(6rem, 1fr) [center-start] repeat(
-      8,
-      [col-start] minmax(min-content, 15rem) [col-end]
-    )
-    [center-end] minmax(6rem, 1fr) [full-end];
-
-  @media only screen and (max-width: 64em) {
-    grid-template-rows: 50vh 40vw repeat(2, min-content);
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    grid-template-rows: 45vh;
-  }
-
-  @media only screen and (max-width: 25em) {
-    grid-template-rows: 40vh;
-  }
-`;
 
 export default Designs;
