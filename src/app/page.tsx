@@ -1,17 +1,12 @@
-import dynamic from 'next/dynamic';
-
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Hero from '@/components/hero/Hero';
 import HomeLayout from '@/components/layouts/HomeLayout';
+import SeenOn from '@/components/SeenOn';
+import Printings from '@/components/Printings';
+import Products from '@/components/Products';
 
 import { brands, printItems, productImages } from '@/data';
-
-const Printings = dynamic(() => import('@/components/Printings'), {
-  ssr: false,
-});
-const SeenOn = dynamic(() => import('@/components/SeenOn'), { ssr: false });
-const Products = dynamic(() => import('@/components/Products'), { ssr: false });
 
 const Home = () => {
   return (
