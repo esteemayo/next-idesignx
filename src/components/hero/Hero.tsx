@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 
+import { CommonHero } from '../common/CommonHero';
 import { CommonHeading } from '../common/CommonHeading';
-import { CommonHeroBcg } from '../common/CommonHero';
 
 interface IText {
   type: string;
@@ -23,7 +23,7 @@ const Hero = () => {
   );
 };
 
-const Header = styled(CommonHeroBcg)`
+const Header = styled(CommonHero)`
   grid-column: full-start / full-end;
 
   display: grid;
