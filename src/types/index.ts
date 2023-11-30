@@ -135,6 +135,10 @@ export type GalleryItem = {
   img: string;
 }[];
 
+export interface ImageGalleryProps {
+  galleryImages: GalleryItem;
+}
+
 export interface ImageItemProps {
   src: string;
   value: number;
