@@ -6,12 +6,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import ImageItem from './ImageItem';
 import ImageModal from '../modal/ImageModal';
 
-import { GalleryItem } from '@/types';
-import { galleryItems } from '@/data';
-
 import { useImageModal } from '@/hooks/useImageModal';
+import { GalleryItem, ImageGalleryProps } from '@/types';
 
-const ImageGallery = () => {
+const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
   const isOpen = useImageModal((state) => state.isOpen);
   const onClose = useImageModal((state) => state.onClose);
   const onOpen = useImageModal((state) => state.onOpen);
@@ -48,8 +46,8 @@ const ImageGallery = () => {
   }, [images, slideIndex]);
 
   useEffect(() => {
-    setImages(galleryItems);
-  }, []);
+    setImages(galleryImages);
+  }, [galleryImages]);
 
   return (
     <Container>
