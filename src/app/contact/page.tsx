@@ -1,13 +1,9 @@
-import dynamic from 'next/dynamic';
+import ContactHero from '@/components/hero/ContactHero';
+import Location from '@/components/Location';
+import ContactLayout from '@/components/layouts/ContactLayout';
+import ContactForm from '@/components/ContactForm';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
-import ContactHero from '@/components/hero/ContactHero';
-import ContactLayout from '@/components/layouts/ContactLayout';
-
-const Location = dynamic(() => import('@/components/Location'), { ssr: false });
-const ContactForm = dynamic(() => import('@/components/ContactForm'), {
-  ssr: false,
-});
 
 const Contact = () => {
   const { activeMode } = useActiveMode();
