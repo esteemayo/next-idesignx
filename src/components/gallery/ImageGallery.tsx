@@ -1,17 +1,70 @@
 'use client';
 
 import styled from 'styled-components';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ImageItem from './ImageItem';
-import { ImageGalleryProps } from '@/types';
+import ImageModal from '../modal/ImageModal';
 
-const ImageGallery = ({ images, onOpen }: ImageGalleryProps) => {
+import { GalleryItem } from '@/types';
+import { galleryItems } from '@/data';
+
+import { useImageModal } from '@/hooks/useImageModal';
+
+const ImageGallery = () => {
+  const isOpen = useImageModal((state) => state.isOpen);
+  const onClose = useImageModal((state) => state.onClose);
+  const onOpen = useImageModal((state) => state.onOpen);
+
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [images, setImages] = useState<GalleryItem>([]);
+
+  const handleOpen = useCallback(
+    (index: number) => {
+      onOpen();
+      setSlideIndex(index);
+    },
+    [onOpen]
+  );
+
+  const handleClick = useCallback(
+    (direction: string) => {
+      let newSlideIndex;
+      const lastIndex = images.length - 1;
+
+      if (direction === 'left') {
+        newSlideIndex = slideIndex === 0 ? lastIndex : slideIndex - 1;
+      } else {
+        newSlideIndex = slideIndex === lastIndex ? 0 : slideIndex + 1;
+      }
+
+      setSlideIndex(newSlideIndex);
+    },
+    [images, slideIndex]
+  );
+
+  const selectedImage = useMemo(() => {
+    return images[slideIndex]?.img;
+  }, [images, slideIndex]);
+
+  useEffect(() => {
+    setImages(galleryItems);
+  }, []);
+
   return (
     <Container>
       {images.map((item, index) => {
         const { id, img } = item;
-        return <ImageItem key={id} src={img} value={index} onClick={onOpen} />;
+        return (
+          <ImageItem key={id} src={img} value={index} onClick={handleOpen} />
+        );
       })}
+      <ImageModal
+        image={selectedImage}
+        isOpen={isOpen}
+        onClose={onClose}
+        onClick={handleClick}
+      />
     </Container>
   );
 };
