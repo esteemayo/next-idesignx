@@ -3,11 +3,15 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-interface LocationProps {
+import { useActiveMode } from '@/hooks/useActiveMode';
+
+interface IMode {
   mode: string;
 }
 
-const Location = ({ mode }: LocationProps) => {
+const Location = () => {
+  const { activeMode } = useActiveMode();
+
   return (
     <Container>
       <Wrapper>
@@ -28,13 +32,13 @@ const Location = ({ mode }: LocationProps) => {
         <Text>+2349134211583</Text>
       </Wrapper>
       <LogoBox>
-        <StyledLink href='#' mode={mode}>
+        <StyledLink href='#' mode={activeMode}>
           <Facebook>&nbsp;</Facebook>
         </StyledLink>
-        <StyledLink href='#' mode={mode}>
+        <StyledLink href='#' mode={activeMode}>
           <Twitter>&nbsp;</Twitter>
         </StyledLink>
-        <StyledLink href='#' mode={mode}>
+        <StyledLink href='#' mode={activeMode}>
           <Instagram>&nbsp;</Instagram>
         </StyledLink>
       </LogoBox>
@@ -103,7 +107,7 @@ const LogoBox = styled.div`
   gap: 0.5rem;
 `;
 
-const StyledLink = styled(Link)<LocationProps>`
+const StyledLink = styled(Link)<IMode>`
   width: 4rem;
   height: 4rem;
   text-decoration: none;
