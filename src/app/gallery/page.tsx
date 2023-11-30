@@ -1,17 +1,7 @@
-import dynamic from 'next/dynamic';
-
 import GalleryHero from '@/components/hero/GalleryHero';
 import GalleryLayout from '@/components/layouts/GalleryLayout';
-
-const PrintContact = dynamic(() => import('@/components/PrintContact'), {
-  ssr: false,
-});
-const ImageGallery = dynamic(
-  () => import('@/components/gallery/ImageGallery'),
-  {
-    ssr: false,
-  }
-);
+import PrintContact from '@/components/PrintContact';
+import ImageGallery from '@/components/gallery/ImageGallery';
 
 const Gallery = () => {
   return (
