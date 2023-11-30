@@ -6,7 +6,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return <Container>{children}</Container>;
 };
 
-const Container = styled.div`
+const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 
   display: grid;
