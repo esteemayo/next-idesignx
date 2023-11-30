@@ -1,15 +1,9 @@
-import dynamic from 'next/dynamic';
-
-import { galleryImages } from '@/data';
 import PrintHero from '@/components/hero/PrintHero';
 import PrintsLayout from '@/components/layouts/PrintsLayout';
+import Gallery from '@/components/gallery/Gallery';
+import PrintContact from '@/components/PrintContact';
 
-const Gallery = dynamic(() => import('@/components/gallery/Gallery'), {
-  ssr: false,
-});
-const PrintContact = dynamic(() => import('@/components/PrintContact'), {
-  ssr: false,
-});
+import { galleryImages } from '@/data';
 
 const Prints = () => {
   return (
