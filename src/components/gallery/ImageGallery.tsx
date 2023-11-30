@@ -29,7 +29,7 @@ const ImageGallery = () => {
 
   const handleClick = useCallback(
     (direction: string) => {
-      let newSlideIndex;
+      let newSlideIndex: number;
       const lastIndex = images.length - 1;
 
       if (direction === 'left') {
