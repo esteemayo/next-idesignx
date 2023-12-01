@@ -34,9 +34,7 @@ const Location = () => {
       </Wrapper>
       <LogoBox>
         <SocialIcon icon='facebook' />
-        <StyledLink href='#' mode={activeMode}>
-          <Twitter>&nbsp;</Twitter>
-        </StyledLink>
+        <SocialIcon icon='twitter' />
         <StyledLink href='#' mode={activeMode}>
           <Instagram>&nbsp;</Instagram>
         </StyledLink>
