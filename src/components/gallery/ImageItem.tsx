@@ -23,6 +23,11 @@ const ImageItem = ({ src, value, onClick }: ImageItemProps) => {
 
 const Container = styled.figure`
   cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    filter: brightness(0.85);
+  }
 `;
 
 const StyledImage = styled(CommonImage)``;
