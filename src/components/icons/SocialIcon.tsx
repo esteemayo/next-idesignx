@@ -17,7 +17,7 @@ const SocialIcon = ({ icon }: SocialIconProps) => {
   const { activeMode } = useActiveMode();
 
   return (
-    <Container href='#' mode={activeMode}>
+    <Container href='/' mode={activeMode}>
       <Icon icon={icon}>&nbsp;</Icon>
     </Container>
   );
