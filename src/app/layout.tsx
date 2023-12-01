@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Josefin_Sans, Nunito } from 'next/font/google';
 
-import Layout from '@/components/Layout';
+import Layout from '@/components/layouts/Layout';
 import ModeProvider from '@/providers/ModeProvider';
 
 import './globals.scss';
