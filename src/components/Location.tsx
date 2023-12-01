@@ -21,8 +21,8 @@ const Location = () => {
       </Wrapper>
       <Wrapper>
         <Heading>Phone number</Heading>
-        <Text>+2348136119251</Text>
-        <Text>+2349134211583</Text>
+        <Text>(+234) 813 611 9251</Text>
+        <Text>(+234) 913 421 1583</Text>
       </Wrapper>
       <LogoBox>
         <SocialIcon icon='facebook' />
