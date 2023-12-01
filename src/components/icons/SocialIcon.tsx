@@ -65,11 +65,11 @@ const Icon = styled.span<SocialIconProps>`
 
 const setBcgColor = (icon: string) => {
   if (icon === 'facebook') {
-    return '--clr-facebook';
+    return 'var(--clr-facebook)';
   } else if (icon === 'twitter') {
-    return '--clr-twitter';
+    return 'var(--clr-twitter)';
   } else if (icon === 'instagram') {
-    return '--clr-instagram';
+    return 'var(--clr-instagram)';
   }
 };
 
