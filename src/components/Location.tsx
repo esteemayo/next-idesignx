@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
+import SocialIcon from './icons/SocialIcon';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IMode {
@@ -32,9 +33,7 @@ const Location = () => {
         <Text>+2349134211583</Text>
       </Wrapper>
       <LogoBox>
-        <StyledLink href='#' mode={activeMode}>
-          <Facebook>&nbsp;</Facebook>
-        </StyledLink>
+        <SocialIcon icon='facebook' />
         <StyledLink href='#' mode={activeMode}>
           <Twitter>&nbsp;</Twitter>
         </StyledLink>
