@@ -49,7 +49,7 @@ const pulsate = keyframes`
   }
 
   to {
-    transform: scale(1.03) translateY(-1rem);
+    transform: scale(1.03) translateY(-10rem);
   }
 `;
 
@@ -65,7 +65,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
-  animation: ${pulsate} 1s infinite linear;
+  animation: ${pulsate} 3s infinite linear;
   animation-fill-mode: both;
   backface-visibility: hidden;
 
