@@ -11,8 +11,6 @@ interface IMode {
 }
 
 const Location = () => {
-  const { activeMode } = useActiveMode();
-
   return (
     <Container>
       <Wrapper>
