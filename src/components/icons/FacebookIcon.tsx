@@ -1,10 +1,14 @@
 'use client';
 
-import Link from 'next/link';
 import styled from 'styled-components';
+
 import { IconLink } from '../buttons/IconLink';
 
-const FacebookIcon = ({ mode }) => {
+interface FacebookIconProps {
+  mode: string;
+}
+
+const FacebookIcon = ({ mode }: FacebookIconProps) => {
   return (
     <IconLink href='#' mode={mode}>
       <Facebook>&nbsp;</Facebook>
