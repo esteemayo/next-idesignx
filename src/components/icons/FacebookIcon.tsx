@@ -1,30 +1,65 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { IconLink } from '../buttons/IconLink';
 
 interface FacebookIconProps {
+  icon: string;
   mode: string;
 }
 
-const FacebookIcon = ({ mode }: FacebookIconProps) => {
+interface ISpan {
+  icon: string;
+}
+
+const FacebookIcon = ({ icon, mode }: FacebookIconProps) => {
   return (
     <IconLink href='#' mode={mode}>
-      <Facebook>&nbsp;</Facebook>
+      <Icon icon={icon}>&nbsp;</Icon>
     </IconLink>
   );
 };
 
-const Facebook = styled.span`
+const Icon = styled.span<ISpan>`
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  background-color: var(--clr-facebook);
-  -webkit-mask-image: url(/svg/facebook.svg);
-  mask-image: url(/svg/facebook.svg);
+  background-color: ${({ icon }) => setBcgColor(icon)};
+  -webkit-mask-image: ${({ icon }) => setMaskImg(icon)};
+  mask-image: ${({ icon }) => setMaskImg(icon)};
+  background-image: ${({ icon }) =>
+    icon === 'instagram' &&
+    css`
+  linear-gradient(
+    to bottom left,
+    var(--clr-instagram-1),
+    var(--clr-instagram-2),
+    var(--clr-instagram-3)
+  )
+  `};
   -webkit-mask-size: cover;
   mask-size: cover;
 `;
+
+const setBcgColor = (icon: string) => {
+  if (icon === 'facebook') {
+    return '--clr-facebook';
+  } else if (icon === 'twitter') {
+    return '--clr-twitter';
+  } else if (icon === 'instagram') {
+    return '--clr-instagram';
+  }
+};
+
+const setMaskImg = (icon: string) => {
+  if (icon === 'facebook') {
+    return 'url(/svg/facebook.svg)';
+  } else if (icon === 'twitter') {
+    return 'url(/svg/twitter.svg)';
+  } else if (icon === 'instagram') {
+    return 'url(/svg/instagram.svg)';
+  }
+};
 
 export default FacebookIcon;
