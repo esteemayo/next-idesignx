@@ -6,10 +6,6 @@ import styled from 'styled-components';
 import SocialIcon from './icons/SocialIcon';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
-interface IMode {
-  mode: string;
-}
-
 const Location = () => {
   return (
     <Container>
