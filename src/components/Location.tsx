@@ -1,10 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import styled from 'styled-components';
 
 import SocialIcon from './icons/SocialIcon';
-import { useActiveMode } from '@/hooks/useActiveMode';
 
 const Location = () => {
   return (
