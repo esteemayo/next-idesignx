@@ -19,7 +19,7 @@ const Info = () => {
     <Container mode={activeMode}>
       <PhoneWrapper>
         <FontAwesomeIcon icon={faPhone} />
-        <PhoneNumber>+2348136119251</PhoneNumber>
+        <PhoneNumber>(+234) 813 611 9251</PhoneNumber>
       </PhoneWrapper>
       <EmailWrapper>
         <FontAwesomeIcon icon={faEnvelope} />
