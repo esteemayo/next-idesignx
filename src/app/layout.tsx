@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Josefin_Sans, Nunito } from 'next/font/google';
 
-import Layout from '@/components/layouts/Layout';
 import ModeProvider from '@/providers/ModeProvider';
+import SharedLayout from '@/components/layouts/SharedLayout';
 
 import './globals.scss';
 
@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${josefinSans.className} ${nunito.className}`}>
         <ModeProvider>
-          <Layout>{children}</Layout>
+          <SharedLayout>{children}</SharedLayout>
         </ModeProvider>
       </body>
     </html>
