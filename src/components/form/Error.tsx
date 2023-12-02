@@ -17,6 +17,10 @@ const Error = ({ message }: ErrorProps) => {
 };
 
 const ErrorMessage = styled.span`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   font-size: 1.3rem;
   color: var(--clr-red);
   margin-top: 1px;
