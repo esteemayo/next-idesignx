@@ -85,7 +85,7 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     cursor: default;
   }
 
