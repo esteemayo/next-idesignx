@@ -24,6 +24,11 @@ const ErrorMessage = styled.span`
   font-size: 1.3rem;
   color: var(--clr-red);
   margin-top: 1px;
+
+  svg {
+    font-size: var(--default-font-size);
+    fill: currentColor;
+  }
 `;
 
 export default Error;
