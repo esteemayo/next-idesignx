@@ -47,7 +47,7 @@ const initialState = {
 
 const RegisterModal = () => {
   const isOpen = useRegisterModal((state) => state.isOpen);
-  const loginModal = useLoginModal();
+  const onOpen = useLoginModal((state) => state.onOpen);
   const onClose = useRegisterModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
@@ -65,8 +65,9 @@ const RegisterModal = () => {
 
   const handleToggle = useCallback(() => {
     onClose();
-    loginModal.onOpen();
-  }, [loginModal, onClose]);
+    setErrors({});
+    onOpen();
+  }, [onClose, onOpen]);
 
   const handleClose = useCallback(() => {
     onClose();
