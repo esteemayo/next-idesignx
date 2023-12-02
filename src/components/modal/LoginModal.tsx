@@ -1,7 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
-
 import Modal from './Modal';
 import ToggleAccount from '../ToggleAccount';
 import Heading from '../Heading';
