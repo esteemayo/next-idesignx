@@ -16,7 +16,12 @@ const ImageItem = ({ src, value, onClick }: ImageItemProps) => {
       className={galleryClass}
       onClick={() => onClick(value as number)}
     >
-      <StyledImage src={src} width={270} height={140} alt='' />
+      <StyledImage
+        src={src}
+        width={270}
+        height={140}
+        alt={`Gallery image ${value + 1}`}
+      />
     </Container>
   );
 };
