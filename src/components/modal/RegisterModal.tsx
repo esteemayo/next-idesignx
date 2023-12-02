@@ -185,7 +185,7 @@ const RegisterModal = () => {
   let bodyContent;
 
   bodyContent = (
-    <Container>
+    <>
       <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
       <Input
         name='name'
@@ -204,7 +204,7 @@ const RegisterModal = () => {
         onChange={handleChange}
         error={errors.email}
       />
-    </Container>
+    </>
   );
 
   if (step === STEPS.DESC) {
