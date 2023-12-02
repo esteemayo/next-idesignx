@@ -27,6 +27,7 @@ const Container = styled.section<PrintContactProps>`
   grid-template-rows: repeat(3, 1fr);
 
   margin: 8rem 0;
+  background-color: #ddd;
   color: var(--clr-white);
   background-image: ${({ bcg }) =>
     bcg &&
