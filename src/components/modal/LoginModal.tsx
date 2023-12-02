@@ -133,6 +133,4 @@ const LoginModal = () => {
   );
 };
 
-const Container = styled.div``;
-
 export default LoginModal;
