@@ -181,7 +181,7 @@ const RegisterModal = () => {
     }
   }, [step]);
 
-  let bodyContent;
+  let bodyContent: JSX.Element;
 
   bodyContent = (
     <>
