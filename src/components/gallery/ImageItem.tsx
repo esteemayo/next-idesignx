@@ -22,6 +22,7 @@ const ImageItem = ({ src, value, onClick }: ImageItemProps) => {
 };
 
 const Container = styled.figure`
+  background-color: #ddd;
   cursor: pointer;
   transition: all 0.2s;
 
