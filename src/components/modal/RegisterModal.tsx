@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import { useCallback, useMemo, useState } from 'react';
 
 import LoginOptions from '../LoginOptions';
