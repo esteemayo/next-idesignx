@@ -1,13 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
+import ErrorOutline from '@mui/icons-material/ErrorOutline';
 
 interface ErrorProps {
   message?: string;
 }
 
 const Error = ({ message }: ErrorProps) => {
-  return <ErrorMessage>{message}</ErrorMessage>;
+  return (
+    <ErrorMessage>
+      <ErrorOutline />
+      {message}
+    </ErrorMessage>
+  );
 };
 
 const ErrorMessage = styled.span`
