@@ -260,7 +260,7 @@ const RegisterModal = () => {
 
   if (step === STEPS.AVATAR) {
     bodyContent = (
-      <Container>
+      <>
         <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
         <Select
           name='gender'
@@ -271,7 +271,7 @@ const RegisterModal = () => {
           error={errors.gender}
         />
         <UploadInput id='file' label='Upload avatar' onChange={handleFile} />
-      </Container>
+      </>
     );
   }
 
