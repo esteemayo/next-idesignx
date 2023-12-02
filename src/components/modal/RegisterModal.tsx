@@ -276,7 +276,7 @@ const RegisterModal = () => {
   }
 
   const footerContent = (
-    <Container>
+    <>
       <Line />
       <LoginOptions />
       <ToggleAccount
@@ -284,7 +284,7 @@ const RegisterModal = () => {
         label='Log in'
         onClick={handleToggle}
       />
-    </Container>
+    </>
   );
 
   return (
