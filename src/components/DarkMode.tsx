@@ -31,6 +31,7 @@ const DarkMode = () => {
         <Button type='button' disabled={!mode} onClick={light}>
           <LightModeOutlinedIcon />
         </Button>
+        <Span>&nbsp;</Span>
         <Button type='button'>
           {screenSize <= 768 ? (
             <SmartphoneOutlinedIcon />
@@ -38,6 +39,7 @@ const DarkMode = () => {
             <DesktopWindowsOutlinedIcon />
           )}
         </Button>
+        <Span>&nbsp;</Span>
         <Button type='button' disabled={mode} onClick={dark}>
           <DarkModeOutlinedIcon />
         </Button>
@@ -107,5 +109,11 @@ const Button = styled.button`
     }
   }
 `;
+
+const Span = styled.span`
+  width: 0.1px;
+  height: 100%;
+  background-color: var(--clr-purple-light-2);
+`
 
 export default DarkMode;
