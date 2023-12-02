@@ -33,12 +33,12 @@ const Container = styled.section`
 const Wrapper = styled.div`
   padding: 10rem 7rem;
   background-color: #ddd;
+  color: var(--clr-white);
   background-image: linear-gradient(
       rgba(153, 153, 153, 0.5),
       rgba(153, 153, 153, 0.5)
     ),
     url(/img/woman/woman-2.jpg);
-  color: var(--clr-white);
   background-size: cover;
   background-position: center;
 
