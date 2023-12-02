@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const CommonHero = styled.header`
+  background-color: #ddd;
   color: var(--clr-white);
   background-size: cover;
   background-position: center;
