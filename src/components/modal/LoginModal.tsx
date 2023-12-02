@@ -85,7 +85,7 @@ const LoginModal = () => {
   );
 
   const bodyContent = (
-    <Container>
+    <>
       <Heading title='Welcome back' subtitle='Log into your account!' />
       <Input
         name='email'
@@ -105,11 +105,11 @@ const LoginModal = () => {
         onChange={handleChange}
         error={errors.password}
       />
-    </Container>
+    </>
   );
 
   const footerContent = (
-    <Container>
+    <>
       <Line />
       <LoginOptions />
       <ToggleAccount
@@ -117,7 +117,7 @@ const LoginModal = () => {
         label='Create an account'
         onClick={handleToggle}
       />
-    </Container>
+    </>
   );
 
   return (
