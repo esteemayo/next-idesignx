@@ -234,7 +234,7 @@ const RegisterModal = () => {
 
   if (step === STEPS.CREDENTIALS) {
     bodyContent = (
-      <Container>
+      <>
         <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
         <Input
           name='password'
@@ -254,7 +254,7 @@ const RegisterModal = () => {
           onChange={handleChange}
           error={errors.passwordConfirm}
         />
-      </Container>
+      </>
     );
   }
 
