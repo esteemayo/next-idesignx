@@ -114,6 +114,6 @@ const Span = styled.span`
   width: 0.1px;
   height: 100%;
   background-color: var(--clr-purple-light-2);
-`
+`;
 
 export default DarkMode;
