@@ -32,7 +32,7 @@ const Container = styled.section`
 
 const Wrapper = styled.div`
   padding: 10rem 7rem;
-  background-color: #ddd;
+  background-color: var(--clr-gray-light-3);
   color: var(--clr-white);
   background-image: linear-gradient(
       rgba(153, 153, 153, 0.5),
