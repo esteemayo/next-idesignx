@@ -37,13 +37,13 @@ const initialError: IErrors = {
 
 const LoginModal = () => {
   const isOpen = useLoginModal((state) => state.isOpen);
-  const registerModal = useRegisterModal();
+  const onOpen = useRegisterModal((state) => state.onOpen);
   const onClose = useLoginModal((state) => state.onClose);
 
   const handleToggle = () => {
     onClose();
     setErrors({});
-    registerModal.onOpen();
+    onOpen();
   };
 
   const handleClose = () => {
