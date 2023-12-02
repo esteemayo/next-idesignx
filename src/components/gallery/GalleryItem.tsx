@@ -19,7 +19,7 @@ const GalleryItem = ({ src }: GalleryItemProps) => {
 const Container = styled.figure`
   width: 100%;
   height: 100%;
-  background-color: #ddd;
+  background-color: var(--clr-gray-light-3);
 `;
 
 const StyledImage = styled(CommonImage)`
