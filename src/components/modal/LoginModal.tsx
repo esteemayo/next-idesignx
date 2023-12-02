@@ -40,10 +40,11 @@ const LoginModal = () => {
   const registerModal = useRegisterModal();
   const onClose = useLoginModal((state) => state.onClose);
 
-  const handleToggle = useCallback(() => {
+  const handleToggle = () => {
     onClose();
+    setErrors({});
     registerModal.onOpen();
-  }, [onClose, registerModal]);
+  };
 
   const handleClose = () => {
     onClose();
