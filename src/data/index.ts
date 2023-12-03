@@ -330,3 +330,21 @@ export const galleryItems: GalleryItem = [
     img: '/img/gallery/gal-14.jpg',
   },
 ];
+
+export const contactDetails = [
+  {
+    title: 'Our location',
+    address: '123 Lagos street, Lagos',
+    state: 'state, Lagos Nigeria',
+  },
+  {
+    title: 'Email',
+    email1: 'project@xteemdesigns.com',
+    email2: 'esteemdesign19@gmail.com',
+  },
+  {
+    title: 'Phone number',
+    phone1: '(+234) 813 611 9251',
+    phone2: '(+234) 913 421 1583',
+  },
+];
