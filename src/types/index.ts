@@ -222,10 +222,10 @@ export interface ToggleAccountProps {
 
 export interface ContactDetailProps {
   title: string;
-  address: string;
-  state: string;
-  email1: string;
-  email2: string;
-  phone1: string;
-  phone2: string;
+  address?: string;
+  state?: string;
+  email1?: string;
+  email2?: string;
+  phone1?: string;
+  phone2?: string;
 }
