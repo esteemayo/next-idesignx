@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 import { StoryImageProps } from '@/types';
-import { CommonImage } from './common/CommonImage';
+import { CommonImage } from '../common/CommonImage';
 
 const StoryImage = ({ images }: StoryImageProps) => {
   return (
