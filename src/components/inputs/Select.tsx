@@ -1,8 +1,8 @@
 'use client';
 
 import { FormGroup } from '../form/FormGroup';
-import Error from '../form/ErrorMessage';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
+import ErrorMessage from '../form/ErrorMessage';
 
 import { GenderList } from '@/types';
 
@@ -27,7 +27,7 @@ const Select = ({ name, label, options, error, ...rest }: SelectProps) => {
           );
         })}
       </SelectStyled>
-      {error && <Error message={error} />}
+      {error && <ErrorMessage message={error} />}
     </FormGroup>
   );
 };
