@@ -15,6 +15,7 @@ interface ITextArea {
 export const StyledTextArea = styled(CommonTextArea)<ITextArea>`
   border: none;
   background-color: ${({ path, theme }) => setBgColor(path, theme)};
+  border-bottom: 3px solid transparent;
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
 
