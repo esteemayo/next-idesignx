@@ -51,10 +51,6 @@ const Container = styled.section`
   }
 `;
 
-const Wrapper = styled.div`
-  margin-bottom: 3rem;
-`;
-
 const LogoBox = styled.div`
   display: flex;
   align-items: center;
