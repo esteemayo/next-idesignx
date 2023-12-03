@@ -1,7 +1,7 @@
 'use client';
 
 import { InputStyled } from '../form/InputStyled';
-import Error from '../form/ErrorMessage';
+import ErrorMessage from '../form/ErrorMessage';
 import { StyledLabel } from '../form/StyledLabel';
 import { FormGroup } from '../form/FormGroup';
 
@@ -22,7 +22,7 @@ const Input = ({ name, label, error, ...rest }: InputProps) => {
         {label}
       </StyledLabel>
       <InputStyled {...rest} id={name} name={name} error={error} />
-      {error && <Error message={error} />}
+      {error && <ErrorMessage message={error} />}
     </FormGroup>
   );
 };
