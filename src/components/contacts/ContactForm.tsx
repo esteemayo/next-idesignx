@@ -19,8 +19,6 @@ const initialState = {
 const ContactForm = () => {
   const [data, setData] = useState(initialState);
 
-  const { name, email, subject, message } = data;
-
   const handleChange: React.ChangeEventHandler<
     HTMLInputElement | HTMLTextAreaElement
   > = useCallback(({ target: input }) => {
@@ -37,6 +35,8 @@ const ContactForm = () => {
     },
     [data]
   );
+
+  const { name, email, subject, message } = data;
 
   return (
     <Container>
