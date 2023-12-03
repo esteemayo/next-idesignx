@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 interface ILabel {
-  error?: string | undefined;
+  error?: string;
   mode: string;
 }
 
 interface IColor {
-  (error: string | undefined, mode: string): string;
+  (error?: string, mode: string): string;
 }
 
 export const StyledLabel = styled.label<ILabel>`
@@ -27,7 +27,7 @@ export const StyledLabel = styled.label<ILabel>`
   }
 `;
 
-const setColor: IColor = (error: string | undefined, mode: string): string => {
+const setColor: IColor = (error?: string, mode: string): string => {
   return error
     ? 'var(--clr-red)'
     : mode === 'true'
