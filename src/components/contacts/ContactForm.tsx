@@ -3,11 +3,11 @@
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
-import FormInput from './inputs/FormInput';
-import FormTextArea from './inputs/FormTextArea';
+import FormInput from '../inputs/FormInput';
+import FormTextArea from '../inputs/FormTextArea';
 
-import Form from './form/Form';
-import Button from './buttons/Button';
+import Form from '../form/Form';
+import Button from '../buttons/Button';
 
 const initialState = {
   name: '',
