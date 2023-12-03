@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import ContactHero from '@/components/hero/ContactHero';
-import Location from '@/components/Location';
+import ContactInfo from '@/components/ContactInfo';
 import ContactLayout from '@/components/layouts/ContactLayout';
 import ContactForm from '@/components/ContactForm';
 
@@ -14,7 +14,7 @@ const Contact = () => {
     <ContactLayout>
       <ContactHero />
       <ContactForm />
-      <Location />
+      <ContactInfo />
     </ContactLayout>
   );
 };
