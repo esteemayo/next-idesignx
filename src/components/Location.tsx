@@ -66,16 +66,6 @@ const Heading = styled.h3`
   }
 `;
 
-const Text = styled.p`
-  font-size: 1.8rem;
-
-  @media only screen and (max-width: 56.25em) {
-    font-size: 1.65rem;
-  }
-`;
-
-const Br = styled.br``;
-
 const LogoBox = styled.div`
   display: flex;
   align-items: center;
