@@ -6,6 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import {
   Brands,
   CardItems,
+  ContactDetails,
   GalleryImage,
   GalleryItem,
   MenuItem,
@@ -331,7 +332,7 @@ export const galleryItems: GalleryItem = [
   },
 ];
 
-export const contactDetails = [
+export const contactDetails: ContactDetails = [
   {
     id: 1,
     title: 'Our location',
