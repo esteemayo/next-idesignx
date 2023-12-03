@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 
-import ContactDetail from './ContactDetail';
-import SocialIcon from './icons/SocialIcon';
+import ContactDetail from '../ContactDetail';
+import SocialIcon from '../icons/SocialIcon';
 
 import { contactDetails } from '@/data';
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import ContactHero from '@/components/hero/ContactHero';
-import ContactInfo from '@/components/ContactInfo';
+import ContactInfo from '@/components/contacts/ContactInfo';
 import ContactLayout from '@/components/layouts/ContactLayout';
 import ContactForm from '@/components/ContactForm';
 
