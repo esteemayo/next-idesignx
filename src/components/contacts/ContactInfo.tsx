@@ -2,10 +2,11 @@
 
 import styled from 'styled-components';
 
+import ContactIcons from './ContactIcons';
 import ContactDetail from '../ContactDetail';
-import SocialIcon from '../icons/SocialIcon';
 
 import { contactDetails } from '@/data';
+import SocialIcon from '../icons/SocialIcon';
 
 const ContactInfo = () => {
   return (
@@ -13,11 +14,7 @@ const ContactInfo = () => {
       {contactDetails.map((item) => {
         return <ContactDetail key={item.id} {...item} />;
       })}
-      <LogoBox>
-        <SocialIcon icon='facebook' />
-        <SocialIcon icon='twitter' />
-        <SocialIcon icon='instagram' />
-      </LogoBox>
+      <ContactIcons />
     </Container>
   );
 };
