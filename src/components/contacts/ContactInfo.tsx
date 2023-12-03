@@ -6,7 +6,6 @@ import ContactIcons from './ContactIcons';
 import ContactDetail from '../ContactDetail';
 
 import { contactDetails } from '@/data';
-import SocialIcon from '../icons/SocialIcon';
 
 const ContactInfo = () => {
   return (
