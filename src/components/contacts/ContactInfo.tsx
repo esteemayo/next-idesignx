@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 import ContactIcons from './ContactIcons';
-import ContactDetail from '../ContactDetail';
+import ContactDetail from './ContactDetail';
 
 import { contactDetails } from '@/data';
 
