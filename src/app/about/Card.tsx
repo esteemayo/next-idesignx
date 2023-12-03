@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 
-import Icon from '@/components/Icon';
 import { StoryCardProps } from '@/types';
+import Icon from '@/components/icons/Icon';
 
 const Card = ({ icon, desc, title }: StoryCardProps) => {
   return (
