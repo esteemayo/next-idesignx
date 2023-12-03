@@ -10,8 +10,8 @@ import { contactDetails } from '@/data';
 const Location = () => {
   return (
     <Container>
-      {contactDetails.map(item => {
-        return <ContactDetail key={item.title} {...item} />
+      {contactDetails.map((item) => {
+        return <ContactDetail key={item.id} {...item} />;
       })}
       <LogoBox>
         <SocialIcon icon='facebook' />
