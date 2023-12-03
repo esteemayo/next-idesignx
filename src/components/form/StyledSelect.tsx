@@ -14,7 +14,7 @@ interface ISelect {
 
 export const StyledSelect = styled(CommonSelect)<ISelect>`
   border: none;
-  background-color: ${({ path, theme }) => setBgColor(path, theme)};
+  background-color: ${({ theme, path }) => setBgColor(theme, path)};
   color: var(--clr-gray-dark-2);
   border: 3px solid transparent;
 
@@ -31,6 +31,6 @@ export const Option = styled.option`
   letter-spacing: 0.5rem;
 `;
 
-const setBgColor = (path: string | undefined, theme: ThemeProps) => {
+const setBgColor = (theme: ThemeProps, path?: string) => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
