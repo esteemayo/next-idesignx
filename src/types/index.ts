@@ -220,7 +220,19 @@ export interface ToggleAccountProps {
   onClick(): void;
 }
 
+export type ContactDetails = {
+  id: number;
+  title: string;
+  address?: string;
+  state?: string;
+  email1?: string;
+  email2?: string;
+  phone1?: string;
+  phone2?: string;
+}[];
+
 export interface ContactDetailProps {
+  id: number;
   title: string;
   address?: string;
   state?: string;
