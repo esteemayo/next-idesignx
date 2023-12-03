@@ -41,6 +41,6 @@ export const StyledTextArea = styled(CommonTextArea)<ITextArea>`
   }
 `;
 
-const setBgColor = (path: string | undefined, theme: ThemeProps) => {
+const setBgColor = (path?: string, theme: ThemeProps) => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
