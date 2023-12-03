@@ -15,7 +15,7 @@ interface IStyledInput {
 export const StyledInput = styled(CommonInput)<IStyledInput>`
   border: none;
   background-color: ${({ path, theme }) => setBgColor(path, theme)};
-  border: 3px solid transparent;
+  border-bottom: 3px solid transparent;
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
 
