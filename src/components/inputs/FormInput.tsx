@@ -2,7 +2,7 @@
 
 import { FormGroup } from '../form/FormGroup';
 import { Label } from '../form/Label';
-import { StyledInput } from '../form/StyleInput';
+import { StyledInput } from '../form/StyledInput';
 
 interface FormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
