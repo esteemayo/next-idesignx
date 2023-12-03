@@ -48,11 +48,4 @@ const Container = styled.section`
   }
 `;
 
-const LogoBox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 0.5rem;
-`;
-
 export default ContactInfo;
