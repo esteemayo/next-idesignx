@@ -7,7 +7,7 @@ import SocialIcon from './icons/SocialIcon';
 
 import { contactDetails } from '@/data';
 
-const Location = () => {
+const ContactInfo = () => {
   return (
     <Container>
       {contactDetails.map((item) => {
@@ -58,4 +58,4 @@ const LogoBox = styled.div`
   gap: 0.5rem;
 `;
 
-export default Location;
+export default ContactInfo;
