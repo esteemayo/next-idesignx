@@ -2,6 +2,8 @@
 
 import styled from 'styled-components';
 
+import { ContactDetailProps } from '@/types';
+
 const ContactDetail = ({
   title,
   address,
@@ -10,7 +12,7 @@ const ContactDetail = ({
   email2,
   phone1,
   phone2,
-}) => {
+}: ContactDetailProps) => {
   return (
     <Container>
       <Heading>{title}</Heading>
