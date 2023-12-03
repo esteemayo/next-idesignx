@@ -1,7 +1,7 @@
 'use client';
 
 import { FormGroup } from '../form/FormGroup';
-import Error from '../form/Error';
+import Error from '../form/ErrorMessage';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
 
 import { GenderList } from '@/types';

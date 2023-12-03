@@ -1,7 +1,7 @@
 'use client';
 
 import { InputStyled } from '../form/InputStyled';
-import Error from '../form/Error';
+import Error from '../form/ErrorMessage';
 import { StyledLabel } from '../form/StyledLabel';
 import { FormGroup } from '../form/FormGroup';
 

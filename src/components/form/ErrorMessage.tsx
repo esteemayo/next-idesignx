@@ -7,16 +7,16 @@ interface ErrorProps {
   message?: string;
 }
 
-const Error = ({ message }: ErrorProps) => {
+const ErrorMessage = ({ message }: ErrorProps) => {
   return (
-    <ErrorMessage>
+    <Container>
       <ErrorOutline />
       {message}
-    </ErrorMessage>
+    </Container>
   );
 };
 
-const ErrorMessage = styled.span`
+const Container = styled.span`
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -31,4 +31,4 @@ const ErrorMessage = styled.span`
   }
 `;
 
-export default Error;
+export default ErrorMessage;
