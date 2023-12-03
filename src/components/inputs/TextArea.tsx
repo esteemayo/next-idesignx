@@ -1,9 +1,9 @@
 'use client';
 
 import { StyledLabel } from '../form/StyledLabel';
-import Error from '../form/ErrorMessage';
-import { TextAreaStyled } from '../form/TextAreaStyled';
 import { FormGroup } from '../form/FormGroup';
+import { TextAreaStyled } from '../form/TextAreaStyled';
+import ErrorMessage from '../form/ErrorMessage';
 
 import { useActiveMode } from '@/hooks/useActiveMode';
 
@@ -23,7 +23,7 @@ const TextArea = ({ name, label, error, ...rest }: TextAreaProps) => {
         {label}
       </StyledLabel>
       <TextAreaStyled {...rest} id={name} name={name} error={error} />
-      {error && <Error message={error} />}
+      {error && <ErrorMessage message={error} />}
     </FormGroup>
   );
 };
