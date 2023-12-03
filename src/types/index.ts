@@ -219,3 +219,13 @@ export interface ToggleAccountProps {
   label: string;
   onClick(): void;
 }
+
+export interface ContactDetailProps {
+  title: string;
+  address: string;
+  state: string;
+  email1: string;
+  email2: string;
+  phone1: string;
+  phone2: string;
+}
