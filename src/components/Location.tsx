@@ -2,28 +2,17 @@
 
 import styled from 'styled-components';
 
+import ContactDetail from './ContactDetail';
 import SocialIcon from './icons/SocialIcon';
+
+import { contactDetails } from '@/data';
 
 const Location = () => {
   return (
     <Container>
-      <Wrapper>
-        <Heading>Our location</Heading>
-        <Text>
-          123 Lagos street, Lagos <Br />
-          state, Lagos Nigeria
-        </Text>
-      </Wrapper>
-      <Wrapper>
-        <Heading>Email</Heading>
-        <Text>project@xteemdesigns.com</Text>
-        <Text>esteemdesign19@gmail.com</Text>
-      </Wrapper>
-      <Wrapper>
-        <Heading>Phone number</Heading>
-        <Text>(+234) 813 611 9251</Text>
-        <Text>(+234) 913 421 1583</Text>
-      </Wrapper>
+      {contactDetails.map(item => {
+        return <ContactDetail key={item.title} {...item} />
+      })}
       <LogoBox>
         <SocialIcon icon='facebook' />
         <SocialIcon icon='twitter' />
