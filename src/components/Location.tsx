@@ -55,17 +55,6 @@ const Wrapper = styled.div`
   margin-bottom: 3rem;
 `;
 
-const Heading = styled.h3`
-  text-transform: capitalize;
-  font-weight: lighter;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-
-  @media only screen and (max-width: 56.25em) {
-    font-size: 1.85rem;
-  }
-`;
-
 const LogoBox = styled.div`
   display: flex;
   align-items: center;
