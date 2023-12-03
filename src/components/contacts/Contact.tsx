@@ -3,12 +3,12 @@
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
-import FormSelect from './inputs/FormSelect';
-import FormInput from './inputs/FormInput';
-import FormTextArea from './inputs/FormTextArea';
+import FormSelect from '../inputs/FormSelect';
+import FormInput from '../inputs/FormInput';
+import FormTextArea from '../inputs/FormTextArea';
 
-import Form from './form/Form';
-import Button from './buttons/Button';
+import Form from '../form/Form';
+import Button from '../buttons/Button';
 
 import { selectInputs } from '@/data/formData';
 
