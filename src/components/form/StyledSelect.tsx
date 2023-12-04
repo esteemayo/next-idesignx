@@ -1,12 +1,8 @@
 'use client';
 
-import styled from 'styled-components';
-import { CommonSelect } from '../common/CommonSelect';
+import styled, { DefaultTheme } from 'styled-components';
 
-type ThemeProps = {
-  bgInput?: string;
-  bgDesignInput?: string;
-};
+import { CommonSelect } from '../common/CommonSelect';
 
 interface ISelect {
   path?: string;
@@ -31,6 +27,6 @@ export const Option = styled.option`
   letter-spacing: 0.5rem;
 `;
 
-const setBgColor = (theme: ThemeProps, path?: string) => {
+const setBgColor = (theme: DefaultTheme, path?: string) => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
