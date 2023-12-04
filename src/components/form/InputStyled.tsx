@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+
 import { CommonInput } from '../common/CommonInput';
 
 interface IInput {
