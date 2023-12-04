@@ -19,7 +19,7 @@ const ProductImage = ({ img }: ProductImageProps) => {
 const Wrapper = styled.figure`
   width: 100%;
   height: 100%;
-  background-color: var(--clr-gray-light-3);
+  background-color: ${({ theme }) => theme.bgImg};
 `;
 
 const StyledImage = styled(CommonImage)``;
