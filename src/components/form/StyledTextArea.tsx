@@ -5,11 +5,6 @@ import styled, { DefaultTheme } from 'styled-components';
 import { Label } from './Label';
 import { CommonTextArea } from '../common/CommonTextArea';
 
-type ThemeProps = {
-  bgInput?: string;
-  bgDesignInput?: string;
-};
-
 interface ITextArea {
   path?: string;
 }
