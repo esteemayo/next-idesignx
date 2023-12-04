@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { produce } from 'immer';
 
 interface DesignModalStore {
   isOpen: boolean;
@@ -12,7 +13,21 @@ interface DesignModalStore {
 export const useDesignModal = create<DesignModalStore>()(
   devtools((set) => ({
     isOpen: false,
-    onOpen: () => set(() => ({ isOpen: true }), false, 'openDesignModal'),
-    onClose: () => set(() => ({ isOpen: false }), false, 'closeDesignModal'),
+    onOpen: () =>
+      set(
+        produce((state) => {
+          state.isOpen = true;
+        }),
+        false,
+        'openDesignModal'
+      ),
+    onClose: () =>
+      set(
+        produce((state) => {
+          state.isOpen = false;
+        }),
+        false,
+        'closeDesignModal'
+      ),
   }))
 );
