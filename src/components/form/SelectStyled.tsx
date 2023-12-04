@@ -1,8 +1,10 @@
+'use client';
+
 import styled from 'styled-components';
 import { CommonSelect } from '../common/CommonSelect';
 
 interface ISelect {
-  error?: string | undefined;
+  error?: string;
 }
 
 export const SelectStyled = styled(CommonSelect)<ISelect>`
@@ -18,14 +20,14 @@ export const StyledOption = styled.option`
   letter-spacing: 0.5rem;
 `;
 
-const setColor = (error: string | undefined) => {
+const setColor = (error?: string) => {
   return error ? 'var(--clr-red)' : 'var(--clr-gray-dark-2)';
 };
 
-const setBorderColor = (error: string | undefined) => {
+const setBorderColor = (error?: string) => {
   return error ? 'var(--clr-red)' : '#aaa';
 };
 
-const setOulineColor = (error: string | undefined) => {
+const setOulineColor = (error?: string) => {
   return error ? 'var(--clr-red)' : '#979797';
 };
