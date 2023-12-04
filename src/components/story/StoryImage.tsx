@@ -26,7 +26,7 @@ const StoryImage = ({ images }: StoryImageProps) => {
 };
 
 const StyledImage = styled(CommonImage)`
-  background-color: var(--clr-gray-light-3);
+  background-color: ${({ theme }) => theme.bgImg};
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
   z-index: 1000;
   outline-offset: 2rem;
