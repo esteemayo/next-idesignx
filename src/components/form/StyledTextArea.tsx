@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 
 import { Label } from './Label';
 import { CommonTextArea } from '../common/CommonTextArea';
@@ -16,7 +16,7 @@ interface ITextArea {
 
 export const StyledTextArea = styled(CommonTextArea)<ITextArea>`
   border: none;
-  background-color: ${({ path, theme }) => setBgColor(path, theme)};
+  background-color: ${({ theme, path }) => setBgColor(theme, path)};
   border-bottom: 3px solid transparent;
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
@@ -43,6 +43,6 @@ export const StyledTextArea = styled(CommonTextArea)<ITextArea>`
   }
 `;
 
-const setBgColor = (path?: string, theme: ThemeProps) => {
+const setBgColor = (theme: DefaultTheme, path?: string) => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
