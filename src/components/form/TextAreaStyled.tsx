@@ -1,8 +1,11 @@
+'use client';
+
 import styled from 'styled-components';
+
 import { CommonTextArea } from '../common/CommonTextArea';
 
 interface ITextArea {
-  error?: string | undefined;
+  error?: string;
 }
 
 export const TextAreaStyled = styled(CommonTextArea)<ITextArea>`
@@ -17,18 +20,18 @@ export const TextAreaStyled = styled(CommonTextArea)<ITextArea>`
   }
 `;
 
-const setBorderColor = (error: string | undefined) => {
+const setBorderColor = (error?: string) => {
   return error ? 'var(--clr-red)' : '#aaa';
 };
 
-const setOutlineColor = (error: string | undefined) => {
+const setOutlineColor = (error?: string) => {
   return error ? 'var(--clr-red)' : '#979797';
 };
 
-const setCaretColor = (error: string | undefined) => {
+const setCaretColor = (error?: string) => {
   return error ? 'var(--clr-red)' : 'var(--clr-purple-light-3)';
 };
 
-const setPlaceholderColor = (error: string | undefined) => {
+const setPlaceholderColor = (error?: string) => {
   return error ? 'var(--clr-red)' : '#bbb';
 };
