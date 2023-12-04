@@ -8,7 +8,7 @@ interface ILabel {
 }
 
 interface IColor {
-  (error?: string, mode: string): string;
+  (mode: string, error?: string): string;
 }
 
 export const StyledLabel = styled.label<ILabel>`
@@ -19,17 +19,17 @@ export const StyledLabel = styled.label<ILabel>`
   width: 30%;
   font-weight: 500;
   font-size: 1.4rem;
-  color: ${({ error, mode }) => setColor(error, mode)};
+  color: ${({ mode, error }) => setColor(mode, error)};
   margin-bottom: 1rem;
 
   &::after {
     content: '*';
     display: inline-block;
-    color: ${({ error, mode }) => setColor(error, mode)};
+    color: ${({ mode, error }) => setColor(mode, error)};
   }
 `;
 
-const setColor: IColor = (error?: string, mode: string): string => {
+const setColor: IColor = (mode: string, error?: string): string => {
   return error
     ? 'var(--clr-red)'
     : mode === 'true'
