@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { produce } from 'immer';
 
 interface MenuStore {
   isOpen: boolean;
@@ -12,7 +13,21 @@ interface MenuStore {
 export const useMenu = create<MenuStore>()(
   devtools((set) => ({
     isOpen: false,
-    onOpen: () => set(() => ({ isOpen: true }), false, 'openMenu'),
-    onClose: () => set(() => ({ isOpen: false }), false, 'closeMenu'),
+    onOpen: () =>
+      set(
+        produce((state) => {
+          state.isOpen = true;
+        }),
+        false,
+        'openMenu'
+      ),
+    onClose: () =>
+      set(
+        produce((state) => {
+          state.isOpen = false;
+        }),
+        false,
+        'closeMenu'
+      ),
   }))
 );
