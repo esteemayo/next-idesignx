@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { produce } from 'immer';
 
 interface ImageModalStore {
   isOpen: boolean;
@@ -12,7 +13,21 @@ interface ImageModalStore {
 export const useImageModal = create<ImageModalStore>()(
   devtools((set) => ({
     isOpen: false,
-    onOpen: () => set(() => ({ isOpen: true }), false, 'openImageModal'),
-    onClose: () => set(() => ({ isOpen: false }), false, 'closeImageModal'),
+    onOpen: () =>
+      set(
+        produce((state) => {
+          state.isOpen = true;
+        }),
+        false,
+        'openImageModal'
+      ),
+    onClose: () =>
+      set(
+        produce((state) => {
+          state.isOpen = false;
+        }),
+        false,
+        'closeImageModal'
+      ),
   }))
 );
