@@ -27,6 +27,6 @@ export const Option = styled.option`
   letter-spacing: 0.5rem;
 `;
 
-const setBgColor = (theme: DefaultTheme, path?: string) => {
+const setBgColor = (theme: DefaultTheme, path?: string): DefaultTheme => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
