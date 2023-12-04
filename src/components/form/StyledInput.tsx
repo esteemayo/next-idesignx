@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 
 import { Label } from './Label';
 import { CommonInput } from '../common/CommonInput';
@@ -41,6 +41,6 @@ export const StyledInput = styled(CommonInput)<IStyledInput>`
   }
 `;
 
-const setBgColor = (theme: ThemeProps, path?: string) => {
+const setBgColor = (theme: DefaultTheme, path?: string) => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
