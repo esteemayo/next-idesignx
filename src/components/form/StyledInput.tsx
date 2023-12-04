@@ -14,7 +14,7 @@ interface IStyledInput {
 
 export const StyledInput = styled(CommonInput)<IStyledInput>`
   border: none;
-  background-color: ${({ path, theme }) => setBgColor(path, theme)};
+  background-color: ${({ theme, path }) => setBgColor(theme, path)};
   border-bottom: 3px solid transparent;
   outline-color: var(--clr-purple-light-3);
   caret-color: ${({ theme }) => theme.caret};
@@ -41,6 +41,6 @@ export const StyledInput = styled(CommonInput)<IStyledInput>`
   }
 `;
 
-const setBgColor = (path?: string, theme: ThemeProps) => {
+const setBgColor = (theme: ThemeProps, path?: string) => {
   return path === 'design' ? theme.bgDesignInput : theme.bgInput;
 };
