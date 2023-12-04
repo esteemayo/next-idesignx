@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
+import { produce } from 'immer';
 
 interface DarkModeStore {
   mode: boolean;
@@ -13,10 +14,30 @@ export const useDarkMode = create<DarkModeStore>()(
     persist(
       (set) => ({
         mode: false,
-        dark: () => set(() => ({ mode: true }), false, 'darkMode'),
-        light: () => set(() => ({ mode: false }), false, 'lightMode'),
+        dark: () =>
+          set(
+            produce((state) => {
+              state.mode = true;
+            }),
+            false,
+            'darkMode'
+          ),
+        light: () =>
+          set(
+            produce((state) => {
+              state.mode = false;
+            }),
+            false,
+            'lightMode'
+          ),
         toggle: () =>
-          set((state) => ({ mode: !state.mode }), false, 'toggleMode'),
+          set(
+            produce((state) => {
+              state.mode = !state.mode;
+            }),
+            false,
+            'toggleMode'
+          ),
       }),
       { name: 'mode' }
     )
