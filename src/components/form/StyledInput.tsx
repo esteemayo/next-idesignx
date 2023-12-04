@@ -5,11 +5,11 @@ import styled, { DefaultTheme } from 'styled-components';
 import { Label } from './Label';
 import { CommonInput } from '../common/CommonInput';
 
-interface IStyledInput {
+interface IInput {
   path?: string;
 }
 
-export const StyledInput = styled(CommonInput)<IStyledInput>`
+export const StyledInput = styled(CommonInput)<IInput>`
   border: none;
   background-color: ${({ theme, path }) => setBgColor(theme, path)};
   border-bottom: 3px solid transparent;
