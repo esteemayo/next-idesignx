@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CommonHero = styled.header`
-  background-color: var(--clr-gray-light-3);
+  background-color: ${({ theme }) => theme.bgImg};
   color: var(--clr-white);
   background-size: cover;
   background-position: center;
