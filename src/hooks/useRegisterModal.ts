@@ -2,6 +2,7 @@
 
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { produce } from 'immer';
 
 interface RegisterModalStore {
   isOpen: boolean;
@@ -12,7 +13,21 @@ interface RegisterModalStore {
 export const useRegisterModal = create<RegisterModalStore>()(
   devtools((set) => ({
     isOpen: false,
-    onOpen: () => set(() => ({ isOpen: true }), false, 'openRegisterModal'),
-    onClose: () => set(() => ({ isOpen: false }), false, 'closeRegisterModal'),
+    onOpen: () =>
+      set(
+        produce((state) => {
+          state.isOpen = true;
+        }),
+        false,
+        'openRegisterModal'
+      ),
+    onClose: () =>
+      set(
+        produce((state) => {
+          state.isOpen = false;
+        }),
+        false,
+        'closeRegisterModal'
+      ),
   }))
 );
