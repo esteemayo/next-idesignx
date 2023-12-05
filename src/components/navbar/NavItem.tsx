@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { DefaultTheme } from 'styled-components';
 import Link from 'next/link';
 import { useMemo } from 'react';
 
@@ -22,9 +22,7 @@ const NavItem = ({ url, label, path }: NavItemProps) => {
 };
 
 const Container = styled.li<IContainer>`
-  color: ${({ active }) => setActiveColor(active)};
-  color: ${({ active, theme }) =>
-    active === 'true' ? theme.textActive : theme.textNav};
+  color: ${({ active, theme }) => setActiveColor(active, theme)};
 
   a {
     &:link,
@@ -44,10 +42,11 @@ const Container = styled.li<IContainer>`
   }
 `;
 
-const setActiveColor = (isActive: string) => {
-  return isActive === 'true'
-    ? 'var(--clr-purple-dark-2)'
-    : 'var(--clr-purple-light-1)';
+const setActiveColor = (
+  isActive: string,
+  theme: DefaultTheme
+): DefaultTheme => {
+  return isActive === 'true' ? theme.textActive : theme.textNav;
 };
 
 export default NavItem;
