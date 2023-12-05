@@ -171,6 +171,11 @@ export interface GalleryModalProps {
   onClick(direction: string): void;
 }
 
+export interface GalleryImageProps {
+  active: string;
+  image: string;
+}
+
 interface StoryImage {
   id: number;
   img: string;
