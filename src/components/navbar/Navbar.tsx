@@ -50,9 +50,11 @@ const Navbar = () => {
 };
 
 const Container = styled.nav<IContainer>`
-  display: ${({ active }) => (active === 'true' ? 'none' : 'grid')};
-  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  display: ${({ active }) => (active === 'true' ? 'none' : 'flex')};
   align-items: center;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  align-items: center; */
 
   background-color: ${({ theme }) => theme.bg};
   padding: 1.5rem;
@@ -60,8 +62,8 @@ const Container = styled.nav<IContainer>`
   z-index: 3000;
 
   @media only screen and (min-width: 48em) {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    display: flex;
+    /* grid-template-columns: repeat(3, minmax(min-content, 1fr)); */
   }
 `;
 
