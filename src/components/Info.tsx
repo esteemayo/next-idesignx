@@ -1,8 +1,6 @@
 'use client';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import { infoContacts, socialIcons } from '@/data';
 import { useActiveMode } from '@/hooks/useActiveMode';
