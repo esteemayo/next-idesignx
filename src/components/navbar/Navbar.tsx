@@ -53,8 +53,6 @@ const Container = styled.nav<IContainer>`
   display: ${({ active }) => (active === 'true' ? 'none' : 'flex')};
   align-items: center;
   justify-content: space-between;
-  /* grid-template-columns: repeat(2, minmax(min-content, 1fr));
-  align-items: center; */
 
   background-color: ${({ theme }) => theme.bg};
   padding: 1.5rem;
