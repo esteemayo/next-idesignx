@@ -38,8 +38,7 @@ const StyledLink = styled(Link)<IMode>`
 
   &:hover,
   &:active {
-    background-color: ${({ mode }) =>
-      mode === 'true' ? '#2b3138' : '#e5bffd'};
+    background-color: ${({ mode }) => setBcgColor(mode)};
     color: currentColor;
   }
 
@@ -82,6 +81,10 @@ const StyledLink = styled(Link)<IMode>`
     }
   }
 `;
+
+const setBcgColor = (mode: string): string => {
+  return mode === 'true' ? '#2b3138' : '#e5bffd';
+};
 
 const setColor = (mode: string, color1: string, color2: string): string => {
   return mode !== 'true' ? color1 : color2;
