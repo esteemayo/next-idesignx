@@ -5,7 +5,11 @@ import styled from 'styled-components';
 import { Wrapper } from '../common/Wrapper';
 import { CommonImage } from '../common/CommonImage';
 
-import { GalleryImageProps } from '@/types';
+// import { GalleryImageProps } from '@/types';
+interface GalleryImageProps {
+  active: string;
+  image: string;
+}
 
 const GalleryImage = ({ active, image }: GalleryImageProps) => {
   <Wrapper active={active}>
