@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const InfoContact = ({ icon, text }) => {
+import { InfoContactProps } from '@/types';
+
+const InfoContact = ({ icon, text }: InfoContactProps) => {
   return (
     <Container>
       <FontAwesomeIcon icon={icon} />
