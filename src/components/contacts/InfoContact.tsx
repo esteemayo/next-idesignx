@@ -19,6 +19,10 @@ const Container = styled.div`
   align-items: center;
   gap: 1rem;
 
+  @media only screen and (max-width: 30em) {
+    gap: 0.5rem;
+  }
+
   svg {
     font-size: 1.3rem;
     color: currentColor;
