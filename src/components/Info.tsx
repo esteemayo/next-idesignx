@@ -18,14 +18,16 @@ const Info = () => {
 
   return (
     <Container mode={activeMode}>
-      <PhoneWrapper>
-        <FontAwesomeIcon icon={faPhone} />
-        <PhoneNumber>(+234) 813 611 9251</PhoneNumber>
-      </PhoneWrapper>
-      <EmailWrapper>
-        <FontAwesomeIcon icon={faEnvelope} />
-        <EmailAddress>esteemdesign19@gmail.com</EmailAddress>
-      </EmailWrapper>
+      <Wrapper>
+        <PhoneWrapper>
+          <FontAwesomeIcon icon={faPhone} />
+          <PhoneNumber>(+234) 813 611 9251</PhoneNumber>
+        </PhoneWrapper>
+        <EmailWrapper>
+          <FontAwesomeIcon icon={faEnvelope} />
+          <EmailAddress>esteemdesign19@gmail.com</EmailAddress>
+        </EmailWrapper>
+      </Wrapper>
       <SocialWrapper>
         {socialIcons.map((item) => {
           return <InfoIcon key={item.id} mode={activeMode} {...item} />;
@@ -65,6 +67,12 @@ const Container = styled.div<IMode>`
   )
   `};
   color: var(--clr-white);
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 6rem;
 `;
 
 const PhoneWrapper = styled.div`
