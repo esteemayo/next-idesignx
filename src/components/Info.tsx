@@ -78,6 +78,10 @@ const Box = styled.div`
   gap: 0.5rem;
 
   margin-right: 0.5rem;
+
+  @media only screen and (max-width: 23.125em) {
+    display: none;
+  }
 `;
 
 export default Info;
