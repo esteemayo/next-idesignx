@@ -12,6 +12,14 @@ export interface SocialIcon {
 
 export type SocialIcons = SocialIcon[];
 
+export interface InfoIconProps {
+  url: string;
+  icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
+    muiName: string;
+  };
+  mode: string;
+}
+
 export type NavItem = {
   id: number;
   url: string;
