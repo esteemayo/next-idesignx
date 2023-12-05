@@ -40,6 +40,7 @@ const Container = styled.div<IMode>`
   padding: 1.5rem;
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
+  color: var(--clr-white);
   background-image: ${({ mode }) =>
     mode === 'false' &&
     css`
@@ -51,7 +52,6 @@ const Container = styled.div<IMode>`
     var(--clr-purple-light-3)
   )
   `};
-  color: var(--clr-white);
 `;
 
 const Wrapper = styled.div`
