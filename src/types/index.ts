@@ -1,3 +1,4 @@
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
@@ -11,6 +12,11 @@ export interface SocialIcon {
 }
 
 export type SocialIcons = SocialIcon[];
+
+export interface InfoContactProps {
+  icon: IconProp;
+  text: string;
+}
 
 export interface InfoIconProps {
   url: string;
