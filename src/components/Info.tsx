@@ -2,11 +2,11 @@
 
 import styled, { css } from 'styled-components';
 
-import { infoContacts, socialIcons } from '@/data';
-import { useActiveMode } from '@/hooks/useActiveMode';
-
 import InfoIcon from './icons/InfoIcon';
 import InfoContact from './contacts/InfoContact';
+
+import { infoContacts, socialIcons } from '@/data';
+import { useActiveMode } from '@/hooks/useActiveMode';
 
 interface IMode {
   mode: string;
