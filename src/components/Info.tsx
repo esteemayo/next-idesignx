@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { css } from 'styled-components';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import { socialIcons } from '@/data';
+import { infoContacts, socialIcons } from '@/data';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import InfoIcon from './icons/InfoIcon';
+import InfoContact from './contacts/InfoContact';
 
 interface IMode {
   mode: string;
@@ -19,14 +20,9 @@ const Info = () => {
   return (
     <Container mode={activeMode}>
       <Wrapper>
-        <PhoneWrapper>
-          <FontAwesomeIcon icon={faPhone} />
-          <PhoneNumber>(+234) 813 611 9251</PhoneNumber>
-        </PhoneWrapper>
-        <EmailWrapper>
-          <FontAwesomeIcon icon={faEnvelope} />
-          <EmailAddress>esteemdesign19@gmail.com</EmailAddress>
-        </EmailWrapper>
+        {infoContacts.map((item) => {
+          return <InfoContact key={item.id} {...item} />;
+        })}
       </Wrapper>
       <SocialWrapper>
         {socialIcons.map((item) => {
