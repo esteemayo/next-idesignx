@@ -1,5 +1,10 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { faBagShopping, faPrint } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBagShopping,
+  faEnvelope,
+  faPhone,
+  faPrint,
+} from '@fortawesome/free-solid-svg-icons';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -16,6 +21,19 @@ import {
   SocialIcons,
   StoryImages,
 } from '../types';
+
+export const infoContacts = [
+  {
+    id: 1,
+    icon: faPhone,
+    text: '(+234) 813 611 9251',
+  },
+  {
+    id: 2,
+    icon: faEnvelope,
+    text: 'esteemdesign19@gmail.com',
+  },
+];
 
 export const socialIcons: SocialIcons = [
   {
