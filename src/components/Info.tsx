@@ -75,6 +75,10 @@ const Wrapper = styled.div`
     width: 100%;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 18.25em) {
+    gap: 1rem;
+  }
 `;
 
 const Box = styled.div`
