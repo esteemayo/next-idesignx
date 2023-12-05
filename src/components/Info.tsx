@@ -90,19 +90,6 @@ const PhoneWrapper = styled.div`
 
 const PhoneNumber = styled.span``;
 
-const EmailWrapper = styled.div`
-  grid-column: 2 / 3;
-
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  svg {
-    font-size: 1.3rem;
-    color: currentColor;
-  }
-`;
-
 const SocialWrapper = styled.div`
   /* align-self: center;
   justify-self: self-end; */
