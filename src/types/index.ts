@@ -13,6 +13,12 @@ export interface SocialIcon {
 
 export type SocialIcons = SocialIcon[];
 
+export interface InfoContacts {
+  id: number;
+  icon: IconDefinition;
+  text: string;
+}
+
 export interface InfoContactProps {
   icon: IconProp;
   text: string;
