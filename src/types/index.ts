@@ -1,4 +1,3 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
@@ -20,7 +19,7 @@ export type InfoContacts = {
 }[];
 
 export interface InfoContactProps {
-  icon: IconProp;
+  icon: IconDefinition;
   text: string;
 }
 
