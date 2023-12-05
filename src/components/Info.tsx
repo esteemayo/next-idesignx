@@ -73,6 +73,10 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 6rem;
+
+  @media only screen and (max-width: 25em) {
+    gap: 3rem;
+  }
 `;
 
 const PhoneWrapper = styled.div`
