@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import { Wrapper } from '../common/Wrapper';
 import { CommonImage } from '../common/CommonImage';
 
-const GalleryImage = ({ active, image }) => {
+import { GalleryImageProps } from '@/types';
+
+const GalleryImage = ({ active, image }: GalleryImageProps) => {
   <Wrapper active={active}>
     <Box>
       <ImageContainer>
