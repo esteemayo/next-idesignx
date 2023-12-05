@@ -5,20 +5,18 @@ import styled from 'styled-components';
 import { Wrapper } from '../common/Wrapper';
 import { CommonImage } from '../common/CommonImage';
 
-// import { GalleryImageProps } from '@/types';
-interface GalleryImageProps {
-  active: string;
-  image: string;
-}
+import { GalleryImageProps } from '@/types';
 
 const GalleryImage = ({ active, image }: GalleryImageProps) => {
-  <Wrapper active={active}>
-    <Box>
-      <Container>
-        <StyledImage src={image} width={1100} height={500} alt='' />
-      </Container>
-    </Box>
-  </Wrapper>;
+  return (
+    <Wrapper active={active}>
+      <Box>
+        <Container>
+          <StyledImage src={image} width={1100} height={500} alt='' />
+        </Container>
+      </Box>
+    </Wrapper>
+  );
 };
 
 const Box = styled.div`
