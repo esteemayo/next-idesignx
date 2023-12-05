@@ -75,19 +75,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const PhoneWrapper = styled.div`
-  grid-column: 1 / 2;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  svg {
-    font-size: 1.3rem;
-    color: currentColor;
-  }
-`;
-
 const SocialWrapper = styled.div`
   /* align-self: center;
   justify-self: self-end; */
