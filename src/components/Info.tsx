@@ -37,15 +37,6 @@ const Container = styled.div<IMode>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* display: grid;
-  grid-template-columns: repeat(2, max-content) minmax(min-content, 1fr);
-  gap: 6rem;
-  align-items: center;
-  justify-items: center; */
-
-  /* @media only screen and (max-width: 25em) {
-    gap: 3rem;
-  } */
 
   font-size: 1.4rem;
   padding: 1.5rem;
