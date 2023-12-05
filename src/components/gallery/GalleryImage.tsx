@@ -10,9 +10,9 @@ import { GalleryImageProps } from '@/types';
 const GalleryImage = ({ active, image }: GalleryImageProps) => {
   <Wrapper active={active}>
     <Box>
-      <ImageContainer>
+      <Container>
         <StyledImage src={image} width={1100} height={500} alt='' />
-      </ImageContainer>
+      </Container>
     </Box>
   </Wrapper>;
 };
@@ -69,7 +69,7 @@ const Box = styled.div`
   justify-content: center;
 `;
 
-const ImageContainer = styled.div`
+const Container = styled.div`
   width: 110rem;
   height: 50rem;
   background-color: ${({ theme }) => theme.bgImg};
