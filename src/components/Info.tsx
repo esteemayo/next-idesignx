@@ -88,8 +88,6 @@ const PhoneWrapper = styled.div`
   }
 `;
 
-const PhoneNumber = styled.span``;
-
 const SocialWrapper = styled.div`
   /* align-self: center;
   justify-self: self-end; */
