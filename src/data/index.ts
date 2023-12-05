@@ -14,6 +14,7 @@ import {
   ContactDetails,
   GalleryImage,
   GalleryItem,
+  InfoContacts,
   MenuItem,
   NavItem,
   PrintItems,
@@ -22,7 +23,7 @@ import {
   StoryImages,
 } from '../types';
 
-export const infoContacts = [
+export const infoContacts: InfoContacts = [
   {
     id: 1,
     icon: faPhone,
