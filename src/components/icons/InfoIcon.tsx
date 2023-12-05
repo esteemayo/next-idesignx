@@ -27,6 +27,11 @@ const StyledLink = styled(Link)<IMode>`
   border-radius: 50%;
   transition: all 0.2s;
 
+  @media only screen and (max-width: 30em) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
