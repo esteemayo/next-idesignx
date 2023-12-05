@@ -20,6 +20,7 @@ const Container = styled.ul`
 
   @media only screen and (min-width: 48em) {
     list-style: none;
+
     display: grid;
     grid-template-columns: repeat(6, minmax(min-content, 1fr));
     align-items: center;
