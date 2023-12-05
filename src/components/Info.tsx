@@ -105,8 +105,4 @@ const SocialWrapper = styled.div`
   gap: 0.5rem;
 `;
 
-const setColor = (mode: string, color1: string, color2: string): string => {
-  return mode !== 'true' ? color1 : color2;
-};
-
 export default Info;
