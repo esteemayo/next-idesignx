@@ -174,8 +174,6 @@ const ImageContainer = styled.div`
   }
 `;
 
-const StyledImage = styled(CommonImage)``;
-
 const ButtonWrapper = styled.div`
   position: absolute;
   top: 1rem;
