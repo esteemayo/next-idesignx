@@ -66,6 +66,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 30em) {
     gap: 3rem;
   }
+
+  @media only screen and (max-width: 23.125em) {
+    gap: 1.5rem;
+  }
 `;
 
 const Box = styled.div`
