@@ -76,6 +76,10 @@ const StyledLink = styled(Link)<IMode>`
   svg {
     font-size: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
