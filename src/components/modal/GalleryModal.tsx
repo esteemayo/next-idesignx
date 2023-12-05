@@ -61,8 +61,8 @@ const GalleryModal = ({
         </Button>
       </Container>
       <GalleryImage active={activeModal} image={image} />
-      <Container direction='right' onClick={() => onClick('right')}>
-        <Button direction='right'>
+      <Container direction='right'>
+        <Button direction='right' onClick={() => onClick('right')}>
           <ArrowForwardIosIcon />
         </Button>
       </Container>
