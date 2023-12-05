@@ -63,7 +63,6 @@ const Container = styled.nav<IContainer>`
 
   @media only screen and (min-width: 48em) {
     display: flex;
-    /* grid-template-columns: repeat(3, minmax(min-content, 1fr)); */
   }
 `;
 
