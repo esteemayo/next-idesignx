@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ImageItem from './ImageItem';
-import ImageModal from '../modal/ImageModal';
+import GalleryModal from '../modal/GalleryModal';
 
 import { useImageModal } from '@/hooks/useImageModal';
 import { GalleryItem, ImageGalleryProps } from '@/types';
@@ -57,7 +57,7 @@ const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
           <ImageItem key={id} src={img} value={index} onClick={handleOpen} />
         );
       })}
-      <ImageModal
+      <GalleryModal
         image={selectedImage}
         isOpen={isOpen}
         onClose={onClose}
