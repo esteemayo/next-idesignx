@@ -164,7 +164,7 @@ export interface ImageItemProps {
   onClick(value: number): void;
 }
 
-export interface ImageModalProps {
+export interface GalleryModalProps {
   image: string;
   isOpen: boolean;
   onClose(): void;
