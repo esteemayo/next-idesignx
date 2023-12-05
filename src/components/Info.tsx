@@ -8,6 +8,8 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { socialIcons } from '@/data';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
+import InfoIcon from './icons/InfoIcon';
+
 interface IMode {
   mode: string;
 }
@@ -27,12 +29,7 @@ const Info = () => {
       </EmailWrapper>
       <SocialWrapper>
         {socialIcons.map((item) => {
-          const { id, url, icon: Icon } = item;
-          return (
-            <StyledLink key={id} href={url} mode={activeMode}>
-              <Icon />
-            </StyledLink>
-          );
+          return <InfoIcon key={item.id} mode={activeMode} {...item} />;
         })}
       </SocialWrapper>
     </Container>
