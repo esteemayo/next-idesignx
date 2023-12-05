@@ -66,16 +66,16 @@ const GalleryModal = ({
           <ArrowForwardIosIcon />
         </Button>
       </Container>
-      <ButtonWrapper>
+      <Wrapper>
         <CloseButton onClick={handleClose}>
           <CloseIcon />
         </CloseButton>
-      </ButtonWrapper>
+      </Wrapper>
     </Overlay>
   );
 };
 
-const ButtonWrapper = styled.div`
+const Wrapper = styled.div`
   position: absolute;
   top: 1rem;
   left: 1rem;
