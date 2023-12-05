@@ -11,6 +11,7 @@ import { CommonImage } from '../common/CommonImage';
 import { Wrapper } from '../common/Wrapper';
 
 import { GalleryModalProps } from '@/types';
+import GalleryImage from '../gallery/GalleryImage';
 
 interface IBtn {
   direction: string;
@@ -61,13 +62,7 @@ const GalleryModal = ({
           <ArrowBackIosIcon />
         </Button>
       </ButtonContainer>
-      <Wrapper active={activeModal}>
-        <Box>
-          <ImageContainer>
-            <StyledImage src={image} width={1100} height={500} alt='' />
-          </ImageContainer>
-        </Box>
-      </Wrapper>
+      <GalleryImage active={activeModal} image={image} />
       <ButtonContainer direction='right' onClick={() => onClick('right')}>
         <Button direction='right'>
           <ArrowForwardIosIcon />
