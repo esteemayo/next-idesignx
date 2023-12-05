@@ -76,13 +76,11 @@ const Wrapper = styled.div`
 `;
 
 const SocialWrapper = styled.div`
-  /* align-self: center;
-  justify-self: self-end; */
-
-  margin-right: 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  margin-right: 0.5rem;
 `;
 
 export default Info;
