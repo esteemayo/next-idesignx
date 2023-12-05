@@ -1,7 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
-
 import Navbar from '../navbar/Navbar';
 import ScrollButton from '../buttons/ScrollButton';
 import Footer from '../footer/Footer';
