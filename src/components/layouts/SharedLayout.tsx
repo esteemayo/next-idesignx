@@ -17,24 +17,17 @@ import ModalProvider from '@/providers/ModalProvider';
 const SharedLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ClientOnly>
-      <Container>
-        <ToastProvider />
-        <Info />
-        <Navbar />
-        <Sidebar />
-        <ModalProvider />
-        {children}
-        <Footer />
-        <ScrollButton />
-        <DarkMode />
-      </Container>
+      <ToastProvider />
+      <Info />
+      <Navbar />
+      <Sidebar />
+      <ModalProvider />
+      {children}
+      <Footer />
+      <ScrollButton />
+      <DarkMode />
     </ClientOnly>
   );
 };
-
-const Container = styled.main`
-  display: grid;
-  grid-template-rows: repeat(3, min-content);
-`;
 
 export default SharedLayout;
