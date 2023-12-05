@@ -76,58 +76,6 @@ const GalleryModal = ({
   );
 };
 
-const Box = styled.div`
-  width: 120rem;
-  height: 60rem;
-  background-color: ${({ theme }) => theme.bg};
-  border-radius: 0.5rem;
-
-  @media only screen and (max-width: 87.5em) {
-    width: 110rem;
-  }
-
-  @media only screen and (max-width: 69.375em) {
-    width: 100rem;
-    height: 55rem;
-  }
-
-  @media only screen and (max-width: 62.5em) {
-    width: 90rem;
-    height: 50rem;
-  }
-
-  @media only screen and (max-width: 57.5em) {
-    width: 80rem;
-  }
-
-  @media only screen and (max-width: 43.75em) {
-    width: 70rem;
-  }
-
-  @media only screen and (max-width: 38.75em) {
-    width: 60rem;
-  }
-
-  @media only screen and (max-width: 34.375em) {
-    width: 50rem;
-    height: 45rem;
-  }
-
-  @media only screen and (max-width: 30em) {
-    width: 45rem;
-    height: 40rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    width: 40rem;
-    height: 30rem;
-  }
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const ButtonWrapper = styled.div`
   position: absolute;
   top: 1rem;
