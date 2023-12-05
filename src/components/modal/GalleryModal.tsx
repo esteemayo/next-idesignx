@@ -10,13 +10,18 @@ import { Overlay } from '../common/Overlay';
 import { CommonImage } from '../common/CommonImage';
 import { Wrapper } from '../common/Wrapper';
 
-import { ImageModalProps } from '@/types';
+import { GalleryModalProps } from '@/types';
 
 interface IBtn {
   direction: string;
 }
 
-const GalleryModal = ({ image, isOpen, onClose, onClick }: ImageModalProps) => {
+const GalleryModal = ({
+  image,
+  isOpen,
+  onClose,
+  onClick,
+}: GalleryModalProps) => {
   const [showModal, setShowModal] = useState(isOpen);
 
   const handleClose = useCallback(() => {
