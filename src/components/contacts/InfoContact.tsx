@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const InfoContact = ({ icon, text }) => {
   return (
-    <PhoneWrapper>
+    <Container>
       <FontAwesomeIcon icon={icon} />
       <PhoneNumber>{text}</PhoneNumber>
-    </PhoneWrapper>
+    </Container>
   );
 };
 
-const PhoneWrapper = styled.div`
+const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
