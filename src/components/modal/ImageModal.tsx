@@ -132,6 +132,7 @@ const Box = styled.div`
 const ImageContainer = styled.div`
   width: 110rem;
   height: 50rem;
+  background-color: ${({ theme }) => theme.bgImg};
 
   @media only screen and (max-width: 87.5em) {
     width: 100rem;
