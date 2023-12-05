@@ -68,7 +68,8 @@ const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 23.125em) {
-    gap: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
   }
 `;
 
