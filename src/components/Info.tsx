@@ -52,6 +52,10 @@ const Container = styled.div<IMode>`
     var(--clr-purple-light-3)
   )
   `};
+
+  @media only screen and (max-width: 30em) {
+    font-size: 1.23rem;
+  }
 `;
 
 const Wrapper = styled.div`
