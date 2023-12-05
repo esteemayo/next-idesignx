@@ -7,7 +7,6 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 import { Overlay } from '../common/Overlay';
-import { CommonImage } from '../common/CommonImage';
 
 import { GalleryModalProps } from '@/types';
 import GalleryImage from '../gallery/GalleryImage';
