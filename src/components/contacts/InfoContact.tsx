@@ -22,6 +22,10 @@ const Container = styled.div`
   svg {
     font-size: 1.3rem;
     color: currentColor;
+
+    @media only screen and (max-width: 30em) {
+      font-size: 1.25rem;
+    }
   }
 `;
 
