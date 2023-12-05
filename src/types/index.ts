@@ -13,11 +13,11 @@ export interface SocialIcon {
 
 export type SocialIcons = SocialIcon[];
 
-export interface InfoContacts {
+export type InfoContacts = {
   id: number;
   icon: IconDefinition;
   text: string;
-}
+}[];
 
 export interface InfoContactProps {
   icon: IconProp;
