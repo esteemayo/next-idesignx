@@ -74,8 +74,6 @@ const Wrapper = styled.div`
 `;
 
 const Box = styled.div`
-  justify-self: end;
-
   display: flex;
   align-items: center;
   gap: 3rem;
