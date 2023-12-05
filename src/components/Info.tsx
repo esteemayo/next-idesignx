@@ -22,11 +22,11 @@ const Info = () => {
           return <InfoContact key={item.id} {...item} />;
         })}
       </Wrapper>
-      <SocialWrapper>
+      <Box>
         {socialIcons.map((item) => {
           return <InfoIcon key={item.id} mode={activeMode} {...item} />;
         })}
-      </SocialWrapper>
+      </Box>
     </Container>
   );
 };
@@ -64,7 +64,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const SocialWrapper = styled.div`
+const Box = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
