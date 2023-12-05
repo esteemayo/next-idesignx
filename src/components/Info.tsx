@@ -106,8 +106,8 @@ const EmailWrapper = styled.div`
 const EmailAddress = styled.span``;
 
 const SocialWrapper = styled.div`
-  align-self: center;
-  justify-self: self-end;
+  /* align-self: center;
+  justify-self: self-end; */
 
   margin-right: 0.5rem;
   display: flex;
