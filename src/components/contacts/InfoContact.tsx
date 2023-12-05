@@ -7,7 +7,7 @@ const InfoContact = ({ icon, text }) => {
   return (
     <Container>
       <FontAwesomeIcon icon={icon} />
-      <PhoneNumber>{text}</PhoneNumber>
+      <Details>{text}</Details>
     </Container>
   );
 };
@@ -18,6 +18,6 @@ const Container = styled.div`
   gap: 1rem;
 `;
 
-const PhoneNumber = styled.span``;
+const Details = styled.span``;
 
 export default InfoContact;
