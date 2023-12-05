@@ -59,7 +59,7 @@ const Wrapper = styled.div`
   align-items: center;
   gap: 6rem;
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 30em) {
     gap: 3rem;
   }
 `;
