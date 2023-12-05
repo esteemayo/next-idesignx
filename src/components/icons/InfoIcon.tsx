@@ -3,11 +3,13 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
+import { InfoIconProps } from '@/types';
+
 interface IMode {
   mode: string;
 }
 
-const InfoIcon = ({ url, icon: Icon, mode }) => {
+const InfoIcon = ({ url, icon: Icon, mode }: InfoIconProps) => {
   return (
     <StyledLink href={url} mode={mode}>
       <Icon />
