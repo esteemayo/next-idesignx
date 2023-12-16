@@ -84,9 +84,9 @@ const RegisterModal = () => {
   );
 
   const handleFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const { files } = e.target;
-    const selectedFile = files as FileList;
-    setFile(selectedFile?.[0]);
+    const { files } = e.target as HTMLInputElement;
+    const selectedFile = (files as FileList)[0];
+    setFile(selectedFile);
   }, []);
 
   const validateInputs = useCallback(() => {
