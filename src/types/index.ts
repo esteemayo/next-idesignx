@@ -323,6 +323,13 @@ export interface InputProps
   error?: string;
 }
 
+export interface TextAreaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  name: string;
+  label: string;
+  error?: string;
+}
+
 export interface UploadInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;

@@ -5,14 +5,8 @@ import { FormGroup } from '../form/FormGroup';
 import { TextAreaStyled } from '../form/TextAreaStyled';
 import ErrorMessage from '../form/ErrorMessage';
 
+import { TextAreaProps } from '@/types';
 import { useActiveMode } from '@/hooks/useActiveMode';
-
-interface TextAreaProps
-  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
-  name: string;
-  label: string;
-  error?: string;
-}
 
 const TextArea = ({ name, label, error, ...rest }: TextAreaProps) => {
   const { activeMode } = useActiveMode();
