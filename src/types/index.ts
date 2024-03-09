@@ -330,6 +330,14 @@ export interface TextAreaProps
   error?: string;
 }
 
+export interface SelectProps
+  extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  name: string;
+  label: string;
+  options: GenderList;
+  error?: string;
+}
+
 export interface UploadInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;

@@ -1,17 +1,10 @@
 'use client';
 
+import ErrorMessage from '../form/ErrorMessage';
 import { FormGroup } from '../form/FormGroup';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
-import ErrorMessage from '../form/ErrorMessage';
 
-import { GenderList } from '@/types';
-
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
-  name: string;
-  label: string;
-  options: GenderList;
-  error?: string;
-}
+import { GenderList, SelectProps } from '@/types';
 
 const Select = ({ name, label, options, error, ...rest }: SelectProps) => {
   return (
