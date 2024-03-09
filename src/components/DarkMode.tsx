@@ -122,7 +122,7 @@ const Button = styled.button<IBtn>`
   height: 3.2rem;
   font-size: 2.2rem;
   background-color: ${({ active }) => setBcg(active)};
-  color: hsl(277, 94%, 87%);
+  color: var(--clr-purple-dark-2);
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
@@ -157,7 +157,7 @@ const Button = styled.button<IBtn>`
 `;
 
 const setBcg = (active: boolean) => {
-  return active ? 'var(--clr-purple-light-2)' : undefined;
+  return active ? 'var(--clr-purple-light-2)' : 'transparent';
 };
 
 export default DarkMode;
