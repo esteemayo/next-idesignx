@@ -72,8 +72,8 @@ const Wrapper = styled.div`
 
 const Button = styled.button`
   border: none;
-  width: 3rem;
-  height: 3rem;
+  width: 3.2rem;
+  height: 3.2rem;
   font-size: 2.2rem;
   background-color: var(--clr-purple-light-2);
   color: hsl(277, 94%, 87%);
