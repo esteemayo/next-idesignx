@@ -12,22 +12,15 @@ import { useLoginModal } from '@/hooks/useLoginModal';
 import { useForm } from '@/hooks/useForm';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
-interface IData {
-  email: string;
-  password: string;
-}
+import { LoginData, LoginErrors } from '@/types';
+import { validateLoginInputs } from '@/validation/login';
 
-interface IErrors {
-  email?: string;
-  password?: string;
-}
-
-const initialState: IData = {
+const initialState: LoginData = {
   email: '',
   password: '',
 };
 
-const initialError: IErrors = {
+const initialError: LoginErrors = {
   email: '',
   password: '',
 };
@@ -48,29 +41,6 @@ const LoginModal = () => {
     setErrors({});
   };
 
-  const validateInputs = (data: IData) => {
-    let errors: IErrors = {};
-    const { email, password } = data;
-
-    if (email.trim() === '') {
-      errors.email = 'Email must not be empty';
-    } else {
-      const regEx =
-        /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
-      if (!email.match(regEx)) {
-        errors.email = 'Email must be a valid email address';
-      }
-    }
-
-    if (password === '') {
-      errors.password = 'Password must not be empty';
-    } else if (password.length < 8) {
-      errors.password = 'Password should be at least 8 characters long';
-    }
-
-    return errors;
-  };
-
   const onSubmitHandler = () => {
     console.log({ ...data });
   };
@@ -79,7 +49,7 @@ const LoginModal = () => {
     onSubmitHandler,
     initialState,
     initialError,
-    validateInputs
+    validateLoginInputs
   );
 
   const bodyContent = (
