@@ -15,6 +15,16 @@ import { selectInputs } from '@/data/formData';
 import { validateDesignInputs } from '@/validations/design';
 import { DesignData, DesignErrors } from '@/types';
 
+interface IFile {
+  id?: number;
+  lastModified: number;
+  lastModifiedDate?: Date;
+  name: string;
+  size: number;
+  type: string;
+  webkitRelativePath: string;
+}
+
 enum STEPS {
   INFO = 0,
   DESC = 1,
@@ -36,9 +46,7 @@ const DesignModal = () => {
   const onClose = useDesignModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
-  const [files, setFiles] = useState<
-    File | FileList | Blob | MediaSource | any
-  >();
+  const [files, setFiles] = useState<IFile[]>([]);
   const [data, setData] = useState(initialState);
   const [errors, setErrors] = useState<DesignErrors>({});
 
@@ -53,6 +61,19 @@ const DesignModal = () => {
     },
     []
   );
+
+  const handleFiles = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement;
+    const files = target.files!;
+
+    for (let i = 0; i < files.length; i++) {
+      const newFile: IFile = files[i];
+      newFile['id'] = Math.random();
+      setFiles((prev) => {
+        return [...prev, newFile];
+      });
+    }
+  }, []);
 
   const handlePrev = useCallback(() => {
     setStep((value) => value - 1);

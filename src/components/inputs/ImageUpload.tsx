@@ -10,7 +10,7 @@ import { CommonImage } from '../common/CommonImage';
 interface ImageUploadProps {
   value?: File | FileList | Blob | MediaSource | any;
   error?: string;
-  onChange(e: FileList | File): void;
+  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
 interface IContainer {
