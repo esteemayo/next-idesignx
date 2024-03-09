@@ -49,12 +49,11 @@ const DarkMode = () => {
 };
 
 const Container = styled.div`
-  width: 15rem;
-  height: fit-content;
-  padding: 2.5rem 2rem;
+  width: fit-content;
+  padding: 3px;
   background-color: hsl(277, 94%, 87%);
   color: var(--clr-white);
-  border-radius: 0.5rem;
+  border-radius: 100rem;
   position: fixed;
   right: 3rem;
   bottom: 10rem;
