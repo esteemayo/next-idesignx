@@ -19,7 +19,7 @@ const DarkMode = () => {
   const dark = useDarkMode((state) => state.dark);
   const toggle = useDarkMode((state) => state.toggle);
 
-  const [isSelected, setIsSelected] = useState('');
+  const [isSelected, setIsSelected] = useState('desktop');
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   const handleLightMode = useCallback(
