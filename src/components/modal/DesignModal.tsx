@@ -2,10 +2,10 @@
 
 import { useCallback, useMemo, useState } from 'react';
 
+import TextArea from '../inputs/TextArea';
 import Input from '../inputs/Input';
 import ImageUpload from '../inputs/ImageUpload';
 import Select from '../inputs/Select';
-import TextArea from '../inputs/TextArea';
 
 import Modal from './Modal';
 import Heading from '../Heading';
