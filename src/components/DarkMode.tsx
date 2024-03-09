@@ -10,7 +10,7 @@ import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlin
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface IBtn {
-  active: boolean;
+  isActive: boolean;
 }
 
 const DarkMode = () => {
@@ -66,7 +66,7 @@ const DarkMode = () => {
       <Wrapper>
         <Button
           type='button'
-          active={isSelected === 'light'}
+          isActive={isSelected === 'light'}
           disabled={!mode}
           onClick={handleLightMode}
         >
@@ -74,7 +74,7 @@ const DarkMode = () => {
         </Button>
         <Button
           type='button'
-          active={isSelected === 'desktop' || isSelected === 'mobile'}
+          isActive={isSelected === 'desktop' || isSelected === 'mobile'}
           onClick={handlePlatform}
         >
           {screenSize <= 768 ? (
@@ -85,7 +85,7 @@ const DarkMode = () => {
         </Button>
         <Button
           type='button'
-          active={isSelected === 'dark'}
+          isActive={isSelected === 'dark'}
           disabled={mode}
           onClick={handleDarkMode}
         >
@@ -124,10 +124,10 @@ const Button = styled.button<IBtn>`
   width: 3.2rem;
   height: 3.2rem;
   font-size: 2.2rem;
-  background-color: ${({ active }) =>
-    setProperty(active, 'var(--clr-purple-light-2)', 'transparent')};
-  color: ${({ active }) =>
-    setProperty(active, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
+  background-color: ${({ isActive }) =>
+    setProperty(isActive, 'var(--clr-purple-light-2)', 'transparent')};
+  color: ${({ isActive }) =>
+    setProperty(isActive, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
@@ -161,8 +161,8 @@ const Button = styled.button<IBtn>`
   }
 `;
 
-const setProperty = (active: boolean, val1: string, val2: string) => {
-  return active ? val1 : val2;
+const setProperty = (isActive: boolean, val1: string, val2: string) => {
+  return isActive ? val1 : val2;
 };
 
 export default DarkMode;
