@@ -1,9 +1,9 @@
 'use client';
 
+import LoginOptions from '../LoginOptions';
 import Modal from './Modal';
 import ToggleAccount from '../ToggleAccount';
 import Heading from '../Heading';
-import LoginOptions from '../LoginOptions';
 
 import { Line } from '../Line';
 import Input from '../inputs/Input';
