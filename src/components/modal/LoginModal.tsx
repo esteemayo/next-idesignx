@@ -13,7 +13,7 @@ import { useForm } from '@/hooks/useForm';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 import { LoginData, LoginErrors } from '@/types';
-import { validateLoginInputs } from '@/validation/login';
+import { validateLoginInputs } from '@/validations/login';
 
 const initialState: LoginData = {
   email: '',
