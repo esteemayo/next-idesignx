@@ -12,16 +12,8 @@ import Heading from '../Heading';
 
 import { selectInputs } from '@/data/formData';
 import { useDesignModal } from '@/hooks/useDesignModal';
-
-interface IErrors {
-  name?: string;
-  email?: string;
-  address?: string;
-  phone?: string;
-  subject?: string;
-  desc?: string;
-  category?: string;
-}
+import { validateDesignInputs } from '@/validations/design';
+import { DesignData, DesignErrors } from '@/types';
 
 enum STEPS {
   INFO = 0,
@@ -29,7 +21,7 @@ enum STEPS {
   IMAGES = 2,
 }
 
-const initialState = {
+const initialState: DesignData = {
   name: '',
   email: '',
   address: '',
@@ -48,7 +40,7 @@ const DesignModal = () => {
     File | FileList | Blob | MediaSource | any
   >();
   const [data, setData] = useState(initialState);
-  const [errors, setErrors] = useState<IErrors>({});
+  const [errors, setErrors] = useState<DesignErrors>({});
 
   const handleChange = useCallback(
     ({
@@ -61,47 +53,6 @@ const DesignModal = () => {
     },
     []
   );
-
-  const validateInputs = useCallback(() => {
-    let errors: IErrors = {};
-    const { name, email, address, phone, subject, desc, category } = data;
-
-    if (name.trim() === '') {
-      errors.name = 'Name must not be empty';
-    }
-
-    if (email.trim() === '') {
-      errors.email = 'Email must not be empty';
-    } else {
-      const regEx =
-        /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
-      if (!email.match(regEx)) {
-        errors.email = 'Email must be a valid email address';
-      }
-    }
-
-    if (address.trim() === '') {
-      errors.address = 'Address must not be empty';
-    }
-
-    if (phone.trim() === '') {
-      errors.phone = 'Phone book must not be empty';
-    }
-
-    if (subject.trim() === '') {
-      errors.subject = 'Subject must not be empty';
-    }
-
-    if (desc.trim() === '') {
-      errors.desc = 'Description must not be empty';
-    }
-
-    if (category.trim() === '') {
-      errors.category = 'Category must not be empty';
-    }
-
-    return errors;
-  }, [data]);
 
   const handlePrev = useCallback(() => {
     setStep((value) => value - 1);
@@ -126,7 +77,7 @@ const DesignModal = () => {
       return handleNext();
     }
 
-    const errors = validateInputs();
+    const errors = validateDesignInputs(data);
     if (Object.keys(errors).length > 0) {
       return setErrors(errors);
     }
@@ -137,7 +88,7 @@ const DesignModal = () => {
     handleClear();
     setStep(STEPS.INFO);
     onClose();
-  }, [data, files, handleClear, handleNext, onClose, step, validateInputs]);
+  }, [data, files, handleClear, handleNext, onClose, step]);
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.IMAGES) {
