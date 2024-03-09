@@ -74,7 +74,7 @@ const DarkMode = () => {
         </Button>
         <Button
           type='button'
-          isActive={isSelected === 'desktop' || isSelected === 'mobile'}
+          isActive={isSelected === 'desktop' ?? isSelected === 'mobile'}
           onClick={handlePlatform}
         >
           {screenSize <= 768 ? (
