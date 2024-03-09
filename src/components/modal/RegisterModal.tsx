@@ -3,21 +3,22 @@
 import { useCallback, useMemo, useState } from 'react';
 
 import LoginOptions from '../LoginOptions';
-import Modal from './Modal';
 import Heading from '../Heading';
-import { Line } from '../Line';
 import ToggleAccount from '../ToggleAccount';
 
+import Modal from './Modal';
+import { Line } from '../Line';
+
+import Select from '../inputs/Select';
 import Input from '../inputs/Input';
 import UploadInput from '../inputs/UploadInput';
-import Select from '../inputs/Select';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
+import { RegisterData, RegisterErrors } from '@/types';
 import { genderLists } from '@/data/formData';
 import { validateRegisterInputs } from '@/validations/register';
-import { RegisterData, RegisterErrors } from '@/types';
 
 enum STEPS {
   INFO = 0,
@@ -41,10 +42,10 @@ const RegisterModal = () => {
   const onOpen = useLoginModal((state) => state.onOpen);
   const onClose = useRegisterModal((state) => state.onClose);
 
-  const [step, setStep] = useState(STEPS.INFO);
-  const [errors, setErrors] = useState<RegisterErrors>({});
   const [file, setFile] = useState<File>();
   const [data, setData] = useState(initialState);
+  const [step, setStep] = useState(STEPS.INFO);
+  const [errors, setErrors] = useState<RegisterErrors>({});
 
   const handlePrev = useCallback(() => {
     setStep((value) => value - 1);
