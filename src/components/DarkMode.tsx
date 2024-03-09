@@ -141,7 +141,7 @@ const Button = styled.button<IBtn>`
   }
 
   &:disabled {
-    /* opacity: 0.75; */
+    opacity: 0.75;
     cursor: default;
   }
 
