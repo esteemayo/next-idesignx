@@ -14,7 +14,13 @@ const DarkMode = () => {
   const light = useDarkMode((state) => state.light);
   const dark = useDarkMode((state) => state.dark);
 
+  const [isSelected, setIsSelected] = useState('desktop');
   const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+  const handleLightMode = useCallback(() => {
+    light();
+    setIsSelected('light');
+  }, [light]);
 
   const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
@@ -28,7 +34,7 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper>
-        <Button type='button' disabled={!mode} onClick={light}>
+        <Button type='button' disabled={!mode} onClick={handleLightMode}>
           <LightModeOutlinedIcon />
         </Button>
         <Button type='button'>
