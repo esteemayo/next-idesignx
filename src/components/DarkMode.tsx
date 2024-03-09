@@ -143,7 +143,7 @@ const Button = styled.button<IBtn>`
   }
 
   svg {
-    font-size: inherit;
+    font-size: 1.8rem;
     fill: currentColor;
     transform: scale(0.9);
     transition: all 0.2s;
