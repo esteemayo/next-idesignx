@@ -1,9 +1,9 @@
 'use client';
 
-import styled, { keyframes } from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useState } from 'react';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { useCallback, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styled, { keyframes } from 'styled-components';
 
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(false);
