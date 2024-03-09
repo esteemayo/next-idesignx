@@ -121,7 +121,8 @@ const Button = styled.button<IBtn>`
   width: 3.2rem;
   height: 3.2rem;
   font-size: 2.2rem;
-  background-color: ${({ active }) => setBcg(active)};
+  background-color: ${({ active }) =>
+    setProperty(active, 'var(--clr-purple-light-2)', 'transparent')};
   color: var(--clr-purple-dark-2);
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
@@ -156,8 +157,8 @@ const Button = styled.button<IBtn>`
   }
 `;
 
-const setBcg = (active: boolean) => {
-  return active ? 'var(--clr-purple-light-2)' : 'transparent';
+const setProperty = (active: boolean, val1: string, val2: string) => {
+  return active ? val1 : val2;
 };
 
 export default DarkMode;
