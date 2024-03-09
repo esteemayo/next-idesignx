@@ -27,6 +27,10 @@ const DarkMode = () => {
     setIsSelected('dark');
   }, [dark]);
 
+  const handlePlatform = useCallback(() => {
+    setIsSelected(screenSize <= 768 ? 'mobile' : 'desktop');
+  }, [screenSize]);
+
   const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
   }, []);
@@ -42,7 +46,7 @@ const DarkMode = () => {
         <Button type='button' disabled={!mode} onClick={handleLightMode}>
           <LightModeOutlinedIcon />
         </Button>
-        <Button type='button'>
+        <Button type='button' onClick={handlePlatform}>
           {screenSize <= 768 ? (
             <SmartphoneOutlinedIcon />
           ) : (
