@@ -275,3 +275,23 @@ export interface LoginErrors {
   email?: string;
   password?: string;
 }
+
+export interface RegisterData {
+  name: string;
+  email: string;
+  username: string;
+  phone: string;
+  gender: string;
+  password: string;
+  passwordConfirm: string;
+}
+
+export interface RegisterErrors {
+  name?: string;
+  email?: string;
+  username?: string;
+  phone?: string;
+  gender?: string;
+  password?: string;
+  passwordConfirm?: string;
+}
