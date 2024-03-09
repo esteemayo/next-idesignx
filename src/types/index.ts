@@ -265,3 +265,13 @@ export interface ContactDetailProps {
   phone1?: string;
   phone2?: string;
 }
+
+export interface LoginData {
+  email: string;
+  password: string;
+}
+
+export interface LoginErrors {
+  email?: string;
+  password?: string;
+}
