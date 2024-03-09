@@ -22,6 +22,11 @@ const DarkMode = () => {
     setIsSelected('light');
   }, [light]);
 
+  const handleDarkMode = useCallback(() => {
+    dark();
+    setIsSelected('dark');
+  }, [dark]);
+
   const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
   }, []);
@@ -44,7 +49,7 @@ const DarkMode = () => {
             <DesktopWindowsOutlinedIcon />
           )}
         </Button>
-        <Button type='button' disabled={mode} onClick={dark}>
+        <Button type='button' disabled={mode} onClick={handleDarkMode}>
           <DarkModeOutlinedIcon />
         </Button>
       </Wrapper>
