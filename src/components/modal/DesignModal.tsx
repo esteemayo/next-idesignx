@@ -10,8 +10,8 @@ import TextArea from '../inputs/TextArea';
 import Modal from './Modal';
 import Heading from '../Heading';
 
-import { selectInputs } from '@/data/formData';
 import { useDesignModal } from '@/hooks/useDesignModal';
+import { selectInputs } from '@/data/formData';
 import { validateDesignInputs } from '@/validations/design';
 import { DesignData, DesignErrors } from '@/types';
 
