@@ -123,7 +123,8 @@ const Button = styled.button<IBtn>`
   font-size: 2.2rem;
   background-color: ${({ active }) =>
     setProperty(active, 'var(--clr-purple-light-2)', 'transparent')};
-  color: var(--clr-purple-dark-2);
+  color: ${({ active }) =>
+    setProperty(active, 'var(--clr-white)', 'var(--clr-purple-dark-2)')};
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
