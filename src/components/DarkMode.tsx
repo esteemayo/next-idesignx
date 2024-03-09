@@ -3,9 +3,9 @@
 import styled from 'styled-components';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import { useCallback, useEffect, useState } from 'react';
-import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
 
