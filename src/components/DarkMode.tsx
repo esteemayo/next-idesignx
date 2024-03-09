@@ -99,6 +99,7 @@ const Container = styled.div`
   padding: 3px;
   background-color: hsl(277, 94%, 87%);
   color: var(--clr-white);
+  border: 1px solid var(--clr-purple-light-2);
   border-radius: 100rem;
   position: fixed;
   right: 3rem;
@@ -124,7 +125,7 @@ const Button = styled.button<IBtn>`
   background-color: ${({ active }) =>
     setProperty(active, 'var(--clr-purple-light-2)', 'transparent')};
   color: ${({ active }) =>
-    setProperty(active, 'var(--clr-white)', 'var(--clr-purple-dark-2)')};
+    setProperty(active, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
