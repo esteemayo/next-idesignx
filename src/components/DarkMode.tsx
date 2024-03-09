@@ -17,6 +17,7 @@ const DarkMode = () => {
   const mode = useDarkMode((state) => state.mode);
   const light = useDarkMode((state) => state.light);
   const dark = useDarkMode((state) => state.dark);
+  const toggle = useDarkMode((state) => state.toggle);
 
   const [isSelected, setIsSelected] = useState('');
   const [screenSize, setScreenSize] = useState(window.innerWidth);
@@ -45,9 +46,10 @@ const DarkMode = () => {
     (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
+      toggle();
       setIsSelected(screenSize <= 768 ? 'mobile' : 'desktop');
     },
-    [screenSize]
+    [screenSize, toggle]
   );
 
   const handleResize = useCallback(() => {
