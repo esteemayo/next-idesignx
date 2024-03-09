@@ -5,13 +5,8 @@ import { FormGroup } from '../form/FormGroup';
 import { StyledLabel } from '../form/StyledLabel';
 import ErrorMessage from '../form/ErrorMessage';
 
+import { InputProps } from '@/types';
 import { useActiveMode } from '@/hooks/useActiveMode';
-
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  label: string;
-  error?: string;
-}
 
 const Input = ({ name, label, error, ...rest }: InputProps) => {
   const { activeMode } = useActiveMode();
