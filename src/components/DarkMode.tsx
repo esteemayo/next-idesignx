@@ -107,10 +107,6 @@ const Container = styled.div`
   right: 3rem;
   bottom: 10rem;
   z-index: 3000;
-
-  @media only screen and (max-width: 31.25em) {
-    padding: 2rem;
-  }
 `;
 
 const Wrapper = styled.div`
