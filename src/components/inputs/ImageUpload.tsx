@@ -18,22 +18,13 @@ interface IContainer {
 }
 
 const ImageUpload = ({ value, error, onChange }: ImageUploadProps) => {
-  const handleFile = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      const { files } = e.target;
-      const selectedFile = files as FileList;
-      onChange(selectedFile);
-    },
-    [onChange]
-  );
-
   return (
     <Container error={error}>
       <Wrapper>
         <Label htmlFor='file'>
           <FontAwesomeIcon icon={faFileArrowUp} />
         </Label>
-        <Input id='file' multiple onChange={handleFile} />
+        <Input id='file' multiple onChange={onChange} />
       </Wrapper>
       {value && (
         <StyledImage
