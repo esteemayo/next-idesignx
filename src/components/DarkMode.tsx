@@ -9,6 +9,10 @@ import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
 
+interface IBtn {
+  active: string;
+}
+
 const DarkMode = () => {
   const mode = useDarkMode((state) => state.mode);
   const light = useDarkMode((state) => state.light);
@@ -43,17 +47,27 @@ const DarkMode = () => {
   return (
     <Container>
       <Wrapper>
-        <Button type='button' disabled={!mode} onClick={handleLightMode}>
+        <Button
+          type='button'
+          active={isSelected}
+          disabled={!mode}
+          onClick={handleLightMode}
+        >
           <LightModeOutlinedIcon />
         </Button>
-        <Button type='button' onClick={handlePlatform}>
+        <Button type='button' active={isSelected} onClick={handlePlatform}>
           {screenSize <= 768 ? (
             <SmartphoneOutlinedIcon />
           ) : (
             <DesktopWindowsOutlinedIcon />
           )}
         </Button>
-        <Button type='button' disabled={mode} onClick={handleDarkMode}>
+        <Button
+          type='button'
+          active={isSelected}
+          disabled={mode}
+          onClick={handleDarkMode}
+        >
           <DarkModeOutlinedIcon />
         </Button>
       </Wrapper>
@@ -83,7 +97,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Button = styled.button`
+const Button = styled.button<IBtn>`
   border: none;
   width: 3.2rem;
   height: 3.2rem;
