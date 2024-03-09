@@ -10,7 +10,7 @@ import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface IBtn {
-  active: string;
+  active: boolean;
 }
 
 const DarkMode = () => {
@@ -18,22 +18,37 @@ const DarkMode = () => {
   const light = useDarkMode((state) => state.light);
   const dark = useDarkMode((state) => state.dark);
 
-  const [isSelected, setIsSelected] = useState('desktop');
+  const [isSelected, setIsSelected] = useState('');
   const [screenSize, setScreenSize] = useState(window.innerWidth);
 
-  const handleLightMode = useCallback(() => {
-    light();
-    setIsSelected('light');
-  }, [light]);
+  const handleLightMode = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
 
-  const handleDarkMode = useCallback(() => {
-    dark();
-    setIsSelected('dark');
-  }, [dark]);
+      light();
+      setIsSelected('light');
+    },
+    [light]
+  );
 
-  const handlePlatform = useCallback(() => {
-    setIsSelected(screenSize <= 768 ? 'mobile' : 'desktop');
-  }, [screenSize]);
+  const handleDarkMode = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
+
+      dark();
+      setIsSelected('dark');
+    },
+    [dark]
+  );
+
+  const handlePlatform = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
+
+      setIsSelected(screenSize <= 768 ? 'mobile' : 'desktop');
+    },
+    [screenSize]
+  );
 
   const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
@@ -49,13 +64,17 @@ const DarkMode = () => {
       <Wrapper>
         <Button
           type='button'
-          active={isSelected}
+          active={isSelected === 'light'}
           disabled={!mode}
           onClick={handleLightMode}
         >
           <LightModeOutlinedIcon />
         </Button>
-        <Button type='button' active={isSelected} onClick={handlePlatform}>
+        <Button
+          type='button'
+          active={isSelected === 'desktop' || isSelected === 'mobile'}
+          onClick={handlePlatform}
+        >
           {screenSize <= 768 ? (
             <SmartphoneOutlinedIcon />
           ) : (
@@ -64,7 +83,7 @@ const DarkMode = () => {
         </Button>
         <Button
           type='button'
-          active={isSelected}
+          active={isSelected === 'dark'}
           disabled={mode}
           onClick={handleDarkMode}
         >
@@ -102,7 +121,7 @@ const Button = styled.button<IBtn>`
   width: 3.2rem;
   height: 3.2rem;
   font-size: 2.2rem;
-  background-color: var(--clr-purple-light-2);
+  background-color: ${({ active }) => setBcg(active)};
   color: hsl(277, 94%, 87%);
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
@@ -117,7 +136,7 @@ const Button = styled.button<IBtn>`
   }
 
   &:disabled {
-    opacity: 0.75;
+    /* opacity: 0.75; */
     cursor: default;
   }
 
@@ -136,5 +155,9 @@ const Button = styled.button<IBtn>`
     }
   }
 `;
+
+const setBcg = (active: boolean) => {
+  return active ? 'var(--clr-purple-light-2)' : undefined;
+};
 
 export default DarkMode;
