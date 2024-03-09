@@ -16,16 +16,8 @@ import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
 
 import { genderLists } from '@/data/formData';
-
-interface IErrors {
-  name?: string;
-  email?: string;
-  username?: string;
-  phone?: string;
-  gender?: string;
-  password?: string;
-  passwordConfirm?: string;
-}
+import { validateRegisterInputs } from '@/validations/register';
+import { RegisterData, RegisterErrors } from '@/types';
 
 enum STEPS {
   INFO = 0,
@@ -34,7 +26,7 @@ enum STEPS {
   AVATAR = 3,
 }
 
-const initialState = {
+const initialState: RegisterData = {
   name: '',
   email: '',
   username: '',
@@ -50,7 +42,7 @@ const RegisterModal = () => {
   const onClose = useRegisterModal((state) => state.onClose);
 
   const [step, setStep] = useState(STEPS.INFO);
-  const [errors, setErrors] = useState<IErrors>({});
+  const [errors, setErrors] = useState<RegisterErrors>({});
   const [file, setFile] = useState<File>();
   const [data, setData] = useState(initialState);
 
@@ -89,48 +81,6 @@ const RegisterModal = () => {
     setFile(selectedFile);
   }, []);
 
-  const validateInputs = useCallback(() => {
-    let errors: IErrors = {};
-    const { name, email, username, phone, gender, password, passwordConfirm } =
-      data;
-
-    if (name.trim() === '') {
-      errors.name = 'Name must not be empty';
-    }
-
-    if (email.trim() === '') {
-      errors.email = 'Email must not be empty';
-    } else {
-      const regEx =
-        /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
-      if (!email.match(regEx)) {
-        errors.email = 'Email must be a valid email address';
-      }
-    }
-
-    if (username.trim() === '') {
-      errors.username = 'Username must not be empty';
-    }
-
-    if (phone.trim() === '') {
-      errors.phone = 'Phone book must not be empty';
-    }
-
-    if (gender.trim() === '') {
-      errors.gender = 'Gender must not be empty';
-    }
-
-    if (password === '') {
-      errors.password = 'Password must not be empty';
-    } else if (password.length < 8) {
-      errors.password = 'Password should be at least 8 characters long';
-    } else if (password !== passwordConfirm) {
-      errors.passwordConfirm = 'Passwords do not match';
-    }
-
-    return errors;
-  }, [data]);
-
   const handleClear = useCallback(() => {
     setData(initialState);
   }, []);
@@ -140,7 +90,7 @@ const RegisterModal = () => {
       return handleNext();
     }
 
-    const errors = validateInputs();
+    const errors = validateRegisterInputs(data);
 
     if (Object.keys(errors).length > 0) {
       setErrors(errors);
@@ -153,7 +103,7 @@ const RegisterModal = () => {
     handleClear();
     setStep(STEPS.INFO);
     handleToggle();
-  }, [data, file, handleClear, handleNext, handleToggle, step, validateInputs]);
+  }, [data, file, handleClear, handleNext, handleToggle, step]);
 
   const actionLabel = useMemo(() => {
     if (step === STEPS.AVATAR) {
