@@ -295,3 +295,23 @@ export interface RegisterErrors {
   password?: string;
   passwordConfirm?: string;
 }
+
+export interface DesignData {
+  name: string;
+  email: string;
+  address: string;
+  phone: string;
+  subject: string;
+  desc: string;
+  category: string;
+}
+
+export interface DesignErrors {
+  name?: string;
+  email?: string;
+  address?: string;
+  phone?: string;
+  subject?: string;
+  desc?: string;
+  category?: string;
+}
