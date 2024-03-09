@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+
 import { useDarkMode } from './useDarkMode';
 
 export const useActiveMode = () => {

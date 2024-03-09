@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+
 import { useMenu } from './useMenu';
 
 export const useActiveMenu = () => {
