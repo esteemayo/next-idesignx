@@ -2,11 +2,7 @@
 
 import styled from 'styled-components';
 
-interface UploadInputProps {
-  id: string;
-  label: string;
-  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
-}
+import { UploadInputProps } from '@/types';
 
 const UploadInput = ({ id, label, onChange }: UploadInputProps) => {
   return (

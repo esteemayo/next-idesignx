@@ -1,6 +1,7 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
+import { InputHTMLAttributes } from 'react';
 
 export interface SocialIcon {
   id: number;
@@ -314,6 +315,13 @@ export interface DesignErrors {
   subject?: string;
   desc?: string;
   category?: string;
+}
+
+export interface UploadInputProps
+  extends InputHTMLAttributes<HTMLInputElement> {
+  id: string;
+  label: string;
+  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
 export interface ImageUploadProps {
