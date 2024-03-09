@@ -1,9 +1,8 @@
 'use client';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback } from 'react';
-import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styled, { keyframes } from 'styled-components';
+import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 import { CommonImage } from '../common/CommonImage';
 
