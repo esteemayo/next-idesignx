@@ -90,7 +90,7 @@ const DesignModal = () => {
 
   const handleClear = useCallback(() => {
     setData(initialState);
-    setFiles(undefined);
+    setFiles([]);
   }, []);
 
   const handleSubmit = useCallback(() => {
@@ -224,7 +224,7 @@ const DesignModal = () => {
           onChange={handleChange}
           error={errors.category}
         />
-        <ImageUpload value={files} onChange={(value) => setFiles(value)} />
+        <ImageUpload value={files} onChange={handleFiles} />
       </>
     );
   }
