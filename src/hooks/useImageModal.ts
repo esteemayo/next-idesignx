@@ -1,8 +1,8 @@
 'use client';
 
 import { create } from 'zustand';
-import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
+import { devtools } from 'zustand/middleware';
 
 interface ImageModalStore {
   isOpen: boolean;
