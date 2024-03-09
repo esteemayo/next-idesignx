@@ -4,13 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled, { keyframes } from 'styled-components';
 import { faFileArrowUp } from '@fortawesome/free-solid-svg-icons';
 
+import { ImageUploadProps } from '@/types';
 import { CommonImage } from '../common/CommonImage';
-
-interface ImageUploadProps {
-  value?: File | FileList | Blob | MediaSource | any;
-  error?: string;
-  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
-}
 
 interface IContainer {
   error?: string;

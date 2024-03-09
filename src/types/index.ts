@@ -315,3 +315,9 @@ export interface DesignErrors {
   desc?: string;
   category?: string;
 }
+
+export interface ImageUploadProps {
+  value?: File | FileList | Blob | MediaSource | any;
+  error?: string;
+  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
+}
