@@ -219,7 +219,7 @@ export interface StoryCardProps {
 }
 
 export interface ModalProps {
-  isOpen?: boolean;
+  isOpen: boolean;
   title?: string;
   actionLabel: string;
   secondaryActionLabel?: string;
