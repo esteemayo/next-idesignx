@@ -4,7 +4,7 @@ import ErrorMessage from '../form/ErrorMessage';
 import { FormGroup } from '../form/FormGroup';
 import { SelectStyled, StyledOption } from '../form/SelectStyled';
 
-import { GenderList, SelectProps } from '@/types';
+import { SelectProps } from '@/types';
 
 const Select = ({ name, label, options, error, ...rest }: SelectProps) => {
   return (
