@@ -1,8 +1,8 @@
 'use client';
 
+import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styled from 'styled-components';
 
 import { CardProps } from '@/types';
 

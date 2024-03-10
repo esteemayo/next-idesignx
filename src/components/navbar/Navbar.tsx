@@ -13,8 +13,8 @@ import { useMenu } from '@/hooks/useMenu';
 import { useDesignModal } from '@/hooks/useDesignModal';
 import { useLoginModal } from '@/hooks/useLoginModal';
 
-import NavButton from './NavButton';
 import { navItems } from '@/data';
+import NavButton from './NavButton';
 
 interface IContainer {
   active: string;

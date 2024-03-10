@@ -3,9 +3,9 @@
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
-import FormTextArea from './inputs/FormTextArea';
-import FormInput from './inputs/FormInput';
 import UploadInput from './inputs/UploadInput';
+import FormInput from './inputs/FormInput';
+import FormTextArea from './inputs/FormTextArea';
 import FormSelect from './inputs/FormSelect';
 
 import Form from './form/Form';
