@@ -20,7 +20,7 @@ const ImageUpload = ({ value, error, onChange }: ImageUploadProps) => {
         </Label>
         <Input id='file' multiple onChange={onChange} />
       </Wrapper>
-      {value && (
+      {value.length > 0 && (
         <StyledImage
           src={URL.createObjectURL(value[0])}
           width={440}
