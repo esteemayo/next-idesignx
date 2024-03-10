@@ -103,7 +103,6 @@ const Wrapper = styled.div<IWrapper>`
   background-color: ${({ mode }) => setBcgColor(mode)};
 
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 `;
