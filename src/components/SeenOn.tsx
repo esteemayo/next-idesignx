@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import Marquee from 'react-fast-marquee';
-import { useMemo } from 'react';
 import styled from 'styled-components';
+import { useMemo } from 'react';
+import Marquee from 'react-fast-marquee';
 
 import { SeenOnProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
