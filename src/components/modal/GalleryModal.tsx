@@ -21,10 +21,11 @@ const GalleryModal = ({
   onClose,
   onClick,
 }: GalleryModalProps) => {
-  const [showModal, setShowModal] = useState(isOpen);
+  const [showModal, setShowModal] = useState(false);
 
   const handleClose = useCallback(() => {
     setShowModal(false);
+
     setTimeout(() => {
       onClose();
     }, 300);

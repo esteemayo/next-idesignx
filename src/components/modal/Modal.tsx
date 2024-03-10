@@ -28,7 +28,7 @@ const Modal = ({
   onSubmit,
   secondaryAction,
 }: ModalProps) => {
-  const [showModal, setShowModal] = useState(isOpen);
+  const [showModal, setShowModal] = useState(false);
 
   const handleClose = useCallback(() => {
     if (disabled) {
@@ -36,6 +36,7 @@ const Modal = ({
     }
 
     setShowModal(false);
+
     setTimeout(() => {
       onClose();
     }, 300);
