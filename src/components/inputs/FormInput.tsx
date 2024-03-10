@@ -4,11 +4,7 @@ import { FormGroup } from '../form/FormGroup';
 import { Label } from '../form/Label';
 import { StyledInput } from '../form/StyledInput';
 
-interface FormInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  name: string;
-  label: string;
-  path?: string;
-}
+import { FormInputProps } from '@/types';
 
 const FormInput = ({ name, label, path, ...rest }: FormInputProps) => {
   return (

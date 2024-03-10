@@ -338,6 +338,13 @@ export interface SelectProps
   error?: string;
 }
 
+export interface FormInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+  path?: string;
+}
+
 export interface UploadInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
