@@ -6,17 +6,15 @@ import styled, { css } from 'styled-components';
 import Hamburger from '../navbar/Hamburger';
 import NavButton from '../navbar/NavButton';
 
-import MenuItems from './MenuItems';
-import Button from '../buttons/Button';
-
-import { useDesignModal } from '@/hooks/useDesignModal';
-import { useMenu } from '@/hooks/useMenu';
 import { useLoginModal } from '@/hooks/useLoginModal';
+import { useMenu } from '@/hooks/useMenu';
+import { useDesignModal } from '@/hooks/useDesignModal';
 
 import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
+import MenuItems from './MenuItems';
 
 interface IContainer {
   active: string;
@@ -59,12 +57,6 @@ const Sidebar = () => {
         <Hamburger isOpen={menu.isOpen} onToggle={menu.onClose} />
         <ButtonContainer>
           <NavButton label='Login' onClick={handleClick} />
-          <Button
-            nav='true'
-            type='button'
-            label='Upload your design'
-            onClick={handleOpen}
-          />
         </ButtonContainer>
       </Wrapper>
       <MenuItems mode={activeMode} links={navItems} onClose={handleClose} />
