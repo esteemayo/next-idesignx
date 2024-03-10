@@ -38,6 +38,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const StyledImage = styled(CommonImage)``;
+const StyledImage = styled(CommonImage)`
+  object-fit: contain;
+`;
 
 export default NotFound;
