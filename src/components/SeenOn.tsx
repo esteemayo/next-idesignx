@@ -18,8 +18,12 @@ const SeenOn = ({ data }: SeenOnProps) => {
   }, []);
 
   const gradientEffect = useMemo(() => {
+    if (screenSize <= 420) {
+      return false;
+    }
+
     return mode ? false : true;
-  }, [mode]);
+  }, [mode, screenSize]);
 
   useEffect(() => {
     window.addEventListener('resize', handleSize);
