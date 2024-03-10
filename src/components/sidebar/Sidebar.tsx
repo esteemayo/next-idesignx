@@ -92,7 +92,7 @@ const Container = styled.aside<IContainer>`
   )
   `};
   color: var(--clr-white);
-  z-index: 2000;
+  z-index: 4000;
   transition: all 0.5s;
   transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1),
     cubic-bezier(0.77, 0.2, 0.05, 1), cubic-bezier(0.77, 0.2, 0.05, 1);
