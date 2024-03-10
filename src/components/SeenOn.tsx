@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import styled from 'styled-components';
-import { useMemo } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import Marquee from 'react-fast-marquee';
 
 import { SeenOnProps } from '@/types';
@@ -11,9 +11,20 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 const SeenOn = ({ data }: SeenOnProps) => {
   const mode = useDarkMode((state) => state.mode);
 
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
+
+  const handleSize = useCallback(() => {
+    setScreenSize(window.innerWidth);
+  }, []);
+
   const gradientEffect = useMemo(() => {
     return mode ? false : true;
   }, [mode]);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleSize);
+    return window.removeEventListener('resize', handleSize);
+  }, [handleSize]);
 
   return (
     <Container>
