@@ -352,6 +352,14 @@ export interface FormTextAreaProps
   path?: string;
 }
 
+export interface FormSelectProps
+  extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  name: string;
+  label: string;
+  path?: string;
+  options: GenderList;
+}
+
 export interface UploadInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;

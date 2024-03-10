@@ -3,15 +3,7 @@
 import { FormGroup } from '../form/FormGroup';
 import { Option, StyledSelect } from '../form/StyledSelect';
 
-import { GenderList } from '@/types';
-
-interface FormSelectProps
-  extends React.SelectHTMLAttributes<HTMLSelectElement> {
-  name: string;
-  label: string;
-  path?: string;
-  options: GenderList;
-}
+import { FormSelectProps } from '@/types';
 
 const FormSelect = ({
   name,
