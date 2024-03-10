@@ -345,6 +345,13 @@ export interface FormInputProps
   path?: string;
 }
 
+export interface FormTextAreaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  name: string;
+  label: string;
+  path?: string;
+}
+
 export interface UploadInputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
