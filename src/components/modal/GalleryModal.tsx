@@ -42,6 +42,15 @@ const GalleryModal = ({
     [handleClose]
   );
 
+  const handleEscape = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleClose();
+      }
+    },
+    [handleClose]
+  );
+
   const activeModal = useMemo(() => {
     return showModal?.toString();
   }, [showModal]);
