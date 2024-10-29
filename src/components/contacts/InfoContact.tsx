@@ -27,7 +27,7 @@ const Container = styled.div`
     font-size: 1.3rem;
     color: currentColor;
 
-    @media only screen and (max-width: 30em) {
+    @media only screen and (max-width: 21.5em) {
       font-size: 1.25rem;
     }
 

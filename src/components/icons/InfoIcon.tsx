@@ -76,7 +76,7 @@ const StyledLink = styled(Link)<IMode>`
     font-size: 2rem;
     fill: currentColor;
 
-    @media only screen and (max-width: 30em) {
+    @media only screen and (max-width: 21.5em) {
       font-size: 1.5rem;
     }
 

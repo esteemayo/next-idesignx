@@ -54,7 +54,7 @@ const Container = styled.div<IMode>`
   )
   `};
 
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 21.5em) {
     font-size: 1.23rem;
   }
 
