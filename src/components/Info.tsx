@@ -18,15 +18,17 @@ const Info = () => {
   return (
     <Container mode={activeMode}>
       <Wrapper>
-        {infoContacts.map((item) => {
-          return <InfoContact key={item.id} {...item} />;
-        })}
+        <InfoWrap>
+          {infoContacts.map((item) => {
+            return <InfoContact key={item.id} {...item} />;
+          })}
+        </InfoWrap>
+        <Box>
+          {socialIcons.map((item) => {
+            return <InfoIcon key={item.id} mode={activeMode} {...item} />;
+          })}
+        </Box>
       </Wrapper>
-      <Box>
-        {socialIcons.map((item) => {
-          return <InfoIcon key={item.id} mode={activeMode} {...item} />;
-        })}
-      </Box>
     </Container>
   );
 };
@@ -63,6 +65,9 @@ const Container = styled.div<IMode>`
 
 const Wrapper = styled.div`
   width: 140rem;
+`;
+
+const InfoWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 6rem;
