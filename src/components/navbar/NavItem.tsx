@@ -30,9 +30,14 @@ const Container = styled.li<IContainer>`
       text-decoration: none;
       text-transform: capitalize;
       font-weight: 300;
+      font-size: 100%;
       color: currentColor;
       outline-color: ${({ theme }) => theme.outline};
       transition: all 0.2s;
+
+      @media only screen and (min-width: 112.5em) {
+        font-size: 1.8rem;
+      }
     }
 
     &:hover,

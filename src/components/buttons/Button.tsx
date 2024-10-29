@@ -78,6 +78,10 @@ const StyledButton = styled(CommonButton)<IBtn>`
     padding-right: 2rem;
   }
 
+  @media only screen and (min-width: 112.5em) {
+    font-size: var(--default-font-size);
+  }
+
   &:hover {
     opacity: 0.9;
   }
