@@ -29,7 +29,7 @@ const Container = styled.li<IContainer>`
     &:visited {
       text-decoration: none;
       text-transform: capitalize;
-      font-weight: 300;
+      font-weight: ${({ active }) => (active === 'true' ? 600 : 300)};
       font-size: 100%;
       color: currentColor;
       outline-color: ${({ theme }) => theme.outline};
