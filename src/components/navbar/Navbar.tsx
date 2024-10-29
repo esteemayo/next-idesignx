@@ -3,15 +3,16 @@
 import styled from 'styled-components';
 import { usePathname } from 'next/navigation';
 
-import Logo from './Logo';
 import Hamburger from './Hamburger';
-import NavItems from './NavItems';
+import Logo from './Logo';
 import Button from '../buttons/Button';
+import NavItems from './NavItems';
 
-import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useMenu } from '@/hooks/useMenu';
-import { useDesignModal } from '@/hooks/useDesignModal';
+import { useActiveMenu } from '@/hooks/useActiveMenu';
+
 import { useLoginModal } from '@/hooks/useLoginModal';
+import { useDesignModal } from '@/hooks/useDesignModal';
 
 import { navItems } from '@/data';
 import NavButton from './NavButton';
