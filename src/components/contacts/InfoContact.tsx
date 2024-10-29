@@ -38,6 +38,10 @@ const Container = styled.div`
     @media only screen and (min-width: 112.5em) {
       font-size: 1.5rem;
     }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 1.7rem;
+    }
   }
 `;
 

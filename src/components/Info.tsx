@@ -66,6 +66,11 @@ const Container = styled.div<IMode>`
     font-size: var(--default-font-size);
     padding: 1.7rem 0;
   }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 1.8rem;
+    padding: 2rem 0;
+  }
 `;
 
 const Wrapper = styled.div`

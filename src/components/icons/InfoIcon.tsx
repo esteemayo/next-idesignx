@@ -83,6 +83,10 @@ const StyledLink = styled(Link)<IMode>`
     @media only screen and (min-width: 112.5em) {
       font-size: 2.2rem;
     }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 2.4rem;
+    }
   }
 `;
 
