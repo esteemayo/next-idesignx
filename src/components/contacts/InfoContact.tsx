@@ -41,10 +41,6 @@ const Container = styled.div`
   }
 `;
 
-const Details = styled.span`
-  @media only screen and (min-width: 112.5em) {
-    font-size: var(--default-font-size);
-  }
-`;
+const Details = styled.span``;
 
 export default InfoContact;
