@@ -32,27 +32,28 @@ const Navbar = () => {
   return (
     <Container active={activeMenu}>
       <Wrapper>
-        <Hamburger isOpen={isOpen} onToggle={onOpen} />
-        <Logo />
+        <LogoWrap>
+          <Hamburger isOpen={isOpen} onToggle={onOpen} />
+          <Logo />
+        </LogoWrap>
+        <NavItems links={navItems} path={pathname} />
+        <Box>
+          <NavButton label='Login' onClick={loginModal} />
+          <Button
+            nav='true'
+            type='button'
+            label='Upload your design'
+            onClick={designModal.onOpen}
+          />
+        </Box>
       </Wrapper>
-      <NavItems links={navItems} path={pathname} />
-      <Box>
-        <NavButton label='Login' onClick={loginModal} />
-        <Button
-          nav='true'
-          type='button'
-          label='Upload your design'
-          onClick={designModal.onOpen}
-        />
-      </Box>
     </Container>
   );
 };
 
 const Container = styled.nav<IContainer>`
   display: ${({ active }) => (active === 'true' ? 'none' : 'flex')};
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   background-color: ${({ theme }) => theme.bg};
   padding: 1.5rem;
@@ -65,6 +66,13 @@ const Container = styled.nav<IContainer>`
 `;
 
 const Wrapper = styled.div`
+  width: 140rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const LogoWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
