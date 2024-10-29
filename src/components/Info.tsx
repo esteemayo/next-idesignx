@@ -135,6 +135,14 @@ const Wrapper = styled.div`
     width: 55rem;
   }
 
+  @media only screen and (max-width: 28.125em) {
+    width: 50rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    width: 45rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 135rem;
   }
@@ -168,7 +176,7 @@ const Box = styled.div`
   align-items: center;
   gap: 0.5rem;
 
-  @media only screen and (max-width: 23.125em) {
+  @media only screen and (max-width: 26.25em) {
     display: none;
   }
 `;
