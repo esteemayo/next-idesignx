@@ -73,6 +73,20 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (min-width: 112.5em) {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 1.7rem;
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 5rem;
+    height: 5rem;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
   svg {
     font-size: inherit;
     color: currentColor;
