@@ -26,7 +26,7 @@ const ScrollButton = () => {
 
   return (
     <Container>
-      {isVisible && (
+      {!!isVisible && (
         <Button type='button' onClick={handleScroll}>
           <FontAwesomeIcon icon={faArrowUp} />
         </Button>
