@@ -56,7 +56,7 @@ const Container = styled.nav<IContainer>`
   justify-content: center;
 
   background-color: ${({ theme }) => theme.bg};
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   position: relative;
   z-index: 3000;
 
