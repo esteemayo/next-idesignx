@@ -107,6 +107,14 @@ const Container = styled.div`
   right: 3rem;
   bottom: 10rem;
   z-index: 3000;
+
+  @media only screen and (min-width: 112.5em) {
+    padding: 4px;
+  }
+
+  @media only screen and (min-width: 125em) {
+    padding: 0.5rem;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -132,6 +140,18 @@ const Button = styled.button<IBtn>`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (min-width: 112.5em) {
+    width: 3.45rem;
+    height: 3.45rem;
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 3.7rem;
+    height: 3.7rem;
+    font-size: 2.6rem;
+  }
+
   &:nth-child(3) {
     cursor: default;
   }
@@ -149,6 +169,14 @@ const Button = styled.button<IBtn>`
 
     @media only screen and (max-width: 31.25em) {
       font-size: 1.85rem;
+    }
+
+    @media only screen and (min-width: 112.5em) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 2.2rem;
     }
 
     &:hover {
