@@ -64,10 +64,14 @@ const Container = styled.div<IMode>`
 `;
 
 const Wrapper = styled.div`
-  width: 140rem;
+  width: 144rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (min-width: 125em) {
+    width: 150rem;
+  }
 `;
 
 const InfoWrap = styled.div`
