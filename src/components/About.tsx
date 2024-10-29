@@ -62,6 +62,14 @@ const Heading = styled.h2`
   @media only screen and (max-width: 18.75em) {
     font-size: 2.5rem;
   }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 4.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 5rem;
+  }
 `;
 
 const Span = styled.span`
@@ -69,11 +77,20 @@ const Span = styled.span`
 `;
 
 const Text = styled.p`
+  font-size: 100%;
   margin-bottom: 6rem;
 
   @media only screen and (max-width: 50em) {
     word-spacing: 1px;
     margin-bottom: 3rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
   }
 `;
 

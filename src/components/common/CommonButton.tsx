@@ -10,4 +10,12 @@ export const CommonButton = styled.button`
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
   transition: all 0.2s;
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+  }
 `;

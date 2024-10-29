@@ -27,6 +27,16 @@ export const StyledLink = styled(Link)`
     font-size: 1.45rem;
   }
 
+  @media only screen and (min-width: 112.5em) {
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    padding: 1.2rem 3rem;
+    font-size: 2rem;
+  }
+
   &:active {
     color: currentColor;
   }
