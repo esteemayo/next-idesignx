@@ -19,6 +19,14 @@ export const StyledTextArea = styled(CommonTextArea)<ITextArea>`
   &::placeholder {
     font-size: 1.4rem;
     color: var(--clr-gray-dark-2);
+
+    @media only screen and (min-width: 112.5em) {
+      font-size: var(--default-font-size);
+    }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 1.8rem;
+    }
   }
 
   &:focus {

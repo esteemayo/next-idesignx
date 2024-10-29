@@ -11,4 +11,14 @@ export const CommonTextArea = styled.textarea`
   padding: 2rem;
   color: var(--clr-gray-dark-2);
   transition: all 0.2s;
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.7rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+    padding: 2.25rem 2rem;
+  }
 `;
