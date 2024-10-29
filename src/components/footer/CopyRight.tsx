@@ -30,6 +30,14 @@ const Container = styled.p`
     font-size: 1.3rem;
     margin-top: 3rem;
   }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+  }
 `;
 
 const Year = styled.span``;

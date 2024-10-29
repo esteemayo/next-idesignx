@@ -22,6 +22,7 @@ const Container = styled.article`
   grid-template-rows: repeat(4, min-content);
   gap: 1.5rem;
 
+  width: 33rem;
   padding: 3rem;
   background-color: rgba(233, 233, 233, 0.1);
   border-radius: 2px;

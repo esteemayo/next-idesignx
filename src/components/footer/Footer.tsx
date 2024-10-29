@@ -30,7 +30,7 @@ const Footer = () => {
 };
 
 const Container = styled.footer<IContainer>`
-  padding: 8rem;
+  padding: 8rem 0;
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
   background-image: ${({ mode }) =>
