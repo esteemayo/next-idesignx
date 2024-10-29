@@ -80,6 +80,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media only screen and (min-width: 112.5em) {
+    width: 135rem;
+  }
+
   @media only screen and (min-width: 125em) {
     width: 150rem;
   }
