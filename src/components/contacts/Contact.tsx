@@ -113,6 +113,14 @@ const Container = styled.section`
   @media only screen and (max-width: 25em) {
     grid-column: full-start / full-end;
   }
+
+  @media only screen and (min-width: 112.5em) {
+    margin: 8rem 6rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    margin: 8rem 4rem;
+  }
 `;
 
 const Heading = styled.h2`
