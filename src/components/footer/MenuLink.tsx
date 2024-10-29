@@ -28,6 +28,7 @@ const StyledLink = styled(Link)<ILink>`
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  font-size: 100%;
   padding: 1.5rem;
   color: inherit;
   border-radius: 2px;
@@ -37,6 +38,16 @@ const StyledLink = styled(Link)<ILink>`
   @media only screen and (max-width: 37.5em) {
     font-size: 1.3rem;
     padding: 1.2rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.8rem;
+    padding: 1.7rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+    padding: 2rem;
   }
 
   &:hover,
