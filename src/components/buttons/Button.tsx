@@ -72,7 +72,7 @@ const StyledButton = styled(CommonButton)<IBtn>`
     width: ${({ nav }) => (nav !== 'true' ? '100%' : undefined)};
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.25em) {
     font-size: ${({ outline }) => (outline === 'true' ? '1.35rem' : '1.45rem')};
     padding-left: 2rem;
     padding-right: 2rem;

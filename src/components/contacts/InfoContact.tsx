@@ -23,6 +23,11 @@ const Container = styled.div`
     gap: 0.5rem;
   }
 
+  @media only screen and (max-width: 26.25em) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   svg {
     font-size: 1.3rem;
     color: currentColor;
