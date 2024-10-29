@@ -143,6 +143,10 @@ const Wrapper = styled.div`
     width: 45rem;
   }
 
+  @media only screen and (max-width: 23.4375em) {
+    width: 40rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 135rem;
   }
@@ -161,7 +165,7 @@ const InfoWrap = styled.div`
     gap: 3rem;
   }
 
-  @media only screen and (max-width: 23.125em) {
+  @media only screen and (max-width: 26.25em) {
     width: 100%;
     justify-content: space-between;
   }
