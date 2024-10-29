@@ -33,11 +33,10 @@ const Info = () => {
 
 const Container = styled.div<IMode>`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   font-size: 1.4rem;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
   color: var(--clr-white);
@@ -63,6 +62,7 @@ const Container = styled.div<IMode>`
 `;
 
 const Wrapper = styled.div`
+  width: 140rem;
   display: flex;
   align-items: center;
   gap: 6rem;
