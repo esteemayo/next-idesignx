@@ -18,7 +18,7 @@ interface IProperty {
 }
 
 const Hamburger = ({ isOpen, onToggle }: HamburgerProps) => {
-  const [showMenu, setShowMenu] = useState(isOpen);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleHandler = useCallback(() => {
     setShowMenu(false);
