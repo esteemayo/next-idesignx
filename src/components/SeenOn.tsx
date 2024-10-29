@@ -72,7 +72,16 @@ const Text = styled.div`
   grid-template-columns: 1fr max-content 1fr;
   gap: 2vw;
   align-items: center;
+  font-size: 100%;
   color: var(--clr-purple-light-1);
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+  }
 
   &::before,
   &::after {
@@ -94,6 +103,16 @@ const StyledImage = styled(Image)`
   max-width: 5rem;
   max-height: 5rem;
   object-fit: contain;
+
+  @media only screen and (min-width: 112.5em) {
+    max-width: 5.5rem;
+    max-height: 5.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    max-width: 6rem;
+    max-height: 6rem;
+  }
 `;
 
 export default SeenOn;
