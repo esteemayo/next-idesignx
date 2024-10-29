@@ -28,11 +28,11 @@ const Container = styled.article`
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
 
   @media only screen and (min-width: 112.5em) {
-    width: 35rem;
+    width: 37rem;
   }
 
   @media only screen and (min-width: 125em) {
-    width: 40rem;
+    width: 42rem;
   }
 
   svg {
