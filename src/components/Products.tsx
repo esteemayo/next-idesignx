@@ -10,21 +10,25 @@ import { ProductsProps } from '@/types';
 const Products = ({ data }: ProductsProps) => {
   return (
     <Container>
-      <Heading>Our products</Heading>
       <Wrapper>
-        {data.map((item) => {
-          return <ProductImage key={item.id} {...item} />;
-        })}
+        <Heading>Our products</Heading>
+        <ProductWrap>
+          {data.map((item) => {
+            return <ProductImage key={item.id} {...item} />;
+          })}
+        </ProductWrap>
+        <Box>
+          <StyledLink href='/designs'>All products</StyledLink>
+        </Box>
       </Wrapper>
-      <Box>
-        <StyledLink href='/designs'>All products</StyledLink>
-      </Box>
     </Container>
   );
 };
 
 const Container = styled.section`
   grid-column: full-start / full-end;
+  display: flex;
+  justify-content: center;
 
   margin: 8rem 0;
   padding: 3rem;
@@ -40,6 +44,18 @@ const Container = styled.section`
   @media only screen and (max-width: 25em) {
     grid-column: full-start / full-end;
     padding: 3rem;
+  }
+`;
+
+const Wrapper = styled.div`
+  width: 144rem;
+
+  @media only screen and (min-width: 112.5em) {
+    width: 135rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 150rem;
   }
 `;
 
@@ -63,7 +79,7 @@ const Heading = styled.h3`
   }
 `;
 
-const Wrapper = styled.div`
+const ProductWrap = styled.div`
   margin-top: 3rem;
 
   @media only screen and (max-width: 50em) {
