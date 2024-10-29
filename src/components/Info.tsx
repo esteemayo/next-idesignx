@@ -131,6 +131,10 @@ const Wrapper = styled.div`
     width: 60rem;
   }
 
+  @media only screen and (max-width: 31.25em) {
+    width: 55rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 135rem;
   }
@@ -145,7 +149,7 @@ const InfoWrap = styled.div`
   align-items: center;
   gap: 6rem;
 
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 31.25em) {
     gap: 3rem;
   }
 
@@ -163,8 +167,6 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-
-  margin-right: 0.5rem;
 
   @media only screen and (max-width: 23.125em) {
     display: none;
