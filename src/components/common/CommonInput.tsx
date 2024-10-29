@@ -16,4 +16,9 @@ export const CommonInput = styled.input`
     font-size: 1.7rem;
     padding: 2rem;
   }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+    padding: 2.25rem 2rem;
+  }
 `;

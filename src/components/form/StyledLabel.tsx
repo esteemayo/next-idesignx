@@ -22,6 +22,14 @@ export const StyledLabel = styled.label<ILabel>`
   color: ${({ mode, error }) => setColor(mode, error)};
   margin-bottom: 1rem;
 
+  @media only screen and (min-width: 112.5em) {
+    font-size: var(--default-font-size);
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 1.8rem;
+  }
+
   &::after {
     content: '*';
     display: inline-block;

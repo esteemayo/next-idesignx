@@ -11,4 +11,8 @@ export const Label = styled.label`
   @media only screen and (min-width: 112.5em) {
     font-size: var(--default-font-size);
   }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 1.8rem;
+  }
 `;
