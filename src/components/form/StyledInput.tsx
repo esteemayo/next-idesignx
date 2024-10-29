@@ -19,6 +19,10 @@ export const StyledInput = styled(CommonInput)<IInput>`
   &::placeholder {
     font-size: 1.4rem;
     color: var(--clr-gray-dark-2);
+
+    @media only screen and (min-width: 112.5em) {
+      font-size: var(--default-font-size);
+    }
   }
 
   &:focus {

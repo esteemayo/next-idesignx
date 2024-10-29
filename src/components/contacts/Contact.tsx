@@ -137,6 +137,10 @@ const Heading = styled.h2`
   @media only screen and (min-width: 112.5em) {
     font-size: 3.5rem;
   }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4rem;
+  }
 `;
 
 const Text = styled.p`
@@ -145,6 +149,10 @@ const Text = styled.p`
 
   @media only screen and (min-width: 112.5em) {
     font-size: 1.8rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
   }
 `;
 

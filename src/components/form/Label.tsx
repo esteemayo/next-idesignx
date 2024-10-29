@@ -7,4 +7,8 @@ export const Label = styled.label`
   color: var(--clr-gray-dark-2);
   margin-left: 2rem;
   margin-top: 0.7rem;
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: var(--default-font-size);
+  }
 `;
