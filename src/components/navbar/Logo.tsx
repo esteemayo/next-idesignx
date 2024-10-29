@@ -44,6 +44,11 @@ const StyledImage = styled(CommonImage)`
   @media only screen and (max-width: 25em) {
     height: 3.5rem;
   }
+
+  @media only screen and (min-width: 112.5em) {
+    width: 5rem;
+    height: auto;
+  }
 `;
 
 export default Logo;
