@@ -64,6 +64,14 @@ const Container = styled.nav<IContainer>`
   @media only screen and (min-width: 48em) {
     display: flex;
   }
+
+  @media only screen and (min-width: 112.5em) {
+    padding: 1.7rem 0;
+  }
+
+  @media only screen and (min-width: 125em) {
+    padding: 2rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
