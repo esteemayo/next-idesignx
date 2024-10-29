@@ -80,10 +80,12 @@ const StyledButton = styled(CommonButton)<IBtn>`
 
   @media only screen and (min-width: 112.5em) {
     font-size: var(--default-font-size);
+    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (min-width: 125em) {
     font-size: 1.8rem;
+    padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
   &:hover {
