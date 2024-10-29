@@ -31,7 +31,6 @@ const Container = styled.section`
   justify-content: center;
 
   margin: 8rem 0;
-  padding: 3rem;
 
   @media only screen and (max-width: 50em) {
     grid-column: center-start / center-end;
@@ -76,6 +75,14 @@ const Heading = styled.h3`
 
   @media only screen and (max-width: 18.75em) {
     font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4rem;
   }
 `;
 
