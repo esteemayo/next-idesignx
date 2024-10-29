@@ -27,9 +27,25 @@ const Container = styled.article`
   border-radius: 2px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
 
+  @media only screen and (min-width: 112.5em) {
+    width: 35rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 40rem;
+  }
+
   svg {
     font-size: 4.5rem;
     color: var(--clr-white);
+
+    @media only screen and (min-width: 112.5em) {
+      font-size: 4.7rem;
+    }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 5rem;
+    }
   }
 `;
 
@@ -37,6 +53,14 @@ const Heading = styled.h5`
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 1px;
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.4rem;
+  }
 `;
 
 const Text = styled.p`
@@ -44,6 +68,14 @@ const Text = styled.p`
   font-size: 1.7rem;
   word-break: break-all;
   line-height: 1.4;
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.1rem;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -69,6 +101,16 @@ const StyledLink = styled(Link)`
   border-radius: 3px;
   outline-color: #f9f9f9;
   transition: all 0.3s;
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: var(--default-font-size);
+    padding: 1rem 3rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+    padding: 1.2rem 3rem;
+  }
 
   &:hover,
   &:active {
