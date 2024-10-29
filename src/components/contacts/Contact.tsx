@@ -133,10 +133,19 @@ const Heading = styled.h2`
   @media only screen and (max-width: 18.75em) {
     font-size: 2.5rem;
   }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.5rem;
+  }
 `;
 
 const Text = styled.p`
+  font-size: 100%;
   color: ${({ theme }) => theme.text};
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.8rem;
+  }
 `;
 
 export default Contact;
