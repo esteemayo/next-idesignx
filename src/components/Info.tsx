@@ -115,6 +115,14 @@ const Wrapper = styled.div`
     width: 80rem;
   }
 
+  @media only screen and (max-width: 40.625em) {
+    width: 75rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    width: 70rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 135rem;
   }
