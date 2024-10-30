@@ -21,7 +21,7 @@ const Home = () => {
       <About />
       <Contact />
       <SeenOn data={brands} />
-      {/* <Products data={productImages} /> */}
+      <Products data={productImages} />
       <Printings data={printItems} />
     </HomeLayout>
   );

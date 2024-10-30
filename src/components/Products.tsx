@@ -49,6 +49,82 @@ const Container = styled.section`
 const Wrapper = styled.div`
   width: 144rem;
 
+  @media only screen and (max-width: 87.5em) {
+    width: 130rem;
+  }
+
+  @media only screen and (max-width: 81.25em) {
+    width: 120rem;
+  }
+
+  @media only screen and (max-width: 76.25em) {
+    width: 115rem;
+  }
+
+  @media only screen and (max-width: 64em) {
+    width: 105rem;
+  }
+
+  @media only screen and (max-width: 59.375em) {
+    width: 100rem;
+  }
+
+  @media only screen and (max-width: 57.5em) {
+    width: 95rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 90rem;
+  }
+
+  @media only screen and (max-width: 46.875em) {
+    width: 85rem;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    width: 80rem;
+  }
+
+  @media only screen and (max-width: 40.625em) {
+    width: 75rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    width: 70rem;
+  }
+
+  @media only screen and (max-width: 35.625em) {
+    width: 65rem;
+  }
+
+  @media only screen and (max-width: 33.75em) {
+    width: 60rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 55rem;
+  }
+
+  @media only screen and (max-width: 28.125em) {
+    width: 50rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    width: 45rem;
+  }
+
+  @media only screen and (max-width: 23.4375em) {
+    width: 40rem;
+  }
+
+  @media only screen and (max-width: 20.625em) {
+    width: 35rem;
+  }
+
+  @media only screen and (max-width: 18.125em) {
+    width: 33rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 135rem;
   }
