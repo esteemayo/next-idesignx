@@ -38,6 +38,7 @@ const Container = styled.article`
 
   @media only screen and (max-width: 36.875em) {
     width: 28rem;
+    padding: 2rem;
   }
 
   @media only screen and (max-width: 25em) {

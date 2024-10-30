@@ -98,6 +98,11 @@ const Box = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;
   }
+
+  @media only screen and (max-width: 32.5em) {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 `;
 
 export default Printings;
