@@ -32,17 +32,19 @@ const SeenOn = ({ data }: SeenOnProps) => {
 
   return (
     <Container>
-      <Text>As seen on</Text>
-      <Marquee speed={100} gradient={gradientEffect}>
-        <Wrapper>
-          {data.map((item) => {
-            const { id, img } = item;
-            return (
-              <StyledImage key={id} src={img} width={80} height={50} alt='' />
-            );
-          })}
-        </Wrapper>
-      </Marquee>
+      <Wrapper>
+        <Text>As seen on</Text>
+        <Marquee speed={100} gradient={gradientEffect}>
+          <ImageWrap>
+            {data.map((item) => {
+              const { id, img } = item;
+              return (
+                <StyledImage key={id} src={img} width={80} height={50} alt='' />
+              );
+            })}
+          </ImageWrap>
+        </Marquee>
+      </Wrapper>
     </Container>
   );
 };
@@ -65,6 +67,12 @@ const Container = styled.section`
   @media only screen and (max-width: 18.75em) {
     margin-bottom: 0;
   }
+`;
+
+const Wrapper = styled.div`
+  position: absolute;
+  left: 10%;
+  right: 10%;
 `;
 
 const Text = styled.div`
@@ -92,7 +100,7 @@ const Text = styled.div`
   }
 `;
 
-const Wrapper = styled.div`
+const ImageWrap = styled.div`
   display: grid;
   grid-template-columns: repeat(8, minmax(min-content, 1fr));
   column-gap: 3rem;
