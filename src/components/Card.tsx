@@ -53,6 +53,10 @@ const Container = styled.article`
     width: 30rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    width: 100%;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 37rem;
   }
@@ -170,6 +174,10 @@ const StyledLink = styled(Link)`
 
   @media only screen and (max-width: 25em) {
     font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    font-size: 1.4rem;
   }
 
   @media only screen and (min-width: 112.5em) {
