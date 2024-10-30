@@ -40,6 +40,10 @@ const Container = styled.section`
     grid-column: full-start / full-end;
     padding: 0 3rem;
   }
+
+  @media only screen and (max-width: 21.5em) {
+    padding: 0 2rem;
+  }
 `;
 
 const Heading = styled.h2`
