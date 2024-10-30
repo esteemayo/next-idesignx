@@ -109,6 +109,14 @@ const Container = styled.section`
     margin: 17rem 5rem;
   }
 
+  @media only screen and (max-width: 59.375em) {
+    margin: 20rem 2rem;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    margin: 17rem 2rem;
+  }
+
   @media only screen and (max-width: 50em) {
     grid-row: 5 / 6;
     grid-column: center-start / center-end;
@@ -158,6 +166,22 @@ const Heading = styled.h2`
 const Text = styled.p`
   font-size: 100%;
   color: ${({ theme }) => theme.text};
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.7rem;
+  }
 
   @media only screen and (min-width: 112.5em) {
     font-size: 1.8rem;
