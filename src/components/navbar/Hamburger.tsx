@@ -55,7 +55,7 @@ const Container = styled.button<IProps>`
     setProperty(active, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
   cursor: pointer;
 
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 48.0625em) {
     display: none;
   }
 `;

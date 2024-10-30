@@ -18,7 +18,7 @@ const NavItems = ({ links, path }: NavItemsProps) => {
 const Container = styled.ul`
   display: none;
 
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 48.0625em) {
     list-style: none;
 
     display: grid;
