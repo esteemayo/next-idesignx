@@ -31,8 +31,20 @@ const Container = styled.ul`
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
+  @media only screen and (max-width: 48em) {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
   @media only screen and (max-width: 37.5em) {
     gap: 1rem;
+  }
+
+  @media only screen and (max-width: 26.875em) {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 `;
 
