@@ -22,7 +22,7 @@ const Home = () => {
       <Contact />
       <SeenOn data={brands} />
       {/* <Products data={productImages} /> */}
-      {/* <Printings data={printItems} /> */}
+      <Printings data={printItems} />
     </HomeLayout>
   );
 };

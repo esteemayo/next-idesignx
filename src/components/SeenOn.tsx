@@ -56,7 +56,7 @@ const Container = styled.section`
 
   @media only screen and (max-width: 56.25em) {
     grid-column: full-start / full-end;
-    margin: 5rem;
+    margin-top: -22rem;
     margin-bottom: -5rem;
   }
 

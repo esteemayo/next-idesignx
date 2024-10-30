@@ -70,6 +70,22 @@ const Text = styled.p`
   word-break: break-all;
   line-height: 1.4;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.8rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     font-size: 1.9rem;
   }
@@ -102,6 +118,22 @@ const StyledLink = styled(Link)`
   border-radius: 3px;
   outline-color: #f9f9f9;
   transition: all 0.3s;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: var(--default-font-size);
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.5rem;
+  }
 
   @media only screen and (min-width: 112.5em) {
     font-size: var(--default-font-size);
