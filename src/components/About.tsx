@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+
 import { StyledLink } from './buttons/StyledLink';
 
 const About = () => {
