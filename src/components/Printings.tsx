@@ -82,6 +82,18 @@ const Box = styled.div`
   gap: 6rem;
   margin: 5rem 0;
 
+  @media only screen and (max-width: 40.625em) {
+    gap: 5rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    gap: 4rem;
+  }
+
+  @media only screen and (max-width: 36.875em) {
+    gap: 0;
+  }
+
   @media only screen and (max-width: 37.5em) {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     justify-content: center;

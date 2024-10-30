@@ -28,6 +28,22 @@ const Container = styled.article`
   border-radius: 2px;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.09);
 
+  @media only screen and (max-width: 56.25em) {
+    width: 35rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 31rem;
+  }
+
+  @media only screen and (max-width: 36.875em) {
+    width: 28rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    width: 34rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     width: 37rem;
   }
