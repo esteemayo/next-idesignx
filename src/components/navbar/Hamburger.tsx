@@ -48,12 +48,17 @@ const Container = styled.button<IProps>`
   justify-content: space-between;
   border: none;
   width: 2.65rem;
-  height: 2.12rem;
+  height: 2.125rem;
   font-weight: 400;
   background-color: transparent;
   color: ${({ active }) =>
     setProperty(active, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
   cursor: pointer;
+
+  @media only screen and (max-width: 25em) {
+    width: 2.4rem;
+    height: 2rem;
+  }
 
   @media only screen and (min-width: 48.0625em) {
     display: none;
