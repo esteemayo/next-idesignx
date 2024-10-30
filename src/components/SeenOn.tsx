@@ -62,7 +62,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 50em) {
-    margin-bottom: 2rem;
+    margin: 10rem 0;
   }
 
   @media only screen and (max-width: 18.75em) {
