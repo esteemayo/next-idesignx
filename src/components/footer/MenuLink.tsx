@@ -35,9 +35,26 @@ const StyledLink = styled(Link)<ILink>`
   outline-color: ${({ theme }) => theme.outline};
   transition: all 0.2s;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
+    word-spacing: 1px;
+    margin-bottom: 3rem;
+  }
+
   @media only screen and (max-width: 37.5em) {
-    font-size: 1.3rem;
     padding: 1.2rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 112.5em) {
