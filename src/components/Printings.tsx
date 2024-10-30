@@ -57,8 +57,12 @@ const Heading = styled.h4`
   text-transform: none;
   line-height: 1.1;
 
-  @media only screen and (max-width: 18.75em) {
-    font-size: 2.75rem;
+  @media only screen and (max-width: 22.5em) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    font-size: 2.65rem;
   }
 
   @media only screen and (min-width: 112.5em) {
@@ -74,6 +78,11 @@ const Bold = styled.b``;
 
 const Span = styled.span`
   display: block;
+
+  @media only screen and (max-width: 22.5em) {
+    display: inline-block;
+    margin-left: 4px;
+  }
 `;
 
 const Box = styled.div`

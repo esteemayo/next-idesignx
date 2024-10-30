@@ -41,8 +41,16 @@ const Container = styled.article`
     padding: 2rem;
   }
 
+  @media only screen and (max-width: 32.5em) {
+    width: 35rem;
+  }
+
   @media only screen and (max-width: 25em) {
-    width: 34rem;
+    width: 33rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    width: 30rem;
   }
 
   @media only screen and (min-width: 112.5em) {
@@ -56,6 +64,14 @@ const Container = styled.article`
   svg {
     font-size: 4.5rem;
     color: var(--clr-white);
+
+    @media only screen and (max-width: 22.5em) {
+      font-size: 4rem;
+    }
+
+    @media only screen and (max-width: 21.5em) {
+      font-size: 3.8rem;
+    }
 
     @media only screen and (min-width: 112.5em) {
       font-size: 4.7rem;
@@ -71,6 +87,10 @@ const Heading = styled.h5`
   text-transform: uppercase;
   font-size: 2rem;
   letter-spacing: 1px;
+
+  @media only screen and (max-width: 22.5em) {
+    font-size: 1.8rem;
+  }
 
   @media only screen and (min-width: 112.5em) {
     font-size: 2.2rem;
