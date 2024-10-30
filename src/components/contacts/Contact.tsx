@@ -97,6 +97,18 @@ const Container = styled.section`
   box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
   border-radius: 1rem;
 
+  @media only screen and (max-width: 75em) {
+    margin: 10rem 6rem;
+  }
+
+  @media only screen and (max-width: 68.75em) {
+    margin: 15rem 6rem;
+  }
+
+  @media only screen and (max-width: 64em) {
+    margin: 17rem 5rem;
+  }
+
   @media only screen and (max-width: 50em) {
     grid-row: 5 / 6;
     grid-column: center-start / center-end;

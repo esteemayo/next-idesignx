@@ -19,7 +19,7 @@ const Home = () => {
     <HomeLayout>
       <Hero />
       <About />
-      {/* <Contact /> */}
+      <Contact />
       {/* <SeenOn data={brands} /> */}
       {/* <Products data={productImages} /> */}
       {/* <Printings data={printItems} /> */}
