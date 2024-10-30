@@ -47,8 +47,8 @@ const Container = styled.button<IProps>`
   flex-direction: column;
   justify-content: space-between;
   border: none;
-  width: 3rem;
-  height: 2.3rem;
+  width: 2.65rem;
+  height: 2.12rem;
   font-weight: 400;
   background-color: transparent;
   color: ${({ active }) =>
