@@ -18,11 +18,11 @@ const Home = () => {
   return (
     <HomeLayout>
       <Hero />
-      <About />
-      <Contact />
-      <SeenOn data={brands} />
-      <Products data={productImages} />
-      <Printings data={printItems} />
+      {/* <About /> */}
+      {/* <Contact /> */}
+      {/* <SeenOn data={brands} /> */}
+      {/* <Products data={productImages} /> */}
+      {/* <Printings data={printItems} /> */}
     </HomeLayout>
   );
 };
