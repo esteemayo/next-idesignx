@@ -80,7 +80,12 @@ const Text = styled.p`
   font-size: 100%;
   margin-bottom: 6rem;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.7rem;
+  }
+
   @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
     word-spacing: 1px;
     margin-bottom: 3rem;
   }

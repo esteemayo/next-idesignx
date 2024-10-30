@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <HomeLayout>
       <Hero />
-      {/* <About /> */}
+      <About />
       {/* <Contact /> */}
       {/* <SeenOn data={brands} /> */}
       {/* <Products data={productImages} /> */}
