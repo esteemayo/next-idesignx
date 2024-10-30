@@ -36,7 +36,7 @@ const Container = styled.section`
     margin: 8rem 0;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.875em) {
     grid-column: full-start / full-end;
     padding: 0 3rem;
   }
@@ -55,7 +55,7 @@ const Heading = styled.h2`
     margin-bottom: 2.5rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.875em) {
     font-size: 3.23rem;
   }
 

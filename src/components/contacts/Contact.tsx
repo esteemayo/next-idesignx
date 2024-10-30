@@ -130,8 +130,10 @@ const Container = styled.section`
     margin-bottom: 10rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.875em) {
     grid-column: full-start / full-end;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   @media only screen and (min-width: 112.5em) {
