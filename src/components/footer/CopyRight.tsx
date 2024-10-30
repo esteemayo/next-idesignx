@@ -25,10 +25,21 @@ const Container = styled.p`
   margin-right: auto;
   color: currentColor;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: var(--default-font-size);
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.7rem;
+  }
+
   @media only screen and (max-width: 37.5em) {
     width: 100%;
-    font-size: 1.3rem;
     margin-top: 3rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.8rem;
   }
 
   @media only screen and (min-width: 112.5em) {

@@ -90,6 +90,10 @@ const Text = styled.p`
     margin-bottom: 3rem;
   }
 
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     font-size: 1.8rem;
   }
