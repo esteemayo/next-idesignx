@@ -64,12 +64,21 @@ const StyledButton = styled(CommonButton)<IBtn>`
     outline === 'true' ? 'var(--clr-purple-light-1)' : 'var(--clr-white)'};
   transition: all 0.2s;
 
+  @media only screen and (max-width: 56.25em) {
+    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
+  }
+
   @media only screen and (max-width: 50em) {
+    padding: ${({ small }) => (small === 'true' ? '1.3rem' : '1.3rem 3.3rem')};
     margin-top: ${({ nav }) => (nav !== 'true' ? '1rem' : undefined)};
   }
 
   @media only screen and (max-width: 37.5em) {
     width: ${({ nav }) => (nav !== 'true' ? '100%' : undefined)};
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
   @media only screen and (max-width: 26.25em) {
@@ -78,13 +87,15 @@ const StyledButton = styled(CommonButton)<IBtn>`
     padding-right: 2rem;
   }
 
+  @media only screen and (max-width: 25em) {
+    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
+  }
+
   @media only screen and (min-width: 112.5em) {
-    font-size: var(--default-font-size);
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (min-width: 125em) {
-    font-size: 1.8rem;
     padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
