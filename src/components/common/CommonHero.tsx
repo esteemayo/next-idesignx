@@ -9,7 +9,7 @@ export const CommonHero = styled.header`
   background-position: center;
   background-attachment: fixed;
 
-  @media only screen and (max-width: 26.875em) {
+  @media only screen and (max-width: 64em) {
     background-attachment: scroll;
   }
 `;

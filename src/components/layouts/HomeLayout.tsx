@@ -18,7 +18,7 @@ const Container = styled.main`
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 56.25em) {
     grid-template-rows: 47vw repeat(5, min-content);
   }
 
@@ -26,7 +26,7 @@ const Container = styled.main`
     grid-template-rows: 50vw;
   }
 
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 48em) {
     grid-template-rows: 55vw;
   }
 
@@ -35,11 +35,11 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 26.875em) {
-    grid-template-rows: 70vw;
+    grid-template-rows: 75vw;
   }
 
   @media only screen and (max-width: 21.5em) {
-    grid-template-rows: 75vw;
+    grid-template-rows: 80vw;
   }
 `;
 
