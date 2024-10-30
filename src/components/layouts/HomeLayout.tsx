@@ -30,7 +30,7 @@ const Container = styled.main`
     grid-template-rows: 55vw;
   }
 
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 34.375em) {
     grid-template-rows: 60vw;
   }
 
