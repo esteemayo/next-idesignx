@@ -23,6 +23,14 @@ const Container = styled.ul`
   align-items: center;
   gap: 2rem;
 
+  @media only screen and (max-width: 68.75em) {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  @media only screen and (max-width: 64em) {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
   @media only screen and (max-width: 37.5em) {
     gap: 1rem;
   }
