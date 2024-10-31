@@ -110,52 +110,68 @@ const Heading = styled.h2`
 const Text = styled.p`
   grid-row: 3 / 4;
   width: 75%;
+  text-align: justify;
   font-size: 100%;
   letter-spacing: 0.5px;
 
   @media only screen and (max-width: 56.25em) {
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 43.75em) {
     width: 100%;
-    letter-spacing: 1px;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
   }
 
   @media only screen and (max-width: 25em) {
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
+    font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
-    letter-spacing: 1px;
   }
 `;
 
 const Paragraph = styled.p`
   grid-row: 4 / 5;
   width: 75%;
+  text-align: justify;
   font-size: 100%;
   letter-spacing: 0.5px;
 
   @media only screen and (max-width: 56.25em) {
     width: 90%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 43.75em) {
     width: 100%;
-    letter-spacing: 1px;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
   }
 
   @media only screen and (max-width: 25em) {
     grid-row: 3 / 4;
+    font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 20em) {
     font-size: 1.3rem;
-    letter-spacing: 1px;
   }
 `;
 
