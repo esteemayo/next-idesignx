@@ -85,8 +85,23 @@ const Text = styled.p`
 
   @media only screen and (max-width: 75em) {
     grid-column: 1 / -1;
-    font-size: 2.3rem;
     letter-spacing: 0;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.6rem;
   }
 
   @media only screen and (max-width: 23.13em) {
