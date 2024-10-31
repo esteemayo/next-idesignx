@@ -47,6 +47,18 @@ const HeadingSecondary = styled.h2`
   color: ${({ theme }) => theme.textSmall};
   line-height: 1;
   margin-top: 0.8rem;
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 2.1rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.3rem;
+  }
 `;
 
 const setAlignment = (val: string | null | undefined): string => {
