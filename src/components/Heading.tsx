@@ -28,6 +28,22 @@ const HeadingPrimary = styled.h1`
   color: ${({ theme }) => theme.textSoft};
   line-height: 1.2;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.5rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 2.6rem;
   }
@@ -47,6 +63,22 @@ const HeadingSecondary = styled.h2`
   color: ${({ theme }) => theme.textSmall};
   line-height: 1;
   margin-top: 0.8rem;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.8rem;
+  }
 
   @media only screen and (min-width: 106.25em) {
     font-size: 1.9rem;
