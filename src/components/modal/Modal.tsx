@@ -208,6 +208,18 @@ const CloseButton = styled.button`
   cursor: pointer;
   transition: all 0.2s;
 
+  @media only screen and (min-width: 106.25em) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 3.5rem;
+  }
+
   &:hover {
     opacity: 0.7;
   }
