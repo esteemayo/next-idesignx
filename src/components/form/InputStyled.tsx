@@ -17,6 +17,18 @@ export const InputStyled = styled(CommonInput)<IInput>`
   &::placeholder {
     font-size: 1.4rem;
     color: ${({ error }) => setPlaceholderColor(error)};
+
+    @media only screen and (min-width: 106.25em) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 112.5em) {
+      font-size: var(--default-font-size);
+    }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 1.8rem;
+    }
   }
 `;
 
