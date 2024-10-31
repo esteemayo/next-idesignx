@@ -38,7 +38,7 @@ export const StyledLabel = styled.label<ILabel>`
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 20.625em) {
     width: 35%;
   }
 
