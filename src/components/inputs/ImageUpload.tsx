@@ -49,6 +49,18 @@ const Container = styled.div<IContainer>`
   position: relative;
   animation: ${Spin} 1s linear infinite;
 
+  @media only screen and (min-width: 106.25em) {
+    height: 23rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    height: 25rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    height: 30rem;
+  }
+
   svg {
     position: absolute;
     top: 50%;
