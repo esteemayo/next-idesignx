@@ -69,12 +69,20 @@ const Container = styled.article`
     font-size: 4.5rem;
     color: var(--clr-white);
 
-    @media only screen and (max-width: 22.5em) {
+    @media only screen and (max-width: 56.25em) {
       font-size: 4rem;
     }
 
-    @media only screen and (max-width: 21.5em) {
-      font-size: 3.8rem;
+    @media only screen and (max-width: 50em) {
+      font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 3.25rem;
+    }
+
+    @media only screen and (max-width: 30em) {
+      font-size: 3rem;
     }
 
     @media only screen and (min-width: 112.5em) {
