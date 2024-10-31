@@ -181,12 +181,8 @@ const Box = styled.div`
     width: 60rem;
   }
 
-  @media only screen and (min-width: 112.5em) {
-    width: 65rem;
-  }
-
   @media only screen and (min-width: 125em) {
-    width: 70rem;
+    width: 65rem;
   }
 `;
 
