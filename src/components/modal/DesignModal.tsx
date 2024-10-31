@@ -11,8 +11,9 @@ import Modal from './Modal';
 import Heading from '../Heading';
 
 import { useDesignModal } from '@/hooks/useDesignModal';
-import { selectInputs } from '@/data/formData';
 import { validateDesignInputs } from '@/validations/design';
+
+import { selectInputs } from '@/data/formData';
 import { DesignData, DesignErrors } from '@/types';
 
 interface IFile {
