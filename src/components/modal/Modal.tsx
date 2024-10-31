@@ -227,6 +227,18 @@ const Heading = styled.h1`
   @media only screen and (max-width: 37.5em) {
     font-size: 2.8rem;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4rem;
+  }
 `;
 
 const Body = styled.div`
