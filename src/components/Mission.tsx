@@ -68,7 +68,7 @@ const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 25em) {
-    grid-template-rows: repeat(3, 7rem);
+    grid-template-rows: repeat(3, 3rem);
   }
 `;
 
@@ -166,8 +166,9 @@ const Paragraph = styled.p`
   }
 
   @media only screen and (max-width: 25em) {
-    grid-row: 3 / 4;
+    grid-row: 4 / -1;
     font-size: 1.7rem;
+    margin-top: 4rem;
   }
 
   @media only screen and (max-width: 20em) {
