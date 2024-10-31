@@ -137,13 +137,17 @@ const Heading = styled.h3`
   text-transform: capitalize;
   color: ${({ theme }) => theme.text};
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.8rem;
+  }
+
   @media only screen and (max-width: 50em) {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     word-spacing: 1px;
   }
 
-  @media only screen and (max-width: 25em) {
-    font-size: 2.75rem;
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.25rem;
   }
 
   @media only screen and (max-width: 18.75em) {
