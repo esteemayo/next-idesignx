@@ -64,11 +64,13 @@ const Wrapper = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 37.5em) {
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 7rem);
+    gap: 3rem;
   }
 
   @media only screen and (max-width: 25em) {
     grid-template-rows: repeat(3, 3rem);
+    gap: 2rem;
   }
 `;
 
