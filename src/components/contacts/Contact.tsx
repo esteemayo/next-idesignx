@@ -158,8 +158,20 @@ const Heading = styled.h2`
   color: ${({ theme }) => theme.text};
   line-height: 1;
 
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 50em) {
     font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.25rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2rem;
   }
 
   @media only screen and (min-width: 112.5em) {
