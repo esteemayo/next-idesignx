@@ -58,7 +58,7 @@ const Container = styled.div<IContainer>`
   }
 
   @media only screen and (min-width: 125em) {
-    height: 30rem;
+    height: 31rem;
   }
 
   svg {
