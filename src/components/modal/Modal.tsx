@@ -138,8 +138,51 @@ const Box = styled.div`
   padding: 3rem;
   border-radius: 0.5rem;
 
+  @media only screen and (max-width: 56.25em) {
+    width: 55rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    width: 50rem;
+  }
+
+  @media only screen and (max-width: 28.75em) {
+    padding: 3rem 2rem;
+  }
+
+  @media only screen and (max-width: 26.875em) {
+    width: 47rem;
+  }
+
   @media only screen and (max-width: 25em) {
     width: 45rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: 23.4375em) {
+    width: 40rem;
+    padding: 2rem 1.5rem;
+  }
+
+  @media only screen and (max-width: 20.625em) {
+    width: 37rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 34rem;
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    width: 32rem;
+  }
+
+  @media only screen and (min-width: 106.25em) {
+    width: 60rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    width: 70rem;
   }
 `;
 
