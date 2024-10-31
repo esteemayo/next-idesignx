@@ -49,6 +49,22 @@ const Container = styled.div<IContainer>`
   position: relative;
   animation: ${Spin} 1s linear infinite;
 
+  @media only screen and (max-width: 56.25em) {
+    height: 21rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    height: 22rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    height: 23rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    height: 21rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     height: 23rem;
   }
