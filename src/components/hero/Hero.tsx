@@ -59,6 +59,10 @@ const Heading = styled(CommonHeading)`
     font-size: 3rem;
   }
 
+  @media only screen and (max-width: 26.875em) {
+    font-size: 2.8rem;
+  }
+
   @media only screen and (max-width: 21.5em) {
     font-size: 2.5rem;
   }
