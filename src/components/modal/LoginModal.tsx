@@ -26,9 +26,9 @@ const initialError: LoginErrors = {
 };
 
 const LoginModal = () => {
+  const onClose = useLoginModal((state) => state.onClose);
   const isOpen = useLoginModal((state) => state.isOpen);
   const onOpen = useRegisterModal((state) => state.onOpen);
-  const onClose = useLoginModal((state) => state.onClose);
 
   const handleToggle = () => {
     onClose();
