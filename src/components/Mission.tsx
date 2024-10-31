@@ -102,17 +102,17 @@ const Heading = styled.h2`
     font-size: 2.8rem;
   }
 
+  @media only screen and (max-width: 25em) {
+    grid-row: 1 / 2;
+    align-self: center;
+  }
+
   @media only screen and (max-width: 21.5em) {
     font-size: 2.6rem;
   }
 
   @media only screen and (max-width: 18.75em) {
     font-size: 2.4rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    grid-row: 1 / 2;
-    align-self: center;
   }
 
   @media only screen and (max-width: 20em) {
@@ -154,6 +154,10 @@ const Text = styled.p`
     font-size: 1.7rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    margin-top: 4rem;
+  }
+
   @media only screen and (max-width: 20em) {
     font-size: 1.5rem;
   }
@@ -187,6 +191,10 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 25em) {
     grid-row: 4 / -1;
     font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    margin-top: 5rem;
   }
 
   @media only screen and (max-width: 20em) {
