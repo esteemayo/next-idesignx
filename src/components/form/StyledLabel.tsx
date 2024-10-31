@@ -38,6 +38,10 @@ export const StyledLabel = styled.label<ILabel>`
     font-size: 1.5rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    width: 35%;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 1.5rem;
   }
