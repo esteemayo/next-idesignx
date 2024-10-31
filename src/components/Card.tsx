@@ -100,7 +100,7 @@ const Heading = styled.h5`
   font-size: 2rem;
   letter-spacing: 1px;
 
-  @media only screen and (max-width: 22.5em) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 1.8rem;
   }
 
