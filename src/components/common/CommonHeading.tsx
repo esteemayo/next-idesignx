@@ -17,7 +17,7 @@ export const CommonHeading = styled.h1`
     font-size: 3.8rem;
   }
 
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 37.5em) {
     font-size: 3.5rem;
   }
 
