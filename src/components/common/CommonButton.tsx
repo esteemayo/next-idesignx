@@ -27,6 +27,10 @@ export const CommonButton = styled.button`
     font-size: var(--default-font-size);
   }
 
+  @media only screen and (max-width: 20.625em) {
+    font-size: 1.3rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     font-size: 1.7rem;
   }
