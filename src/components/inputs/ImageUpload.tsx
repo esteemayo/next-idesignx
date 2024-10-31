@@ -86,6 +86,22 @@ const Container = styled.div<IContainer>`
     font-size: 5rem;
     color: currentColor;
 
+    @media only screen and (max-width: 56.25em) {
+      font-size: 5.5rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      font-size: 6rem;
+    }
+
+    @media only screen and (max-width: 34.375em) {
+      font-size: 6.5rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      font-size: 5.5rem;
+    }
+
     @media only screen and (min-width: 106.25em) {
       font-size: 5.5rem;
     }
