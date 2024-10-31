@@ -83,17 +83,29 @@ const Heading = styled.h2`
   letter-spacing: 0.5px;
   line-height: 1;
 
-  @media only screen and (max-width: 50em) {
-    font-size: 3rem;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 3.5rem;
   }
 
-  @media only screen and (max-width: 43.75em) {
-    font-size: 2rem;
+  @media only screen and (max-width: 50em) {
+    font-size: 3.25rem;
   }
 
   @media only screen and (max-width: 37.5em) {
-    font-size: 2.8rem;
+    font-size: 3rem;
     letter-spacing: 3px;
+  }
+
+  @media only screen and (max-width: 30em) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2.4rem;
   }
 
   @media only screen and (max-width: 25em) {
