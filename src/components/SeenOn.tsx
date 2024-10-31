@@ -66,7 +66,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 18.75em) {
-    margin-bottom: 0;
+    margin: 5rem 0;
   }
 `;
 
