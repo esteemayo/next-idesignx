@@ -18,6 +18,10 @@ export const TextAreaStyled = styled(CommonTextArea)<ITextArea>`
     font-size: 1.4rem;
     color: ${({ error }) => setPlaceholderColor(error)};
 
+    @media only screen and (min-width: 106.25em) {
+      font-size: 1.5rem;
+    }
+
     @media only screen and (min-width: 112.5em) {
       font-size: var(--default-font-size);
     }
