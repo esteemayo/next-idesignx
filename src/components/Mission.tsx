@@ -155,11 +155,12 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 21.5em) {
+    letter-spacing: 0px;
     margin-top: 4rem;
   }
 
   @media only screen and (max-width: 20em) {
-    font-size: 1.5rem;
+    font-size: var(--default-font-size);
   }
 `;
 
@@ -194,11 +195,12 @@ const Paragraph = styled.p`
   }
 
   @media only screen and (max-width: 21.5em) {
+    letter-spacing: 0px;
     margin-top: 5rem;
   }
 
   @media only screen and (max-width: 20em) {
-    font-size: 1.5rem;
+    font-size: var(--default-font-size);
   }
 `;
 
