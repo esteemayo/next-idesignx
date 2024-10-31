@@ -48,6 +48,10 @@ const HeadingPrimary = styled.h1`
     font-size: 2rem;
   }
 
+  @media only screen and (max-width: 17.5em) {
+    font-size: 1.8rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 2.6rem;
   }
@@ -82,6 +86,10 @@ const HeadingSecondary = styled.h2`
 
   @media only screen and (max-width: 25em) {
     font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    font-size: var(--default-font-size);
   }
 
   @media only screen and (min-width: 106.25em) {

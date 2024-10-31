@@ -224,8 +224,16 @@ const Heading = styled.h1`
   color: ${({ theme }) => theme.textSoft};
   margin-top: 1rem;
 
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2.4rem;
   }
 
   @media only screen and (min-width: 106.25em) {
