@@ -9,7 +9,7 @@ const DesignsLayout = ({ children }: { children: React.ReactNode }) => {
 const Container = styled.main`
   background-color: ${({ theme }) => theme.bgDesign};
   display: grid;
-  grid-template-rows: 80vh 40vw repeat(2, min-content);
+  grid-template-rows: 42vw 40vw repeat(2, min-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
@@ -17,16 +17,28 @@ const Container = styled.main`
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 
-  @media only screen and (max-width: 64em) {
-    grid-template-rows: 50vh 40vw repeat(2, min-content);
+  @media only screen and (max-width: 56.25em) {
+    grid-template-rows: 47vw 40vw repeat(2, min-content);
   }
 
-  @media only screen and (max-width: 37.5em) {
-    grid-template-rows: 45vh;
+  @media only screen and (max-width: 43.75em) {
+    grid-template-rows: 50vw;
   }
 
-  @media only screen and (max-width: 25em) {
-    grid-template-rows: 40vh;
+  @media only screen and (max-width: 48em) {
+    grid-template-rows: 55vw;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    grid-template-rows: 60vw;
+  }
+
+  @media only screen and (max-width: 26.875em) {
+    grid-template-rows: 75vw;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    grid-template-rows: 80vw;
   }
 `;
 
