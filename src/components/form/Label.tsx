@@ -28,6 +28,10 @@ export const Label = styled.label`
     width: 35%;
   }
 
+  @media only screen and (max-width: 17.5em) {
+    width: 40%;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 1.5rem;
   }

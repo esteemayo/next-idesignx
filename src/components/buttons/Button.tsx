@@ -99,6 +99,10 @@ const StyledButton = styled(CommonButton)<IBtn>`
     font-size: ${({ outline }) => (outline === 'true' ? '1.15rem' : '1.25rem')};
   }
 
+  @media only screen and (max-width: 17.5em) {
+    font-size: ${({ outline }) => (outline === 'true' ? '1rem' : '1.15rem')};
+  }
+
   @media only screen and (min-width: 112.5em) {
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
@@ -121,6 +125,10 @@ const StyledButton = styled(CommonButton)<IBtn>`
 
     @media only screen and (max-width: 20.625em) {
       font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 17.5em) {
+      font-size: var(--default-font-size);
     }
   }
 `;
