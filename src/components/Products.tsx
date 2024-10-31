@@ -33,13 +33,12 @@ const Container = styled.section`
   margin: 8rem 0;
 
   @media only screen and (max-width: 50em) {
-    margin: 0;
-    margin-bottom: 3rem;
-    padding: 0;
+    margin: 10rem 0;
   }
 
-  @media only screen and (max-width: 25em) {
-    padding: 3rem;
+  @media only screen and (max-width: 26.875em) {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
   }
 `;
 

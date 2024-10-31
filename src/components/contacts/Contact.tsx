@@ -118,7 +118,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 50em) {
-    grid-row: 5 / 6;
+    grid-row: 4 / 5;
     grid-column: center-start / center-end;
     transform: translate(0);
     box-shadow: none;
