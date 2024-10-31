@@ -21,7 +21,8 @@ const Mission = () => {
         </Text>
         <Paragraph>
           We treat every details with caution to set your brand in motion of
-          excellence.
+          excellence. We offer you the easiest way to get your materials printed
+          without breaking a sweat!
         </Paragraph>
       </Wrapper>
     </Container>
