@@ -41,7 +41,7 @@ const HeadingPrimary = styled.h1`
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   @media only screen and (min-width: 106.25em) {
