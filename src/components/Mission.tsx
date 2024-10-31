@@ -137,7 +137,7 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 20em) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -172,7 +172,7 @@ const Paragraph = styled.p`
   }
 
   @media only screen and (max-width: 20em) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 `;
 
