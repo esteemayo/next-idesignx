@@ -103,14 +103,15 @@ const Heading = styled.h2`
 
   @media only screen and (max-width: 20em) {
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
   }
 `;
 
 const Text = styled.p`
   grid-row: 3 / 4;
   width: 75%;
-  letter-spacing: 2px;
+  font-size: 100%;
+  letter-spacing: 0.5px;
 
   @media only screen and (max-width: 56.25em) {
     width: 90%;
@@ -135,7 +136,8 @@ const Text = styled.p`
 const Paragraph = styled.p`
   grid-row: 4 / 5;
   width: 75%;
-  letter-spacing: 2px;
+  font-size: 100%;
+  letter-spacing: 0.5px;
 
   @media only screen and (max-width: 56.25em) {
     width: 90%;
