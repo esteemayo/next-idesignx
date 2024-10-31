@@ -17,7 +17,20 @@ const ToggleAccount = ({ title, label, onClick }: ToggleAccountProps) => {
 
 const Container = styled.div`
   font-weight: 300;
+  font-size: 100%;
   margin-top: 1.5rem;
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2rem;
+  }
 `;
 
 const Wrapper = styled.div`
