@@ -44,6 +44,10 @@ const Container = styled.section`
     padding: 4.5rem 1.5rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    padding: 4rem 1rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     padding: 4.5rem;
   }
