@@ -32,7 +32,12 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 34.375em) {
-    padding: 5.5rem;
+    padding: 5.5rem 2rem;
+  }
+
+  @media only screen and (max-width: 26.875em) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   @media only screen and (max-width: 25em) {
@@ -69,33 +74,12 @@ const Paragraph = styled.p`
     font-size: 2.3rem;
   }
 
-  @media only screen and (max-width: 30em) {
-    font-size: 2.15rem;
+  @media only screen and (max-width: 26.875em) {
+    font-size: 2.1rem;
   }
 
-  @media only screen and (max-width: 28.125em) {
-    font-size: 2rem;
-    margin-bottom: 1.7rem;
-  }
-
-  @media only screen and (max-width: 26.25em) {
-    font-size: 1.85rem;
-  }
-
-  @media only screen and (max-width: 23.875em) {
-    font-size: 1.7rem;
-  }
-
-  @media only screen and (max-width: 21.5em) {
-    font-size: var(--default-font-size);
-  }
-
-  @media only screen and (max-width: 21.25em) {
-    font-size: 1.5rem;
-  }
-
-  @media only screen and (max-width: 20em) {
-    font-size: 1.4rem;
+  @media only screen and (max-width: 25em) {
+    font-size: 2.1rem;
   }
 
   @media only screen and (min-width: 106.25em) {
