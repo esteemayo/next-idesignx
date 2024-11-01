@@ -82,6 +82,14 @@ const Paragraph = styled.p`
     font-size: 1.85rem;
   }
 
+  @media only screen and (max-width: 26.25em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    font-size: var(--default-font-size);
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 2.25rem;
   }
