@@ -41,6 +41,21 @@ const ImageWrapper = styled.div`
   @media only screen and (max-width: 31.25em) {
     width: 50rem;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    width: 65rem;
+    height: 47rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    width: 67rem;
+    height: 48rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 70rem;
+    height: auto;
+  }
 `;
 
 const StyledImage = styled(CommonImage)`
