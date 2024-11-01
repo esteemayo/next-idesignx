@@ -38,11 +38,24 @@ const Input = styled.input.attrs({
   & + ${Label} {
     display: inline-block;
     text-decoration: none;
+    font-size: 100%;
     padding: 3px;
     color: var(--clr-purple-light-2);
     border-bottom: 1px solid currentColor;
     transition: all 0.2s;
     cursor: pointer;
+
+    @media only screen and (min-width: 106.25em) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (min-width: 112.5em) {
+      font-size: 1.9rem;
+    }
+
+    @media only screen and (min-width: 125em) {
+      font-size: 2.1rem;
+    }
 
     &:hover {
       background-color: var(--clr-purple-light-2);
