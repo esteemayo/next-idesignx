@@ -41,7 +41,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 25em) {
-    padding: 4.5rem;
+    padding: 4.5rem 1.5rem;
   }
 
   @media only screen and (min-width: 106.25em) {
@@ -79,7 +79,7 @@ const Paragraph = styled.p`
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   @media only screen and (min-width: 106.25em) {
