@@ -42,7 +42,7 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 26.875em) {
-    grid-template-rows: 75vw;
+    grid-template-rows: 75vw 80vw;
   }
 
   @media only screen and (max-width: 21.5em) {
