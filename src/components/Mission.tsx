@@ -150,9 +150,9 @@ const Text = styled.p`
     letter-spacing: 0px;
   }
 
-  @media only screen and (max-width: 43.75em) {
+  /* @media only screen and (max-width: 43.75em) {
     width: 100%;
-  }
+  } */
 
   @media only screen and (max-width: 34.375em) {
     font-size: 1.9rem;
@@ -205,9 +205,9 @@ const Paragraph = styled.p`
     letter-spacing: 0px;
   }
 
-  @media only screen and (max-width: 43.75em) {
+  /* @media only screen and (max-width: 43.75em) {
     width: 100%;
-  }
+  } */
 
   @media only screen and (max-width: 34.375em) {
     font-size: 1.9rem;
