@@ -165,6 +165,7 @@ const Text = styled.p`
   @media only screen and (max-width: 25em) {
     grid-row: 3 / 4;
     font-size: 1.7rem;
+    margin-bottom: 0;
   }
 
   @media only screen and (max-width: 21.5em) {
@@ -217,6 +218,7 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 25em) {
     grid-row: 4 / -1;
     font-size: 1.7rem;
+    margin-top: 0;
   }
 
   @media only screen and (max-width: 21.5em) {
