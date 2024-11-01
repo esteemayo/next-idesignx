@@ -18,7 +18,7 @@ const Container = styled.main`
     [center-end] minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-width: 56.25em) {
-    grid-template-rows: 47vw 40vw repeat(2, min-content);
+    grid-template-rows: 47vw 45vw repeat(2, min-content);
   }
 
   @media only screen and (max-width: 43.75em) {
