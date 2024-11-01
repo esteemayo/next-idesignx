@@ -23,8 +23,20 @@ const Container = styled.section`
   text-align: center;
   padding: 4rem 0;
 
-  @media only screen and (max-width: 75em) {
-    padding: 3rem 0;
+  @media only screen and (max-width: 56.25em) {
+    padding: 4.5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    padding: 5.5rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    padding: 4.5rem;
   }
 
   @media only screen and (min-width: 106.25em) {
