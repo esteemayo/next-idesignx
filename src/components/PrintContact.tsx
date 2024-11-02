@@ -56,6 +56,14 @@ const Container = styled.section<PrintContactProps>`
     margin: 4rem 0;
   }
 
+  @media only screen and (max-width: 43.75em) {
+    height: 33vw;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    height: 35vw;
+  }
+
   @media only screen and (max-width: 25em) {
     margin: 0;
   }
