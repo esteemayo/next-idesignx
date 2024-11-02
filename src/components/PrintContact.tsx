@@ -27,7 +27,7 @@ const Container = styled.section<PrintContactProps>`
   grid-template-rows: repeat(3, 1fr);
 
   margin: 8rem 0;
-  height: 35rem;
+  height: 22vw;
   background-color: ${({ theme }) => theme.bgImg};
   color: var(--clr-white);
   background-image: ${({ bcg }) =>
@@ -51,12 +51,12 @@ const Container = styled.section<PrintContactProps>`
     margin: 0;
   }
 
-  @media only screen and (min-width: 106.25em) {
-    height: 22vw;
+  @media only screen and (min-width: 112.5em) {
+    height: 25vw;
   }
 
   @media only screen and (min-width: 125em) {
-    height: 25vw;
+    height: 27vw;
   }
 
   & > a {
