@@ -122,6 +122,19 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 25em) {
     font-size: var(--default-font-size);
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 3.2rem;
+    line-height: 1.3;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4rem;
+  }
 `;
 
 export default PrintContact;
