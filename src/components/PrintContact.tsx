@@ -51,6 +51,14 @@ const Container = styled.section<PrintContactProps>`
     margin: 0;
   }
 
+  @media only screen and (min-width: 106.25em) {
+    height: 22vw;
+  }
+
+  @media only screen and (min-width: 125em) {
+    height: 25vw;
+  }
+
   & > a {
     grid-area: 3 / 2 / -1 / span 2;
     align-self: self-start;
