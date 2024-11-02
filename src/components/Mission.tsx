@@ -168,10 +168,6 @@ const Text = styled.p`
     margin-bottom: 0;
   }
 
-  @media only screen and (max-width: 21.5em) {
-    margin-top: 4rem;
-  }
-
   @media only screen and (max-width: 20em) {
     font-size: var(--default-font-size);
   }
