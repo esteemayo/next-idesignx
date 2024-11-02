@@ -80,6 +80,10 @@ const Container = styled.section<PrintContactProps>`
     height: 50vw;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    height: 55vw;
+  }
+
   @media only screen and (min-width: 112.5em) {
     height: 25vw;
   }
