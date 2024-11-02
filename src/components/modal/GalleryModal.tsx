@@ -19,6 +19,7 @@ const GalleryModal = ({
   image,
   isOpen,
   index,
+  lastIndex,
   onClose,
   onChange,
   onClick,
@@ -56,12 +57,12 @@ const GalleryModal = ({
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') {
-        onChange(index === 0 ? index + 1 : index - 1);
+        onChange(index === 0 ? lastIndex : index - 1);
       } else if (e.key === 'ArrowRight') {
-        onChange(index + 1);
+        onChange(index === lastIndex ? 0 : index + 1);
       }
     },
-    [index, onChange]
+    [index, lastIndex, onChange]
   );
 
   const activeModal = useMemo(() => {
