@@ -168,6 +168,7 @@ export interface GalleryModalProps {
   image: string;
   isOpen: boolean;
   index: number;
+  lastIndex: number;
   onClose(): void;
   onChange: React.Dispatch<React.SetStateAction<number>>;
   onClick(direction: string): void;
