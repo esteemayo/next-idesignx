@@ -183,6 +183,18 @@ const Button = styled.button<IBtn>`
     font-size: 2.5rem;
   }
 
+  @media only screen and (min-width: 106.25em) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4rem;
+  }
+
   svg {
     font-size: inherit;
     fill: currentColor;
