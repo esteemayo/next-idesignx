@@ -11,8 +11,8 @@ import { GalleryItem, ImageGalleryProps } from '@/types';
 
 const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
   const isOpen = useImageModal((state) => state.isOpen);
-  const onClose = useImageModal((state) => state.onClose);
   const onOpen = useImageModal((state) => state.onOpen);
+  const onClose = useImageModal((state) => state.onClose);
 
   const [slideIndex, setSlideIndex] = useState(0);
   const [images, setImages] = useState<GalleryItem>([]);
