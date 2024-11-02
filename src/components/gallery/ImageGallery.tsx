@@ -17,6 +17,10 @@ const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [images, setImages] = useState<GalleryItem>([]);
 
+  const lastIndex = useMemo(() => {
+    return images.length - 1;
+  }, [images.length]);
+
   const handleOpen = useCallback(
     (index: number) => {
       onOpen();
@@ -61,6 +65,7 @@ const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
         image={selectedImage}
         isOpen={isOpen}
         index={slideIndex}
+        lastIndex={lastIndex}
         onClose={onClose}
         onChange={setSlideIndex}
         onClick={handleClick}
