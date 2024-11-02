@@ -18,7 +18,9 @@ interface IBtn {
 const GalleryModal = ({
   image,
   isOpen,
+  index,
   onClose,
+  onChange,
   onClick,
 }: GalleryModalProps) => {
   const [showModal, setShowModal] = useState(false);
@@ -51,6 +53,17 @@ const GalleryModal = ({
     [handleClose]
   );
 
+  const handleKeyDown = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        onChange(index === 0 ? index + 1 : index - 1);
+      } else if (e.key === 'ArrowRight') {
+        onChange(index + 1);
+      }
+    },
+    [index, onChange]
+  );
+
   const activeModal = useMemo(() => {
     return showModal?.toString();
   }, [showModal]);
@@ -63,6 +76,11 @@ const GalleryModal = ({
     window.addEventListener('keydown', handleEscape);
     return () => window.removeEventListener('keydown', handleEscape);
   }, [handleEscape]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [handleKeyDown]);
 
   if (!isOpen) {
     return null;
