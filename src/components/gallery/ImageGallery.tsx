@@ -32,7 +32,6 @@ const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
   const handleClick = useCallback(
     (direction: string) => {
       let newSlideIndex: number;
-      const lastIndex = images.length - 1;
 
       if (direction === 'left') {
         newSlideIndex = slideIndex === 0 ? lastIndex : slideIndex - 1;
@@ -42,7 +41,7 @@ const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
 
       setSlideIndex(newSlideIndex);
     },
-    [images, slideIndex]
+    [lastIndex, slideIndex]
   );
 
   const selectedImage = useMemo(() => {
