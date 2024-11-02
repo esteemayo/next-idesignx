@@ -113,7 +113,7 @@ const Container = styled.div`
   }
 
   @media only screen and (max-width: 57.5em) {
-    width: 75rem;
+    width: 70rem;
   }
 
   @media only screen and (max-width: 43.75em) {
