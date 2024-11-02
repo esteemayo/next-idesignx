@@ -112,16 +112,23 @@ const Paragraph = styled.p`
   line-height: 1.2;
 
   @media only screen and (max-width: 56.25em) {
-    font-size: 2.8rem;
+    font-size: 3.1rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 3.2rem;
   }
 
   @media only screen and (max-width: 43.75em) {
-    font-size: 2.4rem;
     margin-bottom: 1rem;
   }
 
+  @media only screen and (max-width: 34.375em) {
+    font-size: 3.3rem;
+  }
+
   @media only screen and (max-width: 25em) {
-    font-size: var(--default-font-size);
+    font-size: 3.1rem;
   }
 
   @media only screen and (min-width: 106.25em) {
