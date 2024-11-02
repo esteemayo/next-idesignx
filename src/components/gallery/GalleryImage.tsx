@@ -66,6 +66,11 @@ const Box = styled.div`
     height: 30rem;
   }
 
+  @media only screen and (min-width: 125em) {
+    width: 130rem;
+    height: 80rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +119,11 @@ const Container = styled.div`
   @media only screen and (max-width: 25em) {
     width: 35rem;
     height: 25rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 120rem;
+    height: 70rem;
   }
 `;
 
