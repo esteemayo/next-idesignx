@@ -73,6 +73,7 @@ const Container = styled.section<PrintContactProps>`
   }
 
   @media only screen and (max-width: 25em) {
+    height: 47vw;
     margin: 2rem 0;
   }
 
@@ -128,12 +129,16 @@ const Paragraph = styled.p`
     line-height: 1;
   }
 
-  @media only screen and (max-width: 305em) {
+  @media only screen and (max-width: 30em) {
     font-size: 3rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.875em) {
     font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.6rem;
   }
 
   @media only screen and (min-width: 106.25em) {
