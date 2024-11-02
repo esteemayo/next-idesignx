@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import { init } from 'ityped';
 import styled from 'styled-components';
+import { init } from 'ityped';
+import { useEffect, useRef } from 'react';
 
 import { CommonHero } from '../common/CommonHero';
 import { CommonHeading } from '../common/CommonHeading';
