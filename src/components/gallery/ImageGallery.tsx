@@ -60,7 +60,9 @@ const ImageGallery = ({ galleryImages }: ImageGalleryProps) => {
       <GalleryModal
         image={selectedImage}
         isOpen={isOpen}
+        index={slideIndex}
         onClose={onClose}
+        onChange={setSlideIndex}
         onClick={handleClick}
       />
     </Container>
