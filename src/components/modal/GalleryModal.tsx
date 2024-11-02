@@ -1,10 +1,10 @@
 'use client';
 
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 import { Overlay } from '../common/Overlay';
 import GalleryImage from '../gallery/GalleryImage';
