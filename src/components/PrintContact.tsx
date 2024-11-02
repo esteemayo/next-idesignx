@@ -43,6 +43,10 @@ const Container = styled.section<PrintContactProps>`
   background-size: cover;
   background-position: center;
 
+  @media only screen and (max-width: 68.75em) {
+    height: 25vw;
+  }
+
   @media only screen and (max-width: 50em) {
     margin: 4rem 0;
   }
