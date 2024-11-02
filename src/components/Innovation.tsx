@@ -66,6 +66,7 @@ const ImageWrapper = styled.div`
 
   @media only screen and (max-width: 18.75em) {
     width: 35rem;
+    height: 27rem;
   }
 
   @media only screen and (min-width: 106.25em) {
