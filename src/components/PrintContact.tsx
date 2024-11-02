@@ -149,6 +149,10 @@ const Paragraph = styled.p`
     font-size: 2.2rem;
   }
 
+  @media only screen and (max-width: 20.625em) {
+    font-size: 2rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 3.2rem;
     line-height: 1.3;
