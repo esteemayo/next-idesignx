@@ -21,12 +21,8 @@ export const Label = styled.label`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 35%;
-    font-size: 1.5rem;
-  }
-
-  @media only screen and (max-width: 17.5em) {
     width: 40%;
+    font-size: 1.5rem;
   }
 
   @media only screen and (min-width: 106.25em) {
