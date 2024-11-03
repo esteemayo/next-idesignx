@@ -96,30 +96,12 @@ const GalleryModal = ({
       <Button direction='right' onClick={() => onClick('right')}>
         <ArrowForwardIosIcon />
       </Button>
-      <Wrapper>
-        <CloseButton onClick={handleClose}>
-          <CloseIcon />
-        </CloseButton>
-      </Wrapper>
+      <CloseButton onClick={handleClose}>
+        <CloseIcon />
+      </CloseButton>
     </Overlay>
   );
 };
-
-const Wrapper = styled.div`
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index: 3000;
-
-  @media only screen and (max-width: 57.5em) {
-    top: 3rem;
-    left: 0.5rem;
-  }
-
-  @media only screen and (max-width: 30em) {
-    top: 10rem;
-  }
-`;
 
 const CloseButton = styled.button`
   display: flex;
@@ -137,6 +119,16 @@ const CloseButton = styled.button`
   cursor: pointer;
   transition: all 0.2s;
 
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3000;
+
+  @media only screen and (max-width: 57.5em) {
+    top: 3rem;
+    left: 0.5rem;
+  }
+
   @media only screen and (max-width: 56.25em) {
     width: 5rem;
     height: 5rem;
@@ -153,6 +145,10 @@ const CloseButton = styled.button`
     width: 6rem;
     height: 6rem;
     font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 30em) {
+    top: 10rem;
   }
 
   @media only screen and (max-width: 25em) {
