@@ -61,6 +61,18 @@ const Text = styled.p`
   @media only screen and (max-width: 31.25em) {
     font-size: var(--default-font-size);
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 3.4rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.6rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 3.8rem;
+  }
 `;
 
 const Span = styled.span`
