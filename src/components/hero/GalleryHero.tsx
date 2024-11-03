@@ -77,10 +77,6 @@ const Text = styled.p`
   text-align: center;
   color: currentColor;
 
-  @media only screen and (max-width: 112.5em) {
-    font-size: 3.7rem;
-  }
-
   @media only screen and (max-width: 68.75em) {
     font-size: 3.5rem;
   }
@@ -96,6 +92,18 @@ const Text = styled.p`
 
   @media only screen and (max-width: 17.5em) {
     font-size: 2.5rem;
+  }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4rem;
   }
 `;
 
