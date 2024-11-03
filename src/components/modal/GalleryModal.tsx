@@ -89,17 +89,13 @@ const GalleryModal = ({
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
-      <Container direction='left'>
-        <Button direction='left' onClick={() => onClick('left')}>
-          <ArrowBackIosIcon />
-        </Button>
-      </Container>
+      <Button direction='left' onClick={() => onClick('left')}>
+        <ArrowBackIosIcon />
+      </Button>
       <GalleryImage active={activeModal} image={image} />
-      <Container direction='right'>
-        <Button direction='right' onClick={() => onClick('right')}>
-          <ArrowForwardIosIcon />
-        </Button>
-      </Container>
+      <Button direction='right' onClick={() => onClick('right')}>
+        <ArrowForwardIosIcon />
+      </Button>
       <Wrapper>
         <CloseButton onClick={handleClose}>
           <CloseIcon />
@@ -194,12 +190,19 @@ const CloseButton = styled.button`
   }
 `;
 
-const Container = styled.div<IBtn>`
+const Button = styled.button<IBtn>`
+  display: inline-block;
+  border: none;
+  font-size: 3rem;
+  background-color: transparent;
+  color: var(--clr-white);
+  outline-color: var(--clr-gray-dark-2);
   position: absolute;
   top: 50%;
   left: ${({ direction }) => direction === 'left' && '6rem'};
   right: ${({ direction }) => direction === 'right' && '6rem'};
   transform: translateY(-50%);
+  cursor: pointer;
 
   @media only screen and (max-width: 87.5em) {
     left: ${({ direction }) => direction === 'left' && '3rem'};
@@ -210,16 +213,6 @@ const Container = styled.div<IBtn>`
     left: ${({ direction }) => direction === 'left' && '2rem'};
     right: ${({ direction }) => direction === 'right' && '2rem'};
   }
-`;
-
-const Button = styled.button<IBtn>`
-  display: inline-block;
-  border: none;
-  font-size: 3rem;
-  background-color: transparent;
-  color: var(--clr-white);
-  outline-color: var(--clr-gray-dark-2);
-  cursor: pointer;
 
   @media only screen and (max-width: 56.25em) {
     font-size: 3.2rem;
