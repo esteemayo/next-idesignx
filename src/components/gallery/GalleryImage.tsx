@@ -29,9 +29,13 @@ const Box = styled.div`
     width: 110rem;
   }
 
+  @media only screen and (max-width: 76.25em) {
+    width: 105rem;
+    height: 55rem;
+  }
+
   @media only screen and (max-width: 69.375em) {
     width: 100rem;
-    height: 55rem;
   }
 
   @media only screen and (max-width: 64em) {
@@ -129,8 +133,13 @@ const Container = styled.div`
     width: 100rem;
   }
 
-  @media only screen and (max-width: 69.375em) {
+  @media only screen and (max-width: 76.25em) {
     width: 95rem;
+    height: 45rem;
+  }
+
+  @media only screen and (max-width: 69.375em) {
+    width: 90rem;
   }
 
   @media only screen and (max-width: 64em) {
