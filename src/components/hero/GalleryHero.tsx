@@ -60,22 +60,12 @@ const Heading = styled(CommonHeading)`
   letter-spacing: 0.7rem;
   line-height: 1.2;
 
-  @media only screen and (max-width: 112.5em) {
-    font-size: 5.5rem;
-    letter-spacing: 1rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    font-size: 5rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    font-size: 4.25rem;
-  }
-
   @media only screen and (max-width: 17.5em) {
-    font-size: 4rem;
     letter-spacing: 0.5rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    letter-spacing: 1rem;
   }
 `;
 
