@@ -33,8 +33,12 @@ export const StyledLink = styled(Link)`
     font-size: 1.8rem;
   } */
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 30em) {
     font-size: var(--default-font-size);
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.5rem;
   }
 
   @media only screen and (max-width: 21.5em) {
