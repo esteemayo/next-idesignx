@@ -141,6 +141,30 @@ const CloseButton = styled.button`
   cursor: pointer;
   transition: all 0.2s;
 
+  @media only screen and (max-width: 56.25em) {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    width: 6rem;
+    height: 6rem;
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 2.5rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     width: 4.2rem;
     height: 4.2rem;
