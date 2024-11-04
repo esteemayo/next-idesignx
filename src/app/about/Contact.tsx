@@ -22,10 +22,26 @@ const Container = styled.section`
   justify-content: space-between;
   margin: 7rem 0;
 
+  @media only screen and (max-width: 56.25em) {
+    margin: 8rem 0;
+  }
+
+  @media only screen and (max-width: 50em) {
+    margin: 9rem 0;
+  }
+
   @media only screen and (max-width: 37.5em) {
     grid-column: full-start / full-end;
     padding: 0 4rem;
     margin: 5rem 0;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    margin: 10rem 0;
+  }
+
+  @media only screen and (max-width: 25em) {
+    margin: 8rem 0;
   }
 
   @media only screen and (max-width: 25em) {
