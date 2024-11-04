@@ -30,28 +30,40 @@ const Container = styled.main`
     grid-template-rows: 43vw min-content 30vw min-content 25vw;
   }
 
+  @media only screen and (max-width: 43.75em) {
+    grid-template-rows: 45vw min-content 30vw min-content 25vw;
+  }
+
   @media only screen and (max-width: 37.5em) {
-    grid-template-rows: 43vw min-content 30vw min-content 27vw;
+    grid-template-rows: 47vw min-content 30vw min-content 27vw;
   }
 
   @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 43vw min-content 30vw min-content 30vw;
+    grid-template-rows: 50vw min-content 30vw min-content 30vw;
   }
 
   @media only screen and (max-width: 30em) {
-    grid-template-rows: 40vh min-content 30vw min-content 35vw;
+    grid-template-rows: 55vw min-content 30vw min-content 35vw;
   }
 
   @media only screen and (max-width: 26.875em) {
-    grid-template-rows: 40vh min-content 30vw min-content 40vw;
+    grid-template-rows: 57vw min-content 30vw min-content 40vw;
   }
 
   @media only screen and (max-width: 25em) {
-    grid-template-rows: 30vh min-content 30vw min-content 43vw;
+    grid-template-rows: 63vw min-content 30vw min-content 43vw;
+  }
+
+  @media only screen and (max-width: 23.4375em) {
+    grid-template-rows: 65vw min-content 30vw min-content 43vw;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    grid-template-rows: 67vw min-content 30vw min-content 43vw;
   }
 
   @media only screen and (max-width: 21.5em) {
-    grid-template-rows: 30vh min-content 30vw min-content 45vw;
+    grid-template-rows: 70vw min-content 30vw min-content 45vw;
   }
 `;
 
