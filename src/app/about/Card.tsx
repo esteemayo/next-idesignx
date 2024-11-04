@@ -80,6 +80,22 @@ const Text = styled.p`
   color: ${({ theme }) => theme.textSoft};
   line-height: 1.4;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.8rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 1.8rem;
   }
