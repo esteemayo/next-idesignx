@@ -20,6 +20,7 @@ const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 7rem 0;
 
   @media only screen and (max-width: 37.5em) {
     grid-column: full-start / full-end;
@@ -38,8 +39,6 @@ const Container = styled.section`
   @media only screen and (max-width: 20.63em) {
     margin: 2.5rem 0;
   }
-
-  margin: 7rem 0;
 `;
 
 const Text = styled.p`
