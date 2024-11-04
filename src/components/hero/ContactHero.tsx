@@ -70,24 +70,15 @@ const Text = styled.p`
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
-  @media only screen and (max-width: 112.5em) {
-    font-size: 3.7rem;
-  }
-
-  @media only screen and (max-width: 68.75em) {
-    font-size: 3.5rem;
-  }
-
   @media only screen and (max-width: 56.25em) {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
   }
 
-  @media only screen and (max-width: 31.25em) {
-    font-size: 2.5rem;
-    line-height: 1.3;
+  @media only screen and (max-width: 50em) {
+    font-size: 2.7rem;
   }
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 46.875em) {
     font-size: 2.5rem;
   }
 
