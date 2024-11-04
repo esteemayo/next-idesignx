@@ -52,6 +52,10 @@ const Container = styled.section`
     margin: 6rem 0;
   }
 
+  @media only screen and (max-width: 17.5em) {
+    padding-right: 3rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     margin: 8rem 0;
   }
