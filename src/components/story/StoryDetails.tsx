@@ -90,9 +90,21 @@ const Text = styled.p`
   color: ${({ theme }) => theme.textSoft};
   letter-spacing: 0.5px;
 
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
     letter-spacing: 0;
-    word-spacing: 1px;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 106.25em) {
