@@ -46,6 +46,18 @@ const Heading = styled.h4`
   font-size: 1.9rem;
   text-transform: capitalize;
   color: ${({ theme }) => theme.textLight};
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 2.1rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.2rem;
+  }
 `;
 
 const Text = styled.p`
