@@ -30,6 +30,26 @@ const Container = styled.article`
     transform: translateY(-1rem);
     transition: all 0.2s;
 
+    @media only screen and (max-width: 56.25em) {
+      width: 4.7rem;
+      height: 4.7rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+
+    @media only screen and (max-width: 34.375em) {
+      width: 4.9rem;
+      height: 4.9rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 4.7rem;
+      height: 4.7rem;
+    }
+
     @media only screen and (max-width: 37.5em) {
       width: 4rem;
       height: 4rem;
