@@ -50,7 +50,7 @@ const Container = styled.article`
       height: 4.7rem;
     }
 
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 21.5em) {
       width: 4rem;
       height: 4rem;
     }
@@ -98,6 +98,10 @@ const Heading = styled.h4`
     font-size: 2rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    font-size: 1.85rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 2rem;
   }
@@ -134,6 +138,10 @@ const Text = styled.p`
 
   @media only screen and (max-width: 25em) {
     font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    font-size: 1.65rem;
   }
 
   @media only screen and (min-width: 106.25em) {
