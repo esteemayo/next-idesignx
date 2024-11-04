@@ -39,6 +39,18 @@ const Container = styled.section`
   @media only screen and (max-width: 20.63em) {
     margin: 2.5rem 0;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    margin: 8rem 0;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    margin: 9rem 0;
+  }
+
+  @media only screen and (min-width: 125em) {
+    margin: 10rem 0;
+  }
 `;
 
 const Text = styled.p`
