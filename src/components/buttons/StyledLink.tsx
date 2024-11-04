@@ -56,13 +56,18 @@ export const StyledLink = styled(Link)`
     padding-right: 1rem;
   }
 
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 106.25em) {
+    font-size: var(--default-font-size);
     padding: 1rem 3rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    padding: 1.2rem 3.2rem;
     font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 125em) {
-    padding: 1.2rem 3rem;
+    padding: 1.4rem 3.5rem;
     font-size: 2rem;
   }
 
