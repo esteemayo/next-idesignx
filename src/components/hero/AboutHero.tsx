@@ -66,26 +66,42 @@ const Text = styled.p`
   font-size: 2.5rem;
   text-align: center;
   color: currentColor;
-  letter-spacing: 1px;
   animation: moveInTop 0.5s ease-out 0.75s backwards;
 
-  @media only screen and (max-width: 43.75em) {
-    font-size: 2.23rem;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 46.875em) {
+    font-size: 2.5rem;
   }
 
   @media only screen and (max-width: 37.5em) {
-    font-size: 1.85rem;
-    letter-spacing: 0.5px;
+    font-size: 2rem;
   }
 
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 26.875em) {
     font-size: var(--default-font-size);
-    letter-spacing: 0.25px;
   }
 
   @media only screen and (max-width: 25em) {
     font-size: 1.4rem;
-    letter-spacing: 0.1px;
+  }
+
+  @media only screen and (max-width: 20em) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.2rem;
   }
 
   @media only screen and (min-width: 106.25em) {
