@@ -35,6 +35,21 @@ const Container = styled.article`
       height: 4rem;
     }
 
+    @media only screen and (min-width: 106.25em) {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    @media only screen and (min-width: 112.5em) {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+
+    @media only screen and (min-width: 125em) {
+      width: 6rem;
+      height: 6rem;
+    }
+
     &:hover {
       fill: var(--clr-purple-light-1);
     }
