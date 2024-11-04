@@ -61,6 +61,14 @@ const Container = styled.main`
   @media only screen and (max-width: 22.5em) {
     grid-template-rows: 67vw;
   }
+
+  @media only screen and (max-width: 23.4375em) {
+    grid-template-rows: 65vw;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    grid-template-rows: 67vw;
+  }
 `;
 
 export default ContactLayout;
