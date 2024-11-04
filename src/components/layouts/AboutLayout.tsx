@@ -19,7 +19,11 @@ const Container = styled.main`
     [center-end] minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-width: 56.25em) {
-    grid-template-rows: 60vh min-content 30vw min-content 20vw min-content;
+    grid-template-rows: 60vh min-content 30vw min-content 23vw min-content;
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-template-rows: 60vh min-content 30vw min-content 25vw min-content;
   }
 
   @media only screen and (max-width: 37.5em) {
