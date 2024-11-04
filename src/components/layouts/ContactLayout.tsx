@@ -23,11 +23,15 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 56.25em) {
-    grid-template-rows: 60vh repeat(2, min-content);
+    grid-template-rows: 40vw repeat(2, min-content);
   }
 
   @media only screen and (max-width: 50em) {
-    grid-template-rows: 40vh;
+    grid-template-rows: 43vw;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    grid-template-rows: 45vw;
   }
 
   @media only screen and (max-width: 31.25em) {
