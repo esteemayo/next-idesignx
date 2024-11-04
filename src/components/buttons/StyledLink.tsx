@@ -51,6 +51,7 @@ export const StyledLink = styled(Link)`
   }
 
   @media only screen and (max-width: 21.5em) {
+    font-size: 1.4rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
