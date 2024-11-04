@@ -30,14 +30,13 @@ const Container = styled.section`
     margin: 9rem 0;
   }
 
-  @media only screen and (max-width: 37.5em) {
-    grid-column: full-start / full-end;
-    padding: 0 4rem;
-    margin: 5rem 0;
-  }
-
   @media only screen and (max-width: 34.375em) {
     margin: 10rem 0;
+  }
+
+  @media only screen and (max-width: 28.125em) {
+    grid-column: full-start / full-end;
+    padding: 0 3rem;
   }
 
   @media only screen and (max-width: 25em) {
