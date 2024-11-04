@@ -71,10 +71,22 @@ const Heading = styled.h2`
     font-size: 3.25rem;
     margin-bottom: 2rem;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 4.1rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 4.2rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 4.4rem;
+  }
 `;
 
 const Text = styled.p`
-  font-size: 100;
+  font-size: 100%;
   color: ${({ theme }) => theme.textSoft};
   letter-spacing: 0.5px;
 
