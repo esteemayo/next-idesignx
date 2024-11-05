@@ -120,14 +120,9 @@ const Container = styled.section`
     padding: 2rem;
   }
 
-  @media only screen and (max-width: 26em) {
+  @media only screen and (max-width: 26.875em) {
     grid-column: full-start / full-end;
     margin: 5rem 3rem 3rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 `;
 
@@ -179,8 +174,12 @@ const Heading = styled.h3`
     font-size: 2.15rem;
   }
 
+  @media only screen and (max-width: 26.875em) {
+    font-size: 2.4rem;
+  }
+
   @media only screen and (max-width: 25em) {
-    font-size: 2.6rem;
+    font-size: 2.25rem;
   }
 
   @media only screen and (min-width: 106.25em) {
