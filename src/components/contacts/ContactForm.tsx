@@ -93,9 +93,9 @@ const Container = styled.section`
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
 
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 57.5em) {
     grid-row: 2 / 3;
-    grid-column: center-start / center-end;
+    grid-column: col-start 3 / col-end 6;
 
     box-shadow: none;
     margin: 5rem 0;
@@ -124,6 +124,10 @@ const Heading = styled.h3`
 
   @media only screen and (max-width: 64em) {
     font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 62.5em) {
+    font-size: 1.85rem;
   }
 
   @media only screen and (max-width: 56.25em) {

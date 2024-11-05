@@ -33,9 +33,9 @@ const Container = styled.section`
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 57.5em) {
     grid-row: 3 / 4;
-    grid-column: center-start / center-end;
+    grid-column: col-start 3 / col-end 6;
 
     margin: 5rem 0;
     border-radius: 1rem;
