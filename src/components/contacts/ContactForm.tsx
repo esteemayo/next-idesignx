@@ -104,6 +104,7 @@ const Container = styled.section`
 
   @media only screen and (max-width: 45em) {
     grid-column: col-start 2 / col-end 7;
+    padding: 3.5rem;
   }
 
   @media only screen and (max-width: 31.25em) {
@@ -147,6 +148,10 @@ const Heading = styled.h3`
 
   @media only screen and (max-width: 50em) {
     font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 35.6875em) {
+    font-size: 2.5rem;
   }
 
   @media only screen and (max-width: 34.375em) {
