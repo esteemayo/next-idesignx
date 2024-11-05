@@ -64,6 +64,18 @@ const Text = styled.p`
   @media only screen and (max-width: 56.25em) {
     font-size: 1.65rem;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 1.9rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.2rem;
+  }
 `;
 
 const Br = styled.br``;
