@@ -59,6 +59,10 @@ const Container = styled.section`
     grid-column: full-start / full-end;
     margin: 2rem 3rem 5rem;
   }
+
+  @media only screen and (max-width: 23.4375em) {
+    margin: 2rem 2.5rem 5rem;
+  }
 `;
 
 export default ContactInfo;

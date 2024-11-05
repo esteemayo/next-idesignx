@@ -124,6 +124,10 @@ const Container = styled.section`
     grid-column: full-start / full-end;
     margin: 5rem 3rem 3rem;
   }
+
+  @media only screen and (max-width: 23.4375em) {
+    margin: 5rem 2.5rem 3rem;
+  }
 `;
 
 const Heading = styled.h3`
