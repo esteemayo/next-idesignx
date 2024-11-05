@@ -112,7 +112,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 31.25em) {
-    margin: 7rem;
+    margin: 7rem 0;
     padding: 2.5rem;
   }
 
@@ -156,6 +156,10 @@ const Heading = styled.h3`
 
   @media only screen and (max-width: 35.6875em) {
     font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2.4rem;
   }
 
   @media only screen and (max-width: 25em) {
