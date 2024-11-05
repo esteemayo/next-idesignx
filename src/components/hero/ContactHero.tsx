@@ -39,24 +39,6 @@ const Heading = styled(CommonHeading)`
 
   letter-spacing: 0.7rem;
   animation: moveInBottom 0.5s ease-out 0.75s backwards;
-
-  @media only screen and (max-width: 112.5em) {
-    font-size: 5.5rem;
-    letter-spacing: 1rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    font-size: 5rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    font-size: 4.25rem;
-  }
-
-  @media only screen and (max-width: 17.5em) {
-    font-size: 4rem;
-    letter-spacing: 0.5rem;
-  }
 `;
 
 const Text = styled.p`
