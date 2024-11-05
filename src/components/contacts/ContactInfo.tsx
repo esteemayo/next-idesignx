@@ -54,6 +54,11 @@ const Container = styled.section`
     margin-top: 3rem;
     padding: 4rem 3rem;
   }
+
+  @media only screen and (max-width: 26.875em) {
+    grid-column: full-start / full-end;
+    margin: 2rem 3rem 5rem;
+  }
 `;
 
 export default ContactInfo;
