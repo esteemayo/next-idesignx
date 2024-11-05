@@ -35,6 +35,21 @@ const Container = styled(Link)<IMode>`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (min-width: 106.25em) {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 6rem;
+    height: 6rem;
+  }
+
   &:hover {
     background-color: ${({ mode }) =>
       mode === 'true' ? '#2b3138' : '#f8e5fc'};
