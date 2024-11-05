@@ -107,6 +107,10 @@ const Container = styled.section`
     padding: 3.5rem;
   }
 
+  @media only screen and (max-width: 34.375em) {
+    grid-column: col-start 1 / col-end 8;
+  }
+
   @media only screen and (max-width: 31.25em) {
     margin: 2.5rem 0;
     padding: 4rem 2rem;
