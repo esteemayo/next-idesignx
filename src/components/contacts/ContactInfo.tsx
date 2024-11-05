@@ -43,7 +43,7 @@ const Container = styled.section`
 
   @media only screen and (max-width: 45em) {
     grid-column: col-start 2 / col-end 7;
-    padding: 4rem;
+    padding: 3.5rem;
   }
 
   @media only screen and (max-width: 34.375em) {
@@ -52,7 +52,11 @@ const Container = styled.section`
 
   @media only screen and (max-width: 31.25em) {
     margin-top: 3rem;
-    padding: 4rem 3rem;
+    padding: 2.5rem;
+  }
+
+  @media only screen and (max-width: 27.5em) {
+    padding: 2rem;
   }
 
   @media only screen and (max-width: 26.875em) {
