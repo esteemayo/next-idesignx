@@ -40,46 +40,44 @@ const ContactForm = () => {
 
   return (
     <Container>
-      <Wrapper>
-        <Heading>
-          In case you have question, comments
-          <Br />
-          or just want to say hello.
-        </Heading>
-        <Form onSubmit={handleSubmit}>
-          <FormInput
-            name='name'
-            type='text'
-            label='Your name'
-            value={name}
-            placeholder='Your name'
-            onChange={handleChange}
-          />
-          <FormInput
-            name='email'
-            type='email'
-            label='Your email'
-            value={email}
-            placeholder='Your email'
-            onChange={handleChange}
-          />
-          <FormInput
-            name='subject'
-            label='Subject'
-            value={subject}
-            placeholder='Subject'
-            onChange={handleChange}
-          />
-          <FormTextArea
-            name='message'
-            label='Message'
-            value={message}
-            placeholder='Message'
-            onChange={handleChange}
-          />
-          <Button label='Submit' />
-        </Form>
-      </Wrapper>
+      <Heading>
+        In case you have question, comments
+        <Br />
+        or just want to say hello.
+      </Heading>
+      <Form onSubmit={handleSubmit}>
+        <FormInput
+          name='name'
+          type='text'
+          label='Your name'
+          value={name}
+          placeholder='Your name'
+          onChange={handleChange}
+        />
+        <FormInput
+          name='email'
+          type='email'
+          label='Your email'
+          value={email}
+          placeholder='Your email'
+          onChange={handleChange}
+        />
+        <FormInput
+          name='subject'
+          label='Subject'
+          value={subject}
+          placeholder='Subject'
+          onChange={handleChange}
+        />
+        <FormTextArea
+          name='message'
+          label='Message'
+          value={message}
+          placeholder='Message'
+          onChange={handleChange}
+        />
+        <Button label='Submit' />
+      </Form>
     </Container>
   );
 };
@@ -122,13 +120,16 @@ const Container = styled.section`
     padding: 2rem;
   }
 
+  @media only screen and (max-width: 26em) {
+    grid-column: full-start / full-end;
+    margin: 5rem 3rem 3rem;
+  }
+
   @media only screen and (max-width: 25em) {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 `;
-
-const Wrapper = styled.div``;
 
 const Heading = styled.h3`
   font-weight: lighter;
