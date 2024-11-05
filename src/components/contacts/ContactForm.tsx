@@ -96,6 +96,7 @@ const Container = styled.section`
   @media only screen and (max-width: 57.5em) {
     grid-row: 2 / 3;
     grid-column: col-start 3 / col-end 6;
+    justify-content: stretch;
 
     box-shadow: none;
     margin: 5rem 0;
@@ -128,6 +129,11 @@ const Heading = styled.h3`
 
   @media only screen and (max-width: 62.5em) {
     font-size: 1.85rem;
+  }
+
+  @media only screen and (max-width: 57.5em) {
+    font-size: 2.5rem;
+    line-height: 1.3;
   }
 
   @media only screen and (max-width: 56.25em) {
