@@ -41,6 +41,15 @@ const Container = styled.section`
     border-radius: 1rem;
   }
 
+  @media only screen and (max-width: 45em) {
+    grid-column: col-start 2 / col-end 7;
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    grid-column: col-start 1 / col-end 8;
+  }
+
   @media only screen and (max-width: 31.25em) {
     margin-top: 3rem;
     padding: 4rem 3rem;
