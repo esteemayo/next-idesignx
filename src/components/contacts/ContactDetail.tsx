@@ -44,6 +44,18 @@ const Heading = styled.h3`
   @media only screen and (max-width: 56.25em) {
     font-size: 1.85rem;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 2.1rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 2.3rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Text = styled.p`
