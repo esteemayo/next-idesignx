@@ -129,6 +129,19 @@ const Heading = styled.h3`
   @media only screen and (max-width: 25em) {
     font-size: 1.8rem;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    font-size: 2.6rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  @media only screen and (min-width: 125em) {
+    font-size: 2.8rem;
+  }
 `;
 
 const Br = styled.br``;
