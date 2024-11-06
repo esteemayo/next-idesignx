@@ -67,6 +67,10 @@ const Container = styled.section`
   @media only screen and (max-width: 23.4375em) {
     margin: 2rem 2.5rem 5rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    margin: 2rem 2rem 4rem;
+  }
 `;
 
 export default ContactInfo;
