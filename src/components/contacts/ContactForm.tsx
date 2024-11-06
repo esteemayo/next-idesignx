@@ -133,6 +133,10 @@ const Container = styled.section`
     margin: 4rem 2rem 2rem;
     padding: 1.5rem;
   }
+
+  @media only screen and (max-width: 17.5em) {
+    margin: 3rem 1.5rem 1.5rem;
+  }
 `;
 
 const Heading = styled.h3`
@@ -207,7 +211,7 @@ const Heading = styled.h3`
     font-size: 1.7rem;
   }
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 16.875em) {
     font-size: 1.65rem;
   }
 
