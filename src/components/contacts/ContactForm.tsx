@@ -149,10 +149,6 @@ const Heading = styled.h3`
   color: ${({ theme }) => theme.textSoft};
   margin-bottom: 2rem;
 
-  @media only screen and (max-width: 68.75em) {
-    font-size: 2.35rem;
-  }
-
   @media only screen and (max-width: 64em) {
     font-size: 2.1rem;
   }
