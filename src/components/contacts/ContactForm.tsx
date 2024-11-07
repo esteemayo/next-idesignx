@@ -103,7 +103,7 @@ const Container = styled.section`
     justify-content: stretch;
 
     box-shadow: none;
-    margin: 5rem 0;
+    margin: 7rem 0 3.5rem;
   }
 
   @media only screen and (max-width: 45em) {

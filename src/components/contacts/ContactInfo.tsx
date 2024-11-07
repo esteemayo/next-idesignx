@@ -41,7 +41,7 @@ const Container = styled.section`
     grid-row: 3 / 4;
     grid-column: col-start 3 / col-end 6;
 
-    margin: 5rem 0;
+    margin: 3.5rem 0 7rem;
     border-radius: 1rem;
   }
 
