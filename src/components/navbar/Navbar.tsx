@@ -24,11 +24,12 @@ interface IContainer {
 const Navbar = () => {
   const pathname = usePathname();
 
-  const isOpen = useMenu((state) => state.isOpen);
   const designModal = useDesignModal();
-  const loginModal = useLoginModal((state) => state.onOpen);
   const { activeMenu } = useActiveMenu();
+
+  const isOpen = useMenu((state) => state.isOpen);
   const onOpen = useMenu((state) => state.onOpen);
+  const loginModal = useLoginModal((state) => state.onOpen);
 
   return (
     <Container active={activeMenu}>
