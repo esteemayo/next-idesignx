@@ -35,6 +35,11 @@ const Container = styled(Link)<IMode>`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 56.25em) {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     width: 4.25rem;
     height: 4.25rem;
@@ -76,6 +81,11 @@ const Icon = styled.span<SocialIconProps>`
       : undefined};
   -webkit-mask-size: cover;
   mask-size: cover;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 
   @media only screen and (min-width: 106.25em) {
     width: 2.25rem;
