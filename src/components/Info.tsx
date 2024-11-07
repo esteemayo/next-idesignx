@@ -166,7 +166,7 @@ const InfoWrap = styled.div`
     gap: 2rem;
   }
 
-  @media only screen and (max-width: 26.25em) {
+  @media only screen and (max-width: 26.875em) {
     width: 100%;
     justify-content: space-between;
   }
@@ -185,7 +185,7 @@ const Box = styled.div`
     gap: 3px;
   }
 
-  @media only screen and (max-width: 26.25em) {
+  @media only screen and (max-width: 26.875em) {
     display: none;
   }
 `;
