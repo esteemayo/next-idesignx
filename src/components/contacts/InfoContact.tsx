@@ -65,6 +65,8 @@ const Container = styled.div`
   }
 `;
 
-const Details = styled.span``;
+const Details = styled.span`
+  font-size: 1.4rem;
+`;
 
 export default InfoContact;
