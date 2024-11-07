@@ -90,6 +90,11 @@ const Container = styled(Link)<IMode>`
     height: 2.5rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    width: 2rem;
+    height: 2rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     width: 4.25rem;
     height: 4.25rem;
