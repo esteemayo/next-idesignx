@@ -47,9 +47,24 @@ const StyledLink = styled(Link)<IMode>`
     height: 3.1rem;
   }
 
-  @media only screen and (max-width: 31.25em) {
+  /* @media only screen and (max-width: 31.25em) {
     width: 2.5rem;
     height: 2.5rem;
+  } */
+
+  @media only screen and (min-width: 106.25em) {
+    width: 3.1rem;
+    height: 3.1rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 3.3rem;
+    height: 3.3rem;
   }
 
   display: flex;
