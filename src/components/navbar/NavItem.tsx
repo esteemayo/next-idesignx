@@ -1,6 +1,6 @@
-import styled, { DefaultTheme } from 'styled-components';
-import Link from 'next/link';
 import { useMemo } from 'react';
+import Link from 'next/link';
+import styled, { DefaultTheme } from 'styled-components';
 
 import { NavItemProps } from '@/types';
 
@@ -34,6 +34,14 @@ const Container = styled.li<IContainer>`
       color: currentColor;
       outline-color: ${({ theme }) => theme.outline};
       transition: all 0.2s;
+
+      @media only screen and (max-width: 56.25em) {
+        font-size: 1.7rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        font-size: 1.8rem;
+      }
 
       @media only screen and (min-width: 112.5em) {
         font-size: 1.8rem;
