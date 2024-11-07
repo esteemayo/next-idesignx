@@ -47,9 +47,9 @@ const StyledLink = styled(Link)<IMode>`
     height: 3.2rem;
   }
 
-  @media only screen and (max-width: 25em) {
-    width: 3.1rem;
-    height: 3.1rem;
+  @media only screen and (max-width: 30em) {
+    width: 3rem;
+    height: 3rem;
   }
 
   /* @media only screen and (max-width: 31.25em) {
@@ -132,8 +132,8 @@ const StyledLink = styled(Link)<IMode>`
       font-size: 2rem;
     }
 
-    @media only screen and (max-width: 25em) {
-      font-size: 2.1rem;
+    @media only screen and (max-width: 30em) {
+      font-size: 1.8rem;
     }
 
     @media only screen and (max-width: 21.5em) {
