@@ -54,6 +54,22 @@ const Container = styled.div<IMode>`
   )
   `};
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: var(--default-font-size);
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.5rem;
+  }
+
   @media only screen and (max-width: 21.5em) {
     font-size: 1.23rem;
   }
