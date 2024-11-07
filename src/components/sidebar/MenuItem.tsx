@@ -35,6 +35,10 @@ const StyledLink = styled(Link)`
   color: inherit;
   outline-color: ${({ theme }) => theme.outline};
 
+  @media only screen and (max-width: 30em) {
+    font-size: 1.8rem;
+  }
+
   &:active {
     color: inherit;
   }
