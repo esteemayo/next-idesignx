@@ -65,6 +65,16 @@ const Container = styled(Link)<IMode>`
     height: 4rem;
   }
 
+  @media only screen and (max-width: 26.875em) {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    width: 4rem;
+    height: 4rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     width: 4.25rem;
     height: 4.25rem;
@@ -133,6 +143,16 @@ const Icon = styled.span<SocialIconProps>`
   }
 
   @media only screen and (max-width: 27.5em) {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  @media only screen and (max-width: 26.875em) {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  @media only screen and (max-width: 25em) {
     width: 2rem;
     height: 2rem;
   }
