@@ -27,6 +27,26 @@ const StyledLink = styled(Link)<IMode>`
   border-radius: 50%;
   transition: all 0.2s;
 
+  @media only screen and (max-width: 56.25em) {
+    width: 3.1rem;
+    height: 3.1rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    width: 3.1rem;
+    height: 3.1rem;
+  }
+
   @media only screen and (max-width: 31.25em) {
     width: 2.5rem;
     height: 2.5rem;
