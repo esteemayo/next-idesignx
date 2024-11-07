@@ -59,6 +59,10 @@ const Container = styled.div`
       font-size: 1.3rem;
     }
 
+    @media only screen and (max-width: 20.625em) {
+      font-size: 1.2rem;
+    }
+
     @media only screen and (max-width: 18.75em) {
       font-size: 1.2rem;
     }
@@ -110,6 +114,10 @@ const Details = styled.span`
 
   @media only screen and (max-width: 21.5em) {
     font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 20.625em) {
+    font-size: 1.3rem;
   }
 
   @media only screen and (max-width: 18.75em) {
