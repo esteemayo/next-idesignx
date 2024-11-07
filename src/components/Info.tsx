@@ -181,6 +181,10 @@ const Box = styled.div`
   align-items: center;
   gap: 0.5rem;
 
+  @media only screen and (max-width: 31.25em) {
+    gap: 3px;
+  }
+
   @media only screen and (max-width: 26.25em) {
     display: none;
   }
