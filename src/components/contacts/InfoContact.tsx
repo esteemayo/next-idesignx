@@ -96,6 +96,10 @@ const Details = styled.span`
     font-size: 1.5rem;
   }
 
+  @media only screen and (max-width: 26.875em) {
+      font-size: var(--default-font-size);
+    }
+
   @media only screen and (max-width: 21.5em) {
     font-size: 1.23rem;
   }
