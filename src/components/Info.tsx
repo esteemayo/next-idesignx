@@ -37,7 +37,6 @@ const Container = styled.div<IMode>`
   display: flex;
   justify-content: center;
 
-  font-size: 1.4rem;
   padding: 1.5rem 0;
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
@@ -54,37 +53,11 @@ const Container = styled.div<IMode>`
   )
   `};
 
-  @media only screen and (max-width: 56.25em) {
-    font-size: 1.5rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    font-size: var(--default-font-size);
-  }
-
-  @media only screen and (max-width: 34.375em) {
-    font-size: 1.7rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.5rem;
-  }
-
-  @media only screen and (max-width: 21.5em) {
-    font-size: 1.23rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.2rem;
-  }
-
   @media only screen and (min-width: 112.5em) {
-    font-size: var(--default-font-size);
     padding: 1.7rem 0;
   }
 
   @media only screen and (min-width: 125em) {
-    font-size: 1.8rem;
     padding: 2rem 0;
   }
 `;
