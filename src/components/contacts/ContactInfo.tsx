@@ -55,8 +55,11 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 31.25em) {
-    margin-top: 3rem;
     padding: 2.5rem;
+  }
+
+  @media only screen and (max-width: 30em) {
+    margin: 3rem 0 6rem;
   }
 
   @media only screen and (max-width: 27.5em) {
