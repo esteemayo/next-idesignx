@@ -141,7 +141,7 @@ const Container = styled.section`
     padding: 1.5rem;
   }
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 18.125em) {
     margin: 3rem 1.5rem 1.5rem;
   }
 `;
