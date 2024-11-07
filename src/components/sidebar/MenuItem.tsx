@@ -27,6 +27,7 @@ const ListItem = styled.li<IList>`
 `;
 
 const StyledLink = styled(Link)`
+  display: block;
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 300;
