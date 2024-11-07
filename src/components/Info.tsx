@@ -158,6 +158,10 @@ const InfoWrap = styled.div`
   align-items: center;
   gap: 6rem;
 
+  @media only screen and (max-width: 34.375em) {
+    gap: 4rem;
+  }
+
   @media only screen and (max-width: 31.25em) {
     gap: 3rem;
   }
