@@ -31,6 +31,10 @@ export const CommonSelect = styled.select`
     font-size: var(--default-font-size);
   }
 
+  @media only screen and (max-width: 21.5em) {
+    height: 5.5rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     height: 6rem;
     font-size: var(--default-font-size);
