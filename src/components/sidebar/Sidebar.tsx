@@ -123,8 +123,12 @@ const ButtonContainer = styled.div`
       font-size: 2rem;
       color: currentColor;
 
-      @media only screen and (max-width: 25em) {
-        font-size: 1.85rem;
+      @media only screen and (max-width: 30em) {
+        font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: 21.5em) {
+        font-size: 1.7rem;
       }
     }
 
