@@ -12,18 +12,22 @@ export const CommonSelect = styled.select`
   border-radius: 2px;
 
   @media only screen and (max-width: 56.25em) {
+    height: 6rem;
     font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 50em) {
+    height: 6.2rem;
     font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 34.375em) {
+    height: 6.4rem;
     font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 25em) {
+    height: 6rem;
     font-size: var(--default-font-size);
   }
 
