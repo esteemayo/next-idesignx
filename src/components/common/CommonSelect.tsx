@@ -28,19 +28,19 @@ export const CommonSelect = styled.select`
   }
 
   @media only screen and (min-width: 106.25em) {
-    height: 5.9rem;
+    height: 6rem;
     font-size: var(--default-font-size);
-    padding: 2rem;
+    padding: 1.7rem 2rem;
   }
 
   @media only screen and (min-width: 112.5em) {
-    height: 6rem;
+    height: 6.7rem;
     font-size: 1.7rem;
     padding: 2rem;
   }
 
   @media only screen and (min-width: 125em) {
-    height: 6.1rem;
+    height: 7.5rem;
     font-size: 2rem;
     padding: 2.25rem 2rem;
   }
