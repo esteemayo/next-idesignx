@@ -66,12 +66,12 @@ const StyledButton = styled(CommonButton)<IBtn>`
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
-    height: ${({ small }) => (small === 'true' ? '3.45rem' : '3.85rem')};
+    height: ${({ small }) => (small === 'true' ? '4.3rem' : '4.6rem')};
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (max-width: 50em) {
-    height: ${({ small }) => (small === 'true' ? '3.7rem' : '4rem')};
+    height: ${({ small }) => (small === 'true' ? '4.4rem' : '4.7rem')};
     padding: ${({ small }) => (small === 'true' ? '1.3rem' : '1.3rem 3.3rem')};
     margin-top: ${({ nav }) => (nav !== 'true' ? '1rem' : undefined)};
   }
@@ -81,7 +81,7 @@ const StyledButton = styled(CommonButton)<IBtn>`
   }
 
   @media only screen and (max-width: 34.375em) {
-    height: ${({ small }) => (small === 'true' ? '3.9rem' : '4.25rem')};
+    height: ${({ small }) => (small === 'true' ? '4.5rem' : '4.8rem')};
     padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
