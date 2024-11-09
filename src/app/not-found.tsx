@@ -38,7 +38,7 @@ const Wrapper = styled.div`
   justify-content: center;
 
   & > img {
-    width: 70rem;
+    width: 50rem;
     height: 50rem;
   }
 `;
