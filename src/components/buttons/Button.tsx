@@ -109,17 +109,17 @@ const StyledButton = styled(CommonButton)<IBtn>`
   }
 
   @media only screen and (min-width: 106.25em) {
-    height: ${({ small }) => (small === 'true' ? '3.25rem' : '4rem')};
+    height: ${({ small }) => (small === 'true' ? '4.5rem' : '5rem')};
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (min-width: 112.5em) {
-    height: ${({ small }) => (small === 'true' ? '3.5rem' : '4.5rem')};
+    height: ${({ small }) => (small === 'true' ? '4.7rem' : '5.2rem')};
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (min-width: 125em) {
-    height: ${({ small }) => (small === 'true' ? '4rem' : '5rem')};
+    height: ${({ small }) => (small === 'true' ? '5.25rem' : '5.75rem')};
     padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
