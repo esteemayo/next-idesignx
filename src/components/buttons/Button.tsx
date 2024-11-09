@@ -85,17 +85,18 @@ const StyledButton = styled(CommonButton)<IBtn>`
     padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
-  @media only screen and (max-width: 26.25em) {
+  @media only screen and (max-width: 26.875em) {
     font-size: ${({ outline }) => (outline === 'true' ? '1.35rem' : '1.45rem')};
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
   @media only screen and (max-width: 25em) {
-    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
+    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 1.75rem')};
   }
 
   @media only screen and (max-width: 20.625em) {
+    height: ${({ small }) => (small === 'true' ? '3.45rem' : '3.85rem')};
     font-size: ${({ outline }) => (outline === 'true' ? '1.25rem' : '1.35rem')};
   }
 
