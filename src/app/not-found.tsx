@@ -26,8 +26,8 @@ const Container = styled.main`
   height: 85vh;
   background-color: ${({ theme }) => theme.bg};
 
-  @media only screen and (max-width: 30em) {
-    height: 70vh;
+  @media only screen and (max-width: 26.875em) {
+    height: 75vh;
   }
 `;
 
@@ -62,8 +62,9 @@ const StyledImage = styled(CommonImage)`
     width: 54rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.875em) {
     width: 52rem;
+    height: 33rem;
   }
 
   @media only screen and (min-width: 106.25em) {
