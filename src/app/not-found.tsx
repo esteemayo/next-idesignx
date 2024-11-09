@@ -23,7 +23,7 @@ const NotFound = () => {
 
 const Container = styled.main`
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   background-color: ${({ theme }) => theme.bg};
 
   @media only screen and (max-width: 26.875em) {
@@ -49,6 +49,22 @@ const StyledImage = styled(CommonImage)`
   width: 50rem;
   height: auto;
   object-fit: contain;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 52rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 53rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    width: 54rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    width: 52rem;
+  }
 
   @media only screen and (min-width: 106.25em) {
     width: 53rem;
