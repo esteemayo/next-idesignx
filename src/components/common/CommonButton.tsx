@@ -13,10 +13,12 @@ export const CommonButton = styled.button`
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
+    height: 3.85rem;
     font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 50em) {
+    height: 4rem;
     font-size: 1.7rem;
   }
 
