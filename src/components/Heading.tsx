@@ -10,7 +10,7 @@ interface IContainer {
 
 const Heading = ({ title, subtitle, center }: HeadingProps) => {
   return (
-    <Container center={center}>
+    <Container center={String(center)}>
       <HeadingPrimary>{title}</HeadingPrimary>
       <HeadingSecondary>{subtitle}</HeadingSecondary>
     </Container>
