@@ -47,8 +47,11 @@ const StyledImage = styled(CommonImage)`
     width: 53rem;
   }
 
-  @media only screen and (min-width: 112em) {
+  @media only screen and (min-width: 112.5em) {
     width: 55rem;
+  }
+  @media only screen and (min-width: 125em) {
+    width: 60rem;
   }
 `;
 
