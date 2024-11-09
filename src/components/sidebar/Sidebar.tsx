@@ -36,11 +36,6 @@ const Sidebar = () => {
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
 
-  const handleOpen = useCallback(() => {
-    designModal.onOpen();
-    menu.onClose();
-  }, [designModal, menu]);
-
   const handleClick = useCallback(() => {
     loginModal.onOpen();
     menu.onClose();
