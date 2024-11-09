@@ -1,8 +1,8 @@
 'use client';
 
-import GoogleIcon from '@mui/icons-material/Google';
-import styled from 'styled-components';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import styled from 'styled-components';
+import GoogleIcon from '@mui/icons-material/Google';
 
 import Button from './buttons/Button';
 
