@@ -32,11 +32,18 @@ export const CommonButton = styled.button`
     font-size: 1.3rem;
   }
 
+  @media only screen and (min-width: 106.25em) {
+    height: 4rem;
+    font-size: var(--default-font-size);
+  }
+
   @media only screen and (min-width: 112.5em) {
+    height: 4.5rem;
     font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 125em) {
+    height: 5rem;
     font-size: 2rem;
   }
 `;
