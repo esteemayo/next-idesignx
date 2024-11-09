@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export const CommonTextArea = styled.textarea`
   width: 100%;
+  height: 10rem;
   display: inline-block;
   resize: none;
   font-family: inherit;
@@ -28,12 +29,20 @@ export const CommonTextArea = styled.textarea`
     font-size: var(--default-font-size);
   }
 
+  @media only screen and (min-width: 106.25em) {
+    height: 10.2rem;
+    font-size: 1.7rem;
+    padding: 1.75rem 2rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
+    height: 10.7rem;
     font-size: 1.7rem;
     padding: 2rem;
   }
 
   @media only screen and (min-width: 125em) {
+    height: 11.5rem;
     font-size: 2rem;
     padding: 2.25rem 2rem;
   }
