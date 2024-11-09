@@ -26,6 +26,14 @@ export const TextAreaStyled = styled(CommonTextArea)<ITextArea>`
       font-size: var(--default-font-size);
     }
 
+    @media only screen and (max-width: 34.375em) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: 25em) {
+      font-size: 1.5rem;
+    }
+
     @media only screen and (min-width: 106.25em) {
       font-size: 1.5rem;
     }
