@@ -135,6 +135,10 @@ const ButtonContainer = styled.div<IMode>`
         padding: 0.6rem 1rem;
       }
 
+      @media only screen and (max-width: 25em) {
+        padding: 0.55rem 0.9rem;
+      }
+
       @media only screen and (max-width: 21.5em) {
         font-size: 1.7rem;
         padding: 0.5rem 0.85rem;
