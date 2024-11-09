@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const StyledLink = styled(Link)`
   display: inline-block;
   border: none;
+  height: 4rem;
   text-decoration: none;
   text-transform: capitalize;
   padding: 0.8rem 3rem;
@@ -67,17 +68,20 @@ export const StyledLink = styled(Link)`
   }
 
   @media only screen and (min-width: 106.25em) {
+    height: 4.3rem;
     font-size: var(--default-font-size);
     padding: 1rem 3rem;
   }
 
   @media only screen and (min-width: 112.5em) {
-    padding: 1.2rem 3.2rem;
+    height: 4.8rem;
+    padding: 1rem 3.2rem;
     font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 125em) {
-    padding: 1.4rem 3.5rem;
+    height: 5.5rem;
+    padding: 1.2rem 3.5rem;
     font-size: 2rem;
   }
 
