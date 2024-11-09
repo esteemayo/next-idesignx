@@ -10,7 +10,7 @@ import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlin
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface IBtn {
-  isActive: boolean;
+  isActive?: boolean;
 }
 
 const DarkMode = () => {
@@ -42,16 +42,6 @@ const DarkMode = () => {
     [dark]
   );
 
-  const handlePlatform = useCallback(
-    (e: React.MouseEvent<HTMLButtonElement>) => {
-      e.stopPropagation();
-
-      toggle();
-      setIsSelected(screenSize <= 768 ? 'mobile' : 'desktop');
-    },
-    [screenSize, toggle]
-  );
-
   const handleResize = useCallback(() => {
     setScreenSize(window.innerWidth);
   }, []);
@@ -72,11 +62,7 @@ const DarkMode = () => {
         >
           <LightModeOutlinedIcon />
         </Button>
-        <Button
-          type='button'
-          isActive={isSelected === 'desktop' ?? isSelected === 'mobile'}
-          onClick={handlePlatform}
-        >
+        <Button type='button'>
           {screenSize <= 768 ? (
             <SmartphoneOutlinedIcon />
           ) : (
