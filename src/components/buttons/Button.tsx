@@ -42,7 +42,7 @@ const StyledButton = styled(CommonButton)<IBtn>`
   justify-content: center;
   gap: 1rem;
 
-  height: 3.7rem;
+  height: ${({ small }) => (small === 'true' ? '3rem' : '3.7rem')};
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   border: ${({ outline }) =>
     outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
@@ -66,10 +66,12 @@ const StyledButton = styled(CommonButton)<IBtn>`
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
+    height: ${({ small }) => (small === 'true' ? '3.45rem' : '3.85rem')};
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (max-width: 50em) {
+    height: ${({ small }) => (small === 'true' ? '3.7rem' : '4rem')};
     padding: ${({ small }) => (small === 'true' ? '1.3rem' : '1.3rem 3.3rem')};
     margin-top: ${({ nav }) => (nav !== 'true' ? '1rem' : undefined)};
   }
