@@ -39,15 +39,18 @@ export const StyledLink = styled(Link)`
   } */
 
   @media only screen and (max-width: 30em) {
+    height: 4rem;
     font-size: var(--default-font-size);
     padding: 0.8rem 2rem;
   }
 
   @media only screen and (max-width: 27.5em) {
+    height: 3.8rem;
     font-size: 1.5rem;
   }
 
   @media only screen and (max-width: 26.875em) {
+    height: 3.6rem;
     padding: 0.6rem 1.5rem;
   }
 
