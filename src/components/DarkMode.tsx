@@ -10,14 +10,13 @@ import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlin
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface IBtn {
-  isActive?: boolean;
+  isActive: boolean | undefined;
 }
 
 const DarkMode = () => {
+  const dark = useDarkMode((state) => state.dark);
   const mode = useDarkMode((state) => state.mode);
   const light = useDarkMode((state) => state.light);
-  const dark = useDarkMode((state) => state.dark);
-  const toggle = useDarkMode((state) => state.toggle);
 
   const [isSelected, setIsSelected] = useState('desktop');
   const [screenSize, setScreenSize] = useState(window.innerWidth);
@@ -72,7 +71,7 @@ const DarkMode = () => {
         <Button
           type='button'
           isActive={isSelected === 'dark'}
-          disabled={mode}
+          disabled={!!mode}
           onClick={handleDarkMode}
         >
           <DarkModeOutlinedIcon />
@@ -171,7 +170,11 @@ const Button = styled.button<IBtn>`
   }
 `;
 
-const setProperty = (isActive: boolean, val1: string, val2: string) => {
+const setProperty = (
+  isActive: boolean | undefined,
+  val1: string,
+  val2: string
+) => {
   return isActive ? val1 : val2;
 };
 
