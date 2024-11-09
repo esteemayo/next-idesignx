@@ -15,7 +15,7 @@ const NotFound = () => {
           height={300}
           alt='404'
         />
-        <Heading title='Page not found!' subtitle='Try again later.' center />
+        <Heading title='Page not found' subtitle='Try again later!' center />
       </Wrapper>
     </Container>
   );
@@ -39,6 +39,10 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  & > div {
+    margin-bottom: 0;
+  }
 `;
 
 const StyledImage = styled(CommonImage)`
