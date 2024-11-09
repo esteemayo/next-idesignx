@@ -42,6 +42,7 @@ const StyledButton = styled(CommonButton)<IBtn>`
   justify-content: center;
   gap: 1rem;
 
+  height: 3.7rem;
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   border: ${({ outline }) =>
     outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
@@ -103,11 +104,18 @@ const StyledButton = styled(CommonButton)<IBtn>`
     font-size: ${({ outline }) => (outline === 'true' ? '1rem' : '1.15rem')};
   }
 
+  @media only screen and (min-width: 106.25em) {
+    height: ${({ small }) => (small === 'true' ? '3.25rem' : '4rem')};
+    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
+  }
+
   @media only screen and (min-width: 112.5em) {
+    height: ${({ small }) => (small === 'true' ? '3.5rem' : '4.5rem')};
     padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (min-width: 125em) {
+    height: ${({ small }) => (small === 'true' ? '4rem' : '5rem')};
     padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
   }
 
