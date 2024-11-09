@@ -14,18 +14,22 @@ export const CommonTextArea = styled.textarea`
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
+    height: 10.5rem;
     font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 50em) {
+    height: 11rem;
     font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 34.375em) {
+    height: 11.5rem;
     font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 25em) {
+    height: 10.5rem;
     font-size: var(--default-font-size);
   }
 
