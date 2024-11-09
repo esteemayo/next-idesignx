@@ -238,7 +238,7 @@ export interface ModalProps {
 export interface HeadingProps {
   title: string;
   subtitle?: string;
-  center?: string;
+  center?: boolean;
 }
 
 export interface ToggleAccountProps {
