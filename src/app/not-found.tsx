@@ -36,15 +36,16 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  & > img {
-    width: 50rem;
-    height: 50rem;
-  }
 `;
 
 const StyledImage = styled(CommonImage)`
+  width: 50rem;
+  height: auto;
   object-fit: contain;
+
+  @media only screen and (min-width: 106.26em) {
+    width: 53rem;
+  }
 `;
 
 export default NotFound;
