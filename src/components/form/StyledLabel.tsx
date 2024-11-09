@@ -54,6 +54,7 @@ export const StyledLabel = styled.label<ILabel>`
   &::after {
     content: '*';
     display: inline-block;
+    font-size: inherit;
     color: ${({ mode, error }) => setColor(mode, error)};
   }
 `;

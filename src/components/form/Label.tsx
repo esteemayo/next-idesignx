@@ -21,7 +21,6 @@ export const Label = styled.label`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 40%;
     font-size: 1.5rem;
   }
 
