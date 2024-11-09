@@ -3,6 +3,8 @@
 import { useCallback } from 'react';
 import styled, { css } from 'styled-components';
 
+import MenuItems from './MenuItems';
+
 import Hamburger from '../navbar/Hamburger';
 import NavButton from '../navbar/NavButton';
 
@@ -14,7 +16,6 @@ import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
-import MenuItems from './MenuItems';
 
 interface IContainer {
   active: string;
@@ -26,9 +27,10 @@ interface IWrapper {
 }
 
 const Sidebar = () => {
-  const designModal = useDesignModal();
   const menu = useMenu();
+
   const loginModal = useLoginModal();
+  const designModal = useDesignModal();
 
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
