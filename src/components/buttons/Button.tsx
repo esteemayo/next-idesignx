@@ -42,7 +42,7 @@ const StyledButton = styled(CommonButton)<IBtn>`
   justify-content: center;
   gap: 1rem;
 
-  height: ${({ small }) => (small === 'true' ? '3rem' : '3.7rem')};
+  height: ${({ small }) => (small === 'true' ? '4.2rem' : '4.5rem')};
   margin-top: ${({ nav }) => (nav !== 'true' ? '2rem' : undefined)};
   border: ${({ outline }) =>
     outline === 'true' ? '1px solid var(--clr-purple-light-1)' : 'none'};
