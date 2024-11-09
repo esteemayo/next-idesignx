@@ -16,6 +16,7 @@ import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
+import { setBorderColor } from '@/utils/color';
 
 interface IContainer {
   active: string;
@@ -152,12 +153,6 @@ const setBcgColor = (mode: string): string => {
   return mode === 'true'
     ? 'var(--clr-bg-dark-primary)'
     : 'var(--clr-purple-light-1)';
-};
-
-const setBorderColor = (mode: string): string => {
-  return mode === 'true'
-    ? 'var(--clr-bg-dark-tertiary)'
-    : 'var(--clr-purple-light-3)';
 };
 
 export default Sidebar;
