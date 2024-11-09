@@ -1,15 +1,16 @@
 'use client';
 
-import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
+import Button from '../buttons/Button';
 
 import { Overlay } from '../common/Overlay';
 import { Wrapper } from '../common/Wrapper';
 
 import { ModalProps } from '@/types';
-import Button from '../buttons/Button';
 
 interface IBtn {
   size?: string | null | undefined;
