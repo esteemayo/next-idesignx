@@ -8,7 +8,12 @@ const NotFound = () => {
   return (
     <Container>
       <Wrapper>
-        <StyledImage src='/img/not-found.png' width={601} height={415} alt='' />
+        <StyledImage
+          src='/img/not-found.png'
+          width={300}
+          height={300}
+          alt='404'
+        />
       </Wrapper>
     </Container>
   );
