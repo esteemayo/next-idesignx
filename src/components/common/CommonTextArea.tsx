@@ -33,6 +33,10 @@ export const CommonTextArea = styled.textarea`
     font-size: var(--default-font-size);
   }
 
+  @media only screen and (max-width: 21.5em) {
+    height: 9.7rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     height: 10.5rem;
     font-size: 1.7rem;
