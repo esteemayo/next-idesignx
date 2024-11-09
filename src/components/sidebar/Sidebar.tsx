@@ -22,7 +22,7 @@ interface IContainer {
   mode: string;
 }
 
-interface IWrapper {
+interface IMode {
   mode: string;
 }
 
@@ -57,7 +57,7 @@ const Sidebar = () => {
     <Container active={activeMenu} mode={activeMode}>
       <Wrapper mode={activeMode}>
         <Hamburger isOpen={menu.isOpen} onToggle={menu.onClose} />
-        <ButtonContainer>
+        <ButtonContainer mode={activeMode}>
           <NavButton label='Login' onClick={handleClick} />
         </ButtonContainer>
       </Wrapper>
@@ -100,7 +100,7 @@ const Container = styled.aside<IContainer>`
   }
 `;
 
-const Wrapper = styled.div<IWrapper>`
+const Wrapper = styled.div<IMode>`
   padding: 3rem;
   /* background-color: ${({ mode }) => setBcgColor(mode)}; */
 
@@ -109,7 +109,7 @@ const Wrapper = styled.div<IWrapper>`
   justify-content: space-between;
 `;
 
-const ButtonContainer = styled.div`
+const ButtonContainer = styled.div<IMode>`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -123,7 +123,11 @@ const ButtonContainer = styled.div`
     &:first-child {
       font-weight: lighter;
       font-size: 2rem;
+      padding: 0.7rem 1.25rem;
       color: currentColor;
+      border: 1px solid ${({ mode }) => setBorderColor(mode)};
+      border-radius: 0.5rem;
+      outline: none;
 
       @media only screen and (max-width: 30em) {
         font-size: 1.8rem;
@@ -146,6 +150,12 @@ const setBcgColor = (mode: string): string => {
   return mode === 'true'
     ? 'var(--clr-bg-dark-primary)'
     : 'var(--clr-purple-light-1)';
+};
+
+const setBorderColor = (mode: string): string => {
+  return mode === 'true'
+    ? 'var(--clr-bg-dark-tertiary)'
+    : 'var(--clr-purple-light-3)';
 };
 
 export default Sidebar;
