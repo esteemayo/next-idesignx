@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 
+import Heading from '@/components/Heading';
 import { CommonImage } from '@/components/common/CommonImage';
 
 const NotFound = () => {
@@ -14,6 +15,7 @@ const NotFound = () => {
           height={300}
           alt='404'
         />
+        <Heading title='Page not found!' subtitle='Try again later.' center />
       </Wrapper>
     </Container>
   );
@@ -34,6 +36,7 @@ const Wrapper = styled.div`
   height: 100%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
