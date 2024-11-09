@@ -188,6 +188,11 @@ const StyledLink = styled(Link)`
     font-size: 1.4rem;
   }
 
+  @media only screen and (min-width: 106.25em) {
+    font-size: 1.5rem;
+    padding: 0.8rem 2rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     font-size: var(--default-font-size);
     padding: 1rem 3rem;
