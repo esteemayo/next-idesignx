@@ -30,13 +30,13 @@ export const CommonTextArea = styled.textarea`
   }
 
   @media only screen and (min-width: 106.25em) {
-    height: 10.2rem;
+    height: 10.5rem;
     font-size: 1.7rem;
     padding: 1.75rem 2rem;
   }
 
   @media only screen and (min-width: 112.5em) {
-    height: 10.7rem;
+    height: 11rem;
     font-size: 1.7rem;
     padding: 2rem;
   }
