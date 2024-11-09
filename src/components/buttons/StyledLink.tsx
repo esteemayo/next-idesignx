@@ -7,6 +7,7 @@ export const StyledLink = styled(Link)`
   height: 4rem;
   text-decoration: none;
   text-transform: capitalize;
+  vertical-align: middle;
   padding: 0.8rem 3rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -23,10 +24,13 @@ export const StyledLink = styled(Link)`
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
+    height: 4.35rem;
+    padding: 1rem 3rem;
     font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 50em) {
+    height: 4.5rem;
     font-size: 1.7rem;
   }
 
