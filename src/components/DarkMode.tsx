@@ -1,11 +1,11 @@
 'use client';
 
-import styled from 'styled-components';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import { useCallback, useEffect, useState } from 'react';
-import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
+import styled from 'styled-components';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import { useCallback, useEffect, useState } from 'react';
 import DesktopWindowsOutlinedIcon from '@mui/icons-material/DesktopWindowsOutlined';
+import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
 
