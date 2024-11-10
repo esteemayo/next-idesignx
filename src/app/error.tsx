@@ -129,6 +129,10 @@ const Button = styled.button`
     font-size: 1.5rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    font-size: 1.45rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     width: 21rem;
     height: 6.5rem;
