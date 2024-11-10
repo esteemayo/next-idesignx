@@ -150,7 +150,7 @@ const HeadingSecondary = styled.h2`
 
 const HeadingSub = styled.span`
   display: block;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   letter-spacing: 3px;
   animation: moveInBottom 0.5s ease-out 1s backwards;
 
