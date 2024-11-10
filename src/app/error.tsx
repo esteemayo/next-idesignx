@@ -47,6 +47,18 @@ const StyledImage = styled(CommonImage)`
   width: 40rem;
   height: auto;
   object-fit: contain;
+
+  @media only screen and (min-width: 106.25em) {
+    width: 42rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    width: 45rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    width: 50rem;
+  }
 `;
 
 export default ErrorState;
