@@ -17,13 +17,16 @@ const ErrorState = ({ error }: ErrorProps) => {
 
   return (
     <Container>
-      <StyledImage
-        src='/img/error-warning.png'
-        width={400}
-        height={400}
-        alt=''
-      />
-      <Heading title='Uh oh!' subtitle='Something went wrong' center />
+      <Wrapper>
+        <StyledImage
+          src='/img/error-warning.png'
+          width={400}
+          height={400}
+          alt=''
+        />
+        <Heading title='Uh oh!' subtitle='Something went wrong' center />
+        <Button type='button'>Reload page</Button>
+      </Wrapper>
     </Container>
   );
 };
@@ -42,6 +45,8 @@ const Container = styled.main`
   align-items: center;
   justify-content: center;
 `;
+
+const Wrapper = styled.div``;
 
 const StyledImage = styled(CommonImage)`
   width: 40rem;
@@ -89,5 +94,7 @@ const StyledImage = styled(CommonImage)`
     width: 50rem;
   }
 `;
+
+const Button = styled.button``;
 
 export default ErrorState;
