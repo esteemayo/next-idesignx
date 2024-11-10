@@ -96,7 +96,7 @@ const HeadingSecondary = styled.h2`
     font-size: 1.7rem;
   }
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 18.75em) {
     font-size: var(--default-font-size);
   }
 
