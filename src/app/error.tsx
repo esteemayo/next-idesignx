@@ -106,6 +106,12 @@ const Button = styled.button`
   outline: none;
   font-weight: 600;
   font-size: 1.4rem;
+  width: 20rem;
+  height: 6rem;
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  border-radius: 10rem;
+  cursor: pointer;
 `;
 
 export default ErrorState;
