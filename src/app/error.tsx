@@ -19,7 +19,7 @@ const ErrorState = ({ error }: ErrorProps) => {
     <Container>
       <StyledImage
         src='/img/error-warning.png'
-        width={500}
+        width={400}
         height={400}
         alt=''
       />
@@ -30,7 +30,7 @@ const ErrorState = ({ error }: ErrorProps) => {
 
 const Container = styled.main`
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   background-color: ${({ theme }) => theme.bg};
 
   @media only screen and (max-width: 26.875em) {
@@ -43,7 +43,7 @@ const Container = styled.main`
   justify-content: center;
 
   & > img {
-    width: 50rem;
+    width: 40rem;
     height: 40rem;
   }
 `;
