@@ -105,13 +105,21 @@ const Button = styled.button`
   border: none;
   outline: none;
   font-weight: 600;
-  font-size: 100%;
+  font-size: 1.4rem;
   width: 20rem;
   height: 6rem;
   background-color: var(--clr-purple-light-1);
   color: var(--clr-white);
   border-radius: 10rem;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.75;
+  }
 `;
 
 export default ErrorState;
