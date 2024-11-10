@@ -34,7 +34,7 @@ const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 
   @media only screen and (max-width: 26.875em) {
-    height: 100vh;
+    height: 75vh;
   }
 
   display: flex;
@@ -62,6 +62,11 @@ const StyledImage = styled(CommonImage)`
 
   @media only screen and (max-width: 30em) {
     width: 42rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    width: 40rem;
+    height: 30rem;
   }
 
   @media only screen and (min-width: 106.25em) {
