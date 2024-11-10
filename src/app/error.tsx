@@ -100,6 +100,12 @@ const StyledImage = styled(CommonImage)`
   }
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+`;
 
 export default ErrorState;
