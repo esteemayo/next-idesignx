@@ -15,7 +15,6 @@ export const metadata: Metadata = {
 };
 
 const Home = () => {
-  throw new Error('error');
   return (
     <HomeLayout>
       <Hero />
