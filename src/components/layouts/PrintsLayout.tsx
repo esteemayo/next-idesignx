@@ -10,7 +10,7 @@ const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 
   display: grid;
-  grid-template-rows: 70vh repeat(2, min-content);
+  grid-template-rows: 37vw repeat(2, min-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr) [center-start]repeat(
       8,
