@@ -8,9 +8,8 @@ import MenuItems from './MenuItems';
 import Hamburger from '../navbar/Hamburger';
 import NavButton from '../navbar/NavButton';
 
-import { useLoginModal } from '@/hooks/useLoginModal';
 import { useMenu } from '@/hooks/useMenu';
-import { useDesignModal } from '@/hooks/useDesignModal';
+import { useLoginModal } from '@/hooks/useLoginModal';
 
 import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
@@ -28,9 +27,7 @@ interface IMode {
 
 const Sidebar = () => {
   const menu = useMenu();
-
   const loginModal = useLoginModal();
-  const designModal = useDesignModal();
 
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
