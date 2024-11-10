@@ -66,22 +66,39 @@ const Text = styled.p`
   animation: moveInRight 1s ease-out;
   backface-visibility: hidden;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.6rem;
+  }
+
   @media only screen and (max-width: 50em) {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
   }
 
   @media only screen and (max-width: 43.75em) {
     align-self: center;
+    line-height: 1.2;
   }
 
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2.8rem;
+  }
+
+  /* @media only screen and (max-width: 31.25em) {
     font-size: 2.15rem;
+  } */
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.6rem;
+  }
+
+  /* @media only screen and (max-width: 50em) {
+    font-size: 2.3rem;
   }
 
   @media only screen and (max-width: 25em) {
     font-size: var(--default-font-size);
     letter-spacing: 1px;
-  }
+  } */
 
   @media only screen and (min-width: 106.25em) {
     font-size: 2.6rem;
