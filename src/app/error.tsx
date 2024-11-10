@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
 import styled from 'styled-components';
+import { useCallback, useEffect } from 'react';
 
 import Heading from '@/components/Heading';
 import { CommonImage } from '@/components/common/CommonImage';
@@ -11,6 +11,11 @@ interface ErrorProps {
 }
 
 const ErrorState = ({ error }: ErrorProps) => {
+  const handleReload = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    window.location.assign(window.location.pathname);
+  }, []);
+
   useEffect(() => {
     console.error(error);
   }, [error]);
@@ -25,7 +30,9 @@ const ErrorState = ({ error }: ErrorProps) => {
           alt=''
         />
         <Heading title='Uh oh!' subtitle='Something went wrong' center />
-        <Button type='button'>Reload page</Button>
+        <Button type='button' onClick={handleReload}>
+          Reload page
+        </Button>
       </Wrapper>
     </Container>
   );
