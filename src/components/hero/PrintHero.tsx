@@ -154,9 +154,21 @@ const HeadingSub = styled.span`
   letter-spacing: 3px;
   animation: moveInBottom 0.5s ease-out 1s backwards;
 
-  @media only screen and (max-width: 50em) {
-    font-size: 1.2rem;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.7rem;
   }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 1.9rem;
+  }
+
+  /* @media only screen and (max-width: 50em) {
+    font-size: 1.2rem;
+  } */
 
   @media only screen and (max-width: 25em) {
     font-size: 1rem;
