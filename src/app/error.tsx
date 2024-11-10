@@ -23,7 +23,7 @@ const ErrorState = ({ error }: ErrorProps) => {
         height={400}
         alt=''
       />
-      <Heading title='Uh oh' subtitle='Something went wrong' center='true' />
+      <Heading title='Uh oh' subtitle='Something went wrong' center />
     </Container>
   );
 };
