@@ -41,14 +41,11 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  & > img {
-    width: 40rem;
-    height: 40rem;
-  }
 `;
 
 const StyledImage = styled(CommonImage)`
+  width: 40rem;
+  height: auto;
   object-fit: contain;
 `;
 
