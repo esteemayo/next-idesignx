@@ -15,7 +15,7 @@ const Prints = () => {
   return (
     <PrintsLayout>
       <PrintHero />
-      <Gallery data={galleryImages} />
+      {/* <Gallery data={galleryImages} /> */}
       <PrintContact />
     </PrintsLayout>
   );
