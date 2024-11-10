@@ -4,7 +4,6 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 import { MenuItemProps } from '@/types';
-import { setBorderColor } from '@/utils/color';
 
 interface IList {
   mode: string;
@@ -48,5 +47,11 @@ const StyledLink = styled(Link)`
     color: inherit;
   }
 `;
+
+const setBorderColor = (mode: string): string => {
+  return mode === 'true'
+    ? 'var(--clr-bg-dark-tertiary)'
+    : 'var(--clr-purple-light-3)';
+};
 
 export default MenuItem;
