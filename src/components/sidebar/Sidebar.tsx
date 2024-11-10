@@ -16,7 +16,6 @@ import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
-import { setBorderColor } from '@/utils/color';
 
 interface IContainer {
   active: string;
@@ -121,7 +120,7 @@ const ButtonContainer = styled.div<IMode>`
       font-size: 2rem;
       padding: 0.7rem 1.25rem;
       color: currentColor;
-      border: 1px solid ${({ mode }) => setBorderColor(mode)};
+      border: 1px solid currentColor;
       border-radius: 0.5rem;
       outline: none;
 
