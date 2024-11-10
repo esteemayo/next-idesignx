@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
-import Gallery from '@/components/gallery/Gallery';
 import PrintContact from '@/components/PrintContact';
-import PrintHero from '@/components/hero/PrintHero';
+import Gallery from '@/components/gallery/Gallery';
 import PrintsLayout from '@/components/layouts/PrintsLayout';
+import PrintHero from '@/components/hero/PrintHero';
 
 import { galleryImages } from '@/data';
 
