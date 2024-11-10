@@ -42,6 +42,10 @@ const Wrapper = styled.div`
 
   & > div {
     margin-bottom: 0;
+
+    @media only screen and (max-width: 21.5em) {
+      margin-top: -3rem;
+    }
   }
 `;
 
