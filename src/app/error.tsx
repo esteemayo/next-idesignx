@@ -104,14 +104,29 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   outline: none;
-  font-weight: 600;
-  font-size: 1.4rem;
   width: 20rem;
   height: 6rem;
+  font-weight: 600;
+  font-size: 1.4rem;
   background-color: var(--clr-purple-light-1);
   color: var(--clr-white);
   border-radius: 10rem;
   cursor: pointer;
+
+  @media only screen and (min-width: 106.25em) {
+    height: 6.5rem;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    height: 7rem;
+    font-size: var(--default-font-size);
+  }
+
+  @media only screen and (min-width: 125em) {
+    height: 8rem;
+    font-size: 1.8rem;
+  }
 
   &:hover {
     opacity: 0.9;
