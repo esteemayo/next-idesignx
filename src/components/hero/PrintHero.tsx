@@ -80,7 +80,7 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2.8rem;
+    font-size: 2.65rem;
   }
 
   @media only screen and (max-width: 31.25em) {
@@ -163,7 +163,7 @@ const HeadingSub = styled.span`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.9rem;
+    font-size: 1.75rem;
   }
 
   @media only screen and (max-width: 31.35em) {
@@ -219,7 +219,7 @@ const HeadingMain = styled.span`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2.7rem;
+    font-size: 2.55rem;
   }
 
   @media only screen and (max-width: 31.35em) {
