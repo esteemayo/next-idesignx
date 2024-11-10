@@ -174,6 +174,10 @@ const HeadingSub = styled.span`
     font-size: 1.45rem;
   }
 
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.35rem;
+  }
+
   @media only screen and (max-width: 25em) {
     font-size: 1rem;
     letter-spacing: 2px;
