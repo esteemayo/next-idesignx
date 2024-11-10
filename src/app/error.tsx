@@ -105,10 +105,10 @@ const Button = styled.button`
   border: none;
   outline: none;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 100%;
   width: 20rem;
   height: 6rem;
-  background-color: var(--clr-red);
+  background-color: var(--clr-purple-light-1);
   color: var(--clr-white);
   border-radius: 10rem;
   cursor: pointer;
