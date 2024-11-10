@@ -46,7 +46,12 @@ const Container = styled.main`
   justify-content: center;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 const StyledImage = styled(CommonImage)`
   width: 40rem;
