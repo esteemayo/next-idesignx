@@ -114,16 +114,19 @@ const Button = styled.button`
   cursor: pointer;
 
   @media only screen and (min-width: 106.25em) {
+    width: 21rem;
     height: 6.5rem;
     font-size: 1.5rem;
   }
 
   @media only screen and (min-width: 112.5em) {
+    width: 22rem;
     height: 7rem;
     font-size: var(--default-font-size);
   }
 
   @media only screen and (min-width: 125em) {
+    width: 25rem;
     height: 8rem;
     font-size: 1.8rem;
   }
