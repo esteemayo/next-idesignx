@@ -44,6 +44,10 @@ const HeadingPrimary = styled.h1`
     font-size: 2.25rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    font-size: 2.15rem;
+  }
+
   @media only screen and (max-width: 18.75em) {
     font-size: 2rem;
   }
