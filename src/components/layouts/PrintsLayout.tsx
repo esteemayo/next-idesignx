@@ -57,6 +57,14 @@ const Container = styled.main`
   @media only screen and (max-width: 25em) {
     grid-template-rows: 70vw;
   }
+
+  @media only screen and (max-width: 22.5em) {
+    grid-template-rows: 73vw;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    grid-template-rows: 75vw;
+  }
 `;
 
 export default PrintsLayout;
