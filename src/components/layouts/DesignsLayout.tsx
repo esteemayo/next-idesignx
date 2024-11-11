@@ -8,6 +8,7 @@ const DesignsLayout = ({ children }: { children: React.ReactNode }) => {
 
 const Container = styled.main`
   background-color: ${({ theme }) => theme.bgDesign};
+
   display: grid;
   grid-template-rows: 37vw 40vw repeat(2, min-content);
   grid-template-columns:
