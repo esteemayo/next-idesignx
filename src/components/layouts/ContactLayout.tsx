@@ -39,43 +39,39 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 37.5em) {
-    grid-template-rows: 50vw;
-  }
-
-  @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 53vw;
-  }
-
-  @media only screen and (max-width: 30em) {
     grid-template-rows: 55vw;
   }
 
-  @media only screen and (max-width: 26.875em) {
+  @media only screen and (max-width: 34.375em) {
     grid-template-rows: 57vw;
   }
 
-  @media only screen and (max-width: 25em) {
-    grid-template-rows: 63vw;
+  @media only screen and (max-width: 30em) {
+    grid-template-rows: 60vw;
   }
 
-  @media only screen and (max-width: 23.4375em) {
+  @media only screen and (max-width: 26.875em) {
     grid-template-rows: 65vw;
   }
 
-  @media only screen and (max-width: 22.5em) {
-    grid-template-rows: 67vw;
-  }
-
-  @media only screen and (max-width: 21.5em) {
+  @media only screen and (max-width: 25em) {
     grid-template-rows: 70vw;
   }
 
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 22.5em) {
     grid-template-rows: 73vw;
   }
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 21.5em) {
     grid-template-rows: 75vw;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    grid-template-rows: 78vw;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    grid-template-rows: 80vw;
   }
 `;
 
