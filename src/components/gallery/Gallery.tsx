@@ -88,9 +88,10 @@ const Heading = styled.h2`
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 27.7rem));
+  grid-auto-rows: 27.7rem;
   justify-content: center;
-  grid-auto-rows: 25rem;
+  gap: 3rem;
 
   @media only screen and (max-width: 26.25em) {
     grid-auto-rows: auto;
