@@ -94,6 +94,11 @@ const Wrapper = styled.div`
   justify-content: center;
   gap: 3rem;
 
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 25rem));
+    grid-auto-rows: 25rem;
+  }
+
   @media only screen and (max-width: 26.25em) {
     grid-auto-rows: auto;
     row-gap: 2rem;
