@@ -65,6 +65,14 @@ const Heading = styled.h2`
     font-size: 2.4rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 3.1rem;
   }
