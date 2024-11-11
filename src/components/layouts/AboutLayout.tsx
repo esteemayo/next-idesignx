@@ -10,7 +10,7 @@ const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 
   display: grid;
-  grid-template-rows: 32vw 40vw min-content 20vw min-content;
+  grid-template-rows: 37vw 40vw min-content 20vw min-content;
   grid-template-columns:
     [full-start]minmax(6rem, 1fr) [center-start] repeat(
       8,
@@ -19,7 +19,11 @@ const Container = styled.main`
     [center-end] minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-width: 64em) {
-    grid-template-rows: 35vw min-content 30vw min-content 23vw;
+    grid-template-rows: 43vw min-content 30vw min-content 23vw;
+  }
+
+  @media only screen and (max-width: 59.375em) {
+    grid-template-rows: 45vw min-content 30vw min-content 23vw;
   }
 
   @media only screen and (max-width: 56.25em) {
