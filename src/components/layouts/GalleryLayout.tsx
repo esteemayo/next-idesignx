@@ -59,11 +59,19 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 22.5em) {
-    grid-template-rows: 70vw;
+    grid-template-rows: 73vw;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    grid-template-rows: 75vw;
   }
 
   @media only screen and (max-width: 18.75em) {
-    grid-template-rows: 75vw;
+    grid-template-rows: 78vw;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    grid-template-rows: 80vw;
   }
 `;
 
