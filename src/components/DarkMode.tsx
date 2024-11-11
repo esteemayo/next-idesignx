@@ -173,7 +173,10 @@ const Button = styled(CommonButton)<IBtn>`
     setProperty(isActive, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
 `;
 
-const DeviceButton = styled(CommonButton)``;
+const DeviceButton = styled(CommonButton)`
+  background-color: transparent;
+  color: var(--clr-purple-light-2);
+`;
 
 const setProperty = (isActive: boolean, val1: string, val2: string) => {
   return isActive ? val1 : val2;
