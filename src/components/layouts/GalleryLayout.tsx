@@ -73,6 +73,18 @@ const Container = styled.main`
   @media only screen and (max-width: 17.5em) {
     grid-template-rows: 80vw;
   }
+
+  @media only screen and (min-width: 106.25em) {
+    grid-template-rows: 38vw;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    grid-template-rows: 39vw;
+  }
+
+  @media only screen and (min-width: 125em) {
+    grid-template-rows: 40vw;
+  }
 `;
 
 export default GalleryLayout;
