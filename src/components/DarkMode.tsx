@@ -108,15 +108,11 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Button = styled.button<IBtn>`
+const CommonButton = styled.button`
   border: none;
   width: 3.2rem;
   height: 3.2rem;
   font-size: 2.2rem;
-  background-color: ${({ isActive }) =>
-    setProperty(isActive, 'var(--clr-purple-light-2)', 'transparent')};
-  color: ${({ isActive }) =>
-    setProperty(isActive, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
   border-radius: 50%;
   outline-color: var(--clr-purple-light-3);
   cursor: pointer;
@@ -170,7 +166,14 @@ const Button = styled.button<IBtn>`
   }
 `;
 
-const DeviceButton = styled.button``;
+const Button = styled(CommonButton)<IBtn>`
+  background-color: ${({ isActive }) =>
+    setProperty(isActive, 'var(--clr-purple-light-2)', 'transparent')};
+  color: ${({ isActive }) =>
+    setProperty(isActive, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
+`;
+
+const DeviceButton = styled(CommonButton)``;
 
 const setProperty = (isActive: boolean, val1: string, val2: string) => {
   return isActive ? val1 : val2;
