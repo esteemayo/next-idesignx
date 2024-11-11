@@ -27,15 +27,15 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 56.25em) {
-    grid-template-rows: 40vw min-content 30vw min-content 23vw;
+    grid-template-rows: 47vw min-content 30vw min-content 23vw;
   }
 
   @media only screen and (max-width: 50em) {
-    grid-template-rows: 43vw min-content 30vw min-content 25vw;
+    grid-template-rows: 50vw min-content 30vw min-content 25vw;
   }
 
   @media only screen and (max-width: 43.75em) {
-    grid-template-rows: 45vw min-content 30vw min-content 25vw;
+    grid-template-rows: 53vw min-content 30vw min-content 25vw;
   }
 
   @media only screen and (max-width: 37.5em) {
