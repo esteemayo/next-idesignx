@@ -134,6 +134,10 @@ const Wrapper = styled.div`
     grid-auto-rows: auto;
     row-gap: 2rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-columns: repeat(2, min-content);
+  }
 `;
 
 export default Gallery;

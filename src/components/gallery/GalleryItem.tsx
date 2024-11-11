@@ -50,6 +50,11 @@ const Container = styled.figure`
     width: 14rem;
     height: 14rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    width: 18rem;
+    height: 18rem;
+  }
 `;
 
 const StyledImage = styled(CommonImage)``;
