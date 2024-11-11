@@ -121,15 +121,21 @@ const CommonButton = styled.button`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (min-width: 106.25em) {
+    width: 3.3rem;
+    height: 3.3rem;
+    font-size: 2.3rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
-    width: 3.45rem;
-    height: 3.45rem;
+    width: 3.5rem;
+    height: 3.5rem;
     font-size: 2.4rem;
   }
 
   @media only screen and (min-width: 125em) {
-    width: 3.7rem;
-    height: 3.7rem;
+    width: 4rem;
+    height: 4rem;
     font-size: 2.6rem;
   }
 
