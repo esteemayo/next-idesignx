@@ -210,23 +210,23 @@ const HeadingMain = styled.span`
     font-size: 2.6rem;
   }
 
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 43.75em) {
     font-size: 2.4rem;
   }
 
-  @media only screen and (max-width: 30em) {
-    font-size: 2.2rem;
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.3rem;
   }
 
-  @media only screen and (max-width: 26.875em) {
+  @media only screen and (max-width: 34.375em) {
     font-size: 2.15rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 31.25em) {
     font-size: 2rem;
   }
 
-  @media only screen and (max-width: 23.4375em) {
+  @media only screen and (max-width: 25em) {
     font-size: 1.95rem;
   }
 
