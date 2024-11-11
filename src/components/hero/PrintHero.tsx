@@ -158,16 +158,25 @@ const HeadingSub = styled.span`
     font-size: 1.8rem;
   }
 
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 43.75em) {
     font-size: var(--default-font-size);
   }
 
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
     font-size: 1.45rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1.4rem;
   }
 
   @media only screen and (max-width: 26.875em) {
     font-size: 1.35rem;
+    letter-spacing: 2.5px;
   }
 
   @media only screen and (max-width: 25em) {
