@@ -57,8 +57,20 @@ const Container = styled.main`
     grid-template-rows: 70vw 80vw;
   }
 
+  @media only screen and (max-width: 22.5em) {
+    grid-template-rows: 73vw 80vw;
+  }
+
   @media only screen and (max-width: 21.5em) {
-    grid-template-rows: 80vw;
+    grid-template-rows: 75vw 80vw;
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    grid-template-rows: 78vw 80vw;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    grid-template-rows: 80vw 80vw;
   }
 `;
 
