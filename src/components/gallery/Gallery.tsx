@@ -33,7 +33,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 25em) {
-    margin: 8rem 0;
+    margin: 4.5rem 0;
   }
 `;
 
@@ -68,6 +68,7 @@ const Heading = styled.h2`
 
   @media only screen and (max-width: 25em) {
     font-size: 2.4rem;
+    margin-bottom: 3rem;
   }
 
   @media only screen and (max-width: 21.5em) {

@@ -52,11 +52,6 @@ const Container = styled.figure`
   }
 `;
 
-const StyledImage = styled(CommonImage)`
-  @media only screen and (max-width: 26.25em) {
-    width: 40rem;
-    height: 30rem;
-  }
-`;
+const StyledImage = styled(CommonImage)``;
 
 export default GalleryItem;
