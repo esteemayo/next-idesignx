@@ -40,6 +40,22 @@ const Heading = styled.h2`
   color: ${({ theme }) => theme.text};
   margin-bottom: 8rem;
 
+  @media only screen and (max-width: 56.25em) {
+    font-size: 3.1rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.8rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 3.1rem;
   }
