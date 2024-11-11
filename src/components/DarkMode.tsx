@@ -10,7 +10,7 @@ import SmartphoneOutlinedIcon from '@mui/icons-material/SmartphoneOutlined';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface IBtn {
-  isActive: boolean | undefined;
+  isActive: boolean;
 }
 
 const DarkMode = () => {
@@ -170,11 +170,7 @@ const Button = styled.button<IBtn>`
   }
 `;
 
-const setProperty = (
-  isActive: boolean | undefined,
-  val1: string,
-  val2: string
-) => {
+const setProperty = (isActive: boolean, val1: string, val2: string) => {
   return isActive ? val1 : val2;
 };
 
