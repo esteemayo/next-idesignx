@@ -121,6 +121,7 @@ const Paragraph = styled.p`
   }
 
   @media only screen and (max-width: 43.75em) {
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
 
