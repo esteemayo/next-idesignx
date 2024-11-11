@@ -28,6 +28,10 @@ const Container = styled.section`
     margin: 10rem 0;
   }
 
+  @media only screen and (max-width: 30em) {
+    margin: 6rem 0;
+  }
+
   @media only screen and (max-width: 25em) {
     margin: 8rem 0;
   }
