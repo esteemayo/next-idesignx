@@ -20,6 +20,11 @@ const Container = styled.figure`
   width: 100%;
   height: 100%;
   background-color: ${({ theme }) => theme.bgImg};
+
+  @media only screen and (max-width: 50em) {
+    width: 25rem;
+    height: 25rem;
+  }
 `;
 
 const StyledImage = styled(CommonImage)`
