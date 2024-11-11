@@ -43,15 +43,19 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 55vw;
+    grid-template-rows: 57vw;
   }
 
   @media only screen and (max-width: 30em) {
     grid-template-rows: 60vw;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.875em) {
     grid-template-rows: 65vw;
+  }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-rows: 70vw;
   }
 
   @media only screen and (max-width: 22.5em) {
