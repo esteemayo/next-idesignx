@@ -125,24 +125,24 @@ const Paragraph = styled.p`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 3.3rem;
+    font-size: 2.8rem;
     line-height: 1;
   }
 
   @media only screen and (max-width: 30em) {
-    font-size: 3rem;
-  }
-
-  @media only screen and (max-width: 26.875em) {
-    font-size: 2.8rem;
-  }
-
-  @media only screen and (max-width: 25em) {
     font-size: 2.6rem;
   }
 
-  @media only screen and (max-width: 22.5em) {
+  @media only screen and (max-width: 26.875em) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 25em) {
     font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    font-size: 2.25rem;
   }
 
   @media only screen and (max-width: 21.5em) {
@@ -153,7 +153,7 @@ const Paragraph = styled.p`
     font-size: 2rem;
   }
 
-  @media only screen and (max-width: 18.125em) {
+  @media only screen and (max-width: 18.75em) {
     font-size: 1.8rem;
   }
 
