@@ -21,6 +21,10 @@ const Container = styled.main`
     grid-template-rows: 43vw 40vw repeat(2, min-content);
   }
 
+  @media only screen and (max-width: 59.375em) {
+    grid-template-rows: 45vw 40vw repeat(2, min-content);
+  }
+
   @media only screen and (max-width: 56.25em) {
     grid-template-rows: 47vw 45vw repeat(2, min-content);
   }
@@ -30,7 +34,7 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 43.75em) {
-    grid-template-rows: 55vw 55vw;
+    grid-template-rows: 53vw 55vw;
   }
 
   @media only screen and (max-width: 37.5em) {
@@ -38,7 +42,7 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 60vw 65vw;
+    grid-template-rows: 57vw 65vw;
   }
 
   @media only screen and (max-width: 30em) {
@@ -46,7 +50,11 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 26.875em) {
-    grid-template-rows: 75vw 80vw;
+    grid-template-rows: 65vw 80vw;
+  }
+
+  @media only screen and (max-width: 25em) {
+    grid-template-rows: 70vw 80vw;
   }
 
   @media only screen and (max-width: 21.5em) {
