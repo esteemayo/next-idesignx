@@ -76,11 +76,16 @@ const Text = styled.p`
 
   @media only screen and (max-width: 43.75em) {
     align-self: center;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.4rem;
+  }
+
   @media only screen and (max-width: 34.375em) {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   @media only screen and (max-width: 30em) {
