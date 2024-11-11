@@ -116,7 +116,7 @@ const ButtonContainer = styled.div<IMode>`
       font-weight: lighter;
       font-size: 2rem;
       padding: 0.7rem 1.25rem;
-      color: currentColor;
+      color: var(--clr-white);
       border: 1px solid currentColor;
       border-radius: 0.5rem;
       outline: none;
