@@ -93,12 +93,16 @@ const Container = styled.div`
   bottom: 10rem;
   z-index: 3000;
 
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 106.25em) {
     padding: 4px;
   }
 
-  @media only screen and (min-width: 125em) {
+  @media only screen and (min-width: 112.5em) {
     padding: 0.5rem;
+  }
+
+  @media only screen and (min-width: 125em) {
+    padding: 0.6rem;
   }
 `;
 
