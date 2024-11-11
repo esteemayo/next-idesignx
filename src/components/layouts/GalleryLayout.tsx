@@ -19,15 +19,27 @@ const Container = styled.main`
     [center-end] minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-width: 64em) {
-    grid-template-rows: 42vw;
+    grid-template-rows: 43vw;
   }
 
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 59.375em) {
     grid-template-rows: 45vw;
   }
 
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
+    grid-template-rows: 47vw;
+  }
+
+  @media only screen and (max-width: 50em) {
     grid-template-rows: 50vw;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    grid-template-rows: 53vw;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-rows: 55vw;
   }
 
   @media only screen and (max-width: 34.375em) {
