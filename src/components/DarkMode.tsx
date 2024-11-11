@@ -97,6 +97,10 @@ const Container = styled.div`
     padding: 4px;
   }
 
+  @media only screen and (max-width: 50em) {
+    padding: 0.5rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     padding: 4px;
   }
@@ -135,6 +139,12 @@ const CommonButton = styled.button`
     font-size: 2.3rem;
   }
 
+  @media only screen and (max-width: 50em) {
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 2.4rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     width: 3.3rem;
     height: 3.3rem;
@@ -170,6 +180,10 @@ const CommonButton = styled.button`
 
     @media only screen and (max-width: 56.25em) {
       font-size: 1.9rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      font-size: 2rem;
     }
 
     @media only screen and (max-width: 31.25em) {
