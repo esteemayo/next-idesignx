@@ -61,13 +61,13 @@ const DarkMode = () => {
         >
           <LightModeOutlinedIcon />
         </Button>
-        <Button type='button'>
+        <DeviceButton type='button'>
           {screenSize <= 768 ? (
             <SmartphoneOutlinedIcon />
           ) : (
             <DesktopWindowsOutlinedIcon />
           )}
-        </Button>
+        </DeviceButton>
         <Button
           type='button'
           isActive={isSelected === 'dark'}
@@ -169,6 +169,8 @@ const Button = styled.button<IBtn>`
     }
   }
 `;
+
+const DeviceButton = styled.button``;
 
 const setProperty = (isActive: boolean, val1: string, val2: string) => {
   return isActive ? val1 : val2;
