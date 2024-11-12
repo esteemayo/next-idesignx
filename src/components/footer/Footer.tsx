@@ -55,11 +55,6 @@ const Container = styled.footer<IContainer>`
     padding: 6rem 0;
   }
 
-  @media only screen and (max-width: 25em) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   @media only screen and (min-width: 106.25em) {
     padding: 8.5rem;
   }
@@ -94,6 +89,14 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 28.125em) {
     width: 50rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    width: 45rem;
+  }
+
+  @media only screen and (max-width: 23.4375em) {
+    width: 40rem;
   }
 
   @media only screen and (min-width: 125em) {
