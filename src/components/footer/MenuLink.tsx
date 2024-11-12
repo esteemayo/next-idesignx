@@ -41,20 +41,30 @@ const StyledLink = styled(Link)<ILink>`
 
   @media only screen and (max-width: 50em) {
     font-size: 1.8rem;
-    word-spacing: 1px;
-    margin-bottom: 3rem;
   }
 
   @media only screen and (max-width: 37.5em) {
-    padding: 1.2rem;
+    padding: 1.25rem;
   }
 
-  @media only screen and (max-width: 34.375em) {
+  @media only screen and (max-width: 31.25em) {
     font-size: 1.75rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 34.375em) {
     font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.65rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    font-size: var(--default-font-size);
+  }
+
+  @media only screen and (max-width: 21.5em) {
+    font-size: 1.5rem;
   }
 
   @media only screen and (min-width: 106.25em) {
