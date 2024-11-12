@@ -35,7 +35,7 @@ const Container = styled.footer<IContainer>`
   display: flex;
   justify-content: center;
 
-  padding: 8rem;
+  padding: 8rem 0;
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
   background-image: ${({ mode }) =>
@@ -52,7 +52,7 @@ const Container = styled.footer<IContainer>`
   color: var(--clr-white);
 
   @media only screen and (max-width: 37.5em) {
-    padding: 4rem 0;
+    padding: 6rem 0;
   }
 
   @media only screen and (max-width: 25em) {
