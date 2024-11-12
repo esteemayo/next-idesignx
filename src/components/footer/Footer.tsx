@@ -55,6 +55,10 @@ const Container = styled.footer<IContainer>`
     padding-right: 3rem;
   }
 
+  @media only screen and (min-width: 106.25em) {
+    padding: 8.5rem;
+  }
+
   @media only screen and (min-width: 112.5em) {
     padding: 9rem;
   }
