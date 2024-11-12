@@ -217,7 +217,7 @@ export enum Gender {
 
 export type GenderList = {
   id: number;
-  text: Gender;
+  text: string | Gender;
 }[];
 
 export interface StoryCardProps {
