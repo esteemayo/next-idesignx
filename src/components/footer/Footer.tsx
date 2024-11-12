@@ -73,6 +73,12 @@ const Container = styled.footer<IContainer>`
   }
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 144rem;
+
+  @media only screen and (min-width: 125em) {
+    width: 150rem;
+  }
+`;
 
 export default Footer;
