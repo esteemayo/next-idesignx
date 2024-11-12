@@ -49,6 +49,10 @@ const Container = styled.main`
   @media only screen and (min-width: 112.5em) {
     grid-template-rows: 44vw;
   }
+
+  @media only screen and (min-width: 125em) {
+    grid-template-rows: 45vw;
+  }
 `;
 
 export default HomeLayout;
