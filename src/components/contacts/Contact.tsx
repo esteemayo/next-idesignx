@@ -196,10 +196,14 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.9rem;
+    font-size: 1.75rem;
   }
 
   @media only screen and (max-width: 25em) {
+    font-size: 1.7rem;
+  }
+
+  @media only screen and (min-width: 106.25em) {
     font-size: 1.7rem;
   }
 
