@@ -23,13 +23,18 @@ const Footer = () => {
 
   return (
     <Container mode={activeMode}>
-      <MenuLinks links={menuItems} mode={activeMode} />
-      <CopyRight value={copyRightLabel} />
+      <Wrapper>
+        <MenuLinks links={menuItems} mode={activeMode} />
+        <CopyRight value={copyRightLabel} />
+      </Wrapper>
     </Container>
   );
 };
 
 const Container = styled.footer<IContainer>`
+  display: flex;
+  justify-content: center;
+
   padding: 8rem;
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
@@ -67,5 +72,7 @@ const Container = styled.footer<IContainer>`
     padding: 10rem;
   }
 `;
+
+const Wrapper = styled.div``;
 
 export default Footer;
