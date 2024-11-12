@@ -30,7 +30,12 @@ const Container = styled.p`
   }
 
   @media only screen and (max-width: 50em) {
+    width: 80%;
     font-size: 1.7rem;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    width: 90%;
   }
 
   @media only screen and (max-width: 37.5em) {
@@ -39,7 +44,7 @@ const Container = styled.p`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
   }
 
   @media only screen and (max-width: 25em) {
