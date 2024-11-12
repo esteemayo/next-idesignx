@@ -144,15 +144,19 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 
   @media only screen and (max-width: 25em) {
     font-size: 1.8rem;
   }
 
-  @media only screen and (min-width: 112.5em) {
+  @media only screen and (min-width: 106.25em) {
     font-size: 1.9rem;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    font-size: 2rem;
   }
 
   @media only screen and (min-width: 125em) {
@@ -193,7 +197,7 @@ const StyledLink = styled(Link)`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.7rem;
+    font-size: 1.55rem;
   }
 
   @media only screen and (max-width: 25em) {
