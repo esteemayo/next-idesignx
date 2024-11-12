@@ -1,4 +1,4 @@
-import { GenderList, SelectInput } from '@/types';
+import { Gender, GenderList, SelectInput } from '@/types';
 
 export const selectInputs: SelectInput = [
   {
@@ -46,14 +46,14 @@ export const selectInputs: SelectInput = [
 export const genderLists: GenderList = [
   {
     id: 1,
-    text: 'Male',
+    text: Gender.MALE,
   },
   {
     id: 2,
-    text: 'Female',
+    text: Gender.FEMALE,
   },
   {
     id: 3,
-    text: 'Other',
+    text: Gender.OTHER,
   },
 ];
