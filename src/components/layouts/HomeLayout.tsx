@@ -18,20 +18,40 @@ const Container = styled.main`
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 
-  @media only screen and (max-width: 56.25em) {
-    grid-template-rows: 47vw repeat(5, min-content);
+  @media only screen and (max-width: 64em) {
+    grid-template-rows: 48vw repeat(5, min-content);
   }
 
-  @media only screen and (max-width: 48em) {
-    grid-template-rows: 50vw;
+  @media only screen and (max-width: 59.375em) {
+    grid-template-rows: 49vw repeat(5, min-content);
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    grid-template-rows: 51vw repeat(5, min-content);
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-template-rows: 54vw;
   }
 
   @media only screen and (max-width: 43.75em) {
-    grid-template-rows: 55vw;
+    grid-template-rows: 57vw;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-rows: 59vw;
   }
 
   @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 60vw;
+    grid-template-rows: 61vw;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    grid-template-rows: 63vw;
+  }
+
+  @media only screen and (max-width: 30em) {
+    grid-template-rows: 65vw;
   }
 
   @media only screen and (max-width: 26.875em) {
