@@ -209,6 +209,12 @@ export type SelectInput = {
   text: string;
 }[];
 
+export enum Gender {
+  MALE = 'Male',
+  FEMALE = 'Female',
+  OTHER = 'Other',
+}
+
 export type GenderList = {
   id: number;
   text: string;
