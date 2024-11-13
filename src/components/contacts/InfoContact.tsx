@@ -36,7 +36,7 @@ const Container = styled.div`
     }
 
     @media only screen and (max-width: 34.375em) {
-      font-size: var(--default-font-size);
+      font-size: 1.55rem;
     }
 
     @media only screen and (max-width: 31.25em) {
