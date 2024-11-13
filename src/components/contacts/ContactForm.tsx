@@ -223,12 +223,12 @@ const Heading = styled.h3`
   }
 
   @media only screen and (min-width: 112.5em) {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1.3;
   }
 
   @media only screen and (min-width: 125em) {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 `;
 
