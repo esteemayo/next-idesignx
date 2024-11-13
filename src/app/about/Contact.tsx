@@ -70,24 +70,24 @@ const Container = styled.section`
 `;
 
 const Text = styled.p`
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: ${({ theme }) => theme.textSoft};
   line-height: 1;
 
   @media only screen and (max-width: 56.25em) {
-    font-size: 3.1rem;
-  }
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 2.8rem;
-  }
-
-  @media only screen and (max-width: 40.625em) {
     font-size: 2.6rem;
   }
 
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.5rem;
+  }
+
   @media only screen and (max-width: 37.5em) {
-    font-size: 2.45rem;
+    font-size: 2.4rem;
   }
 
   @media only screen and (max-width: 34.375em) {
