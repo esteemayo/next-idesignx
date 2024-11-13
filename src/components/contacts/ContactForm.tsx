@@ -182,20 +182,16 @@ const Heading = styled.h3`
     font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: 31.25em) {
-    font-size: 2.4rem;
+  @media only screen and (max-width: 34.375em) {
+    font-size: 2.25rem;
   }
 
   @media only screen and (max-width: 30em) {
-    font-size: 2.3rem;
-  }
-
-  @media only screen and (max-width: 27.5em) {
-    font-size: 2.15rem;
+    font-size: 2.2rem;
   }
 
   @media only screen and (max-width: 26.875em) {
-    font-size: 2.4rem;
+    font-size: 2.15rem;
   }
 
   @media only screen and (max-width: 25em) {
