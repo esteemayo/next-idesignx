@@ -96,11 +96,11 @@ const Heading = styled.h4`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 2rem;
+    font-size: 1.85rem;
   }
 
   @media only screen and (max-width: 21.5em) {
