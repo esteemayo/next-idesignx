@@ -33,11 +33,11 @@ const Container = styled.section`
 
   @media only screen and (max-width: 26.875em) {
     grid-column: full-start / full-end;
-    padding: 0 4.5rem;
+    padding: 0 4rem;
   }
 
   @media only screen and (max-width: 25em) {
-    padding: 0 3.5rem;
+    padding: 0 3rem;
   }
 
   @media only screen and (max-width: 20em) {
