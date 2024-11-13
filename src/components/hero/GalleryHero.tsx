@@ -73,16 +73,20 @@ const Text = styled.p`
   grid-area: 3 / 1 / 4 / -1;
   align-self: self-start;
 
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   color: currentColor;
 
   @media only screen and (max-width: 56.25em) {
-    font-size: 3.1rem;
+    font-size: 2.6rem;
   }
 
   @media only screen and (max-width: 50em) {
-    font-size: 3.2rem;
+    font-size: 2.7rem;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.5rem;
   }
 
   @media only screen and (max-width: 34.375em) {
