@@ -96,6 +96,11 @@ const Text = styled.p`
     font-size: 2.7rem;
   }
 
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
   @media only screen and (max-width: 34.375em) {
     font-size: 2.8rem;
   }
