@@ -125,28 +125,24 @@ const Heading = styled.h4`
 `;
 
 const Text = styled.p`
-  font-size: 1.7rem;
+  font-size: 100%;
   color: ${({ theme }) => theme.textSoft};
   line-height: 1.4;
 
-  @media only screen and (max-width: 64em) {
-    font-size: var(--default-font-size);
-  }
-
   @media only screen and (max-width: 56.25em) {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 50em) {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   @media only screen and (max-width: 21.5em) {
