@@ -52,19 +52,22 @@ const Container = styled.article`
       height: 3.8rem;
     }
 
+    @media only screen and (max-width: 26.875em) {
+      height: 3.5rem;
+    }
+
     @media only screen and (max-width: 25em) {
-      width: 4.7rem;
-      height: 4.7rem;
+      height: 3.25rem;
     }
 
     @media only screen and (max-width: 21.5em) {
-      width: 4rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
     }
 
-    @media only screen and (max-width: 20em) {
-      width: 3.5rem;
-      height: 3.5rem;
+    @media only screen and (max-width: 18.75em) {
+      width: 2.8rem;
+      height: 2.8rem;
     }
 
     @media only screen and (min-width: 106.25em) {
