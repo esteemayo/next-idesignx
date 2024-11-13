@@ -63,14 +63,19 @@ const Text = styled.p`
 
   @media only screen and (max-width: 46.875em) {
     font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    line-height: 1.2;
   }
 
   @media only screen and (max-width: 37.5em) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   @media only screen and (max-width: 26.875em) {
