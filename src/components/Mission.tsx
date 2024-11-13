@@ -156,10 +156,11 @@ const Text = styled.p`
 
   @media only screen and (max-width: 37.5em) {
     width: 100%;
+    font-size: 1.75rem;
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   @media only screen and (max-width: 27.5em) {
@@ -212,10 +213,11 @@ const Paragraph = styled.p`
 
   @media only screen and (max-width: 37.5em) {
     width: 100%;
+    font-size: 1.75rem;
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     margin-top: 4rem;
   }
 
