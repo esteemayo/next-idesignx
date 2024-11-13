@@ -150,6 +150,10 @@ const Text = styled.p`
     letter-spacing: 0px;
   }
 
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.65rem;
+  }
+
   @media only screen and (max-width: 37.5em) {
     width: 100%;
   }
@@ -200,6 +204,10 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 50em) {
     font-size: 1.8rem;
     letter-spacing: 0px;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.65rem;
   }
 
   @media only screen and (max-width: 37.5em) {
