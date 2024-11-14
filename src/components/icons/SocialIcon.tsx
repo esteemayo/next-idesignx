@@ -46,13 +46,8 @@ const Container = styled(Link)<IMode>`
   }
 
   @media only screen and (max-width: 34.375em) {
-    width: 4.35rem;
-    height: 4.35rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    width: 4.25rem;
-    height: 4.25rem;
+    width: 4.2rem;
+    height: 4.2rem;
   }
 
   @media only screen and (max-width: 30em) {
@@ -66,18 +61,18 @@ const Container = styled(Link)<IMode>`
   }
 
   @media only screen and (max-width: 26.875em) {
-    width: 4.25rem;
-    height: 4.25rem;
+    width: 3.85rem;
+    height: 3.85rem;
   }
 
   @media only screen and (max-width: 25em) {
-    width: 4rem;
-    height: 4rem;
+    width: 3.6rem;
+    height: 3.6rem;
   }
 
   @media only screen and (max-width: 22.5em) {
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 3.45rem;
+    height: 3.45rem;
   }
 
   @media only screen and (max-width: 21.5em) {
@@ -148,13 +143,8 @@ const Icon = styled.span<SocialIconProps>`
   }
 
   @media only screen and (max-width: 34.375em) {
-    width: 2.35rem;
-    height: 2.35rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 
   @media only screen and (max-width: 30em) {
@@ -168,8 +158,8 @@ const Icon = styled.span<SocialIconProps>`
   }
 
   @media only screen and (max-width: 26.875em) {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.15rem;
+    height: 2.15rem;
   }
 
   @media only screen and (max-width: 25em) {
