@@ -50,7 +50,7 @@ const Heading = styled.h3`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2.3rem;
+    font-size: 2.25rem;
   }
 
   @media only screen and (max-width: 31.25em) {
@@ -110,7 +110,7 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 2.1rem;
+    font-size: 2.05rem;
   }
 
   @media only screen and (max-width: 31.25em) {
