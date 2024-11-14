@@ -140,7 +140,11 @@ const Box = styled.div`
   border-radius: 0.5rem;
 
   @media only screen and (max-width: 56.25em) {
-    width: 55rem;
+    width: 52rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 53rem;
   }
 
   @media only screen and (max-width: 34.375em) {
