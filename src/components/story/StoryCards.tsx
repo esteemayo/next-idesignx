@@ -44,6 +44,10 @@ const Container = styled.section`
     padding: 0 3.5rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    margin: 8rem 0;
+  }
+
   @media only screen and (max-width: 20em) {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
