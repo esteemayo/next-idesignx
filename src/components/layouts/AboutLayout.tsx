@@ -75,15 +75,15 @@ const Container = styled.main`
   }
 
   @media only screen and (min-width: 106.25em) {
-    grid-template-rows: 38vw;
+    grid-template-rows: 38vw 40vw min-content 20vw min-content;
   }
 
   @media only screen and (min-width: 112.5em) {
-    grid-template-rows: 39vw;
+    grid-template-rows: 39vw 40vw min-content 20vw min-content;
   }
 
   @media only screen and (min-width: 125em) {
-    grid-template-rows: 40vw;
+    grid-template-rows: 40vw 40vw min-content 20vw min-content;
   }
 `;
 
