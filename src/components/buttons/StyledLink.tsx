@@ -74,20 +74,20 @@ export const StyledLink = styled(Link)`
   }
 
   @media only screen and (min-width: 106.25em) {
+    width: 15rem;
     height: 4.3rem;
     font-size: var(--default-font-size);
-    padding: 1rem 3rem;
   }
 
   @media only screen and (min-width: 112.5em) {
+    width: 17rem;
     height: 4.8rem;
-    padding: 1rem 3.2rem;
     font-size: 1.7rem;
   }
 
   @media only screen and (min-width: 125em) {
+    width: 20rem;
     height: 5.5rem;
-    padding: 1.2rem 3.5rem;
     font-size: 2rem;
   }
 
