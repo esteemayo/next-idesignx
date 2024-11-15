@@ -20,14 +20,14 @@ const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 7rem 0;
+  margin: 10rem 0;
 
   @media only screen and (max-width: 56.25em) {
-    margin: 8rem 0;
+    margin: 11rem 0;
   }
 
   @media only screen and (max-width: 50em) {
-    margin: 9rem 0;
+    margin: 12rem 0;
   }
 
   @media only screen and (max-width: 34.375em) {
@@ -57,15 +57,15 @@ const Container = styled.section`
   }
 
   @media only screen and (min-width: 106.25em) {
-    margin: 8rem 0;
+    margin: 11rem 0;
   }
 
   @media only screen and (min-width: 112.5em) {
-    margin: 9rem 0;
+    margin: 12rem 0;
   }
 
   @media only screen and (min-width: 125em) {
-    margin: 10rem 0;
+    margin: 13rem 0;
   }
 `;
 
