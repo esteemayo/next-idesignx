@@ -69,6 +69,7 @@ export const StyledLink = styled(Link)`
 
   @media only screen and (max-width: 23.125em) {
     width: 10.5rem;
+    height: 3.65rem;
   }
 
   @media only screen and (max-width: 22.5em) {
