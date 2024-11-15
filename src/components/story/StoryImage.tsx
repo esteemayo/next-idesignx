@@ -54,10 +54,14 @@ const Container = styled.section`
     grid-row: 3 / 4;
     grid-column: center-start / center-end;
 
-    margin-top: 0;
+    margin: 8rem 0;
 
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(15, 1fr);
+  }
+
+  @media only screen and (max-width: 51.25em) {
+    margin: 6rem 0;
   }
 
   @media only screen and (max-width: 31.25em) {
