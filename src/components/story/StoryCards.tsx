@@ -52,6 +52,10 @@ const Container = styled.section`
     margin: 6rem 0;
   }
 
+  @media only screen and (max-width: 17.5em) {
+    padding: 0 2rem;
+  }
+
   @media only screen and (max-width: 20em) {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
