@@ -48,6 +48,10 @@ const Container = styled.section`
     margin: 8rem 0;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    margin: 6rem 0;
+  }
+
   @media only screen and (max-width: 20em) {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
