@@ -29,10 +29,6 @@ const Container = styled.section`
   margin: 10rem 0;
   padding: 4.5rem;
 
-  @media only screen and (max-width: 68.75em) {
-    margin: 25rem 0;
-  }
-
   @media only screen and (max-width: 56.25em) {
     grid-row: 2 / 3;
     grid-column: center-start / center-end;
