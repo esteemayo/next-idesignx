@@ -71,11 +71,11 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 18.75em) {
-    grid-template-rows: 78vw min-content 63vw min-content 53vw min-content;
+    grid-template-rows: 78vw min-content 63vw min-content 50vw min-content;
   }
 
   @media only screen and (max-width: 17.5em) {
-    grid-template-rows: 80vw min-content 63vw min-content 57vw min-content;
+    grid-template-rows: 80vw min-content 63vw min-content 50vw min-content;
   }
 
   @media only screen and (min-width: 106.25em) {
