@@ -56,6 +56,11 @@ const Container = styled.figure`
     height: 18rem;
   }
 
+  @media only screen and (max-width: 24.375em) {
+    width: 17rem;
+    height: 17rem;
+  }
+
   @media only screen and (max-width: 21.5em) {
     width: 16rem;
     height: 16rem;
