@@ -2,13 +2,15 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 export const StyledLink = styled(Link)`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: none;
+  width: 13.5rem;
   height: 4rem;
   text-decoration: none;
   text-transform: capitalize;
-  vertical-align: middle;
-  padding: 0.8rem 3rem;
   font-weight: 400;
   font-size: 1.5rem;
   background-image: linear-gradient(
