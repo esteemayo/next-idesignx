@@ -26,12 +26,13 @@ export const StyledLink = styled(Link)`
   transition: all 0.2s;
 
   @media only screen and (max-width: 56.25em) {
+    width: 14rem;
     height: 4.35rem;
-    padding: 1rem 3rem;
     font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 50em) {
+    width: 15rem;
     height: 4.5rem;
     font-size: 1.7rem;
   }
