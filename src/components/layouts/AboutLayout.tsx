@@ -35,43 +35,43 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 43.75em) {
-    grid-template-rows: 53vw min-content 47vw min-content 30vw min-content;
+    grid-template-rows: 53vw min-content 50vw min-content 30vw min-content;
   }
 
   @media only screen and (max-width: 37.5em) {
-    grid-template-rows: 55vw min-content 47vw min-content 33vw min-content;
+    grid-template-rows: 55vw min-content 50vw min-content 33vw min-content;
   }
 
   @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 57vw min-content 47vw min-content 37vw min-content;
+    grid-template-rows: 57vw min-content 50vw min-content 37vw min-content;
   }
 
   @media only screen and (max-width: 30em) {
-    grid-template-rows: 60vw min-content 47vw min-content 40vw min-content;
+    grid-template-rows: 60vw min-content 50vw min-content 40vw min-content;
   }
 
   @media only screen and (max-width: 26.875em) {
-    grid-template-rows: 65vw min-content 47vw min-content 43vw min-content;
+    grid-template-rows: 65vw min-content 50vw min-content 43vw min-content;
   }
 
   @media only screen and (max-width: 25em) {
-    grid-template-rows: 70vw min-content 47vw min-content 45vw min-content;
+    grid-template-rows: 70vw min-content 50vw min-content 45vw min-content;
   }
 
   @media only screen and (max-width: 22.5em) {
-    grid-template-rows: 73vw min-content 47vw min-content 48vw min-content;
+    grid-template-rows: 73vw min-content 50vw min-content 48vw min-content;
   }
 
   @media only screen and (max-width: 21.5em) {
-    grid-template-rows: 75vw min-content 47vw min-content 50vw min-content;
+    grid-template-rows: 75vw min-content 50vw min-content 50vw min-content;
   }
 
   @media only screen and (max-width: 18.75em) {
-    grid-template-rows: 78vw min-content 47vw min-content 53vw min-content;
+    grid-template-rows: 78vw min-content 50vw min-content 53vw min-content;
   }
 
   @media only screen and (max-width: 17.5em) {
-    grid-template-rows: 80vw min-content 47vw min-content 57vw min-content;
+    grid-template-rows: 80vw min-content 50vw min-content 57vw min-content;
   }
 
   @media only screen and (min-width: 106.25em) {
