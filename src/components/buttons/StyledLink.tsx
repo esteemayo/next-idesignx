@@ -44,28 +44,35 @@ export const StyledLink = styled(Link)`
   }
 
   @media only screen and (max-width: 30em) {
+    width: 13rem;
     height: 4rem;
     font-size: var(--default-font-size);
-    padding: 0.8rem 2rem;
   }
 
   @media only screen and (max-width: 27.5em) {
+    width: 12.8rem;
     height: 3.8rem;
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 26.875em) {
-    height: 3.6rem;
-    padding: 0.7rem 1.5rem;
+  @media only screen and (max-width: 26em) {
+    width: 12rem;
   }
 
   @media only screen and (max-width: 25em) {
     font-size: 1.45rem;
   }
 
+  @media only screen and (max-width: 23.4375em) {
+    width: 11rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    width: 10rem;
+  }
+
   @media only screen and (max-width: 21.5em) {
     font-size: 1.4rem;
-    padding: 0.8rem 1rem;
   }
 
   @media only screen and (max-width: 18.75em) {
