@@ -59,23 +59,23 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 25em) {
-    grid-template-rows: 70vw min-content 60vw min-content 45vw min-content;
+    grid-template-rows: 70vw min-content 63vw min-content 45vw min-content;
   }
 
   @media only screen and (max-width: 22.5em) {
-    grid-template-rows: 73vw min-content 60vw min-content 48vw min-content;
+    grid-template-rows: 73vw min-content 63vw min-content 48vw min-content;
   }
 
   @media only screen and (max-width: 21.5em) {
-    grid-template-rows: 75vw min-content 60vw min-content 50vw min-content;
+    grid-template-rows: 75vw min-content 63vw min-content 50vw min-content;
   }
 
   @media only screen and (max-width: 18.75em) {
-    grid-template-rows: 78vw min-content 60vw min-content 53vw min-content;
+    grid-template-rows: 78vw min-content 63vw min-content 53vw min-content;
   }
 
   @media only screen and (max-width: 17.5em) {
-    grid-template-rows: 80vw min-content 60vw min-content 57vw min-content;
+    grid-template-rows: 80vw min-content 63vw min-content 57vw min-content;
   }
 
   @media only screen and (min-width: 106.25em) {
