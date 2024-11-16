@@ -17,6 +17,7 @@ import { selectInputs } from '@/data/formData';
 import { DesignData, DesignErrors } from '@/types';
 import DesignInfo from '../design/DesignInfo';
 import DesignDescription from '../design/DesignDescription';
+import DesignImages from '../design/DesignImages';
 
 interface IFile {
   id?: number;
@@ -166,21 +167,14 @@ const DesignModal = () => {
 
   if (step === STEPS.IMAGES) {
     bodyContent = (
-      <>
-        <Heading
-          title='Upload your design images'
-          subtitle='Show us what your designs looks like!'
-        />
-        <Select
-          name='category'
-          value={data.category}
-          label='Select a category'
-          options={selectInputs}
-          onChange={handleChange}
-          error={errors.category}
-        />
-        <ImageUpload value={files} onChange={handleFiles} />
-      </>
+      <DesignImages
+        category={data.category}
+        files={files}
+        options={selectInputs}
+        error={errors.category}
+        onChange={handleChange}
+        onChangeFiles={handleFiles}
+      />
     );
   }
 
