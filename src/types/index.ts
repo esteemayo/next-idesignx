@@ -305,6 +305,13 @@ export interface RegisterErrors {
   passwordConfirm?: string;
 }
 
+export interface RegisterInfoProps {
+  name: string;
+  email: string;
+  errors: RegisterErrors;
+  onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
+}
+
 export interface DesignData {
   name: string;
   email: string;
