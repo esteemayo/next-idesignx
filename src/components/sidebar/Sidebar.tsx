@@ -120,6 +120,7 @@ const ButtonContainer = styled.div<IMode>`
       border: 1px solid currentColor;
       border-radius: 0.5rem;
       outline: none;
+      z-index: 5000;
 
       @media only screen and (max-width: 30em) {
         font-size: 1.8rem;
