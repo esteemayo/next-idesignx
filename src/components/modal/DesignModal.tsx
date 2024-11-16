@@ -16,6 +16,7 @@ import { validateDesignInputs } from '@/validations/design';
 import { selectInputs } from '@/data/formData';
 import { DesignData, DesignErrors } from '@/types';
 import DesignInfo from '../design/DesignInfo';
+import DesignDescription from '../design/DesignDescription';
 
 interface IFile {
   id?: number;
@@ -153,37 +154,13 @@ const DesignModal = () => {
 
   if (step === STEPS.DESC) {
     bodyContent = (
-      <>
-        <Heading
-          title='Describe your design ideas'
-          subtitle='What inspired the design(s)?'
-        />
-        <Input
-          type='tel'
-          name='phone'
-          label='Phone'
-          value={data.phone}
-          placeholder='Phone'
-          onChange={handleChange}
-          error={errors.phone}
-        />
-        <Input
-          name='subject'
-          label='Subject'
-          value={data.subject}
-          placeholder='Subject'
-          onChange={handleChange}
-          error={errors.subject}
-        />
-        <TextArea
-          name='desc'
-          value={data.desc}
-          label='Description'
-          placeholder='Description'
-          onChange={handleChange}
-          error={errors.desc}
-        />
-      </>
+      <DesignDescription
+        phone={data.phone}
+        subject={data.subject}
+        desc={data.desc}
+        errors={errors}
+        onChange={handleChange}
+      />
     );
   }
 
