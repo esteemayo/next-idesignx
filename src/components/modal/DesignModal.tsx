@@ -15,6 +15,7 @@ import { validateDesignInputs } from '@/validations/design';
 
 import { selectInputs } from '@/data/formData';
 import { DesignData, DesignErrors } from '@/types';
+import DesignInfo from '../design/DesignInfo';
 
 interface IFile {
   id?: number;
@@ -141,37 +142,13 @@ const DesignModal = () => {
   let bodyContent: JSX.Element;
 
   bodyContent = (
-    <>
-      <Heading
-        title='Share some basics info about you'
-        subtitle='Tell us about you'
-      />
-      <Input
-        name='name'
-        label='Your name'
-        value={data.name}
-        placeholder='Your name'
-        onChange={handleChange}
-        error={errors.name}
-      />
-      <Input
-        name='email'
-        type='email'
-        label='Your email'
-        value={data.email}
-        placeholder='Your email'
-        onChange={handleChange}
-        error={errors.email}
-      />
-      <Input
-        name='address'
-        label='Your address'
-        value={data.address}
-        placeholder='Your address'
-        onChange={handleChange}
-        error={errors.address}
-      />
-    </>
+    <DesignInfo
+      name={data.name}
+      email={data.email}
+      address={data.address}
+      errors={errors}
+      onChange={handleChange}
+    />
   );
 
   if (step === STEPS.DESC) {
