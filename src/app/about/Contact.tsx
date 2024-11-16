@@ -44,7 +44,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 25em) {
-    margin: 8rem 0;
+    margin: 9rem 0;
     padding: 0 2rem;
   }
 
@@ -53,7 +53,7 @@ const Container = styled.section`
   }
 
   @media only screen and (max-width: 20.63em) {
-    margin: 6rem 0;
+    margin: 7rem 0;
   }
 
   @media only screen and (max-width: 17.5em) {
@@ -92,6 +92,10 @@ const Text = styled.p`
 
   @media only screen and (max-width: 37.5em) {
     font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width: 35em) {
+    font-size: 2.3rem;
   }
 
   @media only screen and (max-width: 34.375em) {
