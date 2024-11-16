@@ -2,16 +2,13 @@
 
 import { useCallback, useMemo, useState } from 'react';
 
-import LoginOptions from '../LoginOptions';
-import ToggleAccount from '../ToggleAccount';
-
-import Modal from './Modal';
-import { Line } from '../Line';
-
 import RegisterCredentials from '../register/RegisterCredentials';
 import RegisterInfo from '../register/RegisterInfo';
 import RegisterDescription from '../register/RegisterDescription';
 import RegisterAvatar from '../register/RegisterAvatar';
+
+import Modal from './Modal';
+import AuthFooter from '../AuthFooter';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
@@ -178,15 +175,11 @@ const RegisterModal = () => {
   }
 
   const footerContent = (
-    <>
-      <Line />
-      <LoginOptions />
-      <ToggleAccount
-        title='Already have an account?'
-        label='Log in'
-        onClick={handleToggle}
-      />
-    </>
+    <AuthFooter
+      title='Already have an account?'
+      label='Log in'
+      onToggle={handleToggle}
+    />
   );
 
   return (
