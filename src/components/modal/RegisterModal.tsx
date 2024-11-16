@@ -20,6 +20,7 @@ import { RegisterData, RegisterErrors } from '@/types';
 import { genderLists } from '@/data/formData';
 import { validateRegisterInputs } from '@/validations/register';
 import RegisterInfo from '../register/RegisterInfo';
+import RegisterDescription from '../register/RegisterDescription';
 
 enum STEPS {
   INFO = 0,
@@ -146,26 +147,12 @@ const RegisterModal = () => {
 
   if (step === STEPS.DESC) {
     bodyContent = (
-      <>
-        <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
-        <Input
-          name='username'
-          label='Username'
-          value={data.username}
-          placeholder='Username'
-          onChange={handleChange}
-          error={errors.username}
-        />
-        <Input
-          name='phone'
-          type='tel'
-          label='Phone number'
-          value={data.phone}
-          placeholder='Phone number'
-          onChange={handleChange}
-          error={errors.phone}
-        />
-      </>
+      <RegisterDescription
+        username={data.username}
+        phone={data.phone}
+        errors={errors}
+        onChange={handleChange}
+      />
     );
   }
 
