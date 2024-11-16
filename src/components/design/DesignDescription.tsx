@@ -5,7 +5,15 @@ import Heading from '../Heading';
 import Input from '../inputs/Input';
 import TextArea from '../inputs/TextArea';
 
-const DesignDescription = ({ phone, subject, desc, errors, onChange }) => {
+import { DesignDescriptionProps } from '@/types';
+
+const DesignDescription = ({
+  phone,
+  subject,
+  desc,
+  errors,
+  onChange,
+}: DesignDescriptionProps) => {
   return (
     <>
       <Heading

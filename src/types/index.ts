@@ -381,6 +381,18 @@ export interface DesignInfoProps {
   ): void;
 }
 
+export interface DesignDescriptionProps {
+  phone: string;
+  subject: string;
+  desc: string;
+  errors: DesignErrors;
+  onChange(
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ): void;
+}
+
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
