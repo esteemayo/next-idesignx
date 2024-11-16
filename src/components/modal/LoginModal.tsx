@@ -1,10 +1,8 @@
 'use client';
 
-import Heading from '../Heading';
+import LoginInfo from '../LoginInfo';
 import Modal from './Modal';
 import AuthFooter from '../AuthFooter';
-
-import Input from '../inputs/Input';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useForm } from '@/hooks/useForm';
@@ -51,27 +49,12 @@ const LoginModal = () => {
   );
 
   const bodyContent = (
-    <>
-      <Heading title='Welcome back' subtitle='Log into your account!' />
-      <Input
-        name='email'
-        type='email'
-        label='Email address'
-        value={data.email}
-        placeholder='Email address'
-        onChange={handleChange}
-        error={errors.email}
-      />
-      <Input
-        name='password'
-        type='password'
-        label='Password'
-        value={data.password}
-        placeholder='Password'
-        onChange={handleChange}
-        error={errors.password}
-      />
-    </>
+    <LoginInfo
+      email={data.email}
+      password={data.password}
+      errors={errors}
+      onChange={handleChange}
+    />
   );
 
   const footerContent = (
