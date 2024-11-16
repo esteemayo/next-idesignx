@@ -22,6 +22,7 @@ import { validateRegisterInputs } from '@/validations/register';
 import RegisterInfo from '../register/RegisterInfo';
 import RegisterDescription from '../register/RegisterDescription';
 import RegisterCredentials from '../register/RegisterCredentials';
+import RegisterAvatar from '../register/RegisterAvatar';
 
 enum STEPS {
   INFO = 0,
@@ -170,18 +171,13 @@ const RegisterModal = () => {
 
   if (step === STEPS.AVATAR) {
     bodyContent = (
-      <>
-        <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
-        <Select
-          name='gender'
-          value={data.gender}
-          label='Gender'
-          options={genderLists}
-          onChange={handleChange}
-          error={errors.gender}
-        />
-        <UploadInput id='file' label='Upload avatar' onChange={handleFile} />
-      </>
+      <RegisterAvatar
+        gender={data.gender}
+        options={genderLists}
+        error={errors.gender}
+        onChange={handleChange}
+        onChangeFile={handleFile}
+      />
     );
   }
 
