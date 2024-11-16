@@ -21,6 +21,7 @@ import { genderLists } from '@/data/formData';
 import { validateRegisterInputs } from '@/validations/register';
 import RegisterInfo from '../register/RegisterInfo';
 import RegisterDescription from '../register/RegisterDescription';
+import RegisterCredentials from '../register/RegisterCredentials';
 
 enum STEPS {
   INFO = 0,
@@ -158,27 +159,12 @@ const RegisterModal = () => {
 
   if (step === STEPS.CREDENTIALS) {
     bodyContent = (
-      <>
-        <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
-        <Input
-          name='password'
-          type='password'
-          label='Password'
-          value={data.password}
-          placeholder='Password'
-          onChange={handleChange}
-          error={errors.password}
-        />
-        <Input
-          name='passwordConfirm'
-          type='password'
-          label='Confirm password'
-          value={data.passwordConfirm}
-          placeholder='Confirm password'
-          onChange={handleChange}
-          error={errors.passwordConfirm}
-        />
-      </>
+      <RegisterCredentials
+        password={data.password}
+        passwordConfirm={data.passwordConfirm}
+        errors={errors}
+        onChange={handleChange}
+      />
     );
   }
 
