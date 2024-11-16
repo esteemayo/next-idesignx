@@ -326,6 +326,14 @@ export interface RegisterCredentialsProps {
   onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
 }
 
+export interface RegisterAvatarProps {
+  gender: string;
+  options: GenderList;
+  error?: string;
+  onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
+  onChangeFile(e: React.ChangeEvent<HTMLInputElement>): void;
+}
+
 export interface DesignData {
   name: string;
   email: string;

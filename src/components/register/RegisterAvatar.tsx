@@ -5,7 +5,15 @@ import Heading from '../Heading';
 import Select from '../inputs/Select';
 import UploadInput from '../inputs/UploadInput';
 
-const RegisterAvatar = ({ gender, options, error, onChange, onChangeFile }) => {
+import { RegisterAvatarProps } from '@/types';
+
+const RegisterAvatar = ({
+  gender,
+  options,
+  error,
+  onChange,
+  onChangeFile,
+}: RegisterAvatarProps) => {
   return (
     <>
       <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
