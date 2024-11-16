@@ -19,6 +19,7 @@ import { useRegisterModal } from '@/hooks/useRegisterModal';
 import { RegisterData, RegisterErrors } from '@/types';
 import { genderLists } from '@/data/formData';
 import { validateRegisterInputs } from '@/validations/register';
+import RegisterInfo from '../register/RegisterInfo';
 
 enum STEPS {
   INFO = 0,
@@ -135,26 +136,12 @@ const RegisterModal = () => {
   let bodyContent: JSX.Element;
 
   bodyContent = (
-    <>
-      <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
-      <Input
-        name='name'
-        label='Name'
-        value={data.name}
-        placeholder='Name'
-        onChange={handleChange}
-        error={errors.name}
-      />
-      <Input
-        name='email'
-        type='email'
-        label='Email address'
-        value={data.email}
-        placeholder='Email address'
-        onChange={handleChange}
-        error={errors.email}
-      />
-    </>
+    <RegisterInfo
+      name={data.name}
+      email={data.email}
+      errors={errors}
+      onChange={handleChange}
+    />
   );
 
   if (step === STEPS.DESC) {
