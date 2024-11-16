@@ -39,10 +39,10 @@ const RegisterModal = () => {
   const onOpen = useLoginModal((state) => state.onOpen);
   const onClose = useRegisterModal((state) => state.onClose);
 
-  const [file, setFile] = useState<File>();
   const [data, setData] = useState(initialState);
-  const [step, setStep] = useState(STEPS.INFO);
+  const [file, setFile] = useState<File>();
   const [errors, setErrors] = useState<RegisterErrors>({});
+  const [step, setStep] = useState(STEPS.INFO);
 
   const handlePrev = useCallback(() => {
     setStep((value) => value - 1);
