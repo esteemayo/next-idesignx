@@ -5,6 +5,8 @@ import Heading from '../Heading';
 import Select from '../inputs/Select';
 import ImageUpload from '../inputs/ImageUpload';
 
+import { DesignImagesProps } from '@/types';
+
 const DesignImages = ({
   category,
   files,
@@ -12,7 +14,7 @@ const DesignImages = ({
   error,
   onChange,
   onChangeFiles,
-}) => {
+}: DesignImagesProps) => {
   return (
     <>
       <Heading

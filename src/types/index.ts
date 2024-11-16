@@ -393,6 +393,29 @@ export interface DesignDescriptionProps {
   ): void;
 }
 
+export interface IFile {
+  id?: number;
+  lastModified: number;
+  lastModifiedDate?: Date;
+  name: string;
+  size: number;
+  type: string;
+  webkitRelativePath: string;
+}
+
+export interface DesignImagesProps {
+  category: string;
+  files: IFile[];
+  options: SelectInput;
+  error?: string;
+  onChange(
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ): void;
+  onChangeFiles(e: React.ChangeEvent<HTMLInputElement>): void;
+}
+
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
