@@ -8,7 +8,7 @@ import RegisterDescription from '../register/RegisterDescription';
 import RegisterAvatar from '../register/RegisterAvatar';
 
 import Modal from './Modal';
-import AuthFooter from '../AuthFooter';
+import AuthFooter from '../authFooter/AuthFooter';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';

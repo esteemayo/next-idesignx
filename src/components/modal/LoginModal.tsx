@@ -2,7 +2,7 @@
 
 import LoginInfo from '../LoginInfo';
 import Modal from './Modal';
-import AuthFooter from '../AuthFooter';
+import AuthFooter from '../authFooter/AuthFooter';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useForm } from '@/hooks/useForm';
