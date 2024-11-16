@@ -3,7 +3,15 @@
 import Heading from '../Heading';
 import Input from '../inputs/Input';
 
-const DesignInfo = ({ name, email, address, errors, onChange }) => {
+import { DesignInfoProps } from '@/types';
+
+const DesignInfo = ({
+  name,
+  email,
+  address,
+  errors,
+  onChange,
+}: DesignInfoProps) => {
   return (
     <>
       <Heading

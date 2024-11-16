@@ -369,6 +369,18 @@ export interface DesignErrors {
   category?: string;
 }
 
+export interface DesignInfoProps {
+  name: string;
+  email: string;
+  address: string;
+  errors: DesignErrors;
+  onChange(
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ): void;
+}
+
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   name: string;
