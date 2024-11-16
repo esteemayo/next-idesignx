@@ -285,6 +285,15 @@ export interface LoginErrors {
   password?: string;
 }
 
+export interface LoginInfoProps {
+  email: string;
+  password: string;
+  errors: LoginErrors;
+  onChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+  >;
+}
+
 export interface RegisterData {
   name: string;
   email: string;
