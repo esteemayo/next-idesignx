@@ -3,15 +3,15 @@
 import { useCallback, useMemo, useState } from 'react';
 
 import LoginOptions from '../LoginOptions';
-import Heading from '../Heading';
 import ToggleAccount from '../ToggleAccount';
 
 import Modal from './Modal';
 import { Line } from '../Line';
 
-import Select from '../inputs/Select';
-import Input from '../inputs/Input';
-import UploadInput from '../inputs/UploadInput';
+import RegisterCredentials from '../register/RegisterCredentials';
+import RegisterInfo from '../register/RegisterInfo';
+import RegisterDescription from '../register/RegisterDescription';
+import RegisterAvatar from '../register/RegisterAvatar';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
 import { useRegisterModal } from '@/hooks/useRegisterModal';
@@ -19,10 +19,6 @@ import { useRegisterModal } from '@/hooks/useRegisterModal';
 import { RegisterData, RegisterErrors } from '@/types';
 import { genderLists } from '@/data/formData';
 import { validateRegisterInputs } from '@/validations/register';
-import RegisterInfo from '../register/RegisterInfo';
-import RegisterDescription from '../register/RegisterDescription';
-import RegisterCredentials from '../register/RegisterCredentials';
-import RegisterAvatar from '../register/RegisterAvatar';
 
 enum STEPS {
   INFO = 0,
