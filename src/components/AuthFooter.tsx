@@ -4,8 +4,9 @@ import LoginOptions from './LoginOptions';
 import ToggleAccount from './ToggleAccount';
 
 import { Line } from './Line';
+import { AuthFooterProps } from '@/types';
 
-const AuthFooter = ({ title, label, onToggle }) => {
+const AuthFooter = ({ title, label, onToggle }: AuthFooterProps) => {
   return (
     <>
       <Line />

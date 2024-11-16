@@ -334,6 +334,12 @@ export interface RegisterAvatarProps {
   onChangeFile(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
+export interface AuthFooterProps {
+  title: string;
+  label: string;
+  onToggle(): void;
+}
+
 export interface DesignData {
   name: string;
   email: string;
