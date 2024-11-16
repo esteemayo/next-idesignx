@@ -312,6 +312,13 @@ export interface RegisterInfoProps {
   onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
 }
 
+export interface RegisterDescriptionProps {
+  username: string;
+  phone: string;
+  errors: RegisterErrors;
+  onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
+}
+
 export interface DesignData {
   name: string;
   email: string;

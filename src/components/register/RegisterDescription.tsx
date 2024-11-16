@@ -3,7 +3,14 @@
 import Heading from '../Heading';
 import Input from '../inputs/Input';
 
-const RegisterDescription = ({ username, phone, errors, onChange }) => {
+import { RegisterDescriptionProps } from '@/types';
+
+const RegisterDescription = ({
+  username,
+  phone,
+  errors,
+  onChange,
+}: RegisterDescriptionProps) => {
   return (
     <>
       <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
