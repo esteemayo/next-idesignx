@@ -1,11 +1,9 @@
 'use client';
 
-import LoginOptions from '../LoginOptions';
-import Modal from './Modal';
-import ToggleAccount from '../ToggleAccount';
 import Heading from '../Heading';
+import Modal from './Modal';
+import AuthFooter from '../AuthFooter';
 
-import { Line } from '../Line';
 import Input from '../inputs/Input';
 
 import { useLoginModal } from '@/hooks/useLoginModal';
@@ -77,15 +75,11 @@ const LoginModal = () => {
   );
 
   const footerContent = (
-    <>
-      <Line />
-      <LoginOptions />
-      <ToggleAccount
-        title='First time using iDesignx?'
-        label='Create an account'
-        onClick={handleToggle}
-      />
-    </>
+    <AuthFooter
+      title='First time using iDesignx?'
+      label='Create an account'
+      onToggle={handleToggle}
+    />
   );
 
   return (
