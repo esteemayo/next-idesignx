@@ -3,12 +3,14 @@
 import Heading from '../Heading';
 import Input from '../inputs/Input';
 
+import { RegisterCredentialsProps } from '@/types';
+
 const RegisterCredentials = ({
   password,
   passwordConfirm,
   errors,
   onChange,
-}) => {
+}: RegisterCredentialsProps) => {
   return (
     <>
       <Heading title='Welcome to iDesignx' subtitle='Create an account!' />
@@ -18,7 +20,7 @@ const RegisterCredentials = ({
         label='Password'
         value={password}
         placeholder='Password'
-        onChange={onchange}
+        onChange={onChange}
         error={errors.password}
       />
       <Input
@@ -27,7 +29,7 @@ const RegisterCredentials = ({
         label='Confirm password'
         value={passwordConfirm}
         placeholder='Confirm password'
-        onChange={onchange}
+        onChange={onChange}
         error={errors.passwordConfirm}
       />
     </>
