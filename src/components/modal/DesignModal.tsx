@@ -2,22 +2,17 @@
 
 import { useCallback, useMemo, useState } from 'react';
 
-import TextArea from '../inputs/TextArea';
-import Input from '../inputs/Input';
-import ImageUpload from '../inputs/ImageUpload';
-import Select from '../inputs/Select';
-
 import Modal from './Modal';
-import Heading from '../Heading';
+
+import DesignImages from '../design/DesignImages';
+import DesignInfo from '../design/DesignInfo';
+import DesignDescription from '../design/DesignDescription';
 
 import { useDesignModal } from '@/hooks/useDesignModal';
 import { validateDesignInputs } from '@/validations/design';
 
 import { selectInputs } from '@/data/formData';
 import { DesignData, DesignErrors } from '@/types';
-import DesignInfo from '../design/DesignInfo';
-import DesignDescription from '../design/DesignDescription';
-import DesignImages from '../design/DesignImages';
 
 interface IFile {
   id?: number;
@@ -49,10 +44,10 @@ const DesignModal = () => {
   const isOpen = useDesignModal((state) => state.isOpen);
   const onClose = useDesignModal((state) => state.onClose);
 
-  const [step, setStep] = useState(STEPS.INFO);
   const [files, setFiles] = useState<IFile[]>([]);
-  const [data, setData] = useState(initialState);
+  const [step, setStep] = useState(STEPS.INFO);
   const [errors, setErrors] = useState<DesignErrors>({});
+  const [data, setData] = useState(initialState);
 
   const handleChange = useCallback(
     ({
