@@ -19,6 +19,11 @@ const Statement = () => {
 const Container = styled.section`
   grid-column: full-start / full-end;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   background-color: ${({ theme }) => theme.bgState};
   text-align: center;
   padding: 4rem 0;
