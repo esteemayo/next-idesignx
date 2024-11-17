@@ -60,7 +60,7 @@ const Container = styled.button<IProps>`
     height: 2rem;
   }
 
-  @media only screen and (min-width: 48.0625em) {
+  @media only screen and (min-width: 50.0625em) {
     display: none;
   }
 `;
