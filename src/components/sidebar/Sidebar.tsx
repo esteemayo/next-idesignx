@@ -120,9 +120,8 @@ const Wrapper = styled.div<IMode>`
 
 const ButtonContainer = styled.div<IMode>`
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  gap: 5rem;
+  gap: 1.5rem;
 
   @media only screen and (max-width: 25em) {
     gap: 3rem;
