@@ -177,9 +177,15 @@ const Box = styled.div`
   align-items: center;
   gap: 3rem;
 
-  @media only screen and (max-width: 48em) {
-    & > button {
+  & > button {
+    @media only screen and (max-width: 48em) {
       &:nth-child(1) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 26.875em) {
+      &:nth-child(2) {
         display: none;
       }
     }
