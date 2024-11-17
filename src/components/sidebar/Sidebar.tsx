@@ -63,7 +63,7 @@ const Container = styled.aside<IContainer>`
   height: 100%;
   position: fixed;
   top: 0;
-  left: ${({ active }) => (active === 'true' ? 0 : '-100%')};
+  right: ${({ active }) => (active === 'true' ? 0 : '-100%')};
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
   background-image: ${({ mode }) =>
@@ -87,7 +87,7 @@ const Container = styled.aside<IContainer>`
     width: 100%;
   }
 
-  @media only screen and (min-width: 48.0625em) {
+  @media only screen and (min-width: 50.0625em) {
     display: none;
   }
 `;
@@ -113,7 +113,7 @@ const ButtonContainer = styled.div<IMode>`
 
   & > * {
     &:first-child {
-      font-weight: lighter;
+      /* font-weight: lighter; */
       font-size: 2rem;
       padding: 0.7rem 1.25rem;
       color: var(--clr-white);
