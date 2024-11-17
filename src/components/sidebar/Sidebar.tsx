@@ -201,12 +201,6 @@ const ButtonContainer = styled.div<IMode>`
         padding: 0.5rem 0.75rem;
       }
     }
-
-    /* &:nth-child(2) {
-      @media only screen and (max-width: 25em) {
-        font-size: 1.65rem;
-      }
-    } */
   }
 `;
 
