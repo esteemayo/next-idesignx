@@ -73,13 +73,13 @@ export interface HamburgerProps {
 
 export interface ButtonProps {
   label: string;
-  nav?: string;
+  nav?: boolean;
   icon?: any;
   type?: 'submit' | 'button' | 'reset';
   onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
-  outline?: string;
-  small?: string;
+  outline?: boolean;
+  small?: boolean;
 }
 
 export type Brands = {
