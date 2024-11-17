@@ -170,6 +170,12 @@ const LogoWrap = styled.div`
   display: flex;
   align-items: center;
   /* gap: 2rem; */
+
+  @media only screen and (max-width: 26.875em) {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 `;
 
 const Box = styled.div`
