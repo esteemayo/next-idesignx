@@ -112,10 +112,10 @@ const Modal = ({
               {secondaryActionLabel && secondaryAction && (
                 <Button
                   type='button'
-                  outline='true'
                   disabled={disabled}
                   label={secondaryActionLabel}
                   onClick={handleSecondaryAction}
+                  outline
                 />
               )}
               <Button

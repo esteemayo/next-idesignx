@@ -10,15 +10,15 @@ const LoginOptions = () => {
   return (
     <Container>
       <Button
-        small='true'
-        outline='true'
+        small
+        outline
         type='button'
         label='Login with Google'
         icon={GoogleIcon}
       />
       <Button
-        small='true'
-        outline='true'
+        small
+        outline
         type='button'
         label='Login with Github'
         icon={GitHubIcon}
