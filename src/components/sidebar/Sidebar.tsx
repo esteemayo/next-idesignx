@@ -169,6 +169,15 @@ const ButtonContainer = styled.div<IMode>`
         outline: none;
         z-index: 5000;
       }
+
+      @media only screen and (max-width: 25em) {
+        padding: 0.55rem 0.9rem;
+      }
+
+      @media only screen and (max-width: 21.5em) {
+        font-size: 1.7rem;
+        padding: 0.5rem 0.85rem;
+      }
     }
 
     /* &:nth-child(2) {
