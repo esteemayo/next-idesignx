@@ -75,7 +75,7 @@ export interface ButtonProps {
   label: string;
   nav?: string;
   icon?: any;
-  type?: string;
+  type?: 'submit' | 'button' | 'reset';
   onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
   outline?: string;

@@ -7,7 +7,7 @@ import { CommonButton } from '../common/CommonButton';
 
 interface IBtn {
   nav?: string;
-  type?: string;
+  type?: 'submit' | 'button' | 'reset';
   small?: string;
   outline?: string;
 }
