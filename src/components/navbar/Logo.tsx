@@ -14,7 +14,7 @@ const Logo = ({ onClose }: LogoProps) => {
     <Container onClick={onClose}>
       <StyledLink href='/'>
         <StyledImage
-          src='/img/logo/logo.png'
+          src='/svg/idesignx.svg'
           width={45}
           height={45}
           alt='logo'
@@ -35,7 +35,9 @@ const StyledLink = styled(Link)`
 
 const StyledImage = styled(CommonImage)`
   width: 4.5rem;
+  width: 17rem;
   height: 4.5rem;
+  height: auto;
 
   @media only screen and (max-width: 48em) {
     height: 4rem;
