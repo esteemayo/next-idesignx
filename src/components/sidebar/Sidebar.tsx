@@ -129,6 +129,7 @@ const ButtonContainer = styled.div<IMode>`
 
   & > * {
     &:first-child {
+      height: 3.9rem;
       font-size: 2rem;
       padding: 0.7rem 1.25rem;
       color: var(--clr-white);
@@ -138,6 +139,7 @@ const ButtonContainer = styled.div<IMode>`
       z-index: 5000;
 
       @media only screen and (max-width: 30em) {
+        height: 3.7rem;
         font-size: 1.8rem;
         padding: 0.6rem 1rem;
       }
