@@ -62,8 +62,12 @@ const Container = styled.nav<IContainer>`
   position: relative;
   z-index: 3000;
 
-  @media only screen and (min-width: 48em) {
+  @media only screen and (min-width: 30.0625em) {
     display: flex;
+  }
+
+  @media only screen and (min-width: 106.25em) {
+    padding: 1.6rem 0;
   }
 
   @media only screen and (min-width: 112.5em) {
