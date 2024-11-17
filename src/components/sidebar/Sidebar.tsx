@@ -156,6 +156,12 @@ const ButtonContainer = styled.div<IMode>`
         font-size: 1.7rem;
         padding: 0.5rem 0.85rem;
       }
+
+      @media only screen and (max-width: 18.75em) {
+        height: 3rem;
+        font-size: var(--default-font-size);
+        padding: 0.5rem 0.75rem;
+      }
     }
 
     &:last-child {
@@ -185,6 +191,12 @@ const ButtonContainer = styled.div<IMode>`
         height: 3.15rem;
         font-size: 1.7rem;
         padding: 0.5rem 0.85rem;
+      }
+
+      @media only screen and (max-width: 18.75em) {
+        height: 3rem;
+        font-size: var(--default-font-size);
+        padding: 0.5rem 0.75rem;
       }
     }
 
