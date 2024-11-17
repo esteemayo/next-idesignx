@@ -4,19 +4,19 @@ import { useCallback } from 'react';
 import styled, { css } from 'styled-components';
 
 import MenuItems from './MenuItems';
+import Button from '../buttons/Button';
 
 import Hamburger from '../navbar/Hamburger';
 import NavButton from '../navbar/NavButton';
 
-import { useMenu } from '@/hooks/useMenu';
 import { useLoginModal } from '@/hooks/useLoginModal';
+import { useMenu } from '@/hooks/useMenu';
+import { useDesignModal } from '@/hooks/useDesignModal';
 
 import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
-import Button from '../buttons/Button';
-import { useDesignModal } from '@/hooks/useDesignModal';
 
 interface IContainer {
   active: string;
@@ -31,10 +31,10 @@ const Sidebar = () => {
   const menu = useMenu();
   const loginModal = useLoginModal();
 
-  const onOpen = useDesignModal((store) => store.onOpen);
-
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
+
+  const onOpen = useDesignModal((store) => store.onOpen);
 
   const handleClick = useCallback(() => {
     loginModal.onOpen();
