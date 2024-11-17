@@ -42,7 +42,7 @@ const Navbar = () => {
         <Box>
           <NavButton label='Login' onClick={loginModal} />
           <Button
-            nav='true'
+            nav
             type='button'
             label='Upload your design'
             onClick={designModal.onOpen}

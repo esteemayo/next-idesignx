@@ -15,6 +15,8 @@ import { useActiveMenu } from '@/hooks/useActiveMenu';
 import { useActiveMode } from '@/hooks/useActiveMode';
 
 import { navItems } from '@/data';
+import Button from '../buttons/Button';
+import { useDesignModal } from '@/hooks/useDesignModal';
 
 interface IContainer {
   active: string;
@@ -29,6 +31,8 @@ const Sidebar = () => {
   const menu = useMenu();
   const loginModal = useLoginModal();
 
+  const onOpen = useDesignModal((store) => store.onOpen);
+
   const { activeMenu } = useActiveMenu();
   const { activeMode } = useActiveMode();
 
@@ -36,6 +40,16 @@ const Sidebar = () => {
     loginModal.onOpen();
     menu.onClose();
   }, [loginModal, menu]);
+
+  const handleUpload = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
+
+      onOpen();
+      menu.onClose();
+    },
+    [menu, onOpen]
+  );
 
   const handleClose = useCallback(() => {
     if (menu.isOpen) {
@@ -51,6 +65,7 @@ const Sidebar = () => {
         <Hamburger isOpen={menu.isOpen} onToggle={menu.onClose} />
         <ButtonContainer mode={activeMode}>
           <NavButton label='Login' onClick={handleClick} />
+          <Button type='button' label='Upload' small onClick={handleUpload} />
         </ButtonContainer>
       </Wrapper>
       <MenuItems mode={activeMode} links={navItems} onClose={handleClose} />
@@ -115,7 +130,6 @@ const ButtonContainer = styled.div<IMode>`
 
   & > * {
     &:first-child {
-      /* font-weight: lighter; */
       font-size: 2rem;
       padding: 0.7rem 1.25rem;
       color: var(--clr-white);
