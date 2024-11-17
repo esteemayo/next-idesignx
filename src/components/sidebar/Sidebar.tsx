@@ -152,11 +152,19 @@ const ButtonContainer = styled.div<IMode>`
       }
     }
 
-    &:nth-child(2) {
+    &:last-child {
+      display: none;
+
+      @media only screen and (max-width: 26.875em) {
+        display: flex;
+      }
+    }
+
+    /* &:nth-child(2) {
       @media only screen and (max-width: 25em) {
         font-size: 1.65rem;
       }
-    }
+    } */
   }
 `;
 
