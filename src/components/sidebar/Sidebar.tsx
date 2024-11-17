@@ -158,8 +158,8 @@ const ButtonContainer = styled.div<IMode>`
       @media only screen and (max-width: 26.875em) {
         display: flex;
         height: 3.5rem;
-        font-size: 2rem;
-        padding: 0.7rem 1.25rem;
+        font-size: 1.8rem;
+        padding: 0.6rem 1rem;
         margin: 0;
         background-color: transparent;
         background-image: none;
