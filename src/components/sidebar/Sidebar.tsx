@@ -157,6 +157,13 @@ const ButtonContainer = styled.div<IMode>`
 
       @media only screen and (max-width: 26.875em) {
         display: flex;
+        font-size: 2rem;
+        padding: 0.7rem 1.25rem;
+        color: var(--clr-white);
+        border: 1px solid currentColor;
+        border-radius: 0.5rem;
+        outline: none;
+        z-index: 5000;
       }
     }
 
