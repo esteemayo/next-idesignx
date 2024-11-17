@@ -65,7 +65,7 @@ const Sidebar = () => {
         <Hamburger isOpen={menu.isOpen} onToggle={menu.onClose} />
         <ButtonContainer mode={activeMode}>
           <NavButton label='Login' onClick={handleClick} />
-          <Button type='button' label='Upload' small onClick={handleUpload} />
+          <Button small type='button' label='Upload' onClick={handleUpload} />
         </ButtonContainer>
       </Wrapper>
       <MenuItems mode={activeMode} links={navItems} onClose={handleClose} />
