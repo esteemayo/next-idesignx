@@ -85,6 +85,7 @@ const Container = styled.aside<IContainer>`
 
   @media only screen and (max-width: 26.875em) {
     width: 100%;
+    left: unset;
     right: ${({ active }) => (active === 'true' ? 0 : '-100%')};
   }
 

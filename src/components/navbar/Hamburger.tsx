@@ -54,6 +54,7 @@ const Container = styled.button<IProps>`
   color: ${({ active }) =>
     setProperty(active, 'var(--clr-white)', 'var(--clr-purple-light-2)')};
   cursor: pointer;
+  z-index: 2000;
 
   @media only screen and (max-width: 25em) {
     width: 2.4rem;
