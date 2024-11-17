@@ -24,12 +24,12 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <StyledButton
-      nav={nav}
+      nav={String(nav)}
       type={type}
       onClick={onClick}
       disabled={disabled}
-      outline={outline}
-      small={small}
+      outline={String(outline)}
+      small={String(small)}
     >
       {Icon && <Icon />} {label}
     </StyledButton>
