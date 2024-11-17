@@ -78,6 +78,7 @@ const StyledImage = styled(CommonImage)`
   @media only screen and (min-width: 106.25em) {
     width: 5rem;
     width: 18rem;
+    margin-left: -3.25rem;
   }
 
   @media only screen and (min-width: 112.5em) {
