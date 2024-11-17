@@ -169,7 +169,7 @@ const Wrapper = styled.div`
 const LogoWrap = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  /* gap: 2rem; */
 `;
 
 const Box = styled.div`
