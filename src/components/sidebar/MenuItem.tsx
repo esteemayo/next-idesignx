@@ -43,6 +43,10 @@ const StyledLink = styled(Link)`
     font-size: 1.7rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    font-size: var(--default-font-size);
+  }
+
   &:active {
     color: inherit;
   }
