@@ -173,9 +173,9 @@ const Wrapper = styled.div`
 const LogoWrap = styled.div`
   display: flex;
   align-items: center;
-  /* gap: 2rem; */
+  gap: 2rem;
 
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 28.875em) {
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
