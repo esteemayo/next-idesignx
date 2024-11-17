@@ -189,7 +189,12 @@ const Box = styled.div`
 
   & > button {
     @media only screen and (max-width: 50em) {
-      &:nth-child(1),
+      &:nth-child(1) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 26.875em) {
       &:nth-child(2) {
         display: none;
       }
