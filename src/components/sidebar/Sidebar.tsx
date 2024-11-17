@@ -142,7 +142,12 @@ const ButtonContainer = styled.div<IMode>`
         padding: 0.6rem 1rem;
       }
 
+      @media only screen and (max-width: 26.875em) {
+        height: 3.5rem;
+      }
+
       @media only screen and (max-width: 25em) {
+        height: 3.3rem;
         padding: 0.55rem 0.9rem;
       }
 
@@ -171,6 +176,7 @@ const ButtonContainer = styled.div<IMode>`
       }
 
       @media only screen and (max-width: 25em) {
+        height: 3.3rem;
         padding: 0.55rem 0.9rem;
       }
 
