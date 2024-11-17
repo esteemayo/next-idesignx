@@ -179,6 +179,7 @@ const LogoWrap = styled.div`
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
+    gap: 2rem;
   }
 `;
 

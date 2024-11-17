@@ -63,7 +63,7 @@ const Container = styled.aside<IContainer>`
   height: 100%;
   position: fixed;
   top: 0;
-  right: ${({ active }) => (active === 'true' ? 0 : '-100%')};
+  left: ${({ active }) => (active === 'true' ? 0 : '-100%')};
   background-color: ${({ mode }) =>
     mode === 'true' && 'var(--clr-bg-dark-secondary)'};
   background-image: ${({ mode }) =>
@@ -85,6 +85,7 @@ const Container = styled.aside<IContainer>`
 
   @media only screen and (max-width: 26.875em) {
     width: 100%;
+    right: ${({ active }) => (active === 'true' ? 0 : '-100%')};
   }
 
   @media only screen and (min-width: 50.0625em) {
