@@ -142,7 +142,7 @@ const DesignModal = () => {
     }
   }, [errors]);
 
-  let bodyContent: JSX.Element;
+  let bodyContent: JSX.Element | undefined;
 
   bodyContent = (
     <DesignInfo
