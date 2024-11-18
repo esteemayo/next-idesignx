@@ -169,7 +169,7 @@ const ButtonContainer = styled.div<IMode>`
     &:last-child {
       display: none;
 
-      @media only screen and (max-width: 26.875em) {
+      @media only screen and (max-width: 30em) {
         display: flex;
         height: 3.5rem;
         font-size: 1.8rem;
