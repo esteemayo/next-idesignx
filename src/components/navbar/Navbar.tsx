@@ -3,10 +3,12 @@
 import styled from 'styled-components';
 import { usePathname } from 'next/navigation';
 
-import Hamburger from './Hamburger';
-import Logo from './Logo';
-import Button from '../buttons/Button';
 import NavItems from './NavItems';
+import Logo from './Logo';
+import Hamburger from './Hamburger';
+
+import NavButton from './NavButton';
+import Button from '../buttons/Button';
 
 import { useMenu } from '@/hooks/useMenu';
 import { useActiveMenu } from '@/hooks/useActiveMenu';
@@ -15,7 +17,6 @@ import { useLoginModal } from '@/hooks/useLoginModal';
 import { useDesignModal } from '@/hooks/useDesignModal';
 
 import { navItems } from '@/data';
-import NavButton from './NavButton';
 
 interface IContainer {
   active: string;
