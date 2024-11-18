@@ -31,47 +31,47 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 48em) {
-    grid-template-rows: 50vw 50vw;
+    grid-template-rows: 50vw min-content 50vw;
   }
 
   @media only screen and (max-width: 43.75em) {
-    grid-template-rows: 53vw 55vw;
+    grid-template-rows: 53vw min-content 55vw;
   }
 
   @media only screen and (max-width: 37.5em) {
-    grid-template-rows: 55vw 60vw;
+    grid-template-rows: 55vw min-content 60vw;
   }
 
   @media only screen and (max-width: 34.375em) {
-    grid-template-rows: 57vw 65vw;
+    grid-template-rows: 57vw min-content 65vw;
   }
 
   @media only screen and (max-width: 30em) {
-    grid-template-rows: 60vw 70vw;
+    grid-template-rows: 60vw min-content 70vw;
   }
 
   @media only screen and (max-width: 26.875em) {
-    grid-template-rows: 65vw 80vw;
+    grid-template-rows: 65vw min-content 80vw;
   }
 
   @media only screen and (max-width: 25em) {
-    grid-template-rows: 70vw 80vw;
+    grid-template-rows: 70vw min-content 80vw;
   }
 
   @media only screen and (max-width: 22.5em) {
-    grid-template-rows: 73vw 80vw;
+    grid-template-rows: 73vw min-content 80vw;
   }
 
   @media only screen and (max-width: 21.5em) {
-    grid-template-rows: 75vw 80vw;
+    grid-template-rows: 75vw min-content 80vw;
   }
 
   @media only screen and (max-width: 18.75em) {
-    grid-template-rows: 78vw 80vw;
+    grid-template-rows: 78vw min-content 80vw;
   }
 
   @media only screen and (max-width: 17.5em) {
-    grid-template-rows: 80vw 80vw;
+    grid-template-rows: 80vw min-content 80vw;
   }
 
   @media only screen and (min-width: 106.25em) {
