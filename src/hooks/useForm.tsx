@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export const useForm = <T extends object, U extends object>(
   callback: () => void,
@@ -29,6 +29,12 @@ export const useForm = <T extends object, U extends object>(
     callback();
     setData(initialState);
   }, [callback, data, initialError, initialState, validate]);
+
+  useEffect(() => {
+    if (Object.values(errors).length > 0) {
+      setTimeout(() => setErrors(initialError), 5000);
+    }
+  }, [data, errors, initialError, validate]);
 
   return {
     data,
