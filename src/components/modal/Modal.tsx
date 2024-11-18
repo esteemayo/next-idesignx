@@ -168,6 +168,10 @@ const Box = styled.div`
     width: 43rem;
   }
 
+  @media only screen and (max-width: 23.75em) {
+    width: 42rem;
+  }
+
   @media only screen and (max-width: 23.4375em) {
     width: 40rem;
     padding: 2rem 1.5rem;
