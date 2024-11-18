@@ -98,7 +98,7 @@ const Container = styled.aside<IContainer>`
   transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1),
     cubic-bezier(0.77, 0.2, 0.05, 1), cubic-bezier(0.77, 0.2, 0.05, 1);
 
-  @media only screen and (max-width: 26.875em) {
+  @media only screen and (max-width: 30em) {
     width: 100%;
     left: unset;
     right: ${({ active }) => (active === 'true' ? 0 : '-100%')};
