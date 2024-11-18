@@ -32,20 +32,6 @@ const Mission = () => {
 const Container = styled.section<IContainer>`
   grid-column: col-start 5 / full-end;
 
-  @media only screen and (max-width: 48em) {
-    grid-row: 2 / 3;
-    grid-column: full-start / full-end;
-    padding: 0 8rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    padding: 0 7.5rem;
-  }
-
-  @media only screen and (max-width: 34.375em) {
-    padding: 0 5rem;
-  }
-
   padding: 3rem;
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.textDesign};
@@ -63,6 +49,24 @@ const Container = styled.section<IContainer>`
     var(--clr-purple-dark-2)
   )
   `}; */
+
+  @media only screen and (max-width: 48em) {
+    grid-row: 2 / 3;
+    grid-column: full-start / full-end;
+    padding: 0 8rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 0 7.5rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and (max-width: 25em) {
+    padding: 0 3rem;
+  }
 `;
 
 const Wrapper = styled.div`
