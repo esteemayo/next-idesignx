@@ -76,13 +76,18 @@ const StyledButton = styled(CommonButton)<IBtn>`
     margin-top: ${({ nav }) => (nav !== 'true' ? '1rem' : undefined)};
   }
 
+  @media only screen and (max-width: 43.75em) {
+    padding: ${({ small }) =>
+      small === 'true' ? '1.25rem' : '1.25rem 3.25rem'};
+  }
+
   @media only screen and (max-width: 37.5em) {
     width: ${({ nav }) => (nav !== 'true' ? '100%' : undefined)};
   }
 
   @media only screen and (max-width: 34.375em) {
-    height: ${({ small }) => (small === 'true' ? '4.5rem' : '4.8rem')};
-    padding: ${({ small }) => (small === 'true' ? '1.4rem' : '1.4rem 3.4rem')};
+    height: ${({ small }) => (small === 'true' ? '4.35rem' : '4.65rem')};
+    padding: ${({ small }) => (small === 'true' ? '1.2rem' : '1.2rem 3.2rem')};
   }
 
   @media only screen and (max-width: 26.875em) {
