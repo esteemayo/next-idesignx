@@ -60,7 +60,12 @@ export const StyledLink = styled(Link)`
   }
 
   @media only screen and (max-width: 25em) {
+    width: 11rem;
     font-size: 1.45rem;
+  }
+
+  @media only screen and (max-width: 24.375em) {
+    width: 10rem;
   }
 
   @media only screen and (max-width: 23.4375em) {
