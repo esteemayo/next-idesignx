@@ -118,10 +118,15 @@ const Heading = styled.h2`
   @media only screen and (max-width: 25em) {
     grid-row: 1 / 2;
     align-self: center;
+    font-size: 2.7rem;
   }
 
   @media only screen and (max-width: 21.5em) {
     font-size: 2.6rem;
+  }
+
+  @media only screen and (max-width: 20em) {
+    font-size: 2.5rem;
   }
 
   @media only screen and (max-width: 18.75em) {
