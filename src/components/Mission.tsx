@@ -35,6 +35,15 @@ const Container = styled.section<IContainer>`
   @media only screen and (max-width: 48em) {
     grid-row: 2 / 3;
     grid-column: full-start / full-end;
+    padding: 0 8rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 0 7.5rem;
+  }
+
+  @media only screen and (max-width: 34.375em) {
+    padding: 0 5rem;
   }
 
   padding: 3rem;
