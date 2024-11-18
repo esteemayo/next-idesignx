@@ -79,10 +79,14 @@ const Text = styled.p`
   }
 
   @media only screen and (max-width: 30em) {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
   }
 
   @media only screen and (max-width: 26.875em) {
+    font-size: 1.725rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
     font-size: 1.67rem;
   }
 
@@ -144,6 +148,7 @@ const Span = styled.span`
 
   @media only screen and (max-width: 31.25em) {
     display: inline-block;
+    margin-left: 3px;
   }
 `;
 
