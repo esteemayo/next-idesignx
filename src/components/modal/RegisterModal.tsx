@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import RegisterCredentials from '../register/RegisterCredentials';
 import RegisterInfo from '../register/RegisterInfo';
@@ -128,6 +128,12 @@ const RegisterModal = () => {
       return 'true';
     }
   }, [step]);
+
+  useEffect(() => {
+    if (Object.values(errors).length > 0) {
+      setTimeout(() => setErrors({}), 5000);
+    }
+  }, [errors]);
 
   let bodyContent: JSX.Element;
 
