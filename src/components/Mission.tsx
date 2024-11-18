@@ -65,7 +65,7 @@ const Container = styled.section<IContainer>`
   }
 
   @media only screen and (max-width: 25em) {
-    padding: 0 3rem;
+    padding: 5rem 3rem;
   }
 `;
 
@@ -237,7 +237,6 @@ const Paragraph = styled.p`
   @media only screen and (max-width: 25em) {
     grid-row: 4 / -1;
     font-size: 1.7rem;
-    margin-top: 0;
   }
 
   @media only screen and (max-width: 21.5em) {
