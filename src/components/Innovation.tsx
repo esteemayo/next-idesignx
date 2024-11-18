@@ -25,7 +25,7 @@ const Container = styled.section`
   align-items: center;
   justify-content: end;
 
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 48em) {
     grid-row: 3 / 4;
     grid-column: full-start / full-end;
     justify-content: start;

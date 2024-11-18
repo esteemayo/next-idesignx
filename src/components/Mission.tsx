@@ -32,7 +32,7 @@ const Mission = () => {
 const Container = styled.section<IContainer>`
   grid-column: col-start 5 / full-end;
 
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 48em) {
     grid-row: 2 / 3;
     grid-column: full-start / full-end;
   }
