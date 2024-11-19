@@ -11,6 +11,15 @@ export interface DesignModalAction {
   onClose: () => void;
 }
 
+export interface LoginModalStore {
+  isOpen: boolean;
+}
+
+export interface LoginModalAction {
+  onOpen(): void;
+  onClose(): void;
+}
+
 export interface SocialIcon {
   id: number;
   url: string;
