@@ -86,33 +86,33 @@ const Box = styled.div`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 35rem;
-    height: 25rem;
+    width: 33rem;
+    height: 23rem;
   }
 
   @media only screen and (max-width: 24.375em) {
-    width: 34rem;
-    height: 24rem;
-  }
-
-  @media only screen and (max-width: 23.75em) {
-    width: 33rem;
+    width: 32rem;
     height: 22rem;
   }
 
-  @media only screen and (max-width: 23.4375em) {
-    width: 32rem;
+  @media only screen and (max-width: 23.75em) {
+    width: 31rem;
     height: 21rem;
   }
 
-  @media only screen and (max-width: 22.5em) {
+  @media only screen and (max-width: 23.4375em) {
     width: 30rem;
-    height: 19rem;
+    height: 20rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    width: 28rem;
+    height: 18rem;
   }
 
   @media only screen and (max-width: 21.5em) {
-    width: 28rem;
-    height: 17rem;
+    width: 26rem;
+    height: 15rem;
   }
 
   @media only screen and (max-width: 20.625em) {
@@ -206,33 +206,33 @@ const Container = styled.div`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 30rem;
-    height: 20rem;
+    width: 28rem;
+    height: 18rem;
   }
 
   @media only screen and (max-width: 24.375em) {
-    width: 29rem;
-    height: 19rem;
-  }
-
-  @media only screen and (max-width: 23.75em) {
-    width: 28rem;
+    width: 27rem;
     height: 17rem;
   }
 
-  @media only screen and (max-width: 23.4375em) {
-    width: 27rem;
+  @media only screen and (max-width: 23.75em) {
+    width: 26rem;
     height: 16rem;
   }
 
-  @media only screen and (max-width: 22.5em) {
+  @media only screen and (max-width: 23.4375em) {
     width: 25rem;
-    height: 14rem;
+    height: 15rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    width: 23rem;
+    height: 12rem;
   }
 
   @media only screen and (max-width: 21.5em) {
-    width: 23rem;
-    height: 12rem;
+    width: 21rem;
+    height: 10rem;
   }
 
   @media only screen and (max-width: 20.625em) {
