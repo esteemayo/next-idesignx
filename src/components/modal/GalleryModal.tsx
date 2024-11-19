@@ -259,27 +259,4 @@ const Button = styled.button<IBtn>`
   }
 `;
 
-const Common = styled.button`
-  position: absolute;
-  border: none;
-  font-size: 3rem;
-  background-color: transparent;
-  color: var(--clr-white);
-  outline-color: var(--clr-gray-dark-2);
-  cursor: pointer;
-
-  svg {
-    font-size: inherit;
-    fill: currentColor;
-  }
-`;
-
-const LeftButton = styled(Common)`
-  left: 6rem;
-`;
-
-const RightButton = styled(Common)`
-  right: 5.43rem;
-`;
-
 export default GalleryModal;
