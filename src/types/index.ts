@@ -38,6 +38,16 @@ export interface ImageActionType {
   onClose(): void;
 }
 
+export interface DarkModeStore {
+  mode: boolean;
+}
+
+export interface DarkModeActionType {
+  dark(): void;
+  light(): void;
+  toggle(): void;
+}
+
 export interface SocialIcon {
   id: number;
   url: string;
