@@ -2,6 +2,15 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 
+export interface DesignModalStore {
+  isOpen: boolean;
+}
+
+export interface DesignModalAction {
+  onOpen: () => void;
+  onClose: () => void;
+}
+
 export interface SocialIcon {
   id: number;
   url: string;
