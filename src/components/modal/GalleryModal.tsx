@@ -275,13 +275,11 @@ const Common = styled.button`
   cursor: pointer;
 `;
 
-const LeftButton = styled.button`
-  position: absolute;
+const LeftButton = styled(Common)`
   left: 6rem;
 `;
 
-const RightButton = styled.button`
-  position: absolute;
+const RightButton = styled(Common)`
   right: 6rem;
 `;
 
