@@ -224,7 +224,7 @@ const Button = styled.button<IBtn>`
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 3.4rem;
+    font-size: 3.25rem;
   }
 
   @media only screen and (max-width: 25em) {
