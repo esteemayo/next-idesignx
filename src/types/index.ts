@@ -6,7 +6,7 @@ export interface DesignModalStore {
   isOpen: boolean;
 }
 
-export interface DesignModalAction {
+export interface DesignActionType {
   onOpen: () => void;
   onClose: () => void;
 }
@@ -15,7 +15,16 @@ export interface LoginModalStore {
   isOpen: boolean;
 }
 
-export interface LoginModalAction {
+export interface LoginActionType {
+  onOpen(): void;
+  onClose(): void;
+}
+
+export interface RegisterModalStore {
+  isOpen: boolean;
+}
+
+export interface RegisterActionType {
   onOpen(): void;
   onClose(): void;
 }
