@@ -4,18 +4,17 @@ import { create } from 'zustand';
 import { produce } from 'immer';
 import { devtools, persist } from 'zustand/middleware';
 
-interface DarkModeStore {
-  mode: boolean;
-  dark(): void;
-  light(): void;
-  toggle(): void;
-}
+import { DarkModeActionType, DarkModeStore } from '@/types';
 
-export const useDarkMode = create<DarkModeStore>()(
+const INITIAL_STATE = {
+  mode: false,
+};
+
+export const useDarkMode = create<DarkModeStore & DarkModeActionType>()(
   devtools(
     persist(
       (set) => ({
-        mode: false,
+        mode: INITIAL_STATE.mode,
         dark: () =>
           set(
             produce((state) => {
