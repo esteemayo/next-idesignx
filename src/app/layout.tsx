@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     'We are a Creative Design, Brand development and activation firm. We aim to present brands in grand style.',
   keywords:
     'ui/ux, product design, graphics design, web-development, mobile app development',
+  authors: [
+    { name: 'Xsteem Designx', url: 'https://www.esteemdesigns.com' },
+    { name: 'Emmanuel Ayodeji Adebayo', url: 'https://www.devayo.com' },
+  ],
 };
 
 export default function RootLayout({
