@@ -21,7 +21,7 @@ export const useDarkMode = create<DarkModeStore & DarkModeActionType>()(
               state.mode = true;
             }),
             false,
-            'darkMode'
+            'dark'
           ),
         light: () =>
           set(
@@ -29,7 +29,7 @@ export const useDarkMode = create<DarkModeStore & DarkModeActionType>()(
               state.mode = false;
             }),
             false,
-            'lightMode'
+            'light'
           ),
         toggle: () =>
           set(
@@ -37,7 +37,7 @@ export const useDarkMode = create<DarkModeStore & DarkModeActionType>()(
               state.mode = !state.mode;
             }),
             false,
-            'toggleMode'
+            'toggle'
           ),
       }),
       { name: 'mode' }
