@@ -247,6 +247,14 @@ const Button = styled.button<IBtn>`
     font-size: 3rem;
   }
 
+  @media only screen and (max-width: 21.5em) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2.5rem;
+  }
+
   @media only screen and (min-width: 106.25em) {
     font-size: 3.2rem;
   }
