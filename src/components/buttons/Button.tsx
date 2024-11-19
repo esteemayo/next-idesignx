@@ -15,7 +15,7 @@ interface IBtn {
 const Button = ({
   label,
   nav,
-  icon: Icon,
+  icon,
   type = 'submit',
   onClick,
   disabled,
@@ -31,7 +31,7 @@ const Button = ({
       outline={String(outline)}
       small={String(small)}
     >
-      {Icon && <Icon />} {label}
+      {icon as React.ReactNode} {label}
     </StyledButton>
   );
 };
