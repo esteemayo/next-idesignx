@@ -4,15 +4,15 @@ import { create } from 'zustand';
 import { produce } from 'immer';
 import { devtools } from 'zustand/middleware';
 
-interface MenuStore {
-  isOpen: boolean;
-  onOpen: () => void;
-  onClose: () => void;
-}
+import { MenuActionType, MenuStore } from '@/types';
 
-export const useMenu = create<MenuStore>()(
+const INITIAL_STATE = {
+  isOpen: false,
+};
+
+export const useMenu = create<MenuStore & MenuActionType>()(
   devtools((set) => ({
-    isOpen: false,
+    isOpen: INITIAL_STATE.isOpen,
     onOpen: () =>
       set(
         produce((state) => {
