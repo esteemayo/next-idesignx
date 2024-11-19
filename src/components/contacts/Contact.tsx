@@ -95,6 +95,7 @@ const Container = styled.section`
   padding: 3rem;
   box-shadow: 0 0 4rem rgba(0, 0, 0, 0.09);
   box-shadow: rgba(0, 0, 0, 0.09) 0 1px 0.5rem 0;
+  box-shadow: 0px 3px 5px -2px rgba(73, 73, 73, 0.16);
   border-radius: 1rem;
 
   @media only screen and (max-width: 75em) {
