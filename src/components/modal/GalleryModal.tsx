@@ -236,7 +236,7 @@ const Button = styled.button<IBtn>`
 
   @media only screen and (max-width: 37.5em) {
     left: ${({ direction }) => direction === 'left' && '1rem'};
-    right: ${({ direction }) => direction === 'right' && '0.43rem'};
+    right: ${({ direction }) => direction === 'right' && '0.23rem'};
   }
 
   @media only screen and (max-width: 34.375em) {
@@ -245,11 +245,6 @@ const Button = styled.button<IBtn>`
 
   @media only screen and (max-width: 30em) {
     font-size: 3rem;
-  }
-
-  @media only screen and (max-width: 21.5em) {
-    left: ${({ direction }) => direction === 'left' && '1rem'};
-    right: ${({ direction }) => direction === 'right' && '0.43rem'};
   }
 
   @media only screen and (min-width: 106.25em) {
