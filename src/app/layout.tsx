@@ -36,9 +36,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${josefinSans.className} ${nunito.className}`}>
-        <ModeProvider>
-          <SharedLayout>{children}</SharedLayout>
-        </ModeProvider>
+        <SharedLayout>{children}</SharedLayout>
       </body>
     </html>
   );
