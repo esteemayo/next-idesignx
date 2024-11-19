@@ -10,9 +10,9 @@ import DarkMode from '../DarkMode';
 import Info from '../Info';
 import ClientOnly from '../ClientOnly';
 
-import ToastProvider from '@/providers/ToastProvider';
-import ModeProvider from '@/providers/ModeProvider';
 import ModalProvider from '@/providers/ModalProvider';
+import ModeProvider from '@/providers/ModeProvider';
+import ToastProvider from '@/providers/ToastProvider';
 
 const SharedLayout = ({ children }: { children: React.ReactNode }) => {
   return (

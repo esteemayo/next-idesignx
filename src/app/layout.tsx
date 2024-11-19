@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Josefin_Sans, Nunito } from 'next/font/google';
 
-import ModeProvider from '@/providers/ModeProvider';
 import SharedLayout from '@/components/layouts/SharedLayout';
 
 import './globals.scss';
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   description:
     'We are a Creative Design, Brand development and activation firm. We aim to present brands in grand style.',
   keywords:
-    'ui/ux, product design, graphics design, web-development, mobile app development',
+    'ui/ux, product design, graphics design, printings, web-development, mobile app development',
   authors: [
     { name: 'Xsteem Designx', url: 'https://www.esteemdesigns.com' },
     { name: 'Emmanuel Ayodeji Adebayo', url: 'https://www.devayo.com' },
