@@ -218,6 +218,11 @@ const Button = styled.button<IBtn>`
     font-size: 3.3rem;
   }
 
+  @media only screen and (max-width: 37.5em) {
+    left: ${({ direction }) => direction === 'left' && '1rem'};
+    right: ${({ direction }) => direction === 'right' && '1rem'};
+  }
+
   @media only screen and (max-width: 34.375em) {
     font-size: 3.4rem;
   }
