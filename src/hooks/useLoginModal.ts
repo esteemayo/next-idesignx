@@ -4,13 +4,13 @@ import { create } from 'zustand';
 import { produce } from 'immer';
 import { devtools } from 'zustand/middleware';
 
-import { LoginModalAction, LoginModalStore } from '@/types';
+import { LoginActionType, LoginModalStore } from '@/types';
 
 const INITIAL_STATE = {
   isOpen: false,
 };
 
-export const useLoginModal = create<LoginModalStore & LoginModalAction>()(
+export const useLoginModal = create<LoginModalStore & LoginActionType>()(
   devtools((set) => ({
     isOpen: INITIAL_STATE.isOpen,
     onOpen: () =>

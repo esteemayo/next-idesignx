@@ -4,15 +4,17 @@ import { create } from 'zustand';
 import { produce } from 'immer';
 import { devtools } from 'zustand/middleware';
 
-interface RegisterModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
+import { RegisterActionType, RegisterModalStore } from '@/types';
 
-export const useRegisterModal = create<RegisterModalStore>()(
+const INITIAL_STATE = {
+  isOpen: false,
+};
+
+export const useRegisterModal = create<
+  RegisterModalStore & RegisterActionType
+>()(
   devtools((set) => ({
-    isOpen: false,
+    isOpen: INITIAL_STATE.isOpen,
     onOpen: () =>
       set(
         produce((state) => {
