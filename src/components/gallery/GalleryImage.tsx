@@ -166,11 +166,11 @@ const Container = styled.div`
 
   @media only screen and (max-width: 37.5em) {
     width: 50rem;
+    height: 30rem;
   }
 
   @media only screen and (max-width: 34.375em) {
     width: 45rem;
-    height: 30rem;
   }
 
   @media only screen and (max-width: 30em) {
