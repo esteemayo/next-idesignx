@@ -273,6 +273,11 @@ const Common = styled.button`
   color: var(--clr-white);
   outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    fill: currentColor;
+  }
 `;
 
 const LeftButton = styled(Common)`
