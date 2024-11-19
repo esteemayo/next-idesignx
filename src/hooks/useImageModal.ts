@@ -4,15 +4,15 @@ import { create } from 'zustand';
 import { produce } from 'immer';
 import { devtools } from 'zustand/middleware';
 
-interface ImageModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
+import { ImageActionType, ImageModalStore } from '@/types';
 
-export const useImageModal = create<ImageModalStore>()(
+const INITIAL_STATE = {
+  isOpen: false,
+};
+
+export const useImageModal = create<ImageModalStore & ImageActionType>()(
   devtools((set) => ({
-    isOpen: false,
+    isOpen: INITIAL_STATE.isOpen,
     onOpen: () =>
       set(
         produce((state) => {
