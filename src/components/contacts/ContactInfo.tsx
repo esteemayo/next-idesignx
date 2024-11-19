@@ -30,8 +30,8 @@ const Container = styled.section`
   margin: 15rem 0;
   padding: 5rem;
   line-height: 1.4;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 
   @media only screen and (max-width: 68.75em) {
     padding: 4.5rem;
