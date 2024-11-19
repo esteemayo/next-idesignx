@@ -1,13 +1,14 @@
 'use client';
 
 import Navbar from '../navbar/Navbar';
-import ScrollButton from '../buttons/ScrollButton';
 import Footer from '../footer/Footer';
-import Sidebar from '../sidebar/Sidebar';
 
-import ClientOnly from '../ClientOnly';
-import Info from '../Info';
+import Sidebar from '../sidebar/Sidebar';
+import ScrollButton from '../buttons/ScrollButton';
+
 import DarkMode from '../DarkMode';
+import Info from '../Info';
+import ClientOnly from '../ClientOnly';
 
 import ToastProvider from '@/providers/ToastProvider';
 import ModalProvider from '@/providers/ModalProvider';
