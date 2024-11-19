@@ -5,11 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { useDarkMode } from '@/hooks/useDarkMode';
 import { darkTheme, lightTheme } from '@/utils/Theme';
 
-interface ModeProviderProps {
-  children: React.ReactNode;
-}
-
-const ModeProvider: React.FC<ModeProviderProps> = ({ children }) => {
+const ModeProvider = ({ children }: { children: React.ReactNode }) => {
   const { mode } = useDarkMode();
 
   return (
