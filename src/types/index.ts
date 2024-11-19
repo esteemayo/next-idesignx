@@ -29,6 +29,15 @@ export interface RegisterActionType {
   onClose(): void;
 }
 
+export interface ImageModalStore {
+  isOpen: boolean;
+}
+
+export interface ImageActionType {
+  onOpen(): void;
+  onClose(): void;
+}
+
 export interface SocialIcon {
   id: number;
   url: string;
