@@ -48,6 +48,15 @@ export interface DarkModeActionType {
   toggle(): void;
 }
 
+export interface MenuStore {
+  isOpen: boolean;
+}
+
+export interface MenuActionType {
+  onOpen: () => void;
+  onClose: () => void;
+}
+
 export interface SocialIcon {
   id: number;
   url: string;
