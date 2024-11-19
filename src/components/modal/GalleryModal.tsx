@@ -89,34 +89,19 @@ const GalleryModal = ({
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
-      <Container>
-        <Button type='button' direction='left' onClick={() => onClick('left')}>
-          <ArrowBackIosIcon />
-        </Button>
-        <GalleryImage active={activeModal} image={image} />
-        <Button
-          type='button'
-          direction='right'
-          onClick={() => onClick('right')}
-        >
-          <ArrowForwardIosIcon />
-        </Button>
-      </Container>
+      <Button type='button' direction='left' onClick={() => onClick('left')}>
+        <ArrowBackIosIcon />
+      </Button>
+      <GalleryImage active={activeModal} image={image} />
+      <Button type='button' direction='right' onClick={() => onClick('right')}>
+        <ArrowForwardIosIcon />
+      </Button>
       <CloseButton onClick={handleClose}>
         <CloseIcon />
       </CloseButton>
     </Overlay>
   );
 };
-
-const Container = styled.div`
-  width: 100%;
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 const CloseButton = styled.button`
   display: flex;
