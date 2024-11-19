@@ -89,11 +89,11 @@ const GalleryModal = ({
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
-      <Button direction='left' onClick={() => onClick('left')}>
+      <Button type='button' direction='left' onClick={() => onClick('left')}>
         <ArrowBackIosIcon />
       </Button>
       <GalleryImage active={activeModal} image={image} />
-      <Button direction='right' onClick={() => onClick('right')}>
+      <Button type='button' direction='right' onClick={() => onClick('right')}>
         <ArrowForwardIosIcon />
       </Button>
       <CloseButton onClick={handleClose}>
