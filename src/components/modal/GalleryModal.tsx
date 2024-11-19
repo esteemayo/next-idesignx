@@ -90,13 +90,17 @@ const GalleryModal = ({
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
       <Container>
-        <LeftButton type='button' onClick={() => onClick('left')}>
+        <Button type='button' direction='left' onClick={() => onClick('left')}>
           <ArrowBackIosIcon />
-        </LeftButton>
+        </Button>
         <GalleryImage active={activeModal} image={image} />
-        <RightButton type='button' onClick={() => onClick('right')}>
+        <Button
+          type='button'
+          direction='right'
+          onClick={() => onClick('right')}
+        >
           <ArrowForwardIosIcon />
-        </RightButton>
+        </Button>
       </Container>
       <CloseButton onClick={handleClose}>
         <CloseIcon />
@@ -201,7 +205,7 @@ const Button = styled.button<IBtn>`
   position: absolute;
   top: 50%;
   left: ${({ direction }) => direction === 'left' && '6rem'};
-  right: ${({ direction }) => direction === 'right' && '6rem'};
+  right: ${({ direction }) => direction === 'right' && '5.43rem'};
   transform: translateY(-50%);
 
   border: none;
@@ -285,7 +289,7 @@ const LeftButton = styled(Common)`
 `;
 
 const RightButton = styled(Common)`
-  right: 6rem;
+  right: 5.43rem;
 `;
 
 export default GalleryModal;
