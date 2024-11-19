@@ -217,29 +217,29 @@ const Button = styled.button<IBtn>`
 
   @media only screen and (max-width: 87.5em) {
     left: ${({ direction }) => direction === 'left' && '3rem'};
-    right: ${({ direction }) => direction === 'right' && '3rem'};
+    right: ${({ direction }) => direction === 'right' && '2.43rem'};
   }
 
   @media only screen and (max-width: 57.5em) {
     left: ${({ direction }) => direction === 'left' && '2rem'};
-    right: ${({ direction }) => direction === 'right' && '2rem'};
+    right: ${({ direction }) => direction === 'right' && '1.43rem'};
   }
 
   @media only screen and (max-width: 56.25em) {
-    font-size: 3.2rem;
+    font-size: 3.1rem;
   }
 
   @media only screen and (max-width: 50em) {
-    font-size: 3.3rem;
+    font-size: 3.2rem;
   }
 
   @media only screen and (max-width: 37.5em) {
     left: ${({ direction }) => direction === 'left' && '1rem'};
-    right: ${({ direction }) => direction === 'right' && '1rem'};
+    right: ${({ direction }) => direction === 'right' && '0.43rem'};
   }
 
   @media only screen and (max-width: 34.375em) {
-    font-size: 3.25rem;
+    font-size: 3.15rem;
   }
 
   @media only screen and (max-width: 30em) {
@@ -248,7 +248,7 @@ const Button = styled.button<IBtn>`
 
   @media only screen and (max-width: 21.5em) {
     left: ${({ direction }) => direction === 'left' && '1rem'};
-    right: ${({ direction }) => direction === 'right' && '1rem'};
+    right: ${({ direction }) => direction === 'right' && '0.43rem'};
   }
 
   @media only screen and (min-width: 106.25em) {
