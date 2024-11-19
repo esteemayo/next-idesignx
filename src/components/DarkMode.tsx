@@ -173,7 +173,7 @@ const CommonButton = styled.button`
     font-size: 2.6rem;
   }
 
-  &:nth-child(3) {
+  &:nth-child(2) {
     cursor: default;
   }
 
