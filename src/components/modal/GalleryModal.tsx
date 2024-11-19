@@ -187,17 +187,17 @@ const CloseButton = styled.button`
 `;
 
 const Button = styled.button<IBtn>`
-  display: inline-block;
-  border: none;
-  font-size: 3rem;
-  background-color: transparent;
-  color: var(--clr-white);
-  outline-color: var(--clr-gray-dark-2);
   position: absolute;
   top: 50%;
   left: ${({ direction }) => direction === 'left' && '6rem'};
   right: ${({ direction }) => direction === 'right' && '6rem'};
   transform: translateY(-50%);
+
+  border: none;
+  font-size: 3rem;
+  background-color: transparent;
+  color: var(--clr-white);
+  outline-color: var(--clr-gray-dark-2);
   cursor: pointer;
 
   @media only screen and (max-width: 87.5em) {
