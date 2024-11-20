@@ -98,7 +98,7 @@ const Container = styled.section`
     padding: 4rem;
   }
 
-  @media only screen and (max-width: 59.375em) {
+  @media only screen and (max-width: 64em) {
     grid-row: 2 / 3;
     grid-column: col-start 3 / col-end 6;
     justify-content: stretch;
