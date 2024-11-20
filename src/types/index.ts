@@ -129,11 +129,7 @@ export interface HamburgerProps {
 export interface ButtonProps {
   label: string;
   nav?: boolean;
-  icon?:
-    | (OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
-        muiName: string;
-      })
-    | IconDefinition;
+  icon?: any;
   type?: 'submit' | 'button' | 'reset';
   onClick?(e: React.MouseEvent<HTMLButtonElement>): void;
   disabled?: boolean;
