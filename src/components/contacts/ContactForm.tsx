@@ -100,10 +100,15 @@ const Container = styled.section`
 
   @media only screen and (max-width: 64em) {
     grid-row: 2 / 3;
-    grid-column: col-start 3 / col-end 6;
+    grid-column: col-start 2 / col-end 7;
     justify-content: stretch;
 
     box-shadow: none;
+    margin: 10rem 0 5rem;
+  }
+
+  @media only screen and (max-width: 59.375em) {
+    grid-column: col-start 3 / col-end 6;
     margin: 7rem 0 3.5rem;
   }
 

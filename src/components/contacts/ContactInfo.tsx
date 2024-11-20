@@ -39,10 +39,14 @@ const Container = styled.section`
 
   @media only screen and (max-width: 64em) {
     grid-row: 3 / 4;
-    grid-column: col-start 3 / col-end 6;
+    grid-column: col-start 2 / col-end 7;
 
     margin: 3.5rem 0 7rem;
     border-radius: 1rem;
+  }
+
+  @media only screen and (max-width: 59.375em) {
+    grid-column: col-start 3 / col-end 6;
   }
 
   @media only screen and (max-width: 45em) {
