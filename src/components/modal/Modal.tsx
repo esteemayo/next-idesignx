@@ -112,7 +112,7 @@ const Modal = ({
               {secondaryActionLabel && secondaryAction && (
                 <Button
                   type='button'
-                  disabled={disabled}
+                  disabled={!!disabled}
                   label={secondaryActionLabel}
                   onClick={handleSecondaryAction}
                   outline
@@ -120,7 +120,7 @@ const Modal = ({
               )}
               <Button
                 type='button'
-                disabled={disabled}
+                disabled={!!disabled}
                 label={actionLabel}
                 onClick={handleSubmit}
               />
