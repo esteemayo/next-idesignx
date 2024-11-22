@@ -137,7 +137,7 @@ const DesignModal = () => {
   }, [step]);
 
   useEffect(() => {
-    if (Object.values(errors).length > 0) {
+    if (Object.keys(errors).length > 0) {
       setTimeout(() => setErrors({}), 5000);
     }
   }, [errors]);

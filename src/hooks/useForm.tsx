@@ -19,7 +19,7 @@ export const useForm = <T extends object, U extends object>(
   }, []);
 
   const handleSubmit = useCallback(() => {
-    if (Object.values(validate(data)).length > 0) {
+    if (Object.keys(validate(data)).length > 0) {
       setErrors(validate(data));
       return;
     }
@@ -31,7 +31,7 @@ export const useForm = <T extends object, U extends object>(
   }, [callback, data, initialError, initialState, validate]);
 
   useEffect(() => {
-    if (Object.values(errors).length > 0) {
+    if (Object.keys(errors).length > 0) {
       setTimeout(() => setErrors(initialError), 5000);
     }
   }, [data, errors, initialError, validate]);
