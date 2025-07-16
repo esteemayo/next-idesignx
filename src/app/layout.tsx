@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     { name: 'Xsteem Designx', url: 'https://www.esteemdesigns.com' },
     { name: 'Emmanuel Ayodeji Adebayo', url: 'https://www.devayo.com' },
   ],
+  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
 };
 
 export default function RootLayout({
