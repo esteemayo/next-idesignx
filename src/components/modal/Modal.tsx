@@ -54,15 +54,6 @@ const Modal = ({
     [handleClose]
   );
 
-  const handleEscape = useCallback(
-    (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        handleClose();
-      }
-    },
-    [handleClose]
-  );
-
   const handleSubmit = useCallback(() => {
     if (disabled) {
       return;
@@ -88,13 +79,17 @@ const Modal = ({
   }, [isOpen]);
 
   useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleClose();
+      }
+    };
+
     window.addEventListener('keydown', handleEscape);
     return () => window.removeEventListener('keydown', handleEscape);
-  }, [handleEscape]);
+  }, [handleClose]);
 
-  if (!isOpen) {
-    return null;
-  }
+  if (!isOpen) return null;
 
   return (
     <Overlay className='overlay' onClick={closeModalHandler}>
@@ -137,65 +132,106 @@ const Box = styled.div`
   width: 50rem;
   background-color: ${({ theme }) => theme.bg};
   padding: 3rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
 
   @media only screen and (max-width: 56.25em) {
-    width: 52rem;
+    width: 53rem;
   }
 
-  @media only screen and (max-width: 50em) {
-    width: 53rem;
+  @media only screen and (max-width: 51.25em) {
+    width: 55rem;
+    padding: 3.5rem;
   }
 
   @media only screen and (max-width: 34.375em) {
     width: 50rem;
+    padding: 3rem;
   }
 
-  @media only screen and (max-width: 28.75em) {
-    padding: 3rem 2rem;
+  @include bp.sm {
+    width: 48rem;
+    padding: 2.5rem;
+  }
+
+  @media only screen and (max-width: 28.125em) {
+    width: 45rem;
   }
 
   @media only screen and (max-width: 26.875em) {
-    width: 47rem;
+    width: 43rem;
+    padding: 2.25rem;
   }
 
   @media only screen and (max-width: 25em) {
-    width: 45rem;
+    width: 40rem;
     padding: 2rem;
   }
 
   @media only screen and (max-width: 24.375em) {
-    width: 43rem;
+    width: 39rem;
+    padding: 1.8rem;
   }
 
   @media only screen and (max-width: 23.75em) {
-    width: 42rem;
+    width: 38rem;
+    padding: 1.7rem;
   }
 
   @media only screen and (max-width: 23.4375em) {
-    width: 40rem;
-    padding: 2rem 1.5rem;
+    width: 37.5rem;
+    padding: 1.6rem;
   }
 
-  @media only screen and (max-width: 20.625em) {
-    width: 37rem;
+  @media only screen and (max-width: 22.5em) {
+    width: 36rem;
+    padding: 1.5rem;
   }
 
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 21.5em) {
     width: 34rem;
-    padding: 1rem;
+    padding: 1.25rem;
   }
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 20em) {
     width: 32rem;
   }
 
-  @media only screen and (min-width: 106.25em) {
-    width: 60rem;
+  @media only screen and (max-width: 18.75em) {
+    width: 30rem;
+    padding: 1rem;
   }
 
-  @media only screen and (min-width: 125em) {
+  @media only screen and (max-width: 18.125em) {
+    width: 29rem;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    width: 28rem;
+    padding: 0.8rem;
+  }
+
+  @media only screen and (max-width: 16.875em) {
+    width: 31rem;
+  }
+
+  @media only screen and (max-width: 16.25em) {
+    width: 30rem;
+  }
+
+  @media screen and (min-width: 106.25em) {
+    width: 55rem;
+    padding: 3.5rem;
+  }
+
+  @media screen and (min-width: 112.5em) {
+    width: 60rem;
+    padding: 4rem;
+  }
+
+  @media screen and (min-width: 125em) {
     width: 65rem;
+    padding: 4.5rem;
   }
 `;
 
