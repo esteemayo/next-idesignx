@@ -32,15 +32,10 @@ const Modal = ({
   const [showModal, setShowModal] = useState(false);
 
   const handleClose = useCallback(() => {
-    if (disabled) {
-      return;
-    }
+    if (disabled) return;
 
     setShowModal(false);
-
-    setTimeout(() => {
-      onClose();
-    }, 300);
+    setTimeout(() => onClose(), 300);
   }, [disabled, onClose]);
 
   const closeModalHandler = useCallback(
@@ -55,38 +50,30 @@ const Modal = ({
   );
 
   const handleSubmit = useCallback(() => {
-    if (disabled) {
-      return;
-    }
-
+    if (disabled) return;
     onSubmit();
   }, [disabled, onSubmit]);
 
   const handleSecondaryAction = useCallback(() => {
-    if (disabled || !secondaryAction) {
-      return;
-    }
-
+    if (disabled || !secondaryAction) return;
     secondaryAction();
   }, [disabled, secondaryAction]);
 
-  const activeModal = useMemo(() => {
-    return showModal?.toString();
-  }, [showModal]);
+  const activeModal = useMemo(() => showModal?.toString(), [showModal]);
 
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
 
   useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
+    const handleEsc = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         handleClose();
       }
     };
 
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
   }, [handleClose]);
 
   if (!isOpen) return null;
