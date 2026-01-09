@@ -40,9 +40,7 @@ const Modal = ({
 
   const closeModalHandler = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
-      const target = e.target as Element;
-
-      if (target.classList.contains('overlay')) {
+      if (e.target === e.currentTarget) {
         handleClose();
       }
     },
@@ -79,16 +77,26 @@ const Modal = ({
   if (!isOpen) return null;
 
   return (
-    <Overlay className='overlay' onClick={closeModalHandler}>
+    <Overlay
+      onClick={closeModalHandler}
+      className='overlay'
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='modal-title'
+      aria-describedby='modal-body'
+    >
       <Wrapper active={activeModal}>
         <Box>
           <CloseButtonContainer>
             <CloseButton onClick={handleClose}>
               <FontAwesomeIcon icon={faTimes} />
             </CloseButton>
-            <Heading>{title}</Heading>
+
+            <Heading id='modal-title'>{title}</Heading>
           </CloseButtonContainer>
-          <Body>{body}</Body>
+          
+          <Body id='modal-body'>{body}</Body>
+
           <Footer>
             <ButtonContainer size={size}>
               {secondaryActionLabel && secondaryAction && (
@@ -100,6 +108,7 @@ const Modal = ({
                   outline
                 />
               )}
+
               <Button
                 type='button'
                 disabled={!!disabled}
@@ -107,6 +116,7 @@ const Modal = ({
                 onClick={handleSubmit}
               />
             </ButtonContainer>
+
             {footer}
           </Footer>
         </Box>
